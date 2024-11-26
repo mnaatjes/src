@@ -78,8 +78,13 @@ class Person {
     get root(){
         return Math.sqrt(this.num);
     }
+    set root(value){
+        this.num = Math.pow(value, 2);
+    }
 }
 let gemi = new Person('Gemini', 'Naatjes');
 console.log(gemi.fullName);
 gemi.num = 25;
 console.log(gemi.root);
+gemi.root = 4;
+console.log(gemi.num);
