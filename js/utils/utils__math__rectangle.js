@@ -19,160 +19,356 @@
 /*----------------------------------------------------------*/
 class Rectangle {
     constructor(x, y, width, height=null){
-        this.test       = null;
         this.x          = x;
         this.y          = y;
         this.width      = width;
         this.height     = (height == null) ? width : height;
-        /**
-         * @name cx center x pos
-         */
-        this.cx = x + (this.width / 2);
-        /**
-         * @name cy center y pos
-         */
-        this.cy = y + (this.height / 2);
-        /**
-         * @name rotation rotation in degrees
-         */
-        this.rotation = 0;
-        /**
-         * @name vertices verticies of a rect (A, B, C, D)
-         */
-        this.vertices = this.updateVertices(this.x, this.y, this.width, this.height, this.rotation);
-        this.A = this.vertices.A
-        this.B = this.vertices.B
-        this.C = this.vertices.C
-        this.D = this.vertices.D
-        /**
-         * @name sides
-         */
-        this.sides = this.updateSides(this.vertices);
-        /**
-         * @name vectors AB, BC...
-         */
-        this.vectors = this.updateVectors(this.vertices);
-        /**
-         * @name diagonals AC length
-         */
-        this.diagonals  = Math.sqrt(Math.pow(this.width, 2) + (Math.pow(this.height, 2)));
-        this.perimeter  = 2 * (this.width + this.height);
-        this.area       = this.width * this.height;
-        /**
-         * @name ix initial position x
-         */
-        this.ix = this.x;
-        /**
-         * @name iy initial position y
-         */
-        this.iy = this.y;
-        /**
-         * @name dx displacement vector x
-         * @description current pos - initial pos
-         */
-        this.dx = this.updateDX(this.x, this.y, this.ix, this.iy).x;
-        /**
-         * @name dy displacement vector y
-         * @description current pos - initial pos
-         */
-        this.dy = this.updateDX(this.x, this.y, this.ix, this.iy).y;
-        /**
-         * @name direction 
-         * @description direction of displacement vector rel x-axis (counter-clockwise)
-         */
-        this.direction = this.updateDirection(this.dx, this.dy);
-        /**
-         * @name vx velocity x
-         * @description velocity = displacement vector / time interval
-         */
-        this.vx = this.updateVelocity(this.dx, this.dy, 1).x;
-        /**
-         * @name vy velocity y
-         * @description velocity = displacement vector / time interval
-         */
-        this.vy = this.updateVelocity(this.dx, this.dy, 1).y;
+        this.rotation   = 0;
+        this.ix         = x + (width / 2);
+        this.iy         = y + (height / 2);
+        this.px         = this.ix;
+        this.py         = this.iy;
+        this.prevDir;
+        this.distances  = [];
+        //this.vectors = this.updateVectors(this.vertices);
+        //this.diagonals  = Math.sqrt(Math.pow(this.width, 2) + (Math.pow(this.height, 2)));
     }
     /*----------------------------------------------------------*/
     /**
-     * @name test
+     * @name area
+     * @type {Number}
+     * @property {Number} width
+     * @property {Number} height
      */
     /*----------------------------------------------------------*/
-    set test(value){
-        if(value !== 'dog'){console.error('Not a doggie');}
-    }
+    get area(){return this.width * this.height;}
     /*----------------------------------------------------------*/
     /**
-     * @name updateCenter
-     * @type {Method}
-     * @memberof Rectangle
-     * @param {Number} x
+     * @name perimeter
+     * @type {Number}
+     * @property {Number} width
+     * @property {Number} height
      */
     /*----------------------------------------------------------*/
-    updateCenter(x, y){}
+    get perimeter(){return 2 * (this.width + this.height);}
     /*----------------------------------------------------------*/
     /**
-     * @name update
-     * @type {Method}
-     * @memberof Rectangle
-     * @param {Object} props
+     * @name cx
+     * @type {Number}
+     * @property {Number} x
+     * @property {Number} width
      */
     /*----------------------------------------------------------*/
-    update(x, y, w, h, rotation){
-        
-    }
+    get cx(){return this.x + (this.width / 2);}
     /*----------------------------------------------------------*/
     /**
-     * @name updateSides
-     * @type {Method}
-     * @memberof Rectangle
-     * @param {Object} vertices
+     * @name cy
+     * @type {Number}
+     * @property {Number} y
+     * @property {Number} height
      */
     /*----------------------------------------------------------*/
-    updateSides(vertices){
-        let acc = [];
-        let res = {};
-        Object.keys(vertices).forEach((key, i) => {
-            let obj = vertices[key];
-            /**
-             * accumulate values
-             */
-            acc.push({[key]: obj});
-            /**
-             * compose values from A - C
-             */
-            if(i > 0){
-                /**
-                 * get vertex key
-                 */
-                for(let k in acc[i - 1]){
-                    /**
-                     * push sides + obj values
-                     */
-                    res[k + key] = {
-                        [k]: acc[i - 1][k],
-                        [key]: obj
-                    };
-                }
-            }
-            /**
-             * compose values DA
-             */
-            if(i == Object.entries(vertices).length - 1){
-                /**
-                 * get key acc
-                 */
-                for(let k in acc[0]){
-                    res[key + k] = {
-                        [key]: obj,
-                        [k]: acc[0][k]
-                    };
-                }
-            }
-        });
+    get cy(){return this.y + (this.height / 2);}
+    /*----------------------------------------------------------*/
+    /**
+     * @name A
+     * @type {Number}
+     * @property {Number} x
+     * @property {Number} y
+     */
+    /*----------------------------------------------------------*/
+    get A(){return this.calcVertex(this.x, this.y);}
+    /*----------------------------------------------------------*/
+    /**
+     * @name B
+     * @type {Number}
+     * @property {Number} x
+     * @property {Number} y
+     * @property {Number} width
+     */
+    /*----------------------------------------------------------*/
+    get B(){return this.calcVertex(this.x + this.width, this.y);}
+    /*----------------------------------------------------------*/
+    /**
+     * @name C
+     * @type {Number}
+     * @property {Number} x
+     * @property {Number} y
+     * @property {Number} width
+     * @property {Number} height
+     */
+    /*----------------------------------------------------------*/
+    get C(){return this.calcVertex(this.x + this.width, this.y + this.height);}
+    /*----------------------------------------------------------*/
+    /**
+     * @name D
+     * @type {Number}
+     * @property {Number} x
+     * @property {Number} y
+     * @property {Number} height
+     */
+    /*----------------------------------------------------------*/
+    get D(){return this.calcVertex(this.x, this.y + this.height);}
+    /*----------------------------------------------------------*/
+    /**
+     * @name vertices
+     * @type {Object}
+     * @property {Number} A
+     * @property {Number} B
+     * @property {Number} C
+     * @property {Number} D
+     */
+    /*----------------------------------------------------------*/
+    get vertices(){return {A: this.A, B: this.B, C: this.C, D: this.D};}
+    /*----------------------------------------------------------*/
+    /**
+     * @name sides
+     * @type {Object}
+     * @property {Number} A
+     * @property {Number} B
+     * @property {Number} C
+     * @property {Number} D
+     * @description sides from vertices
+     */
+    /*----------------------------------------------------------*/
+    get sides(){return {
+        AB: {A: this.A, B: this.B},
+        BC: {B: this.B, C: this.C},
+        CD: {C: this.C, D: this.D},
+        DA: {D: this.D, A: this.A}
+    };}
+    /*----------------------------------------------------------*/
+    /**
+     * @name dir direction
+     * @type {Number}
+     * @memberof Rectangle
+     * @param {Number} value direction in degrees
+     * @property {Number} ix
+     * @property {Number} iy
+     * @property {Number} px
+     * @property {Number} py
+     * @property {Number} prevDir
+     * @description direction from origin (0,0) of canvas
+     */
+    /*----------------------------------------------------------*/
+    get dir(){return this.calcDirection();}
+    set dir(value){
         /**
-         * return result
+         * initial direction
          */
-        return res;
+        if(this.prevDir === undefined){
+            /**
+             * define previous direction
+             */
+            this.prevDir = value;
+        }
+        /**
+         * direction change
+         */
+        else if(this.prevDir !== value){
+            /**
+             * update previous direction
+             */
+            this.prevDir = value;
+            /**
+             * calculate distance from: current pos and previous pos
+             * push to distances
+             */
+            this.distances.push(this.dist);
+            /**
+             * update previous x, y pos
+             */
+            this.px = this.cx;
+            this.py = this.cy;
+        }
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name totalDist total distance
+     * @type {Number}
+     * @memberof Rectangle
+     * @property {Array} distances
+     */
+    /*----------------------------------------------------------*/
+    get totalDist(){
+        /**
+         * initial distance
+         * has no change in direction
+         */
+        if(this.distances.length === 0){
+            /**
+             * distance from start
+             * before direction change
+             */
+            return this.dist;
+        } else if(this.distances.length >= 1){
+            /**
+             * current distance
+             * plus recorded distances
+             */
+            return this.distances.reduce((acc, curr) => acc + curr, 0) + this.dist;
+        }
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name calcDirection
+     * @type {Function}
+     * @memberof Rectangle
+     * @property {Number} cx center x pos
+     * @property {Number} cy center y pos
+     */
+    /*----------------------------------------------------------*/
+    calcDirection(){return parseFloat((Math.atan2(this.cy, this.cx) * (180 / Math.PI)).toFixed(2));}
+    /*----------------------------------------------------------*/
+    /**
+     * @name dist
+     * @type {Number}
+     * @memberof Rectangle
+     * @property {Number} px previous center x pos
+     * @property {Number} py previous center y pos
+     * @property {Number} cx center x pos
+     * @property {Number} cy center y pos
+     * @description represents the total PATH length traveled
+     *              no consideration of direction
+     */
+    /*----------------------------------------------------------*/
+    get dist(){return parseFloat(Math.sqrt(Math.pow(this.cx - this.px, 2) + Math.pow(this.cy - this.py, 2)).toFixed(4));}
+    /*----------------------------------------------------------*/
+    /**
+     * @name calcDistance
+     * @type {Function}
+     * @memberof Rectangle
+     * @param {Number} x1
+     * @param {Number} y1
+     * @param {Number} x2
+     * @param {Number} y2
+     * @description
+     */
+    /*----------------------------------------------------------*/
+    calcDistance(x1, y1, x2, y2){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name vx velocity vector
+     * @type {Number}
+     * @memberof Rectangle
+     * @property {Number} cx center x position
+     * @property {Number} cy center y position
+     * @property {Number} ix initial center x position
+     * @description change in position of an object
+     *              from initial pos --> current position
+     *              rate
+     *              time
+     *              magnitude of distance
+     *              direction
+     */
+    /*----------------------------------------------------------*/
+    get vx(){
+        return {
+            time: 0,
+            mag: this.cx - this.ix,
+            dir: parseFloat((Math.atan2(this.cy, this.cx) * (180 / Math.PI)).toFixed(2)),
+            rate: null,
+        };
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name dx displacement vector
+     * @type {Number}
+     * @memberof Rectangle
+     * @property {Number} fx center x position final
+     * @property {Number} fy center y position final
+     * @property {Number} ix initial center x position
+     * @description change in position of an object
+     *              from initial pos --> final position
+     *              magnitude of distance
+     *              direction
+     */
+    /*----------------------------------------------------------*/
+    get dx(){
+        return {
+            mag: this.fx - this.ix, 
+            dir: parseFloat((Math.atan2(this.fy, this.fx) * (180 / Math.PI)).toFixed(2))
+        };
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name dy displacement vector
+     * @type {Number}
+     * @memberof Rectangle
+     * @property {Number} fx center x position final
+     * @property {Number} fy center y position final
+     * @property {Number} iy initial center y position
+     * @description change in position of an object
+     *              from initial pos --> final position
+     *              magnitude of distance
+     *              direction
+     */
+    /*----------------------------------------------------------*/
+    get dy(){
+        return {
+            mag: this.fy - this.iy, 
+            dir: parseFloat((Math.atan2(this.fy, this.fx) * (180 / Math.PI)).toFixed(2))
+        };
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name calcVertex
+     * @type {Method}
+     * @memberof Rectangle
+     * @param {Object} x
+     * @param {Object} y
+     * @property {Number} cx
+     * @property {Number} cy
+     * @property {Number} rotation deg
+     */
+    /*----------------------------------------------------------*/
+    calcVertex(x, y){
+        /**
+         * @name getRotationMatrix
+         * @type {Function}
+         * @memberof calcVertex
+         * @param {Number} theta in degrees
+         */
+        function getRotationMatrix(theta){
+            /**
+             * convert theta to radians
+             */
+            theta = theta * Math.PI / 180;
+            /**
+             * return matrix
+             */
+            return [
+                [Math.cos(theta), -Math.sin(theta)],
+                [Math.sin(theta), Math.cos(theta)]
+            ];
+        };
+        /**
+         * @name matrix
+         * @type {Array}
+         * @memberof getVerticies
+         */
+        let matrix = getRotationMatrix(this.rotation);
+        /**
+         * translate in
+         */
+        x = x - this.cx;
+        y = y - this.cy;
+        /**
+         * perform calculation
+         */
+        let result = {
+            x: (x * matrix[0][0]) + (y * matrix[0][1]),
+            y: (x * matrix[1][0]) + (y * matrix[1][1])
+        };
+        /**
+         * translate out
+         */
+        result.x = parseFloat((result.x + this.cx).toFixed(4));
+        result.y = parseFloat((result.y + this.cy).toFixed(4));
+        /**
+         * return object (x, y)
+         */
+        return result;
     }
     /*----------------------------------------------------------*/
     /**
@@ -331,252 +527,16 @@ class Rectangle {
     }
     /*----------------------------------------------------------*/
     /**
-     * @name updateDX update displacement vector
-     * @type {Method}
-     * @memberof Rectangle
-     * @param {Number} cx current x pos
-     * @param {Number} cy current y pos
-     * @param {Number} ix initial x pos
-     * @param {Number} iy initial y pos
-     * @description movement from one place to another
-     *              origin --> initial pos = Si; origin --> final pos = Sf
-     *              deltaS == difference: dS = Sf - Si
-     *              OR: for displacement vector AB: A(-5, 8), B(6,0)
-     *              (xB - xA, yB - yA) == (11, -8) or 11i - 8j
-     */
-    /*----------------------------------------------------------*/
-    updateDX(cx, cy, ix, iy){
-        return {x: cx - ix, y: cy - iy};
-    }
-    /*----------------------------------------------------------*/
-    /**
      * @name updateVelocity
      * @type {Method}
      * @memberof Rectangle
      * @param {Number} dx displacement vector x
      * @param {Number} dy displacement vector y
      * @param {Number} timeInterval
-     * @description
+     * @description TODO: add compensation for aspect ratio
      */
     /*----------------------------------------------------------*/
     updateVelocity(dx, dy, timeInterval){
         return {x: dx / timeInterval, y: dy / timeInterval};
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * @name updateVertices
-     * @type {Method}
-     * @memberof Rectangle
-     * @namespace getVertices
-     * @param {Number} x
-     * @param {Number} y
-     * @param {Number} width
-     * @param {Number} height
-     * @param {Number} rotation in degrees
-     * @description clockwise top-left corner == A
-     *              VERTICES BASED ON ORIGIN AT TOP-LEFT!!!
-     *              (DEFAULT CANVAS ORIENTATION)
-     */
-    /*----------------------------------------------------------*/
-    updateVertices(x, y, width, height, rotation=0){
-        /**
-         * @name calcVertex
-         * @type {Function}
-         * @memberof updateVertices
-         * @namespace calcVertex
-         */
-        function calcVertex(x, y, cx, cy, theta){
-            /**
-             * @name getRotationMatrix
-             * @type {Function}
-             * @memberof calcVertex
-             * @param {Number} theta in degrees
-             */
-            function getRotationMatrix(theta){
-                /**
-                 * convert theta to radians
-                 */
-                theta = theta * Math.PI / 180;
-                /**
-                 * return matrix
-                 */
-                return [
-                    [Math.cos(theta), -Math.sin(theta)],
-                    [Math.sin(theta), Math.cos(theta)]
-                ];
-            };
-            /**
-             * @name matrix
-             * @type {Array}
-             * @memberof getVerticies
-             */
-            let matrix = getRotationMatrix(theta);
-            /**
-             * translate in
-             */
-            x = x - cx;
-            y = y - cy;
-            /**
-             * perform calculation
-             */
-            let result = {
-                x: (x * matrix[0][0]) + (y * matrix[0][1]),
-                y: (x * matrix[1][0]) + (y * matrix[1][1])
-            };
-            /**
-             * translate out
-             */
-            result.x = parseFloat((result.x + cx).toFixed(4));
-            result.y = parseFloat((result.y + cy).toFixed(4));
-            /**
-             * return object (x, y)
-             */
-            return result;
-        }
-        /**
-         * @name vNormal
-         * @type {Object}
-         * @memberof updateVertices
-         */
-        let vNormal = {
-            A: {x: x, y: y},
-            B: {x: x + width, y: y},
-            C: {x: x + width, y: y + height},
-            D: {x: x, y: y + height}
-        };
-        /**
-         * check rotation
-         */
-        if(rotation == 0){
-            /**
-             * no rotation
-             */
-            return vNormal;
-        } else if (rotation > 0){
-            /**
-             * return object
-             */
-            return {
-                A: calcVertex(vNormal.A.x, vNormal.A.y, this.cx, this.cy, this.rotation),
-                B: calcVertex(vNormal.B.x, vNormal.B.y, this.cx, this.cy, this.rotation),
-                C: calcVertex(vNormal.C.x, vNormal.C.y, this.cx, this.cy, this.rotation),
-                D: calcVertex(vNormal.D.x, vNormal.D.y, this.cx, this.cy, this.rotation)
-            };
-        }
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * @name updateVectors
-     * @type {Method}
-     * @memberof Rectangle
-     * @namespace getVectors
-     * @param {Object} v vertices
-     * @description clockwise top-left corner == A
-     *              rectangular form / representation: vector represented by coordinates
-     *                  given as: (x, y)
-     * 
-     *              polar form / representation:
-     *                  magnitude: width
-     *                  angle (from positive x-axis): e.g. 30deg from x-axis
-     *                  given as: 3<30deg OR (3, 30deg)
-     */
-    /*----------------------------------------------------------*/
-    updateVectors(vertex){
-        /**
-         * @name calcMagnitude
-         * @type {Function}
-         * @memberof updateVectors
-         */
-        function calcMagnitude(x, y){return Math.sqrt((Math.pow(x, 2)) + (Math.pow(y, 2)));}
-        /**
-         * @name calcTheta
-         * @type {Function}
-         * @memberof updateVectors
-         * @returns theta in degrees
-         */
-        function calcTheta(x, y){return Math.atan(y/x) * (180 / Math.PI);}
-        /**
-         * build return object
-         */
-        let res = {
-            /**
-             * top side
-             */
-            AB: {
-                x: vertex.B.x - vertex.A.x, 
-                y: vertex.B.y - vertex.A.y,
-                mag: null, 
-                theta: null
-            },
-            /**
-             * right side
-             */
-            BC: {
-                x: vertex.C.x - vertex.B.x, 
-                y: vertex.C.y - vertex.B.y,
-                mag: null, 
-                theta: null
-            },
-            /**
-             * bottom side
-             */
-            CD: {
-                x: vertex.D.x - vertex.C.x, 
-                y: vertex.D.y - vertex.C.y,
-                mag: null, 
-                theta: null
-            },
-            /**
-             * left side
-             */
-            DA: {
-                x: vertex.A.x - vertex.D.x, 
-                y: vertex.A.y - vertex.D.y,
-                mag: null, 
-                theta: null
-            },
-            /**
-             * diagonal AC:
-             * top left to bottom right
-             */
-            AC: {
-                x: vertex.C.x - vertex.A.x,
-                y: vertex.C.y - vertex.A.y,
-                mag: null,
-                theta: null
-            },
-            /**
-             * diagonal BD:
-             * top right to bottom left
-             */
-            BD: {
-                x: vertex.D.x - vertex.B.x,
-                y: vertex.D.y - vertex.B.y,
-                mag: null,
-                theta: null
-            }
-        };
-        /**
-         * calculate magnitude
-         */
-        res.AB.mag = calcMagnitude(res.AB.x, res.AB.y);
-        res.BC.mag = calcMagnitude(res.BC.x, res.BC.y);
-        res.CD.mag = calcMagnitude(res.CD.x, res.CD.y);
-        res.DA.mag = calcMagnitude(res.DA.x, res.DA.y);
-        res.AC.mag = calcMagnitude(res.AC.x, res.AC.y);
-        res.BD.mag = calcMagnitude(res.BD.x, res.BD.y);
-        /**
-         * calculate theta
-         */
-        res.AB.theta = calcTheta(res.AB.x, res.AB.y);
-        res.BC.theta = calcTheta(res.BC.x, res.BC.y);
-        res.CD.theta = calcTheta(res.CD.x, res.CD.y);
-        res.DA.theta = calcTheta(res.DA.x, res.DA.y);
-        res.AC.theta = calcTheta(res.AC.x, res.AC.y);
-        res.BD.theta = calcTheta(res.BD.x, res.BD.y);
-        /**
-         * return object
-         */
-        return res;
     }
 }

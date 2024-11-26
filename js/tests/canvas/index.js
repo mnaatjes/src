@@ -28,7 +28,22 @@ const ctx = canvas.getContext('2d');
 /**
  * test rectangle
  */
-const rect = new CanvasRect(50, 50, 50, 50);
+const rect = new CanvasRect(-10, -10, 20, 20);
+/**
+ * debugging getters
+ */
+console.log(rect.sides);
+/**
+ * debugging setters
+ */
+/**
+ * set start time
+ * 4 decimal places
+ */
+const start = parseFloat(performance.now().toFixed(4));
+/**
+ * rect properties
+ */
 rect.fillColor      = 'red';
 rect.strokeColor    = 'black';
 /**
@@ -36,7 +51,19 @@ rect.strokeColor    = 'black';
  * @type {Function}
  * @memberof Canvas
  */
-function draw(){
+function draw(timestamp){
+    /**
+     * set timestamp
+     */
+    if(!timestamp){
+        timestamp = start;
+    }
+    /**
+     * calc elapsed time
+     * 4 decimal places
+     * in seconds
+     */
+    let elapsed = parseFloat(((timestamp - start) * 0.001).toFixed(4));
     /**
      * clear canvas
      */
@@ -45,19 +72,32 @@ function draw(){
      * draw rect
      */
     rect.drawRect(ctx);
-    console.log(rect.x);
-    console.log(rect.cx);
+    rect.x += 0.20;
+    rect.y += 0.20;
     /**
      * move rect
+     * TODO: if change angle of velocity vector --> velocity should adjust x, y components
      */
-    rect.x += 1;
-    rect.update()
+    console.log(`DIST: ${rect.dist}`);
+    console.log(`DIR: ${rect.dir}`);
+    console.log(`TOTAL DIST: ${rect.totalDist}`);
+    console.log(`Elapsed: ${elapsed}`);
+    /**
+     * change direction
+     */
+    if(elapsed >= 4.0){
+        rect.x += 0.25;
+        rect.y -= 0.25;
+    }
+    /**
+     * set direction
+     */
+    rect.dir = rect.calcDirection();
     /**
      * request animation
      */
     //requestAnimationFrame(draw);
 }
-rect.test = 'dog';
 /**
  * run
  */
@@ -66,6 +106,7 @@ requestAnimationFrame(draw);
 /**
  * test getter setter
  */
+/*
 class Person {
     constructor(fname, lname){
         this.fname  = fname;
@@ -73,18 +114,20 @@ class Person {
         this.num    = null;
     }
     get fullName(){
+        console.log('SET fullName');
         return `${this.fname} ${this.lname}`;
     }
     get root(){
+        console.log('GET root');
         return Math.sqrt(this.num);
     }
     set root(value){
+        console.log('SET Root: this.num defined');
         this.num = Math.pow(value, 2);
     }
 }
-let gemi = new Person('Gemini', 'Naatjes');
-console.log(gemi.fullName);
-gemi.num = 25;
-console.log(gemi.root);
-gemi.root = 4;
-console.log(gemi.num);
+let gemi    = new Person('Gemini', 'Naatjes');
+gemi.num    = 25;
+gemi.root;
+gemi.root   = 4;
+*/
