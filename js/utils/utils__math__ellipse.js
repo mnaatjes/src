@@ -27,9 +27,9 @@ class Ellipse {
         this.a  = a;
         this.b  = b;
         this.vertices   = this.findVertices(h, k, a, b);
-        this.covertices = this.findCoVertices(h, k, a, b);
-        this.major_axis = this.getMajorAxis(a, b);
-        this.minor_axis = this.getMinorAxis(a, b);
+        this.coVertices = this.findCoVertices(h, k, a, b);
+        this.majorAxis  = this.getMajorAxis(a, b);
+        this.minorAxis  = this.getMinorAxis(a, b);
         this.foci       = this.getFoci(a, b);
     }
     /*----------------------------------------------------------*/
@@ -116,7 +116,7 @@ class Ellipse {
      * @memberof Ellipse
      * @param {Number} a semi-major / minor axis
      * @param {Number} b semi-minor / major axis
-     * @property {Number} this.major_axis
+     * @property {Number} this.majorAxis
      */
     /*----------------------------------------------------------*/
     getMinorAxis(a, b){

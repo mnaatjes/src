@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST: CANVASs</title>
+    <style>
+        body {
+            height: calc(100vh - 24px);
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        main#viewport {
+            border: 1px solid #999;
+            border-radius: 8px;
+            padding: 24px;
+            width: 640px;
+            height: 480px;
+            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+        }
+        main#viewport canvas {
+            background-color: #fcfcfc;
+            border-radius: 8px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>Test Canvas</h1>
+    </header>
+    <main id="viewport">
+        <canvas></canvas>
+    </main>
+    <script src="../../utils/utils__math__rectangle.js"></script>
+    <script src="../../utils/utils__math__ellipse.js"></script>
+    <script src="../../components/component__canvas/canvas__rect.js"></script>
+    <script src="../../components/component__canvas/canvas__ellipse.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

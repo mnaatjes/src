@@ -1,10 +1,10 @@
 /*----------------------------------------------------------*/
 /**
- * @file objects/obj__line.js
+ * @file js/src/components/component__canvas/canvas__line.js
  * 
  * @name Line
  * @type {Class}
- * @memberof CoinBreakdown
+ * @memberof Component.Canvas
  * @namespace Line
  */
 /*----------------------------------------------------------*/
