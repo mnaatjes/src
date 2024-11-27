@@ -116,13 +116,11 @@ class CanvasRect extends Rectangle {
      * @name updateRect
      * @type {Method}
      * @memberof CanvasRect
-     * @param {Number} x
-     * @param {Number} y
+     * @param {Function} callback
      * @description
      */
     /*----------------------------------------------------------*/
-    updateRect(x, y){
-        this.x += x;
-        this.y += y;
+    updateRect(callback){
+        callback(this);
     }
 }

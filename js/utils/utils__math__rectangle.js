@@ -28,8 +28,12 @@ class Rectangle {
         this.iy         = y + (height / 2);
         this.px         = this.ix;
         this.py         = this.iy;
+        this.vx;
+        this.vy;
         this.prevDir;
         this.distances  = [];
+        this.ax         = 1;
+        this.ay         = 1;
         //this.vectors = this.updateVectors(this.vertices);
         //this.diagonals  = Math.sqrt(Math.pow(this.width, 2) + (Math.pow(this.height, 2)));
     }
@@ -206,7 +210,7 @@ class Rectangle {
              * current distance
              * plus recorded distances
              */
-            return this.distances.reduce((acc, curr) => acc + curr, 0) + this.dist;
+            return parseFloat((this.distances.reduce((acc, curr) => acc + curr, 0) + this.dist).toFixed(4));
         }
     }
     /*----------------------------------------------------------*/
@@ -248,31 +252,63 @@ class Rectangle {
     calcDistance(x1, y1, x2, y2){}
     /*----------------------------------------------------------*/
     /**
-     * @name vx velocity vector
+     * @name deltaX change in x pos
      * @type {Number}
      * @memberof Rectangle
-     * @property {Number} cx center x position
-     * @property {Number} cy center y position
-     * @property {Number} ix initial center x position
-     * @description change in position of an object
-     *              from initial pos --> current position
-     *              rate
-     *              time
-     *              magnitude of distance
-     *              direction
+     * @description change in x pos from previous center x to current center x
      */
     /*----------------------------------------------------------*/
-    get vx(){
-        return {
-            time: 0,
-            mag: this.cx - this.ix,
-            dir: parseFloat((Math.atan2(this.cy, this.cx) * (180 / Math.PI)).toFixed(2)),
-            rate: null,
-        };
+    get deltaX(){return this.cx - this.px;}
+    /*----------------------------------------------------------*/
+    /**
+     * @name deltaY change in y pos
+     * @type {Number}
+     * @memberof Rectangle
+     * @description change in y pos from previous center y to current center y
+     */
+    /*----------------------------------------------------------*/
+    get deltaY(){return this.cy - this.py;}
+    /*----------------------------------------------------------*/
+    /**
+     * @name velo velocity
+     * @type {Object}
+     * @memberof Rectangle
+     */
+    /*----------------------------------------------------------*/
+    get v(){
+        /**
+         * if vx, vy undefined
+         */
+        if(this.vx === undefined && this.vy === undefined){
+            return {mag: 0, theta: this.dir};
+        } else {
+            /**
+             * calculate velocity from components
+             */
+            return {
+                mag: Math.sqrt(Math.pow(this.vx, 2) + Math.pow(this.vy, 2)),
+                theta: this.dir
+            };
+        }
+    }
+    set v(value){
+        /**
+         * set vx
+         */
+        this.vx = value.mag * Math.cos(value.theta * (Math.PI / 180));
+        /**
+         * set vy
+         */
+        this.vy = value.mag * Math.sin(value.theta * (Math.PI / 180));
+        /**
+         * set velocity of x, y
+         */
+        this.x += this.vx * this.ax;
+        this.y += this.vy * this.ay;
     }
     /*----------------------------------------------------------*/
     /**
-     * @name dx displacement vector
+     * @name dispX displacement vector
      * @type {Number}
      * @memberof Rectangle
      * @property {Number} fx center x position final
@@ -284,7 +320,7 @@ class Rectangle {
      *              direction
      */
     /*----------------------------------------------------------*/
-    get dx(){
+    get dispX(){
         return {
             mag: this.fx - this.ix, 
             dir: parseFloat((Math.atan2(this.fy, this.fx) * (180 / Math.PI)).toFixed(2))
@@ -292,7 +328,7 @@ class Rectangle {
     }
     /*----------------------------------------------------------*/
     /**
-     * @name dy displacement vector
+     * @name dispY displacement vector
      * @type {Number}
      * @memberof Rectangle
      * @property {Number} fx center x position final
@@ -304,7 +340,7 @@ class Rectangle {
      *              direction
      */
     /*----------------------------------------------------------*/
-    get dy(){
+    get dispY(){
         return {
             mag: this.fy - this.iy, 
             dir: parseFloat((Math.atan2(this.fy, this.fx) * (180 / Math.PI)).toFixed(2))
@@ -513,30 +549,11 @@ class Rectangle {
     }
     /*----------------------------------------------------------*/
     /**
-     * @name updateDirection
-     * @type {Method}
-     * @memberof Rectangle
-     * @param {Number} dx displacement vector x
-     * @param {Number} dy displacement vector y
-     * @description reference angle = x-axis (counter-clockwise)
-     * @returns {Number} angle of direction rel x-axis
-     */
-    /*----------------------------------------------------------*/
-    updateDirection(dx, dy){
-        return Math.atan2(dy, dx) * (180 / Math.PI);
-    }
-    /*----------------------------------------------------------*/
-    /**
      * @name updateVelocity
      * @type {Method}
      * @memberof Rectangle
-     * @param {Number} dx displacement vector x
-     * @param {Number} dy displacement vector y
-     * @param {Number} timeInterval
-     * @description TODO: add compensation for aspect ratio
+     * @description
      */
     /*----------------------------------------------------------*/
-    updateVelocity(dx, dy, timeInterval){
-        return {x: dx / timeInterval, y: dy / timeInterval};
-    }
+    updateVelocity(){}
 }

@@ -22,13 +22,21 @@ canvas.center   = {
     y: canvas.height / 2
 };
 /**
+ * determine canvas properties
+ */
+canvas.A = {x: 0, y: 0};
+canvas.B = {x: canvas.width, y: 0};
+canvas.C = {x: canvas.width, y: canvas.height};
+canvas.D = {x: 0, y: canvas.height};
+/**
  * set up context
  */
 const ctx = canvas.getContext('2d');
+console.log(ctx);
 /**
  * test rectangle
  */
-const rect = new CanvasRect(-10, -10, 20, 20);
+const rect = new CanvasRect(10, 10, 20, 20);
 /**
  * debugging getters
  */
@@ -38,9 +46,10 @@ console.log(rect.sides);
  */
 /**
  * set start time
- * 4 decimal places
+ * set previous time
  */
-const start = parseFloat(performance.now().toFixed(4));
+const startTime     = parseFloat(performance.now().toFixed(4));
+let previousTime    = startTime;
 /**
  * rect properties
  */
@@ -56,14 +65,15 @@ function draw(timestamp){
      * set timestamp
      */
     if(!timestamp){
-        timestamp = start;
+        timestamp = startTime;
     }
     /**
-     * calc elapsed time
-     * 4 decimal places
-     * in seconds
+     * set delta time
+     * set elapsed time
      */
-    let elapsed = parseFloat(((timestamp - start) * 0.001).toFixed(4));
+    let deltaTime   = timestamp - previousTime;
+    let elapsedTime = parseFloat(((timestamp - startTime) * 0.001).toFixed(4));
+    //console.log(`ELAPSED: ${elapsedTime}`);
     /**
      * clear canvas
      */
@@ -72,62 +82,36 @@ function draw(timestamp){
      * draw rect
      */
     rect.drawRect(ctx);
-    rect.x += 0.20;
-    rect.y += 0.20;
     /**
-     * move rect
-     * TODO: if change angle of velocity vector --> velocity should adjust x, y components
+     * update previous
      */
-    console.log(`DIST: ${rect.dist}`);
-    console.log(`DIR: ${rect.dir}`);
-    console.log(`TOTAL DIST: ${rect.totalDist}`);
-    console.log(`Elapsed: ${elapsed}`);
-    /**
-     * change direction
-     */
-    if(elapsed >= 4.0){
-        rect.x += 0.25;
-        rect.y -= 0.25;
-    }
+    previousTime = timestamp;
     /**
      * set direction
      */
     rect.dir = rect.calcDirection();
     /**
+     * set velocity
+     */
+    rect.v = {mag: 2.5, theta: 45};
+    /**
+     * update rect
+     */
+    rect.updateRect(function(self){
+        /**
+         * set boundaries
+         */
+        if((self.C.y >= canvas.height)){self.ay = -2;}
+        else if(self.A.y <= 0){self.ay = 6;}
+        if(self.B.x >= canvas.width){self.ax = -2;}
+        else if(self.A.x <= 0){self.ax = 1;}
+    });
+    /**
      * request animation
      */
-    //requestAnimationFrame(draw);
+    requestAnimationFrame(draw);
 }
 /**
  * run
  */
 requestAnimationFrame(draw);
-
-/**
- * test getter setter
- */
-/*
-class Person {
-    constructor(fname, lname){
-        this.fname  = fname;
-        this.lname  = lname;
-        this.num    = null;
-    }
-    get fullName(){
-        console.log('SET fullName');
-        return `${this.fname} ${this.lname}`;
-    }
-    get root(){
-        console.log('GET root');
-        return Math.sqrt(this.num);
-    }
-    set root(value){
-        console.log('SET Root: this.num defined');
-        this.num = Math.pow(value, 2);
-    }
-}
-let gemi    = new Person('Gemini', 'Naatjes');
-gemi.num    = 25;
-gemi.root;
-gemi.root   = 4;
-*/
