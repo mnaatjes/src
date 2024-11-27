@@ -409,6 +409,10 @@ class Rectangle {
     /*----------------------------------------------------------*/
     /**
      * @name isInside
+     * @memberof Rectangle
+     * @param {Number} x x coordinate of point
+     * @param {Number} y y coordinate of point
+     * @returns {Boolean} true = contains; false = outside
      */
     /*----------------------------------------------------------*/
     isInside(x, y){

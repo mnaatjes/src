@@ -36,22 +36,13 @@ console.log(ctx);
 /**
  * quadtree
  */
-const quad = new Quadtree(canvas.width, canvas.height);
-/**
- * test rectangle
- */
-const rect = new CanvasRect(10, 10, 20, 20);
+const quad = new Quadtree(canvas);
 /**
  * set start time
  * set previous time
  */
 const startTime     = parseFloat(performance.now().toFixed(4));
 let previousTime    = startTime;
-/**
- * rect properties
- */
-rect.fillColor      = 'red';
-rect.strokeColor    = 'black';
 /**
  * @name draw
  * @type {Function}
@@ -70,43 +61,19 @@ function draw(timestamp){
      */
     let deltaTime   = timestamp - previousTime;
     let elapsedTime = parseFloat(((timestamp - startTime) * 0.001).toFixed(4));
-    //console.log(`ELAPSED: ${elapsedTime}`);
+    console.log(`ELAPSED: ${elapsedTime}`);
     /**
      * clear canvas
      */
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     /**
-     * draw rect
-     */
-    rect.drawRect(ctx);
-    /**
      * update previous
      */
     previousTime = timestamp;
     /**
-     * set direction
-     */
-    rect.dir = rect.calcDirection();
-    /**
-     * set velocity
-     */
-    rect.v = {mag: 2.5, theta: 45};
-    /**
-     * update rect
-     */
-    rect.updateRect(function(self){
-        /**
-         * set boundaries
-         */
-        if((self.C.y >= canvas.height)){self.ay = -2;}
-        else if(self.A.y <= 0){self.ay = 6;}
-        if(self.B.x >= canvas.width){self.ax = -2;}
-        else if(self.A.x <= 0){self.ax = 1;}
-    });
-    /**
      * request animation
      */
-    requestAnimationFrame(draw);
+    //requestAnimationFrame(draw);
 }
 /**
  * run
