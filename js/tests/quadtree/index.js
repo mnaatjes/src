@@ -34,6 +34,10 @@ canvas.D = {x: 0, y: canvas.height};
 const ctx = canvas.getContext('2d');
 console.log(ctx);
 /**
+ * quadtree
+ */
+const quad = new Quadtree(canvas.width, canvas.height);
+/**
  * test rectangle
  */
 const rect = new CanvasRect(10, 10, 20, 20);
