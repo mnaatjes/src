@@ -38,10 +38,6 @@ console.log(ctx);
  */
 const rect = new CanvasRect(10, 10, 20, 20);
 /**
- * test bricks
- */
-const bricks = new Bricks(3, 5, canvas.width, canvas.height);
-/**
  * set start time
  * set previous time
  */
@@ -79,10 +75,6 @@ function draw(timestamp){
      * draw rect
      */
     rect.drawRect(ctx);
-    /**
-     * draw bricks
-     */
-    bricks.drawBricks(ctx);
     /**
      * update previous
      */
