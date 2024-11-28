@@ -13,6 +13,19 @@
 
 /*----------------------------------------------------------*/
 /**
+ * @name randNum
+ * @type {Function}
+ * @memberof UtilsMain
+ * @param {Number} min
+ * @param {Number} max
+ * @returns {Number} between min and max, random
+ */
+/*----------------------------------------------------------*/
+function randNum(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+/*----------------------------------------------------------*/
+/**
  * @name getGCF
  * @type {Function}
  * @memberof UtilsMain

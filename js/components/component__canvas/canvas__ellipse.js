@@ -54,7 +54,7 @@ class CanvasEllipse extends Ellipse{
          * determine type of ellipse
          * for ellipse where a > b
          */
-        if(this.a > this.b){
+        if(this.a >= this.b){
             /**
              * determine origin
              * origin at (x, y)

@@ -32,11 +32,17 @@ canvas.D = {x: 0, y: canvas.height};
  * set up context
  */
 const ctx = canvas.getContext('2d');
-console.log(ctx);
+/**
+ * Quadtree Constants
+ */
+const capacity          = 1;
+const boundary          = new CanvasRect(0, 0, canvas.width, canvas.height);
+boundary.strokeColor    = 'red';
 /**
  * quadtree
  */
-const quad = new Quadtree(canvas);
+const quad = new Quadtree(boundary, capacity);
+let p = new Point(100, 100);
 /**
  * set start time
  * set previous time
@@ -66,6 +72,20 @@ function draw(timestamp){
      * clear canvas
      */
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    /**
+     * render quadtree
+     */
+    let maxW    = canvas.width - 5;
+    let maxH    = canvas.height - 5;
+    let count   = 72;
+    /**
+     * loop over count and insert points
+     */
+    for(let i = 0; i < count; i++){
+        quad.insert(new Point(randNum(5, maxW), randNum(5, maxH)), ctx);
+    }
+    quad.renderTree(ctx);
+    console.log(quad);
     /**
      * update previous
      */

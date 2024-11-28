@@ -408,6 +408,36 @@ class Rectangle {
     }
     /*----------------------------------------------------------*/
     /**
+     * @name contains
+     * @type {Method}
+     * @memberof Rectangle
+     * @param {Number} x
+     * @param {Number} y
+     * @returns {Boolean}
+     */
+    /*----------------------------------------------------------*/
+    contains(x, y){
+        /**
+         * check both x and y are within the sides of the rectangle
+         */
+        if(
+            (x >= this.x - this.width) && (x < this.x + this.width)
+            &&
+            (y >= this.y - this.height) && (y < this.y + this.height)
+        ){
+            /**
+             * point lies inside rect
+             */
+            return true;
+        } else {
+            /**
+             * point is outside rect
+             */
+            return false;
+        }
+    }
+    /*----------------------------------------------------------*/
+    /**
      * @name isInside
      * @memberof Rectangle
      * @param {Number} x x coordinate of point
