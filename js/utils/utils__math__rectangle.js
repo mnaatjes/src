@@ -420,18 +420,37 @@ class Rectangle {
         /**
          * check both x and y are within the sides of the rectangle
          */
+        return  x >= this.x &&
+                x <= this.x + this.width &&
+                y >= this.y &&
+                y <= this.y + this.height;
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name intersects
+     * @type {Method}
+     * @memberof Rectangle
+     * @param {} boundary
+     * @description collision rect to rect
+     */
+    /*----------------------------------------------------------*/
+    intersects(boundary){
+        /**
+         * set properties for boundary
+         */
         if(
-            (x >= this.x - this.width) && (x < this.x + this.width)
-            &&
-            (y >= this.y - this.height) && (y < this.y + this.height)
+            (this.A.x < boundary.C.x) &&
+            (this.C.x > boundary.A.x) &&
+            (this.A.y < boundary.C.y) &&
+            (this.C.y > boundary.A.y)
         ){
             /**
-             * point lies inside rect
+             * intersecting
              */
             return true;
         } else {
             /**
-             * point is outside rect
+             * non-intersecting
              */
             return false;
         }

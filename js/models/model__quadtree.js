@@ -68,6 +68,7 @@ class Quadtree {
          * return false
          * 
          */
+        //console.log(this.boundary.contains(point.x, point.y));
         if(!this.boundary.contains(point.x, point.y)){
             return false;
         }
@@ -76,7 +77,7 @@ class Quadtree {
          * if length is less than capacity: insert
          */
         if(this.points.length < this.capacity){
-            this.points.push(new CanvasEllipse(5, 5, point.x, point.y));
+            this.points.push(new CanvasRect(point.x, point.y, 5, 5));
             return true;
         } else {
             /**
@@ -167,10 +168,57 @@ class Quadtree {
      * @name query
      * @type {Method}
      * @memberof Quadtree
+     * @param {Number} range
+     * @param {Array} found
      * @description locate a point in a particular range
      */
     /*----------------------------------------------------------*/
-    query(){}
+    query(range, found){
+        /**
+         * check if points are in range
+         */
+        if(!range.intersects(this.boundary)){
+            /**
+             * no points in range
+             */
+            return false;
+        } else {
+            /**
+             * search tree array for points
+             */
+            for(let i = 0; i < this.points.length; i++){
+                /**
+                 * determine if range(root) contains point
+                 */
+                let point = this.points[i];
+                if(range.contains(point.x, point.y)){
+                    /**
+                     * add to found arr
+                     * if it doesnt already exist in arr
+                     */
+                    if(!found.includes(point)){
+                        found.push(point);
+                    }
+                }
+                /**
+                 * determine if range(child) contains point
+                 */
+                if(this.divided === true){
+                    /**
+                     * call nested query
+                     */
+                    this.northeast.query(range, found);
+                    this.northwest.query(range, found);
+                    this.southeast.query(range, found);
+                    this.southwest.query(range, found);
+                }
+            }
+        }
+        /**
+         * return found arr
+         */
+        return found;
+    }
     /*----------------------------------------------------------*/
     /**
      * @name display
@@ -192,8 +240,9 @@ class Quadtree {
             /**
              * draw each point as an ellipse
              */
-            this.points[i].fillColor = 'red';
-            this.points[i].drawEllipse(ctx);
+            this.points[i].fillColor    = '#333';
+            this.points[i].strokeColor  = '#000';
+            this.points[i].drawRect(ctx);
         }
         /**
          * render child nodes
@@ -202,11 +251,25 @@ class Quadtree {
             /**
              * render all quadrants
              */
+            //console.error('Render Quadrants');
             this.northeast.renderTree(ctx);
             this.northwest.renderTree(ctx);
             this.southwest.renderTree(ctx);
             this.southeast.renderTree(ctx);
         }
+        /**
+         * render range
+         */
+        /*
+        let range           = new CanvasRect(50, 50, 200, 200);
+        range.strokeColor   = 'blue';
+        let records         = [];
+        records             = this.query(range, records);
+        if(records.length > 0){
+            console.log(records);
+        }
+        range.drawRect(ctx);
+        */
     }
 }
 
