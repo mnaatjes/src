@@ -42,42 +42,12 @@ boundary.strokeColor    = 'red';
  * quadtree
  */
 const quad = new Quadtree(boundary, capacity);
-quad.insert(new Point(100, 25), ctx);
-quad.insert(new Point(25, 25), ctx);
-quad.insert(new Point(425, 25), ctx);
-quad.insert(new Point(125, 25), ctx);
-/**
- * Capacity Reached
- * Points arr reset
- * tree subdivided
- */
-quad.insert(new Point(125, 45), ctx);
-quad.insert(new Point(80, 45), ctx);
-quad.insert(new Point(180, 105), ctx);
-/**
- * Capacity Reached
- * Points arr reset
- * tree subdivided
- */
-quad.insert(new Point(98, 242), ctx);
-quad.insert(new Point(45, 260), ctx);
-quad.insert(new Point(10, 400), ctx);
-/**
- * test query
- */
-let rangeW = canvas.width/2;
-let rangeH = canvas.height/2;
-const rangeRect         = new CanvasRect(0, 0, rangeW, rangeH);
-rangeRect.strokeColor   = 'green';
-let result = quad.query(rangeRect, []);
-console.log(result);
 /**
  * generate points
  */
-/*
 let maxW    = canvas.width - 5;
 let maxH    = canvas.height - 5;
-let count   = 72;
+let count   = 125;
 let points  = [];
 for(let i = 0; i < count; i++){
     points.push(new Point(randNum(5, maxW), randNum(5, maxH)));
@@ -85,10 +55,19 @@ for(let i = 0; i < count; i++){
 /**
  * insert into quadtree
  */
-/*
+
 for(let i = 0; i < count; i++){
     quad.insert(points[i], ctx);
 }
+/**
+ * test query
+ */
+let rangeW = canvas.width/2;
+let rangeH = canvas.height/2;
+const rangeRect         = new CanvasRect(0, 0, rangeW, rangeH);
+rangeRect.strokeColor   = 'yellow';
+let result = quad.query(rangeRect, []);
+console.log(result);
 /**
  * set start time
  * set previous time
