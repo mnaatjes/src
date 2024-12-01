@@ -64,8 +64,8 @@ for(let i = 0; i < count; i++){
  */
 let rangeW = canvas.width/2;
 let rangeH = canvas.height/2;
-const rangeRect         = new CanvasRect(0, 0, rangeW, rangeH);
-rangeRect.strokeColor   = 'yellow';
+const rangeRect         = new CanvasRect(100, 200, 50, 50);
+rangeRect.strokeColor   = 'black';
 let result = quad.query(rangeRect, []);
 console.log(result);
 /**
