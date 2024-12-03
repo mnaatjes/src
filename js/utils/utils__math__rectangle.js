@@ -147,8 +147,6 @@ class Rectangle {
      * @type {Number}
      * @memberof Rectangle
      * @param {Number} value direction in degrees
-     * @property {Number} ix
-     * @property {Number} iy
      * @property {Number} px
      * @property {Number} py
      * @property {Number} prevDir
@@ -270,7 +268,7 @@ class Rectangle {
     get deltaY(){return this.cy - this.py;}
     /*----------------------------------------------------------*/
     /**
-     * @name velo velocity
+     * @name v velocity
      * @type {Object}
      * @memberof Rectangle
      */

@@ -26,7 +26,7 @@ class CanvasEllipse extends Ellipse{
     }
     /*----------------------------------------------------------*/
     /**
-     * @name drawRect
+     * @name drawEllipse
      * @type {Method}
      * @memberof CanvasEllipse
      * @param {Object} ctx
