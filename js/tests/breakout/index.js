@@ -31,7 +31,7 @@ const ctx = canvas.getContext('2d');
 const capacity          = 2;
 const boundary          = new CanvasRect(0, 0, canvas.width, canvas.height);
 boundary.strokeColor    = 'red';
-const quad              = new Quadtree(boundary, capacity);
+//const quad              = new Quadtree(boundary, capacity);
 /**
  * circle
  */
@@ -67,10 +67,10 @@ function draw(timestamp){
     /**
      * render circle
      */
+    ball.x += 0.000005;
+    ball.y += 0.0000005;
     ball.drawCircle(ctx);
-    ball.v  = {mag: 1.5, theta: 45};
-    ball.update();
-    console.log(ball.displacement);
+    ball.update(elapsedTime);
     /**
      * update previous
      */
@@ -78,7 +78,7 @@ function draw(timestamp){
     /**
      * request animation
      */
-    //requestAnimationFrame(draw);
+    requestAnimationFrame(draw);
 }
 /**
  * run

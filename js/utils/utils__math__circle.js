@@ -18,20 +18,21 @@
 /*----------------------------------------------------------*/
 class Circle {
     constructor(h, k, r){
-        this.h  = h; // x pos center
-        this.k  = k; // y pos center
+        this.x  = h; // x pos center
+        this.y  = k; // y pos center
         this.r  = r; // radius
-        this.ih = h; // initial h pos
-        this.ik = k; // initial k pos
-        this.ph = h; // previous h pos
-        this.pk = k; // previous k pos
-        this.vh = 0; // velocity h
-        this.vk = 0; // velicity k
+        this.ix = h; // initial h pos
+        this.iy = k; // initial k pos
+        this.px = h; // previous h pos
+        this.py = k; // previous k pos
+        this.velocity = {magnitude: 2, direction: 45};      // velocity
+        this.vx = 0.0; // velocity h
+        this.vy = 0.0; // velicity k
         this.prevDir;
         this.distances = [];
-        this.ah = 1; // acceleration for h
-        this.ak = 1; // acceleration for k
-        this.mass = 1.0; // mass of circle
+        this.ax = 0.0; // acceleration for h
+        this.ay = 0.0; // acceleration for k
+        this.mass = 8.0; // mass of circle
     }
     /*----------------------------------------------------------*/
     /**
@@ -59,161 +60,20 @@ class Circle {
     get d(){return parseFloat((2 * this.r).toFixed(4));}
     /*----------------------------------------------------------*/
     /**
-     * @name calcDirection
-     * @type {Function}
-     * @memberof Rectangle
-     * @property {Number} h center x pos
-     * @property {Number} k center y pos
+     * @name dx delta x
+     * @memberof Circle
+     * @description
      */
     /*----------------------------------------------------------*/
-    calcDirection(){return parseFloat((Math.atan2(this.h, this.k) * (180 / Math.PI)).toFixed(2));}
+    get dx(){return this.x - this.px;}
     /*----------------------------------------------------------*/
     /**
-     * @name dir direction
-     * @type {Number}
-     * @memberof Rectangle
-     * @param {Number} value direction in degrees
-     * @property {Number} ph
-     * @property {Number} pk
-     * @property {Number} prevDir
-     * @description direction from origin (0,0) of canvas
+     * @name dy delta y
+     * @memberof Circle
+     * @description
      */
     /*----------------------------------------------------------*/
-    get dir(){return this.calcDirection();}
-    set dir(value){
-        /**
-         * initial direction
-         */
-        if(this.prevDir === undefined){
-            /**
-             * define previous direction
-             */
-            this.prevDir = value;
-        }
-        /**
-         * direction change
-         */
-        else if(this.prevDir !== value){
-            /**
-             * update previous direction
-             */
-            this.prevDir = value;
-            /**
-             * calculate distance from: current pos and previous pos
-             * push to distances
-             */
-            this.distances.push(this.dist);
-            /**
-             * update previous x, y pos
-             */
-            this.ph = this.h;
-            this.pk = this.k;
-        }
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * @name dist
-     * @type {Number}
-     * @memberof Rectangle
-     * @property {Number} ph previous center x pos
-     * @property {Number} pk previous center y pos
-     * @property {Number} h center x pos
-     * @property {Number} k center y pos
-     * @description represents the total PATH length traveled
-     *              no consideration of direction
-     * TODO:    Adapt to circle
-     *          Get px, py
-     */
-    /*----------------------------------------------------------*/
-    get dist(){return parseFloat(Math.sqrt(Math.pow(this.h - this.ph, 2) + Math.pow(this.k - this.pk, 2)).toFixed(4));}
-    /*----------------------------------------------------------*/
-    /**
-     * @name totalDist total distance
-     * @type {Number}
-     * @memberof Rectangle
-     * @property {Array} distances
-     * TODO:    Not calculating total!!
-     *          calculates distance from origin instead
-     */
-    /*----------------------------------------------------------*/
-    get totalDist(){
-        /**
-         * initial distance
-         * has no change in direction
-         */
-        if(this.distances.length === 0){
-            /**
-             * distance from start
-             * before direction change
-             */
-            return this.dist;
-        } else if(this.distances.length >= 1){
-            /**
-             * current distance
-             * plus recorded distances
-             */
-            return parseFloat((this.distances.reduce((acc, curr) => acc + curr, 0) + this.dist).toFixed(4));
-        }
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * @name deltaX change in x pos
-     * @type {Number}
-     * @memberof Rectangle
-     * @description change in x pos from previous center x to current center x
-     * TODO: Update for circle
-     */
-    /*----------------------------------------------------------*/
-    get deltaH(){return this.h - this.ph;}
-    /*----------------------------------------------------------*/
-    /**
-     * @name deltaY change in y pos
-     * @type {Number}
-     * @memberof Rectangle
-     * @description change in y pos from previous center y to current center y
-     * TODO: Update for circle
-     */
-    /*----------------------------------------------------------*/
-    get deltaK(){return this.k - this.pk;}
-    /*----------------------------------------------------------*/
-    /**
-     * @name v velocity
-     * @type {Object}
-     * @memberof Rectangle
-     */
-    /*----------------------------------------------------------*/
-    get v(){
-        /**
-         * if vx, vy undefined
-         */
-        if(this.vh === undefined && this.vk === undefined){
-            return {mag: 0, theta: this.dir};
-        } else {
-            /**
-             * calculate velocity from components
-             */
-            return {
-                mag: Math.sqrt(Math.pow(this.vh, 2) + Math.pow(this.vk, 2)),
-                theta: this.dir
-            };
-        }
-    }
-    set v(value){
-        /**
-         * set vx
-         */
-        this.vh = value.mag * Math.cos(value.theta * (Math.PI / 180));
-        /**
-         * set vy
-         */
-        this.vk = value.mag * Math.sin(value.theta * (Math.PI / 180));
-        /**
-         * set velocity of x, y
-         * TODO: THIS IS NOT CORRECT
-         */
-        this.h += this.vh * this.ah;
-        this.k += this.vk * this.ak;
-    }
+    get dy(){return this.y - this.py;}
     /*----------------------------------------------------------*/
     /**
      * @name update
@@ -225,20 +85,9 @@ class Circle {
     /*----------------------------------------------------------*/
     update(time){
         /**
-         * add acceleration to velocity 
-         * with each update
-         */
-        this.vh += this.ah;
-        this.vk += this.ak;
-        /**
          * calculate forces:
          * friction
          * gravity
-         */
-        /**
-         * calculate velocity:
-         * magnitude
-         * direction
          */
         /**
          * report displacement:
@@ -248,13 +97,50 @@ class Circle {
          * from previous x,y pos --> current x,y pos
          */
         this.displacement = {
-            magnitude: parseFloat((Math.sqrt(Math.pow(this.deltaH, 2) + Math.pow(this.deltaK, 2))).toFixed(4)),
-            angle: parseFloat((Math.atan2(this.deltaH, this.deltaK) * (180 / Math.PI)).toFixed(4))
+            magnitude: parseFloat((Math.sqrt(Math.pow(this.x - this.ix, 2) + Math.pow(this.y - this.iy, 2))).toFixed(4)),
+            direction: parseFloat((Math.atan2((this.y - this.iy), (this.x - this.ix)) * (180 / Math.PI)).toFixed(4))
         };
+        /**
+         * calculate velocity:
+         * magnitude
+         * direction
+         */
+        this.velocity = {
+            magnitude: parseFloat((Math.sqrt(Math.pow(this.dx, 2) + Math.pow(this.dy, 2))).toFixed(4)),
+            direction: parseFloat((Math.atan2(this.dy, this.dx) * (180 / Math.PI)).toFixed(4)),
+            average: parseFloat((this.displacement.magnitude / time).toFixed(4))
+        };
+        /**
+         * calculate velocity components:
+         * vx, vy
+         */
+        //this.vx = parseFloat((this.velocity.magnitude * Math.cos(this.velocity.direction)).toFixed(4));
+        //this.vy = parseFloat((this.velocity.magnitude * Math.sin(this.velocity.direction)).toFixed(4));
         /**
          * reset ph, pk
          */
-        this.ph = this.h;
-        this.pk = this.k;
+        this.px = this.x;
+        this.py = this.y;
+        /**
+         * set acceleration
+         */
+        this.mass = 90;
+        this.ax = 0.084 / this.mass;
+        this.ay = 0.12 / this.mass;
+        /**
+         * add acceleration
+         */
+        this.vx += (this.ax) * time;
+        this.vy += (this.ay) * time;
+        /**
+         * apply force
+         */
+        this.x  += this.vx;
+        this.y  += this.vy;
+        /**
+         * debugging
+         */
+        //console.log(this.velocity.magnitude);
+        //console.log(this.vy);
     }
 }

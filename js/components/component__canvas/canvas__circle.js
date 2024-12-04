@@ -53,7 +53,7 @@ class CanvasCircle extends Circle{
         /**
          * render circle
          */
-        ctx.arc(this.h, this.k, this.r, 0, 2 * Math.PI);
+        ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
         /**
          * render stroke
          * render fill
