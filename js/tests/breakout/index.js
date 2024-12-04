@@ -78,7 +78,7 @@ function draw(timestamp){
     /**
      * request animation
      */
-    requestAnimationFrame(draw);
+    //requestAnimationFrame(draw);
 }
 /**
  * run
