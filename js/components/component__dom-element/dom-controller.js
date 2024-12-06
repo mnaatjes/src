@@ -58,10 +58,12 @@ class ElementState {
     #states;
     #dataStates;
     #events;
-    #inputProperties
+    #inputProperties;
+    #elementAttributes;
     #pseudoClasses;
     #ariaAttributes;
     #type;
+    #stateMap;
     constructor(node){
         /**
          * @name node
@@ -156,6 +158,10 @@ class ElementState {
                 'animationend',
                 'animationiteration',
                 'animationstart'
+            ],
+            draggable: [
+                'dragstart',
+                'dragend'
             ]
         };
         /**
@@ -174,16 +180,17 @@ class ElementState {
             'target',
             'enabled',
             'disabled',
-            'checked'
+            'checked',
+            'empty'
         ];
         /**
-         * @name inputProperties
+         * @name elementAttributes
          * @type {Array}
          * @memberof ElementState
          * @private
          * @description
          */
-        this.#inputProperties = [
+        this.#elementAttributes = [
             'type',
             'name',
             'value',
@@ -203,7 +210,9 @@ class ElementState {
             'tabindex',
             'title', // tooltip
             'form',
-            'autofocus'
+            'autofocus',
+            'wrap',
+            'hidden'
         ];
         /**
          * @name ariaAttributes
@@ -254,6 +263,139 @@ class ElementState {
             'active',
             'inactive' // older
         ];
+        /**
+         * @name stateMap
+         * @type {Array}
+         * @memberof ElementState
+         * @namespace stateMap
+         * @private
+         * @depreciated
+         * @description
+         */
+        this.#stateMap = {
+            /**
+             * @name hidden
+             * @type {Object}
+             * @memberof stateMap
+             */
+            hidden: {
+                /**
+                 * @name true
+                 * @type {Object}
+                 * @memberof stateMap.hidden
+                 */
+                true: {
+                    elementAttributes: {hidden: null},
+                    pseudoClasses: 'empty',
+                    ariaAttributes: {'aria-hidden': true},
+                    classList: 'hidden',
+                    styles: {
+                        display: 'none',
+                        visibility: 'hidden'
+                    },
+                    dataState: 'hidden'
+                },
+                /**
+                 * @name false
+                 * @type {Object}
+                 * @memberof stateMap.hidden
+                 */
+                false: {
+                    elementAttributes: null,
+                    pseudoClasses: null,
+                    ariaAttributes: {'aria-hidden': false},
+                    classList: null,
+                    styles: {visibility: 'visible'},
+                    dataState: 'visible'
+                },
+                /**
+                 * @name children
+                 * @type {String | Array}
+                 * @memberof stateMap.hidden
+                 */
+                children: 'disabled',
+                /**
+                 * @name validTags
+                 * @type {Null | Object}
+                 * @memberof stateMap.hidden
+                 */
+                validTags: null
+            },
+            /**
+             * @name disabled
+             * @type {Object}
+             * @memberof stateMap
+             */
+            disabled: {
+                /**
+                 * @name true
+                 * @type {Object}
+                 * @memberof stateMap.disabled
+                 */
+                true: {},
+                /**
+                 * @name false
+                 * @type {Object}
+                 * @memberof stateMap.disabled
+                 */
+                false: {
+                    elementAttributes: {
+                        required: undefined,
+                        readonly: undefined,
+                        draggable: undefined,
+                        tabindex: undefined,
+                        title: undefined,
+                        form: undefined,
+                        autofocus: undefined,
+                        multiple: undefined
+                    },
+                    pseudoClasses: [
+                        'active',
+                        'hover',
+                        'focus',
+                        'target'
+                    ],
+                    ariaAttributes: {
+                        'aria-required': undefined,
+                        'aria-readonly': undefined,
+                        'aria-expanded': undefined,
+                        'aria-selected': undefined,
+                        'aria-autocomplete': undefined,
+                        'aria-haspopup': undefined,
+                        'aria-owns': undefined,
+                        'aria-controls': undefined,
+                        'aria-dropeffect': undefined,
+                        'aria-grabbed': undefined
+                    },
+                    classList: null,
+                    styles: null,
+                    dataState: 'enabled',
+                    /**
+                     * @name validTags
+                     * @type {Null | Object}
+                     * @memberof stateMap.disabled.false
+                     */
+                    validTags: {
+                        input: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
+                        textarea: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
+                        button: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
+                        select: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
+                        optgroup: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
+                        option: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
+                        fieldset: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
+                        legend: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
+                        label: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
+                        anchor: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}}
+                    }
+                },
+                /**
+                 * @name true
+                 * @type {String | Array}
+                 * @memberof stateMap.disabled
+                 */
+                children: ['active', 'listening']
+            }
+        }
     }
     /*----------------------------------------------------------*/
     /**
@@ -282,66 +424,7 @@ class ElementState {
      */
     /*----------------------------------------------------------*/
     #parseState(){
-        /**
-         * check if hidden
-         */
-        if(this.#hidden === true){
-            /**
-             * hidden
-             */
-            return 'hidden';
-        } else if(this.#hidden === false){
-            /**
-             * visible: check if disabled
-             */
-            if(this.#disabled === true){
-                /**
-                 * disabled
-                 */
-                return 'disabled';
-            /**
-             * enabled: check listening, active, error
-             */
-            } else if(this.#disabled === false){
-                /**
-                 * check listening && active
-                 */
-                if(this.#listening === true && this.#active === true){
-                    /**
-                     * return multi-state
-                     */
-                    return ['listening', 'active'];
-                }
-                /**
-                 * check listening
-                 */
-                else if(this.#listening === true && this.#active === false){
-                    /**
-                     * return listening
-                     */
-                        return 'listening';
-                }
-                /**
-                 * check active
-                 */
-                else if(this.#active === true && this.#listening === false){
-                    /**
-                     * return active
-                     */
-                    return 'active';
-                }
-                /**
-                 * failed checked for other states
-                 * element enabled
-                 */
-                return 'enabled';
-            /**
-             * enabled
-             */
-            } else {
-                return 'enabled';
-            }
-        }
+        
     }
     /*----------------------------------------------------------*/
     /**
