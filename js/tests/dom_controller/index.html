@@ -75,6 +75,15 @@
             margin-top: 0;
             color: tomato;
         }
+        input {
+            padding: 12px 24px;
+            margin: 12px;
+            outline: none;
+            border: 1px solid #999;
+            border-radius: 8px;
+        }
+        input:enabled {background-color: rgba(0, 255, 0, 0.2);}
+        input:invalid {color: tomato; border-color: tomato; background-color: rgba(255, 0, 0, 0.171);}
     </style>
   </head>
   <body>
@@ -89,9 +98,16 @@
         <a id="link--home" href="" aria-disabled="true">Aria Disabled</a>
         <a id="link--state" href="" data-state="">State Disabled</a>
         <a id="link--class" href="" class="disabled">Class Disabled</a>
+        <hr>
+        <a id="link--current" href="" aria-current="true">Aria Current</a>
+        <a id="current--state" href="" data-state="selected">State Current</a>
+        <a id="current--class" href="" class="banana selected">Class Current</a>
     </header>
     <main>
         <section>
+            <article>
+                <input id="input--aria" type="email" placeholder="Aria Invalid" aria-invalid="true">
+            </article>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate magni est?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate magni est?</p>
