@@ -23,6 +23,13 @@ class DOMController {
          */
         this.node = node;
         /**
+         * @name events
+         * @type {Array}
+         * @memberof ElementState
+         * @desciption
+         */
+        this.node.events = [];
+        /**
          * @name state
          * @type {Object}
          * @memberof DOMController
@@ -34,686 +41,300 @@ class DOMController {
          * @memberof DOMController
          */
         /**
+         * @implements {initDOMController}
+         */
+        this.#initDOMController();
+        /**
          * debugging
          */
-        console.dir(this.node);
-        console.log(this.state.current);
     }
-}
-/*----------------------------------------------------------*/
-/**
- * @name ElementState
- * @type {Class}
- * @memberof Src.Components
- * @property {}
- * @description heirarchical state machine
- */
-/*----------------------------------------------------------*/
-class ElementState {
+    /*----------------------------------------------------------*/
     /**
-     * private properties
+     * @name initDOMController
+     * @type {Method}
+     * @memberof DOMController
+     * @private
+     * @description
      */
-    #node;
-    #validTags;
-    #states;
-    #dataStates;
-    #events;
-    #inputProperties;
-    #elementAttributes;
-    #pseudoClasses;
-    #ariaAttributes;
-    #type;
-    #stateMap;
-    constructor(node){
+    /*----------------------------------------------------------*/
+    #initDOMController(){
         /**
-         * @name node
-         * @type {HTMLElement}
-         * @memberof ElementState
-         * @private
-         * @description
+         * initialize listener methods
          */
-        this.#node = node;
-        /**
-         * @name states
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @description
-         */
-        this.#states = [
-            'disabled',
-            'hidden',
-            'active',
-            'listening'
+        this.#initListeners();
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name initListeners
+     * @property {Array} eventListeners
+     */
+    /*----------------------------------------------------------*/
+    #initListeners(){
+        let eventListeners = [
+            { type: 'abort', methodName: 'onAbort' },
+            { type: 'animationcancel', methodName: 'onAnimationCancel' },
+            { type: 'animationend', methodName: 'onAnimationEnd' },
+            { type: 'animationiteration', methodName: 'onAnimationIteration' },
+            { type: 'animationstart', methodName: 'onAnimationStart' },
+            { type: 'audioprocess', methodName: 'onAudioProcess' },
+            { type: 'autocomplete', methodName: 'onAutoComplete' },
+            { type: 'autocompleteerror', methodName: 'onAutoCompleteError' },
+            { type: 'beforeinput', methodName: 'onBeforeInput' },
+            { type: 'blur', methodName: 'onBlur' },
+            { type: 'canplay', methodName: 'onCanPlay' },
+            { type: 'canplaythrough', methodName: 'onCanPlayThrough' },
+            { type: 'change', methodName: 'onChange' },
+            { type: 'click', methodName: 'onClick' },
+            { type: 'close', methodName: 'onClose' },
+            { type: 'compositionend', methodName: 'onCompositionEnd' },
+            { type: 'compositionstart', methodName: 'onCompositionStart' },
+            { type: 'compositionupdate', methodName: 'onCompositionUpdate' },
+            { type: 'contextmenu', methodName: 'onContextMenu' },
+            { type: 'copy', methodName: 'onCopy' },
+            { type: 'cut', methodName: 'onCut' },
+            { type: 'dblclick', methodName: 'onDblClick' },
+            { type: 'drag', methodName: 'onDrag' },
+            { type: 'dragend', methodName: 'onDragEnd' },
+            { type: 'dragenter', methodName: 'onDragEnter' },
+            { type: 'dragexit', methodName: 'onDragExit' },
+            { type: 'dragleave', methodName: 'onDragLeave' },
+            { type: 'dragover', methodName: 'onDragOver' },
+            { type: 'dragstart', methodName: 'onDragStart' },
+            { type: 'drop', methodName: 'onDrop' },
+            { type: 'durationchange', methodName: 'onDurationChange' },
+            { type: 'emptied', methodName: 'onEmptied' },
+            { type: 'ended', methodName: 'onEnded' },
+            { type: 'error', methodName: 'onError' },
+            { type: 'focus', methodName: 'onFocus' },
+            { type: 'focusin', methodName: 'onFocusIn' },
+            { type: 'focusout', methodName: 'onFocusOut' },
+            { type: 'formdata', methodName: 'onFormData' },
+            { type: 'fullscreenchange', methodName: 'onFullScreenChange' },
+            { type: 'fullscreenerror', methodName: 'onFullScreenError' },
+            { type: 'gamepadconnected', methodName: 'onGamepadConnected' },
+            { type: 'gamepaddisconnected', methodName: 'onGamepadDisconnected' },
+            { type: 'gotpointercapture', methodName: 'onGotPointerCapture' },
+            { type: 'input', methodName: 'onInput' },
+            { type: 'invalid', methodName: 'onInvalid' },
+            { type: 'keydown', methodName: 'onKeyDown' },
+            { type: 'keypress', methodName: 'onKeyPress' },
+            { type: 'keyup', methodName: 'onKeyUp' },
+            { type: 'load', methodName: 'onLoad' },
+            { type: 'loadeddata', methodName: 'onLoadedData' },
+            { type: 'loadedmetadata', methodName: 'onLoadedMetadata' },
+            { type: 'loadend', methodName: 'onLoadEnd' },
+            { type: 'loadstart', methodName: 'onLoadStart' },
+            { type: 'lostpointercapture', methodName: 'onLostPointerCapture' },
+            { type: 'mousedown', methodName: 'onMouseDown' },
+            { type: 'mouseenter', methodName: 'onMouseEnter' },
+            { type: 'mouseleave', methodName: 'onMouseLeave' },
+            { type: 'mousemove', methodName: 'onMouseMove' },
+            { type: 'mouseout', methodName: 'onMouseOut' },
+            { type: 'mouseover', methodName: 'onMouseOver' },
+            { type: 'mouseup', methodName: 'onMouseUp' },
+            { type: 'paste', methodName: 'onPaste' },
+            { type: 'pause', methodName: 'onPause' },
+            { type: 'play', methodName: 'onPlay' },
+            { type: 'playing', methodName: 'onPlaying' },
+            { type: 'pointercancel', methodName: 'onPointerCancel' },
+            { type: 'pointerdown', methodName: 'onPointerDown' },
+            { type: 'pointerenter', methodName: 'onPointerEnter' },
+            { type: 'pointerleave', methodName: 'onPointerLeave' },
+            { type: 'pointermove', methodName: 'onPointerMove' },
+            { type: 'pointerout', methodName: 'onPointerOut' },
+            { type: 'pointerover', methodName: 'onPointerOver' },
+            { type: 'pointerup', methodName: 'onPointerUp' },
+            { type: 'progress', methodName: 'onProgress' },
+            { type: 'ratechange', methodName: 'onRateChange' },
+            { type: 'readystatechange', methodName: 'onReadyStateChange' },
+            { type: 'reset', methodName: 'onReset' },
+            { type: 'resize', methodName: 'onResize' },
+            { type: 'scroll', methodName: 'onScroll' },
+            { type: 'seeked', methodName: 'onSeeked' },
+            { type: 'seeking', methodName: 'onSeeking' },
+            { type: 'select', methodName: 'onSelect' },
+            { type: 'selectstart', methodName: 'onSelectStart' },
+            { type: 'show', methodName: 'onShow' },
+            { type: 'stalled', methodName: 'onStalled' },
+            { type: 'submit', methodName: 'onSubmit' },
+            { type: 'suspend', methodName: 'onSuspend' },
+            { type: 'timeupdate', methodName: 'onTimeUpdate' },
+            { type: 'toggle', methodName: 'onToggle' },
+            { type: 'touchcancel', methodName: 'onTouchCancel' },
+            { type: 'touchend', methodName: 'onTouchEnd' },
+            { type: 'touchmove', methodName: 'onTouchMove' },
+            { type: 'touchstart', methodName: 'onTouchStart' },
+            { type: 'transitioncancel', methodName: 'onTransitionCancel' },
+            { type: 'transitionend', methodName: 'onTransitionEnd' },
+            { type: 'transitionrun', methodName: 'onTransitionRun' },
+            { type: 'transitionstart', methodName: 'onTransitionStart' },
+            { type: 'volumechange', methodName: 'onVolumeChange' },
+            { type: 'waiting', methodName: 'onWaiting' },
+            { type: 'wheel', methodName: 'onWheel' }
         ];
         /**
-         * @name validTags
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @description
+         * loop event listeners array
          */
-        this.#validTags = [
-            'form',
-            'input',
-            'textarea',
-            'select',
-            'button',
-            'fieldset',
-            'legend',
-            'label',
-            'optgroup',
-            'option',
-            'a'
-        ];
-        /**
-         * @name events
-         * @type {Object}
-         * @memberof ElementState
-         * @private
-         * @description
-         */
-        this.#events = {
-            mouse: [
-                'click',
-                'dblclick',
-                'mousedown',
-                'mouseup',
-                'mouseover',
-                'mouseout',
-                'mousemove',
-                'contextmenu',
-                'wheel'
-            ],
-            keyboard: [
-                'keydown',
-                'keyup',
-                'keypress'
-            ],
-            form: [
-                'submit',
-                'reset',
-                'change',
-                'input',
-                'focus',
-                'blur',
-                'valid',
-                'invalid'
-            ],
-            window: [
-                'DOMContentLoaded',
-                'load',
-                'resize',
-                'scroll',
-                'unload',
-                'error'
-            ],
-            mobile: [
-                'touchstart',
-                'touchmove',
-                'touchend'
-            ],
-            animation: [
-                'transitionend',
-                'animationend',
-                'animationiteration',
-                'animationstart'
-            ],
-            draggable: [
-                'dragstart',
-                'dragend'
-            ]
-        };
-        /**
-         * @name pseudoClasses
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @description
-         */
-        this.#pseudoClasses = [
-            'active',
-            'hover',
-            'focus',
-            'visited',
-            'link',
-            'target',
-            'enabled',
-            'disabled',
-            'checked',
-            'empty'
-        ];
-        /**
-         * @name elementAttributes
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @description
-         */
-        this.#elementAttributes = [
-            'type',
-            'name',
-            'value',
-            'placeholder',
-            'maxlength',
-            'minlength',
-            'pattern',
-            'required',
-            'readonly',
-            'size',
-            'cols',
-            'rows',
-            'multiple',
-            'for',
-            'draggable',
-            'spellcheck',
-            'tabindex',
-            'title', // tooltip
-            'form',
-            'autofocus',
-            'wrap',
-            'hidden'
-        ];
-        /**
-         * @name ariaAttributes
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @description
-         */
-        this.#ariaAttributes = [
-            'aria-hidden',
-            'aria-label',
-            'aria-labelledby',
-            'aria-describedby',
-            'aria-required',
-            'aria-disabled',
-            'aria-readonly',
-            'aria-checked',
-            'aria-expanded',
-            'aria-selected',
-            'aria-pressed',
-            'aria-current',
-            'aria-invalid',
-            'aria-autocomplete',
-            'aria-haspopup',
-            'aria-live',
-            'aria-atomic',
-            'aria-relevant',
-            'aria-busy',
-            'aria-owns',
-            'aria-controls',
-            'aria-dropeffect',
-            'aria-grabbed'
-        ];
-        /**
-         * @name dataStates
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @depreciated
-         * @description
-         */
-        this.#dataStates = [
-            'enabled',
-            'disabled',
-            'hidden',
-            'visible', // older
-            'listening',
-            'active',
-            'inactive' // older
-        ];
-        /**
-         * @name stateMap
-         * @type {Array}
-         * @memberof ElementState
-         * @namespace stateMap
-         * @private
-         * @depreciated
-         * @description
-         */
-        this.#stateMap = {
+        eventListeners.forEach(listener => {
             /**
-             * @name hidden
-             * @type {Object}
-             * @memberof stateMap
+             * Assign ListenerMethods
+             * assign method name to Class
+             * declare method name as function
              */
-            hidden: {
+            DOMController.prototype[listener.methodName] = function(callback, options=undefined){
                 /**
-                 * @name true
-                 * @type {Object}
-                 * @memberof stateMap.hidden
+                 * @implements {#listen}
+                 * invoke listen method
                  */
-                true: {
-                    elementAttributes: {hidden: null},
-                    pseudoClasses: 'empty',
-                    ariaAttributes: {'aria-hidden': true},
-                    classList: 'hidden',
-                    styles: {
-                        display: 'none',
-                        visibility: 'hidden'
-                    },
-                    dataState: 'hidden'
-                },
-                /**
-                 * @name false
-                 * @type {Object}
-                 * @memberof stateMap.hidden
-                 */
-                false: {
-                    elementAttributes: null,
-                    pseudoClasses: null,
-                    ariaAttributes: {'aria-hidden': false},
-                    classList: null,
-                    styles: {visibility: 'visible'},
-                    dataState: 'visible'
-                },
-                /**
-                 * @name children
-                 * @type {String | Array}
-                 * @memberof stateMap.hidden
-                 */
-                children: 'disabled',
-                /**
-                 * @name validTags
-                 * @type {Null | Object}
-                 * @memberof stateMap.hidden
-                 */
-                validTags: null
-            },
+                this.#listen(listener.type, function(e){callback(e);}, options);
+            }
             /**
-             * @name disabled
-             * @type {Object}
-             * @memberof stateMap
+             * Assign Remove Listener Methods
+             * capitalize first letter
              */
-            disabled: {
+            let fChar   = listener.methodName.charAt(0).toUpperCase();
+            let word    = listener.methodName.slice(1);
+            let removeMethodName = 'remove' + fChar + word;
+            /**
+             * Assign Remove Listener Method
+             */
+            DOMController.prototype[removeMethodName] = function(){
                 /**
-                 * @name true
-                 * @type {Object}
-                 * @memberof stateMap.disabled
+                 * @implements {#removeListener}
+                 * invoke remove listener method
                  */
-                true: {},
-                /**
-                 * @name false
-                 * @type {Object}
-                 * @memberof stateMap.disabled
-                 */
-                false: {
-                    elementAttributes: {
-                        required: undefined,
-                        readonly: undefined,
-                        draggable: undefined,
-                        tabindex: undefined,
-                        title: undefined,
-                        form: undefined,
-                        autofocus: undefined,
-                        multiple: undefined
-                    },
-                    pseudoClasses: [
-                        'active',
-                        'hover',
-                        'focus',
-                        'target'
-                    ],
-                    ariaAttributes: {
-                        'aria-required': undefined,
-                        'aria-readonly': undefined,
-                        'aria-expanded': undefined,
-                        'aria-selected': undefined,
-                        'aria-autocomplete': undefined,
-                        'aria-haspopup': undefined,
-                        'aria-owns': undefined,
-                        'aria-controls': undefined,
-                        'aria-dropeffect': undefined,
-                        'aria-grabbed': undefined
-                    },
-                    classList: null,
-                    styles: null,
-                    dataState: 'enabled',
-                    /**
-                     * @name validTags
-                     * @type {Null | Object}
-                     * @memberof stateMap.disabled.false
-                     */
-                    validTags: {
-                        input: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
-                        textarea: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
-                        button: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
-                        select: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
-                        optgroup: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
-                        option: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
-                        fieldset: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
-                        legend: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
-                        label: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}},
-                        anchor: {elementAttributes: null, pseudoClasses: null, ariaAttributes: {}}
-                    }
-                },
-                /**
-                 * @name true
-                 * @type {String | Array}
-                 * @memberof stateMap.disabled
-                 */
-                children: ['active', 'listening']
+                this.#removeListener(listener.type);
+            }
+        });
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name listen
+     * @type {Method}
+     * @memberof DOMController
+     * @private
+     * @description
+     */
+    /*----------------------------------------------------------*/
+    #listen(type, listener, options){
+        /**
+         * @name search
+         * @type {Boolean}
+         * @memberof #listen
+         * @description search boolean for event
+         */
+        let search = false;
+        /**
+         * search events array for previous click event
+         */
+        if(this.node.events.length > 0){
+            if(this.node.events.find(item => item.type === type)){
+                search = true;
             }
         }
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * @name current
-     * @type {}
-     * @memberof ElementState
-     * @public
-     * @desciption super-state
-     */
-    /*----------------------------------------------------------*/
-    get current(){
-        console.log(this.#node);
         /**
-         * parse state
+         * check if event already exists
          */
-        return this.#parseState();
-    }
-    set current(value){}
-    /*----------------------------------------------------------*/
-    /**
-     * @name parseState
-     * @type {}
-     * @memberof ElementState
-     * @private
-     * @desciption
-     */
-    /*----------------------------------------------------------*/
-    #parseState(){
+        if(search){
+            console.error(`${type.toUpperCase()} already exists in ${this.constructor.name}`);
+            return;
+        } else {
+            /**
+             * execute addEventListener
+             */
+            this.node.addEventListener(type, listener, options);
+            /**
+             * push data to events array
+             */
+            this.node.events.push({type: type, listener: listener});
+            /**
+             * TODO: Update State#listening
+             */
+        }
         
     }
     /*----------------------------------------------------------*/
     /**
-     * @name disabled
-     * @type {Boolean}
-     * @memberof ElementState
+     * @name removeListener
+     * @type {Method}
+     * @memberof DOMController
      * @private
-     * @desciption
+     * @param {String} type
+     * @description
      */
     /*----------------------------------------------------------*/
-    get #disabled(){
+    #removeListener(type){
         /**
-         * check disabled / enabled
-         * validate tagName to qualify
+         * @name search
+         * @type {Boolean}
+         * @memberof #removeListener
+         * @description search boolean for event
          */
-        let isValidTag = this.#validTags.some(tag => tag.toLowerCase() === this.#node.tagName.toLowerCase());
-        if(isValidTag === true){
+        let search = false;
+        /**
+         * @name entry
+         * @type {Object}
+         * @memberof #removeListener
+         * @description entry data of specific event
+         */
+        let entry;
+        /**
+         * @name index
+         * @type {Object}
+         * @memberof #removeListener
+         * @description entry index in events array
+         */
+        let index;
+        /**
+         * search events array for previous click event
+         */
+        if(this.node.events.length > 0){
             /**
-             * valid input element tagName
-             * check disabled attribute
+             * find events entry for 'click'
              */
-            if(this.#node.hasAttribute('disabled') === true){
+            entry = this.node.events.find(item => item.type === type);
+            if(entry){
                 /**
-                 * set disabled
+                 * set search
                  */
-                return true;
-            /**
-             * check aria-disabled
-             */
-            } else if(this.#node.hasAttribute('aria-disabled')){
+                search = true;
                 /**
-                 * parse attribute value
+                 * set index
                  */
-                let attrib = this.#node.getAttribute('aria-disabled');
-                if(attrib === 'true'){
-                    return true;
-                } else {
-                    return false;
-                }
+                index = this.node.events.indexOf(entry);
             }
-            /**
-             * check classList for disabled className
-             */
-            else if(this.#node.classList.contains('disabled') === true){
-                /**
-                 * set disabled
-                 */
-                return true;
-            }
-            /**
-             * @depreciated check attributes for data-state
-             */
-            else if(this.#node.hasAttribute('data-state')){
-                /**
-                 * parse attribute value
-                 */
-                let attrib = this.#node.getAttribute('data-state');
-                if(attrib === 'disabled'){
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-            /**
-             * element does not match checks for disabled
-             * element enabled
-             * return false
-             */
-            return false;
-        } else {
-            /**
-             * element not valid tag to be disabled / enabled
-             * return false: can only be enabled
-             */
-            return false;
         }
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * @name hidden
-     * @type {Boolean}
-     * @memberof ElementState
-     * @private
-     * @desciption
-     */
-    /*----------------------------------------------------------*/
-    get #hidden(){
         /**
-         * grab computed style and display settings
-         */            
-        let css     = window.getComputedStyle(this.#node);
-        let style   = css.getPropertyValue('display');
-        let display = this.#node.style.display;
-        /**
-         * check computed style
+         * if seach true --> event exists
+         * remove event
          */
-        if(style === 'none'){
+        if(search){
             /**
-             * set hidden
+             * remove listener
              */
-            return true;
+            this.node.removeEventListener(entry.type, entry.listener);
+            /**
+             * remove events array entry
+             */
+            this.node.events.splice(index, 1);
+            /**
+             * TODO: Update State#listening
+             */
         /**
-         * check display settings
-         */
-        } else if(display === 'none'){
-            /**
-             * set hidden
-             */
-            return true;
-        /**
-         * check hidden attribute
-         */
-        } else if(this.#node.hasAttribute('hidden')){
-            /**
-             * init hidden:
-             * if hidden attrib present but style != none
-             * change style to display none
-             */
-            if(style !== 'none'){
-                this.#node.style.display = 'none';
-            }
-            /**
-             * set hidden
-             */
-            return true;
-        /**
-         * @depreciated check data-state
-         */
-        } else if(this.#node.hasAttribute('data-state')){
-            /**
-             * parse attribute value
-             */
-            if(this.#node.getAttribute('data-state') === 'hidden'){
-                /**
-                 * init hidden
-                 */
-                if(style !== 'none'){
-                    this.#node.style.display = 'none';
-                }
-                /**
-                 * set hidden
-                 */
-                return true;
-            } else {
-                /**
-                 * data-state value !== hidden
-                 */
-                return false;
-            }
-        /**
-         * check classList
-         */
-        } else if(this.#node.classList.contains('hidden') === true){
-            /**
-             * init hidden
-             */
-            if(style !== 'none'){
-                this.#node.style.display = 'none';
-            }
-            /**
-             * set disabled
-             */
-            return true;
-        /**
-         * check aria-hidden
-         */
-        } else if(this.#node.hasAttribute('aria-hidden')){
-            /**
-             * parse value
-             */
-            if(this.#node.getAttribute('aria-hidden') === 'true'){
-                /**
-                 * element hidden
-                 * init hidden
-                 */
-                if(style !== 'none'){
-                    this.#node.style.display = 'none';
-                }
-                /**
-                 * set disabled
-                 */
-                return true;
-            /**
-             * Aria = False
-             */
-            } else {
-                return false;
-            }
-        /**
-         * element NOT hidden
+         * event does NOT exist and cannot be removed
+         * display error
          */
         } else {
-            return false;
+            console.error(`${type.toUpperCase()} does not exists and cannot be removed`);
+            return;
         }
     }
     /*----------------------------------------------------------*/
     /**
-     * @name active
-     * @type {Boolean}
-     * @memberof ElementState
-     * @private
-     * @desciption  This is NOT the active pseudo-class (or clicking an element)
-     *              This is the state of an element being current or on the same page
-     */
-    /*----------------------------------------------------------*/
-    get #active(){
-        /**
-         * check aria-current
-         */
-        if(this.#node.hasAttribute('aria-current')){
-            if(this.#node.getAttribute('aria-current') === 'true'){
-                /**
-                 * element active
-                 */
-                return true;
-            } else {
-                /**
-                 * element not active
-                 */
-                return false;
-            }
-        }
-        /**
-         * check className
-         * active, current, selected
-         */
-        if(this.#node.classList.contains('active') === true){
-            /**
-             * element active class
-             */
-            return true;
-        } else if(this.#node.classList.contains('current') === true){
-            /**
-             * element current class
-             */
-            return true;
-        } else if(this.#node.classList.contains('selected') === true){
-            /**
-             * element selected class
-             */
-            return true;
-        }
-        /**
-         * @depreciated check data-state
-         * active, inactive
-         */
-        if(this.#node.hasAttribute('data-state')){
-            let dataState = this.#node.getAttribute('data-state');
-            if(dataState === 'active'){
-                /**
-                 * element active
-                 */
-                return true;
-            } else if(dataState === 'current'){
-                /**
-                 * element current
-                 */
-                return true;
-            } else if(dataState === 'selected'){
-                /**
-                 * element selected
-                 */
-                return true;
-            }
-            else {
-                /**
-                 * element inactive
-                 */
-                return false;
-            }
-        }
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * @name listening
-     * @type {Boolean}
-     * @memberof ElementState
-     * @private
-     * @desciption
-     */
-    /*----------------------------------------------------------*/
-    get #listening(){return false;}
-    /*----------------------------------------------------------*/
-    /**
-     * @name
-     * @type {Boolean}
-     * @memberof ElementState
-     * @private
-     * @desciption
+     * @name 
+     * @type {Method}
+     * @memberof DOMController
+     * @description
      */
     /*----------------------------------------------------------*/
 }

@@ -7,7 +7,7 @@
     <title>TEST: CANVASs</title>
     <style>
         body {
-            height: calc(100vh - 24px);
+            min-height: calc(100vh - 24px);
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
             color: #333;
@@ -84,6 +84,14 @@
         }
         input:enabled {background-color: rgba(0, 255, 0, 0.2);}
         input:invalid {color: tomato; border-color: tomato; background-color: rgba(255, 0, 0, 0.171);}
+        img {
+            object-fit: contain;
+            object-position: center;
+            width: 320px;
+            height: 240px;
+            border: 1px solid #999;
+            border-radius: 8px;
+        }
     </style>
   </head>
   <body>
@@ -93,7 +101,8 @@
         <hr>
         <button id="btn--home" type="button" disabled>Pseudo Disabled</button>
         <button id="btn--state" type="button" data-state="disabled">State Disabled</button>
-        <button id="btn--class" type="button" class="disabled">Class Disabled</button>        
+        <button id="btn--listen" type="button" >Listening</button>        
+        <button id="btn--test" type="button" >Testing</button>        
         <hr>
         <a id="link--home" href="" aria-disabled="true">Aria Disabled</a>
         <a id="link--state" href="" data-state="">State Disabled</a>
@@ -105,6 +114,9 @@
     </header>
     <main>
         <section>
+            <article style="text-align: center;">
+                <img src="../../../../KVCC/CIS174/mnaatjes_project_4/assets/jp.svg" alt="japan" id="img--test">
+            </article>
             <article>
                 <input id="input--aria" type="email" placeholder="Aria Invalid" aria-invalid="true">
             </article>
@@ -116,6 +128,8 @@
             </article>
         </section>
     </main>
+    <script id="script--test" src="../../models/model__planet.js"></script>
+    <script src="../../components/component__dom-element/dom-controller__state.js"></script>
     <script src="../../components/component__dom-element/dom-controller.js"></script>
     <script src="./index.js"></script>
   </body>

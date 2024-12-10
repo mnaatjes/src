@@ -1,33 +1,31 @@
+/*----------------------------------------------------------*/
+/**
+ * @file src/js/tests/dom_controller/index.js
+ */
+/*----------------------------------------------------------*/
 /**
  * @implements {DOMController}
  */
-const test = new DOMController(document.getElementById('input--aria'));
-
-/*----------------------------------------------------------*/
+//const test = new DOMController(document.getElementById('input--aria'));
 /**
- * @name FSMStateMap
- * @type {Class}
- * @memberof Src.Components
- * @property {}
- * @description heirarchical state machine
+ * @implements {ElementState}
  */
-/*----------------------------------------------------------*/
-class FSMStateMap {
-    constructor(states, inputs, functions, initialState, finalState){
-
-    }
-}
-/*----------------------------------------------------------*/
+//const state = new ElementState(document.createElement('div'));
+//const state = new ElementState(document.getElementById('header--home'));
+//const state = new ElementState(document.getElementById('btn--listen'));
+const ele   = new DOMController(document.getElementById('btn--listen'));
+ele.onMouseOver(function(){console.log('callback function works');});
+ele.onClick(function(e){console.log('click'); console.log(e);});
+ele.removeOnClick();
 /**
- * @name State
- * @type {Class}
- * @memberof Src.Components
- * @property {}
- * @description heirarchical state machine
+ * Debugging
  */
-/*----------------------------------------------------------*/
-class FSMState {
-    constructor(stateName){
-        
-    }
-}
+/*
+console.log(`--------SuperStates--------`);
+console.error(`Default: ${state.Default}`);
+console.error(`Init: ${state.Init}`);
+console.error(`Live: ${state.Live}`);
+console.error(`Error: ${state.Error}`);
+console.log(`--------ParentStates--------`);
+console.error(`Mounted: ${state.mounted}`);
+state.debugging();*/
