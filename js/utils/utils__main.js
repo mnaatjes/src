@@ -3,7 +3,8 @@
  * @file src/js/utils/utils__main.js
  * @author mnaatjes
  * @version 1.0.0
- * @date 11-15-2024
+ * @date    11-15-2024
+ * @updated 12-12-2024
  * @memberof Src.Utils
  * 
  * @name UtilsMain
@@ -76,7 +77,7 @@ function range(start, end) {
  * @type {Function}
  * @memberof UtilsMain
  * @param {Number | String | Float} num
- * @returns {Boolean} false
+ * @returns {Boolean}
  */
 /*----------------------------------------------------------*/
 function tryParseInt(num){
@@ -84,8 +85,29 @@ function tryParseInt(num){
      * try
      */
     try{
-        num = parseInt(num);
-        return Number.isInteger(num);
+        return Number.isInteger(parseInt(num));
+    /**
+     * error condition
+     */
+    } catch(error){
+        return false;
+    }
+}
+/*----------------------------------------------------------*/
+/**
+ * @name tryParseFloat
+ * @type {Function}
+ * @memberof UtilsMain
+ * @param {Number | String | Float} num
+ * @returns {Boolean}
+ */
+/*----------------------------------------------------------*/
+function tryParseFloat(num){
+    /**
+     * try
+     */
+    try{
+        return !isNaN(parseFloat(num));
     /**
      * error condition
      */
@@ -343,7 +365,195 @@ function findCenter(element){
      */
     return {cx: cx, cy: cy};
 }
-
+/*----------------------------------------------------------*/
+/**
+ * @name isNumber
+ * @type {Function}
+ * @memberof UtilsMain
+ * @param {String} value
+ * @returns {Boolean}
+ */
+/*----------------------------------------------------------*/
+function isNumber(value){
+    /**
+     * test if number
+     */
+    if(!isNaN(value) && isFinite(value)){
+        /**
+         * check float
+         */
+        try {
+            if(parseFloat(value)){
+                return true;
+            }
+        } catch (error) {
+            /**
+             * cannot parse number
+             */
+            return false;
+        }
+    } else {
+        /**
+         * result didnt pass test
+         * return: not a number
+         */
+        return false;
+    }
+}
+/*----------------------------------------------------------*/
+/**
+ * @name isBoolean
+ * @type {Function}
+ * @memberof UtilsMain
+ * @param {String} value
+ * @returns {Undefined | Boolean}
+ */
+/*----------------------------------------------------------*/
+function isBoolean(value){
+    /**
+     * check if already a boolean
+     */
+    if(typeof value === 'boolean'){
+        return true;
+    } else if(typeof value === 'number' || typeof value === 'object') {
+        return false;
+    } else if (typeof value === 'string') {
+        /**
+         * set to lower case
+         */
+        value = value.toLowerCase();
+        /**
+         * check if boolean
+         */
+        return (value === 'true' || value === 'false');
+    } else {
+        return undefined;
+    }
+}
+/*----------------------------------------------------------*/
+/**
+ * @name isString
+ * @type {Function}
+ * @memberof UtilsMain
+ * @param {String} value
+ * @returns {Boolean}
+ */
+/*----------------------------------------------------------*/
+function isString(value){
+    /**
+     * trim value of leading, ending whitespace
+     */
+    value = value.trim();
+    /**
+     * check length
+     * return boolean
+     */
+    return value.length >= 1 && typeof value === 'string';
+}
+/*----------------------------------------------------------*/
+/**
+ * @name tryJSONParse
+ * @type {Function}
+ * @memberof UtilsMain
+ * @param {String} value
+ * @returns {Boolean}
+ */
+/*----------------------------------------------------------*/
+function tryJSONParse(value){
+    /**
+     * check if string
+     */
+    if(typeof value === 'string'){
+        /**
+         * try JSON.parse
+         */
+        try {
+            /**
+             * parse and return true
+             */
+            JSON.parse(value);
+            return true;
+        } catch (error){
+            /**
+             * could not parse string
+             */
+            return false;
+        }
+    } else {
+        /**
+         * value is not a string
+         */
+        return false;
+    }
+}
+/*----------------------------------------------------------*/
+/**
+ * @name parseType
+ * @type {Function}
+ * @memberof UtilsMain
+ * @property {String} value
+ * @description
+ * @returns {Undefined | String} typeof value supplied
+ */
+/*----------------------------------------------------------*/
+function parseType(value){
+    /**
+     * check if number
+     */
+    if(!isNumber(value)){
+        /**
+         * check boolean
+         */
+        if(!isBoolean(value)){
+            /**
+             * check string
+             */
+            if(!isString(value)){
+                return undefined;
+            } else {
+                /**
+                 * check if stringified JSON value:
+                 */
+                if(tryJSONParse(value)){
+                    /**
+                     * parse json string
+                     */
+                    let json = JSON.parse(value);
+                    /**
+                     * check Array, Object
+                     */
+                    if(Array.isArray(json)){
+                        /**
+                         * return type
+                         */
+                        return 'array';
+                    } else {
+                        /**
+                         * return typeof
+                         */
+                        return typeof json;
+                    }
+                } else {
+                    /**
+                     * value is not a JSON string
+                     * return type
+                     */
+                    return 'string';
+                }
+            }
+        } else {
+            /**
+             * return type
+             */
+            return 'boolean';
+        }
+    } else {
+        /**
+         * return type
+         */
+        return 'number';
+    }
+}
 /*----------------------------------------------------------*/
 /**
  * @name 

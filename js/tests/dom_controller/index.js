@@ -6,20 +6,11 @@
 /**
  * @implements {DOMController}
  */
-//const test = new DOMController(document.getElementById('input--aria'));
-/**
- * @implements {ElementState}
- */
-//const state = new ElementState(document.createElement('div'));
-//const state = new ElementState(document.getElementById('header--home'));
-//const state = new ElementState(document.getElementById('btn--listen'));
-const ele   = new DOMController(document.getElementById('btn--listen'));
-ele.onMouseOver(function(){console.log('callback function works');});
-ele.onClick(function(e){console.log('click'); console.log(e);});
-ele.removeOnClick();
+const ele = new DOMController(document.getElementById('link--home'));
 /**
  * Debugging
  */
+//console.log(ele.state.current);
 /*
 console.log(`--------SuperStates--------`);
 console.error(`Default: ${state.Default}`);

@@ -12,6 +12,7 @@ class ElementState {
      * private properties
      */
     #node;
+    #aria;
     #validInputTags;
     #states;
     #dataStates;
@@ -19,7 +20,6 @@ class ElementState {
     #inputProperties;
     #elementAttributes;
     #pseudoClasses;
-    #ariaAttributes;
     #type;
     #stateMap;
     constructor(node){
@@ -32,18 +32,13 @@ class ElementState {
          */
         this.#node = node;
         /**
-         * @name states
-         * @type {Array}
+         * @name debug
+         * @type {HTMLElement}
          * @memberof ElementState
-         * @private
+         * @public
          * @description
          */
-        this.#states = [
-            'disabled',
-            'hidden',
-            'active',
-            'listening'
-        ];
+        this.debug = false;
         /**
          * @name validTags
          * @type {Array}
@@ -115,37 +110,14 @@ class ElementState {
             'hidden'
         ];
         /**
-         * @name ariaAttributes
-         * @type {Array}
+         * @name aria
+         * @type {Object}
          * @memberof ElementState
+         * @implements {AriaController}
          * @private
          * @description
          */
-        this.#ariaAttributes = [
-            'aria-hidden',
-            'aria-label',
-            'aria-labelledby',
-            'aria-describedby',
-            'aria-required',
-            'aria-disabled',
-            'aria-readonly',
-            'aria-checked',
-            'aria-expanded',
-            'aria-selected',
-            'aria-pressed',
-            'aria-current',
-            'aria-invalid',
-            'aria-autocomplete',
-            'aria-haspopup',
-            'aria-live',
-            'aria-atomic',
-            'aria-relevant',
-            'aria-busy',
-            'aria-owns',
-            'aria-controls',
-            'aria-dropeffect',
-            'aria-grabbed'
-        ];
+        this.#aria = new AriaController(node);
         /**
          * @name dataStates
          * @type {Array}
@@ -164,9 +136,16 @@ class ElementState {
             'inactive' // older
         ];
         /**
+         * @name _active
+         * @type {Null | Boolean}
+         * @memberof ElementState
+         * @description container value for active property
+         */
+        this._active = null;
+        /**
          * debugging
          */
-        //this.debugging();
+        console.log(this.#aria);
     }
     /*----------------------------------------------------------*/
     /**
@@ -177,21 +156,15 @@ class ElementState {
      * @desciption super-state
      */
     /*----------------------------------------------------------*/
-    get current(){}
-    set current(value){}
-    /*----------------------------------------------------------*/
-    /**
-     * @name parseState
-     * @type {}
-     * @memberof ElementState
-     * @private
-     * @desciption
-     */
-    /*----------------------------------------------------------*/
-    debugging(){
-        console.log(`--------Debugging()--------`);
-        console.log(this.#listening);
+    get current(){
+        return {
+            Init: this.Init,
+            Default: this.Default,
+            Live: this.Live,
+            Error: this.Error
+        };
     }
+    set current(value){}
     /*----------------------------------------------------------*/
     /**
      * @name Default
@@ -265,6 +238,14 @@ class ElementState {
         if(this.mounted !== true){
             return false;
         } else {
+            /**
+             * check listening, active
+             */
+            if(this.#listening && this.active === true){
+                return true;
+            } else {
+                return false;
+            }
         }
     }
     /*----------------------------------------------------------*/
@@ -356,14 +337,37 @@ class ElementState {
      * @desciption 
      */
     /*----------------------------------------------------------*/
-    get active(){}
+    get active(){
+        /**
+         * check #listening state
+         */
+        if(this.#listening === true && this._active == null){
+            return false;
+        } else {
+            /**
+             * return proxy value
+             */
+            return this._active;
+        }
+    }
     set active(value){
         /**
          * set subStates if undefined
          */
         if(value === undefined){
+            /**
+             * set listening
+             */
             this.#listening = undefined;
+            /**
+             * set proxy value
+             */
+            this._active = value;
         }
+        /**
+         * set proxy value
+         */
+        this._active = value;
     }
     /*----------------------------------------------------------*/
     /**
@@ -443,7 +447,16 @@ class ElementState {
             return false;
         }
     }
-    set #listening(value){}
+    set #listening(value){
+        /**
+         * set active proxy
+         */
+        if(value === false){
+            this._active = null;
+        } else if(value === true){
+            this._active = false;
+        }
+    }
     /*----------------------------------------------------------*/
     /**
      * @name loaded
@@ -588,4 +601,22 @@ class ElementState {
         }
     }
     set #success(value){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name update
+     * @type {Method}
+     * @memberof ElementState
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    update(){
+        /**
+         * Debugging
+         */
+        if(this.debug){
+            console.log(`State: Listening = ${this.#listening}`);
+            console.log(`State: Active = ${this.active}`);
+        }
+    }
 }

@@ -216,7 +216,7 @@ class DOMController {
      * @description
      */
     /*----------------------------------------------------------*/
-    #listen(type, listener, options){
+    #listen(type, callback, options){
         /**
          * @name search
          * @type {Boolean}
@@ -240,6 +240,25 @@ class DOMController {
             return;
         } else {
             /**
+             * define listener
+             */
+            let listener = (e) => {
+                /**
+                 * update Active State: true
+                 */
+                this.state.active = true;
+                this.state.update();
+                /**
+                 * append callback
+                 */
+                callback(e);
+                /**
+                 * update Active State: false
+                 */
+                this.state.active = false;
+                this.state.update();
+            }
+            /**
              * execute addEventListener
              */
             this.node.addEventListener(type, listener, options);
@@ -248,8 +267,9 @@ class DOMController {
              */
             this.node.events.push({type: type, listener: listener});
             /**
-             * TODO: Update State#listening
+             * Update State
              */
+            this.state.update();
         }
         
     }
@@ -318,8 +338,9 @@ class DOMController {
              */
             this.node.events.splice(index, 1);
             /**
-             * TODO: Update State#listening
+             * Update State
              */
+            this.state.update();
         /**
          * event does NOT exist and cannot be removed
          * display error
@@ -329,12 +350,4 @@ class DOMController {
             return;
         }
     }
-    /*----------------------------------------------------------*/
-    /**
-     * @name 
-     * @type {Method}
-     * @memberof DOMController
-     * @description
-     */
-    /*----------------------------------------------------------*/
 }
