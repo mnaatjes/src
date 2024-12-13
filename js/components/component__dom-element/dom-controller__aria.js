@@ -547,14 +547,19 @@ class AriaAttribute {
      * @name enable
      * @type {Method}
      * @memberof AriaAttribute
+     * @param {Boolean | Number | String}
      * @description
      */
     /*----------------------------------------------------------*/
-    enable(){
-        /**
-         * update enabled
-         */
-        this.enabled = true;
+    enable(value){
+      /**
+       * determine valid inputs
+       */
+      this.value = value;
+      /**
+       * update enabled
+       */
+      this.enabled = true;
     }
     /*----------------------------------------------------------*/
     /**
