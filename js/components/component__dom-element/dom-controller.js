@@ -361,9 +361,9 @@ class DOMController {
     /*----------------------------------------------------------*/
     enable(){
         /**
-         * set aria disabled
+         * set state disabled
          */
-        this.state.enabled = true;
+        this.state.disabled = false;
     }
     /*----------------------------------------------------------*/
     /**
@@ -374,7 +374,12 @@ class DOMController {
      * @desciption
      */
     /*----------------------------------------------------------*/
-    disable(){}
+    disable(){
+        /**
+         * set state disabled
+         */
+        this.state.disabled = true;
+    }
     /*----------------------------------------------------------*/
     /**
      * @name show
@@ -384,7 +389,11 @@ class DOMController {
      * @desciption
      */
     /*----------------------------------------------------------*/
-    show(){}
+    show(){
+        /**
+         * set state hidden
+         */
+    }
     /*----------------------------------------------------------*/
     /**
      * @name hide
@@ -394,7 +403,11 @@ class DOMController {
      * @desciption
      */
     /*----------------------------------------------------------*/
-    hide(){}
+    hide(){
+        /**
+         * set state hidden
+         */
+    }
     /*----------------------------------------------------------*/
     /**
      * @name activate

@@ -556,6 +556,392 @@ function parseType(value){
 }
 /*----------------------------------------------------------*/
 /**
+ * @name isMIMEType
+ * @type {Function}
+ * @memberof UtilsMain
+ * @namespace isMIMEType
+ * @description
+ * @param {String} value
+ * @property {}
+ * @returns {}
+ */
+/*----------------------------------------------------------*/
+function isMIMEType(value){
+    /**
+     * @name mimeTypes
+     * @type {Array}
+     * @memberof isMIMEType
+     */
+    let mimeTypes = [
+        {
+          ext: ".aac",
+          description: "AAC audio",
+          mimeType: "audio/aac"
+        },
+        {
+          ext: ".abw",
+          description: "AbiWord document",
+          mimeType: "application/x-abiword"
+        },
+        {
+          ext: ".apng",
+          description: "Animated Portable Network Graphics (APNG) image",
+          mimeType: "image/apng"
+        },
+        {
+          ext: ".arc",
+          description: "Archive document (multiple files embedded)",
+          mimeType: "application/x-freearc"
+        },
+        {
+          ext: ".avif",
+          description: "AVIF image",
+          mimeType: "image/avif"
+        },
+        {
+          ext: ".avi",
+          description: "AVI: Audio Video Interleave",
+          mimeType: "video/x-msvideo"
+        },
+        {
+          ext: ".azw",
+          description: "Amazon Kindle eBook format",
+          mimeType: "application/vnd.amazon.ebook"
+        },
+        {
+          ext: ".bin",
+          description: "Any kind of binary data",
+          mimeType: "application/octet-stream"
+        },
+        {
+          ext: ".bmp",
+          description: "Windows OS/2 Bitmap Graphics",
+          mimeType: "image/bmp"
+        },
+        {
+          ext: ".bz",
+          description: "BZip archive",
+          mimeType: "application/x-bzip"
+        },
+        {
+          ext: ".bz2",
+          description: "BZip2 archive",
+          mimeType: "application/x-bzip2"
+        },
+        {
+          ext: ".cda",
+          description: "CD audio",
+          mimeType: "application/x-cdf"
+        },
+        {
+          ext: ".csh",
+          description: "C-Shell script",
+          mimeType: "application/x-csh"
+        },
+        {
+          ext: ".css",
+          description: "Cascading Style Sheets (CSS)",
+          mimeType: "text/css"
+        },
+        {
+          ext: ".csv",
+          description: "Comma-separated values (CSV)",
+          mimeType: "text/csv"
+        },
+        {
+          ext: ".doc",
+          description: "Microsoft Word",
+          mimeType: "application/msword"
+        },
+        {
+          ext: ".docx",
+          description: "Microsoft Word (OpenXML)",
+          mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          ext: ".eot",
+          description: "MS Embedded OpenType fonts",
+          mimeType: "application/vnd.ms-fontobject"
+        },
+        {
+          ext: ".epub",
+          description: "Electronic publication (EPUB)",
+          mimeType: "application/epub+zip"
+        },
+        {
+          ext: ".gz",
+          description: "GZip Compressed Archive",
+          mimeType: "application/gzip. Note, Windows and macOS upload .gz files with the \nnon-standard MIME type application/x-gzip."
+        },
+        {
+          ext: ".gif",
+          description: "Graphics Interchange Format (GIF)",
+          mimeType: "image/gif"
+        },
+        {
+          ext: ".htm, .html",
+          description: "HyperText Markup Language (HTML)",
+          mimeType: "text/html"
+        },
+        {
+          ext: ".ico",
+          description: "Icon format",
+          mimeType: "image/vnd.microsoft.icon"
+        },
+        {
+          ext: ".ics",
+          description: "iCalendar format",
+          mimeType: "text/calendar"
+        },
+        {
+          ext: ".jar",
+          description: "Java Archive (JAR)",
+          mimeType: "application/java-archive"
+        },
+        {
+          ext: ".jpeg, .jpg",
+          description: "JPEG images",
+          mimeType: "image/jpeg"
+        },
+        {
+          ext: ".js",
+          description: "JavaScript",
+          mimeType: "text/javascript (Specifications: HTML and RFC 9239)"
+        },
+        {
+          ext: ".json",
+          description: "JSON format",
+          mimeType: "application/json"
+        },
+        {
+          ext: ".jsonld",
+          description: "JSON-LD format",
+          mimeType: "application/ld+json"
+        },
+        {
+          ext: ".mid, .midi",
+          description: "Musical Instrument Digital Interface (MIDI)",
+          mimeType: "audio/midi, audio/x-midi"
+        },
+        {
+          ext: ".mjs",
+          description: "JavaScript module",
+          mimeType: "text/javascript"
+        },
+        {
+          ext: ".mp3",
+          description: "MP3 audio",
+          mimeType: "audio/mpeg"
+        },
+        {
+          ext: ".mp4",
+          description: "MP4 video",
+          mimeType: "video/mp4"
+        },
+        {
+          ext: ".mpeg",
+          description: "MPEG Video",
+          mimeType: "video/mpeg"
+        },
+        {
+          ext: ".mpkg",
+          description: "Apple Installer Package",
+          mimeType: "application/vnd.apple.installer+xml"
+        },
+        {
+          ext: ".odp",
+          description: "OpenDocument presentation document",
+          mimeType: "application/vnd.oasis.opendocument.presentation"
+        },
+        {
+          ext: ".ods",
+          description: "OpenDocument spreadsheet document",
+          mimeType: "application/vnd.oasis.opendocument.spreadsheet"
+        },
+        {
+          ext: ".odt",
+          description: "OpenDocument text document",
+          mimeType: "application/vnd.oasis.opendocument.text"
+        },
+        {
+          ext: ".oga",
+          description: "Ogg audio",
+          mimeType: "audio/ogg"
+        },
+        {
+          ext: ".ogv",
+          description: "Ogg video",
+          mimeType: "video/ogg"
+        },
+        {
+          ext: ".ogx",
+          description: "Ogg",
+          mimeType: "application/ogg"
+        },
+        {
+          ext: ".opus",
+          description: "Opus audio in Ogg container",
+          mimeType: "audio/ogg"
+        },
+        {
+          ext: ".otf",
+          description: "OpenType font",
+          mimeType: "font/otf"
+        },
+        {
+          ext: ".png",
+          description: "Portable Network Graphics",
+          mimeType: "image/png"
+        },
+        {
+          ext: ".pdf",
+          description: "Adobe Portable Document Format (PDF)",
+          mimeType: "application/pdf"
+        },
+        {
+          ext: ".php",
+          description: "Hypertext Preprocessor (*Personal Home Page*)",
+          mimeType: "application/x-httpd-php"
+        },
+        {
+          ext: ".ppt",
+          description: "Microsoft PowerPoint",
+          mimeType: "application/vnd.ms-powerpoint"
+        },
+        {
+          ext: ".pptx",
+          description: "Microsoft PowerPoint (OpenXML)",
+          mimeType: "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        },
+        {
+          ext: ".rar",
+          description: "RAR archive",
+          mimeType: "application/vnd.rar"
+        },
+        {
+          ext: ".rtf",
+          description: "Rich Text Format (RTF)",
+          mimeType: "application/rtf"
+        },
+        {
+          ext: ".sh",
+          description: "Bourne shell script",
+          mimeType: "application/x-sh"
+        },
+        {
+          ext: ".svg",
+          description: "Scalable Vector Graphics (SVG)",
+          mimeType: "image/svg+xml"
+        },
+        {
+          ext: ".tar",
+          description: "Tape Archive (TAR)",
+          mimeType: "application/x-tar"
+        },
+        {
+          ext: ".tif, .tiff",
+          description: "Tagged Image File Format (TIFF)",
+          mimeType: "image/tiff"
+        },
+        {
+          ext: ".ts",
+          description: "MPEG transport stream",
+          mimeType: "video/mp2t"
+        },
+        {
+          ext: ".ttf",
+          description: "TrueType Font",
+          mimeType: "font/ttf"
+        },
+        {
+          ext: ".txt",
+          description: "Text, (generally ASCII or ISO 8859-*n*)",
+          mimeType: "text/plain"
+        },
+        {
+          ext: ".vsd",
+          description: "Microsoft Visio",
+          mimeType: "application/vnd.visio"
+        },
+        {
+          ext: ".wav",
+          description: "Waveform Audio Format",
+          mimeType: "audio/wav"
+        },
+        {
+          ext: ".weba",
+          description: "WEBM audio",
+          mimeType: "audio/webm"
+        },
+        {
+          ext: ".webm",
+          description: "WEBM video",
+          mimeType: "video/webm"
+        },
+        {
+          ext: ".webp",
+          description: "WEBP image",
+          mimeType: "image/webp"
+        },
+        {
+          ext: ".woff",
+          description: "Web Open Font Format (WOFF)",
+          mimeType: "font/woff"
+        },
+        {
+          ext: ".woff2",
+          description: "Web Open Font Format (WOFF)",
+          mimeType: "font/woff2"
+        },
+        {
+          ext: ".xhtml",
+          description: "XHTML",
+          mimeType: "application/xhtml+xml"
+        },
+        {
+          ext: ".xls",
+          description: "Microsoft Excel",
+          mimeType: "application/vnd.ms-excel"
+        },
+        {
+          ext: ".xlsx",
+          description: "Microsoft Excel (OpenXML)",
+          mimeType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          ext: ".xml",
+          description: "XML",
+          mimeType: "application/xml is recommended as of RFC 7303 (section 4.1), but text/xml \nis still used sometimes. You can assign a specific MIME type to a file with \n.xml extension depending on how its contents are meant to be interpreted. \nFor instance, an Atom feed is application/atom+xml, but application/xml \nserves as a valid default."
+        },
+        {
+          ext: ".xul",
+          description: "XUL",
+          mimeType: "application/vnd.mozilla.xul+xml"
+        },
+        {
+          ext: ".zip",
+          description: "ZIP archive",
+          mimeType: "application/zip. Note, Windows uploads .zip files with the non-standard \nMIME type application/x-zip-compressed."
+        },
+        {
+          ext: ".3gp",
+          description: "3GPP audio/video container",
+          mimeType: "video/3gpp; audio/3gpp if it doesn't contain video"
+        },
+        {
+          ext: ".3g2",
+          description: "3GPP2 audio/video container",
+          mimeType: "video/3gpp2; audio/3gpp2 if it doesn't contain video"
+        },
+        {
+          ext: ".7z",
+          description: "7-zip archive",
+          mimeType: "application/x-7z-compressed"
+        }
+    ];
+}
+/*----------------------------------------------------------*/
+/**
  * @name 
  * @type {Function}
  * @memberof UtilsMain

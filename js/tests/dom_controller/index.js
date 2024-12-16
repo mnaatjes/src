@@ -8,6 +8,9 @@
  */
 const ele = new DOMController(document.getElementById('link--home'));
 ele.enable();
+ele.disable();
+
+console.log(navigator.mimeTypes);
 /**
  * Debugging
  */

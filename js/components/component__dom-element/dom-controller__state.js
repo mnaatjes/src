@@ -13,6 +13,7 @@ class ElementState {
      */
     #node;
     #aria;
+    #HTML;
     #validInputTags;
     #states;
     #dataStates;
@@ -79,37 +80,6 @@ class ElementState {
             'empty'
         ];
         /**
-         * @name elementAttributes
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @description
-         */
-        this.#elementAttributes = [
-            'type',
-            'name',
-            'value',
-            'placeholder',
-            'maxlength',
-            'minlength',
-            'pattern',
-            'required',
-            'readonly',
-            'size',
-            'cols',
-            'rows',
-            'multiple',
-            'for',
-            'draggable',
-            'spellcheck',
-            'tabindex',
-            'title', // tooltip
-            'form',
-            'autofocus',
-            'wrap',
-            'hidden'
-        ];
-        /**
          * @name aria
          * @type {Object}
          * @memberof ElementState
@@ -118,6 +88,15 @@ class ElementState {
          * @description
          */
         this.#aria = new AriaController(node);
+        /**
+         * @name HTML
+         * @type {Object}
+         * @memberof ElementState
+         * @implements {HTMLAttributesController}
+         * @private
+         * @description
+         */
+        this.#HTML = new HTMLAttributesController(node);
         /**
          * @name dataStates
          * @type {Array}
@@ -179,7 +158,7 @@ class ElementState {
         /**
          * check mounted
          */
-        if(this.mounted !== true){
+        if(this.#mounted !== true){
             return false;
         } else {
             /**
@@ -215,7 +194,7 @@ class ElementState {
         /**
          * check mounted
          */
-        if(this.mounted === true){
+        if(this.#mounted === true){
             return false;
         } else {
             return true;
@@ -235,7 +214,7 @@ class ElementState {
         /**
          * check mounted
          */
-        if(this.mounted !== true){
+        if(this.#mounted !== true){
             return false;
         } else {
             /**
@@ -262,7 +241,7 @@ class ElementState {
         /**
          * check mounted
          */
-        if(this.mounted !== true){
+        if(this.#mounted !== true){
             return false;
         } else {
             /**
@@ -285,7 +264,7 @@ class ElementState {
      * @desciption 
      */
     /*----------------------------------------------------------*/
-    get mounted(){
+    get #mounted(){
         /**
          * @implements {element.isConnected}
          * @description checks to see if supplied node is connected to dom
@@ -294,7 +273,7 @@ class ElementState {
          */
         return this.#node.isConnected;
     }
-    set mounted(value){
+    set #mounted(value){
         /**
          * mounted value false
          */
@@ -323,8 +302,8 @@ class ElementState {
          * set subStates if undefined
          */
         if(value === undefined){
-            this.#hidden    = undefined;
-            this.#disabled  = undefined;
+            this.hidden    = undefined;
+            this.disabled  = undefined;
         }
     }
     /*----------------------------------------------------------*/
@@ -399,8 +378,30 @@ class ElementState {
      * @desciption 
      */
     /*----------------------------------------------------------*/
-    get #disabled(){}
-    set #disabled(value){}
+    get disabled(){
+        /**
+         * check attribute
+         */
+        /**
+         * check dataState
+         */
+        /**
+         * check pseudo-class
+         */
+    }
+    set disabled(value){
+        if(value === false){
+            /**
+             * enabled
+             */
+            this.#aria.disabled.add(false);
+        } else if(value === true){
+            /**
+             * disabled
+             */
+            this.#aria.disabled.add(true);
+        }
+    }
     /*----------------------------------------------------------*/
     /**
      * @name hidden
@@ -411,8 +412,8 @@ class ElementState {
      * @desciption
      */
     /*----------------------------------------------------------*/
-    get #hidden(){}
-    set #hidden(value){}
+    get hidden(){}
+    set hidden(value){}
     /*----------------------------------------------------------*/
     /**
      * @name listening
@@ -471,7 +472,7 @@ class ElementState {
         /**
          * check mounting
          */
-        if(this.mounted === true){
+        if(this.#mounted === true){
             /**
              * check valid tags
              */
@@ -543,7 +544,7 @@ class ElementState {
         /**
          * check mounting
          */
-        if(this.mounted === true){
+        if(this.#mounted === true){
             /**
              * check valid tags
              */
