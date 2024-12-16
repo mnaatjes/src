@@ -350,4 +350,69 @@ class DOMController {
             return;
         }
     }
+    /*----------------------------------------------------------*/
+    /**
+     * @name enable
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    enable(){
+        /**
+         * set aria disabled
+         */
+        this.state.enabled = true;
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name disable
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    disable(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name show
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    show(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name hide
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    hide(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name activate
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    activate(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name deactivate
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    deactivate(){}
 }

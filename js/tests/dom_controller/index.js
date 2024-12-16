@@ -7,6 +7,7 @@
  * @implements {DOMController}
  */
 const ele = new DOMController(document.getElementById('link--home'));
+ele.enable();
 /**
  * Debugging
  */
