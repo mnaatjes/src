@@ -7,10 +7,7 @@
  * @implements {DOMController}
  */
 const ele = new DOMController(document.getElementById('link--home'));
-ele.enable();
-ele.disable();
-
-console.log(navigator.mimeTypes);
+console.log(ele);
 /**
  * Debugging
  */
@@ -24,3 +21,25 @@ console.error(`Error: ${state.Error}`);
 console.log(`--------ParentStates--------`);
 console.error(`Mounted: ${state.mounted}`);
 state.debugging();*/
+/**
+ * @description DOMElement and DOMController Spec
+ */
+/*
+const element = new DOMElement(
+    document.getElementById(''), // dom element or create element
+    'id-of-element', // id of element --> search for or create
+    'h3' // search for or create
+);
+let params = {
+    id: 'string',
+    tagName: 'h3',
+    element: document.getElementById(),
+    styles: ['className', 'className'], // or styles: 'string'
+    parent: document.getElementById(), // or string-id
+    children: ['params', 'params']
+};
+*/
+/**
+ * test getDOMStructure
+ * returns object of DOM elements
+ */

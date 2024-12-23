@@ -15,26 +15,37 @@
  */
 /*----------------------------------------------------------*/
 class DOMController {
+    #node;
+    #type;
     constructor(node){
         /**
          * @name node
          * @type {HTMLElement}
          * @memberof DOMController
+         * @private
          */
-        this.node = node;
+        this.#node = node;
         /**
          * @name events
          * @type {Array}
          * @memberof ElementState
+         * @private
          * @desciption
          */
-        this.node.events = [];
+        this.#node.events = [];
+        /**
+         * @name type
+         * @type {HTMLElement}
+         * @memberof DOMController
+         * @private
+         */
+        this.#type = this.#node.tagName.toLowerCase();
         /**
          * @name state
          * @type {Object}
          * @memberof DOMController
          */
-        this.state = new ElementState(this.node);
+        this.state = new ElementState(this.#node);
         /**
          * @name 
          * @type {}
@@ -62,10 +73,121 @@ class DOMController {
          * initialize listener methods
          */
         this.#initListeners();
+        /**
+         * initialize attributes
+         */
+        this.initAttributes();
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name initAttributes
+     * @type {Method}
+     * @memberof DOMController
+     * @property {Array} ARIAAttributes
+     * @property {Array} HTMLAttributes
+     */
+    /*----------------------------------------------------------*/
+    initAttributes(node){
+        /**
+         * @name formatAttribute
+         * @type {Function}
+         * @memberof initAttributes
+         * @param {String} attribute
+         * @description
+         * @returns {String}
+         */
+        function formatAttribute(attribute){
+            /**
+             * determine if attribute is aria attribute
+             */
+            if(attribute.startsWith('aria')){
+                /**
+                 * seperator character
+                 * index of character after seperator
+                 * slice attribute and return string after seperator
+                 */
+                let sep     = '-';
+                let index   = attribute.indexOf(sep) + 1;
+                let suffix  = attribute.slice(index, attribute.length);
+                /**
+                 * capitalize aria attribute suffix
+                 * append prefix aria
+                 * return string as propertyName
+                 */
+                suffix = suffix.charAt(0).toUpperCase() + suffix.slice(1);
+                return 'aria' + suffix;
+            } else {
+                return attribute;
+            }
+        }
+        /**
+         * @name attributes
+         * @type {Array}
+         * @memberof initAttributes
+         * @description concat ARIA attributes with HTML attributes
+         *              only include valid tag attributes
+         */
+        let attributes = HTMLAttributes.concat(ARIAAttributes)
+        /**
+         * return only entries that match tag of element
+         */
+        .map((entry) => {
+            /**
+             * exclude attributes that do not match tagName
+             */
+            if(entry.tags.length == 1){
+                /**
+                 * return all * tags
+                 */
+                if(entry.tags[0] === '*'){
+                    return entry;
+                }
+            } else {
+                if(entry.tags.includes(this.#type)){
+                    return entry;
+                }
+            }
+        })
+        /**
+         * filter out undefined array elements
+         */
+        .filter((entry) => entry !== undefined)
+        /**
+         * map filter for Aria attribute Names
+         * create new property: propertyName
+         */
+        .map((entry) => {
+            return {
+                /**
+                 * copy existing properties
+                 */
+                ...entry,
+                /**
+                 * add new property
+                 */
+                propertyName: formatAttribute(entry.attribute)
+            };
+        });
+        /**
+         * loop attribute array
+         * create DOMController properties
+         */
+        attributes.forEach(entry => {
+            /**
+             * create Class instance
+             */
+            DOMController.prototype[entry.propertyName] = new DOMAttribute(this.#node, {
+                attribute: entry.attribute,
+                values: entry.values,
+                tags: entry.tags
+            });
+        });
     }
     /*----------------------------------------------------------*/
     /**
      * @name initListeners
+     * @type {Method}
+     * @memberof DOMController
      * @property {Array} eventListeners
      */
     /*----------------------------------------------------------*/
@@ -227,8 +349,8 @@ class DOMController {
         /**
          * search events array for previous click event
          */
-        if(this.node.events.length > 0){
-            if(this.node.events.find(item => item.type === type)){
+        if(this.#node.events.length > 0){
+            if(this.#node.events.find(item => item.type === type)){
                 search = true;
             }
         }
@@ -261,11 +383,11 @@ class DOMController {
             /**
              * execute addEventListener
              */
-            this.node.addEventListener(type, listener, options);
+            this.#node.addEventListener(type, listener, options);
             /**
              * push data to events array
              */
-            this.node.events.push({type: type, listener: listener});
+            this.#node.events.push({type: type, listener: listener});
             /**
              * Update State
              */
@@ -308,11 +430,11 @@ class DOMController {
         /**
          * search events array for previous click event
          */
-        if(this.node.events.length > 0){
+        if(this.#node.events.length > 0){
             /**
              * find events entry for 'click'
              */
-            entry = this.node.events.find(item => item.type === type);
+            entry = this.#node.events.find(item => item.type === type);
             if(entry){
                 /**
                  * set search
@@ -321,7 +443,7 @@ class DOMController {
                 /**
                  * set index
                  */
-                index = this.node.events.indexOf(entry);
+                index = this.#node.events.indexOf(entry);
             }
         }
         /**
@@ -332,11 +454,11 @@ class DOMController {
             /**
              * remove listener
              */
-            this.node.removeEventListener(entry.type, entry.listener);
+            this.#node.removeEventListener(entry.type, entry.listener);
             /**
              * remove events array entry
              */
-            this.node.events.splice(index, 1);
+            this.#node.events.splice(index, 1);
             /**
              * Update State
              */

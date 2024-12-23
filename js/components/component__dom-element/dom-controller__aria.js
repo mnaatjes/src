@@ -55,14 +55,14 @@ class AriaController {
   /*----------------------------------------------------------*/
   #initDefault(){
       /**
-       * @name formatAttribute
+       * @name formatAriaAttribute
        * @type {Function}
        * @memberof initDefault
        * @param {String} attribute
        * @description
        * @returns {String}
        */
-      function formatAttribute(attribute){
+      function formatAriaAttribute(attribute){
           /**
            * seperator character
            */

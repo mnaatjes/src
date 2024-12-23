@@ -12,8 +12,6 @@ class ElementState {
      * private properties
      */
     #node;
-    #aria;
-    #HTML;
     #validInputTags;
     #states;
     #dataStates;
@@ -87,7 +85,7 @@ class ElementState {
          * @private
          * @description
          */
-        this.#aria = new AriaController(node);
+        //this.aria = new AriaController(node);
         /**
          * @name HTML
          * @type {Object}
@@ -96,7 +94,7 @@ class ElementState {
          * @private
          * @description
          */
-        this.#HTML = new HTMLAttributesController(node);
+        //this.HTML = new HTMLAttributesController(node);
         /**
          * @name dataStates
          * @type {Array}
@@ -124,7 +122,8 @@ class ElementState {
         /**
          * debugging
          */
-        console.log(this.#aria);
+        //console.log(this.aria);
+        //console.log(this.HTML);
     }
     /*----------------------------------------------------------*/
     /**
@@ -394,12 +393,12 @@ class ElementState {
             /**
              * enabled
              */
-            this.#aria.disabled.add(false);
+            //this.aria.disabled.add(false);
         } else if(value === true){
             /**
              * disabled
              */
-            this.#aria.disabled.add(true);
+            //this.aria.disabled.add(true);
         }
     }
     /*----------------------------------------------------------*/
