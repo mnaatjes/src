@@ -12,15 +12,6 @@ class ElementState {
      * private properties
      */
     #node;
-    #validInputTags;
-    #states;
-    #dataStates;
-    #events;
-    #inputProperties;
-    #elementAttributes;
-    #pseudoClasses;
-    #type;
-    #stateMap;
     constructor(node){
         /**
          * @name node
@@ -39,80 +30,6 @@ class ElementState {
          */
         this.debug = false;
         /**
-         * @name validTags
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @description
-         */
-        this.#validInputTags = [
-            'form',
-            'input',
-            'textarea',
-            'select',
-            'button',
-            'fieldset',
-            'legend',
-            'label',
-            'optgroup',
-            'option',
-            'a'
-        ];
-        /**
-         * @name pseudoClasses
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @description
-         */
-        this.#pseudoClasses = [
-            'active',
-            'hover',
-            'focus',
-            'visited',
-            'link',
-            'target',
-            'enabled',
-            'disabled',
-            'checked',
-            'empty'
-        ];
-        /**
-         * @name aria
-         * @type {Object}
-         * @memberof ElementState
-         * @implements {AriaController}
-         * @private
-         * @description
-         */
-        //this.aria = new AriaController(node);
-        /**
-         * @name HTML
-         * @type {Object}
-         * @memberof ElementState
-         * @implements {HTMLAttributesController}
-         * @private
-         * @description
-         */
-        //this.HTML = new HTMLAttributesController(node);
-        /**
-         * @name dataStates
-         * @type {Array}
-         * @memberof ElementState
-         * @private
-         * @depreciated
-         * @description
-         */
-        this.#dataStates = [
-            'enabled',
-            'disabled',
-            'hidden',
-            'visible', // older
-            'listening',
-            'active',
-            'inactive' // older
-        ];
-        /**
          * @name _active
          * @type {Null | Boolean}
          * @memberof ElementState
@@ -122,8 +39,6 @@ class ElementState {
         /**
          * debugging
          */
-        //console.log(this.aria);
-        //console.log(this.HTML);
     }
     /*----------------------------------------------------------*/
     /**
@@ -163,12 +78,10 @@ class ElementState {
             /**
              * check rendered
              * check active
-             * check data
              */
             if(
                 (this.rendered === true || this.rendered === false) &&
-                (this.active === null || this.active === false) &&
-                (this.data === true || this.data === null)
+                (this.active === null || this.active === false)
             ){
                 /**
                  * state is default, ready
@@ -244,12 +157,12 @@ class ElementState {
             return false;
         } else {
             /**
-             * check loaded, success
+             * check loaded
              */
-            if(this.#loaded === undefined || this.#success === undefined){
+            if(this.#loaded === undefined){
                 return undefined;
             } else {
-                return !this.#loaded && !this.#success;
+                return !this.#loaded;
             }
         }
     }
@@ -272,19 +185,7 @@ class ElementState {
          */
         return this.#node.isConnected;
     }
-    set #mounted(value){
-        /**
-         * mounted value false
-         */
-        if(value !== true){
-            /**
-             * set undefined mainStates
-             */
-            this.rendered   = undefined;
-            this.active     = undefined;
-            this.data       = undefined;
-        }
-    }
+    set #mounted(value){}
     /*----------------------------------------------------------*/
     /**
      * @name active
@@ -295,16 +196,10 @@ class ElementState {
      * @desciption 
      */
     /*----------------------------------------------------------*/
-    get rendered(){}
-    set rendered(value){
-        /**
-         * set subStates if undefined
-         */
-        if(value === undefined){
-            this.hidden    = undefined;
-            this.disabled  = undefined;
-        }
+    get rendered(){
+        return this.#node.rendered;
     }
+    set rendered(value){}
     /*----------------------------------------------------------*/
     /**
      * @name active
@@ -349,26 +244,6 @@ class ElementState {
     }
     /*----------------------------------------------------------*/
     /**
-     * @name data
-     * @type {Boolean}
-     * @typedef MainState
-     * @memberof ElementState
-     * @public
-     * @desciption 
-     */
-    /*----------------------------------------------------------*/
-    get data(){}
-    set data(value){
-        /**
-         * set subStates if undefined
-         */
-        if(value === undefined){
-            this.#loaded    = undefined;
-            this.#success   = undefined;
-        }
-    }
-    /*----------------------------------------------------------*/
-    /**
      * @name disabled
      * @type {Boolean}
      * @typedef SubState
@@ -379,28 +254,46 @@ class ElementState {
     /*----------------------------------------------------------*/
     get disabled(){
         /**
-         * check attribute
+         * @name search
+         * @type {Array}
+         * @memberof disabled
          */
+        let search = {
+            attributes: false,
+            classList: false,
+            dataStates: false
+        };
+        /**
+         * check attributes
+         */
+        search.attributes = [
+            {attributeName: 'aria-disabled', value: 'true'},
+            {attributeName: 'disabled', value: ''},
+        ].some((obj) => {
+            /**
+             * check if element has attribute
+             * check if values match
+             */
+            return this.#node.hasAttribute(obj.attributeName) && this.#node.getAttribute(obj.attributeName) === obj.value;
+        });
+        /**
+         * check classList
+         */
+        if(this.#node.classList.contains('disabled')){
+            search.classList = true;
+        }
         /**
          * check dataState
          */
-        /**
-         * check pseudo-class
-         */
-    }
-    set disabled(value){
-        if(value === false){
-            /**
-             * enabled
-             */
-            //this.aria.disabled.add(false);
-        } else if(value === true){
-            /**
-             * disabled
-             */
-            //this.aria.disabled.add(true);
+        if(this.#node.hasAttribute('data-state') && this.#node.getAttribute('data-state') === 'disabled'){
+            search.dataStates = true;
         }
+        /**
+         * check search values
+         */
+        return Object.values(search).some(value => value);
     }
+    set disabled(value){}
     /*----------------------------------------------------------*/
     /**
      * @name hidden
@@ -411,7 +304,41 @@ class ElementState {
      * @desciption
      */
     /*----------------------------------------------------------*/
-    get hidden(){}
+    get hidden(){
+        /**
+         * @name search
+         * @type {Array}
+         * @memberof hidden
+         */
+        let search = {
+            attributes: false,
+            classList: false,
+            dataStates: false
+        };
+        /**
+         * search attributes
+         */
+        search.attributes = [
+            {attributeName: 'aria-hidden', value: 'true'},
+            {attributeName: 'hidden', value: ''},
+        ].some((obj) => {
+            /**
+             * check if element has attribute
+             * check if values match
+             */
+            return this.#node.hasAttribute(obj.attributeName) && this.#node.getAttribute(obj.attributeName) === obj.value;
+        });
+        /**
+         * check dataState
+         */
+        if(this.#node.hasAttribute('data-state') && this.#node.getAttribute('data-state', 'hidden')){
+            search.dataStates = true;
+        }
+        /**
+         * check search values
+         */
+        return Object.values(search).some(value => value);
+    }
     set hidden(value){}
     /*----------------------------------------------------------*/
     /**
@@ -529,94 +456,4 @@ class ElementState {
         }
     }
     set #loaded(value){}
-    /*----------------------------------------------------------*/
-    /**
-     * @name success
-     * @type {Boolean}
-     * @typedef SubState
-     * @memberof ElementState
-     * @private
-     * @desciption
-     */
-    /*----------------------------------------------------------*/
-    get #success(){
-        /**
-         * check mounting
-         */
-        if(this.#mounted === true){
-            /**
-             * check valid tags
-             */
-            let valid = [
-                'img',
-                'script',
-                'iframe',
-                'audio',
-                'video'
-            ];
-            if(valid.includes(this.#node.tagName.toLowerCase())){
-                /**
-                 * check img instance
-                 */
-                if(this.#node instanceof HTMLImageElement){
-                    return this.#node.complete && this.#node.naturalWidth > 0;
-                }
-                /**
-                 * check video instance
-                 */
-                else if(this.#node instanceof HTMLVideoElement){
-                    return this.#node.readyState >= this.#node.HAVE_ENOUGH_DATA;
-                }
-                /**
-                 * check iframe instance
-                 */
-                else if(this.#node instanceof HTMLIFrameElement){
-                    return this.#node.contentDocument && this.#node.contentDocument.readyState === 'complete';
-                }
-                /**
-                 * check script instance
-                 */
-                else if(this.#node instanceof HTMLScriptElement){
-                    /**
-                     * check ready state
-                     */
-                    return this.#node.src !== '';
-                }
-                /**
-                 * otherwise false
-                 */
-                else {return false;}
-            } else {
-                /**
-                 * tag not valid
-                 */
-                return undefined;
-            }
-        }
-        /**
-         * unmounted --> undefined
-         */
-        else {
-            return undefined;
-        }
-    }
-    set #success(value){}
-    /*----------------------------------------------------------*/
-    /**
-     * @name update
-     * @type {Method}
-     * @memberof ElementState
-     * @public
-     * @desciption
-     */
-    /*----------------------------------------------------------*/
-    update(){
-        /**
-         * Debugging
-         */
-        if(this.debug){
-            console.log(`State: Listening = ${this.#listening}`);
-            console.log(`State: Active = ${this.active}`);
-        }
-    }
 }

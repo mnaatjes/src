@@ -72,10 +72,14 @@
         }
         h1 {margin: 12px;}
         h2 {
-            display: block;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
             margin-top: 0;
             color: tomato;
         }
+        *[hidden] {color: lightblue;}
         input {
             padding: 12px 24px;
             margin: 12px;
@@ -96,9 +100,9 @@
     </style>
   </head>
   <body>
-    <header id="header--home">
+    <header id="header--home" class="disabled">
         <h1>DOM Controller</h1>
-        <h2 id="header--hidden" hidden>Attribute Hidden</h2>
+        <h2 id="header--hidden" class="hidden" data-state="hidden" aria-hidden="true" hidden>Attribute Hidden</h2>
         <hr>
         <button id="btn--home" type="button" disabled>Pseudo Disabled</button>
         <button id="btn--state" type="button" data-state="disabled">State Disabled</button>
@@ -106,7 +110,7 @@
         <button id="btn--test" type="button" >Testing</button>        
         <hr>
         <a id="link--home" href="" aria-disabled="true">Aria Disabled</a>
-        <a id="link--state" href="" data-state="">State Disabled</a>
+        <a id="link--state" href="" data-state="disabled">State Disabled</a>
         <a id="link--class" href="" class="disabled">Class Disabled</a>
         <hr>
         <a id="link--current" href="" aria-current="true">Aria Current</a>
@@ -130,9 +134,9 @@
         </section>
     </main>
     <script id="script--test" src="../../models/model__planet.js"></script>
+    <script src="../../utils/utils__math__rectangle.js"></script>
     <script src="../../components/component__dom-element/dom-controller__constants.js"></script>
     <script src="../../utils/utils__main.js"></script>
-    <script src="../../components/component__dom-element/dom-controller__aria.js"></script>
     <script src="../../components/component__dom-element/dom-controller__html-attribute.js"></script>
     <script src="../../components/component__dom-element/dom-controller__state.js"></script>
     <script src="../../components/component__dom-element/dom-controller.js"></script>

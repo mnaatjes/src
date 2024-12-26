@@ -383,7 +383,7 @@ function isNumber(value){
          * check float
          */
         try {
-            if(parseFloat(value)){
+            if(parseFloat(value) || parseFloat(value) === 0){
                 return true;
             }
         } catch (error) {
@@ -432,26 +432,6 @@ function isBoolean(value){
 }
 /*----------------------------------------------------------*/
 /**
- * @name isString
- * @type {Function}
- * @memberof UtilsMain
- * @param {String} value
- * @returns {Boolean}
- */
-/*----------------------------------------------------------*/
-function isString(value){
-    /**
-     * trim value of leading, ending whitespace
-     */
-    value = value.trim();
-    /**
-     * check length
-     * return boolean
-     */
-    return value.length >= 1 && typeof value === 'string';
-}
-/*----------------------------------------------------------*/
-/**
  * @name tryJSONParse
  * @type {Function}
  * @memberof UtilsMain
@@ -491,67 +471,79 @@ function tryJSONParse(value){
  * @name parseType
  * @type {Function}
  * @memberof UtilsMain
- * @property {String} value
  * @description
- * @returns {Undefined | String} typeof value supplied
+ * @param {Undefined | Null | Boolean | Number | String} value
+ * @property {}
+ * @returns {}
  */
 /*----------------------------------------------------------*/
 function parseType(value){
     /**
-     * check if number
+     * check if null
      */
-    if(!isNumber(value)){
+    if(value === null){
+        return 'null';
+    /**
+     * check if array
+     */
+    } else if(Array.isArray(value)){
+        return 'array';
+    /**
+     * evaluate typeof
+     */
+    } else {
         /**
-         * check boolean
+         * check if value is a string
          */
-        if(!isBoolean(value)){
+        if(typeof value === 'string'){
             /**
-             * check string
+             * check if empty
+             * trim value of leading, ending whitespace
+             * check length
              */
-            if(!isString(value)){
-                return undefined;
-            } else {
+            if(value.trim().length >= 1){
                 /**
-                 * check if stringified JSON value:
+                 * check JSON
                  */
                 if(tryJSONParse(value)){
                     /**
-                     * parse json string
+                     * value IS JSON object
+                     * parse value and evaluate data type
                      */
-                    let json = JSON.parse(value);
+                    value = JSON.parse(value);
                     /**
-                     * check Array, Object
+                     * check if array
                      */
-                    if(Array.isArray(json)){
-                        /**
-                         * return type
-                         */
+                    if(Array.isArray(value)){
                         return 'array';
                     } else {
-                        /**
-                         * return typeof
-                         */
-                        return typeof json;
+                        return typeof value;
                     }
                 } else {
                     /**
-                     * value is not a JSON string
-                     * return type
+                     * value is not a json object
+                     * check boolean
                      */
-                    return 'string';
+                    if(isBoolean(value)){
+                        return 'boolean';
+                    /**
+                     * check number
+                     */
+                    } else if(isNumber(value)){
+                        return 'number';
+                    } else {
+                        return 'string';
+                    }
                 }
+            } else {
+                /**
+                 * empty value
+                 */
+                return 'undefined';
             }
         } else {
-            /**
-             * return type
-             */
-            return 'boolean';
+            return typeof value;
         }
-    } else {
-        /**
-         * return type
-         */
-        return 'number';
     }
 }
 /*----------------------------------------------------------*/

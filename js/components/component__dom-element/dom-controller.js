@@ -17,6 +17,7 @@
 class DOMController {
     #node;
     #type;
+    #defaultDisplay;
     constructor(node){
         /**
          * @name node
@@ -34,6 +35,15 @@ class DOMController {
          */
         this.#node.events = [];
         /**
+         * @name rendered
+         * @type {Array}
+         * @memberof ElementState
+         * @private
+         * @desciption  rendered / re-rendered state
+         *              TODO: figure out how to manage renders and re-renders
+         */
+        this.#node.rendered = true;
+        /**
          * @name type
          * @type {HTMLElement}
          * @memberof DOMController
@@ -44,13 +54,16 @@ class DOMController {
          * @name state
          * @type {Object}
          * @memberof DOMController
+         * @public
+         * @description element state listener / getter
          */
         this.state = new ElementState(this.#node);
         /**
-         * @name 
+         * @name defaultDisplay
          * @type {}
          * @memberof DOMController
          */
+        this.#defaultDisplay = this.computedStyle.getPropertyValue('display');
         /**
          * @implements {initDOMController}
          */
@@ -77,6 +90,10 @@ class DOMController {
          * initialize attributes
          */
         this.initAttributes();
+        /**
+         * initialize children
+         */
+        this.#initChildren();
     }
     /*----------------------------------------------------------*/
     /**
@@ -87,7 +104,7 @@ class DOMController {
      * @property {Array} HTMLAttributes
      */
     /*----------------------------------------------------------*/
-    initAttributes(node){
+    initAttributes(){
         /**
          * @name formatAttribute
          * @type {Function}
@@ -169,7 +186,7 @@ class DOMController {
             };
         });
         /**
-         * loop attribute array
+         * loop attributes array
          * create DOMController properties
          */
         attributes.forEach(entry => {
@@ -185,9 +202,118 @@ class DOMController {
     }
     /*----------------------------------------------------------*/
     /**
+     * @name children
+     * @type {Array}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    get children(){
+        /**
+         * check for instances
+         * return accumulator array
+         */
+        let acc = {};
+        for(let property in this){
+            if(this[property] instanceof DOMController){
+                /**
+                 * attach to acc object
+                 */
+                acc[property] = this[property];
+            } else if(Array.isArray(this[property])){
+                /**
+                 * loop property array to determine if DOMController Element
+                 * init temp arr
+                 */
+                let arr = [];
+                this[property].forEach(item => {
+                    if(item instanceof DOMController){
+                        /**
+                         * attach to arr
+                         */
+                        arr.push(item);
+                    }
+                });
+                /**
+                 * check if arr has length
+                 */
+                if(arr.length > 0){
+                    /**
+                     * attach to acc object
+                     */
+                    acc[property] = arr;
+                }
+            }
+        }
+        return acc;
+    }
+    set children(value){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name BoundingClientRect
+     * @type {Object}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    get BoundingClientRect(){
+        return this.#node.getBoundingClientRect();
+    }
+    set BoundingClientRect(value){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name rect
+     * @type {Object}
+     * @memberof DOMController
+     * @public
+     * @desciption BoundingClientRect position
+     */
+    /*----------------------------------------------------------*/
+    get rect(){
+        return new Rectangle(
+            this.BoundingClientRect.x,
+            this.BoundingClientRect.y,
+            this.BoundingClientRect.width,
+            this.BoundingClientRect.height
+        );
+    }
+    set rect(value){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name style
+     * @type {Object}
+     * @memberof DOMController
+     * @public
+     * @desciption HTML inline DOM style
+     */
+    /*----------------------------------------------------------*/
+    get style(){
+        return this.#node.style;
+    }
+    set style(value){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name computedStyle
+     * @type {Object}
+     * @memberof DOMController
+     * @public
+     * @readonly
+     * @property {Method} getPropertyValue
+     * @desciption Stylesheet styles
+     */
+    /*----------------------------------------------------------*/
+    get computedStyle(){
+        return window.getComputedStyle(this.#node);
+    }
+    set computedStyle(value){}
+    /*----------------------------------------------------------*/
+    /**
      * @name initListeners
      * @type {Method}
      * @memberof DOMController
+     * @private
      * @property {Array} eventListeners
      */
     /*----------------------------------------------------------*/
@@ -331,6 +457,103 @@ class DOMController {
     }
     /*----------------------------------------------------------*/
     /**
+     * @name initChildren
+     * @type {Method}
+     * @memberof DOMController
+     * @private
+     * @property {Array} node.children
+     */
+    /*----------------------------------------------------------*/
+    #initChildren(){
+        /**
+         * @name tagNames
+         * @type {Array}
+         * @memberof initChildren
+         */
+        let tagNames = Array.from(this.#node.children)
+        .map((child) => {
+            return child.tagName.toLowerCase();
+        })
+        .reduce((acc, curr) => 
+            acc.includes(curr) ? acc : [...acc, curr]
+        , []);
+        /**
+         * @name children
+         * @type {Array}
+         * @memberof initChildren
+         * @description create array from node.children
+         *              pull tagName and node from childen
+         *              reduce array of matching tagNames
+         */
+        let children = [];
+        /**
+         * loop tagNames
+         * build children array
+         */
+        tagNames.forEach(tag => {
+            let temp = {
+                tagName: tag,
+                nodes: []
+            };
+            /**
+             * loop child nodes
+             */
+            Array.from(this.#node.children).forEach(child => {
+                /**
+                 * build nodes array
+                 */
+                if(child.tagName.toLowerCase() === tag){
+                    temp.nodes.push(child);
+                }
+            });
+            /**
+             * push children
+             */
+            children.push(temp);
+        });
+        /**
+         * refine children array
+         * reduce nodes to value if array length === 1
+         */
+        children.forEach(child => {
+            if(child.nodes.length === 1){
+                child.nodes = child.nodes[0];
+            }
+        });
+        /**
+         * loop children and append to Class object
+         */
+        children.forEach(child => {
+            /**
+             * assign object property
+             * for node values NOT arrays
+             */
+            if(!Array.isArray(child.nodes)){
+                /**
+                 * create Class property
+                 */
+                DOMController.prototype[child.tagName] = new DOMController(child.nodes);
+                /**
+                 * append to children
+                 */
+            } else {
+                /**
+                 * create accumulator array
+                 * loop nodes and generate nodeControllers
+                 */
+                let acc = [];
+                child.nodes.forEach(node => {
+                    acc.push(new DOMController(node));
+                });
+                /**
+                 * create class property
+                 */
+                DOMController.prototype[child.tagName] = acc;
+            }
+        });
+    }
+    /*----------------------------------------------------------*/
+    /**
      * @name listen
      * @type {Method}
      * @memberof DOMController
@@ -369,7 +592,6 @@ class DOMController {
                  * update Active State: true
                  */
                 this.state.active = true;
-                this.state.update();
                 /**
                  * append callback
                  */
@@ -378,7 +600,6 @@ class DOMController {
                  * update Active State: false
                  */
                 this.state.active = false;
-                this.state.update();
             }
             /**
              * execute addEventListener
@@ -388,10 +609,6 @@ class DOMController {
              * push data to events array
              */
             this.#node.events.push({type: type, listener: listener});
-            /**
-             * Update State
-             */
-            this.state.update();
         }
         
     }
@@ -459,10 +676,6 @@ class DOMController {
              * remove events array entry
              */
             this.#node.events.splice(index, 1);
-            /**
-             * Update State
-             */
-            this.state.update();
         /**
          * event does NOT exist and cannot be removed
          * display error
@@ -483,9 +696,8 @@ class DOMController {
     /*----------------------------------------------------------*/
     enable(){
         /**
-         * set state disabled
+         * set attributes
          */
-        this.state.disabled = false;
     }
     /*----------------------------------------------------------*/
     /**
@@ -498,9 +710,8 @@ class DOMController {
     /*----------------------------------------------------------*/
     disable(){
         /**
-         * set state disabled
+         * set attributes
          */
-        this.state.disabled = true;
     }
     /*----------------------------------------------------------*/
     /**
@@ -513,8 +724,18 @@ class DOMController {
     /*----------------------------------------------------------*/
     show(){
         /**
-         * set state hidden
+         * update attributes
+         * hidden
+         * aria
          */
+        if(this.hidden.enabled){
+            this.hidden.remove();
+        }
+        this.ariaHidden.update(false);
+        /**
+         * apply default display value
+         */
+        this.#node.display = this.#defaultDisplay;
     }
     /*----------------------------------------------------------*/
     /**
@@ -527,8 +748,14 @@ class DOMController {
     /*----------------------------------------------------------*/
     hide(){
         /**
-         * set state hidden
+         * update attributes
          */
+        this.hidden.update();
+        this.ariaHidden.update(true);
+        /**
+         * set display to none
+         */
+        this.#node.display = 'none';
     }
     /*----------------------------------------------------------*/
     /**
@@ -550,4 +777,89 @@ class DOMController {
      */
     /*----------------------------------------------------------*/
     deactivate(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name write
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @param {String} text
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    write(text){
+        this.#node.textContent = text;
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name read
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    read(){
+        return this.#node.textContent;
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name mount
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    mount(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name render
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    render(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name blur
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    blur(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name addChild
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    addChild(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name removeChild
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    removeChild(){}
+    /*----------------------------------------------------------*/
+    /**
+     * @name clear
+     * @type {Method}
+     * @memberof DOMController
+     * @public
+     * @desciption
+     */
+    /*----------------------------------------------------------*/
+    clear(){}
 }
