@@ -1,6 +1,6 @@
 /*----------------------------------------------------------*/
 /**
- * @file src/js/components/component_dom-element/dom-controller__html-attribute.js
+ * @file src/core/dom-element/dom-element__html-attribute.js
  * @memberof DOMElement
  */
 /**

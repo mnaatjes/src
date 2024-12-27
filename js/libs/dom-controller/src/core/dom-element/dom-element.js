@@ -1,6 +1,6 @@
 /*----------------------------------------------------------*/
 /**
- * @file src/js/components/dom-controller.js
+ * @file src/core/dom-element/dom-element.js
  * @author mnaatjes
  * @version 1.0.0
  * @date 11-07-2024

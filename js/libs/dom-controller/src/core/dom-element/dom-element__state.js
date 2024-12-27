@@ -1,5 +1,6 @@
 /*----------------------------------------------------------*/
 /**
+ * @file src/core/dom-element/dom-element__state.js
  * @name ElementState
  * @type {Class}
  * @memberof DOMElement
