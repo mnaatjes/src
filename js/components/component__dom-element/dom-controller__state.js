@@ -7,7 +7,7 @@
  * @description heirarchical state machine
  */
 /*----------------------------------------------------------*/
-class ElementState {
+export class ElementState {
     /**
      * private properties
      */

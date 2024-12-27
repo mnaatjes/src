@@ -4,7 +4,19 @@
  * @author mnaatjes
  * @version 1.0.0
  * @date 11-07-2024
- * 
+ */
+/**
+ * @typedef {import("../../utils/utils__math__rectangle.js").Rectangle} Rectangle
+ * @typedef {import("../../components/component__dom-element/dom-controller__constants.js").Constants} Constants
+ * @typedef {import("../../components/component__dom-element/dom-controller__html-attribute.js").DOMAttribute} DOMAttribute
+ * @typedef {import("../../components/component__dom-element/dom-controller__state.js").ElementState} ElementState
+ */
+import { Rectangle } from "../../utils/utils__math__rectangle.js";
+import { HTMLAttributes, ARIAAttributes } from "../../components/component__dom-element/dom-controller__constants.js";
+import { DOMAttribute } from "../../components/component__dom-element/dom-controller__html-attribute.js";
+import { ElementState } from "../../components/component__dom-element/dom-controller__state.js";
+
+/**
  * @name DOMController
  * @type {Class}
  * @memberof Src.Components
@@ -14,7 +26,7 @@
  * @property {Object} state
  */
 /*----------------------------------------------------------*/
-class DOMController {
+export class DOMController {
     #node;
     #type;
     #defaultDisplay;
@@ -60,14 +72,14 @@ class DOMController {
         this.state = new ElementState(this.#node);
         /**
          * @name defaultDisplay
-         * @type {}
+         * @type {String}
          * @memberof DOMController
          */
         this.#defaultDisplay = this.computedStyle.getPropertyValue('display');
         /**
          * @implements {initDOMController}
          */
-        this.#initDOMController();
+        this.#initDOMController(node);
         /**
          * debugging
          */
@@ -78,10 +90,15 @@ class DOMController {
      * @type {Method}
      * @memberof DOMController
      * @private
+     * @param {String | Object} node
      * @description
      */
     /*----------------------------------------------------------*/
-    #initDOMController(){
+    #initDOMController(node){
+        /**
+         * validate supplied node
+         */
+        this.#validateNode(node);
         /**
          * initialize listener methods
          */
@@ -89,7 +106,7 @@ class DOMController {
         /**
          * initialize attributes
          */
-        this.initAttributes();
+        this.#initAttributes();
         /**
          * initialize children
          */
@@ -97,14 +114,31 @@ class DOMController {
     }
     /*----------------------------------------------------------*/
     /**
+     * @name validateNode
+     * @type {Method}
+     * @memberof DOMController
+     * @private
+     * 
+     * @param {String | Object} node
+     * @property {Object} node
+     * @description validates supplied node
+     * @returns {Object} validation: Boolean, elementType: String
+     */
+    /*----------------------------------------------------------*/
+    #validateNode(node){}
+    /*----------------------------------------------------------*/
+    /**
      * @name initAttributes
      * @type {Method}
      * @memberof DOMController
+     * @private
      * @property {Array} ARIAAttributes
      * @property {Array} HTMLAttributes
+     * @description TODO:   change to already have an array of attributes appropriate
+     *                      to element tagName; NOT the entire array of properties
      */
     /*----------------------------------------------------------*/
-    initAttributes(){
+    #initAttributes(){
         /**
          * @name formatAttribute
          * @type {Function}

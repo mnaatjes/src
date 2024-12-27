@@ -17,7 +17,7 @@
  * @param {Number} height
  */
 /*----------------------------------------------------------*/
-class Rectangle {
+export class Rectangle {
     constructor(x, y, width, height=null){
         this.x          = x;
         this.y          = y;

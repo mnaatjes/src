@@ -3,6 +3,7 @@
  * @file src/js/tests/dom_controller/index.js
  */
 /*----------------------------------------------------------*/
+
 /**
  * @implements {DOMController}
  */
@@ -13,3 +14,4 @@ console.log(x);
 /**
  * Debugging
  */
+

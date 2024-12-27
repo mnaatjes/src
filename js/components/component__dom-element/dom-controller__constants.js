@@ -15,7 +15,7 @@
  * @type {Array}
  * @memberof DOMController.Constants
  */
-const mimeLibrary = [
+export const mimeLibrary = [
     {
         ext: ".aac",
         description: "AAC audio",
@@ -387,7 +387,7 @@ const mimeLibrary = [
  * @type {Array}
  * @memberof DOMController.Constants
  */
-const mimeTypes = mimeLibrary.reduce((acc, curr) => {
+export const mimeTypes = mimeLibrary.reduce((acc, curr) => {
     acc.push(curr.mimeType);
     return acc;
 }, []);
@@ -396,7 +396,7 @@ const mimeTypes = mimeLibrary.reduce((acc, curr) => {
  * @type {Array}
  * @memberof DOMController.Constants
  */
-const fileExtensions = mimeLibrary.reduce((acc, curr) => {
+export const fileExtensions = mimeLibrary.reduce((acc, curr) => {
     acc.push(curr.ext);
     return acc;
 }, []);
@@ -405,7 +405,7 @@ const fileExtensions = mimeLibrary.reduce((acc, curr) => {
  * @type {Array}
  * @memberof DOMController.Constants
  */
-const autoCompleteTokenLib = [
+export const autoCompleteTokenLib = [
     {
         token: "on",
         description: "Allows the browser to autofill based on its own heuristics (default)."
@@ -552,7 +552,7 @@ const autoCompleteTokenLib = [
  * @type {Array}
  * @memberof DOMController.Constants
  */
-const autoCompleteTokens = autoCompleteTokenLib.reduce((acc, curr) => {
+export const autoCompleteTokens = autoCompleteTokenLib.reduce((acc, curr) => {
     acc.push(curr.token);
     return acc;
 }, []);
@@ -561,7 +561,7 @@ const autoCompleteTokens = autoCompleteTokenLib.reduce((acc, curr) => {
  * @type {Array}
  * @memberof DOMController.Constants
  */
-const HTMLAttributeLibrary = [
+export const HTMLAttributeLibrary = [
     {
       attribute: "accept",
       tags: ["input"],
@@ -778,7 +778,7 @@ const HTMLAttributeLibrary = [
  * @type {Array}
  * @memberof DOMController.Constants
  */
-const HTMLAttributes = HTMLAttributeLibrary.reduce((acc, curr) => {
+export const HTMLAttributes = HTMLAttributeLibrary.reduce((acc, curr) => {
     acc.push({
         attribute: curr.attribute,
         tags: curr.tags,
@@ -791,7 +791,7 @@ const HTMLAttributes = HTMLAttributeLibrary.reduce((acc, curr) => {
  * @type {Array}
  * @memberof DOMController.Constants
  */
-const ARIALibrary = [
+export const ARIALibrary = [
     {
       attribute: 'aria-activedescendant',
       tags: ['*'],
@@ -1050,7 +1050,7 @@ const ARIALibrary = [
  * @type {Array}
  * @memberof DOMController.Constants
  */
-const ARIAAttributes = ARIALibrary.reduce((acc, curr) => {
+export const ARIAAttributes = ARIALibrary.reduce((acc, curr) => {
   acc.push({
       attribute: curr.attribute,
       tags: curr.tags,
