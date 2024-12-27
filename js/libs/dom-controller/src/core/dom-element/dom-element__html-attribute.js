@@ -1,7 +1,7 @@
 /*----------------------------------------------------------*/
 /**
  * @file src/js/components/component_dom-element/dom-controller__html-attribute.js
- * @memberof Src.Components.DOMController
+ * @memberof DOMElement
  */
 /**
  * @name DOMAttribute

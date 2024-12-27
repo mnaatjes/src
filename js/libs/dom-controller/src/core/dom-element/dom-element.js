@@ -4,29 +4,27 @@
  * @author mnaatjes
  * @version 1.0.0
  * @date 11-07-2024
+ * 
+ * @module Rectangle 
+ * @module DOMAttribute 
+ * @module ElementState 
  */
-/**
- * @typedef {import("../../utils/utils__math__rectangle.js").Rectangle} Rectangle
- * @typedef {import("../../components/component__dom-element/dom-controller__constants.js").Constants} Constants
- * @typedef {import("../../components/component__dom-element/dom-controller__html-attribute.js").DOMAttribute} DOMAttribute
- * @typedef {import("../../components/component__dom-element/dom-controller__state.js").ElementState} ElementState
- */
-import { Rectangle } from "../../utils/utils__math__rectangle.js";
-import { HTMLAttributes, ARIAAttributes } from "../../components/component__dom-element/dom-controller__constants.js";
-import { DOMAttribute } from "../../components/component__dom-element/dom-controller__html-attribute.js";
-import { ElementState } from "../../components/component__dom-element/dom-controller__state.js";
+import { Rectangle } from "../../../../../utils/utils__math__rectangle.js";
+import { HTMLAttributes, ARIAAttributes } from "../../utils/dom-controller__utils__constants.js";
+import { DOMAttribute } from "./dom-element__html-attribute.js";
+import { ElementState } from "./dom-element__state.js";
 
 /**
- * @name DOMController
+ * @name DOMElement
  * @type {Class}
  * @memberof Src.Components
- * @namespace DOMController
+ * @namespace DOMElement
  * 
  * @property {HTMLElement} node
  * @property {Object} state
  */
 /*----------------------------------------------------------*/
-export class DOMController {
+export class DOMElement {
     #node;
     #type;
     #defaultDisplay;
@@ -34,7 +32,7 @@ export class DOMController {
         /**
          * @name node
          * @type {HTMLElement}
-         * @memberof DOMController
+         * @memberof DOMElement
          * @private
          */
         this.#node = node;
@@ -58,14 +56,14 @@ export class DOMController {
         /**
          * @name type
          * @type {HTMLElement}
-         * @memberof DOMController
+         * @memberof DOMElement
          * @private
          */
         this.#type = this.#node.tagName.toLowerCase();
         /**
          * @name state
          * @type {Object}
-         * @memberof DOMController
+         * @memberof DOMElement
          * @public
          * @description element state listener / getter
          */
@@ -73,28 +71,28 @@ export class DOMController {
         /**
          * @name defaultDisplay
          * @type {String}
-         * @memberof DOMController
+         * @memberof DOMElement
          */
         this.#defaultDisplay = this.computedStyle.getPropertyValue('display');
         /**
-         * @implements {initDOMController}
+         * @implements {initDOMElement}
          */
-        this.#initDOMController(node);
+        this.#initDOMElement(node);
         /**
          * debugging
          */
     }
     /*----------------------------------------------------------*/
     /**
-     * @name initDOMController
+     * @name initDOMElement
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @private
      * @param {String | Object} node
      * @description
      */
     /*----------------------------------------------------------*/
-    #initDOMController(node){
+    #initDOMElement(node){
         /**
          * validate supplied node
          */
@@ -116,7 +114,7 @@ export class DOMController {
     /**
      * @name validateNode
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @private
      * 
      * @param {String | Object} node
@@ -130,7 +128,7 @@ export class DOMController {
     /**
      * @name initAttributes
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @private
      * @property {Array} ARIAAttributes
      * @property {Array} HTMLAttributes
@@ -221,13 +219,13 @@ export class DOMController {
         });
         /**
          * loop attributes array
-         * create DOMController properties
+         * create DOMElement properties
          */
         attributes.forEach(entry => {
             /**
              * create Class instance
              */
-            DOMController.prototype[entry.propertyName] = new DOMAttribute(this.#node, {
+            DOMElement.prototype[entry.propertyName] = new DOMAttribute(this.#node, {
                 attribute: entry.attribute,
                 values: entry.values,
                 tags: entry.tags
@@ -238,7 +236,7 @@ export class DOMController {
     /**
      * @name children
      * @type {Array}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -250,19 +248,19 @@ export class DOMController {
          */
         let acc = {};
         for(let property in this){
-            if(this[property] instanceof DOMController){
+            if(this[property] instanceof DOMElement){
                 /**
                  * attach to acc object
                  */
                 acc[property] = this[property];
             } else if(Array.isArray(this[property])){
                 /**
-                 * loop property array to determine if DOMController Element
+                 * loop property array to determine if DOMElement Element
                  * init temp arr
                  */
                 let arr = [];
                 this[property].forEach(item => {
-                    if(item instanceof DOMController){
+                    if(item instanceof DOMElement){
                         /**
                          * attach to arr
                          */
@@ -287,7 +285,7 @@ export class DOMController {
     /**
      * @name BoundingClientRect
      * @type {Object}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -300,7 +298,7 @@ export class DOMController {
     /**
      * @name rect
      * @type {Object}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption BoundingClientRect position
      */
@@ -318,7 +316,7 @@ export class DOMController {
     /**
      * @name style
      * @type {Object}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption HTML inline DOM style
      */
@@ -331,7 +329,7 @@ export class DOMController {
     /**
      * @name computedStyle
      * @type {Object}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @readonly
      * @property {Method} getPropertyValue
@@ -346,7 +344,7 @@ export class DOMController {
     /**
      * @name initListeners
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @private
      * @property {Array} eventListeners
      */
@@ -463,7 +461,7 @@ export class DOMController {
              * assign method name to Class
              * declare method name as function
              */
-            DOMController.prototype[listener.methodName] = function(callback, options=undefined){
+            DOMElement.prototype[listener.methodName] = function(callback, options=undefined){
                 /**
                  * @implements {#listen}
                  * invoke listen method
@@ -480,7 +478,7 @@ export class DOMController {
             /**
              * Assign Remove Listener Method
              */
-            DOMController.prototype[removeMethodName] = function(){
+            DOMElement.prototype[removeMethodName] = function(){
                 /**
                  * @implements {#removeListener}
                  * invoke remove listener method
@@ -493,7 +491,7 @@ export class DOMController {
     /**
      * @name initChildren
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @private
      * @property {Array} node.children
      */
@@ -566,7 +564,7 @@ export class DOMController {
                 /**
                  * create Class property
                  */
-                DOMController.prototype[child.tagName] = new DOMController(child.nodes);
+                DOMElement.prototype[child.tagName] = new DOMElement(child.nodes);
                 /**
                  * append to children
                  */
@@ -577,12 +575,12 @@ export class DOMController {
                  */
                 let acc = [];
                 child.nodes.forEach(node => {
-                    acc.push(new DOMController(node));
+                    acc.push(new DOMElement(node));
                 });
                 /**
                  * create class property
                  */
-                DOMController.prototype[child.tagName] = acc;
+                DOMElement.prototype[child.tagName] = acc;
             }
         });
     }
@@ -590,7 +588,7 @@ export class DOMController {
     /**
      * @name listen
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @private
      * @description
      */
@@ -650,7 +648,7 @@ export class DOMController {
     /**
      * @name removeListener
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @private
      * @param {String} type
      * @description
@@ -723,7 +721,7 @@ export class DOMController {
     /**
      * @name enable
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -737,7 +735,7 @@ export class DOMController {
     /**
      * @name disable
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -751,7 +749,7 @@ export class DOMController {
     /**
      * @name show
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -775,7 +773,7 @@ export class DOMController {
     /**
      * @name hide
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -795,7 +793,7 @@ export class DOMController {
     /**
      * @name activate
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -805,7 +803,7 @@ export class DOMController {
     /**
      * @name deactivate
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -815,7 +813,7 @@ export class DOMController {
     /**
      * @name write
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @param {String} text
      * @desciption
@@ -828,7 +826,7 @@ export class DOMController {
     /**
      * @name read
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -840,7 +838,7 @@ export class DOMController {
     /**
      * @name mount
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -850,7 +848,7 @@ export class DOMController {
     /**
      * @name render
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -860,7 +858,7 @@ export class DOMController {
     /**
      * @name blur
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -870,7 +868,7 @@ export class DOMController {
     /**
      * @name addChild
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -880,7 +878,7 @@ export class DOMController {
     /**
      * @name removeChild
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */
@@ -890,7 +888,7 @@ export class DOMController {
     /**
      * @name clear
      * @type {Method}
-     * @memberof DOMController
+     * @memberof DOMElement
      * @public
      * @desciption
      */

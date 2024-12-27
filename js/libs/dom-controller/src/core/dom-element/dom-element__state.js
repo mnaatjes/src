@@ -2,8 +2,7 @@
 /**
  * @name ElementState
  * @type {Class}
- * @memberof Src.Components
- * @property {}
+ * @memberof DOMElement
  * @description heirarchical state machine
  */
 /*----------------------------------------------------------*/
