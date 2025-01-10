@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TEST: CANVASs</title>
+    <title>TEST: DOMController</title>
     <style>
         body {
             min-height: calc(100vh - 24px);
@@ -17,22 +17,12 @@
             justify-content: center;
             align-items: center;
         }
-        header {
-            width: 480px;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 12px;
-            background-color: #fcfcfc;
-            text-align: center;
-            box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.3);
-        }
         *:disabled {
             background-color: #e6e6e6;
             color: #d4d4d4;
             cursor: default;
         }
-        main {
+        header, main, footer {
             width: 480px;
             border: 1px solid #333;
             border-radius: 8px;
@@ -50,89 +40,22 @@
             outline: none;
             background-color: cornflowerblue;
         }
-        button:hover {box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);}
-        button:disabled {border-color: #d4d4d4;}
-        button:hover:disabled {box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.0);}
-        button:active {background-color: tomato;}
         a {
             text-decoration: none;
             display: inline-block;
-            margin: 6px;
-            padding: 12px;
             color: cornflowerblue;
         }
         a:hover {text-decoration: underline;}
-        a[aria-disabled="true"]{color: #dcdcdc; cursor: default;}
-        a[aria-disabled="false"]{color: red; cursor: pointer;}
-        a[aria-disabled="true"]:hover {text-decoration: none;}
-        a.disabled {
-            color: tomato;
-            text-decoration: none;
-            cursor: default;
-        }
-        h1 {margin: 12px;}
-        h2 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            margin-top: 0;
-            color: tomato;
-        }
         *[hidden] {color: lightblue;}
-        input {
-            padding: 12px 24px;
-            margin: 12px;
-            outline: none;
-            border: 1px solid #999;
-            border-radius: 8px;
-        }
-        input:enabled {background-color: rgba(0, 255, 0, 0.2);}
-        input:invalid {color: tomato; border-color: tomato; background-color: rgba(255, 0, 0, 0.171);}
-        img {
-            object-fit: contain;
-            object-position: center;
-            width: 320px;
-            height: 240px;
-            border: 1px solid #999;
-            border-radius: 8px;
-        }
     </style>
   </head>
   <body>
-    <header id="header--home" class="disabled">
-        <h1>DOM Controller</h1>
-        <h2 id="header--hidden" class="hidden" data-state="hidden" aria-hidden="true" hidden>Attribute Hidden</h2>
-        <hr>
-        <button id="btn--home" type="button" disabled>Pseudo Disabled</button>
-        <button id="btn--state" type="button" data-state="disabled">State Disabled</button>
-        <button id="btn--listen" type="button" >Listening</button>        
-        <button id="btn--test" type="button" >Testing</button>        
-        <hr>
-        <a id="link--home" href="" aria-disabled="true">Aria Disabled</a>
-        <a id="link--state" href="" data-state="disabled">State Disabled</a>
-        <a id="link--class" href="" class="disabled">Class Disabled</a>
-        <hr>
-        <a id="link--current" href="" aria-current="true">Aria Current</a>
-        <a id="current--state" href="" data-state="selected">State Current</a>
-        <a id="current--class" href="" class="banana selected">Class Current</a>
+    <header>
     </header>
-    <main>
-        <section>
-            <article style="text-align: center;">
-                <img src="./assets/wpa.jpg" alt="japan" id="img--test">
-            </article>
-            <article>
-                <input id="input--aria" type="email" placeholder="Aria Invalid" aria-invalid="true">
-            </article>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate magni est?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate magni est?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate magni est?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate magni est?</p>
-            </article>
-        </section>
+    <main id="root">
     </main>
+    <footer>
+    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

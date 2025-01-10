@@ -5,12 +5,10 @@
  * @version 1.0.0
  * @date 11-07-2024
  * 
- * @module Rectangle 
  * @module DOMAttribute 
  * @module ElementState 
  */
-import { Rectangle } from "../../../../../utils/utils__math__rectangle.js";
-import { HTMLAttributes, ARIAAttributes } from "../../utils/dom-controller__utils__constants.js";
+import { HTMLAttributes, ARIAAttributes, DOMElementEvents } from "../../utils/dom-controller__utils__constants.js";
 import { DOMAttribute } from "./dom-element__html-attribute.js";
 import { ElementState } from "./dom-element__state.js";
 
@@ -21,14 +19,16 @@ import { ElementState } from "./dom-element__state.js";
  * @namespace DOMElement
  * 
  * @property {HTMLElement} node
+ * @property {HTMLElement} properties
  * @property {Object} state
  */
 /*----------------------------------------------------------*/
 export class DOMElement {
     #node;
+    #parent;
     #type;
     #defaultDisplay;
-    constructor(node){
+    constructor(node, properties=undefined){
         /**
          * @name node
          * @type {HTMLElement}
@@ -36,6 +36,14 @@ export class DOMElement {
          * @private
          */
         this.#node = node;
+        /**
+         * @name parent
+         * @type {HTMLElement}
+         * @memberof ElementState
+         * @private
+         * @desciption
+         */
+        this.#parent = this.#initParent(node, properties);
         /**
          * @name events
          * @type {Array}
@@ -75,9 +83,16 @@ export class DOMElement {
          */
         this.#defaultDisplay = this.computedStyle.getPropertyValue('display');
         /**
+         * @name props
+         * @type {String}
+         * @memberof DOMElement
+         * TODO: set props
+         */
+        //this.props = properties.props;
+        /**
          * @implements {initDOMElement}
          */
-        this.#initDOMElement(node);
+        this.#initDOMElement(node, properties);
         /**
          * debugging
          */
@@ -89,10 +104,11 @@ export class DOMElement {
      * @memberof DOMElement
      * @private
      * @param {String | Object} node
+     * @param {Object} properies
      * @description
      */
     /*----------------------------------------------------------*/
-    #initDOMElement(node){
+    #initDOMElement(node, properties){
         /**
          * validate supplied node
          */
@@ -100,15 +116,15 @@ export class DOMElement {
         /**
          * initialize listener methods
          */
-        this.#initListeners();
+        this.#initListeners(properties);
         /**
          * initialize attributes
          */
-        this.#initAttributes();
+        this.#initAttributes(properties);
         /**
          * initialize children
          */
-        this.#initChildren();
+        this.#initChildren(properties);
     }
     /*----------------------------------------------------------*/
     /**
@@ -123,20 +139,44 @@ export class DOMElement {
      * @returns {Object} validation: Boolean, elementType: String
      */
     /*----------------------------------------------------------*/
-    #validateNode(node){}
+    #validateNode(node){
+        /**
+         * TODO: Check if object
+         * TODO: Check if instance of HTML Element
+         */
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * @name initParent
+     * @type {Method}
+     * @memberof DOMElement
+     * @private
+     * 
+     * @param {String | Object} node
+     * @param {Object} properties
+     * @description
+     */
+    /*----------------------------------------------------------*/
+    #initParent(node, properties){
+        if(!node.parentElement){
+            return properties.parent;
+        }
+    }
     /*----------------------------------------------------------*/
     /**
      * @name initAttributes
      * @type {Method}
      * @memberof DOMElement
      * @private
+     * @param {Object} properties
      * @property {Array} ARIAAttributes
      * @property {Array} HTMLAttributes
      * @description TODO:   change to already have an array of attributes appropriate
      *                      to element tagName; NOT the entire array of properties
+     *              TODO:   set supplied attributes from CreateComponent
      */
     /*----------------------------------------------------------*/
-    #initAttributes(){
+    #initAttributes(properties){
         /**
          * @name formatAttribute
          * @type {Function}
@@ -231,6 +271,11 @@ export class DOMElement {
                 tags: entry.tags
             });
         });
+        /**
+         * TODO: create DOMAttribute for supplied Data Attributes
+         * activate supplied element attributes
+         */
+        //console.log(properties);
     }
     /*----------------------------------------------------------*/
     /**
@@ -243,6 +288,7 @@ export class DOMElement {
     /*----------------------------------------------------------*/
     get children(){
         /**
+         * TODO: FIX THIS BULLSHIT
          * check for instances
          * return accumulator array
          */
@@ -296,24 +342,6 @@ export class DOMElement {
     set BoundingClientRect(value){}
     /*----------------------------------------------------------*/
     /**
-     * @name rect
-     * @type {Object}
-     * @memberof DOMElement
-     * @public
-     * @desciption BoundingClientRect position
-     */
-    /*----------------------------------------------------------*/
-    get rect(){
-        return new Rectangle(
-            this.BoundingClientRect.x,
-            this.BoundingClientRect.y,
-            this.BoundingClientRect.width,
-            this.BoundingClientRect.height
-        );
-    }
-    set rect(value){}
-    /*----------------------------------------------------------*/
-    /**
      * @name style
      * @type {Object}
      * @memberof DOMElement
@@ -346,112 +374,15 @@ export class DOMElement {
      * @type {Method}
      * @memberof DOMElement
      * @private
+     * @param {Object} properties
      * @property {Array} eventListeners
      */
     /*----------------------------------------------------------*/
-    #initListeners(){
-        let eventListeners = [
-            { type: 'abort', methodName: 'onAbort' },
-            { type: 'animationcancel', methodName: 'onAnimationCancel' },
-            { type: 'animationend', methodName: 'onAnimationEnd' },
-            { type: 'animationiteration', methodName: 'onAnimationIteration' },
-            { type: 'animationstart', methodName: 'onAnimationStart' },
-            { type: 'audioprocess', methodName: 'onAudioProcess' },
-            { type: 'autocomplete', methodName: 'onAutoComplete' },
-            { type: 'autocompleteerror', methodName: 'onAutoCompleteError' },
-            { type: 'beforeinput', methodName: 'onBeforeInput' },
-            { type: 'blur', methodName: 'onBlur' },
-            { type: 'canplay', methodName: 'onCanPlay' },
-            { type: 'canplaythrough', methodName: 'onCanPlayThrough' },
-            { type: 'change', methodName: 'onChange' },
-            { type: 'click', methodName: 'onClick' },
-            { type: 'close', methodName: 'onClose' },
-            { type: 'compositionend', methodName: 'onCompositionEnd' },
-            { type: 'compositionstart', methodName: 'onCompositionStart' },
-            { type: 'compositionupdate', methodName: 'onCompositionUpdate' },
-            { type: 'contextmenu', methodName: 'onContextMenu' },
-            { type: 'copy', methodName: 'onCopy' },
-            { type: 'cut', methodName: 'onCut' },
-            { type: 'dblclick', methodName: 'onDblClick' },
-            { type: 'drag', methodName: 'onDrag' },
-            { type: 'dragend', methodName: 'onDragEnd' },
-            { type: 'dragenter', methodName: 'onDragEnter' },
-            { type: 'dragexit', methodName: 'onDragExit' },
-            { type: 'dragleave', methodName: 'onDragLeave' },
-            { type: 'dragover', methodName: 'onDragOver' },
-            { type: 'dragstart', methodName: 'onDragStart' },
-            { type: 'drop', methodName: 'onDrop' },
-            { type: 'durationchange', methodName: 'onDurationChange' },
-            { type: 'emptied', methodName: 'onEmptied' },
-            { type: 'ended', methodName: 'onEnded' },
-            { type: 'error', methodName: 'onError' },
-            { type: 'focus', methodName: 'onFocus' },
-            { type: 'focusin', methodName: 'onFocusIn' },
-            { type: 'focusout', methodName: 'onFocusOut' },
-            { type: 'formdata', methodName: 'onFormData' },
-            { type: 'fullscreenchange', methodName: 'onFullScreenChange' },
-            { type: 'fullscreenerror', methodName: 'onFullScreenError' },
-            { type: 'gamepadconnected', methodName: 'onGamepadConnected' },
-            { type: 'gamepaddisconnected', methodName: 'onGamepadDisconnected' },
-            { type: 'gotpointercapture', methodName: 'onGotPointerCapture' },
-            { type: 'input', methodName: 'onInput' },
-            { type: 'invalid', methodName: 'onInvalid' },
-            { type: 'keydown', methodName: 'onKeyDown' },
-            { type: 'keypress', methodName: 'onKeyPress' },
-            { type: 'keyup', methodName: 'onKeyUp' },
-            { type: 'load', methodName: 'onLoad' },
-            { type: 'loadeddata', methodName: 'onLoadedData' },
-            { type: 'loadedmetadata', methodName: 'onLoadedMetadata' },
-            { type: 'loadend', methodName: 'onLoadEnd' },
-            { type: 'loadstart', methodName: 'onLoadStart' },
-            { type: 'lostpointercapture', methodName: 'onLostPointerCapture' },
-            { type: 'mousedown', methodName: 'onMouseDown' },
-            { type: 'mouseenter', methodName: 'onMouseEnter' },
-            { type: 'mouseleave', methodName: 'onMouseLeave' },
-            { type: 'mousemove', methodName: 'onMouseMove' },
-            { type: 'mouseout', methodName: 'onMouseOut' },
-            { type: 'mouseover', methodName: 'onMouseOver' },
-            { type: 'mouseup', methodName: 'onMouseUp' },
-            { type: 'paste', methodName: 'onPaste' },
-            { type: 'pause', methodName: 'onPause' },
-            { type: 'play', methodName: 'onPlay' },
-            { type: 'playing', methodName: 'onPlaying' },
-            { type: 'pointercancel', methodName: 'onPointerCancel' },
-            { type: 'pointerdown', methodName: 'onPointerDown' },
-            { type: 'pointerenter', methodName: 'onPointerEnter' },
-            { type: 'pointerleave', methodName: 'onPointerLeave' },
-            { type: 'pointermove', methodName: 'onPointerMove' },
-            { type: 'pointerout', methodName: 'onPointerOut' },
-            { type: 'pointerover', methodName: 'onPointerOver' },
-            { type: 'pointerup', methodName: 'onPointerUp' },
-            { type: 'progress', methodName: 'onProgress' },
-            { type: 'ratechange', methodName: 'onRateChange' },
-            { type: 'readystatechange', methodName: 'onReadyStateChange' },
-            { type: 'reset', methodName: 'onReset' },
-            { type: 'resize', methodName: 'onResize' },
-            { type: 'scroll', methodName: 'onScroll' },
-            { type: 'seeked', methodName: 'onSeeked' },
-            { type: 'seeking', methodName: 'onSeeking' },
-            { type: 'select', methodName: 'onSelect' },
-            { type: 'selectstart', methodName: 'onSelectStart' },
-            { type: 'show', methodName: 'onShow' },
-            { type: 'stalled', methodName: 'onStalled' },
-            { type: 'submit', methodName: 'onSubmit' },
-            { type: 'suspend', methodName: 'onSuspend' },
-            { type: 'timeupdate', methodName: 'onTimeUpdate' },
-            { type: 'toggle', methodName: 'onToggle' },
-            { type: 'touchcancel', methodName: 'onTouchCancel' },
-            { type: 'touchend', methodName: 'onTouchEnd' },
-            { type: 'touchmove', methodName: 'onTouchMove' },
-            { type: 'touchstart', methodName: 'onTouchStart' },
-            { type: 'transitioncancel', methodName: 'onTransitionCancel' },
-            { type: 'transitionend', methodName: 'onTransitionEnd' },
-            { type: 'transitionrun', methodName: 'onTransitionRun' },
-            { type: 'transitionstart', methodName: 'onTransitionStart' },
-            { type: 'volumechange', methodName: 'onVolumeChange' },
-            { type: 'waiting', methodName: 'onWaiting' },
-            { type: 'wheel', methodName: 'onWheel' }
-        ];
+    #initListeners(properties){
+        /**
+         * grab HTML events array
+         */
+        let eventListeners = DOMElementEvents;
         /**
          * loop event listeners array
          */
@@ -486,6 +417,29 @@ export class DOMElement {
                 this.#removeListener(listener.type);
             }
         });
+        /**
+         * append pre-defined events from elementEvents
+         */
+        if(properties !== undefined && typeof properties === 'object' && Object.hasOwn(properties, 'events')){
+            /**
+             * validate events object
+             */
+            if(properties.events !== undefined && typeof properties.events === 'object'){
+                /**
+                 * loop events
+                 */
+                Object.keys(properties.events).forEach(key => {
+                    /**
+                     * declare functions, options
+                     */
+                    let func = properties.events[key];
+                    /**
+                     * call specified event method and append properties
+                     */
+                    this[key](func, undefined);
+                });
+            }
+        }
     }
     /*----------------------------------------------------------*/
     /**
@@ -493,10 +447,11 @@ export class DOMElement {
      * @type {Method}
      * @memberof DOMElement
      * @private
+     * @param {Object} properties
      * @property {Array} node.children
      */
     /*----------------------------------------------------------*/
-    #initChildren(){
+    #initChildren(properties){
         /**
          * @name tagNames
          * @type {Array}
@@ -506,9 +461,24 @@ export class DOMElement {
         .map((child) => {
             return child.tagName.toLowerCase();
         })
-        .reduce((acc, curr) => 
-            acc.includes(curr) ? acc : [...acc, curr]
-        , []);
+        .reduce((acc, curr) => acc.includes(curr) ? acc : [...acc, curr], []);
+        /**
+         * @name protoChildren
+         * @type {Array}
+         * @memberof initChildren
+         */
+        let protoChildren;
+        /**
+         * validate properties
+         */
+        if(properties !== undefined){
+            /**
+             * validate children
+             */
+            if(Array.isArray(properties.children)){
+                protoChildren = properties.children;
+            }
+        }
         /**
          * @name children
          * @type {Array}
@@ -525,12 +495,21 @@ export class DOMElement {
         tagNames.forEach(tag => {
             let temp = {
                 tagName: tag,
-                nodes: []
+                nodes: [],
+                protoElements: []
             };
             /**
              * loop child nodes
              */
-            Array.from(this.#node.children).forEach(child => {
+            Array.from(this.#node.children).forEach((child, index) => {
+                /**
+                 * validate protochildren
+                 */
+                if(protoChildren !== undefined){
+                    if(protoChildren[index].type === tag){
+                        temp.protoElements.push(protoChildren[index]);
+                    }
+                }
                 /**
                  * build nodes array
                  */
@@ -546,10 +525,14 @@ export class DOMElement {
         /**
          * refine children array
          * reduce nodes to value if array length === 1
+         * reduce protoelements to value if array length === 1
          */
         children.forEach(child => {
             if(child.nodes.length === 1){
                 child.nodes = child.nodes[0];
+            }
+            if(child.protoElements.length === 1){
+                child.protoElements = child.protoElements[0];
             }
         });
         /**
@@ -564,7 +547,7 @@ export class DOMElement {
                 /**
                  * create Class property
                  */
-                DOMElement.prototype[child.tagName] = new DOMElement(child.nodes);
+                DOMElement.prototype[child.tagName] = new DOMElement(child.nodes, child.protoElements);
                 /**
                  * append to children
                  */
@@ -574,8 +557,8 @@ export class DOMElement {
                  * loop nodes and generate nodeControllers
                  */
                 let acc = [];
-                child.nodes.forEach(node => {
-                    acc.push(new DOMElement(node));
+                child.nodes.forEach((node, index) => {
+                    acc.push(new DOMElement(node, child.protoElements[index]));
                 });
                 /**
                  * create class property
@@ -843,7 +826,9 @@ export class DOMElement {
      * @desciption
      */
     /*----------------------------------------------------------*/
-    mount(){}
+    mount(){
+        this.#parent.appendChild(this.#node);
+    }
     /*----------------------------------------------------------*/
     /**
      * @name render
