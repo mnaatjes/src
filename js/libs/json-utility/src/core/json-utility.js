@@ -9,6 +9,9 @@
  * @type {Class}
  * @namespace JSONUtility
  */
+
+import { JSONTable } from "./json-table.js";
+
 /*----------------------------------------------------------*/
 export class JSONUtility{
     constructor(dbName){
@@ -36,7 +39,7 @@ export class JSONUtility{
      * @type {Method}
      * @memberof JSONUtility
      * @private
-     * @param {dbName}
+     * @param {String} dbName
      * @returns {Undefined | String}
      * @throws {SyntaxError}
      */
@@ -55,11 +58,17 @@ export class JSONUtility{
      * @memberof JSONUtility
      * @public
      * @param {String} tableName
-     * @param {Object} args
+     * @param {Object} configs array of data, column attributes, or settings
      * @returns {Boolean}
      */
     /*----------------------------------------------------------*/
-    createTable(tableName, ...args){}
+    createTable(tableName, ...configs){
+        /**
+         * create new instance of JSONTable
+         * @implements {JSONTable}
+         */
+        new JSONTable(tableName, configs);
+    }
     /*----------------------------------------------------------*/
     /**
      * @name alterTable
