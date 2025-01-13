@@ -1,9 +1,10 @@
 /*----------------------------------------------------------*/
 /**
- * @file src/core/json-utility.js
+ * @file json-utility/src/core/json-utility.js
  * 
- * @import 
+ * @module JSONTable
  */
+import { JSONTable } from "./json-table.js";
 /**
  * @name JSONUtility
  * @type {Class}
@@ -19,6 +20,13 @@ export class JSONUtility{
          * @description
          */
         this.dbName = this.#validateName(dbName);
+        /**
+         * @name tables
+         * @type {Array}
+         * @memberof JSONUtility
+         * @description
+         */
+        this.tables = [];
     }
     /*----------------------------------------------------------*/
     /**
