@@ -1,6 +1,6 @@
 /*----------------------------------------------------------*/
 /**
- * @file json-utility/src/core/json-utility.js
+ * @file json-db/src/core/json-db.js
  * 
  * @module JSONTable
  */
@@ -8,26 +8,26 @@ import { JSONQuery } from "./json-query.js";
 import { JSONTable } from "./json-table.js";
 import { SQLParser } from "./sql-parser.js";
 /**
- * @name JSONUtility
+ * @name JSONDB
  * @type {Class}
- * @namespace JSONUtility
+ * @namespace JSONDB
  */
 /*----------------------------------------------------------*/
-export class JSONUtility extends SQLParser{
+export class JSONDB extends SQLParser{
     #parser;
     constructor(dbName){
         super();
         /**
          * @name dbName
          * @type {String}
-         * @memberof JSONUtility
+         * @memberof JSONDB
          * @description
          */
         this.dbName = this.#validateName(dbName);
         /**
          * @name tables
          * @type {Array}
-         * @memberof JSONUtility
+         * @memberof JSONDB
          * @description
          */
         this.tables = [];
@@ -36,7 +36,7 @@ export class JSONUtility extends SQLParser{
     /**
      * @name tables
      * @type {Undefined | Array}
-     * @memberof JSONUtility
+     * @memberof JSONDB
      * @public
      */
     /*----------------------------------------------------------*/
@@ -46,7 +46,7 @@ export class JSONUtility extends SQLParser{
     /**
      * @name validateName
      * @type {Method}
-     * @memberof JSONUtility
+     * @memberof JSONDB
      * @private
      * @param {dbName}
      * @returns {Undefined | String}
@@ -64,7 +64,7 @@ export class JSONUtility extends SQLParser{
     /**
      * @name query
      * @type {Method}
-     * @memberof JSONUtility
+     * @memberof JSONDB
      * @param {String} sql
      * @property {}
      * @returns {}
@@ -110,7 +110,7 @@ export class JSONUtility extends SQLParser{
     /**
      * @name createTable
      * @type {Method}
-     * @memberof JSONUtility
+     * @memberof JSONDB
      * @public
      * @param {String} tableName
      * @param {Object} args
@@ -129,7 +129,7 @@ export class JSONUtility extends SQLParser{
     /**
      * @name alterTable
      * @type {Method}
-     * @memberof JSONUtility
+     * @memberof JSONDB
      * @public
      * @param {String} tableName
      * @param {Object} args
@@ -141,7 +141,7 @@ export class JSONUtility extends SQLParser{
     /**
      * @name dropTable
      * @type {Method}
-     * @memberof JSONUtility
+     * @memberof JSONDB
      * @public
      * @param {String} tableName
      * @param {Object} args

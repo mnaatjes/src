@@ -1,11 +1,11 @@
 /*----------------------------------------------------------*/
 /**
- * @file json-utility/src/core/sql-parser.js
+ * @file json-db/src/core/sql-db.js
  * 
  * @name SQLParser
  * @type {Class}
  * @namespace SQLParser
- * @memberof JSONUtility
+ * @memberof JSONDB
  */
 /*----------------------------------------------------------*/
 export class SQLParser{

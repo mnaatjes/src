@@ -1,13 +1,13 @@
 /*----------------------------------------------------------*/
 /**
- * @file json-utility/src/core/json-query.js
+ * @file json-db/src/core/json-query.js
  * 
  */
 /**
  * @name JSONQuery
  * @type {Class}
  * @namespace JSONQuery
- * @memberof JSONUtility
+ * @memberof JSONDB
  */
 /*----------------------------------------------------------*/
 export class JSONQuery{

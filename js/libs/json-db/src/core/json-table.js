@@ -1,6 +1,6 @@
 /*----------------------------------------------------------*/
 /**
- * @file json-utility/src/core/json-table.js
+ * @file json-db/src/core/json-table.js
  * 
  * @module JSONQuery
  */
@@ -9,7 +9,7 @@ import { JSONQuery } from "./json-query.js";
  * @name JSONTable
  * @type {Class}
  * @namespace JSONTable
- * @memberof JSONUtility
+ * @memberof JSONDB
  */
 /*----------------------------------------------------------*/
 export class JSONTable{
