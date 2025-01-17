@@ -4,15 +4,19 @@
  * 
  * @module JSONTable
  */
+import { JSONQuery } from "./json-query.js";
 import { JSONTable } from "./json-table.js";
+import { SQLParser } from "./sql-parser.js";
 /**
  * @name JSONUtility
  * @type {Class}
  * @namespace JSONUtility
  */
 /*----------------------------------------------------------*/
-export class JSONUtility{
+export class JSONUtility extends SQLParser{
+    #parser;
     constructor(dbName){
+        super();
         /**
          * @name dbName
          * @type {String}
@@ -58,6 +62,52 @@ export class JSONUtility{
     }
     /*----------------------------------------------------------*/
     /**
+     * @name query
+     * @type {Method}
+     * @memberof JSONUtility
+     * @param {String} sql
+     * @property {}
+     * @returns {}
+     */
+    /*----------------------------------------------------------*/
+    query(sql){
+        /**
+         * validate sql string
+         */
+        if(typeof sql !== 'string'){
+            throw new SyntaxError('Supplied SQL Statement is not a string!');
+        }
+        /**
+         * break up sql statement into array of substrings
+         */
+        sql = this.parseSQL(sql);
+        return;
+        /**
+         * validate sql array
+         */
+        if(!Array.isArray(sql) || sql.length === 0){
+            throw new TypeError('SQL would not be parsed! Please check Statement and try again');
+        }
+        /**
+         * parse sql
+         * get select statement
+         */
+        let statement = sql.map(str => this.parseStatement(str)).filter(res => res !== undefined)[0];
+        console.log(statement);
+        /**
+         * get tableName
+         * get tableData
+         */
+        let tableName = sql.map(str => this.parseTable(str)).filter(res => res !== undefined)[0];
+        let tableData = this[tableName].data;
+        /**
+         * @implements {JSONQuery}
+         */
+        let query = new JSONQuery();
+        console.log(query);
+    }
+    /*----------------------------------------------------------*/
+    /**
      * @name createTable
      * @type {Method}
      * @memberof JSONUtility
@@ -67,7 +117,14 @@ export class JSONUtility{
      * @returns {Boolean}
      */
     /*----------------------------------------------------------*/
-    createTable(tableName, ...args){}
+    createTable(tableName, ...args){
+        /**
+         * @implements {JSONTable}
+         * @description create new table and append to this.object
+         */
+        this[tableName] = new JSONTable(tableName);
+
+    }
     /*----------------------------------------------------------*/
     /**
      * @name alterTable

@@ -2,9 +2,9 @@
 /**
  * @file json-utility/src/core/json-table.js
  * 
- * @import 
+ * @module JSONQuery
  */
-import { SQLParser } from "./sql-parser.js";
+import { JSONQuery } from "./json-query.js";
 /**
  * @name JSONTable
  * @type {Class}
@@ -14,7 +14,6 @@ import { SQLParser } from "./sql-parser.js";
 /*----------------------------------------------------------*/
 export class JSONTable{
     #dataType;
-    #parser;
     constructor(tableName){
         /**
          * @name tableName
@@ -43,7 +42,25 @@ export class JSONTable{
          * @memberof JSONTable
          * @description
          */
-        this.data;
+        this.data = [
+            {person: 'gemini', age: 1, animal: 'dog'},
+            {person: 'apollo', age: 8, animal: 'cat'},
+            {person: 'prince', age: 5, animal: 'cat'},
+        ];
+        /**
+         * @name queries
+         * @type {Array}
+         * @memberof JSONTable
+         * @description
+         */
+        this.queries = [];
+        /**
+         * @name results
+         * @type {Array}
+         * @memberof JSONTable
+         * @description
+         */
+        this.results = [];
         /**
          * @name dataType
          * @type {Undefined | Object | Array}
@@ -52,15 +69,8 @@ export class JSONTable{
          * @description
          */
         this.#dataType = typeof this.data;
-        /**
-         * @name parser
-         * @type {Object}
-         * @memberof JSONTable
-         * @private
-         * @description
-         */
-        this.#parser = new SQLParser();
     }
+
     /*----------------------------------------------------------*/
     /**
      * @name 

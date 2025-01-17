@@ -8,4 +8,5 @@
 import { JSONUtility } from "../src/core/json-utility.js";
 
 const test = new JSONUtility('DBName');
-console.log(test);
+test.createTable('pets');
+test.query('SELECT SUM(*) FROM pets WHERE animal = "dog" AND age = 2');
