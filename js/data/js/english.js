@@ -1,0 +1,35002 @@
+export const english = [
+  {
+    "rank": "1",
+    "word": "the",
+    "parts": "a",
+    "frequency": "22038615",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "2",
+    "word": "be",
+    "parts": "v",
+    "frequency": "12545825",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3",
+    "word": "and",
+    "parts": "c",
+    "frequency": "10741073",
+    "dispersion": "0.99"
+  },
+  {
+    "rank": "4",
+    "word": "of",
+    "parts": "i",
+    "frequency": "10343885",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "5",
+    "word": "a",
+    "parts": "a",
+    "frequency": "10144200",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "6",
+    "word": "in",
+    "parts": "i",
+    "frequency": "6996437",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "7",
+    "word": "to",
+    "parts": "t",
+    "frequency": "6332195",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "8",
+    "word": "have",
+    "parts": "v",
+    "frequency": "4303955",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "9",
+    "word": "to",
+    "parts": "i",
+    "frequency": "3856916",
+    "dispersion": "0.99"
+  },
+  {
+    "rank": "10",
+    "word": "it",
+    "parts": "p",
+    "frequency": "3872477",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "11",
+    "word": "I",
+    "parts": "p",
+    "frequency": "3978265",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "12",
+    "word": "that",
+    "parts": "c",
+    "frequency": "3430996",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "13",
+    "word": "for",
+    "parts": "i",
+    "frequency": "3281454",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "14",
+    "word": "you",
+    "parts": "p",
+    "frequency": "3081151",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "15",
+    "word": "he",
+    "parts": "p",
+    "frequency": "2909254",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "16",
+    "word": "with",
+    "parts": "i",
+    "frequency": "2683014",
+    "dispersion": "0.99"
+  },
+  {
+    "rank": "17",
+    "word": "on",
+    "parts": "i",
+    "frequency": "2485306",
+    "dispersion": "0.99"
+  },
+  {
+    "rank": "18",
+    "word": "do",
+    "parts": "v",
+    "frequency": "2573587",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "19",
+    "word": "say",
+    "parts": "v",
+    "frequency": "1915138",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "20",
+    "word": "this",
+    "parts": "d",
+    "frequency": "1885366",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "21",
+    "word": "they",
+    "parts": "p",
+    "frequency": "1865580",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "22",
+    "word": "at",
+    "parts": "i",
+    "frequency": "1767638",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "23",
+    "word": "but",
+    "parts": "c",
+    "frequency": "1776767",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "24",
+    "word": "we",
+    "parts": "p",
+    "frequency": "1820935",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "25",
+    "word": "his",
+    "parts": "a",
+    "frequency": "1801708",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "26",
+    "word": "from",
+    "parts": "i",
+    "frequency": "1635914",
+    "dispersion": "0.99"
+  },
+  {
+    "rank": "27",
+    "word": "that",
+    "parts": "d",
+    "frequency": "1712406",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "28",
+    "word": "not",
+    "parts": "x",
+    "frequency": "1638830",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "29",
+    "word": "n't",
+    "parts": "x",
+    "frequency": "1619007",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "30",
+    "word": "by",
+    "parts": "i",
+    "frequency": "1490548",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "31",
+    "word": "she",
+    "parts": "p",
+    "frequency": "1484869",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "32",
+    "word": "or",
+    "parts": "c",
+    "frequency": "1379320",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "33",
+    "word": "as",
+    "parts": "c",
+    "frequency": "1296879",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "34",
+    "word": "what",
+    "parts": "d",
+    "frequency": "1181023",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "35",
+    "word": "go",
+    "parts": "v",
+    "frequency": "1151045",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "36",
+    "word": "their",
+    "parts": "a",
+    "frequency": "1083029",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "37",
+    "word": "can",
+    "parts": "v",
+    "frequency": "1022775",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "38",
+    "word": "who",
+    "parts": "p",
+    "frequency": "1018283",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "39",
+    "word": "get",
+    "parts": "v",
+    "frequency": "992596",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "40",
+    "word": "if",
+    "parts": "c",
+    "frequency": "933542",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "41",
+    "word": "would",
+    "parts": "v",
+    "frequency": "925515",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "42",
+    "word": "her",
+    "parts": "a",
+    "frequency": "969591",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "43",
+    "word": "all",
+    "parts": "d",
+    "frequency": "892102",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "44",
+    "word": "my",
+    "parts": "a",
+    "frequency": "919821",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "45",
+    "word": "make",
+    "parts": "v",
+    "frequency": "857168",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "46",
+    "word": "about",
+    "parts": "i",
+    "frequency": "874406",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "47",
+    "word": "know",
+    "parts": "v",
+    "frequency": "892535",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "48",
+    "word": "will",
+    "parts": "v",
+    "frequency": "824568",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "49",
+    "word": "as",
+    "parts": "i",
+    "frequency": "829018",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "50",
+    "word": "up",
+    "parts": "r",
+    "frequency": "795534",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "51",
+    "word": "one",
+    "parts": "m",
+    "frequency": "768232",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "52",
+    "word": "time",
+    "parts": "n",
+    "frequency": "764657",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "53",
+    "word": "there",
+    "parts": "e",
+    "frequency": "784528",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "54",
+    "word": "year",
+    "parts": "n",
+    "frequency": "769254",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "55",
+    "word": "so",
+    "parts": "r",
+    "frequency": "756550",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "56",
+    "word": "think",
+    "parts": "v",
+    "frequency": "772787",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "57",
+    "word": "when",
+    "parts": "c",
+    "frequency": "678626",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "58",
+    "word": "which",
+    "parts": "d",
+    "frequency": "685982",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "59",
+    "word": "them",
+    "parts": "p",
+    "frequency": "677870",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "60",
+    "word": "some",
+    "parts": "d",
+    "frequency": "674193",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "61",
+    "word": "me",
+    "parts": "p",
+    "frequency": "709623",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "62",
+    "word": "people",
+    "parts": "n",
+    "frequency": "691468",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "63",
+    "word": "take",
+    "parts": "v",
+    "frequency": "670745",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "64",
+    "word": "out",
+    "parts": "r",
+    "frequency": "678603",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "65",
+    "word": "into",
+    "parts": "i",
+    "frequency": "668172",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "66",
+    "word": "just",
+    "parts": "r",
+    "frequency": "677711",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "67",
+    "word": "see",
+    "parts": "v",
+    "frequency": "663645",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "68",
+    "word": "him",
+    "parts": "p",
+    "frequency": "677707",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "69",
+    "word": "your",
+    "parts": "a",
+    "frequency": "659622",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "70",
+    "word": "come",
+    "parts": "v",
+    "frequency": "628254",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "71",
+    "word": "could",
+    "parts": "v",
+    "frequency": "617932",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "72",
+    "word": "now",
+    "parts": "r",
+    "frequency": "605997",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "73",
+    "word": "than",
+    "parts": "c",
+    "frequency": "579757",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "74",
+    "word": "like",
+    "parts": "i",
+    "frequency": "568850",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "75",
+    "word": "other",
+    "parts": "j",
+    "frequency": "547799",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "76",
+    "word": "how",
+    "parts": "r",
+    "frequency": "538893",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "77",
+    "word": "then",
+    "parts": "r",
+    "frequency": "543977",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "78",
+    "word": "its",
+    "parts": "a",
+    "frequency": "539719",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "79",
+    "word": "our",
+    "parts": "a",
+    "frequency": "525107",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "80",
+    "word": "two",
+    "parts": "m",
+    "frequency": "511027",
+    "dispersion": "0.99"
+  },
+  {
+    "rank": "81",
+    "word": "more",
+    "parts": "r",
+    "frequency": "517536",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "82",
+    "word": "these",
+    "parts": "d",
+    "frequency": "513864",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "83",
+    "word": "want",
+    "parts": "v",
+    "frequency": "514972",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "84",
+    "word": "way",
+    "parts": "n",
+    "frequency": "470401",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "85",
+    "word": "look",
+    "parts": "v",
+    "frequency": "491707",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "86",
+    "word": "first",
+    "parts": "m",
+    "frequency": "463566",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "87",
+    "word": "also",
+    "parts": "r",
+    "frequency": "464606",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "88",
+    "word": "new",
+    "parts": "j",
+    "frequency": "435993",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "89",
+    "word": "because",
+    "parts": "c",
+    "frequency": "438539",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "90",
+    "word": "day",
+    "parts": "n",
+    "frequency": "432773",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "91",
+    "word": "more",
+    "parts": "d",
+    "frequency": "420170",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "92",
+    "word": "use",
+    "parts": "v",
+    "frequency": "420781",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "93",
+    "word": "no",
+    "parts": "a",
+    "frequency": "402222",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "94",
+    "word": "man",
+    "parts": "n",
+    "frequency": "409760",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "95",
+    "word": "find",
+    "parts": "v",
+    "frequency": "395203",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "96",
+    "word": "here",
+    "parts": "r",
+    "frequency": "412315",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "97",
+    "word": "thing",
+    "parts": "n",
+    "frequency": "400724",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "98",
+    "word": "give",
+    "parts": "v",
+    "frequency": "384503",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "99",
+    "word": "many",
+    "parts": "d",
+    "frequency": "385348",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "100",
+    "word": "well",
+    "parts": "r",
+    "frequency": "411776",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "101",
+    "word": "only",
+    "parts": "r",
+    "frequency": "379574",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "102",
+    "word": "those",
+    "parts": "d",
+    "frequency": "378007",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "103",
+    "word": "tell",
+    "parts": "v",
+    "frequency": "388155",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "104",
+    "word": "one",
+    "parts": "p",
+    "frequency": "369553",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "105",
+    "word": "very",
+    "parts": "r",
+    "frequency": "391821",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "106",
+    "word": "her",
+    "parts": "p",
+    "frequency": "397950",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "107",
+    "word": "even",
+    "parts": "r",
+    "frequency": "361067",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "108",
+    "word": "back",
+    "parts": "r",
+    "frequency": "367844",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "109",
+    "word": "any",
+    "parts": "d",
+    "frequency": "348100",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "110",
+    "word": "good",
+    "parts": "j",
+    "frequency": "353973",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "111",
+    "word": "woman",
+    "parts": "n",
+    "frequency": "341422",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "112",
+    "word": "through",
+    "parts": "i",
+    "frequency": "340921",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "113",
+    "word": "us",
+    "parts": "p",
+    "frequency": "351088",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "114",
+    "word": "life",
+    "parts": "n",
+    "frequency": "333085",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "115",
+    "word": "child",
+    "parts": "n",
+    "frequency": "333849",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "116",
+    "word": "there",
+    "parts": "r",
+    "frequency": "333433",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "117",
+    "word": "work",
+    "parts": "v",
+    "frequency": "318210",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "118",
+    "word": "down",
+    "parts": "r",
+    "frequency": "329409",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "119",
+    "word": "may",
+    "parts": "v",
+    "frequency": "324569",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "120",
+    "word": "after",
+    "parts": "i",
+    "frequency": "311902",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "121",
+    "word": "should",
+    "parts": "v",
+    "frequency": "310265",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "122",
+    "word": "call",
+    "parts": "v",
+    "frequency": "308050",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "123",
+    "word": "world",
+    "parts": "n",
+    "frequency": "303506",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "124",
+    "word": "over",
+    "parts": "i",
+    "frequency": "300349",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "125",
+    "word": "school",
+    "parts": "n",
+    "frequency": "304183",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "126",
+    "word": "still",
+    "parts": "r",
+    "frequency": "296953",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "127",
+    "word": "try",
+    "parts": "v",
+    "frequency": "294023",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "128",
+    "word": "in",
+    "parts": "r",
+    "frequency": "285035",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "129",
+    "word": "as",
+    "parts": "r",
+    "frequency": "281483",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "130",
+    "word": "last",
+    "parts": "m",
+    "frequency": "289843",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "131",
+    "word": "ask",
+    "parts": "v",
+    "frequency": "284632",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "132",
+    "word": "need",
+    "parts": "v",
+    "frequency": "276744",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "133",
+    "word": "too",
+    "parts": "r",
+    "frequency": "280396",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "134",
+    "word": "feel",
+    "parts": "v",
+    "frequency": "275214",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "135",
+    "word": "three",
+    "parts": "m",
+    "frequency": "266744",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "136",
+    "word": "when",
+    "parts": "r",
+    "frequency": "268219",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "137",
+    "word": "state",
+    "parts": "n",
+    "frequency": "272193",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "138",
+    "word": "never",
+    "parts": "r",
+    "frequency": "262584",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "139",
+    "word": "become",
+    "parts": "v",
+    "frequency": "259102",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "140",
+    "word": "between",
+    "parts": "i",
+    "frequency": "264158",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "141",
+    "word": "high",
+    "parts": "j",
+    "frequency": "255936",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "142",
+    "word": "really",
+    "parts": "r",
+    "frequency": "263414",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "143",
+    "word": "something",
+    "parts": "p",
+    "frequency": "254910",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "144",
+    "word": "most",
+    "parts": "r",
+    "frequency": "246360",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "145",
+    "word": "another",
+    "parts": "d",
+    "frequency": "240646",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "146",
+    "word": "much",
+    "parts": "d",
+    "frequency": "244507",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "147",
+    "word": "family",
+    "parts": "n",
+    "frequency": "243267",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "148",
+    "word": "own",
+    "parts": "d",
+    "frequency": "240452",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "149",
+    "word": "out",
+    "parts": "i",
+    "frequency": "242443",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "150",
+    "word": "leave",
+    "parts": "v",
+    "frequency": "240482",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "151",
+    "word": "put",
+    "parts": "v",
+    "frequency": "237480",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "152",
+    "word": "old",
+    "parts": "j",
+    "frequency": "236577",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "153",
+    "word": "while",
+    "parts": "c",
+    "frequency": "234555",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "154",
+    "word": "mean",
+    "parts": "v",
+    "frequency": "242198",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "155",
+    "word": "on",
+    "parts": "r",
+    "frequency": "236980",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "156",
+    "word": "keep",
+    "parts": "v",
+    "frequency": "231760",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "157",
+    "word": "student",
+    "parts": "n",
+    "frequency": "255047",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "158",
+    "word": "why",
+    "parts": "r",
+    "frequency": "235442",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "159",
+    "word": "let",
+    "parts": "v",
+    "frequency": "240300",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "160",
+    "word": "great",
+    "parts": "j",
+    "frequency": "225005",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "161",
+    "word": "same",
+    "parts": "d",
+    "frequency": "222836",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "162",
+    "word": "big",
+    "parts": "j",
+    "frequency": "227169",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "163",
+    "word": "group",
+    "parts": "n",
+    "frequency": "229435",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "164",
+    "word": "begin",
+    "parts": "v",
+    "frequency": "218617",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "165",
+    "word": "seem",
+    "parts": "v",
+    "frequency": "219627",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "166",
+    "word": "country",
+    "parts": "n",
+    "frequency": "223138",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "167",
+    "word": "help",
+    "parts": "v",
+    "frequency": "216082",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "168",
+    "word": "talk",
+    "parts": "v",
+    "frequency": "229429",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "169",
+    "word": "where",
+    "parts": "c",
+    "frequency": "213744",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "170",
+    "word": "turn",
+    "parts": "v",
+    "frequency": "221392",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "171",
+    "word": "problem",
+    "parts": "n",
+    "frequency": "217728",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "172",
+    "word": "every",
+    "parts": "a",
+    "frequency": "212739",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "173",
+    "word": "start",
+    "parts": "v",
+    "frequency": "213952",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "174",
+    "word": "hand",
+    "parts": "n",
+    "frequency": "225247",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "175",
+    "word": "might",
+    "parts": "v",
+    "frequency": "209059",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "176",
+    "word": "American",
+    "parts": "j",
+    "frequency": "214968",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "177",
+    "word": "show",
+    "parts": "v",
+    "frequency": "208037",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "178",
+    "word": "part",
+    "parts": "n",
+    "frequency": "207861",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "179",
+    "word": "about",
+    "parts": "r",
+    "frequency": "208550",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "180",
+    "word": "against",
+    "parts": "i",
+    "frequency": "204379",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "181",
+    "word": "place",
+    "parts": "n",
+    "frequency": "202427",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "182",
+    "word": "over",
+    "parts": "r",
+    "frequency": "208260",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "183",
+    "word": "such",
+    "parts": "d",
+    "frequency": "207065",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "184",
+    "word": "again",
+    "parts": "r",
+    "frequency": "206895",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "185",
+    "word": "few",
+    "parts": "d",
+    "frequency": "197266",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "186",
+    "word": "case",
+    "parts": "n",
+    "frequency": "200773",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "187",
+    "word": "most",
+    "parts": "d",
+    "frequency": "197086",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "188",
+    "word": "week",
+    "parts": "n",
+    "frequency": "199268",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "189",
+    "word": "company",
+    "parts": "n",
+    "frequency": "203345",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "190",
+    "word": "where",
+    "parts": "r",
+    "frequency": "194427",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "191",
+    "word": "system",
+    "parts": "n",
+    "frequency": "200175",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "192",
+    "word": "each",
+    "parts": "d",
+    "frequency": "196522",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "193",
+    "word": "right",
+    "parts": "r",
+    "frequency": "205250",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "194",
+    "word": "program",
+    "parts": "n",
+    "frequency": "195985",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "195",
+    "word": "hear",
+    "parts": "v",
+    "frequency": "196070",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "196",
+    "word": "so",
+    "parts": "c",
+    "frequency": "191893",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "197",
+    "word": "question",
+    "parts": "n",
+    "frequency": "192070",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "198",
+    "word": "during",
+    "parts": "i",
+    "frequency": "190729",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "199",
+    "word": "work",
+    "parts": "n",
+    "frequency": "187533",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "200",
+    "word": "play",
+    "parts": "v",
+    "frequency": "188328",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "201",
+    "word": "government",
+    "parts": "n",
+    "frequency": "191314",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "202",
+    "word": "run",
+    "parts": "v",
+    "frequency": "187325",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "203",
+    "word": "small",
+    "parts": "j",
+    "frequency": "185463",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "204",
+    "word": "number",
+    "parts": "n",
+    "frequency": "186005",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "205",
+    "word": "off",
+    "parts": "r",
+    "frequency": "183854",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "206",
+    "word": "always",
+    "parts": "r",
+    "frequency": "179474",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "207",
+    "word": "move",
+    "parts": "v",
+    "frequency": "179388",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "208",
+    "word": "like",
+    "parts": "v",
+    "frequency": "182341",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "209",
+    "word": "night",
+    "parts": "n",
+    "frequency": "184511",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "210",
+    "word": "live",
+    "parts": "v",
+    "frequency": "176144",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "211",
+    "word": "Mr",
+    "parts": "n",
+    "frequency": "188555",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "212",
+    "word": "point",
+    "parts": "n",
+    "frequency": "177481",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "213",
+    "word": "believe",
+    "parts": "v",
+    "frequency": "178397",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "214",
+    "word": "hold",
+    "parts": "v",
+    "frequency": "177368",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "215",
+    "word": "today",
+    "parts": "r",
+    "frequency": "183724",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "216",
+    "word": "bring",
+    "parts": "v",
+    "frequency": "174366",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "217",
+    "word": "happen",
+    "parts": "v",
+    "frequency": "182714",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "218",
+    "word": "next",
+    "parts": "m",
+    "frequency": "176306",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "219",
+    "word": "without",
+    "parts": "i",
+    "frequency": "172448",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "220",
+    "word": "before",
+    "parts": "i",
+    "frequency": "172769",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "221",
+    "word": "large",
+    "parts": "j",
+    "frequency": "175611",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "222",
+    "word": "all",
+    "parts": "r",
+    "frequency": "177317",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "223",
+    "word": "million",
+    "parts": "m",
+    "frequency": "176895",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "224",
+    "word": "must",
+    "parts": "v",
+    "frequency": "171043",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "225",
+    "word": "home",
+    "parts": "n",
+    "frequency": "170527",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "226",
+    "word": "under",
+    "parts": "i",
+    "frequency": "164766",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "227",
+    "word": "water",
+    "parts": "n",
+    "frequency": "167666",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "228",
+    "word": "room",
+    "parts": "n",
+    "frequency": "172472",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "229",
+    "word": "write",
+    "parts": "v",
+    "frequency": "161824",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "230",
+    "word": "mother",
+    "parts": "n",
+    "frequency": "169407",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "231",
+    "word": "area",
+    "parts": "n",
+    "frequency": "165812",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "232",
+    "word": "national",
+    "parts": "j",
+    "frequency": "166359",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "233",
+    "word": "money",
+    "parts": "n",
+    "frequency": "164794",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "234",
+    "word": "story",
+    "parts": "n",
+    "frequency": "163582",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "235",
+    "word": "young",
+    "parts": "j",
+    "frequency": "160011",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "236",
+    "word": "fact",
+    "parts": "n",
+    "frequency": "164401",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "237",
+    "word": "month",
+    "parts": "n",
+    "frequency": "162685",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "238",
+    "word": "different",
+    "parts": "j",
+    "frequency": "162411",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "239",
+    "word": "lot",
+    "parts": "n",
+    "frequency": "169570",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "240",
+    "word": "right",
+    "parts": "n",
+    "frequency": "163259",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "241",
+    "word": "study",
+    "parts": "n",
+    "frequency": "174069",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "242",
+    "word": "book",
+    "parts": "n",
+    "frequency": "154013",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "243",
+    "word": "eye",
+    "parts": "n",
+    "frequency": "169150",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "244",
+    "word": "job",
+    "parts": "n",
+    "frequency": "154743",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "245",
+    "word": "word",
+    "parts": "n",
+    "frequency": "152891",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "246",
+    "word": "though",
+    "parts": "c",
+    "frequency": "152182",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "247",
+    "word": "business",
+    "parts": "n",
+    "frequency": "154468",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "248",
+    "word": "issue",
+    "parts": "n",
+    "frequency": "156417",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "249",
+    "word": "side",
+    "parts": "n",
+    "frequency": "152559",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "250",
+    "word": "kind",
+    "parts": "n",
+    "frequency": "155032",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "251",
+    "word": "four",
+    "parts": "m",
+    "frequency": "150646",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "252",
+    "word": "head",
+    "parts": "n",
+    "frequency": "160131",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "253",
+    "word": "far",
+    "parts": "r",
+    "frequency": "148621",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "254",
+    "word": "black",
+    "parts": "j",
+    "frequency": "150718",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "255",
+    "word": "long",
+    "parts": "j",
+    "frequency": "149050",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "256",
+    "word": "both",
+    "parts": "d",
+    "frequency": "146338",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "257",
+    "word": "little",
+    "parts": "j",
+    "frequency": "149658",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "258",
+    "word": "house",
+    "parts": "n",
+    "frequency": "149251",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "259",
+    "word": "yes",
+    "parts": "u",
+    "frequency": "157364",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "260",
+    "word": "after",
+    "parts": "c",
+    "frequency": "142289",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "261",
+    "word": "since",
+    "parts": "c",
+    "frequency": "141264",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "262",
+    "word": "long",
+    "parts": "r",
+    "frequency": "142007",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "263",
+    "word": "provide",
+    "parts": "v",
+    "frequency": "150879",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "264",
+    "word": "service",
+    "parts": "n",
+    "frequency": "146122",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "265",
+    "word": "around",
+    "parts": "i",
+    "frequency": "143766",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "266",
+    "word": "friend",
+    "parts": "n",
+    "frequency": "142697",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "267",
+    "word": "important",
+    "parts": "j",
+    "frequency": "144194",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "268",
+    "word": "father",
+    "parts": "n",
+    "frequency": "145051",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "269",
+    "word": "sit",
+    "parts": "v",
+    "frequency": "147185",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "270",
+    "word": "away",
+    "parts": "r",
+    "frequency": "144713",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "271",
+    "word": "until",
+    "parts": "c",
+    "frequency": "140819",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "272",
+    "word": "power",
+    "parts": "n",
+    "frequency": "141357",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "273",
+    "word": "hour",
+    "parts": "n",
+    "frequency": "138955",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "274",
+    "word": "game",
+    "parts": "n",
+    "frequency": "146311",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "275",
+    "word": "often",
+    "parts": "r",
+    "frequency": "140731",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "276",
+    "word": "yet",
+    "parts": "r",
+    "frequency": "135484",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "277",
+    "word": "line",
+    "parts": "n",
+    "frequency": "135986",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "278",
+    "word": "political",
+    "parts": "j",
+    "frequency": "144437",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "279",
+    "word": "end",
+    "parts": "n",
+    "frequency": "134104",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "280",
+    "word": "among",
+    "parts": "i",
+    "frequency": "138192",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "281",
+    "word": "ever",
+    "parts": "r",
+    "frequency": "135774",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "282",
+    "word": "stand",
+    "parts": "v",
+    "frequency": "140937",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "283",
+    "word": "bad",
+    "parts": "j",
+    "frequency": "134910",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "284",
+    "word": "lose",
+    "parts": "v",
+    "frequency": "134102",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "285",
+    "word": "however",
+    "parts": "r",
+    "frequency": "142282",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "286",
+    "word": "member",
+    "parts": "n",
+    "frequency": "134731",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "287",
+    "word": "pay",
+    "parts": "v",
+    "frequency": "133133",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "288",
+    "word": "law",
+    "parts": "n",
+    "frequency": "133706",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "289",
+    "word": "meet",
+    "parts": "v",
+    "frequency": "128737",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "290",
+    "word": "car",
+    "parts": "n",
+    "frequency": "133571",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "291",
+    "word": "city",
+    "parts": "n",
+    "frequency": "132684",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "292",
+    "word": "almost",
+    "parts": "r",
+    "frequency": "127907",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "293",
+    "word": "include",
+    "parts": "v",
+    "frequency": "133563",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "294",
+    "word": "continue",
+    "parts": "v",
+    "frequency": "126029",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "295",
+    "word": "set",
+    "parts": "v",
+    "frequency": "127369",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "296",
+    "word": "later",
+    "parts": "r",
+    "frequency": "126495",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "297",
+    "word": "community",
+    "parts": "n",
+    "frequency": "133057",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "298",
+    "word": "much",
+    "parts": "r",
+    "frequency": "126029",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "299",
+    "word": "name",
+    "parts": "n",
+    "frequency": "127139",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "300",
+    "word": "five",
+    "parts": "m",
+    "frequency": "125571",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "301",
+    "word": "once",
+    "parts": "r",
+    "frequency": "126203",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "302",
+    "word": "white",
+    "parts": "j",
+    "frequency": "126760",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "303",
+    "word": "least",
+    "parts": "r",
+    "frequency": "123961",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "304",
+    "word": "president",
+    "parts": "n",
+    "frequency": "134203",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "305",
+    "word": "learn",
+    "parts": "v",
+    "frequency": "124346",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "306",
+    "word": "real",
+    "parts": "j",
+    "frequency": "124187",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "307",
+    "word": "change",
+    "parts": "v",
+    "frequency": "123183",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "308",
+    "word": "team",
+    "parts": "n",
+    "frequency": "131489",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "309",
+    "word": "minute",
+    "parts": "n",
+    "frequency": "126660",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "310",
+    "word": "best",
+    "parts": "j",
+    "frequency": "124850",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "311",
+    "word": "several",
+    "parts": "d",
+    "frequency": "124039",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "312",
+    "word": "idea",
+    "parts": "n",
+    "frequency": "122140",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "313",
+    "word": "kid",
+    "parts": "n",
+    "frequency": "126428",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "314",
+    "word": "body",
+    "parts": "n",
+    "frequency": "125165",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "315",
+    "word": "information",
+    "parts": "n",
+    "frequency": "127331",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "316",
+    "word": "nothing",
+    "parts": "p",
+    "frequency": "126717",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "317",
+    "word": "ago",
+    "parts": "r",
+    "frequency": "125252",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "318",
+    "word": "right",
+    "parts": "j",
+    "frequency": "126278",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "319",
+    "word": "lead",
+    "parts": "v",
+    "frequency": "122691",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "320",
+    "word": "social",
+    "parts": "j",
+    "frequency": "132899",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "321",
+    "word": "understand",
+    "parts": "v",
+    "frequency": "121354",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "322",
+    "word": "whether",
+    "parts": "c",
+    "frequency": "121921",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "323",
+    "word": "back",
+    "parts": "n",
+    "frequency": "125006",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "324",
+    "word": "watch",
+    "parts": "v",
+    "frequency": "124976",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "325",
+    "word": "together",
+    "parts": "r",
+    "frequency": "119186",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "326",
+    "word": "follow",
+    "parts": "v",
+    "frequency": "119425",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "327",
+    "word": "around",
+    "parts": "r",
+    "frequency": "122789",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "328",
+    "word": "parent",
+    "parts": "n",
+    "frequency": "119610",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "329",
+    "word": "only",
+    "parts": "j",
+    "frequency": "117700",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "330",
+    "word": "stop",
+    "parts": "v",
+    "frequency": "121481",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "331",
+    "word": "face",
+    "parts": "n",
+    "frequency": "127291",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "332",
+    "word": "anything",
+    "parts": "p",
+    "frequency": "120292",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "333",
+    "word": "create",
+    "parts": "v",
+    "frequency": "119419",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "334",
+    "word": "public",
+    "parts": "j",
+    "frequency": "119825",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "335",
+    "word": "already",
+    "parts": "r",
+    "frequency": "115220",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "336",
+    "word": "speak",
+    "parts": "v",
+    "frequency": "117358",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "337",
+    "word": "others",
+    "parts": "n",
+    "frequency": "115771",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "338",
+    "word": "read",
+    "parts": "v",
+    "frequency": "114094",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "339",
+    "word": "level",
+    "parts": "n",
+    "frequency": "121704",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "340",
+    "word": "allow",
+    "parts": "v",
+    "frequency": "114892",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "341",
+    "word": "add",
+    "parts": "v",
+    "frequency": "117842",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "342",
+    "word": "office",
+    "parts": "n",
+    "frequency": "114791",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "343",
+    "word": "spend",
+    "parts": "v",
+    "frequency": "114569",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "344",
+    "word": "door",
+    "parts": "n",
+    "frequency": "124993",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "345",
+    "word": "health",
+    "parts": "n",
+    "frequency": "117762",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "346",
+    "word": "person",
+    "parts": "n",
+    "frequency": "113650",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "347",
+    "word": "art",
+    "parts": "n",
+    "frequency": "117851",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "348",
+    "word": "sure",
+    "parts": "j",
+    "frequency": "116186",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "349",
+    "word": "such",
+    "parts": "i",
+    "frequency": "119125",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "350",
+    "word": "war",
+    "parts": "n",
+    "frequency": "117804",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "351",
+    "word": "history",
+    "parts": "n",
+    "frequency": "114904",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "352",
+    "word": "party",
+    "parts": "n",
+    "frequency": "112962",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "353",
+    "word": "within",
+    "parts": "i",
+    "frequency": "114599",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "354",
+    "word": "grow",
+    "parts": "v",
+    "frequency": "110020",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "355",
+    "word": "result",
+    "parts": "n",
+    "frequency": "116277",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "356",
+    "word": "open",
+    "parts": "v",
+    "frequency": "111857",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "357",
+    "word": "change",
+    "parts": "n",
+    "frequency": "112426",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "358",
+    "word": "morning",
+    "parts": "n",
+    "frequency": "114002",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "359",
+    "word": "walk",
+    "parts": "v",
+    "frequency": "113787",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "360",
+    "word": "reason",
+    "parts": "n",
+    "frequency": "106863",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "361",
+    "word": "low",
+    "parts": "j",
+    "frequency": "108990",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "362",
+    "word": "win",
+    "parts": "v",
+    "frequency": "111478",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "363",
+    "word": "research",
+    "parts": "n",
+    "frequency": "114802",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "364",
+    "word": "girl",
+    "parts": "n",
+    "frequency": "110409",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "365",
+    "word": "guy",
+    "parts": "n",
+    "frequency": "110409",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "366",
+    "word": "early",
+    "parts": "j",
+    "frequency": "108171",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "367",
+    "word": "food",
+    "parts": "n",
+    "frequency": "107728",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "368",
+    "word": "before",
+    "parts": "c",
+    "frequency": "107448",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "369",
+    "word": "moment",
+    "parts": "n",
+    "frequency": "109720",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "370",
+    "word": "himself",
+    "parts": "p",
+    "frequency": "109288",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "371",
+    "word": "air",
+    "parts": "n",
+    "frequency": "105932",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "372",
+    "word": "teacher",
+    "parts": "n",
+    "frequency": "116100",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "373",
+    "word": "force",
+    "parts": "n",
+    "frequency": "108005",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "374",
+    "word": "offer",
+    "parts": "v",
+    "frequency": "106473",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "375",
+    "word": "enough",
+    "parts": "r",
+    "frequency": "105880",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "376",
+    "word": "both",
+    "parts": "r",
+    "frequency": "106361",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "377",
+    "word": "education",
+    "parts": "n",
+    "frequency": "113731",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "378",
+    "word": "across",
+    "parts": "i",
+    "frequency": "105559",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "379",
+    "word": "although",
+    "parts": "c",
+    "frequency": "107925",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "380",
+    "word": "remember",
+    "parts": "v",
+    "frequency": "106879",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "381",
+    "word": "foot",
+    "parts": "n",
+    "frequency": "107285",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "382",
+    "word": "second",
+    "parts": "m",
+    "frequency": "103621",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "383",
+    "word": "boy",
+    "parts": "n",
+    "frequency": "107447",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "384",
+    "word": "maybe",
+    "parts": "r",
+    "frequency": "108421",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "385",
+    "word": "toward",
+    "parts": "i",
+    "frequency": "105984",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "386",
+    "word": "able",
+    "parts": "j",
+    "frequency": "103171",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "387",
+    "word": "age",
+    "parts": "n",
+    "frequency": "103402",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "388",
+    "word": "off",
+    "parts": "i",
+    "frequency": "104122",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "389",
+    "word": "policy",
+    "parts": "n",
+    "frequency": "107601",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "390",
+    "word": "everything",
+    "parts": "p",
+    "frequency": "103591",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "391",
+    "word": "love",
+    "parts": "v",
+    "frequency": "103681",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "392",
+    "word": "process",
+    "parts": "n",
+    "frequency": "107341",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "393",
+    "word": "music",
+    "parts": "n",
+    "frequency": "102657",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "394",
+    "word": "including",
+    "parts": "i",
+    "frequency": "103650",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "395",
+    "word": "consider",
+    "parts": "v",
+    "frequency": "101987",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "396",
+    "word": "appear",
+    "parts": "v",
+    "frequency": "100671",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "397",
+    "word": "actually",
+    "parts": "r",
+    "frequency": "105155",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "398",
+    "word": "buy",
+    "parts": "v",
+    "frequency": "101105",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "399",
+    "word": "probably",
+    "parts": "r",
+    "frequency": "99754",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "400",
+    "word": "human",
+    "parts": "j",
+    "frequency": "101224",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "401",
+    "word": "wait",
+    "parts": "v",
+    "frequency": "102463",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "402",
+    "word": "serve",
+    "parts": "v",
+    "frequency": "99660",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "403",
+    "word": "market",
+    "parts": "n",
+    "frequency": "100435",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "404",
+    "word": "die",
+    "parts": "v",
+    "frequency": "98376",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "405",
+    "word": "send",
+    "parts": "v",
+    "frequency": "96613",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "406",
+    "word": "expect",
+    "parts": "v",
+    "frequency": "95566",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "407",
+    "word": "home",
+    "parts": "r",
+    "frequency": "97937",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "408",
+    "word": "sense",
+    "parts": "n",
+    "frequency": "95896",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "409",
+    "word": "build",
+    "parts": "v",
+    "frequency": "96651",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "410",
+    "word": "stay",
+    "parts": "v",
+    "frequency": "96933",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "411",
+    "word": "fall",
+    "parts": "v",
+    "frequency": "96908",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "412",
+    "word": "oh",
+    "parts": "u",
+    "frequency": "103613",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "413",
+    "word": "nation",
+    "parts": "n",
+    "frequency": "97212",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "414",
+    "word": "plan",
+    "parts": "n",
+    "frequency": "95824",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "415",
+    "word": "cut",
+    "parts": "v",
+    "frequency": "96012",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "416",
+    "word": "college",
+    "parts": "n",
+    "frequency": "97038",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "417",
+    "word": "interest",
+    "parts": "n",
+    "frequency": "96620",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "418",
+    "word": "death",
+    "parts": "n",
+    "frequency": "93222",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "419",
+    "word": "course",
+    "parts": "r",
+    "frequency": "96224",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "420",
+    "word": "someone",
+    "parts": "p",
+    "frequency": "95608",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "421",
+    "word": "experience",
+    "parts": "n",
+    "frequency": "98106",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "422",
+    "word": "behind",
+    "parts": "i",
+    "frequency": "95047",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "423",
+    "word": "reach",
+    "parts": "v",
+    "frequency": "92375",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "424",
+    "word": "local",
+    "parts": "j",
+    "frequency": "92970",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "425",
+    "word": "kill",
+    "parts": "v",
+    "frequency": "92660",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "426",
+    "word": "six",
+    "parts": "m",
+    "frequency": "90571",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "427",
+    "word": "remain",
+    "parts": "v",
+    "frequency": "91319",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "428",
+    "word": "effect",
+    "parts": "n",
+    "frequency": "95216",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "429",
+    "word": "use",
+    "parts": "n",
+    "frequency": "96564",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "430",
+    "word": "yeah",
+    "parts": "u",
+    "frequency": "103389",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "431",
+    "word": "suggest",
+    "parts": "v",
+    "frequency": "92643",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "432",
+    "word": "class",
+    "parts": "n",
+    "frequency": "91323",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "433",
+    "word": "control",
+    "parts": "n",
+    "frequency": "90301",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "434",
+    "word": "raise",
+    "parts": "v",
+    "frequency": "87036",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "435",
+    "word": "care",
+    "parts": "n",
+    "frequency": "88862",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "436",
+    "word": "perhaps",
+    "parts": "r",
+    "frequency": "87060",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "437",
+    "word": "little",
+    "parts": "r",
+    "frequency": "88697",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "438",
+    "word": "late",
+    "parts": "j",
+    "frequency": "86421",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "439",
+    "word": "hard",
+    "parts": "j",
+    "frequency": "86817",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "440",
+    "word": "field",
+    "parts": "n",
+    "frequency": "87243",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "441",
+    "word": "else",
+    "parts": "r",
+    "frequency": "87876",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "442",
+    "word": "pass",
+    "parts": "v",
+    "frequency": "86184",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "443",
+    "word": "former",
+    "parts": "d",
+    "frequency": "88930",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "444",
+    "word": "sell",
+    "parts": "v",
+    "frequency": "87865",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "445",
+    "word": "major",
+    "parts": "j",
+    "frequency": "87487",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "446",
+    "word": "sometimes",
+    "parts": "r",
+    "frequency": "84845",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "447",
+    "word": "require",
+    "parts": "v",
+    "frequency": "89280",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "448",
+    "word": "along",
+    "parts": "i",
+    "frequency": "84926",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "449",
+    "word": "development",
+    "parts": "n",
+    "frequency": "91995",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "450",
+    "word": "themselves",
+    "parts": "p",
+    "frequency": "85256",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "451",
+    "word": "report",
+    "parts": "v",
+    "frequency": "88138",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "452",
+    "word": "role",
+    "parts": "n",
+    "frequency": "88666",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "453",
+    "word": "better",
+    "parts": "j",
+    "frequency": "83895",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "454",
+    "word": "economic",
+    "parts": "j",
+    "frequency": "90392",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "455",
+    "word": "effort",
+    "parts": "n",
+    "frequency": "86473",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "456",
+    "word": "up",
+    "parts": "i",
+    "frequency": "85759",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "457",
+    "word": "decide",
+    "parts": "v",
+    "frequency": "84035",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "458",
+    "word": "rate",
+    "parts": "n",
+    "frequency": "87224",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "459",
+    "word": "strong",
+    "parts": "j",
+    "frequency": "83677",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "460",
+    "word": "possible",
+    "parts": "j",
+    "frequency": "85084",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "461",
+    "word": "heart",
+    "parts": "n",
+    "frequency": "84536",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "462",
+    "word": "drug",
+    "parts": "n",
+    "frequency": "86231",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "463",
+    "word": "show",
+    "parts": "n",
+    "frequency": "86828",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "464",
+    "word": "leader",
+    "parts": "n",
+    "frequency": "85438",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "465",
+    "word": "light",
+    "parts": "n",
+    "frequency": "87427",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "466",
+    "word": "voice",
+    "parts": "n",
+    "frequency": "89379",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "467",
+    "word": "wife",
+    "parts": "n",
+    "frequency": "83601",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "468",
+    "word": "whole",
+    "parts": "j",
+    "frequency": "83756",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "469",
+    "word": "police",
+    "parts": "n",
+    "frequency": "85880",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "470",
+    "word": "mind",
+    "parts": "n",
+    "frequency": "82808",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "471",
+    "word": "finally",
+    "parts": "r",
+    "frequency": "81951",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "472",
+    "word": "pull",
+    "parts": "v",
+    "frequency": "87243",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "473",
+    "word": "return",
+    "parts": "v",
+    "frequency": "81812",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "474",
+    "word": "free",
+    "parts": "j",
+    "frequency": "82090",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "475",
+    "word": "military",
+    "parts": "j",
+    "frequency": "85152",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "476",
+    "word": "price",
+    "parts": "n",
+    "frequency": "84443",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "477",
+    "word": "report",
+    "parts": "n",
+    "frequency": "83174",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "478",
+    "word": "less",
+    "parts": "r",
+    "frequency": "82930",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "479",
+    "word": "according",
+    "parts": "i",
+    "frequency": "83773",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "480",
+    "word": "decision",
+    "parts": "n",
+    "frequency": "82429",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "481",
+    "word": "explain",
+    "parts": "v",
+    "frequency": "80797",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "482",
+    "word": "son",
+    "parts": "n",
+    "frequency": "80895",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "483",
+    "word": "hope",
+    "parts": "v",
+    "frequency": "81385",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "484",
+    "word": "even",
+    "parts": "c",
+    "frequency": "79087",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "485",
+    "word": "develop",
+    "parts": "v",
+    "frequency": "84835",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "486",
+    "word": "view",
+    "parts": "n",
+    "frequency": "81338",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "487",
+    "word": "relationship",
+    "parts": "n",
+    "frequency": "84549",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "488",
+    "word": "carry",
+    "parts": "v",
+    "frequency": "79513",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "489",
+    "word": "town",
+    "parts": "n",
+    "frequency": "79821",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "490",
+    "word": "road",
+    "parts": "n",
+    "frequency": "80987",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "491",
+    "word": "drive",
+    "parts": "v",
+    "frequency": "80476",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "492",
+    "word": "arm",
+    "parts": "n",
+    "frequency": "84865",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "493",
+    "word": "true",
+    "parts": "j",
+    "frequency": "79299",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "494",
+    "word": "federal",
+    "parts": "j",
+    "frequency": "81826",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "495",
+    "word": "break",
+    "parts": "v",
+    "frequency": "79310",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "496",
+    "word": "better",
+    "parts": "r",
+    "frequency": "78334",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "497",
+    "word": "difference",
+    "parts": "n",
+    "frequency": "82911",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "498",
+    "word": "thank",
+    "parts": "v",
+    "frequency": "88574",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "499",
+    "word": "receive",
+    "parts": "v",
+    "frequency": "80250",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "500",
+    "word": "value",
+    "parts": "n",
+    "frequency": "82942",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "501",
+    "word": "international",
+    "parts": "j",
+    "frequency": "81610",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "502",
+    "word": "building",
+    "parts": "n",
+    "frequency": "78487",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "503",
+    "word": "action",
+    "parts": "n",
+    "frequency": "80009",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "504",
+    "word": "full",
+    "parts": "j",
+    "frequency": "77547",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "505",
+    "word": "model",
+    "parts": "n",
+    "frequency": "82973",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "506",
+    "word": "join",
+    "parts": "v",
+    "frequency": "80609",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "507",
+    "word": "season",
+    "parts": "n",
+    "frequency": "83743",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "508",
+    "word": "society",
+    "parts": "n",
+    "frequency": "81192",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "509",
+    "word": "because",
+    "parts": "i",
+    "frequency": "77116",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "510",
+    "word": "tax",
+    "parts": "n",
+    "frequency": "80713",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "511",
+    "word": "director",
+    "parts": "n",
+    "frequency": "79813",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "512",
+    "word": "early",
+    "parts": "r",
+    "frequency": "75605",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "513",
+    "word": "position",
+    "parts": "n",
+    "frequency": "77124",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "514",
+    "word": "player",
+    "parts": "n",
+    "frequency": "81358",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "515",
+    "word": "agree",
+    "parts": "v",
+    "frequency": "76753",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "516",
+    "word": "especially",
+    "parts": "r",
+    "frequency": "76304",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "517",
+    "word": "record",
+    "parts": "n",
+    "frequency": "77509",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "518",
+    "word": "pick",
+    "parts": "v",
+    "frequency": "77197",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "519",
+    "word": "wear",
+    "parts": "v",
+    "frequency": "77921",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "520",
+    "word": "paper",
+    "parts": "n",
+    "frequency": "75383",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "521",
+    "word": "special",
+    "parts": "j",
+    "frequency": "75298",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "522",
+    "word": "space",
+    "parts": "n",
+    "frequency": "75395",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "523",
+    "word": "ground",
+    "parts": "n",
+    "frequency": "74713",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "524",
+    "word": "form",
+    "parts": "n",
+    "frequency": "78493",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "525",
+    "word": "support",
+    "parts": "v",
+    "frequency": "76544",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "526",
+    "word": "event",
+    "parts": "n",
+    "frequency": "75559",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "527",
+    "word": "official",
+    "parts": "n",
+    "frequency": "79026",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "528",
+    "word": "whose",
+    "parts": "d",
+    "frequency": "74914",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "529",
+    "word": "matter",
+    "parts": "n",
+    "frequency": "73842",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "530",
+    "word": "everyone",
+    "parts": "p",
+    "frequency": "74534",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "531",
+    "word": "center",
+    "parts": "n",
+    "frequency": "74559",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "532",
+    "word": "couple",
+    "parts": "n",
+    "frequency": "74871",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "533",
+    "word": "site",
+    "parts": "n",
+    "frequency": "75932",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "534",
+    "word": "end",
+    "parts": "v",
+    "frequency": "73099",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "535",
+    "word": "project",
+    "parts": "n",
+    "frequency": "75446",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "536",
+    "word": "hit",
+    "parts": "v",
+    "frequency": "73999",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "537",
+    "word": "base",
+    "parts": "v",
+    "frequency": "75887",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "538",
+    "word": "activity",
+    "parts": "n",
+    "frequency": "77980",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "539",
+    "word": "star",
+    "parts": "n",
+    "frequency": "73695",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "540",
+    "word": "table",
+    "parts": "n",
+    "frequency": "75228",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "541",
+    "word": "need",
+    "parts": "n",
+    "frequency": "74877",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "542",
+    "word": "court",
+    "parts": "n",
+    "frequency": "74112",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "543",
+    "word": "produce",
+    "parts": "v",
+    "frequency": "74169",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "544",
+    "word": "eat",
+    "parts": "v",
+    "frequency": "73505",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "545",
+    "word": "American",
+    "parts": "n",
+    "frequency": "73063",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "546",
+    "word": "teach",
+    "parts": "v",
+    "frequency": "72668",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "547",
+    "word": "oil",
+    "parts": "n",
+    "frequency": "74386",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "548",
+    "word": "half",
+    "parts": "d",
+    "frequency": "70930",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "549",
+    "word": "situation",
+    "parts": "n",
+    "frequency": "72603",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "550",
+    "word": "easy",
+    "parts": "j",
+    "frequency": "71602",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "551",
+    "word": "cost",
+    "parts": "n",
+    "frequency": "73512",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "552",
+    "word": "industry",
+    "parts": "n",
+    "frequency": "73055",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "553",
+    "word": "figure",
+    "parts": "n",
+    "frequency": "74858",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "554",
+    "word": "face",
+    "parts": "v",
+    "frequency": "69493",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "555",
+    "word": "street",
+    "parts": "n",
+    "frequency": "71645",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "556",
+    "word": "image",
+    "parts": "n",
+    "frequency": "72216",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "557",
+    "word": "itself",
+    "parts": "p",
+    "frequency": "71093",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "558",
+    "word": "phone",
+    "parts": "n",
+    "frequency": "71599",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "559",
+    "word": "either",
+    "parts": "r",
+    "frequency": "69497",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "560",
+    "word": "data",
+    "parts": "n",
+    "frequency": "76594",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "561",
+    "word": "cover",
+    "parts": "v",
+    "frequency": "69387",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "562",
+    "word": "quite",
+    "parts": "r",
+    "frequency": "69966",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "563",
+    "word": "picture",
+    "parts": "n",
+    "frequency": "69229",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "564",
+    "word": "clear",
+    "parts": "j",
+    "frequency": "68662",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "565",
+    "word": "practice",
+    "parts": "n",
+    "frequency": "73745",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "566",
+    "word": "piece",
+    "parts": "n",
+    "frequency": "68901",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "567",
+    "word": "land",
+    "parts": "n",
+    "frequency": "69750",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "568",
+    "word": "recent",
+    "parts": "j",
+    "frequency": "70685",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "569",
+    "word": "describe",
+    "parts": "v",
+    "frequency": "71377",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "570",
+    "word": "product",
+    "parts": "n",
+    "frequency": "70883",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "571",
+    "word": "doctor",
+    "parts": "n",
+    "frequency": "69446",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "572",
+    "word": "wall",
+    "parts": "n",
+    "frequency": "71390",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "573",
+    "word": "patient",
+    "parts": "n",
+    "frequency": "72217",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "574",
+    "word": "worker",
+    "parts": "n",
+    "frequency": "69962",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "575",
+    "word": "news",
+    "parts": "n",
+    "frequency": "70051",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "576",
+    "word": "test",
+    "parts": "n",
+    "frequency": "69870",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "577",
+    "word": "movie",
+    "parts": "n",
+    "frequency": "69387",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "578",
+    "word": "certain",
+    "parts": "j",
+    "frequency": "67228",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "579",
+    "word": "north",
+    "parts": "n",
+    "frequency": "68046",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "580",
+    "word": "love",
+    "parts": "n",
+    "frequency": "67495",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "581",
+    "word": "personal",
+    "parts": "j",
+    "frequency": "67917",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "582",
+    "word": "open",
+    "parts": "j",
+    "frequency": "67218",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "583",
+    "word": "support",
+    "parts": "n",
+    "frequency": "69431",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "584",
+    "word": "simply",
+    "parts": "r",
+    "frequency": "66712",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "585",
+    "word": "third",
+    "parts": "m",
+    "frequency": "67037",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "586",
+    "word": "technology",
+    "parts": "n",
+    "frequency": "69565",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "587",
+    "word": "catch",
+    "parts": "v",
+    "frequency": "68214",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "588",
+    "word": "step",
+    "parts": "n",
+    "frequency": "66232",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "589",
+    "word": "baby",
+    "parts": "n",
+    "frequency": "67881",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "590",
+    "word": "computer",
+    "parts": "n",
+    "frequency": "67399",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "591",
+    "word": "type",
+    "parts": "n",
+    "frequency": "68481",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "592",
+    "word": "attention",
+    "parts": "n",
+    "frequency": "65271",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "593",
+    "word": "draw",
+    "parts": "v",
+    "frequency": "65198",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "594",
+    "word": "film",
+    "parts": "n",
+    "frequency": "66724",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "595",
+    "word": "Republican",
+    "parts": "n",
+    "frequency": "71611",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "596",
+    "word": "tree",
+    "parts": "n",
+    "frequency": "66630",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "597",
+    "word": "source",
+    "parts": "n",
+    "frequency": "66862",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "598",
+    "word": "red",
+    "parts": "j",
+    "frequency": "66217",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "599",
+    "word": "nearly",
+    "parts": "r",
+    "frequency": "64860",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "600",
+    "word": "organization",
+    "parts": "n",
+    "frequency": "67278",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "601",
+    "word": "choose",
+    "parts": "v",
+    "frequency": "64348",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "602",
+    "word": "cause",
+    "parts": "v",
+    "frequency": "64531",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "603",
+    "word": "hair",
+    "parts": "n",
+    "frequency": "69564",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "604",
+    "word": "look",
+    "parts": "n",
+    "frequency": "66194",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "605",
+    "word": "point",
+    "parts": "v",
+    "frequency": "62980",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "606",
+    "word": "century",
+    "parts": "n",
+    "frequency": "65667",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "607",
+    "word": "evidence",
+    "parts": "n",
+    "frequency": "65360",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "608",
+    "word": "window",
+    "parts": "n",
+    "frequency": "68303",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "609",
+    "word": "difficult",
+    "parts": "j",
+    "frequency": "63947",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "610",
+    "word": "listen",
+    "parts": "v",
+    "frequency": "64984",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "611",
+    "word": "soon",
+    "parts": "r",
+    "frequency": "63168",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "612",
+    "word": "culture",
+    "parts": "n",
+    "frequency": "67128",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "613",
+    "word": "billion",
+    "parts": "m",
+    "frequency": "65243",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "614",
+    "word": "chance",
+    "parts": "n",
+    "frequency": "62682",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "615",
+    "word": "brother",
+    "parts": "n",
+    "frequency": "63406",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "616",
+    "word": "energy",
+    "parts": "n",
+    "frequency": "64139",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "617",
+    "word": "period",
+    "parts": "n",
+    "frequency": "64534",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "618",
+    "word": "course",
+    "parts": "n",
+    "frequency": "64012",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "619",
+    "word": "summer",
+    "parts": "n",
+    "frequency": "62503",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "620",
+    "word": "less",
+    "parts": "d",
+    "frequency": "62154",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "621",
+    "word": "realize",
+    "parts": "v",
+    "frequency": "61732",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "622",
+    "word": "hundred",
+    "parts": "m",
+    "frequency": "61266",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "623",
+    "word": "available",
+    "parts": "j",
+    "frequency": "63187",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "624",
+    "word": "plant",
+    "parts": "n",
+    "frequency": "63476",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "625",
+    "word": "likely",
+    "parts": "j",
+    "frequency": "63002",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "626",
+    "word": "opportunity",
+    "parts": "n",
+    "frequency": "62422",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "627",
+    "word": "term",
+    "parts": "n",
+    "frequency": "62962",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "628",
+    "word": "short",
+    "parts": "j",
+    "frequency": "60451",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "629",
+    "word": "letter",
+    "parts": "n",
+    "frequency": "60369",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "630",
+    "word": "condition",
+    "parts": "n",
+    "frequency": "63489",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "631",
+    "word": "choice",
+    "parts": "n",
+    "frequency": "60487",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "632",
+    "word": "place",
+    "parts": "v",
+    "frequency": "60927",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "633",
+    "word": "single",
+    "parts": "j",
+    "frequency": "60072",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "634",
+    "word": "rule",
+    "parts": "n",
+    "frequency": "61062",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "635",
+    "word": "daughter",
+    "parts": "n",
+    "frequency": "60424",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "636",
+    "word": "administration",
+    "parts": "n",
+    "frequency": "62071",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "637",
+    "word": "south",
+    "parts": "n",
+    "frequency": "60630",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "638",
+    "word": "husband",
+    "parts": "n",
+    "frequency": "60126",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "639",
+    "word": "Congress",
+    "parts": "n",
+    "frequency": "62841",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "640",
+    "word": "floor",
+    "parts": "n",
+    "frequency": "62458",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "641",
+    "word": "campaign",
+    "parts": "n",
+    "frequency": "64172",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "642",
+    "word": "material",
+    "parts": "n",
+    "frequency": "62440",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "643",
+    "word": "population",
+    "parts": "n",
+    "frequency": "62999",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "644",
+    "word": "well",
+    "parts": "i",
+    "frequency": "61219",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "645",
+    "word": "call",
+    "parts": "n",
+    "frequency": "59543",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "646",
+    "word": "economy",
+    "parts": "n",
+    "frequency": "60990",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "647",
+    "word": "medical",
+    "parts": "j",
+    "frequency": "59424",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "648",
+    "word": "hospital",
+    "parts": "n",
+    "frequency": "58669",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "649",
+    "word": "church",
+    "parts": "n",
+    "frequency": "59466",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "650",
+    "word": "close",
+    "parts": "v",
+    "frequency": "60884",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "651",
+    "word": "thousand",
+    "parts": "m",
+    "frequency": "58307",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "652",
+    "word": "risk",
+    "parts": "n",
+    "frequency": "60432",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "653",
+    "word": "current",
+    "parts": "j",
+    "frequency": "61252",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "654",
+    "word": "fire",
+    "parts": "n",
+    "frequency": "59386",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "655",
+    "word": "future",
+    "parts": "n",
+    "frequency": "58020",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "656",
+    "word": "wrong",
+    "parts": "j",
+    "frequency": "58988",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "657",
+    "word": "involve",
+    "parts": "v",
+    "frequency": "59542",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "658",
+    "word": "defense",
+    "parts": "n",
+    "frequency": "59701",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "659",
+    "word": "anyone",
+    "parts": "p",
+    "frequency": "58274",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "660",
+    "word": "increase",
+    "parts": "v",
+    "frequency": "60442",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "661",
+    "word": "security",
+    "parts": "n",
+    "frequency": "58914",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "662",
+    "word": "bank",
+    "parts": "n",
+    "frequency": "58992",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "663",
+    "word": "myself",
+    "parts": "p",
+    "frequency": "59716",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "664",
+    "word": "certainly",
+    "parts": "r",
+    "frequency": "59739",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "665",
+    "word": "west",
+    "parts": "n",
+    "frequency": "58169",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "666",
+    "word": "sport",
+    "parts": "n",
+    "frequency": "59006",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "667",
+    "word": "board",
+    "parts": "n",
+    "frequency": "58436",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "668",
+    "word": "seek",
+    "parts": "v",
+    "frequency": "58495",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "669",
+    "word": "per",
+    "parts": "i",
+    "frequency": "59432",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "670",
+    "word": "subject",
+    "parts": "n",
+    "frequency": "61397",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "671",
+    "word": "officer",
+    "parts": "n",
+    "frequency": "57617",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "672",
+    "word": "private",
+    "parts": "j",
+    "frequency": "57248",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "673",
+    "word": "rest",
+    "parts": "n",
+    "frequency": "56714",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "674",
+    "word": "behavior",
+    "parts": "n",
+    "frequency": "62625",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "675",
+    "word": "deal",
+    "parts": "v",
+    "frequency": "57462",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "676",
+    "word": "performance",
+    "parts": "n",
+    "frequency": "59909",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "677",
+    "word": "fight",
+    "parts": "v",
+    "frequency": "56886",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "678",
+    "word": "throw",
+    "parts": "v",
+    "frequency": "57784",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "679",
+    "word": "top",
+    "parts": "n",
+    "frequency": "57743",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "680",
+    "word": "quickly",
+    "parts": "r",
+    "frequency": "56454",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "681",
+    "word": "past",
+    "parts": "j",
+    "frequency": "56588",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "682",
+    "word": "goal",
+    "parts": "n",
+    "frequency": "58728",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "683",
+    "word": "second",
+    "parts": "n",
+    "frequency": "56022",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "684",
+    "word": "bed",
+    "parts": "n",
+    "frequency": "60304",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "685",
+    "word": "order",
+    "parts": "n",
+    "frequency": "56483",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "686",
+    "word": "author",
+    "parts": "n",
+    "frequency": "58300",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "687",
+    "word": "fill",
+    "parts": "v",
+    "frequency": "56915",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "688",
+    "word": "represent",
+    "parts": "v",
+    "frequency": "58744",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "689",
+    "word": "focus",
+    "parts": "v",
+    "frequency": "57177",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "690",
+    "word": "foreign",
+    "parts": "j",
+    "frequency": "57540",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "691",
+    "word": "drop",
+    "parts": "v",
+    "frequency": "56448",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "692",
+    "word": "plan",
+    "parts": "v",
+    "frequency": "55829",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "693",
+    "word": "blood",
+    "parts": "n",
+    "frequency": "56351",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "694",
+    "word": "upon",
+    "parts": "i",
+    "frequency": "57033",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "695",
+    "word": "agency",
+    "parts": "n",
+    "frequency": "56954",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "696",
+    "word": "push",
+    "parts": "v",
+    "frequency": "56103",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "697",
+    "word": "nature",
+    "parts": "n",
+    "frequency": "57929",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "698",
+    "word": "color",
+    "parts": "n",
+    "frequency": "56978",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "699",
+    "word": "no",
+    "parts": "r",
+    "frequency": "54602",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "700",
+    "word": "recently",
+    "parts": "r",
+    "frequency": "55992",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "701",
+    "word": "store",
+    "parts": "n",
+    "frequency": "56147",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "702",
+    "word": "reduce",
+    "parts": "v",
+    "frequency": "57029",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "703",
+    "word": "sound",
+    "parts": "n",
+    "frequency": "56828",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "704",
+    "word": "note",
+    "parts": "v",
+    "frequency": "57025",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "705",
+    "word": "fine",
+    "parts": "j",
+    "frequency": "55174",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "706",
+    "word": "before",
+    "parts": "r",
+    "frequency": "55608",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "707",
+    "word": "near",
+    "parts": "i",
+    "frequency": "54869",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "708",
+    "word": "movement",
+    "parts": "n",
+    "frequency": "56201",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "709",
+    "word": "page",
+    "parts": "n",
+    "frequency": "55937",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "710",
+    "word": "enter",
+    "parts": "v",
+    "frequency": "54479",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "711",
+    "word": "share",
+    "parts": "v",
+    "frequency": "54010",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "712",
+    "word": "than",
+    "parts": "i",
+    "frequency": "55719",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "713",
+    "word": "common",
+    "parts": "j",
+    "frequency": "55940",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "714",
+    "word": "poor",
+    "parts": "j",
+    "frequency": "53820",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "715",
+    "word": "other",
+    "parts": "p",
+    "frequency": "54372",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "716",
+    "word": "natural",
+    "parts": "j",
+    "frequency": "55526",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "717",
+    "word": "race",
+    "parts": "n",
+    "frequency": "54838",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "718",
+    "word": "concern",
+    "parts": "n",
+    "frequency": "55203",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "719",
+    "word": "series",
+    "parts": "n",
+    "frequency": "54549",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "720",
+    "word": "significant",
+    "parts": "j",
+    "frequency": "58947",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "721",
+    "word": "similar",
+    "parts": "j",
+    "frequency": "55901",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "722",
+    "word": "hot",
+    "parts": "j",
+    "frequency": "54601",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "723",
+    "word": "language",
+    "parts": "n",
+    "frequency": "55799",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "724",
+    "word": "each",
+    "parts": "p",
+    "frequency": "53663",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "725",
+    "word": "usually",
+    "parts": "r",
+    "frequency": "53477",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "726",
+    "word": "response",
+    "parts": "n",
+    "frequency": "56342",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "727",
+    "word": "dead",
+    "parts": "j",
+    "frequency": "55111",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "728",
+    "word": "rise",
+    "parts": "v",
+    "frequency": "53542",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "729",
+    "word": "animal",
+    "parts": "n",
+    "frequency": "53127",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "730",
+    "word": "factor",
+    "parts": "n",
+    "frequency": "57612",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "731",
+    "word": "decade",
+    "parts": "n",
+    "frequency": "53727",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "732",
+    "word": "article",
+    "parts": "n",
+    "frequency": "54871",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "733",
+    "word": "shoot",
+    "parts": "v",
+    "frequency": "53038",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "734",
+    "word": "east",
+    "parts": "n",
+    "frequency": "53010",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "735",
+    "word": "save",
+    "parts": "v",
+    "frequency": "52067",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "736",
+    "word": "seven",
+    "parts": "m",
+    "frequency": "52011",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "737",
+    "word": "artist",
+    "parts": "n",
+    "frequency": "54353",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "738",
+    "word": "away",
+    "parts": "i",
+    "frequency": "52005",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "739",
+    "word": "scene",
+    "parts": "n",
+    "frequency": "51248",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "740",
+    "word": "stock",
+    "parts": "n",
+    "frequency": "54305",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "741",
+    "word": "career",
+    "parts": "n",
+    "frequency": "52101",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "742",
+    "word": "despite",
+    "parts": "i",
+    "frequency": "51526",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "743",
+    "word": "central",
+    "parts": "j",
+    "frequency": "52501",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "744",
+    "word": "eight",
+    "parts": "m",
+    "frequency": "50871",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "745",
+    "word": "thus",
+    "parts": "r",
+    "frequency": "57039",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "746",
+    "word": "treatment",
+    "parts": "n",
+    "frequency": "53390",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "747",
+    "word": "beyond",
+    "parts": "i",
+    "frequency": "50742",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "748",
+    "word": "happy",
+    "parts": "j",
+    "frequency": "51669",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "749",
+    "word": "exactly",
+    "parts": "r",
+    "frequency": "52685",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "750",
+    "word": "protect",
+    "parts": "v",
+    "frequency": "50649",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "751",
+    "word": "approach",
+    "parts": "n",
+    "frequency": "53980",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "752",
+    "word": "lie",
+    "parts": "v",
+    "frequency": "51657",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "753",
+    "word": "size",
+    "parts": "n",
+    "frequency": "51868",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "754",
+    "word": "dog",
+    "parts": "n",
+    "frequency": "52347",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "755",
+    "word": "fund",
+    "parts": "n",
+    "frequency": "53859",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "756",
+    "word": "serious",
+    "parts": "j",
+    "frequency": "50285",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "757",
+    "word": "occur",
+    "parts": "v",
+    "frequency": "52768",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "758",
+    "word": "media",
+    "parts": "n",
+    "frequency": "51798",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "759",
+    "word": "ready",
+    "parts": "j",
+    "frequency": "50833",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "760",
+    "word": "sign",
+    "parts": "n",
+    "frequency": "50045",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "761",
+    "word": "thought",
+    "parts": "n",
+    "frequency": "51509",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "762",
+    "word": "list",
+    "parts": "n",
+    "frequency": "50678",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "763",
+    "word": "individual",
+    "parts": "n",
+    "frequency": "54738",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "764",
+    "word": "simple",
+    "parts": "j",
+    "frequency": "50583",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "765",
+    "word": "quality",
+    "parts": "n",
+    "frequency": "52224",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "766",
+    "word": "pressure",
+    "parts": "n",
+    "frequency": "50773",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "767",
+    "word": "accept",
+    "parts": "v",
+    "frequency": "49952",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "768",
+    "word": "answer",
+    "parts": "n",
+    "frequency": "49969",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "769",
+    "word": "hard",
+    "parts": "r",
+    "frequency": "50793",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "770",
+    "word": "resource",
+    "parts": "n",
+    "frequency": "53398",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "771",
+    "word": "identify",
+    "parts": "v",
+    "frequency": "53484",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "772",
+    "word": "left",
+    "parts": "j",
+    "frequency": "50479",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "773",
+    "word": "meeting",
+    "parts": "n",
+    "frequency": "49916",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "774",
+    "word": "determine",
+    "parts": "v",
+    "frequency": "52130",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "775",
+    "word": "prepare",
+    "parts": "v",
+    "frequency": "49208",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "776",
+    "word": "disease",
+    "parts": "n",
+    "frequency": "51211",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "777",
+    "word": "whatever",
+    "parts": "d",
+    "frequency": "50200",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "778",
+    "word": "success",
+    "parts": "n",
+    "frequency": "50541",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "779",
+    "word": "argue",
+    "parts": "v",
+    "frequency": "51013",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "780",
+    "word": "cup",
+    "parts": "n",
+    "frequency": "53633",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "781",
+    "word": "particularly",
+    "parts": "r",
+    "frequency": "50329",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "782",
+    "word": "amount",
+    "parts": "n",
+    "frequency": "49944",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "783",
+    "word": "ability",
+    "parts": "n",
+    "frequency": "51476",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "784",
+    "word": "staff",
+    "parts": "n",
+    "frequency": "50177",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "785",
+    "word": "recognize",
+    "parts": "v",
+    "frequency": "50042",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "786",
+    "word": "indicate",
+    "parts": "v",
+    "frequency": "53215",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "787",
+    "word": "character",
+    "parts": "n",
+    "frequency": "49530",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "788",
+    "word": "growth",
+    "parts": "n",
+    "frequency": "50904",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "789",
+    "word": "loss",
+    "parts": "n",
+    "frequency": "49759",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "790",
+    "word": "degree",
+    "parts": "n",
+    "frequency": "50612",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "791",
+    "word": "wonder",
+    "parts": "v",
+    "frequency": "50875",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "792",
+    "word": "attack",
+    "parts": "n",
+    "frequency": "50898",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "793",
+    "word": "herself",
+    "parts": "p",
+    "frequency": "52915",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "794",
+    "word": "region",
+    "parts": "n",
+    "frequency": "50914",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "795",
+    "word": "television",
+    "parts": "n",
+    "frequency": "49673",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "796",
+    "word": "box",
+    "parts": "n",
+    "frequency": "49667",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "797",
+    "word": "TV",
+    "parts": "n",
+    "frequency": "49438",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "798",
+    "word": "training",
+    "parts": "n",
+    "frequency": "49997",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "799",
+    "word": "pretty",
+    "parts": "r",
+    "frequency": "50385",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "800",
+    "word": "trade",
+    "parts": "n",
+    "frequency": "49696",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "801",
+    "word": "deal",
+    "parts": "n",
+    "frequency": "48975",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "802",
+    "word": "election",
+    "parts": "n",
+    "frequency": "51322",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "803",
+    "word": "everybody",
+    "parts": "p",
+    "frequency": "51147",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "804",
+    "word": "physical",
+    "parts": "j",
+    "frequency": "51451",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "805",
+    "word": "lay",
+    "parts": "v",
+    "frequency": "49358",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "806",
+    "word": "general",
+    "parts": "j",
+    "frequency": "49657",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "807",
+    "word": "feeling",
+    "parts": "n",
+    "frequency": "47349",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "808",
+    "word": "standard",
+    "parts": "n",
+    "frequency": "49876",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "809",
+    "word": "bill",
+    "parts": "n",
+    "frequency": "49011",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "810",
+    "word": "message",
+    "parts": "n",
+    "frequency": "47533",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "811",
+    "word": "fail",
+    "parts": "v",
+    "frequency": "47503",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "812",
+    "word": "outside",
+    "parts": "i",
+    "frequency": "46628",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "813",
+    "word": "arrive",
+    "parts": "v",
+    "frequency": "47435",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "814",
+    "word": "analysis",
+    "parts": "n",
+    "frequency": "53840",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "815",
+    "word": "benefit",
+    "parts": "n",
+    "frequency": "48594",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "816",
+    "word": "name",
+    "parts": "v",
+    "frequency": "47375",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "817",
+    "word": "sex",
+    "parts": "n",
+    "frequency": "47827",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "818",
+    "word": "forward",
+    "parts": "r",
+    "frequency": "47877",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "819",
+    "word": "lawyer",
+    "parts": "n",
+    "frequency": "47853",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "820",
+    "word": "present",
+    "parts": "v",
+    "frequency": "49659",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "821",
+    "word": "section",
+    "parts": "n",
+    "frequency": "49764",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "822",
+    "word": "environmental",
+    "parts": "j",
+    "frequency": "51192",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "823",
+    "word": "glass",
+    "parts": "n",
+    "frequency": "49686",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "824",
+    "word": "answer",
+    "parts": "v",
+    "frequency": "47661",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "825",
+    "word": "skill",
+    "parts": "n",
+    "frequency": "50431",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "826",
+    "word": "sister",
+    "parts": "n",
+    "frequency": "48183",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "827",
+    "word": "PM",
+    "parts": "r",
+    "frequency": "54765",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "828",
+    "word": "professor",
+    "parts": "n",
+    "frequency": "46575",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "829",
+    "word": "operation",
+    "parts": "n",
+    "frequency": "47276",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "830",
+    "word": "financial",
+    "parts": "j",
+    "frequency": "47803",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "831",
+    "word": "crime",
+    "parts": "n",
+    "frequency": "48010",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "832",
+    "word": "stage",
+    "parts": "n",
+    "frequency": "46346",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "833",
+    "word": "ok",
+    "parts": "r",
+    "frequency": "54697",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "834",
+    "word": "compare",
+    "parts": "v",
+    "frequency": "48094",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "835",
+    "word": "authority",
+    "parts": "n",
+    "frequency": "47309",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "836",
+    "word": "miss",
+    "parts": "v",
+    "frequency": "46525",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "837",
+    "word": "design",
+    "parts": "n",
+    "frequency": "48605",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "838",
+    "word": "sort",
+    "parts": "n",
+    "frequency": "47086",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "839",
+    "word": "one",
+    "parts": "n",
+    "frequency": "45596",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "840",
+    "word": "act",
+    "parts": "v",
+    "frequency": "45648",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "841",
+    "word": "ten",
+    "parts": "m",
+    "frequency": "46827",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "842",
+    "word": "knowledge",
+    "parts": "n",
+    "frequency": "50335",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "843",
+    "word": "gun",
+    "parts": "n",
+    "frequency": "47305",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "844",
+    "word": "station",
+    "parts": "n",
+    "frequency": "46299",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "845",
+    "word": "blue",
+    "parts": "j",
+    "frequency": "47622",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "846",
+    "word": "state",
+    "parts": "v",
+    "frequency": "47977",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "847",
+    "word": "strategy",
+    "parts": "n",
+    "frequency": "49126",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "848",
+    "word": "little",
+    "parts": "d",
+    "frequency": "45469",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "849",
+    "word": "clearly",
+    "parts": "r",
+    "frequency": "45912",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "850",
+    "word": "discuss",
+    "parts": "v",
+    "frequency": "46852",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "851",
+    "word": "indeed",
+    "parts": "r",
+    "frequency": "46184",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "852",
+    "word": "force",
+    "parts": "v",
+    "frequency": "44931",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "853",
+    "word": "truth",
+    "parts": "n",
+    "frequency": "45155",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "854",
+    "word": "song",
+    "parts": "n",
+    "frequency": "45352",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "855",
+    "word": "example",
+    "parts": "n",
+    "frequency": "47134",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "856",
+    "word": "democratic",
+    "parts": "j",
+    "frequency": "47299",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "857",
+    "word": "check",
+    "parts": "v",
+    "frequency": "45760",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "858",
+    "word": "environment",
+    "parts": "n",
+    "frequency": "47807",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "859",
+    "word": "leg",
+    "parts": "n",
+    "frequency": "47477",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "860",
+    "word": "dark",
+    "parts": "j",
+    "frequency": "47565",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "861",
+    "word": "public",
+    "parts": "n",
+    "frequency": "45684",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "862",
+    "word": "various",
+    "parts": "j",
+    "frequency": "46777",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "863",
+    "word": "rather",
+    "parts": "r",
+    "frequency": "44934",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "864",
+    "word": "laugh",
+    "parts": "v",
+    "frequency": "48567",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "865",
+    "word": "guess",
+    "parts": "v",
+    "frequency": "48046",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "866",
+    "word": "executive",
+    "parts": "n",
+    "frequency": "47338",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "867",
+    "word": "set",
+    "parts": "n",
+    "frequency": "45121",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "868",
+    "word": "study",
+    "parts": "v",
+    "frequency": "44897",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "869",
+    "word": "prove",
+    "parts": "v",
+    "frequency": "44304",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "870",
+    "word": "hang",
+    "parts": "v",
+    "frequency": "46632",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "871",
+    "word": "entire",
+    "parts": "j",
+    "frequency": "43997",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "872",
+    "word": "rock",
+    "parts": "n",
+    "frequency": "45225",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "873",
+    "word": "design",
+    "parts": "v",
+    "frequency": "45946",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "874",
+    "word": "enough",
+    "parts": "d",
+    "frequency": "44378",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "875",
+    "word": "forget",
+    "parts": "v",
+    "frequency": "45571",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "876",
+    "word": "since",
+    "parts": "i",
+    "frequency": "45591",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "877",
+    "word": "claim",
+    "parts": "v",
+    "frequency": "44259",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "878",
+    "word": "note",
+    "parts": "n",
+    "frequency": "44720",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "879",
+    "word": "remove",
+    "parts": "v",
+    "frequency": "44683",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "880",
+    "word": "manager",
+    "parts": "n",
+    "frequency": "46187",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "881",
+    "word": "help",
+    "parts": "n",
+    "frequency": "43721",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "882",
+    "word": "close",
+    "parts": "j",
+    "frequency": "43568",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "883",
+    "word": "sound",
+    "parts": "v",
+    "frequency": "45311",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "884",
+    "word": "enjoy",
+    "parts": "v",
+    "frequency": "44020",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "885",
+    "word": "network",
+    "parts": "n",
+    "frequency": "45122",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "886",
+    "word": "legal",
+    "parts": "j",
+    "frequency": "44820",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "887",
+    "word": "religious",
+    "parts": "j",
+    "frequency": "46425",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "888",
+    "word": "cold",
+    "parts": "j",
+    "frequency": "44649",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "889",
+    "word": "form",
+    "parts": "v",
+    "frequency": "44646",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "890",
+    "word": "final",
+    "parts": "j",
+    "frequency": "43589",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "891",
+    "word": "main",
+    "parts": "j",
+    "frequency": "43707",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "892",
+    "word": "science",
+    "parts": "n",
+    "frequency": "45726",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "893",
+    "word": "green",
+    "parts": "j",
+    "frequency": "44673",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "894",
+    "word": "memory",
+    "parts": "n",
+    "frequency": "43531",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "895",
+    "word": "card",
+    "parts": "n",
+    "frequency": "43605",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "896",
+    "word": "above",
+    "parts": "i",
+    "frequency": "44130",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "897",
+    "word": "seat",
+    "parts": "n",
+    "frequency": "44404",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "898",
+    "word": "cell",
+    "parts": "n",
+    "frequency": "44831",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "899",
+    "word": "establish",
+    "parts": "v",
+    "frequency": "45921",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "900",
+    "word": "nice",
+    "parts": "j",
+    "frequency": "44792",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "901",
+    "word": "trial",
+    "parts": "n",
+    "frequency": "44489",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "902",
+    "word": "expert",
+    "parts": "n",
+    "frequency": "43898",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "903",
+    "word": "that",
+    "parts": "r",
+    "frequency": "43359",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "904",
+    "word": "spring",
+    "parts": "n",
+    "frequency": "44085",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "905",
+    "word": "firm",
+    "parts": "n",
+    "frequency": "44704",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "906",
+    "word": "Democrat",
+    "parts": "n",
+    "frequency": "46905",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "907",
+    "word": "radio",
+    "parts": "n",
+    "frequency": "43156",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "908",
+    "word": "visit",
+    "parts": "v",
+    "frequency": "42941",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "909",
+    "word": "management",
+    "parts": "n",
+    "frequency": "45112",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "910",
+    "word": "care",
+    "parts": "v",
+    "frequency": "42978",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "911",
+    "word": "avoid",
+    "parts": "v",
+    "frequency": "42890",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "912",
+    "word": "imagine",
+    "parts": "v",
+    "frequency": "43487",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "913",
+    "word": "tonight",
+    "parts": "r",
+    "frequency": "47549",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "914",
+    "word": "huge",
+    "parts": "j",
+    "frequency": "42582",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "915",
+    "word": "ball",
+    "parts": "n",
+    "frequency": "43512",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "916",
+    "word": "no",
+    "parts": "u",
+    "frequency": "44951",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "917",
+    "word": "close",
+    "parts": "r",
+    "frequency": "42826",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "918",
+    "word": "finish",
+    "parts": "v",
+    "frequency": "43143",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "919",
+    "word": "yourself",
+    "parts": "p",
+    "frequency": "43401",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "920",
+    "word": "talk",
+    "parts": "n",
+    "frequency": "43267",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "921",
+    "word": "theory",
+    "parts": "n",
+    "frequency": "45553",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "922",
+    "word": "impact",
+    "parts": "n",
+    "frequency": "43782",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "923",
+    "word": "respond",
+    "parts": "v",
+    "frequency": "42139",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "924",
+    "word": "statement",
+    "parts": "n",
+    "frequency": "42941",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "925",
+    "word": "maintain",
+    "parts": "v",
+    "frequency": "43493",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "926",
+    "word": "charge",
+    "parts": "n",
+    "frequency": "42353",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "927",
+    "word": "popular",
+    "parts": "j",
+    "frequency": "42399",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "928",
+    "word": "traditional",
+    "parts": "j",
+    "frequency": "43681",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "929",
+    "word": "onto",
+    "parts": "i",
+    "frequency": "43538",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "930",
+    "word": "reveal",
+    "parts": "v",
+    "frequency": "42605",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "931",
+    "word": "direction",
+    "parts": "n",
+    "frequency": "41280",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "932",
+    "word": "weapon",
+    "parts": "n",
+    "frequency": "43158",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "933",
+    "word": "employee",
+    "parts": "n",
+    "frequency": "42824",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "934",
+    "word": "cultural",
+    "parts": "j",
+    "frequency": "45673",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "935",
+    "word": "contain",
+    "parts": "v",
+    "frequency": "42542",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "936",
+    "word": "peace",
+    "parts": "n",
+    "frequency": "42273",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "937",
+    "word": "head",
+    "parts": "v",
+    "frequency": "41658",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "938",
+    "word": "control",
+    "parts": "v",
+    "frequency": "41771",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "939",
+    "word": "base",
+    "parts": "n",
+    "frequency": "41154",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "940",
+    "word": "pain",
+    "parts": "n",
+    "frequency": "41350",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "941",
+    "word": "apply",
+    "parts": "v",
+    "frequency": "42391",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "942",
+    "word": "play",
+    "parts": "n",
+    "frequency": "41662",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "943",
+    "word": "measure",
+    "parts": "n",
+    "frequency": "43938",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "944",
+    "word": "wide",
+    "parts": "j",
+    "frequency": "41233",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "945",
+    "word": "shake",
+    "parts": "v",
+    "frequency": "45160",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "946",
+    "word": "fly",
+    "parts": "v",
+    "frequency": "41373",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "947",
+    "word": "interview",
+    "parts": "n",
+    "frequency": "41594",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "948",
+    "word": "manage",
+    "parts": "v",
+    "frequency": "40536",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "949",
+    "word": "chair",
+    "parts": "n",
+    "frequency": "43256",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "950",
+    "word": "fish",
+    "parts": "n",
+    "frequency": "41488",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "951",
+    "word": "particular",
+    "parts": "j",
+    "frequency": "42291",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "952",
+    "word": "camera",
+    "parts": "n",
+    "frequency": "41218",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "953",
+    "word": "structure",
+    "parts": "n",
+    "frequency": "43638",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "954",
+    "word": "politics",
+    "parts": "n",
+    "frequency": "41758",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "955",
+    "word": "perform",
+    "parts": "v",
+    "frequency": "41667",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "956",
+    "word": "bit",
+    "parts": "n",
+    "frequency": "41915",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "957",
+    "word": "weight",
+    "parts": "n",
+    "frequency": "41919",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "958",
+    "word": "suddenly",
+    "parts": "r",
+    "frequency": "43382",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "959",
+    "word": "discover",
+    "parts": "v",
+    "frequency": "40489",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "960",
+    "word": "candidate",
+    "parts": "n",
+    "frequency": "43251",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "961",
+    "word": "top",
+    "parts": "j",
+    "frequency": "41484",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "962",
+    "word": "production",
+    "parts": "n",
+    "frequency": "42052",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "963",
+    "word": "treat",
+    "parts": "v",
+    "frequency": "40264",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "964",
+    "word": "trip",
+    "parts": "n",
+    "frequency": "40423",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "965",
+    "word": "evening",
+    "parts": "n",
+    "frequency": "40881",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "966",
+    "word": "affect",
+    "parts": "v",
+    "frequency": "41496",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "967",
+    "word": "inside",
+    "parts": "i",
+    "frequency": "40856",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "968",
+    "word": "conference",
+    "parts": "n",
+    "frequency": "40643",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "969",
+    "word": "unit",
+    "parts": "n",
+    "frequency": "41087",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "970",
+    "word": "best",
+    "parts": "r",
+    "frequency": "39959",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "971",
+    "word": "style",
+    "parts": "n",
+    "frequency": "40889",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "972",
+    "word": "adult",
+    "parts": "n",
+    "frequency": "40705",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "973",
+    "word": "worry",
+    "parts": "v",
+    "frequency": "40210",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "974",
+    "word": "range",
+    "parts": "n",
+    "frequency": "41326",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "975",
+    "word": "mention",
+    "parts": "v",
+    "frequency": "39815",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "976",
+    "word": "rather",
+    "parts": "i",
+    "frequency": "41558",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "977",
+    "word": "far",
+    "parts": "j",
+    "frequency": "39967",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "978",
+    "word": "deep",
+    "parts": "j",
+    "frequency": "40126",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "979",
+    "word": "past",
+    "parts": "n",
+    "frequency": "39559",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "980",
+    "word": "edge",
+    "parts": "n",
+    "frequency": "40960",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "981",
+    "word": "individual",
+    "parts": "j",
+    "frequency": "42325",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "982",
+    "word": "specific",
+    "parts": "j",
+    "frequency": "42397",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "983",
+    "word": "writer",
+    "parts": "n",
+    "frequency": "39666",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "984",
+    "word": "trouble",
+    "parts": "n",
+    "frequency": "39659",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "985",
+    "word": "necessary",
+    "parts": "j",
+    "frequency": "40776",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "986",
+    "word": "throughout",
+    "parts": "i",
+    "frequency": "40170",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "987",
+    "word": "challenge",
+    "parts": "n",
+    "frequency": "40380",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "988",
+    "word": "fear",
+    "parts": "n",
+    "frequency": "38857",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "989",
+    "word": "shoulder",
+    "parts": "n",
+    "frequency": "42843",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "990",
+    "word": "institution",
+    "parts": "n",
+    "frequency": "42153",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "991",
+    "word": "middle",
+    "parts": "j",
+    "frequency": "40402",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "992",
+    "word": "sea",
+    "parts": "n",
+    "frequency": "39516",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "993",
+    "word": "dream",
+    "parts": "n",
+    "frequency": "39613",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "994",
+    "word": "bar",
+    "parts": "n",
+    "frequency": "39853",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "995",
+    "word": "beautiful",
+    "parts": "j",
+    "frequency": "40052",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "996",
+    "word": "property",
+    "parts": "n",
+    "frequency": "40027",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "997",
+    "word": "instead",
+    "parts": "r",
+    "frequency": "39051",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "998",
+    "word": "improve",
+    "parts": "v",
+    "frequency": "40214",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "999",
+    "word": "stuff",
+    "parts": "n",
+    "frequency": "40180",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1000",
+    "word": "detail",
+    "parts": "n",
+    "frequency": "38750",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1001",
+    "word": "method",
+    "parts": "n",
+    "frequency": "42667",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1002",
+    "word": "sign",
+    "parts": "v",
+    "frequency": "39418",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1003",
+    "word": "somebody",
+    "parts": "p",
+    "frequency": "41639",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1004",
+    "word": "magazine",
+    "parts": "n",
+    "frequency": "39197",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1005",
+    "word": "hotel",
+    "parts": "n",
+    "frequency": "39642",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1006",
+    "word": "soldier",
+    "parts": "n",
+    "frequency": "39552",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1007",
+    "word": "reflect",
+    "parts": "v",
+    "frequency": "40687",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1008",
+    "word": "heavy",
+    "parts": "j",
+    "frequency": "39160",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1009",
+    "word": "sexual",
+    "parts": "j",
+    "frequency": "41865",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1010",
+    "word": "cause",
+    "parts": "n",
+    "frequency": "38843",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1011",
+    "word": "bag",
+    "parts": "n",
+    "frequency": "40007",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1012",
+    "word": "heat",
+    "parts": "n",
+    "frequency": "40363",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1013",
+    "word": "fall",
+    "parts": "n",
+    "frequency": "38822",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1014",
+    "word": "marriage",
+    "parts": "n",
+    "frequency": "38517",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1015",
+    "word": "tough",
+    "parts": "j",
+    "frequency": "39600",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1016",
+    "word": "sing",
+    "parts": "v",
+    "frequency": "38575",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1017",
+    "word": "surface",
+    "parts": "n",
+    "frequency": "39367",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1018",
+    "word": "purpose",
+    "parts": "n",
+    "frequency": "40084",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1019",
+    "word": "exist",
+    "parts": "v",
+    "frequency": "39341",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1020",
+    "word": "pattern",
+    "parts": "n",
+    "frequency": "40397",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1021",
+    "word": "whom",
+    "parts": "p",
+    "frequency": "37950",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1022",
+    "word": "skin",
+    "parts": "n",
+    "frequency": "39893",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1023",
+    "word": "agent",
+    "parts": "n",
+    "frequency": "38265",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1024",
+    "word": "owner",
+    "parts": "n",
+    "frequency": "39492",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1025",
+    "word": "machine",
+    "parts": "n",
+    "frequency": "38407",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1026",
+    "word": "gas",
+    "parts": "n",
+    "frequency": "38194",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1027",
+    "word": "down",
+    "parts": "i",
+    "frequency": "39633",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1028",
+    "word": "ahead",
+    "parts": "r",
+    "frequency": "39705",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1029",
+    "word": "generation",
+    "parts": "n",
+    "frequency": "38323",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1030",
+    "word": "commercial",
+    "parts": "j",
+    "frequency": "40608",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1031",
+    "word": "address",
+    "parts": "v",
+    "frequency": "39774",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1032",
+    "word": "cancer",
+    "parts": "n",
+    "frequency": "39407",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1033",
+    "word": "test",
+    "parts": "v",
+    "frequency": "38644",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1034",
+    "word": "item",
+    "parts": "n",
+    "frequency": "40336",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1035",
+    "word": "reality",
+    "parts": "n",
+    "frequency": "38397",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1036",
+    "word": "coach",
+    "parts": "n",
+    "frequency": "40716",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1037",
+    "word": "step",
+    "parts": "v",
+    "frequency": "39356",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1038",
+    "word": "Mrs",
+    "parts": "n",
+    "frequency": "40545",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1039",
+    "word": "yard",
+    "parts": "n",
+    "frequency": "39253",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1040",
+    "word": "beat",
+    "parts": "v",
+    "frequency": "38268",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1041",
+    "word": "violence",
+    "parts": "n",
+    "frequency": "38474",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1042",
+    "word": "total",
+    "parts": "j",
+    "frequency": "38798",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1043",
+    "word": "tend",
+    "parts": "v",
+    "frequency": "38295",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1044",
+    "word": "investment",
+    "parts": "n",
+    "frequency": "38810",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1045",
+    "word": "discussion",
+    "parts": "n",
+    "frequency": "39616",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1046",
+    "word": "finger",
+    "parts": "n",
+    "frequency": "40842",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1047",
+    "word": "garden",
+    "parts": "n",
+    "frequency": "38800",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1048",
+    "word": "notice",
+    "parts": "v",
+    "frequency": "38910",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1049",
+    "word": "collection",
+    "parts": "n",
+    "frequency": "38431",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1050",
+    "word": "modern",
+    "parts": "j",
+    "frequency": "38372",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1051",
+    "word": "task",
+    "parts": "n",
+    "frequency": "39209",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1052",
+    "word": "partner",
+    "parts": "n",
+    "frequency": "37540",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1053",
+    "word": "positive",
+    "parts": "j",
+    "frequency": "39310",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1054",
+    "word": "civil",
+    "parts": "j",
+    "frequency": "37742",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1055",
+    "word": "kitchen",
+    "parts": "n",
+    "frequency": "39332",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1056",
+    "word": "consumer",
+    "parts": "n",
+    "frequency": "38079",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1057",
+    "word": "shot",
+    "parts": "n",
+    "frequency": "37505",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1058",
+    "word": "budget",
+    "parts": "n",
+    "frequency": "39165",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1059",
+    "word": "wish",
+    "parts": "v",
+    "frequency": "37532",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1060",
+    "word": "painting",
+    "parts": "n",
+    "frequency": "39264",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1061",
+    "word": "scientist",
+    "parts": "n",
+    "frequency": "37700",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1062",
+    "word": "safe",
+    "parts": "j",
+    "frequency": "36547",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1063",
+    "word": "agreement",
+    "parts": "n",
+    "frequency": "38141",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1064",
+    "word": "capital",
+    "parts": "n",
+    "frequency": "37443",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1065",
+    "word": "mouth",
+    "parts": "n",
+    "frequency": "40200",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1066",
+    "word": "nor",
+    "parts": "c",
+    "frequency": "37230",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1067",
+    "word": "victim",
+    "parts": "n",
+    "frequency": "36878",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1068",
+    "word": "newspaper",
+    "parts": "n",
+    "frequency": "37522",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1069",
+    "word": "instead",
+    "parts": "i",
+    "frequency": "36247",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1070",
+    "word": "threat",
+    "parts": "n",
+    "frequency": "37022",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1071",
+    "word": "responsibility",
+    "parts": "n",
+    "frequency": "37084",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1072",
+    "word": "smile",
+    "parts": "v",
+    "frequency": "41473",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "1073",
+    "word": "attorney",
+    "parts": "n",
+    "frequency": "37959",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1074",
+    "word": "score",
+    "parts": "n",
+    "frequency": "39294",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1075",
+    "word": "account",
+    "parts": "n",
+    "frequency": "36786",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1076",
+    "word": "interesting",
+    "parts": "j",
+    "frequency": "37473",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1077",
+    "word": "break",
+    "parts": "n",
+    "frequency": "40348",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "1078",
+    "word": "audience",
+    "parts": "n",
+    "frequency": "36227",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1079",
+    "word": "rich",
+    "parts": "j",
+    "frequency": "35940",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1080",
+    "word": "dinner",
+    "parts": "n",
+    "frequency": "37156",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1081",
+    "word": "figure",
+    "parts": "v",
+    "frequency": "36137",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1082",
+    "word": "vote",
+    "parts": "n",
+    "frequency": "39464",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1083",
+    "word": "western",
+    "parts": "j",
+    "frequency": "37389",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1084",
+    "word": "relate",
+    "parts": "v",
+    "frequency": "39143",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1085",
+    "word": "travel",
+    "parts": "v",
+    "frequency": "35746",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1086",
+    "word": "debate",
+    "parts": "n",
+    "frequency": "37228",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1087",
+    "word": "prevent",
+    "parts": "v",
+    "frequency": "36421",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1088",
+    "word": "citizen",
+    "parts": "n",
+    "frequency": "36408",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1089",
+    "word": "majority",
+    "parts": "n",
+    "frequency": "36758",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1090",
+    "word": "none",
+    "parts": "p",
+    "frequency": "35359",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1091",
+    "word": "front",
+    "parts": "i",
+    "frequency": "37363",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1092",
+    "word": "born",
+    "parts": "v",
+    "frequency": "35352",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1093",
+    "word": "admit",
+    "parts": "v",
+    "frequency": "35143",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1094",
+    "word": "senior",
+    "parts": "j",
+    "frequency": "36598",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1095",
+    "word": "assume",
+    "parts": "v",
+    "frequency": "35960",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1096",
+    "word": "wind",
+    "parts": "n",
+    "frequency": "36478",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1097",
+    "word": "key",
+    "parts": "j",
+    "frequency": "36056",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1098",
+    "word": "professional",
+    "parts": "j",
+    "frequency": "36319",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1099",
+    "word": "mission",
+    "parts": "n",
+    "frequency": "35217",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1100",
+    "word": "fast",
+    "parts": "r",
+    "frequency": "35474",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1101",
+    "word": "alone",
+    "parts": "r",
+    "frequency": "34982",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1102",
+    "word": "customer",
+    "parts": "n",
+    "frequency": "36000",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1103",
+    "word": "suffer",
+    "parts": "v",
+    "frequency": "34675",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1104",
+    "word": "speech",
+    "parts": "n",
+    "frequency": "35504",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1105",
+    "word": "successful",
+    "parts": "j",
+    "frequency": "35459",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1106",
+    "word": "option",
+    "parts": "n",
+    "frequency": "35434",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1107",
+    "word": "participant",
+    "parts": "n",
+    "frequency": "41462",
+    "dispersion": "0.81"
+  },
+  {
+    "rank": "1108",
+    "word": "southern",
+    "parts": "j",
+    "frequency": "35314",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1109",
+    "word": "fresh",
+    "parts": "j",
+    "frequency": "35974",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1110",
+    "word": "eventually",
+    "parts": "r",
+    "frequency": "34534",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1111",
+    "word": "no",
+    "parts": "p",
+    "frequency": "35016",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1112",
+    "word": "forest",
+    "parts": "n",
+    "frequency": "35429",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1113",
+    "word": "video",
+    "parts": "n",
+    "frequency": "35230",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1114",
+    "word": "global",
+    "parts": "j",
+    "frequency": "36381",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1115",
+    "word": "Senate",
+    "parts": "n",
+    "frequency": "36809",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1116",
+    "word": "reform",
+    "parts": "n",
+    "frequency": "36103",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1117",
+    "word": "access",
+    "parts": "n",
+    "frequency": "35310",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1118",
+    "word": "restaurant",
+    "parts": "n",
+    "frequency": "35898",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1119",
+    "word": "judge",
+    "parts": "n",
+    "frequency": "35464",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1120",
+    "word": "publish",
+    "parts": "v",
+    "frequency": "35062",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1121",
+    "word": "cost",
+    "parts": "v",
+    "frequency": "34941",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1122",
+    "word": "relation",
+    "parts": "n",
+    "frequency": "36963",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1123",
+    "word": "like",
+    "parts": "c",
+    "frequency": "35636",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1124",
+    "word": "release",
+    "parts": "v",
+    "frequency": "34301",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1125",
+    "word": "own",
+    "parts": "v",
+    "frequency": "34577",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1126",
+    "word": "bird",
+    "parts": "n",
+    "frequency": "34835",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1127",
+    "word": "opinion",
+    "parts": "n",
+    "frequency": "34501",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1128",
+    "word": "credit",
+    "parts": "n",
+    "frequency": "34578",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1129",
+    "word": "critical",
+    "parts": "j",
+    "frequency": "35824",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1130",
+    "word": "corner",
+    "parts": "n",
+    "frequency": "35496",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1131",
+    "word": "concerned",
+    "parts": "j",
+    "frequency": "34331",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1132",
+    "word": "recall",
+    "parts": "v",
+    "frequency": "34442",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1133",
+    "word": "version",
+    "parts": "n",
+    "frequency": "34456",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1134",
+    "word": "stare",
+    "parts": "v",
+    "frequency": "39266",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "1135",
+    "word": "safety",
+    "parts": "n",
+    "frequency": "34188",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1136",
+    "word": "effective",
+    "parts": "j",
+    "frequency": "35851",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1137",
+    "word": "neighborhood",
+    "parts": "n",
+    "frequency": "34691",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1138",
+    "word": "original",
+    "parts": "j",
+    "frequency": "34368",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1139",
+    "word": "act",
+    "parts": "n",
+    "frequency": "34104",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1140",
+    "word": "troop",
+    "parts": "n",
+    "frequency": "36001",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1141",
+    "word": "income",
+    "parts": "n",
+    "frequency": "34925",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1142",
+    "word": "directly",
+    "parts": "r",
+    "frequency": "34090",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1143",
+    "word": "hurt",
+    "parts": "v",
+    "frequency": "34445",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1144",
+    "word": "species",
+    "parts": "n",
+    "frequency": "35804",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1145",
+    "word": "immediately",
+    "parts": "r",
+    "frequency": "33067",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1146",
+    "word": "track",
+    "parts": "n",
+    "frequency": "33788",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1147",
+    "word": "basic",
+    "parts": "j",
+    "frequency": "34788",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1148",
+    "word": "strike",
+    "parts": "v",
+    "frequency": "33238",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1149",
+    "word": "hope",
+    "parts": "n",
+    "frequency": "33019",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1150",
+    "word": "sky",
+    "parts": "n",
+    "frequency": "35141",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1151",
+    "word": "freedom",
+    "parts": "n",
+    "frequency": "34174",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1152",
+    "word": "absolutely",
+    "parts": "r",
+    "frequency": "36740",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1153",
+    "word": "plane",
+    "parts": "n",
+    "frequency": "33900",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1154",
+    "word": "nobody",
+    "parts": "p",
+    "frequency": "34280",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1155",
+    "word": "achieve",
+    "parts": "v",
+    "frequency": "35166",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1156",
+    "word": "object",
+    "parts": "n",
+    "frequency": "35040",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1157",
+    "word": "attitude",
+    "parts": "n",
+    "frequency": "35437",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1158",
+    "word": "labor",
+    "parts": "n",
+    "frequency": "34400",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1159",
+    "word": "refer",
+    "parts": "v",
+    "frequency": "34317",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1160",
+    "word": "concept",
+    "parts": "n",
+    "frequency": "35944",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1161",
+    "word": "client",
+    "parts": "n",
+    "frequency": "34027",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1162",
+    "word": "powerful",
+    "parts": "j",
+    "frequency": "33151",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1163",
+    "word": "perfect",
+    "parts": "j",
+    "frequency": "33456",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1164",
+    "word": "nine",
+    "parts": "m",
+    "frequency": "32967",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1165",
+    "word": "therefore",
+    "parts": "r",
+    "frequency": "35842",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1166",
+    "word": "conduct",
+    "parts": "v",
+    "frequency": "34909",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1167",
+    "word": "announce",
+    "parts": "v",
+    "frequency": "33305",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1168",
+    "word": "conversation",
+    "parts": "n",
+    "frequency": "33046",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1169",
+    "word": "examine",
+    "parts": "v",
+    "frequency": "35826",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1170",
+    "word": "touch",
+    "parts": "v",
+    "frequency": "34737",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1171",
+    "word": "please",
+    "parts": "r",
+    "frequency": "34709",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1172",
+    "word": "attend",
+    "parts": "v",
+    "frequency": "33380",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1173",
+    "word": "completely",
+    "parts": "r",
+    "frequency": "32550",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1174",
+    "word": "vote",
+    "parts": "v",
+    "frequency": "35224",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1175",
+    "word": "variety",
+    "parts": "n",
+    "frequency": "34242",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1176",
+    "word": "sleep",
+    "parts": "v",
+    "frequency": "34801",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1177",
+    "word": "turn",
+    "parts": "n",
+    "frequency": "32944",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1178",
+    "word": "involved",
+    "parts": "j",
+    "frequency": "33428",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1179",
+    "word": "investigation",
+    "parts": "n",
+    "frequency": "33849",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1180",
+    "word": "nuclear",
+    "parts": "j",
+    "frequency": "34264",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1181",
+    "word": "researcher",
+    "parts": "n",
+    "frequency": "34742",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1182",
+    "word": "press",
+    "parts": "n",
+    "frequency": "33410",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1183",
+    "word": "conflict",
+    "parts": "n",
+    "frequency": "34710",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1184",
+    "word": "spirit",
+    "parts": "n",
+    "frequency": "32942",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1185",
+    "word": "experience",
+    "parts": "v",
+    "frequency": "34009",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1186",
+    "word": "replace",
+    "parts": "v",
+    "frequency": "32688",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1187",
+    "word": "British",
+    "parts": "j",
+    "frequency": "32929",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1188",
+    "word": "encourage",
+    "parts": "v",
+    "frequency": "33348",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1189",
+    "word": "argument",
+    "parts": "n",
+    "frequency": "33394",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1190",
+    "word": "by",
+    "parts": "r",
+    "frequency": "32560",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1191",
+    "word": "once",
+    "parts": "c",
+    "frequency": "32180",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1192",
+    "word": "camp",
+    "parts": "n",
+    "frequency": "32659",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1193",
+    "word": "brain",
+    "parts": "n",
+    "frequency": "32852",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1194",
+    "word": "feature",
+    "parts": "n",
+    "frequency": "33344",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1195",
+    "word": "afternoon",
+    "parts": "n",
+    "frequency": "33202",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1196",
+    "word": "AM",
+    "parts": "r",
+    "frequency": "34451",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1197",
+    "word": "weekend",
+    "parts": "n",
+    "frequency": "33239",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1198",
+    "word": "dozen",
+    "parts": "m",
+    "frequency": "32432",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1199",
+    "word": "possibility",
+    "parts": "n",
+    "frequency": "32466",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1200",
+    "word": "along",
+    "parts": "r",
+    "frequency": "32475",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1201",
+    "word": "insurance",
+    "parts": "n",
+    "frequency": "32928",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1202",
+    "word": "department",
+    "parts": "n",
+    "frequency": "32252",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1203",
+    "word": "battle",
+    "parts": "n",
+    "frequency": "31989",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1204",
+    "word": "beginning",
+    "parts": "n",
+    "frequency": "31866",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1205",
+    "word": "date",
+    "parts": "n",
+    "frequency": "31467",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1206",
+    "word": "generally",
+    "parts": "r",
+    "frequency": "33191",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1207",
+    "word": "African",
+    "parts": "j",
+    "frequency": "34557",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1208",
+    "word": "very",
+    "parts": "j",
+    "frequency": "31807",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1209",
+    "word": "sorry",
+    "parts": "j",
+    "frequency": "34270",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1210",
+    "word": "crisis",
+    "parts": "n",
+    "frequency": "32924",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1211",
+    "word": "complete",
+    "parts": "v",
+    "frequency": "32813",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1212",
+    "word": "fan",
+    "parts": "n",
+    "frequency": "32919",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1213",
+    "word": "stick",
+    "parts": "v",
+    "frequency": "32259",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1214",
+    "word": "define",
+    "parts": "v",
+    "frequency": "33958",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1215",
+    "word": "easily",
+    "parts": "r",
+    "frequency": "31755",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1216",
+    "word": "through",
+    "parts": "r",
+    "frequency": "31838",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1217",
+    "word": "hole",
+    "parts": "n",
+    "frequency": "32302",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1218",
+    "word": "element",
+    "parts": "n",
+    "frequency": "33053",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1219",
+    "word": "vision",
+    "parts": "n",
+    "frequency": "32358",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1220",
+    "word": "status",
+    "parts": "n",
+    "frequency": "33511",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1221",
+    "word": "normal",
+    "parts": "j",
+    "frequency": "31265",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1222",
+    "word": "Chinese",
+    "parts": "j",
+    "frequency": "32334",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1223",
+    "word": "ship",
+    "parts": "n",
+    "frequency": "32588",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1224",
+    "word": "solution",
+    "parts": "n",
+    "frequency": "32052",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1225",
+    "word": "stone",
+    "parts": "n",
+    "frequency": "32531",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1226",
+    "word": "slowly",
+    "parts": "r",
+    "frequency": "33403",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1227",
+    "word": "scale",
+    "parts": "n",
+    "frequency": "34375",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1228",
+    "word": "bit",
+    "parts": "r",
+    "frequency": "32087",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1229",
+    "word": "university",
+    "parts": "n",
+    "frequency": "33000",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1230",
+    "word": "introduce",
+    "parts": "v",
+    "frequency": "31345",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1231",
+    "word": "driver",
+    "parts": "n",
+    "frequency": "31633",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1232",
+    "word": "attempt",
+    "parts": "n",
+    "frequency": "31944",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1233",
+    "word": "park",
+    "parts": "n",
+    "frequency": "32322",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1234",
+    "word": "spot",
+    "parts": "n",
+    "frequency": "31612",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1235",
+    "word": "lack",
+    "parts": "n",
+    "frequency": "32157",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1236",
+    "word": "ice",
+    "parts": "n",
+    "frequency": "31686",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1237",
+    "word": "boat",
+    "parts": "n",
+    "frequency": "32079",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1238",
+    "word": "drink",
+    "parts": "v",
+    "frequency": "32078",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1239",
+    "word": "sun",
+    "parts": "n",
+    "frequency": "32646",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1240",
+    "word": "front",
+    "parts": "j",
+    "frequency": "32087",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1241",
+    "word": "distance",
+    "parts": "n",
+    "frequency": "31380",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1242",
+    "word": "wood",
+    "parts": "n",
+    "frequency": "31801",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1243",
+    "word": "handle",
+    "parts": "v",
+    "frequency": "30634",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1244",
+    "word": "truck",
+    "parts": "n",
+    "frequency": "31536",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1245",
+    "word": "return",
+    "parts": "n",
+    "frequency": "31058",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1246",
+    "word": "mountain",
+    "parts": "n",
+    "frequency": "31322",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1247",
+    "word": "survey",
+    "parts": "n",
+    "frequency": "32784",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1248",
+    "word": "supposed",
+    "parts": "j",
+    "frequency": "31005",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1249",
+    "word": "tradition",
+    "parts": "n",
+    "frequency": "32110",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1250",
+    "word": "winter",
+    "parts": "n",
+    "frequency": "31227",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1251",
+    "word": "village",
+    "parts": "n",
+    "frequency": "30741",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1252",
+    "word": "Soviet",
+    "parts": "j",
+    "frequency": "36193",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "1253",
+    "word": "refuse",
+    "parts": "v",
+    "frequency": "30173",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1254",
+    "word": "sales",
+    "parts": "n",
+    "frequency": "32145",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1255",
+    "word": "roll",
+    "parts": "v",
+    "frequency": "31592",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1256",
+    "word": "communication",
+    "parts": "n",
+    "frequency": "31577",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1257",
+    "word": "run",
+    "parts": "n",
+    "frequency": "31325",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1258",
+    "word": "screen",
+    "parts": "n",
+    "frequency": "30758",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1259",
+    "word": "gain",
+    "parts": "v",
+    "frequency": "30667",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1260",
+    "word": "resident",
+    "parts": "n",
+    "frequency": "31836",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1261",
+    "word": "hide",
+    "parts": "v",
+    "frequency": "31098",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1262",
+    "word": "gold",
+    "parts": "n",
+    "frequency": "30733",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1263",
+    "word": "club",
+    "parts": "n",
+    "frequency": "30800",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1264",
+    "word": "future",
+    "parts": "j",
+    "frequency": "31494",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1265",
+    "word": "farm",
+    "parts": "n",
+    "frequency": "30291",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1266",
+    "word": "potential",
+    "parts": "j",
+    "frequency": "31289",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1267",
+    "word": "increase",
+    "parts": "n",
+    "frequency": "31247",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1268",
+    "word": "middle",
+    "parts": "n",
+    "frequency": "30199",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1269",
+    "word": "European",
+    "parts": "j",
+    "frequency": "31455",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1270",
+    "word": "presence",
+    "parts": "n",
+    "frequency": "30624",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1271",
+    "word": "independent",
+    "parts": "j",
+    "frequency": "31044",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1272",
+    "word": "district",
+    "parts": "n",
+    "frequency": "31327",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1273",
+    "word": "shape",
+    "parts": "n",
+    "frequency": "30396",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1274",
+    "word": "reader",
+    "parts": "n",
+    "frequency": "31442",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1275",
+    "word": "Ms",
+    "parts": "n",
+    "frequency": "31610",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1276",
+    "word": "contract",
+    "parts": "n",
+    "frequency": "30906",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1277",
+    "word": "crowd",
+    "parts": "n",
+    "frequency": "30542",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1278",
+    "word": "Christian",
+    "parts": "j",
+    "frequency": "30726",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1279",
+    "word": "express",
+    "parts": "v",
+    "frequency": "30947",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1280",
+    "word": "apartment",
+    "parts": "n",
+    "frequency": "31012",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1281",
+    "word": "willing",
+    "parts": "j",
+    "frequency": "29635",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1282",
+    "word": "strength",
+    "parts": "n",
+    "frequency": "29769",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1283",
+    "word": "previous",
+    "parts": "j",
+    "frequency": "30490",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1284",
+    "word": "band",
+    "parts": "n",
+    "frequency": "29769",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1285",
+    "word": "obviously",
+    "parts": "r",
+    "frequency": "31299",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1286",
+    "word": "horse",
+    "parts": "n",
+    "frequency": "30993",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1287",
+    "word": "interested",
+    "parts": "j",
+    "frequency": "29155",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1288",
+    "word": "target",
+    "parts": "n",
+    "frequency": "29866",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1289",
+    "word": "prison",
+    "parts": "n",
+    "frequency": "30248",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1290",
+    "word": "ride",
+    "parts": "v",
+    "frequency": "30476",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1291",
+    "word": "guard",
+    "parts": "n",
+    "frequency": "30159",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1292",
+    "word": "terms",
+    "parts": "i",
+    "frequency": "30996",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1293",
+    "word": "demand",
+    "parts": "n",
+    "frequency": "30519",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1294",
+    "word": "reporter",
+    "parts": "n",
+    "frequency": "30416",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1295",
+    "word": "deliver",
+    "parts": "v",
+    "frequency": "29169",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1296",
+    "word": "text",
+    "parts": "n",
+    "frequency": "32316",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1297",
+    "word": "share",
+    "parts": "n",
+    "frequency": "30752",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1298",
+    "word": "tool",
+    "parts": "n",
+    "frequency": "30286",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1299",
+    "word": "wild",
+    "parts": "j",
+    "frequency": "29473",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1300",
+    "word": "vehicle",
+    "parts": "n",
+    "frequency": "29421",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1301",
+    "word": "observe",
+    "parts": "v",
+    "frequency": "30737",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1302",
+    "word": "flight",
+    "parts": "n",
+    "frequency": "29535",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1303",
+    "word": "inside",
+    "parts": "r",
+    "frequency": "30715",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1304",
+    "word": "facility",
+    "parts": "n",
+    "frequency": "30107",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1305",
+    "word": "understanding",
+    "parts": "n",
+    "frequency": "31319",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1306",
+    "word": "average",
+    "parts": "j",
+    "frequency": "29717",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1307",
+    "word": "emerge",
+    "parts": "v",
+    "frequency": "29496",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1308",
+    "word": "advantage",
+    "parts": "n",
+    "frequency": "29340",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1309",
+    "word": "quick",
+    "parts": "j",
+    "frequency": "29108",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1310",
+    "word": "light",
+    "parts": "j",
+    "frequency": "29731",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1311",
+    "word": "leadership",
+    "parts": "n",
+    "frequency": "30047",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1312",
+    "word": "earn",
+    "parts": "v",
+    "frequency": "29560",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1313",
+    "word": "pound",
+    "parts": "n",
+    "frequency": "29946",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1314",
+    "word": "basis",
+    "parts": "n",
+    "frequency": "30377",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1315",
+    "word": "bright",
+    "parts": "j",
+    "frequency": "29780",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1316",
+    "word": "operate",
+    "parts": "v",
+    "frequency": "29345",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1317",
+    "word": "guest",
+    "parts": "n",
+    "frequency": "29328",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1318",
+    "word": "sample",
+    "parts": "n",
+    "frequency": "32436",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "1319",
+    "word": "contribute",
+    "parts": "v",
+    "frequency": "30090",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1320",
+    "word": "tiny",
+    "parts": "j",
+    "frequency": "29756",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1321",
+    "word": "block",
+    "parts": "n",
+    "frequency": "28826",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1322",
+    "word": "protection",
+    "parts": "n",
+    "frequency": "29336",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1323",
+    "word": "settle",
+    "parts": "v",
+    "frequency": "28827",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1324",
+    "word": "feed",
+    "parts": "v",
+    "frequency": "28494",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1325",
+    "word": "collect",
+    "parts": "v",
+    "frequency": "28946",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1326",
+    "word": "additional",
+    "parts": "j",
+    "frequency": "29771",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1327",
+    "word": "while",
+    "parts": "n",
+    "frequency": "29579",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1328",
+    "word": "highly",
+    "parts": "r",
+    "frequency": "29554",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1329",
+    "word": "identity",
+    "parts": "n",
+    "frequency": "31163",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1330",
+    "word": "title",
+    "parts": "n",
+    "frequency": "29210",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1331",
+    "word": "mostly",
+    "parts": "r",
+    "frequency": "28178",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1332",
+    "word": "lesson",
+    "parts": "n",
+    "frequency": "28623",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1333",
+    "word": "faith",
+    "parts": "n",
+    "frequency": "28710",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1334",
+    "word": "river",
+    "parts": "n",
+    "frequency": "28862",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1335",
+    "word": "promote",
+    "parts": "v",
+    "frequency": "29679",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1336",
+    "word": "living",
+    "parts": "n",
+    "frequency": "28736",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1337",
+    "word": "present",
+    "parts": "j",
+    "frequency": "30645",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1338",
+    "word": "count",
+    "parts": "v",
+    "frequency": "28836",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1339",
+    "word": "unless",
+    "parts": "c",
+    "frequency": "27908",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1340",
+    "word": "marry",
+    "parts": "v",
+    "frequency": "28722",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1341",
+    "word": "tomorrow",
+    "parts": "r",
+    "frequency": "30098",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1342",
+    "word": "technique",
+    "parts": "n",
+    "frequency": "29828",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1343",
+    "word": "path",
+    "parts": "n",
+    "frequency": "28344",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1344",
+    "word": "ear",
+    "parts": "n",
+    "frequency": "29597",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1345",
+    "word": "shop",
+    "parts": "n",
+    "frequency": "28589",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1346",
+    "word": "folk",
+    "parts": "n",
+    "frequency": "28698",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1347",
+    "word": "order",
+    "parts": "v",
+    "frequency": "27950",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1348",
+    "word": "principle",
+    "parts": "n",
+    "frequency": "30011",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1349",
+    "word": "survive",
+    "parts": "v",
+    "frequency": "27682",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1350",
+    "word": "lift",
+    "parts": "v",
+    "frequency": "29354",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1351",
+    "word": "border",
+    "parts": "n",
+    "frequency": "28636",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1352",
+    "word": "competition",
+    "parts": "n",
+    "frequency": "28752",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1353",
+    "word": "jump",
+    "parts": "v",
+    "frequency": "28504",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1354",
+    "word": "gather",
+    "parts": "v",
+    "frequency": "27659",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1355",
+    "word": "limit",
+    "parts": "v",
+    "frequency": "28901",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1356",
+    "word": "fit",
+    "parts": "v",
+    "frequency": "27875",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1357",
+    "word": "claim",
+    "parts": "n",
+    "frequency": "28609",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1358",
+    "word": "cry",
+    "parts": "v",
+    "frequency": "29690",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1359",
+    "word": "equipment",
+    "parts": "n",
+    "frequency": "28023",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1360",
+    "word": "worth",
+    "parts": "i",
+    "frequency": "27687",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1361",
+    "word": "associate",
+    "parts": "v",
+    "frequency": "30406",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1362",
+    "word": "critic",
+    "parts": "n",
+    "frequency": "28244",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1363",
+    "word": "warm",
+    "parts": "j",
+    "frequency": "28600",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1364",
+    "word": "aspect",
+    "parts": "n",
+    "frequency": "29460",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1365",
+    "word": "result",
+    "parts": "v",
+    "frequency": "29515",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1366",
+    "word": "insist",
+    "parts": "v",
+    "frequency": "27205",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1367",
+    "word": "failure",
+    "parts": "n",
+    "frequency": "28234",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1368",
+    "word": "annual",
+    "parts": "j",
+    "frequency": "28471",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1369",
+    "word": "French",
+    "parts": "j",
+    "frequency": "27590",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1370",
+    "word": "Christmas",
+    "parts": "n",
+    "frequency": "28046",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1371",
+    "word": "comment",
+    "parts": "n",
+    "frequency": "27712",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1372",
+    "word": "responsible",
+    "parts": "j",
+    "frequency": "27569",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1373",
+    "word": "affair",
+    "parts": "n",
+    "frequency": "27432",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1374",
+    "word": "approach",
+    "parts": "v",
+    "frequency": "27449",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1375",
+    "word": "until",
+    "parts": "i",
+    "frequency": "27007",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1376",
+    "word": "procedure",
+    "parts": "n",
+    "frequency": "29044",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1377",
+    "word": "regular",
+    "parts": "j",
+    "frequency": "27244",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1378",
+    "word": "spread",
+    "parts": "v",
+    "frequency": "27266",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1379",
+    "word": "chairman",
+    "parts": "n",
+    "frequency": "28560",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1380",
+    "word": "baseball",
+    "parts": "n",
+    "frequency": "28551",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1381",
+    "word": "soft",
+    "parts": "j",
+    "frequency": "27970",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1382",
+    "word": "ignore",
+    "parts": "v",
+    "frequency": "27023",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1383",
+    "word": "egg",
+    "parts": "n",
+    "frequency": "27917",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1384",
+    "word": "measure",
+    "parts": "v",
+    "frequency": "28612",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1385",
+    "word": "belief",
+    "parts": "n",
+    "frequency": "28844",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1386",
+    "word": "demonstrate",
+    "parts": "v",
+    "frequency": "29170",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1387",
+    "word": "anybody",
+    "parts": "p",
+    "frequency": "28704",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1388",
+    "word": "murder",
+    "parts": "n",
+    "frequency": "28335",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1389",
+    "word": "gift",
+    "parts": "n",
+    "frequency": "27050",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1390",
+    "word": "religion",
+    "parts": "n",
+    "frequency": "28220",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1391",
+    "word": "review",
+    "parts": "n",
+    "frequency": "28141",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1392",
+    "word": "editor",
+    "parts": "n",
+    "frequency": "27734",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1393",
+    "word": "past",
+    "parts": "i",
+    "frequency": "28278",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1394",
+    "word": "engage",
+    "parts": "v",
+    "frequency": "28194",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1395",
+    "word": "coffee",
+    "parts": "n",
+    "frequency": "28331",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1396",
+    "word": "document",
+    "parts": "n",
+    "frequency": "29437",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1397",
+    "word": "speed",
+    "parts": "n",
+    "frequency": "27740",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1398",
+    "word": "cross",
+    "parts": "v",
+    "frequency": "27524",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1399",
+    "word": "influence",
+    "parts": "n",
+    "frequency": "28387",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1400",
+    "word": "anyway",
+    "parts": "r",
+    "frequency": "28170",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1401",
+    "word": "threaten",
+    "parts": "v",
+    "frequency": "26587",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1402",
+    "word": "commit",
+    "parts": "v",
+    "frequency": "26943",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1403",
+    "word": "female",
+    "parts": "j",
+    "frequency": "27952",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1404",
+    "word": "youth",
+    "parts": "n",
+    "frequency": "27755",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1405",
+    "word": "wave",
+    "parts": "n",
+    "frequency": "26844",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1406",
+    "word": "move",
+    "parts": "n",
+    "frequency": "26717",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1407",
+    "word": "afraid",
+    "parts": "j",
+    "frequency": "27727",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1408",
+    "word": "quarter",
+    "parts": "n",
+    "frequency": "27125",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1409",
+    "word": "background",
+    "parts": "n",
+    "frequency": "26907",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1410",
+    "word": "native",
+    "parts": "j",
+    "frequency": "28026",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1411",
+    "word": "broad",
+    "parts": "j",
+    "frequency": "27191",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1412",
+    "word": "wonderful",
+    "parts": "j",
+    "frequency": "27494",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1413",
+    "word": "deny",
+    "parts": "v",
+    "frequency": "26675",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1414",
+    "word": "apparently",
+    "parts": "r",
+    "frequency": "26513",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1415",
+    "word": "slightly",
+    "parts": "r",
+    "frequency": "26887",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1416",
+    "word": "reaction",
+    "parts": "n",
+    "frequency": "26771",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1417",
+    "word": "twice",
+    "parts": "r",
+    "frequency": "26450",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1418",
+    "word": "suit",
+    "parts": "n",
+    "frequency": "27066",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1419",
+    "word": "perspective",
+    "parts": "n",
+    "frequency": "28324",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1420",
+    "word": "growing",
+    "parts": "j",
+    "frequency": "26858",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1421",
+    "word": "blow",
+    "parts": "v",
+    "frequency": "27254",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1422",
+    "word": "construction",
+    "parts": "n",
+    "frequency": "27114",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1423",
+    "word": "kind",
+    "parts": "r",
+    "frequency": "29474",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "1424",
+    "word": "intelligence",
+    "parts": "n",
+    "frequency": "27555",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1425",
+    "word": "destroy",
+    "parts": "v",
+    "frequency": "26177",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1426",
+    "word": "cook",
+    "parts": "v",
+    "frequency": "27725",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1427",
+    "word": "connection",
+    "parts": "n",
+    "frequency": "26552",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1428",
+    "word": "charge",
+    "parts": "v",
+    "frequency": "26432",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1429",
+    "word": "burn",
+    "parts": "v",
+    "frequency": "26646",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1430",
+    "word": "shoe",
+    "parts": "n",
+    "frequency": "26945",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1431",
+    "word": "view",
+    "parts": "v",
+    "frequency": "27258",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1432",
+    "word": "grade",
+    "parts": "n",
+    "frequency": "27178",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1433",
+    "word": "context",
+    "parts": "n",
+    "frequency": "29113",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "1434",
+    "word": "committee",
+    "parts": "n",
+    "frequency": "26697",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1435",
+    "word": "hey",
+    "parts": "u",
+    "frequency": "27659",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1436",
+    "word": "mistake",
+    "parts": "n",
+    "frequency": "26080",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1437",
+    "word": "focus",
+    "parts": "n",
+    "frequency": "26815",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1438",
+    "word": "smile",
+    "parts": "n",
+    "frequency": "28698",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1439",
+    "word": "location",
+    "parts": "n",
+    "frequency": "26463",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1440",
+    "word": "clothes",
+    "parts": "n",
+    "frequency": "27033",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1441",
+    "word": "Indian",
+    "parts": "j",
+    "frequency": "27100",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1442",
+    "word": "quiet",
+    "parts": "j",
+    "frequency": "26732",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1443",
+    "word": "dress",
+    "parts": "v",
+    "frequency": "26669",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1444",
+    "word": "promise",
+    "parts": "v",
+    "frequency": "25720",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1445",
+    "word": "aware",
+    "parts": "j",
+    "frequency": "25503",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1446",
+    "word": "neighbor",
+    "parts": "n",
+    "frequency": "25497",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1447",
+    "word": "complete",
+    "parts": "j",
+    "frequency": "25699",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1448",
+    "word": "drive",
+    "parts": "n",
+    "frequency": "26373",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1449",
+    "word": "function",
+    "parts": "n",
+    "frequency": "28011",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1450",
+    "word": "bone",
+    "parts": "n",
+    "frequency": "26282",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1451",
+    "word": "active",
+    "parts": "j",
+    "frequency": "26507",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1452",
+    "word": "extend",
+    "parts": "v",
+    "frequency": "25969",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1453",
+    "word": "chief",
+    "parts": "j",
+    "frequency": "26456",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1454",
+    "word": "average",
+    "parts": "n",
+    "frequency": "26568",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1455",
+    "word": "combine",
+    "parts": "v",
+    "frequency": "26570",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1456",
+    "word": "wine",
+    "parts": "n",
+    "frequency": "26682",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1457",
+    "word": "below",
+    "parts": "r",
+    "frequency": "26765",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1458",
+    "word": "cool",
+    "parts": "j",
+    "frequency": "26279",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1459",
+    "word": "voter",
+    "parts": "n",
+    "frequency": "27768",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1460",
+    "word": "mean",
+    "parts": "n",
+    "frequency": "28991",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "1461",
+    "word": "demand",
+    "parts": "v",
+    "frequency": "25207",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1462",
+    "word": "learning",
+    "parts": "n",
+    "frequency": "28869",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "1463",
+    "word": "bus",
+    "parts": "n",
+    "frequency": "25850",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1464",
+    "word": "hell",
+    "parts": "n",
+    "frequency": "27278",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1465",
+    "word": "dangerous",
+    "parts": "j",
+    "frequency": "25170",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1466",
+    "word": "remind",
+    "parts": "v",
+    "frequency": "25525",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1467",
+    "word": "moral",
+    "parts": "j",
+    "frequency": "26980",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1468",
+    "word": "United",
+    "parts": "j",
+    "frequency": "26396",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1469",
+    "word": "category",
+    "parts": "n",
+    "frequency": "27219",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1470",
+    "word": "relatively",
+    "parts": "r",
+    "frequency": "26476",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1471",
+    "word": "victory",
+    "parts": "n",
+    "frequency": "26422",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1472",
+    "word": "key",
+    "parts": "n",
+    "frequency": "25436",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1473",
+    "word": "academic",
+    "parts": "j",
+    "frequency": "28216",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "1474",
+    "word": "visit",
+    "parts": "n",
+    "frequency": "25000",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1475",
+    "word": "Internet",
+    "parts": "n",
+    "frequency": "26983",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1476",
+    "word": "healthy",
+    "parts": "j",
+    "frequency": "26009",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1477",
+    "word": "fire",
+    "parts": "v",
+    "frequency": "25390",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1478",
+    "word": "negative",
+    "parts": "j",
+    "frequency": "26847",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1479",
+    "word": "following",
+    "parts": "j",
+    "frequency": "26643",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1480",
+    "word": "historical",
+    "parts": "j",
+    "frequency": "27266",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1481",
+    "word": "medicine",
+    "parts": "n",
+    "frequency": "25511",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1482",
+    "word": "tour",
+    "parts": "n",
+    "frequency": "25781",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1483",
+    "word": "depend",
+    "parts": "v",
+    "frequency": "25405",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1484",
+    "word": "photo",
+    "parts": "n",
+    "frequency": "25492",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1485",
+    "word": "finding",
+    "parts": "n",
+    "frequency": "28246",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "1486",
+    "word": "grab",
+    "parts": "v",
+    "frequency": "26951",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1487",
+    "word": "direct",
+    "parts": "j",
+    "frequency": "26008",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1488",
+    "word": "classroom",
+    "parts": "n",
+    "frequency": "27531",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1489",
+    "word": "contact",
+    "parts": "n",
+    "frequency": "25218",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1490",
+    "word": "justice",
+    "parts": "n",
+    "frequency": "25377",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1491",
+    "word": "participate",
+    "parts": "v",
+    "frequency": "26500",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1492",
+    "word": "daily",
+    "parts": "j",
+    "frequency": "25179",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1493",
+    "word": "fair",
+    "parts": "j",
+    "frequency": "25064",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1494",
+    "word": "pair",
+    "parts": "n",
+    "frequency": "25289",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1495",
+    "word": "famous",
+    "parts": "j",
+    "frequency": "24631",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1496",
+    "word": "exercise",
+    "parts": "n",
+    "frequency": "25934",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1497",
+    "word": "knee",
+    "parts": "n",
+    "frequency": "25912",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1498",
+    "word": "flower",
+    "parts": "n",
+    "frequency": "25642",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1499",
+    "word": "tape",
+    "parts": "n",
+    "frequency": "25730",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1500",
+    "word": "hire",
+    "parts": "v",
+    "frequency": "25073",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1501",
+    "word": "familiar",
+    "parts": "j",
+    "frequency": "24515",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1502",
+    "word": "appropriate",
+    "parts": "j",
+    "frequency": "26237",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1503",
+    "word": "supply",
+    "parts": "n",
+    "frequency": "24920",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1504",
+    "word": "fully",
+    "parts": "r",
+    "frequency": "24842",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1505",
+    "word": "cut",
+    "parts": "n",
+    "frequency": "25327",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1506",
+    "word": "will",
+    "parts": "n",
+    "frequency": "24351",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1507",
+    "word": "actor",
+    "parts": "n",
+    "frequency": "24848",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1508",
+    "word": "birth",
+    "parts": "n",
+    "frequency": "24515",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1509",
+    "word": "search",
+    "parts": "n",
+    "frequency": "27087",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1510",
+    "word": "tie",
+    "parts": "v",
+    "frequency": "24408",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1511",
+    "word": "democracy",
+    "parts": "n",
+    "frequency": "26039",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1512",
+    "word": "eastern",
+    "parts": "j",
+    "frequency": "25103",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1513",
+    "word": "primary",
+    "parts": "j",
+    "frequency": "26043",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1514",
+    "word": "yesterday",
+    "parts": "r",
+    "frequency": "26215",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1515",
+    "word": "circle",
+    "parts": "n",
+    "frequency": "24735",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1516",
+    "word": "device",
+    "parts": "n",
+    "frequency": "24918",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1517",
+    "word": "progress",
+    "parts": "n",
+    "frequency": "24645",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1518",
+    "word": "next",
+    "parts": "i",
+    "frequency": "25720",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1519",
+    "word": "front",
+    "parts": "n",
+    "frequency": "24402",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1520",
+    "word": "bottom",
+    "parts": "n",
+    "frequency": "24653",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1521",
+    "word": "island",
+    "parts": "n",
+    "frequency": "24311",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1522",
+    "word": "exchange",
+    "parts": "n",
+    "frequency": "24826",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1523",
+    "word": "clean",
+    "parts": "j",
+    "frequency": "24325",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1524",
+    "word": "studio",
+    "parts": "n",
+    "frequency": "24765",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1525",
+    "word": "train",
+    "parts": "v",
+    "frequency": "23990",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1526",
+    "word": "lady",
+    "parts": "n",
+    "frequency": "25436",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1527",
+    "word": "colleague",
+    "parts": "n",
+    "frequency": "24370",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1528",
+    "word": "application",
+    "parts": "n",
+    "frequency": "25735",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1529",
+    "word": "neck",
+    "parts": "n",
+    "frequency": "25716",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1530",
+    "word": "lean",
+    "parts": "v",
+    "frequency": "26896",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "1531",
+    "word": "damage",
+    "parts": "n",
+    "frequency": "24155",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1532",
+    "word": "plastic",
+    "parts": "n",
+    "frequency": "24563",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1533",
+    "word": "tall",
+    "parts": "j",
+    "frequency": "25304",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1534",
+    "word": "plate",
+    "parts": "n",
+    "frequency": "24592",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1535",
+    "word": "hate",
+    "parts": "v",
+    "frequency": "24921",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1536",
+    "word": "otherwise",
+    "parts": "r",
+    "frequency": "23793",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1537",
+    "word": "writing",
+    "parts": "n",
+    "frequency": "24995",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1538",
+    "word": "press",
+    "parts": "v",
+    "frequency": "24716",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1539",
+    "word": "male",
+    "parts": "j",
+    "frequency": "24873",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1540",
+    "word": "start",
+    "parts": "n",
+    "frequency": "24071",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1541",
+    "word": "alive",
+    "parts": "j",
+    "frequency": "24184",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1542",
+    "word": "expression",
+    "parts": "n",
+    "frequency": "24748",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1543",
+    "word": "football",
+    "parts": "n",
+    "frequency": "25271",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1544",
+    "word": "intend",
+    "parts": "v",
+    "frequency": "23554",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1545",
+    "word": "attack",
+    "parts": "v",
+    "frequency": "23971",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1546",
+    "word": "chicken",
+    "parts": "n",
+    "frequency": "24465",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1547",
+    "word": "army",
+    "parts": "n",
+    "frequency": "23929",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1548",
+    "word": "abuse",
+    "parts": "n",
+    "frequency": "24534",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1549",
+    "word": "theater",
+    "parts": "n",
+    "frequency": "24447",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1550",
+    "word": "shut",
+    "parts": "v",
+    "frequency": "24773",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1551",
+    "word": "map",
+    "parts": "n",
+    "frequency": "23666",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1552",
+    "word": "extra",
+    "parts": "j",
+    "frequency": "24006",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1553",
+    "word": "session",
+    "parts": "n",
+    "frequency": "24010",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1554",
+    "word": "danger",
+    "parts": "n",
+    "frequency": "23244",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1555",
+    "word": "welcome",
+    "parts": "v",
+    "frequency": "25241",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1556",
+    "word": "domestic",
+    "parts": "j",
+    "frequency": "24313",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1557",
+    "word": "lots",
+    "parts": "p",
+    "frequency": "23750",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1558",
+    "word": "literature",
+    "parts": "n",
+    "frequency": "26254",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "1559",
+    "word": "rain",
+    "parts": "n",
+    "frequency": "24134",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1560",
+    "word": "desire",
+    "parts": "n",
+    "frequency": "23994",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1561",
+    "word": "assessment",
+    "parts": "n",
+    "frequency": "26318",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "1562",
+    "word": "injury",
+    "parts": "n",
+    "frequency": "23935",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1563",
+    "word": "respect",
+    "parts": "n",
+    "frequency": "23274",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1564",
+    "word": "northern",
+    "parts": "j",
+    "frequency": "23783",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1565",
+    "word": "nod",
+    "parts": "v",
+    "frequency": "27283",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "1566",
+    "word": "paint",
+    "parts": "v",
+    "frequency": "24038",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1567",
+    "word": "fuel",
+    "parts": "n",
+    "frequency": "23934",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1568",
+    "word": "leaf",
+    "parts": "n",
+    "frequency": "24044",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1569",
+    "word": "direct",
+    "parts": "v",
+    "frequency": "23298",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1570",
+    "word": "dry",
+    "parts": "j",
+    "frequency": "23809",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1571",
+    "word": "Russian",
+    "parts": "j",
+    "frequency": "23739",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1572",
+    "word": "instruction",
+    "parts": "n",
+    "frequency": "25190",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1573",
+    "word": "fight",
+    "parts": "n",
+    "frequency": "23211",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1574",
+    "word": "pool",
+    "parts": "n",
+    "frequency": "23346",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1575",
+    "word": "climb",
+    "parts": "v",
+    "frequency": "24367",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1576",
+    "word": "sweet",
+    "parts": "j",
+    "frequency": "23843",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1577",
+    "word": "lead",
+    "parts": "n",
+    "frequency": "23301",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1578",
+    "word": "engine",
+    "parts": "n",
+    "frequency": "23617",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1579",
+    "word": "fourth",
+    "parts": "m",
+    "frequency": "23227",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1580",
+    "word": "salt",
+    "parts": "n",
+    "frequency": "24711",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1581",
+    "word": "expand",
+    "parts": "v",
+    "frequency": "23417",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1582",
+    "word": "importance",
+    "parts": "n",
+    "frequency": "24946",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1583",
+    "word": "metal",
+    "parts": "n",
+    "frequency": "23317",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1584",
+    "word": "fat",
+    "parts": "n",
+    "frequency": "24844",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1585",
+    "word": "ticket",
+    "parts": "n",
+    "frequency": "23902",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1586",
+    "word": "software",
+    "parts": "n",
+    "frequency": "23954",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1587",
+    "word": "disappear",
+    "parts": "v",
+    "frequency": "23389",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1588",
+    "word": "corporate",
+    "parts": "j",
+    "frequency": "23621",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1589",
+    "word": "strange",
+    "parts": "j",
+    "frequency": "23744",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1590",
+    "word": "lip",
+    "parts": "n",
+    "frequency": "25250",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1591",
+    "word": "reading",
+    "parts": "n",
+    "frequency": "23919",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1592",
+    "word": "urban",
+    "parts": "j",
+    "frequency": "23889",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1593",
+    "word": "mental",
+    "parts": "j",
+    "frequency": "23650",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1594",
+    "word": "increasingly",
+    "parts": "r",
+    "frequency": "23529",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1595",
+    "word": "lunch",
+    "parts": "n",
+    "frequency": "23220",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1596",
+    "word": "educational",
+    "parts": "j",
+    "frequency": "25282",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1597",
+    "word": "somewhere",
+    "parts": "r",
+    "frequency": "23527",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1598",
+    "word": "farmer",
+    "parts": "n",
+    "frequency": "23005",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1599",
+    "word": "above",
+    "parts": "r",
+    "frequency": "23866",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1600",
+    "word": "sugar",
+    "parts": "n",
+    "frequency": "24310",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1601",
+    "word": "planet",
+    "parts": "n",
+    "frequency": "23567",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1602",
+    "word": "favorite",
+    "parts": "j",
+    "frequency": "23159",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1603",
+    "word": "explore",
+    "parts": "v",
+    "frequency": "23744",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1604",
+    "word": "obtain",
+    "parts": "v",
+    "frequency": "24538",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1605",
+    "word": "enemy",
+    "parts": "n",
+    "frequency": "22621",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1606",
+    "word": "greatest",
+    "parts": "j",
+    "frequency": "22673",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1607",
+    "word": "complex",
+    "parts": "j",
+    "frequency": "23751",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1608",
+    "word": "surround",
+    "parts": "v",
+    "frequency": "22391",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1609",
+    "word": "athlete",
+    "parts": "n",
+    "frequency": "23868",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1610",
+    "word": "invite",
+    "parts": "v",
+    "frequency": "22158",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1611",
+    "word": "repeat",
+    "parts": "v",
+    "frequency": "22622",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1612",
+    "word": "carefully",
+    "parts": "r",
+    "frequency": "22837",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1613",
+    "word": "soul",
+    "parts": "n",
+    "frequency": "22713",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1614",
+    "word": "scientific",
+    "parts": "j",
+    "frequency": "23691",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1615",
+    "word": "impossible",
+    "parts": "j",
+    "frequency": "22233",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1616",
+    "word": "panel",
+    "parts": "n",
+    "frequency": "22529",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1617",
+    "word": "meaning",
+    "parts": "n",
+    "frequency": "24064",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1618",
+    "word": "mom",
+    "parts": "n",
+    "frequency": "23450",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1619",
+    "word": "married",
+    "parts": "j",
+    "frequency": "22352",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1620",
+    "word": "alone",
+    "parts": "j",
+    "frequency": "23106",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1621",
+    "word": "instrument",
+    "parts": "n",
+    "frequency": "23831",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1622",
+    "word": "predict",
+    "parts": "v",
+    "frequency": "22942",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1623",
+    "word": "weather",
+    "parts": "n",
+    "frequency": "22586",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1624",
+    "word": "presidential",
+    "parts": "j",
+    "frequency": "24057",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1625",
+    "word": "emotional",
+    "parts": "j",
+    "frequency": "22773",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1626",
+    "word": "commitment",
+    "parts": "n",
+    "frequency": "23152",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1627",
+    "word": "Supreme",
+    "parts": "j",
+    "frequency": "23904",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1628",
+    "word": "bear",
+    "parts": "v",
+    "frequency": "22190",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1629",
+    "word": "pocket",
+    "parts": "n",
+    "frequency": "23580",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1630",
+    "word": "thin",
+    "parts": "j",
+    "frequency": "23194",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1631",
+    "word": "temperature",
+    "parts": "n",
+    "frequency": "23111",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1632",
+    "word": "surprise",
+    "parts": "n",
+    "frequency": "22275",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1633",
+    "word": "poll",
+    "parts": "n",
+    "frequency": "24009",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1634",
+    "word": "proposal",
+    "parts": "n",
+    "frequency": "22830",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1635",
+    "word": "consequence",
+    "parts": "n",
+    "frequency": "23307",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1636",
+    "word": "half",
+    "parts": "n",
+    "frequency": "22029",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1637",
+    "word": "breath",
+    "parts": "n",
+    "frequency": "24668",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1638",
+    "word": "sight",
+    "parts": "n",
+    "frequency": "22878",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1639",
+    "word": "cover",
+    "parts": "n",
+    "frequency": "22301",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1640",
+    "word": "balance",
+    "parts": "n",
+    "frequency": "22243",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1641",
+    "word": "adopt",
+    "parts": "v",
+    "frequency": "22880",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1642",
+    "word": "minority",
+    "parts": "n",
+    "frequency": "23167",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1643",
+    "word": "straight",
+    "parts": "r",
+    "frequency": "22929",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1644",
+    "word": "attempt",
+    "parts": "v",
+    "frequency": "22758",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1645",
+    "word": "connect",
+    "parts": "v",
+    "frequency": "22100",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1646",
+    "word": "works",
+    "parts": "n",
+    "frequency": "22722",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1647",
+    "word": "teaching",
+    "parts": "n",
+    "frequency": "24387",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1648",
+    "word": "belong",
+    "parts": "v",
+    "frequency": "21856",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1649",
+    "word": "aid",
+    "parts": "n",
+    "frequency": "22642",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1650",
+    "word": "advice",
+    "parts": "n",
+    "frequency": "21970",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1651",
+    "word": "okay",
+    "parts": "r",
+    "frequency": "24243",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1652",
+    "word": "photograph",
+    "parts": "n",
+    "frequency": "22016",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1653",
+    "word": "empty",
+    "parts": "j",
+    "frequency": "23365",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1654",
+    "word": "regional",
+    "parts": "j",
+    "frequency": "23182",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1655",
+    "word": "trail",
+    "parts": "n",
+    "frequency": "23030",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1656",
+    "word": "novel",
+    "parts": "n",
+    "frequency": "22392",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1657",
+    "word": "code",
+    "parts": "n",
+    "frequency": "22015",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1658",
+    "word": "somehow",
+    "parts": "r",
+    "frequency": "22267",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1659",
+    "word": "organize",
+    "parts": "v",
+    "frequency": "22389",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1660",
+    "word": "jury",
+    "parts": "n",
+    "frequency": "24072",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1661",
+    "word": "breast",
+    "parts": "n",
+    "frequency": "22362",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1662",
+    "word": "Iraqi",
+    "parts": "j",
+    "frequency": "25446",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "1663",
+    "word": "human",
+    "parts": "n",
+    "frequency": "22022",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1664",
+    "word": "acknowledge",
+    "parts": "v",
+    "frequency": "21983",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1665",
+    "word": "theme",
+    "parts": "n",
+    "frequency": "22494",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1666",
+    "word": "storm",
+    "parts": "n",
+    "frequency": "22562",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1667",
+    "word": "union",
+    "parts": "n",
+    "frequency": "22380",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1668",
+    "word": "record",
+    "parts": "v",
+    "frequency": "21939",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1669",
+    "word": "desk",
+    "parts": "n",
+    "frequency": "23455",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1670",
+    "word": "fear",
+    "parts": "v",
+    "frequency": "21333",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1671",
+    "word": "thanks",
+    "parts": "n",
+    "frequency": "23061",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1672",
+    "word": "fruit",
+    "parts": "n",
+    "frequency": "22401",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1673",
+    "word": "under",
+    "parts": "r",
+    "frequency": "21521",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1674",
+    "word": "expensive",
+    "parts": "j",
+    "frequency": "21706",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1675",
+    "word": "yellow",
+    "parts": "j",
+    "frequency": "22452",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1676",
+    "word": "conclusion",
+    "parts": "n",
+    "frequency": "23034",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1677",
+    "word": "prime",
+    "parts": "j",
+    "frequency": "22075",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1678",
+    "word": "shadow",
+    "parts": "n",
+    "frequency": "22803",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1679",
+    "word": "struggle",
+    "parts": "v",
+    "frequency": "21370",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1680",
+    "word": "conclude",
+    "parts": "v",
+    "frequency": "22247",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1681",
+    "word": "analyst",
+    "parts": "n",
+    "frequency": "22662",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1682",
+    "word": "dance",
+    "parts": "n",
+    "frequency": "21799",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1683",
+    "word": "limit",
+    "parts": "n",
+    "frequency": "21714",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1684",
+    "word": "like",
+    "parts": "j",
+    "frequency": "21723",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1685",
+    "word": "regulation",
+    "parts": "n",
+    "frequency": "22479",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1686",
+    "word": "being",
+    "parts": "n",
+    "frequency": "21695",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1687",
+    "word": "last",
+    "parts": "v",
+    "frequency": "21219",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1688",
+    "word": "ring",
+    "parts": "n",
+    "frequency": "21873",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1689",
+    "word": "largely",
+    "parts": "r",
+    "frequency": "22097",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1690",
+    "word": "shift",
+    "parts": "v",
+    "frequency": "21323",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1691",
+    "word": "revenue",
+    "parts": "n",
+    "frequency": "22445",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1692",
+    "word": "mark",
+    "parts": "v",
+    "frequency": "21236",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1693",
+    "word": "locate",
+    "parts": "v",
+    "frequency": "21843",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1694",
+    "word": "county",
+    "parts": "n",
+    "frequency": "22675",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1695",
+    "word": "appearance",
+    "parts": "n",
+    "frequency": "21146",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1696",
+    "word": "package",
+    "parts": "n",
+    "frequency": "21665",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1697",
+    "word": "difficulty",
+    "parts": "n",
+    "frequency": "22288",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1698",
+    "word": "bridge",
+    "parts": "n",
+    "frequency": "21497",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1699",
+    "word": "recommend",
+    "parts": "v",
+    "frequency": "21707",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1700",
+    "word": "obvious",
+    "parts": "j",
+    "frequency": "21052",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1701",
+    "word": "train",
+    "parts": "n",
+    "frequency": "21766",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1702",
+    "word": "basically",
+    "parts": "r",
+    "frequency": "23265",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1703",
+    "word": "e-mail",
+    "parts": "n",
+    "frequency": "22467",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1704",
+    "word": "generate",
+    "parts": "v",
+    "frequency": "22213",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1705",
+    "word": "anymore",
+    "parts": "r",
+    "frequency": "21771",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1706",
+    "word": "propose",
+    "parts": "v",
+    "frequency": "21691",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1707",
+    "word": "thinking",
+    "parts": "n",
+    "frequency": "21663",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1708",
+    "word": "possibly",
+    "parts": "r",
+    "frequency": "20953",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1709",
+    "word": "trend",
+    "parts": "n",
+    "frequency": "21894",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1710",
+    "word": "visitor",
+    "parts": "n",
+    "frequency": "21490",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1711",
+    "word": "loan",
+    "parts": "n",
+    "frequency": "22324",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1712",
+    "word": "currently",
+    "parts": "r",
+    "frequency": "21636",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1713",
+    "word": "comfortable",
+    "parts": "j",
+    "frequency": "21101",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1714",
+    "word": "investor",
+    "parts": "n",
+    "frequency": "22410",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1715",
+    "word": "but",
+    "parts": "i",
+    "frequency": "20961",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1716",
+    "word": "profit",
+    "parts": "n",
+    "frequency": "21754",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1717",
+    "word": "angry",
+    "parts": "j",
+    "frequency": "21485",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1718",
+    "word": "crew",
+    "parts": "n",
+    "frequency": "21238",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1719",
+    "word": "deep",
+    "parts": "r",
+    "frequency": "21413",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1720",
+    "word": "accident",
+    "parts": "n",
+    "frequency": "20964",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1721",
+    "word": "male",
+    "parts": "n",
+    "frequency": "22398",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1722",
+    "word": "meal",
+    "parts": "n",
+    "frequency": "21556",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1723",
+    "word": "hearing",
+    "parts": "n",
+    "frequency": "21560",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1724",
+    "word": "traffic",
+    "parts": "n",
+    "frequency": "21296",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1725",
+    "word": "muscle",
+    "parts": "n",
+    "frequency": "21931",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1726",
+    "word": "notion",
+    "parts": "n",
+    "frequency": "21801",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1727",
+    "word": "capture",
+    "parts": "v",
+    "frequency": "21018",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1728",
+    "word": "prefer",
+    "parts": "v",
+    "frequency": "20946",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1729",
+    "word": "truly",
+    "parts": "r",
+    "frequency": "20576",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1730",
+    "word": "earth",
+    "parts": "n",
+    "frequency": "21350",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1731",
+    "word": "Japanese",
+    "parts": "j",
+    "frequency": "21800",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1732",
+    "word": "chest",
+    "parts": "n",
+    "frequency": "22508",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1733",
+    "word": "search",
+    "parts": "v",
+    "frequency": "20943",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1734",
+    "word": "thick",
+    "parts": "j",
+    "frequency": "21932",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1735",
+    "word": "cash",
+    "parts": "n",
+    "frequency": "21343",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1736",
+    "word": "museum",
+    "parts": "n",
+    "frequency": "21715",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1737",
+    "word": "beauty",
+    "parts": "n",
+    "frequency": "21060",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1738",
+    "word": "emergency",
+    "parts": "n",
+    "frequency": "20796",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1739",
+    "word": "unique",
+    "parts": "j",
+    "frequency": "21436",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1740",
+    "word": "feature",
+    "parts": "v",
+    "frequency": "21678",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1741",
+    "word": "internal",
+    "parts": "j",
+    "frequency": "22025",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1742",
+    "word": "ethnic",
+    "parts": "j",
+    "frequency": "22632",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1743",
+    "word": "link",
+    "parts": "v",
+    "frequency": "21335",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1744",
+    "word": "stress",
+    "parts": "n",
+    "frequency": "21813",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1745",
+    "word": "content",
+    "parts": "n",
+    "frequency": "21821",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1746",
+    "word": "select",
+    "parts": "v",
+    "frequency": "21617",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1747",
+    "word": "root",
+    "parts": "n",
+    "frequency": "20774",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1748",
+    "word": "nose",
+    "parts": "n",
+    "frequency": "21938",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1749",
+    "word": "declare",
+    "parts": "v",
+    "frequency": "20550",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1750",
+    "word": "outside",
+    "parts": "r",
+    "frequency": "21556",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1751",
+    "word": "appreciate",
+    "parts": "v",
+    "frequency": "20806",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1752",
+    "word": "actual",
+    "parts": "j",
+    "frequency": "21321",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1753",
+    "word": "bottle",
+    "parts": "n",
+    "frequency": "21569",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1754",
+    "word": "hardly",
+    "parts": "r",
+    "frequency": "20757",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1755",
+    "word": "setting",
+    "parts": "n",
+    "frequency": "22004",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1756",
+    "word": "launch",
+    "parts": "v",
+    "frequency": "20767",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1757",
+    "word": "dress",
+    "parts": "n",
+    "frequency": "21362",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1758",
+    "word": "file",
+    "parts": "n",
+    "frequency": "20832",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1759",
+    "word": "sick",
+    "parts": "j",
+    "frequency": "20906",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1760",
+    "word": "outcome",
+    "parts": "n",
+    "frequency": "22721",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1761",
+    "word": "ad",
+    "parts": "n",
+    "frequency": "21064",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1762",
+    "word": "defend",
+    "parts": "v",
+    "frequency": "20510",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1763",
+    "word": "matter",
+    "parts": "v",
+    "frequency": "20534",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1764",
+    "word": "judge",
+    "parts": "v",
+    "frequency": "20320",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1765",
+    "word": "duty",
+    "parts": "n",
+    "frequency": "20204",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1766",
+    "word": "sheet",
+    "parts": "n",
+    "frequency": "20787",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1767",
+    "word": "ought",
+    "parts": "v",
+    "frequency": "21552",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1768",
+    "word": "ensure",
+    "parts": "v",
+    "frequency": "21341",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1769",
+    "word": "Catholic",
+    "parts": "j",
+    "frequency": "20866",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1770",
+    "word": "extremely",
+    "parts": "r",
+    "frequency": "20310",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1771",
+    "word": "extent",
+    "parts": "n",
+    "frequency": "21727",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1772",
+    "word": "component",
+    "parts": "n",
+    "frequency": "22085",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1773",
+    "word": "mix",
+    "parts": "v",
+    "frequency": "20642",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1774",
+    "word": "long-term",
+    "parts": "j",
+    "frequency": "20841",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1775",
+    "word": "slow",
+    "parts": "j",
+    "frequency": "20404",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1776",
+    "word": "contrast",
+    "parts": "n",
+    "frequency": "21581",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1777",
+    "word": "zone",
+    "parts": "n",
+    "frequency": "20472",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1778",
+    "word": "wake",
+    "parts": "v",
+    "frequency": "21330",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1779",
+    "word": "challenge",
+    "parts": "v",
+    "frequency": "20510",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1780",
+    "word": "airport",
+    "parts": "n",
+    "frequency": "20897",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1781",
+    "word": "chief",
+    "parts": "n",
+    "frequency": "20453",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1782",
+    "word": "brown",
+    "parts": "j",
+    "frequency": "21175",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1783",
+    "word": "standard",
+    "parts": "j",
+    "frequency": "20917",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1784",
+    "word": "shirt",
+    "parts": "n",
+    "frequency": "21486",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1785",
+    "word": "pilot",
+    "parts": "n",
+    "frequency": "20192",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1786",
+    "word": "warn",
+    "parts": "v",
+    "frequency": "19996",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1787",
+    "word": "ultimately",
+    "parts": "r",
+    "frequency": "20387",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1788",
+    "word": "cat",
+    "parts": "n",
+    "frequency": "21135",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1789",
+    "word": "contribution",
+    "parts": "n",
+    "frequency": "20912",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1790",
+    "word": "capacity",
+    "parts": "n",
+    "frequency": "21102",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1791",
+    "word": "ourselves",
+    "parts": "p",
+    "frequency": "19926",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1792",
+    "word": "estate",
+    "parts": "n",
+    "frequency": "20673",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1793",
+    "word": "guide",
+    "parts": "n",
+    "frequency": "20646",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1794",
+    "word": "circumstance",
+    "parts": "n",
+    "frequency": "20310",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1795",
+    "word": "snow",
+    "parts": "n",
+    "frequency": "21011",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1796",
+    "word": "English",
+    "parts": "j",
+    "frequency": "20235",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1797",
+    "word": "politician",
+    "parts": "n",
+    "frequency": "20360",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1798",
+    "word": "steal",
+    "parts": "v",
+    "frequency": "20296",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1799",
+    "word": "pursue",
+    "parts": "v",
+    "frequency": "20136",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1800",
+    "word": "slip",
+    "parts": "v",
+    "frequency": "21233",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1801",
+    "word": "percentage",
+    "parts": "n",
+    "frequency": "20774",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1802",
+    "word": "meat",
+    "parts": "n",
+    "frequency": "20271",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1803",
+    "word": "funny",
+    "parts": "j",
+    "frequency": "20399",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1804",
+    "word": "neither",
+    "parts": "r",
+    "frequency": "20100",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1805",
+    "word": "soil",
+    "parts": "n",
+    "frequency": "20916",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1806",
+    "word": "influence",
+    "parts": "v",
+    "frequency": "21448",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1807",
+    "word": "surgery",
+    "parts": "n",
+    "frequency": "20118",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1808",
+    "word": "correct",
+    "parts": "j",
+    "frequency": "20613",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1809",
+    "word": "Jewish",
+    "parts": "j",
+    "frequency": "20196",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1810",
+    "word": "blame",
+    "parts": "v",
+    "frequency": "19798",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1811",
+    "word": "estimate",
+    "parts": "v",
+    "frequency": "20474",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1812",
+    "word": "due",
+    "parts": "i",
+    "frequency": "21141",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1813",
+    "word": "basketball",
+    "parts": "n",
+    "frequency": "20955",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1814",
+    "word": "late",
+    "parts": "r",
+    "frequency": "19727",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1815",
+    "word": "golf",
+    "parts": "n",
+    "frequency": "20979",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1816",
+    "word": "investigate",
+    "parts": "v",
+    "frequency": "20117",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1817",
+    "word": "crazy",
+    "parts": "j",
+    "frequency": "20345",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1818",
+    "word": "significantly",
+    "parts": "r",
+    "frequency": "22038",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "1819",
+    "word": "chain",
+    "parts": "n",
+    "frequency": "19688",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1820",
+    "word": "address",
+    "parts": "n",
+    "frequency": "19564",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1821",
+    "word": "branch",
+    "parts": "n",
+    "frequency": "19633",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1822",
+    "word": "combination",
+    "parts": "n",
+    "frequency": "20026",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1823",
+    "word": "just",
+    "parts": "j",
+    "frequency": "20096",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1824",
+    "word": "frequently",
+    "parts": "r",
+    "frequency": "20508",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1825",
+    "word": "governor",
+    "parts": "n",
+    "frequency": "20802",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1826",
+    "word": "relief",
+    "parts": "n",
+    "frequency": "19493",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1827",
+    "word": "user",
+    "parts": "n",
+    "frequency": "20681",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1828",
+    "word": "dad",
+    "parts": "n",
+    "frequency": "20164",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1829",
+    "word": "kick",
+    "parts": "v",
+    "frequency": "20092",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1830",
+    "word": "part",
+    "parts": "r",
+    "frequency": "19900",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1831",
+    "word": "manner",
+    "parts": "n",
+    "frequency": "20012",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1832",
+    "word": "ancient",
+    "parts": "j",
+    "frequency": "19818",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1833",
+    "word": "silence",
+    "parts": "n",
+    "frequency": "21169",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1834",
+    "word": "rating",
+    "parts": "n",
+    "frequency": "20413",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1835",
+    "word": "golden",
+    "parts": "j",
+    "frequency": "19852",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1836",
+    "word": "motion",
+    "parts": "n",
+    "frequency": "19649",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1837",
+    "word": "German",
+    "parts": "j",
+    "frequency": "20096",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1838",
+    "word": "gender",
+    "parts": "n",
+    "frequency": "22190",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "1839",
+    "word": "solve",
+    "parts": "v",
+    "frequency": "19501",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1840",
+    "word": "fee",
+    "parts": "n",
+    "frequency": "20263",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1841",
+    "word": "landscape",
+    "parts": "n",
+    "frequency": "20171",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1842",
+    "word": "used",
+    "parts": "j",
+    "frequency": "19130",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1843",
+    "word": "bowl",
+    "parts": "n",
+    "frequency": "20662",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1844",
+    "word": "equal",
+    "parts": "j",
+    "frequency": "19952",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1845",
+    "word": "long",
+    "parts": "c",
+    "frequency": "19227",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1846",
+    "word": "official",
+    "parts": "j",
+    "frequency": "19628",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1847",
+    "word": "forth",
+    "parts": "r",
+    "frequency": "19531",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1848",
+    "word": "frame",
+    "parts": "n",
+    "frequency": "20016",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1849",
+    "word": "typical",
+    "parts": "j",
+    "frequency": "19724",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1850",
+    "word": "except",
+    "parts": "i",
+    "frequency": "19594",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1851",
+    "word": "conservative",
+    "parts": "j",
+    "frequency": "19778",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1852",
+    "word": "eliminate",
+    "parts": "v",
+    "frequency": "19773",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1853",
+    "word": "host",
+    "parts": "n",
+    "frequency": "19389",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1854",
+    "word": "hall",
+    "parts": "n",
+    "frequency": "20236",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1855",
+    "word": "trust",
+    "parts": "v",
+    "frequency": "19482",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1856",
+    "word": "ocean",
+    "parts": "n",
+    "frequency": "19421",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1857",
+    "word": "score",
+    "parts": "v",
+    "frequency": "20391",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1858",
+    "word": "row",
+    "parts": "n",
+    "frequency": "19519",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1859",
+    "word": "producer",
+    "parts": "n",
+    "frequency": "19679",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1860",
+    "word": "afford",
+    "parts": "v",
+    "frequency": "19035",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1861",
+    "word": "meanwhile",
+    "parts": "r",
+    "frequency": "19504",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1862",
+    "word": "regime",
+    "parts": "n",
+    "frequency": "21101",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1863",
+    "word": "division",
+    "parts": "n",
+    "frequency": "19772",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1864",
+    "word": "confirm",
+    "parts": "v",
+    "frequency": "19327",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1865",
+    "word": "fix",
+    "parts": "v",
+    "frequency": "19349",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1866",
+    "word": "appeal",
+    "parts": "n",
+    "frequency": "19561",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1867",
+    "word": "mirror",
+    "parts": "n",
+    "frequency": "20081",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1868",
+    "word": "tooth",
+    "parts": "n",
+    "frequency": "20515",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1869",
+    "word": "smart",
+    "parts": "j",
+    "frequency": "19370",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1870",
+    "word": "length",
+    "parts": "n",
+    "frequency": "19624",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1871",
+    "word": "entirely",
+    "parts": "r",
+    "frequency": "19075",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1872",
+    "word": "rely",
+    "parts": "v",
+    "frequency": "19614",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1873",
+    "word": "topic",
+    "parts": "n",
+    "frequency": "20640",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1874",
+    "word": "complain",
+    "parts": "v",
+    "frequency": "19102",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1875",
+    "word": "issue",
+    "parts": "v",
+    "frequency": "19300",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1876",
+    "word": "variable",
+    "parts": "n",
+    "frequency": "22868",
+    "dispersion": "0.81"
+  },
+  {
+    "rank": "1877",
+    "word": "back",
+    "parts": "v",
+    "frequency": "19213",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1878",
+    "word": "range",
+    "parts": "v",
+    "frequency": "20067",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1879",
+    "word": "telephone",
+    "parts": "n",
+    "frequency": "19311",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1880",
+    "word": "perception",
+    "parts": "n",
+    "frequency": "21086",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1881",
+    "word": "attract",
+    "parts": "v",
+    "frequency": "19197",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1882",
+    "word": "confidence",
+    "parts": "n",
+    "frequency": "18955",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1883",
+    "word": "bedroom",
+    "parts": "n",
+    "frequency": "20387",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1884",
+    "word": "secret",
+    "parts": "n",
+    "frequency": "19125",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1885",
+    "word": "debt",
+    "parts": "n",
+    "frequency": "19506",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1886",
+    "word": "rare",
+    "parts": "j",
+    "frequency": "18978",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1887",
+    "word": "his",
+    "parts": "p",
+    "frequency": "19663",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1888",
+    "word": "tank",
+    "parts": "n",
+    "frequency": "19158",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1889",
+    "word": "nurse",
+    "parts": "n",
+    "frequency": "19385",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1890",
+    "word": "coverage",
+    "parts": "n",
+    "frequency": "19522",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1891",
+    "word": "opposition",
+    "parts": "n",
+    "frequency": "19847",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1892",
+    "word": "aside",
+    "parts": "r",
+    "frequency": "19056",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1893",
+    "word": "anywhere",
+    "parts": "r",
+    "frequency": "18970",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1894",
+    "word": "bond",
+    "parts": "n",
+    "frequency": "19856",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1895",
+    "word": "file",
+    "parts": "v",
+    "frequency": "19416",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1896",
+    "word": "pleasure",
+    "parts": "n",
+    "frequency": "19099",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1897",
+    "word": "master",
+    "parts": "n",
+    "frequency": "18880",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1898",
+    "word": "era",
+    "parts": "n",
+    "frequency": "19209",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1899",
+    "word": "requirement",
+    "parts": "n",
+    "frequency": "20358",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1900",
+    "word": "check",
+    "parts": "n",
+    "frequency": "18764",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1901",
+    "word": "stand",
+    "parts": "n",
+    "frequency": "18910",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1902",
+    "word": "fun",
+    "parts": "n",
+    "frequency": "18984",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1903",
+    "word": "expectation",
+    "parts": "n",
+    "frequency": "19603",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1904",
+    "word": "wing",
+    "parts": "n",
+    "frequency": "19028",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1905",
+    "word": "separate",
+    "parts": "j",
+    "frequency": "19064",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1906",
+    "word": "now",
+    "parts": "c",
+    "frequency": "19126",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1907",
+    "word": "clear",
+    "parts": "v",
+    "frequency": "19013",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1908",
+    "word": "struggle",
+    "parts": "n",
+    "frequency": "19014",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1909",
+    "word": "mean",
+    "parts": "j",
+    "frequency": "19792",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1910",
+    "word": "somewhat",
+    "parts": "r",
+    "frequency": "18801",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1911",
+    "word": "pour",
+    "parts": "v",
+    "frequency": "19300",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1912",
+    "word": "stir",
+    "parts": "v",
+    "frequency": "20174",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1913",
+    "word": "judgment",
+    "parts": "n",
+    "frequency": "19315",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1914",
+    "word": "clean",
+    "parts": "v",
+    "frequency": "18766",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1915",
+    "word": "except",
+    "parts": "c",
+    "frequency": "18857",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1916",
+    "word": "beer",
+    "parts": "n",
+    "frequency": "19349",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1917",
+    "word": "English",
+    "parts": "n",
+    "frequency": "18719",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1918",
+    "word": "reference",
+    "parts": "n",
+    "frequency": "19559",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1919",
+    "word": "tear",
+    "parts": "n",
+    "frequency": "19819",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1920",
+    "word": "doubt",
+    "parts": "n",
+    "frequency": "18542",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1921",
+    "word": "grant",
+    "parts": "v",
+    "frequency": "18598",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1922",
+    "word": "seriously",
+    "parts": "r",
+    "frequency": "18328",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "1923",
+    "word": "account",
+    "parts": "v",
+    "frequency": "19403",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1924",
+    "word": "minister",
+    "parts": "n",
+    "frequency": "19154",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1925",
+    "word": "totally",
+    "parts": "r",
+    "frequency": "18720",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1926",
+    "word": "hero",
+    "parts": "n",
+    "frequency": "18348",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1927",
+    "word": "industrial",
+    "parts": "j",
+    "frequency": "19413",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1928",
+    "word": "cloud",
+    "parts": "n",
+    "frequency": "19214",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1929",
+    "word": "stretch",
+    "parts": "v",
+    "frequency": "19014",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1930",
+    "word": "winner",
+    "parts": "n",
+    "frequency": "19216",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1931",
+    "word": "volume",
+    "parts": "n",
+    "frequency": "18989",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1932",
+    "word": "travel",
+    "parts": "n",
+    "frequency": "18634",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1933",
+    "word": "seed",
+    "parts": "n",
+    "frequency": "19079",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1934",
+    "word": "surprised",
+    "parts": "j",
+    "frequency": "18822",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1935",
+    "word": "rest",
+    "parts": "v",
+    "frequency": "18915",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1936",
+    "word": "fashion",
+    "parts": "n",
+    "frequency": "18483",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1937",
+    "word": "pepper",
+    "parts": "n",
+    "frequency": "20220",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "1938",
+    "word": "separate",
+    "parts": "v",
+    "frequency": "18251",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1939",
+    "word": "busy",
+    "parts": "j",
+    "frequency": "18500",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1940",
+    "word": "intervention",
+    "parts": "n",
+    "frequency": "21021",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "1941",
+    "word": "copy",
+    "parts": "n",
+    "frequency": "18244",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1942",
+    "word": "tip",
+    "parts": "n",
+    "frequency": "18868",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1943",
+    "word": "below",
+    "parts": "i",
+    "frequency": "18353",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1944",
+    "word": "cheap",
+    "parts": "j",
+    "frequency": "18371",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1945",
+    "word": "aim",
+    "parts": "v",
+    "frequency": "18194",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1946",
+    "word": "cite",
+    "parts": "v",
+    "frequency": "19011",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1947",
+    "word": "welfare",
+    "parts": "n",
+    "frequency": "19580",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1948",
+    "word": "vegetable",
+    "parts": "n",
+    "frequency": "19363",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1949",
+    "word": "gray",
+    "parts": "j",
+    "frequency": "19408",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1950",
+    "word": "dish",
+    "parts": "n",
+    "frequency": "18887",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1951",
+    "word": "beach",
+    "parts": "n",
+    "frequency": "18451",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1952",
+    "word": "improvement",
+    "parts": "n",
+    "frequency": "18977",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1953",
+    "word": "everywhere",
+    "parts": "r",
+    "frequency": "18126",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1954",
+    "word": "opening",
+    "parts": "n",
+    "frequency": "18058",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1955",
+    "word": "overall",
+    "parts": "j",
+    "frequency": "19031",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1956",
+    "word": "divide",
+    "parts": "v",
+    "frequency": "18337",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1957",
+    "word": "initial",
+    "parts": "j",
+    "frequency": "19019",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1958",
+    "word": "terrible",
+    "parts": "j",
+    "frequency": "18659",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1959",
+    "word": "oppose",
+    "parts": "v",
+    "frequency": "18484",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1960",
+    "word": "contemporary",
+    "parts": "j",
+    "frequency": "19293",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1961",
+    "word": "route",
+    "parts": "n",
+    "frequency": "18313",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1962",
+    "word": "multiple",
+    "parts": "j",
+    "frequency": "19512",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "1963",
+    "word": "essential",
+    "parts": "j",
+    "frequency": "19030",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1964",
+    "word": "question",
+    "parts": "v",
+    "frequency": "17924",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1965",
+    "word": "league",
+    "parts": "n",
+    "frequency": "19766",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "1966",
+    "word": "criminal",
+    "parts": "j",
+    "frequency": "18424",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1967",
+    "word": "careful",
+    "parts": "j",
+    "frequency": "17885",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1968",
+    "word": "core",
+    "parts": "n",
+    "frequency": "18571",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1969",
+    "word": "upper",
+    "parts": "j",
+    "frequency": "18196",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "1970",
+    "word": "rush",
+    "parts": "v",
+    "frequency": "18561",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1971",
+    "word": "necessarily",
+    "parts": "r",
+    "frequency": "18334",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1972",
+    "word": "specifically",
+    "parts": "r",
+    "frequency": "18873",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1973",
+    "word": "tired",
+    "parts": "j",
+    "frequency": "18597",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1974",
+    "word": "rise",
+    "parts": "n",
+    "frequency": "18055",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1975",
+    "word": "tie",
+    "parts": "n",
+    "frequency": "17787",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1976",
+    "word": "employ",
+    "parts": "v",
+    "frequency": "18912",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1977",
+    "word": "holiday",
+    "parts": "n",
+    "frequency": "18299",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1978",
+    "word": "dance",
+    "parts": "v",
+    "frequency": "18263",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1979",
+    "word": "vast",
+    "parts": "j",
+    "frequency": "17836",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1980",
+    "word": "resolution",
+    "parts": "n",
+    "frequency": "18922",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1981",
+    "word": "household",
+    "parts": "n",
+    "frequency": "18450",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1982",
+    "word": "fewer",
+    "parts": "d",
+    "frequency": "18223",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1983",
+    "word": "abortion",
+    "parts": "n",
+    "frequency": "18925",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1984",
+    "word": "apart",
+    "parts": "r",
+    "frequency": "17872",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1985",
+    "word": "witness",
+    "parts": "n",
+    "frequency": "18920",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "1986",
+    "word": "match",
+    "parts": "v",
+    "frequency": "17788",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "1987",
+    "word": "barely",
+    "parts": "r",
+    "frequency": "18533",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1988",
+    "word": "sector",
+    "parts": "n",
+    "frequency": "19103",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1989",
+    "word": "representative",
+    "parts": "n",
+    "frequency": "18189",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1990",
+    "word": "lack",
+    "parts": "v",
+    "frequency": "18215",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "1991",
+    "word": "beneath",
+    "parts": "i",
+    "frequency": "19047",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "1992",
+    "word": "beside",
+    "parts": "i",
+    "frequency": "19952",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "1993",
+    "word": "black",
+    "parts": "n",
+    "frequency": "18441",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "1994",
+    "word": "incident",
+    "parts": "n",
+    "frequency": "17880",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1995",
+    "word": "limited",
+    "parts": "j",
+    "frequency": "18532",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1996",
+    "word": "proud",
+    "parts": "j",
+    "frequency": "17841",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "1997",
+    "word": "flow",
+    "parts": "n",
+    "frequency": "18469",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "1998",
+    "word": "faculty",
+    "parts": "n",
+    "frequency": "20104",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "1999",
+    "word": "increased",
+    "parts": "j",
+    "frequency": "18984",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2000",
+    "word": "waste",
+    "parts": "n",
+    "frequency": "19069",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2001",
+    "word": "merely",
+    "parts": "r",
+    "frequency": "18094",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2002",
+    "word": "mass",
+    "parts": "n",
+    "frequency": "18107",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2003",
+    "word": "emphasize",
+    "parts": "v",
+    "frequency": "18933",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2004",
+    "word": "experiment",
+    "parts": "n",
+    "frequency": "18440",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2005",
+    "word": "definitely",
+    "parts": "r",
+    "frequency": "18214",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2006",
+    "word": "bomb",
+    "parts": "n",
+    "frequency": "18284",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2007",
+    "word": "enormous",
+    "parts": "j",
+    "frequency": "17482",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2008",
+    "word": "tone",
+    "parts": "n",
+    "frequency": "17954",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2009",
+    "word": "liberal",
+    "parts": "j",
+    "frequency": "18228",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2010",
+    "word": "massive",
+    "parts": "j",
+    "frequency": "17551",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2011",
+    "word": "engineer",
+    "parts": "n",
+    "frequency": "17991",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2012",
+    "word": "wheel",
+    "parts": "n",
+    "frequency": "18296",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2013",
+    "word": "female",
+    "parts": "n",
+    "frequency": "18932",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2014",
+    "word": "decline",
+    "parts": "v",
+    "frequency": "18058",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2015",
+    "word": "invest",
+    "parts": "v",
+    "frequency": "18080",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2016",
+    "word": "promise",
+    "parts": "n",
+    "frequency": "17342",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "2017",
+    "word": "cable",
+    "parts": "n",
+    "frequency": "18277",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2018",
+    "word": "towards",
+    "parts": "i",
+    "frequency": "18305",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2019",
+    "word": "expose",
+    "parts": "v",
+    "frequency": "17581",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2020",
+    "word": "rural",
+    "parts": "j",
+    "frequency": "18665",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2021",
+    "word": "AIDS",
+    "parts": "n",
+    "frequency": "19384",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2022",
+    "word": "Jew",
+    "parts": "n",
+    "frequency": "17893",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2023",
+    "word": "narrow",
+    "parts": "j",
+    "frequency": "17840",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2024",
+    "word": "cream",
+    "parts": "n",
+    "frequency": "18443",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2025",
+    "word": "secretary",
+    "parts": "n",
+    "frequency": "17922",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2026",
+    "word": "gate",
+    "parts": "n",
+    "frequency": "17999",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2027",
+    "word": "solid",
+    "parts": "j",
+    "frequency": "17675",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2028",
+    "word": "hill",
+    "parts": "n",
+    "frequency": "18131",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2029",
+    "word": "typically",
+    "parts": "r",
+    "frequency": "18254",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2030",
+    "word": "noise",
+    "parts": "n",
+    "frequency": "18024",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2031",
+    "word": "grass",
+    "parts": "n",
+    "frequency": "18139",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2032",
+    "word": "unfortunately",
+    "parts": "r",
+    "frequency": "17482",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2033",
+    "word": "hat",
+    "parts": "n",
+    "frequency": "18198",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2034",
+    "word": "legislation",
+    "parts": "n",
+    "frequency": "17934",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2035",
+    "word": "succeed",
+    "parts": "v",
+    "frequency": "17423",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2036",
+    "word": "either",
+    "parts": "d",
+    "frequency": "17257",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2037",
+    "word": "celebrate",
+    "parts": "v",
+    "frequency": "17421",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2038",
+    "word": "achievement",
+    "parts": "n",
+    "frequency": "18998",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2039",
+    "word": "fishing",
+    "parts": "n",
+    "frequency": "18103",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2040",
+    "word": "drink",
+    "parts": "n",
+    "frequency": "18227",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2041",
+    "word": "accuse",
+    "parts": "v",
+    "frequency": "17778",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2042",
+    "word": "hand",
+    "parts": "v",
+    "frequency": "18231",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2043",
+    "word": "useful",
+    "parts": "j",
+    "frequency": "18205",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2044",
+    "word": "land",
+    "parts": "v",
+    "frequency": "17401",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2045",
+    "word": "secret",
+    "parts": "j",
+    "frequency": "17305",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2046",
+    "word": "reject",
+    "parts": "v",
+    "frequency": "17656",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2047",
+    "word": "talent",
+    "parts": "n",
+    "frequency": "17474",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2048",
+    "word": "taste",
+    "parts": "n",
+    "frequency": "17409",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2049",
+    "word": "characteristic",
+    "parts": "n",
+    "frequency": "19621",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "2050",
+    "word": "milk",
+    "parts": "n",
+    "frequency": "17812",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2051",
+    "word": "escape",
+    "parts": "v",
+    "frequency": "17195",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2052",
+    "word": "cast",
+    "parts": "v",
+    "frequency": "17163",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2053",
+    "word": "sentence",
+    "parts": "n",
+    "frequency": "17162",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2054",
+    "word": "unusual",
+    "parts": "j",
+    "frequency": "16997",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2055",
+    "word": "closely",
+    "parts": "r",
+    "frequency": "17220",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2056",
+    "word": "convince",
+    "parts": "v",
+    "frequency": "16948",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "2057",
+    "word": "height",
+    "parts": "n",
+    "frequency": "17403",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2058",
+    "word": "physician",
+    "parts": "n",
+    "frequency": "17707",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2059",
+    "word": "assess",
+    "parts": "v",
+    "frequency": "19220",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "2060",
+    "word": "sleep",
+    "parts": "n",
+    "frequency": "17882",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2061",
+    "word": "plenty",
+    "parts": "p",
+    "frequency": "17445",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2062",
+    "word": "ride",
+    "parts": "n",
+    "frequency": "17654",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2063",
+    "word": "virtually",
+    "parts": "r",
+    "frequency": "17426",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2064",
+    "word": "first",
+    "parts": "r",
+    "frequency": "17332",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2065",
+    "word": "addition",
+    "parts": "i",
+    "frequency": "17641",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2066",
+    "word": "sharp",
+    "parts": "j",
+    "frequency": "17403",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2067",
+    "word": "creative",
+    "parts": "j",
+    "frequency": "17597",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2068",
+    "word": "lower",
+    "parts": "v",
+    "frequency": "17206",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2069",
+    "word": "behind",
+    "parts": "r",
+    "frequency": "17347",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2070",
+    "word": "approve",
+    "parts": "v",
+    "frequency": "17329",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2071",
+    "word": "explanation",
+    "parts": "n",
+    "frequency": "17712",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2072",
+    "word": "outside",
+    "parts": "j",
+    "frequency": "16797",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2073",
+    "word": "gay",
+    "parts": "j",
+    "frequency": "17428",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2074",
+    "word": "campus",
+    "parts": "n",
+    "frequency": "17541",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2075",
+    "word": "proper",
+    "parts": "j",
+    "frequency": "17024",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2076",
+    "word": "live",
+    "parts": "j",
+    "frequency": "17365",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2077",
+    "word": "guilty",
+    "parts": "j",
+    "frequency": "17596",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2078",
+    "word": "living",
+    "parts": "j",
+    "frequency": "16823",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2079",
+    "word": "acquire",
+    "parts": "v",
+    "frequency": "17435",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2080",
+    "word": "compete",
+    "parts": "v",
+    "frequency": "17264",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2081",
+    "word": "technical",
+    "parts": "j",
+    "frequency": "17594",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2082",
+    "word": "plus",
+    "parts": "i",
+    "frequency": "17202",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2083",
+    "word": "mind",
+    "parts": "v",
+    "frequency": "17378",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2084",
+    "word": "potential",
+    "parts": "n",
+    "frequency": "17523",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2085",
+    "word": "immigrant",
+    "parts": "n",
+    "frequency": "17615",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2086",
+    "word": "weak",
+    "parts": "j",
+    "frequency": "16628",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2087",
+    "word": "illegal",
+    "parts": "j",
+    "frequency": "17258",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2088",
+    "word": "hi",
+    "parts": "u",
+    "frequency": "18910",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "2089",
+    "word": "alternative",
+    "parts": "n",
+    "frequency": "17197",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2090",
+    "word": "interaction",
+    "parts": "n",
+    "frequency": "19144",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "2091",
+    "word": "column",
+    "parts": "n",
+    "frequency": "16810",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2092",
+    "word": "personality",
+    "parts": "n",
+    "frequency": "16933",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2093",
+    "word": "signal",
+    "parts": "n",
+    "frequency": "16835",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2094",
+    "word": "curriculum",
+    "parts": "n",
+    "frequency": "19193",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "2095",
+    "word": "list",
+    "parts": "v",
+    "frequency": "17006",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2096",
+    "word": "honor",
+    "parts": "n",
+    "frequency": "16686",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2097",
+    "word": "passenger",
+    "parts": "n",
+    "frequency": "16933",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2098",
+    "word": "assistance",
+    "parts": "n",
+    "frequency": "17396",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2099",
+    "word": "forever",
+    "parts": "r",
+    "frequency": "16890",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2100",
+    "word": "fun",
+    "parts": "j",
+    "frequency": "16932",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2101",
+    "word": "regard",
+    "parts": "v",
+    "frequency": "16890",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2102",
+    "word": "Israeli",
+    "parts": "j",
+    "frequency": "17967",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2103",
+    "word": "association",
+    "parts": "n",
+    "frequency": "17759",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2104",
+    "word": "twenty",
+    "parts": "m",
+    "frequency": "17491",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2105",
+    "word": "knock",
+    "parts": "v",
+    "frequency": "17146",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2106",
+    "word": "review",
+    "parts": "v",
+    "frequency": "16916",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2107",
+    "word": "wrap",
+    "parts": "v",
+    "frequency": "17073",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2108",
+    "word": "lab",
+    "parts": "n",
+    "frequency": "16498",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2109",
+    "word": "offer",
+    "parts": "n",
+    "frequency": "16612",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2110",
+    "word": "display",
+    "parts": "v",
+    "frequency": "16806",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2111",
+    "word": "criticism",
+    "parts": "n",
+    "frequency": "17049",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2112",
+    "word": "asset",
+    "parts": "n",
+    "frequency": "16977",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2113",
+    "word": "depression",
+    "parts": "n",
+    "frequency": "16976",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2114",
+    "word": "spiritual",
+    "parts": "j",
+    "frequency": "17074",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2115",
+    "word": "musical",
+    "parts": "j",
+    "frequency": "16931",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2116",
+    "word": "journalist",
+    "parts": "n",
+    "frequency": "16858",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2117",
+    "word": "prayer",
+    "parts": "n",
+    "frequency": "16296",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2118",
+    "word": "suspect",
+    "parts": "v",
+    "frequency": "16194",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2119",
+    "word": "scholar",
+    "parts": "n",
+    "frequency": "17482",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2120",
+    "word": "warning",
+    "parts": "n",
+    "frequency": "16205",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2121",
+    "word": "climate",
+    "parts": "n",
+    "frequency": "17189",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2122",
+    "word": "cheese",
+    "parts": "n",
+    "frequency": "17416",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2123",
+    "word": "observation",
+    "parts": "n",
+    "frequency": "17500",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2124",
+    "word": "childhood",
+    "parts": "n",
+    "frequency": "16268",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2125",
+    "word": "payment",
+    "parts": "n",
+    "frequency": "16704",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2126",
+    "word": "sir",
+    "parts": "n",
+    "frequency": "17733",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2127",
+    "word": "permit",
+    "parts": "v",
+    "frequency": "16764",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2128",
+    "word": "cigarette",
+    "parts": "n",
+    "frequency": "17160",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2129",
+    "word": "definition",
+    "parts": "n",
+    "frequency": "17499",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2130",
+    "word": "priority",
+    "parts": "n",
+    "frequency": "16586",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2131",
+    "word": "bread",
+    "parts": "n",
+    "frequency": "16686",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2132",
+    "word": "creation",
+    "parts": "n",
+    "frequency": "16967",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2133",
+    "word": "graduate",
+    "parts": "n",
+    "frequency": "16803",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2134",
+    "word": "request",
+    "parts": "n",
+    "frequency": "16241",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2135",
+    "word": "emotion",
+    "parts": "n",
+    "frequency": "16062",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2136",
+    "word": "scream",
+    "parts": "v",
+    "frequency": "17342",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2137",
+    "word": "dramatic",
+    "parts": "j",
+    "frequency": "16233",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2138",
+    "word": "universe",
+    "parts": "n",
+    "frequency": "16596",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2139",
+    "word": "gap",
+    "parts": "n",
+    "frequency": "16216",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2140",
+    "word": "excellent",
+    "parts": "j",
+    "frequency": "16094",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2141",
+    "word": "deeply",
+    "parts": "r",
+    "frequency": "15848",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "2142",
+    "word": "prosecutor",
+    "parts": "n",
+    "frequency": "17260",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2143",
+    "word": "mark",
+    "parts": "n",
+    "frequency": "15973",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2144",
+    "word": "green",
+    "parts": "n",
+    "frequency": "16776",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2145",
+    "word": "lucky",
+    "parts": "j",
+    "frequency": "16550",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2146",
+    "word": "drag",
+    "parts": "v",
+    "frequency": "16685",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2147",
+    "word": "airline",
+    "parts": "n",
+    "frequency": "17164",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2148",
+    "word": "library",
+    "parts": "n",
+    "frequency": "16314",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2149",
+    "word": "agenda",
+    "parts": "n",
+    "frequency": "16449",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2150",
+    "word": "recover",
+    "parts": "v",
+    "frequency": "15786",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "2151",
+    "word": "factory",
+    "parts": "n",
+    "frequency": "16240",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2152",
+    "word": "selection",
+    "parts": "n",
+    "frequency": "16706",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2153",
+    "word": "primarily",
+    "parts": "r",
+    "frequency": "17015",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2154",
+    "word": "roof",
+    "parts": "n",
+    "frequency": "16520",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2155",
+    "word": "unable",
+    "parts": "j",
+    "frequency": "15901",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2156",
+    "word": "expense",
+    "parts": "n",
+    "frequency": "16274",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2157",
+    "word": "initiative",
+    "parts": "n",
+    "frequency": "16445",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2158",
+    "word": "diet",
+    "parts": "n",
+    "frequency": "16933",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2159",
+    "word": "arrest",
+    "parts": "v",
+    "frequency": "16205",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2160",
+    "word": "funding",
+    "parts": "n",
+    "frequency": "16282",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2161",
+    "word": "therapy",
+    "parts": "n",
+    "frequency": "16351",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2162",
+    "word": "wash",
+    "parts": "v",
+    "frequency": "16314",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2163",
+    "word": "schedule",
+    "parts": "n",
+    "frequency": "15987",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2164",
+    "word": "sad",
+    "parts": "j",
+    "frequency": "16163",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2165",
+    "word": "brief",
+    "parts": "j",
+    "frequency": "15770",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2166",
+    "word": "housing",
+    "parts": "n",
+    "frequency": "16403",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2167",
+    "word": "post",
+    "parts": "n",
+    "frequency": "15693",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2168",
+    "word": "purchase",
+    "parts": "v",
+    "frequency": "16064",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2169",
+    "word": "existing",
+    "parts": "j",
+    "frequency": "16654",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2170",
+    "word": "dark",
+    "parts": "n",
+    "frequency": "16865",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2171",
+    "word": "steel",
+    "parts": "n",
+    "frequency": "15982",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2172",
+    "word": "regarding",
+    "parts": "i",
+    "frequency": "17220",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2173",
+    "word": "shout",
+    "parts": "v",
+    "frequency": "17239",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2174",
+    "word": "remaining",
+    "parts": "j",
+    "frequency": "15992",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2175",
+    "word": "visual",
+    "parts": "j",
+    "frequency": "17316",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2176",
+    "word": "fairly",
+    "parts": "r",
+    "frequency": "15701",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2177",
+    "word": "chip",
+    "parts": "n",
+    "frequency": "16162",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2178",
+    "word": "violent",
+    "parts": "j",
+    "frequency": "15765",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2179",
+    "word": "silent",
+    "parts": "j",
+    "frequency": "16802",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2180",
+    "word": "suppose",
+    "parts": "v",
+    "frequency": "16562",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2181",
+    "word": "self",
+    "parts": "n",
+    "frequency": "16708",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2182",
+    "word": "bike",
+    "parts": "n",
+    "frequency": "17306",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2183",
+    "word": "tea",
+    "parts": "n",
+    "frequency": "16373",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2184",
+    "word": "perceive",
+    "parts": "v",
+    "frequency": "17180",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2185",
+    "word": "comparison",
+    "parts": "n",
+    "frequency": "16809",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2186",
+    "word": "settlement",
+    "parts": "n",
+    "frequency": "16172",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2187",
+    "word": "layer",
+    "parts": "n",
+    "frequency": "16250",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2188",
+    "word": "planning",
+    "parts": "n",
+    "frequency": "16434",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2189",
+    "word": "far",
+    "parts": "c",
+    "frequency": "16006",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2190",
+    "word": "description",
+    "parts": "n",
+    "frequency": "16415",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2191",
+    "word": "later",
+    "parts": "j",
+    "frequency": "15734",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2192",
+    "word": "slow",
+    "parts": "v",
+    "frequency": "15633",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2193",
+    "word": "slide",
+    "parts": "v",
+    "frequency": "16805",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2194",
+    "word": "widely",
+    "parts": "r",
+    "frequency": "16000",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2195",
+    "word": "wedding",
+    "parts": "n",
+    "frequency": "15829",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2196",
+    "word": "inform",
+    "parts": "v",
+    "frequency": "15725",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2197",
+    "word": "portion",
+    "parts": "n",
+    "frequency": "15677",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2198",
+    "word": "territory",
+    "parts": "n",
+    "frequency": "15831",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2199",
+    "word": "immediate",
+    "parts": "j",
+    "frequency": "15680",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2200",
+    "word": "opponent",
+    "parts": "n",
+    "frequency": "15803",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2201",
+    "word": "abandon",
+    "parts": "v",
+    "frequency": "15323",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2202",
+    "word": "link",
+    "parts": "n",
+    "frequency": "15738",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2203",
+    "word": "mass",
+    "parts": "j",
+    "frequency": "15939",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2204",
+    "word": "lake",
+    "parts": "n",
+    "frequency": "15836",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2205",
+    "word": "transform",
+    "parts": "v",
+    "frequency": "15815",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2206",
+    "word": "tension",
+    "parts": "n",
+    "frequency": "15614",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2207",
+    "word": "display",
+    "parts": "n",
+    "frequency": "15575",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2208",
+    "word": "leading",
+    "parts": "j",
+    "frequency": "15665",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2209",
+    "word": "bother",
+    "parts": "v",
+    "frequency": "15870",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2210",
+    "word": "consist",
+    "parts": "v",
+    "frequency": "16648",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2211",
+    "word": "alcohol",
+    "parts": "n",
+    "frequency": "15877",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2212",
+    "word": "enable",
+    "parts": "v",
+    "frequency": "16293",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2213",
+    "word": "bend",
+    "parts": "v",
+    "frequency": "16285",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2214",
+    "word": "saving",
+    "parts": "n",
+    "frequency": "15917",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2215",
+    "word": "gain",
+    "parts": "n",
+    "frequency": "15822",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2216",
+    "word": "desert",
+    "parts": "n",
+    "frequency": "15653",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2217",
+    "word": "shall",
+    "parts": "v",
+    "frequency": "15997",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2218",
+    "word": "error",
+    "parts": "n",
+    "frequency": "15980",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2219",
+    "word": "release",
+    "parts": "n",
+    "frequency": "15540",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2220",
+    "word": "cop",
+    "parts": "n",
+    "frequency": "16228",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2221",
+    "word": "Arab",
+    "parts": "j",
+    "frequency": "16732",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2222",
+    "word": "double",
+    "parts": "j",
+    "frequency": "15233",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2223",
+    "word": "walk",
+    "parts": "n",
+    "frequency": "15632",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2224",
+    "word": "sand",
+    "parts": "n",
+    "frequency": "15658",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2225",
+    "word": "Spanish",
+    "parts": "j",
+    "frequency": "15512",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2226",
+    "word": "rule",
+    "parts": "v",
+    "frequency": "15310",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2227",
+    "word": "hit",
+    "parts": "n",
+    "frequency": "15766",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2228",
+    "word": "print",
+    "parts": "n",
+    "frequency": "15634",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2229",
+    "word": "preserve",
+    "parts": "v",
+    "frequency": "15527",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2230",
+    "word": "passage",
+    "parts": "n",
+    "frequency": "15702",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2231",
+    "word": "formal",
+    "parts": "j",
+    "frequency": "16078",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2232",
+    "word": "transition",
+    "parts": "n",
+    "frequency": "16058",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2233",
+    "word": "existence",
+    "parts": "n",
+    "frequency": "15969",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2234",
+    "word": "album",
+    "parts": "n",
+    "frequency": "15869",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2235",
+    "word": "participation",
+    "parts": "n",
+    "frequency": "17187",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "2236",
+    "word": "arrange",
+    "parts": "v",
+    "frequency": "15258",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2237",
+    "word": "atmosphere",
+    "parts": "n",
+    "frequency": "15310",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2238",
+    "word": "joint",
+    "parts": "j",
+    "frequency": "15444",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2239",
+    "word": "reply",
+    "parts": "v",
+    "frequency": "16312",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2240",
+    "word": "cycle",
+    "parts": "n",
+    "frequency": "15775",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2241",
+    "word": "opposite",
+    "parts": "j",
+    "frequency": "15554",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2242",
+    "word": "lock",
+    "parts": "v",
+    "frequency": "15616",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2243",
+    "word": "whole",
+    "parts": "n",
+    "frequency": "15558",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2244",
+    "word": "deserve",
+    "parts": "v",
+    "frequency": "14944",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2245",
+    "word": "consistent",
+    "parts": "j",
+    "frequency": "16334",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2246",
+    "word": "resistance",
+    "parts": "n",
+    "frequency": "15686",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2247",
+    "word": "discovery",
+    "parts": "n",
+    "frequency": "15358",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2248",
+    "word": "tear",
+    "parts": "v",
+    "frequency": "15575",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2249",
+    "word": "exposure",
+    "parts": "n",
+    "frequency": "15979",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2250",
+    "word": "pose",
+    "parts": "v",
+    "frequency": "15230",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2251",
+    "word": "stream",
+    "parts": "n",
+    "frequency": "15400",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2252",
+    "word": "sale",
+    "parts": "n",
+    "frequency": "15351",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2253",
+    "word": "trust",
+    "parts": "n",
+    "frequency": "15170",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2254",
+    "word": "benefit",
+    "parts": "v",
+    "frequency": "15424",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2255",
+    "word": "pot",
+    "parts": "n",
+    "frequency": "15407",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2256",
+    "word": "grand",
+    "parts": "j",
+    "frequency": "15659",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2257",
+    "word": "mine",
+    "parts": "p",
+    "frequency": "15794",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2258",
+    "word": "hello",
+    "parts": "u",
+    "frequency": "16600",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2259",
+    "word": "coalition",
+    "parts": "n",
+    "frequency": "15720",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2260",
+    "word": "tale",
+    "parts": "n",
+    "frequency": "15004",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2261",
+    "word": "knife",
+    "parts": "n",
+    "frequency": "15792",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2262",
+    "word": "resolve",
+    "parts": "v",
+    "frequency": "15260",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2263",
+    "word": "racial",
+    "parts": "j",
+    "frequency": "15687",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2264",
+    "word": "phase",
+    "parts": "n",
+    "frequency": "16045",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2265",
+    "word": "present",
+    "parts": "n",
+    "frequency": "15267",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2266",
+    "word": "joke",
+    "parts": "n",
+    "frequency": "15284",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2267",
+    "word": "coat",
+    "parts": "n",
+    "frequency": "16010",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2268",
+    "word": "Mexican",
+    "parts": "j",
+    "frequency": "15514",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2269",
+    "word": "symptom",
+    "parts": "n",
+    "frequency": "15886",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2270",
+    "word": "contact",
+    "parts": "v",
+    "frequency": "15359",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2271",
+    "word": "manufacturer",
+    "parts": "n",
+    "frequency": "15741",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2272",
+    "word": "philosophy",
+    "parts": "n",
+    "frequency": "15746",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2273",
+    "word": "potato",
+    "parts": "n",
+    "frequency": "15561",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2274",
+    "word": "interview",
+    "parts": "v",
+    "frequency": "15687",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2275",
+    "word": "foundation",
+    "parts": "n",
+    "frequency": "15273",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2276",
+    "word": "quote",
+    "parts": "v",
+    "frequency": "15415",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2277",
+    "word": "online",
+    "parts": "j",
+    "frequency": "15848",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2278",
+    "word": "pass",
+    "parts": "n",
+    "frequency": "15599",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2279",
+    "word": "negotiation",
+    "parts": "n",
+    "frequency": "15680",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2280",
+    "word": "good",
+    "parts": "n",
+    "frequency": "15259",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2281",
+    "word": "urge",
+    "parts": "v",
+    "frequency": "14894",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2282",
+    "word": "occasion",
+    "parts": "n",
+    "frequency": "14792",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2283",
+    "word": "dust",
+    "parts": "n",
+    "frequency": "15475",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2284",
+    "word": "breathe",
+    "parts": "v",
+    "frequency": "15813",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2285",
+    "word": "elect",
+    "parts": "v",
+    "frequency": "15350",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2286",
+    "word": "investigator",
+    "parts": "n",
+    "frequency": "15258",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2287",
+    "word": "jacket",
+    "parts": "n",
+    "frequency": "15692",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2288",
+    "word": "glad",
+    "parts": "j",
+    "frequency": "15556",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2289",
+    "word": "ordinary",
+    "parts": "j",
+    "frequency": "14776",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2290",
+    "word": "reduction",
+    "parts": "n",
+    "frequency": "15862",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2291",
+    "word": "rarely",
+    "parts": "r",
+    "frequency": "14912",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2292",
+    "word": "shift",
+    "parts": "n",
+    "frequency": "15114",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2293",
+    "word": "pack",
+    "parts": "v",
+    "frequency": "15169",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2294",
+    "word": "suicide",
+    "parts": "n",
+    "frequency": "15145",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2295",
+    "word": "numerous",
+    "parts": "j",
+    "frequency": "15389",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2296",
+    "word": "touch",
+    "parts": "n",
+    "frequency": "14939",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2297",
+    "word": "substance",
+    "parts": "n",
+    "frequency": "15909",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2298",
+    "word": "discipline",
+    "parts": "n",
+    "frequency": "15684",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2299",
+    "word": "elsewhere",
+    "parts": "r",
+    "frequency": "14884",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2300",
+    "word": "iron",
+    "parts": "n",
+    "frequency": "15043",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2301",
+    "word": "practical",
+    "parts": "j",
+    "frequency": "15303",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2302",
+    "word": "moreover",
+    "parts": "r",
+    "frequency": "16163",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2303",
+    "word": "passion",
+    "parts": "n",
+    "frequency": "14632",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2304",
+    "word": "volunteer",
+    "parts": "n",
+    "frequency": "14958",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2305",
+    "word": "implement",
+    "parts": "v",
+    "frequency": "16124",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2306",
+    "word": "essentially",
+    "parts": "r",
+    "frequency": "15020",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2307",
+    "word": "gene",
+    "parts": "n",
+    "frequency": "15377",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2308",
+    "word": "enforcement",
+    "parts": "n",
+    "frequency": "15052",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2309",
+    "word": "vs",
+    "parts": "i",
+    "frequency": "16003",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2310",
+    "word": "sauce",
+    "parts": "n",
+    "frequency": "15903",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2311",
+    "word": "independence",
+    "parts": "n",
+    "frequency": "15259",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2312",
+    "word": "marketing",
+    "parts": "n",
+    "frequency": "15259",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2313",
+    "word": "priest",
+    "parts": "n",
+    "frequency": "14889",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2314",
+    "word": "amazing",
+    "parts": "j",
+    "frequency": "15124",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2315",
+    "word": "intense",
+    "parts": "j",
+    "frequency": "14452",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2316",
+    "word": "advance",
+    "parts": "n",
+    "frequency": "14645",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2317",
+    "word": "employer",
+    "parts": "n",
+    "frequency": "14846",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2318",
+    "word": "shock",
+    "parts": "n",
+    "frequency": "14551",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2319",
+    "word": "inspire",
+    "parts": "v",
+    "frequency": "14771",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2320",
+    "word": "adjust",
+    "parts": "v",
+    "frequency": "14564",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2321",
+    "word": "retire",
+    "parts": "v",
+    "frequency": "14979",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2322",
+    "word": "sure",
+    "parts": "r",
+    "frequency": "14854",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2323",
+    "word": "visible",
+    "parts": "j",
+    "frequency": "14691",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2324",
+    "word": "kiss",
+    "parts": "v",
+    "frequency": "16128",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2325",
+    "word": "illness",
+    "parts": "n",
+    "frequency": "14726",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2326",
+    "word": "cap",
+    "parts": "n",
+    "frequency": "14672",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2327",
+    "word": "habit",
+    "parts": "n",
+    "frequency": "14501",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2328",
+    "word": "competitive",
+    "parts": "j",
+    "frequency": "14938",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2329",
+    "word": "juice",
+    "parts": "n",
+    "frequency": "15388",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2330",
+    "word": "congressional",
+    "parts": "j",
+    "frequency": "14936",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2331",
+    "word": "involvement",
+    "parts": "n",
+    "frequency": "15640",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2332",
+    "word": "dominate",
+    "parts": "v",
+    "frequency": "14768",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2333",
+    "word": "previously",
+    "parts": "r",
+    "frequency": "15092",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2334",
+    "word": "whenever",
+    "parts": "r",
+    "frequency": "14484",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2335",
+    "word": "transfer",
+    "parts": "v",
+    "frequency": "14686",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2336",
+    "word": "analyze",
+    "parts": "v",
+    "frequency": "15587",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2337",
+    "word": "another",
+    "parts": "p",
+    "frequency": "14441",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2338",
+    "word": "attach",
+    "parts": "v",
+    "frequency": "14552",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2339",
+    "word": "for",
+    "parts": "c",
+    "frequency": "14594",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2340",
+    "word": "Indian",
+    "parts": "n",
+    "frequency": "15021",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2341",
+    "word": "disaster",
+    "parts": "n",
+    "frequency": "14684",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2342",
+    "word": "parking",
+    "parts": "n",
+    "frequency": "14970",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2343",
+    "word": "prospect",
+    "parts": "n",
+    "frequency": "14521",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2344",
+    "word": "boss",
+    "parts": "n",
+    "frequency": "14587",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2345",
+    "word": "complaint",
+    "parts": "n",
+    "frequency": "14551",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2346",
+    "word": "championship",
+    "parts": "n",
+    "frequency": "16008",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "2347",
+    "word": "coach",
+    "parts": "v",
+    "frequency": "15910",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2348",
+    "word": "exercise",
+    "parts": "v",
+    "frequency": "14766",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2349",
+    "word": "fundamental",
+    "parts": "j",
+    "frequency": "15199",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2350",
+    "word": "severe",
+    "parts": "j",
+    "frequency": "14609",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2351",
+    "word": "enhance",
+    "parts": "v",
+    "frequency": "15393",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2352",
+    "word": "mystery",
+    "parts": "n",
+    "frequency": "14211",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2353",
+    "word": "impose",
+    "parts": "v",
+    "frequency": "14881",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2354",
+    "word": "poverty",
+    "parts": "n",
+    "frequency": "14891",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2355",
+    "word": "other",
+    "parts": "i",
+    "frequency": "14165",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2356",
+    "word": "entry",
+    "parts": "n",
+    "frequency": "14643",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2357",
+    "word": "fat",
+    "parts": "j",
+    "frequency": "14826",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2358",
+    "word": "spending",
+    "parts": "n",
+    "frequency": "14965",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2359",
+    "word": "king",
+    "parts": "n",
+    "frequency": "14445",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2360",
+    "word": "evaluate",
+    "parts": "v",
+    "frequency": "15780",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2361",
+    "word": "symbol",
+    "parts": "n",
+    "frequency": "14596",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2362",
+    "word": "still",
+    "parts": "j",
+    "frequency": "14308",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2363",
+    "word": "trade",
+    "parts": "v",
+    "frequency": "14624",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2364",
+    "word": "maker",
+    "parts": "n",
+    "frequency": "14586",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2365",
+    "word": "mood",
+    "parts": "n",
+    "frequency": "14227",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2366",
+    "word": "accomplish",
+    "parts": "v",
+    "frequency": "14325",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2367",
+    "word": "emphasis",
+    "parts": "n",
+    "frequency": "15337",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2368",
+    "word": "illustrate",
+    "parts": "v",
+    "frequency": "15091",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2369",
+    "word": "boot",
+    "parts": "n",
+    "frequency": "15033",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2370",
+    "word": "monitor",
+    "parts": "v",
+    "frequency": "14499",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2371",
+    "word": "Asian",
+    "parts": "j",
+    "frequency": "14873",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2372",
+    "word": "entertainment",
+    "parts": "n",
+    "frequency": "14615",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2373",
+    "word": "bean",
+    "parts": "n",
+    "frequency": "14996",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2374",
+    "word": "evaluation",
+    "parts": "n",
+    "frequency": "16213",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "2375",
+    "word": "creature",
+    "parts": "n",
+    "frequency": "14852",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2376",
+    "word": "commander",
+    "parts": "n",
+    "frequency": "14425",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2377",
+    "word": "digital",
+    "parts": "j",
+    "frequency": "15048",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2378",
+    "word": "arrangement",
+    "parts": "n",
+    "frequency": "14403",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2379",
+    "word": "concentrate",
+    "parts": "v",
+    "frequency": "14155",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2380",
+    "word": "total",
+    "parts": "n",
+    "frequency": "14559",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2381",
+    "word": "usual",
+    "parts": "j",
+    "frequency": "14305",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2382",
+    "word": "anger",
+    "parts": "n",
+    "frequency": "14241",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2383",
+    "word": "psychological",
+    "parts": "j",
+    "frequency": "15249",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2384",
+    "word": "heavily",
+    "parts": "r",
+    "frequency": "13964",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2385",
+    "word": "peak",
+    "parts": "n",
+    "frequency": "14481",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2386",
+    "word": "approximately",
+    "parts": "r",
+    "frequency": "15172",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2387",
+    "word": "increasing",
+    "parts": "j",
+    "frequency": "14886",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2388",
+    "word": "disorder",
+    "parts": "n",
+    "frequency": "14780",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2389",
+    "word": "missile",
+    "parts": "n",
+    "frequency": "15147",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2390",
+    "word": "equally",
+    "parts": "r",
+    "frequency": "14389",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2391",
+    "word": "vary",
+    "parts": "v",
+    "frequency": "14954",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2392",
+    "word": "wire",
+    "parts": "n",
+    "frequency": "14310",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2393",
+    "word": "round",
+    "parts": "n",
+    "frequency": "14539",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2394",
+    "word": "distribution",
+    "parts": "n",
+    "frequency": "15249",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2395",
+    "word": "transportation",
+    "parts": "n",
+    "frequency": "14516",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2396",
+    "word": "holy",
+    "parts": "j",
+    "frequency": "14090",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2397",
+    "word": "ring",
+    "parts": "v",
+    "frequency": "14757",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2398",
+    "word": "twin",
+    "parts": "n",
+    "frequency": "14610",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2399",
+    "word": "command",
+    "parts": "n",
+    "frequency": "14022",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2400",
+    "word": "commission",
+    "parts": "n",
+    "frequency": "14371",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2401",
+    "word": "interpretation",
+    "parts": "n",
+    "frequency": "15613",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "2402",
+    "word": "breakfast",
+    "parts": "n",
+    "frequency": "14397",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2403",
+    "word": "stop",
+    "parts": "n",
+    "frequency": "14117",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2404",
+    "word": "strongly",
+    "parts": "r",
+    "frequency": "14459",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2405",
+    "word": "engineering",
+    "parts": "n",
+    "frequency": "14853",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2406",
+    "word": "luck",
+    "parts": "n",
+    "frequency": "14186",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2407",
+    "word": "so-called",
+    "parts": "j",
+    "frequency": "14065",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2408",
+    "word": "constant",
+    "parts": "j",
+    "frequency": "14069",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2409",
+    "word": "race",
+    "parts": "v",
+    "frequency": "14233",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2410",
+    "word": "clinic",
+    "parts": "n",
+    "frequency": "14016",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2411",
+    "word": "veteran",
+    "parts": "n",
+    "frequency": "14366",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2412",
+    "word": "smell",
+    "parts": "v",
+    "frequency": "15214",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2413",
+    "word": "tablespoon",
+    "parts": "n",
+    "frequency": "15804",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "2414",
+    "word": "capable",
+    "parts": "j",
+    "frequency": "13933",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2415",
+    "word": "nervous",
+    "parts": "j",
+    "frequency": "14100",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2416",
+    "word": "tourist",
+    "parts": "n",
+    "frequency": "13895",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2417",
+    "word": "light",
+    "parts": "v",
+    "frequency": "14720",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2418",
+    "word": "toss",
+    "parts": "v",
+    "frequency": "14565",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2419",
+    "word": "crucial",
+    "parts": "j",
+    "frequency": "14234",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2420",
+    "word": "bury",
+    "parts": "v",
+    "frequency": "14030",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2421",
+    "word": "pray",
+    "parts": "v",
+    "frequency": "14006",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2422",
+    "word": "tomato",
+    "parts": "n",
+    "frequency": "14864",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2423",
+    "word": "exception",
+    "parts": "n",
+    "frequency": "14136",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2424",
+    "word": "butter",
+    "parts": "n",
+    "frequency": "14780",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2425",
+    "word": "deficit",
+    "parts": "n",
+    "frequency": "15008",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2426",
+    "word": "bathroom",
+    "parts": "n",
+    "frequency": "14725",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2427",
+    "word": "objective",
+    "parts": "n",
+    "frequency": "15107",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2428",
+    "word": "block",
+    "parts": "v",
+    "frequency": "13688",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2429",
+    "word": "electronic",
+    "parts": "j",
+    "frequency": "14057",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2430",
+    "word": "ally",
+    "parts": "n",
+    "frequency": "14025",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2431",
+    "word": "journey",
+    "parts": "n",
+    "frequency": "13599",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2432",
+    "word": "reputation",
+    "parts": "n",
+    "frequency": "13681",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2433",
+    "word": "mixture",
+    "parts": "n",
+    "frequency": "14856",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2434",
+    "word": "surely",
+    "parts": "r",
+    "frequency": "13904",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2435",
+    "word": "tower",
+    "parts": "n",
+    "frequency": "13948",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2436",
+    "word": "smoke",
+    "parts": "n",
+    "frequency": "14327",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2437",
+    "word": "confront",
+    "parts": "v",
+    "frequency": "13757",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2438",
+    "word": "pure",
+    "parts": "j",
+    "frequency": "13671",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2439",
+    "word": "glance",
+    "parts": "v",
+    "frequency": "16008",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "2440",
+    "word": "dimension",
+    "parts": "n",
+    "frequency": "14965",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2441",
+    "word": "toy",
+    "parts": "n",
+    "frequency": "13935",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2442",
+    "word": "prisoner",
+    "parts": "n",
+    "frequency": "13928",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2443",
+    "word": "fellow",
+    "parts": "j",
+    "frequency": "13585",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2444",
+    "word": "smooth",
+    "parts": "j",
+    "frequency": "14148",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2445",
+    "word": "nearby",
+    "parts": "j",
+    "frequency": "13820",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2446",
+    "word": "peer",
+    "parts": "n",
+    "frequency": "14738",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2447",
+    "word": "designer",
+    "parts": "n",
+    "frequency": "14210",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2448",
+    "word": "personnel",
+    "parts": "n",
+    "frequency": "14095",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2449",
+    "word": "shape",
+    "parts": "v",
+    "frequency": "13859",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2450",
+    "word": "educator",
+    "parts": "n",
+    "frequency": "15447",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "2451",
+    "word": "relative",
+    "parts": "n",
+    "frequency": "13541",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2452",
+    "word": "immigration",
+    "parts": "n",
+    "frequency": "14526",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2453",
+    "word": "belt",
+    "parts": "n",
+    "frequency": "13826",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2454",
+    "word": "teaspoon",
+    "parts": "n",
+    "frequency": "15767",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "2455",
+    "word": "birthday",
+    "parts": "n",
+    "frequency": "13757",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2456",
+    "word": "implication",
+    "parts": "n",
+    "frequency": "14791",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2457",
+    "word": "perfectly",
+    "parts": "r",
+    "frequency": "13671",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2458",
+    "word": "coast",
+    "parts": "n",
+    "frequency": "13515",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2459",
+    "word": "supporter",
+    "parts": "n",
+    "frequency": "13970",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2460",
+    "word": "accompany",
+    "parts": "v",
+    "frequency": "13666",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2461",
+    "word": "silver",
+    "parts": "n",
+    "frequency": "14033",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2462",
+    "word": "teenager",
+    "parts": "n",
+    "frequency": "13615",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2463",
+    "word": "recognition",
+    "parts": "n",
+    "frequency": "14249",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2464",
+    "word": "retirement",
+    "parts": "n",
+    "frequency": "13964",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2465",
+    "word": "flag",
+    "parts": "n",
+    "frequency": "13655",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2466",
+    "word": "recovery",
+    "parts": "n",
+    "frequency": "13703",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2467",
+    "word": "whisper",
+    "parts": "v",
+    "frequency": "15383",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "2468",
+    "word": "watch",
+    "parts": "n",
+    "frequency": "13996",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2469",
+    "word": "gentleman",
+    "parts": "n",
+    "frequency": "14648",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2470",
+    "word": "corn",
+    "parts": "n",
+    "frequency": "13739",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2471",
+    "word": "moon",
+    "parts": "n",
+    "frequency": "13959",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2472",
+    "word": "inner",
+    "parts": "j",
+    "frequency": "13545",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2473",
+    "word": "junior",
+    "parts": "j",
+    "frequency": "13797",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2474",
+    "word": "rather",
+    "parts": "c",
+    "frequency": "13611",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2475",
+    "word": "throat",
+    "parts": "n",
+    "frequency": "14681",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2476",
+    "word": "salary",
+    "parts": "n",
+    "frequency": "13885",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2477",
+    "word": "swing",
+    "parts": "v",
+    "frequency": "14317",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2478",
+    "word": "observer",
+    "parts": "n",
+    "frequency": "13806",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2479",
+    "word": "due",
+    "parts": "j",
+    "frequency": "13252",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2480",
+    "word": "straight",
+    "parts": "j",
+    "frequency": "13474",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2481",
+    "word": "publication",
+    "parts": "n",
+    "frequency": "14045",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2482",
+    "word": "pretty",
+    "parts": "j",
+    "frequency": "13951",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2483",
+    "word": "crop",
+    "parts": "n",
+    "frequency": "13733",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2484",
+    "word": "dig",
+    "parts": "v",
+    "frequency": "13633",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2485",
+    "word": "strike",
+    "parts": "n",
+    "frequency": "13686",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2486",
+    "word": "permanent",
+    "parts": "j",
+    "frequency": "13390",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2487",
+    "word": "plant",
+    "parts": "v",
+    "frequency": "13526",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2488",
+    "word": "phenomenon",
+    "parts": "n",
+    "frequency": "14087",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2489",
+    "word": "anxiety",
+    "parts": "n",
+    "frequency": "14088",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2490",
+    "word": "unlike",
+    "parts": "i",
+    "frequency": "13248",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2491",
+    "word": "wet",
+    "parts": "j",
+    "frequency": "13963",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2492",
+    "word": "literally",
+    "parts": "r",
+    "frequency": "13425",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2493",
+    "word": "resist",
+    "parts": "v",
+    "frequency": "13330",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2494",
+    "word": "convention",
+    "parts": "n",
+    "frequency": "14497",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2495",
+    "word": "embrace",
+    "parts": "v",
+    "frequency": "13183",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2496",
+    "word": "supply",
+    "parts": "v",
+    "frequency": "13399",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2497",
+    "word": "assist",
+    "parts": "v",
+    "frequency": "13748",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2498",
+    "word": "exhibition",
+    "parts": "n",
+    "frequency": "13987",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2499",
+    "word": "construct",
+    "parts": "v",
+    "frequency": "14234",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2500",
+    "word": "viewer",
+    "parts": "n",
+    "frequency": "13479",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2501",
+    "word": "pan",
+    "parts": "n",
+    "frequency": "14148",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2502",
+    "word": "consultant",
+    "parts": "n",
+    "frequency": "13646",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2503",
+    "word": "soon",
+    "parts": "c",
+    "frequency": "13547",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2504",
+    "word": "line",
+    "parts": "v",
+    "frequency": "13373",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2505",
+    "word": "administrator",
+    "parts": "n",
+    "frequency": "14058",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2506",
+    "word": "date",
+    "parts": "v",
+    "frequency": "13231",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2507",
+    "word": "occasionally",
+    "parts": "r",
+    "frequency": "13321",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2508",
+    "word": "mayor",
+    "parts": "n",
+    "frequency": "13903",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2509",
+    "word": "consideration",
+    "parts": "n",
+    "frequency": "14047",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2510",
+    "word": "CEO",
+    "parts": "n",
+    "frequency": "13956",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2511",
+    "word": "secure",
+    "parts": "v",
+    "frequency": "13181",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2512",
+    "word": "pink",
+    "parts": "j",
+    "frequency": "13849",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2513",
+    "word": "smoke",
+    "parts": "v",
+    "frequency": "13438",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2514",
+    "word": "estimate",
+    "parts": "n",
+    "frequency": "13718",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2515",
+    "word": "buck",
+    "parts": "n",
+    "frequency": "13693",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2516",
+    "word": "historic",
+    "parts": "j",
+    "frequency": "13507",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2517",
+    "word": "poem",
+    "parts": "n",
+    "frequency": "13702",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2518",
+    "word": "grandmother",
+    "parts": "n",
+    "frequency": "13670",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2519",
+    "word": "bind",
+    "parts": "v",
+    "frequency": "13109",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2520",
+    "word": "fifth",
+    "parts": "m",
+    "frequency": "13150",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2521",
+    "word": "constantly",
+    "parts": "r",
+    "frequency": "13033",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2522",
+    "word": "enterprise",
+    "parts": "n",
+    "frequency": "13542",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2523",
+    "word": "favor",
+    "parts": "v",
+    "frequency": "13235",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2524",
+    "word": "testing",
+    "parts": "n",
+    "frequency": "13725",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2525",
+    "word": "stomach",
+    "parts": "n",
+    "frequency": "13845",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2526",
+    "word": "apparent",
+    "parts": "j",
+    "frequency": "13434",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2527",
+    "word": "weigh",
+    "parts": "v",
+    "frequency": "13051",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2528",
+    "word": "install",
+    "parts": "v",
+    "frequency": "13584",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2529",
+    "word": "sensitive",
+    "parts": "j",
+    "frequency": "13115",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2530",
+    "word": "suggestion",
+    "parts": "n",
+    "frequency": "13145",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2531",
+    "word": "mail",
+    "parts": "n",
+    "frequency": "13024",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2532",
+    "word": "recipe",
+    "parts": "n",
+    "frequency": "13840",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2533",
+    "word": "reasonable",
+    "parts": "j",
+    "frequency": "13130",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2534",
+    "word": "preparation",
+    "parts": "n",
+    "frequency": "13553",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2535",
+    "word": "wooden",
+    "parts": "j",
+    "frequency": "13518",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2536",
+    "word": "elementary",
+    "parts": "j",
+    "frequency": "13831",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2537",
+    "word": "concert",
+    "parts": "n",
+    "frequency": "13270",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2538",
+    "word": "aggressive",
+    "parts": "j",
+    "frequency": "13191",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2539",
+    "word": "false",
+    "parts": "j",
+    "frequency": "12871",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2540",
+    "word": "intention",
+    "parts": "n",
+    "frequency": "13207",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2541",
+    "word": "channel",
+    "parts": "n",
+    "frequency": "12975",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2542",
+    "word": "extreme",
+    "parts": "j",
+    "frequency": "13064",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2543",
+    "word": "tube",
+    "parts": "n",
+    "frequency": "13364",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2544",
+    "word": "drawing",
+    "parts": "n",
+    "frequency": "13377",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2545",
+    "word": "protein",
+    "parts": "n",
+    "frequency": "14036",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2546",
+    "word": "quit",
+    "parts": "v",
+    "frequency": "13045",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2547",
+    "word": "absence",
+    "parts": "n",
+    "frequency": "13597",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2548",
+    "word": "roll",
+    "parts": "n",
+    "frequency": "13053",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2549",
+    "word": "Latin",
+    "parts": "j",
+    "frequency": "13797",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2550",
+    "word": "rapidly",
+    "parts": "r",
+    "frequency": "13066",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2551",
+    "word": "jail",
+    "parts": "n",
+    "frequency": "13324",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2552",
+    "word": "comment",
+    "parts": "v",
+    "frequency": "12930",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2553",
+    "word": "diversity",
+    "parts": "n",
+    "frequency": "13872",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2554",
+    "word": "honest",
+    "parts": "j",
+    "frequency": "12916",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2555",
+    "word": "Palestinian",
+    "parts": "j",
+    "frequency": "14008",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2556",
+    "word": "pace",
+    "parts": "n",
+    "frequency": "12891",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2557",
+    "word": "employment",
+    "parts": "n",
+    "frequency": "13673",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2558",
+    "word": "speaker",
+    "parts": "n",
+    "frequency": "12889",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2559",
+    "word": "impression",
+    "parts": "n",
+    "frequency": "12746",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2560",
+    "word": "essay",
+    "parts": "n",
+    "frequency": "13802",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2561",
+    "word": "respondent",
+    "parts": "n",
+    "frequency": "15057",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "2562",
+    "word": "giant",
+    "parts": "j",
+    "frequency": "12963",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2563",
+    "word": "cake",
+    "parts": "n",
+    "frequency": "13336",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2564",
+    "word": "historian",
+    "parts": "n",
+    "frequency": "13437",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2565",
+    "word": "negotiate",
+    "parts": "v",
+    "frequency": "13043",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2566",
+    "word": "restore",
+    "parts": "v",
+    "frequency": "12814",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2567",
+    "word": "substantial",
+    "parts": "j",
+    "frequency": "13376",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2568",
+    "word": "pop",
+    "parts": "v",
+    "frequency": "13123",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2569",
+    "word": "particular",
+    "parts": "r",
+    "frequency": "13259",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2570",
+    "word": "specialist",
+    "parts": "n",
+    "frequency": "13041",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2571",
+    "word": "origin",
+    "parts": "n",
+    "frequency": "13654",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2572",
+    "word": "approval",
+    "parts": "n",
+    "frequency": "12795",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2573",
+    "word": "mine",
+    "parts": "n",
+    "frequency": "12824",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2574",
+    "word": "quietly",
+    "parts": "r",
+    "frequency": "13503",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2575",
+    "word": "advise",
+    "parts": "v",
+    "frequency": "12709",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2576",
+    "word": "conventional",
+    "parts": "j",
+    "frequency": "13209",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2577",
+    "word": "drop",
+    "parts": "n",
+    "frequency": "12757",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2578",
+    "word": "count",
+    "parts": "n",
+    "frequency": "13007",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2579",
+    "word": "depth",
+    "parts": "n",
+    "frequency": "12927",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2580",
+    "word": "wealth",
+    "parts": "n",
+    "frequency": "12886",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2581",
+    "word": "disability",
+    "parts": "n",
+    "frequency": "14197",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "2582",
+    "word": "shell",
+    "parts": "n",
+    "frequency": "12957",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2583",
+    "word": "general",
+    "parts": "r",
+    "frequency": "13256",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2584",
+    "word": "criticize",
+    "parts": "v",
+    "frequency": "12906",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2585",
+    "word": "fast",
+    "parts": "j",
+    "frequency": "12738",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2586",
+    "word": "professional",
+    "parts": "n",
+    "frequency": "13402",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2587",
+    "word": "effectively",
+    "parts": "r",
+    "frequency": "13277",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2588",
+    "word": "biological",
+    "parts": "j",
+    "frequency": "13233",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2589",
+    "word": "pack",
+    "parts": "n",
+    "frequency": "13238",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2590",
+    "word": "onion",
+    "parts": "n",
+    "frequency": "13769",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2591",
+    "word": "deputy",
+    "parts": "n",
+    "frequency": "12972",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2592",
+    "word": "flat",
+    "parts": "j",
+    "frequency": "12899",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2593",
+    "word": "brand",
+    "parts": "n",
+    "frequency": "13103",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2594",
+    "word": "assure",
+    "parts": "v",
+    "frequency": "12542",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2595",
+    "word": "mad",
+    "parts": "j",
+    "frequency": "12903",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2596",
+    "word": "award",
+    "parts": "n",
+    "frequency": "12874",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2597",
+    "word": "criteria",
+    "parts": "n",
+    "frequency": "14160",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "2598",
+    "word": "dealer",
+    "parts": "n",
+    "frequency": "12999",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2599",
+    "word": "via",
+    "parts": "i",
+    "frequency": "13064",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2600",
+    "word": "alternative",
+    "parts": "j",
+    "frequency": "13289",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2601",
+    "word": "utility",
+    "parts": "n",
+    "frequency": "13150",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2602",
+    "word": "precisely",
+    "parts": "r",
+    "frequency": "12878",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2603",
+    "word": "arise",
+    "parts": "v",
+    "frequency": "13351",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2604",
+    "word": "armed",
+    "parts": "j",
+    "frequency": "12966",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2605",
+    "word": "nevertheless",
+    "parts": "r",
+    "frequency": "13190",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2606",
+    "word": "highway",
+    "parts": "n",
+    "frequency": "12649",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2607",
+    "word": "clinical",
+    "parts": "j",
+    "frequency": "13593",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2608",
+    "word": "routine",
+    "parts": "n",
+    "frequency": "12576",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2609",
+    "word": "schedule",
+    "parts": "v",
+    "frequency": "12881",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2610",
+    "word": "wage",
+    "parts": "n",
+    "frequency": "13033",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2611",
+    "word": "normally",
+    "parts": "r",
+    "frequency": "12402",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2612",
+    "word": "phrase",
+    "parts": "n",
+    "frequency": "12558",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2613",
+    "word": "ingredient",
+    "parts": "n",
+    "frequency": "13382",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2614",
+    "word": "stake",
+    "parts": "n",
+    "frequency": "12603",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2615",
+    "word": "Muslim",
+    "parts": "j",
+    "frequency": "13147",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2616",
+    "word": "dream",
+    "parts": "v",
+    "frequency": "12887",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2617",
+    "word": "fiber",
+    "parts": "n",
+    "frequency": "13606",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2618",
+    "word": "activist",
+    "parts": "n",
+    "frequency": "12737",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2619",
+    "word": "Islamic",
+    "parts": "j",
+    "frequency": "13323",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2620",
+    "word": "snap",
+    "parts": "v",
+    "frequency": "13362",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2621",
+    "word": "terrorism",
+    "parts": "n",
+    "frequency": "13806",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2622",
+    "word": "refugee",
+    "parts": "n",
+    "frequency": "13010",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2623",
+    "word": "incorporate",
+    "parts": "v",
+    "frequency": "13310",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2624",
+    "word": "hip",
+    "parts": "n",
+    "frequency": "12863",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2625",
+    "word": "ultimate",
+    "parts": "j",
+    "frequency": "12542",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2626",
+    "word": "switch",
+    "parts": "v",
+    "frequency": "12508",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2627",
+    "word": "corporation",
+    "parts": "n",
+    "frequency": "12612",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2628",
+    "word": "valuable",
+    "parts": "j",
+    "frequency": "12628",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2629",
+    "word": "assumption",
+    "parts": "n",
+    "frequency": "13434",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2630",
+    "word": "gear",
+    "parts": "n",
+    "frequency": "12872",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2631",
+    "word": "graduate",
+    "parts": "v",
+    "frequency": "12480",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2632",
+    "word": "barrier",
+    "parts": "n",
+    "frequency": "12772",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2633",
+    "word": "minor",
+    "parts": "j",
+    "frequency": "12346",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2634",
+    "word": "provision",
+    "parts": "n",
+    "frequency": "13256",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2635",
+    "word": "killer",
+    "parts": "n",
+    "frequency": "12631",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2636",
+    "word": "assign",
+    "parts": "v",
+    "frequency": "12836",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2637",
+    "word": "gang",
+    "parts": "n",
+    "frequency": "12662",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2638",
+    "word": "developing",
+    "parts": "j",
+    "frequency": "13171",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2639",
+    "word": "classic",
+    "parts": "j",
+    "frequency": "12610",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2640",
+    "word": "chemical",
+    "parts": "n",
+    "frequency": "12673",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2641",
+    "word": "wave",
+    "parts": "v",
+    "frequency": "13567",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2642",
+    "word": "label",
+    "parts": "n",
+    "frequency": "12497",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2643",
+    "word": "teen",
+    "parts": "n",
+    "frequency": "12663",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2644",
+    "word": "index",
+    "parts": "n",
+    "frequency": "12751",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2645",
+    "word": "vacation",
+    "parts": "n",
+    "frequency": "12424",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2646",
+    "word": "advocate",
+    "parts": "n",
+    "frequency": "12565",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2647",
+    "word": "draft",
+    "parts": "n",
+    "frequency": "12684",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2648",
+    "word": "extraordinary",
+    "parts": "j",
+    "frequency": "12356",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2649",
+    "word": "heaven",
+    "parts": "n",
+    "frequency": "12461",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2650",
+    "word": "rough",
+    "parts": "j",
+    "frequency": "12365",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2651",
+    "word": "yell",
+    "parts": "v",
+    "frequency": "13131",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2652",
+    "word": "pregnant",
+    "parts": "j",
+    "frequency": "12329",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2653",
+    "word": "distant",
+    "parts": "j",
+    "frequency": "12542",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2654",
+    "word": "drama",
+    "parts": "n",
+    "frequency": "12393",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2655",
+    "word": "satellite",
+    "parts": "n",
+    "frequency": "12438",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2656",
+    "word": "personally",
+    "parts": "r",
+    "frequency": "12317",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2657",
+    "word": "wonder",
+    "parts": "n",
+    "frequency": "12265",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2658",
+    "word": "clock",
+    "parts": "n",
+    "frequency": "12395",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2659",
+    "word": "chocolate",
+    "parts": "n",
+    "frequency": "12682",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2660",
+    "word": "Italian",
+    "parts": "j",
+    "frequency": "12384",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2661",
+    "word": "Canadian",
+    "parts": "j",
+    "frequency": "12820",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2662",
+    "word": "ceiling",
+    "parts": "n",
+    "frequency": "12668",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2663",
+    "word": "sweep",
+    "parts": "v",
+    "frequency": "12431",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2664",
+    "word": "advertising",
+    "parts": "n",
+    "frequency": "12601",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2665",
+    "word": "universal",
+    "parts": "j",
+    "frequency": "12590",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2666",
+    "word": "spin",
+    "parts": "v",
+    "frequency": "12673",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2667",
+    "word": "house",
+    "parts": "v",
+    "frequency": "12268",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2668",
+    "word": "button",
+    "parts": "n",
+    "frequency": "12552",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2669",
+    "word": "bell",
+    "parts": "n",
+    "frequency": "12421",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2670",
+    "word": "rank",
+    "parts": "n",
+    "frequency": "12236",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2671",
+    "word": "darkness",
+    "parts": "n",
+    "frequency": "13275",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2672",
+    "word": "ahead",
+    "parts": "i",
+    "frequency": "12125",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2673",
+    "word": "clothing",
+    "parts": "n",
+    "frequency": "12078",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2674",
+    "word": "super",
+    "parts": "j",
+    "frequency": "12586",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2675",
+    "word": "yield",
+    "parts": "v",
+    "frequency": "12634",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2676",
+    "word": "fence",
+    "parts": "n",
+    "frequency": "12390",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2677",
+    "word": "portrait",
+    "parts": "n",
+    "frequency": "12340",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2678",
+    "word": "paint",
+    "parts": "n",
+    "frequency": "12673",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2679",
+    "word": "survival",
+    "parts": "n",
+    "frequency": "12335",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2680",
+    "word": "roughly",
+    "parts": "r",
+    "frequency": "12200",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2681",
+    "word": "lawsuit",
+    "parts": "n",
+    "frequency": "12656",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2682",
+    "word": "bottom",
+    "parts": "j",
+    "frequency": "12169",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2683",
+    "word": "testimony",
+    "parts": "n",
+    "frequency": "12679",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2684",
+    "word": "bunch",
+    "parts": "n",
+    "frequency": "12225",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2685",
+    "word": "beat",
+    "parts": "n",
+    "frequency": "13118",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2686",
+    "word": "wind",
+    "parts": "v",
+    "frequency": "12054",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2687",
+    "word": "found",
+    "parts": "v",
+    "frequency": "12376",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2688",
+    "word": "burden",
+    "parts": "n",
+    "frequency": "12054",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2689",
+    "word": "react",
+    "parts": "v",
+    "frequency": "11874",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2690",
+    "word": "chamber",
+    "parts": "n",
+    "frequency": "12034",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2691",
+    "word": "furniture",
+    "parts": "n",
+    "frequency": "12461",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2692",
+    "word": "cooperation",
+    "parts": "n",
+    "frequency": "12833",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2693",
+    "word": "string",
+    "parts": "n",
+    "frequency": "11974",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2694",
+    "word": "ceremony",
+    "parts": "n",
+    "frequency": "11923",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2695",
+    "word": "communicate",
+    "parts": "v",
+    "frequency": "12179",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2696",
+    "word": "taste",
+    "parts": "v",
+    "frequency": "12397",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2697",
+    "word": "cheek",
+    "parts": "n",
+    "frequency": "13411",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "2698",
+    "word": "lost",
+    "parts": "j",
+    "frequency": "11886",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2699",
+    "word": "profile",
+    "parts": "n",
+    "frequency": "12089",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2700",
+    "word": "mechanism",
+    "parts": "n",
+    "frequency": "12948",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2701",
+    "word": "disagree",
+    "parts": "v",
+    "frequency": "12280",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2702",
+    "word": "like",
+    "parts": "r",
+    "frequency": "13238",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2703",
+    "word": "penalty",
+    "parts": "n",
+    "frequency": "12310",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2704",
+    "word": "match",
+    "parts": "n",
+    "frequency": "12025",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2705",
+    "word": "ie",
+    "parts": "r",
+    "frequency": "13724",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "2706",
+    "word": "advance",
+    "parts": "v",
+    "frequency": "12056",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2707",
+    "word": "resort",
+    "parts": "n",
+    "frequency": "12379",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2708",
+    "word": "destruction",
+    "parts": "n",
+    "frequency": "12356",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2709",
+    "word": "bear",
+    "parts": "n",
+    "frequency": "12194",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2710",
+    "word": "unlikely",
+    "parts": "j",
+    "frequency": "11869",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2711",
+    "word": "tissue",
+    "parts": "n",
+    "frequency": "12342",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2712",
+    "word": "constitutional",
+    "parts": "j",
+    "frequency": "12567",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2713",
+    "word": "pant",
+    "parts": "n",
+    "frequency": "12457",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2714",
+    "word": "stranger",
+    "parts": "n",
+    "frequency": "12261",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2715",
+    "word": "infection",
+    "parts": "n",
+    "frequency": "12402",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2716",
+    "word": "cabinet",
+    "parts": "n",
+    "frequency": "11846",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2717",
+    "word": "broken",
+    "parts": "j",
+    "frequency": "12097",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2718",
+    "word": "apple",
+    "parts": "n",
+    "frequency": "12172",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2719",
+    "word": "electric",
+    "parts": "j",
+    "frequency": "12007",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2720",
+    "word": "proceed",
+    "parts": "v",
+    "frequency": "11808",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2721",
+    "word": "track",
+    "parts": "v",
+    "frequency": "11773",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2722",
+    "word": "bet",
+    "parts": "v",
+    "frequency": "12079",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2723",
+    "word": "literary",
+    "parts": "j",
+    "frequency": "12801",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2724",
+    "word": "virus",
+    "parts": "n",
+    "frequency": "12106",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2725",
+    "word": "stupid",
+    "parts": "j",
+    "frequency": "12467",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2726",
+    "word": "dispute",
+    "parts": "n",
+    "frequency": "12203",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2727",
+    "word": "fortune",
+    "parts": "n",
+    "frequency": "11815",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2728",
+    "word": "strategic",
+    "parts": "j",
+    "frequency": "12347",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2729",
+    "word": "assistant",
+    "parts": "n",
+    "frequency": "11828",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2730",
+    "word": "overcome",
+    "parts": "v",
+    "frequency": "11801",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2731",
+    "word": "remarkable",
+    "parts": "j",
+    "frequency": "11683",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2732",
+    "word": "occupy",
+    "parts": "v",
+    "frequency": "11756",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2733",
+    "word": "statistics",
+    "parts": "n",
+    "frequency": "12086",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2734",
+    "word": "shopping",
+    "parts": "n",
+    "frequency": "11957",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2735",
+    "word": "cousin",
+    "parts": "n",
+    "frequency": "12155",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2736",
+    "word": "encounter",
+    "parts": "v",
+    "frequency": "11974",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2737",
+    "word": "wipe",
+    "parts": "v",
+    "frequency": "12435",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2738",
+    "word": "initially",
+    "parts": "r",
+    "frequency": "12022",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2739",
+    "word": "blind",
+    "parts": "j",
+    "frequency": "12005",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2740",
+    "word": "white",
+    "parts": "n",
+    "frequency": "11815",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2741",
+    "word": "port",
+    "parts": "n",
+    "frequency": "11893",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2742",
+    "word": "honor",
+    "parts": "v",
+    "frequency": "11653",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2743",
+    "word": "electricity",
+    "parts": "n",
+    "frequency": "11954",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2744",
+    "word": "genetic",
+    "parts": "j",
+    "frequency": "12069",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2745",
+    "word": "adviser",
+    "parts": "n",
+    "frequency": "12112",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2746",
+    "word": "pay",
+    "parts": "n",
+    "frequency": "11883",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2747",
+    "word": "spokesman",
+    "parts": "n",
+    "frequency": "12689",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2748",
+    "word": "retain",
+    "parts": "v",
+    "frequency": "12041",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2749",
+    "word": "latter",
+    "parts": "d",
+    "frequency": "12527",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2750",
+    "word": "incentive",
+    "parts": "n",
+    "frequency": "12105",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2751",
+    "word": "slave",
+    "parts": "n",
+    "frequency": "11863",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2752",
+    "word": "chemical",
+    "parts": "j",
+    "frequency": "12006",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2753",
+    "word": "translate",
+    "parts": "v",
+    "frequency": "11722",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2754",
+    "word": "accurate",
+    "parts": "j",
+    "frequency": "11842",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2755",
+    "word": "whereas",
+    "parts": "c",
+    "frequency": "12668",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2756",
+    "word": "terror",
+    "parts": "n",
+    "frequency": "12342",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2757",
+    "word": "though",
+    "parts": "r",
+    "frequency": "12073",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2758",
+    "word": "expansion",
+    "parts": "n",
+    "frequency": "12054",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2759",
+    "word": "elite",
+    "parts": "n",
+    "frequency": "12329",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2760",
+    "word": "Olympic",
+    "parts": "j",
+    "frequency": "13072",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "2761",
+    "word": "dirt",
+    "parts": "n",
+    "frequency": "12063",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2762",
+    "word": "odd",
+    "parts": "j",
+    "frequency": "11849",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2763",
+    "word": "rice",
+    "parts": "n",
+    "frequency": "11944",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2764",
+    "word": "bullet",
+    "parts": "n",
+    "frequency": "11706",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2765",
+    "word": "tight",
+    "parts": "j",
+    "frequency": "11641",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2766",
+    "word": "Bible",
+    "parts": "n",
+    "frequency": "11539",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2767",
+    "word": "chart",
+    "parts": "n",
+    "frequency": "11861",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2768",
+    "word": "solar",
+    "parts": "j",
+    "frequency": "12121",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2769",
+    "word": "decline",
+    "parts": "n",
+    "frequency": "11956",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2770",
+    "word": "conservative",
+    "parts": "n",
+    "frequency": "11941",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2771",
+    "word": "process",
+    "parts": "v",
+    "frequency": "11940",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2772",
+    "word": "square",
+    "parts": "j",
+    "frequency": "11630",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2773",
+    "word": "stick",
+    "parts": "n",
+    "frequency": "11795",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2774",
+    "word": "concentration",
+    "parts": "n",
+    "frequency": "12146",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2775",
+    "word": "complicated",
+    "parts": "j",
+    "frequency": "11306",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "2776",
+    "word": "gently",
+    "parts": "r",
+    "frequency": "12233",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2777",
+    "word": "champion",
+    "parts": "n",
+    "frequency": "12247",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2778",
+    "word": "scenario",
+    "parts": "n",
+    "frequency": "11747",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2779",
+    "word": "telescope",
+    "parts": "n",
+    "frequency": "12754",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "2780",
+    "word": "reflection",
+    "parts": "n",
+    "frequency": "11882",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2781",
+    "word": "revolution",
+    "parts": "n",
+    "frequency": "11800",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2782",
+    "word": "strip",
+    "parts": "n",
+    "frequency": "11543",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2783",
+    "word": "interpret",
+    "parts": "v",
+    "frequency": "12321",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2784",
+    "word": "friendly",
+    "parts": "j",
+    "frequency": "11360",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2785",
+    "word": "tournament",
+    "parts": "n",
+    "frequency": "12684",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2786",
+    "word": "fiction",
+    "parts": "n",
+    "frequency": "11701",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2787",
+    "word": "detect",
+    "parts": "v",
+    "frequency": "11776",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2788",
+    "word": "balance",
+    "parts": "v",
+    "frequency": "11536",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2789",
+    "word": "likely",
+    "parts": "r",
+    "frequency": "11551",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2790",
+    "word": "tremendous",
+    "parts": "j",
+    "frequency": "11678",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2791",
+    "word": "lifetime",
+    "parts": "n",
+    "frequency": "11293",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2792",
+    "word": "recommendation",
+    "parts": "n",
+    "frequency": "11824",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2793",
+    "word": "flow",
+    "parts": "v",
+    "frequency": "11365",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2794",
+    "word": "senator",
+    "parts": "n",
+    "frequency": "12091",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2795",
+    "word": "market",
+    "parts": "v",
+    "frequency": "11650",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2796",
+    "word": "hunting",
+    "parts": "n",
+    "frequency": "12100",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2797",
+    "word": "salad",
+    "parts": "n",
+    "frequency": "12103",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2798",
+    "word": "guarantee",
+    "parts": "v",
+    "frequency": "11430",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2799",
+    "word": "innocent",
+    "parts": "j",
+    "frequency": "11530",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2800",
+    "word": "boundary",
+    "parts": "n",
+    "frequency": "12082",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2801",
+    "word": "pause",
+    "parts": "v",
+    "frequency": "12583",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2802",
+    "word": "remote",
+    "parts": "j",
+    "frequency": "11346",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2803",
+    "word": "satisfaction",
+    "parts": "n",
+    "frequency": "12237",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2804",
+    "word": "journal",
+    "parts": "n",
+    "frequency": "11849",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2805",
+    "word": "bench",
+    "parts": "n",
+    "frequency": "11666",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2806",
+    "word": "lover",
+    "parts": "n",
+    "frequency": "11499",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2807",
+    "word": "raw",
+    "parts": "j",
+    "frequency": "11310",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2808",
+    "word": "awareness",
+    "parts": "n",
+    "frequency": "12013",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2809",
+    "word": "surprising",
+    "parts": "j",
+    "frequency": "11327",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2810",
+    "word": "withdraw",
+    "parts": "v",
+    "frequency": "11352",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2811",
+    "word": "general",
+    "parts": "n",
+    "frequency": "11344",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2812",
+    "word": "deck",
+    "parts": "n",
+    "frequency": "11830",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2813",
+    "word": "similarly",
+    "parts": "r",
+    "frequency": "12180",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2814",
+    "word": "newly",
+    "parts": "r",
+    "frequency": "11388",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2815",
+    "word": "pole",
+    "parts": "n",
+    "frequency": "11446",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2816",
+    "word": "testify",
+    "parts": "v",
+    "frequency": "11843",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2817",
+    "word": "mode",
+    "parts": "n",
+    "frequency": "12107",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2818",
+    "word": "dialogue",
+    "parts": "n",
+    "frequency": "11706",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2819",
+    "word": "imply",
+    "parts": "v",
+    "frequency": "12061",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2820",
+    "word": "naturally",
+    "parts": "r",
+    "frequency": "11304",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2821",
+    "word": "mutual",
+    "parts": "j",
+    "frequency": "11566",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2822",
+    "word": "founder",
+    "parts": "n",
+    "frequency": "11570",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2823",
+    "word": "top",
+    "parts": "i",
+    "frequency": "11397",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2824",
+    "word": "advanced",
+    "parts": "j",
+    "frequency": "11626",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2825",
+    "word": "pride",
+    "parts": "n",
+    "frequency": "11107",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2826",
+    "word": "dismiss",
+    "parts": "v",
+    "frequency": "11160",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2827",
+    "word": "aircraft",
+    "parts": "n",
+    "frequency": "11591",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2828",
+    "word": "delivery",
+    "parts": "n",
+    "frequency": "11323",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2829",
+    "word": "mainly",
+    "parts": "r",
+    "frequency": "11367",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2830",
+    "word": "bake",
+    "parts": "v",
+    "frequency": "12253",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2831",
+    "word": "freeze",
+    "parts": "v",
+    "frequency": "11596",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2832",
+    "word": "platform",
+    "parts": "n",
+    "frequency": "11209",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2833",
+    "word": "finance",
+    "parts": "n",
+    "frequency": "11501",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2834",
+    "word": "sink",
+    "parts": "v",
+    "frequency": "11592",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2835",
+    "word": "attractive",
+    "parts": "j",
+    "frequency": "11119",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2836",
+    "word": "respect",
+    "parts": "v",
+    "frequency": "11083",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2837",
+    "word": "diverse",
+    "parts": "j",
+    "frequency": "12015",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2838",
+    "word": "relevant",
+    "parts": "j",
+    "frequency": "12212",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2839",
+    "word": "ideal",
+    "parts": "j",
+    "frequency": "11609",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2840",
+    "word": "joy",
+    "parts": "n",
+    "frequency": "11171",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2841",
+    "word": "worth",
+    "parts": "n",
+    "frequency": "11237",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2842",
+    "word": "regularly",
+    "parts": "r",
+    "frequency": "11329",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2843",
+    "word": "working",
+    "parts": "j",
+    "frequency": "11200",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2844",
+    "word": "singer",
+    "parts": "n",
+    "frequency": "11277",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2845",
+    "word": "evolve",
+    "parts": "v",
+    "frequency": "11442",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2846",
+    "word": "shooting",
+    "parts": "n",
+    "frequency": "11633",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2847",
+    "word": "partly",
+    "parts": "r",
+    "frequency": "11132",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2848",
+    "word": "unknown",
+    "parts": "j",
+    "frequency": "11095",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2849",
+    "word": "assistant",
+    "parts": "j",
+    "frequency": "11391",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2850",
+    "word": "offense",
+    "parts": "n",
+    "frequency": "11680",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2851",
+    "word": "counter",
+    "parts": "n",
+    "frequency": "11676",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2852",
+    "word": "DNA",
+    "parts": "n",
+    "frequency": "11580",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2853",
+    "word": "smell",
+    "parts": "n",
+    "frequency": "12123",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2854",
+    "word": "potentially",
+    "parts": "r",
+    "frequency": "11387",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2855",
+    "word": "transfer",
+    "parts": "n",
+    "frequency": "11830",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2856",
+    "word": "thirty",
+    "parts": "m",
+    "frequency": "11637",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2857",
+    "word": "justify",
+    "parts": "v",
+    "frequency": "11409",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2858",
+    "word": "protest",
+    "parts": "n",
+    "frequency": "11181",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2859",
+    "word": "crash",
+    "parts": "n",
+    "frequency": "11250",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2860",
+    "word": "craft",
+    "parts": "n",
+    "frequency": "11559",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2861",
+    "word": "treaty",
+    "parts": "n",
+    "frequency": "11689",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2862",
+    "word": "terrorist",
+    "parts": "n",
+    "frequency": "12169",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2863",
+    "word": "insight",
+    "parts": "n",
+    "frequency": "11591",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2864",
+    "word": "possess",
+    "parts": "v",
+    "frequency": "11474",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2865",
+    "word": "politically",
+    "parts": "r",
+    "frequency": "11324",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2866",
+    "word": "tap",
+    "parts": "v",
+    "frequency": "11279",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2867",
+    "word": "lie",
+    "parts": "n",
+    "frequency": "11199",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2868",
+    "word": "extensive",
+    "parts": "j",
+    "frequency": "11580",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2869",
+    "word": "episode",
+    "parts": "n",
+    "frequency": "11070",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2870",
+    "word": "double",
+    "parts": "v",
+    "frequency": "11195",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2871",
+    "word": "swim",
+    "parts": "v",
+    "frequency": "11342",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2872",
+    "word": "tire",
+    "parts": "v",
+    "frequency": "11494",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2873",
+    "word": "fault",
+    "parts": "n",
+    "frequency": "11116",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2874",
+    "word": "loose",
+    "parts": "j",
+    "frequency": "11299",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2875",
+    "word": "free",
+    "parts": "v",
+    "frequency": "10898",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2876",
+    "word": "shortly",
+    "parts": "r",
+    "frequency": "10864",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2877",
+    "word": "originally",
+    "parts": "r",
+    "frequency": "10995",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2878",
+    "word": "considerable",
+    "parts": "j",
+    "frequency": "11544",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2879",
+    "word": "prior",
+    "parts": "i",
+    "frequency": "11746",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2880",
+    "word": "intellectual",
+    "parts": "j",
+    "frequency": "11842",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2881",
+    "word": "mix",
+    "parts": "n",
+    "frequency": "11247",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2882",
+    "word": "assault",
+    "parts": "n",
+    "frequency": "11039",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2883",
+    "word": "relax",
+    "parts": "v",
+    "frequency": "11202",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2884",
+    "word": "stair",
+    "parts": "n",
+    "frequency": "12171",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "2885",
+    "word": "adventure",
+    "parts": "n",
+    "frequency": "11031",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2886",
+    "word": "external",
+    "parts": "j",
+    "frequency": "12260",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "2887",
+    "word": "proof",
+    "parts": "n",
+    "frequency": "10775",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2888",
+    "word": "confident",
+    "parts": "j",
+    "frequency": "10831",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2889",
+    "word": "headquarters",
+    "parts": "n",
+    "frequency": "11135",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2890",
+    "word": "sudden",
+    "parts": "j",
+    "frequency": "11370",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2891",
+    "word": "dirty",
+    "parts": "j",
+    "frequency": "11112",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2892",
+    "word": "violation",
+    "parts": "n",
+    "frequency": "11154",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2893",
+    "word": "tongue",
+    "parts": "n",
+    "frequency": "11674",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2894",
+    "word": "license",
+    "parts": "n",
+    "frequency": "10943",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2895",
+    "word": "hold",
+    "parts": "n",
+    "frequency": "10984",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2896",
+    "word": "shelter",
+    "parts": "n",
+    "frequency": "10891",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2897",
+    "word": "rub",
+    "parts": "v",
+    "frequency": "11695",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2898",
+    "word": "controversy",
+    "parts": "n",
+    "frequency": "11054",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2899",
+    "word": "entrance",
+    "parts": "n",
+    "frequency": "11121",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2900",
+    "word": "favorite",
+    "parts": "n",
+    "frequency": "11134",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2901",
+    "word": "practice",
+    "parts": "v",
+    "frequency": "10858",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2902",
+    "word": "properly",
+    "parts": "r",
+    "frequency": "10783",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2903",
+    "word": "fade",
+    "parts": "v",
+    "frequency": "11373",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2904",
+    "word": "defensive",
+    "parts": "j",
+    "frequency": "11442",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2905",
+    "word": "tragedy",
+    "parts": "n",
+    "frequency": "11039",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2906",
+    "word": "net",
+    "parts": "n",
+    "frequency": "10918",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2907",
+    "word": "characterize",
+    "parts": "v",
+    "frequency": "11799",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2908",
+    "word": "funeral",
+    "parts": "n",
+    "frequency": "11086",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2909",
+    "word": "profession",
+    "parts": "n",
+    "frequency": "11469",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2910",
+    "word": "alter",
+    "parts": "v",
+    "frequency": "11106",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2911",
+    "word": "spot",
+    "parts": "v",
+    "frequency": "11143",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2912",
+    "word": "constitute",
+    "parts": "v",
+    "frequency": "11945",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2913",
+    "word": "establishment",
+    "parts": "n",
+    "frequency": "11355",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2914",
+    "word": "squeeze",
+    "parts": "v",
+    "frequency": "11280",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2915",
+    "word": "imagination",
+    "parts": "n",
+    "frequency": "10913",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2916",
+    "word": "target",
+    "parts": "v",
+    "frequency": "10960",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2917",
+    "word": "mask",
+    "parts": "n",
+    "frequency": "11196",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2918",
+    "word": "convert",
+    "parts": "v",
+    "frequency": "10990",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2919",
+    "word": "comprehensive",
+    "parts": "j",
+    "frequency": "11602",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2920",
+    "word": "prominent",
+    "parts": "j",
+    "frequency": "10948",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2921",
+    "word": "presentation",
+    "parts": "n",
+    "frequency": "11372",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2922",
+    "word": "regardless",
+    "parts": "r",
+    "frequency": "11042",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2923",
+    "word": "easy",
+    "parts": "r",
+    "frequency": "10790",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2924",
+    "word": "load",
+    "parts": "v",
+    "frequency": "10736",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2925",
+    "word": "stable",
+    "parts": "j",
+    "frequency": "10964",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2926",
+    "word": "introduction",
+    "parts": "n",
+    "frequency": "11483",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2927",
+    "word": "appeal",
+    "parts": "v",
+    "frequency": "10745",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2928",
+    "word": "pretend",
+    "parts": "v",
+    "frequency": "11330",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2929",
+    "word": "not",
+    "parts": "c",
+    "frequency": "11295",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2930",
+    "word": "elderly",
+    "parts": "j",
+    "frequency": "10976",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2931",
+    "word": "representation",
+    "parts": "n",
+    "frequency": "12063",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "2932",
+    "word": "deer",
+    "parts": "n",
+    "frequency": "11665",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2933",
+    "word": "split",
+    "parts": "v",
+    "frequency": "10593",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2934",
+    "word": "violate",
+    "parts": "v",
+    "frequency": "10822",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2935",
+    "word": "partnership",
+    "parts": "n",
+    "frequency": "11115",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2936",
+    "word": "pollution",
+    "parts": "n",
+    "frequency": "11396",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2937",
+    "word": "emission",
+    "parts": "n",
+    "frequency": "11688",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2938",
+    "word": "steady",
+    "parts": "j",
+    "frequency": "10715",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2939",
+    "word": "vital",
+    "parts": "j",
+    "frequency": "10866",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2940",
+    "word": "neither",
+    "parts": "d",
+    "frequency": "10587",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2941",
+    "word": "fate",
+    "parts": "n",
+    "frequency": "10521",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2942",
+    "word": "earnings",
+    "parts": "n",
+    "frequency": "11324",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2943",
+    "word": "oven",
+    "parts": "n",
+    "frequency": "11454",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2944",
+    "word": "distinction",
+    "parts": "n",
+    "frequency": "11383",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "2945",
+    "word": "segment",
+    "parts": "n",
+    "frequency": "10850",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2946",
+    "word": "nowhere",
+    "parts": "r",
+    "frequency": "10658",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2947",
+    "word": "poet",
+    "parts": "n",
+    "frequency": "10840",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2948",
+    "word": "mere",
+    "parts": "j",
+    "frequency": "10778",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2949",
+    "word": "exciting",
+    "parts": "j",
+    "frequency": "10595",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2950",
+    "word": "variation",
+    "parts": "n",
+    "frequency": "11403",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "2951",
+    "word": "comfort",
+    "parts": "n",
+    "frequency": "10674",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2952",
+    "word": "radical",
+    "parts": "j",
+    "frequency": "10924",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2953",
+    "word": "stress",
+    "parts": "v",
+    "frequency": "10951",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2954",
+    "word": "adapt",
+    "parts": "v",
+    "frequency": "10987",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2955",
+    "word": "Irish",
+    "parts": "j",
+    "frequency": "10833",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2956",
+    "word": "honey",
+    "parts": "n",
+    "frequency": "11009",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2957",
+    "word": "correspondent",
+    "parts": "n",
+    "frequency": "12008",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "2958",
+    "word": "pale",
+    "parts": "j",
+    "frequency": "11598",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2959",
+    "word": "musician",
+    "parts": "n",
+    "frequency": "10580",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2960",
+    "word": "significance",
+    "parts": "n",
+    "frequency": "11520",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2961",
+    "word": "load",
+    "parts": "n",
+    "frequency": "10869",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2962",
+    "word": "round",
+    "parts": "j",
+    "frequency": "10771",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2963",
+    "word": "vessel",
+    "parts": "n",
+    "frequency": "10920",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2964",
+    "word": "storage",
+    "parts": "n",
+    "frequency": "10893",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2965",
+    "word": "flee",
+    "parts": "v",
+    "frequency": "10508",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2966",
+    "word": "mm-hmm",
+    "parts": "u",
+    "frequency": "13755",
+    "dispersion": "0.73"
+  },
+  {
+    "rank": "2967",
+    "word": "leather",
+    "parts": "n",
+    "frequency": "11155",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2968",
+    "word": "distribute",
+    "parts": "v",
+    "frequency": "10747",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2969",
+    "word": "evolution",
+    "parts": "n",
+    "frequency": "11066",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2970",
+    "word": "ill",
+    "parts": "j",
+    "frequency": "10446",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "2971",
+    "word": "tribe",
+    "parts": "n",
+    "frequency": "10855",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2972",
+    "word": "shelf",
+    "parts": "n",
+    "frequency": "10741",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2973",
+    "word": "can",
+    "parts": "n",
+    "frequency": "10718",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2974",
+    "word": "grandfather",
+    "parts": "n",
+    "frequency": "11003",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2975",
+    "word": "lawn",
+    "parts": "n",
+    "frequency": "10815",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2976",
+    "word": "buyer",
+    "parts": "n",
+    "frequency": "10953",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2977",
+    "word": "dining",
+    "parts": "n",
+    "frequency": "10843",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2978",
+    "word": "wisdom",
+    "parts": "n",
+    "frequency": "10561",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2979",
+    "word": "council",
+    "parts": "n",
+    "frequency": "10695",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2980",
+    "word": "vulnerable",
+    "parts": "j",
+    "frequency": "10397",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2981",
+    "word": "instance",
+    "parts": "n",
+    "frequency": "10885",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2982",
+    "word": "garlic",
+    "parts": "n",
+    "frequency": "11449",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "2983",
+    "word": "capability",
+    "parts": "n",
+    "frequency": "10906",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2984",
+    "word": "poetry",
+    "parts": "n",
+    "frequency": "10671",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2985",
+    "word": "celebrity",
+    "parts": "n",
+    "frequency": "10756",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2986",
+    "word": "gradually",
+    "parts": "r",
+    "frequency": "10537",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2987",
+    "word": "stability",
+    "parts": "n",
+    "frequency": "10901",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "2988",
+    "word": "doubt",
+    "parts": "v",
+    "frequency": "10352",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2989",
+    "word": "fantasy",
+    "parts": "n",
+    "frequency": "10448",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2990",
+    "word": "scared",
+    "parts": "j",
+    "frequency": "10752",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "2991",
+    "word": "guide",
+    "parts": "v",
+    "frequency": "10524",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "2992",
+    "word": "plot",
+    "parts": "n",
+    "frequency": "10484",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2993",
+    "word": "framework",
+    "parts": "n",
+    "frequency": "11710",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "2994",
+    "word": "gesture",
+    "parts": "n",
+    "frequency": "10739",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2995",
+    "word": "depending",
+    "parts": "i",
+    "frequency": "10461",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "2996",
+    "word": "ongoing",
+    "parts": "j",
+    "frequency": "10721",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "2997",
+    "word": "psychology",
+    "parts": "n",
+    "frequency": "11316",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "2998",
+    "word": "since",
+    "parts": "r",
+    "frequency": "10334",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "2999",
+    "word": "counselor",
+    "parts": "n",
+    "frequency": "12170",
+    "dispersion": "0.81"
+  },
+  {
+    "rank": "3000",
+    "word": "witness",
+    "parts": "v",
+    "frequency": "10178",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3001",
+    "word": "chapter",
+    "parts": "n",
+    "frequency": "10579",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3002",
+    "word": "fellow",
+    "parts": "n",
+    "frequency": "10339",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3003",
+    "word": "divorce",
+    "parts": "n",
+    "frequency": "10322",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3004",
+    "word": "owe",
+    "parts": "v",
+    "frequency": "10141",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3005",
+    "word": "pipe",
+    "parts": "n",
+    "frequency": "10432",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3006",
+    "word": "athletic",
+    "parts": "j",
+    "frequency": "10803",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3007",
+    "word": "slight",
+    "parts": "j",
+    "frequency": "10500",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3008",
+    "word": "math",
+    "parts": "n",
+    "frequency": "10430",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3009",
+    "word": "shade",
+    "parts": "n",
+    "frequency": "10677",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3010",
+    "word": "tail",
+    "parts": "n",
+    "frequency": "10663",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3011",
+    "word": "sustain",
+    "parts": "v",
+    "frequency": "10550",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3012",
+    "word": "mount",
+    "parts": "v",
+    "frequency": "10303",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3013",
+    "word": "obligation",
+    "parts": "n",
+    "frequency": "10538",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3014",
+    "word": "angle",
+    "parts": "n",
+    "frequency": "10456",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3015",
+    "word": "palm",
+    "parts": "n",
+    "frequency": "11014",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3016",
+    "word": "differ",
+    "parts": "v",
+    "frequency": "11222",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3017",
+    "word": "custom",
+    "parts": "n",
+    "frequency": "10408",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3018",
+    "word": "store",
+    "parts": "v",
+    "frequency": "10446",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3019",
+    "word": "economist",
+    "parts": "n",
+    "frequency": "10625",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3020",
+    "word": "fifteen",
+    "parts": "m",
+    "frequency": "10739",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3021",
+    "word": "soup",
+    "parts": "n",
+    "frequency": "10571",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3022",
+    "word": "celebration",
+    "parts": "n",
+    "frequency": "10209",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3023",
+    "word": "efficient",
+    "parts": "j",
+    "frequency": "10452",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3024",
+    "word": "damage",
+    "parts": "v",
+    "frequency": "10163",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3025",
+    "word": "composition",
+    "parts": "n",
+    "frequency": "10961",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3026",
+    "word": "satisfy",
+    "parts": "v",
+    "frequency": "10194",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3027",
+    "word": "pile",
+    "parts": "n",
+    "frequency": "10594",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3028",
+    "word": "briefly",
+    "parts": "r",
+    "frequency": "10125",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3029",
+    "word": "carbon",
+    "parts": "n",
+    "frequency": "10799",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3030",
+    "word": "closer",
+    "parts": "j",
+    "frequency": "9976",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "3031",
+    "word": "consume",
+    "parts": "v",
+    "frequency": "10308",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3032",
+    "word": "scheme",
+    "parts": "n",
+    "frequency": "10428",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3033",
+    "word": "crack",
+    "parts": "n",
+    "frequency": "10330",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3034",
+    "word": "frequency",
+    "parts": "n",
+    "frequency": "11284",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3035",
+    "word": "tobacco",
+    "parts": "n",
+    "frequency": "10600",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3036",
+    "word": "survivor",
+    "parts": "n",
+    "frequency": "10317",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3037",
+    "word": "besides",
+    "parts": "r",
+    "frequency": "10537",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3038",
+    "word": "in",
+    "parts": "c",
+    "frequency": "9996",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3039",
+    "word": "psychologist",
+    "parts": "n",
+    "frequency": "10698",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3040",
+    "word": "wealthy",
+    "parts": "j",
+    "frequency": "10054",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3041",
+    "word": "galaxy",
+    "parts": "n",
+    "frequency": "11159",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3042",
+    "word": "given",
+    "parts": "j",
+    "frequency": "10622",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3043",
+    "word": "fund",
+    "parts": "v",
+    "frequency": "10218",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3044",
+    "word": "ski",
+    "parts": "n",
+    "frequency": "11656",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "3045",
+    "word": "limitation",
+    "parts": "n",
+    "frequency": "11038",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3046",
+    "word": "OK",
+    "parts": "j",
+    "frequency": "10733",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3047",
+    "word": "trace",
+    "parts": "v",
+    "frequency": "10033",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3048",
+    "word": "appointment",
+    "parts": "n",
+    "frequency": "9993",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3049",
+    "word": "preference",
+    "parts": "n",
+    "frequency": "10833",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3050",
+    "word": "meter",
+    "parts": "n",
+    "frequency": "10246",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3051",
+    "word": "explosion",
+    "parts": "n",
+    "frequency": "10148",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3052",
+    "word": "arrest",
+    "parts": "n",
+    "frequency": "10250",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3053",
+    "word": "publicly",
+    "parts": "r",
+    "frequency": "10169",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3054",
+    "word": "incredible",
+    "parts": "j",
+    "frequency": "10342",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3055",
+    "word": "fighter",
+    "parts": "n",
+    "frequency": "10306",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3056",
+    "word": "rapid",
+    "parts": "j",
+    "frequency": "10427",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3057",
+    "word": "admission",
+    "parts": "n",
+    "frequency": "10356",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3058",
+    "word": "hunter",
+    "parts": "n",
+    "frequency": "10839",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3059",
+    "word": "educate",
+    "parts": "v",
+    "frequency": "10171",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3060",
+    "word": "painful",
+    "parts": "j",
+    "frequency": "9896",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3061",
+    "word": "friendship",
+    "parts": "n",
+    "frequency": "10130",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3062",
+    "word": "aide",
+    "parts": "n",
+    "frequency": "10335",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3063",
+    "word": "infant",
+    "parts": "n",
+    "frequency": "10205",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3064",
+    "word": "calculate",
+    "parts": "v",
+    "frequency": "10485",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3065",
+    "word": "fifty",
+    "parts": "m",
+    "frequency": "10524",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3066",
+    "word": "rid",
+    "parts": "v",
+    "frequency": "10104",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3067",
+    "word": "porch",
+    "parts": "n",
+    "frequency": "10894",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3068",
+    "word": "tendency",
+    "parts": "n",
+    "frequency": "10642",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3069",
+    "word": "uniform",
+    "parts": "n",
+    "frequency": "10193",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3070",
+    "word": "formation",
+    "parts": "n",
+    "frequency": "10553",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3071",
+    "word": "scholarship",
+    "parts": "n",
+    "frequency": "10305",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3072",
+    "word": "reservation",
+    "parts": "n",
+    "frequency": "10215",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3073",
+    "word": "efficiency",
+    "parts": "n",
+    "frequency": "10579",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3074",
+    "word": "waste",
+    "parts": "v",
+    "frequency": "9956",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3075",
+    "word": "qualify",
+    "parts": "v",
+    "frequency": "10090",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3076",
+    "word": "mall",
+    "parts": "n",
+    "frequency": "10189",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3077",
+    "word": "derive",
+    "parts": "v",
+    "frequency": "10913",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3078",
+    "word": "scandal",
+    "parts": "n",
+    "frequency": "10403",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3079",
+    "word": "PC",
+    "parts": "n",
+    "frequency": "11072",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3080",
+    "word": "helpful",
+    "parts": "j",
+    "frequency": "10120",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3081",
+    "word": "impress",
+    "parts": "v",
+    "frequency": "9896",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3082",
+    "word": "heel",
+    "parts": "n",
+    "frequency": "10288",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3083",
+    "word": "resemble",
+    "parts": "v",
+    "frequency": "10050",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3084",
+    "word": "privacy",
+    "parts": "n",
+    "frequency": "9956",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3085",
+    "word": "fabric",
+    "parts": "n",
+    "frequency": "10320",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3086",
+    "word": "surprise",
+    "parts": "v",
+    "frequency": "10023",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3087",
+    "word": "contest",
+    "parts": "n",
+    "frequency": "10002",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3088",
+    "word": "proportion",
+    "parts": "n",
+    "frequency": "10521",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3089",
+    "word": "guideline",
+    "parts": "n",
+    "frequency": "10303",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3090",
+    "word": "rifle",
+    "parts": "n",
+    "frequency": "10204",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3091",
+    "word": "maintenance",
+    "parts": "n",
+    "frequency": "10167",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3092",
+    "word": "conviction",
+    "parts": "n",
+    "frequency": "9834",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3093",
+    "word": "trick",
+    "parts": "n",
+    "frequency": "10041",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3094",
+    "word": "organic",
+    "parts": "j",
+    "frequency": "10572",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3095",
+    "word": "tent",
+    "parts": "n",
+    "frequency": "10110",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3096",
+    "word": "examination",
+    "parts": "n",
+    "frequency": "10722",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3097",
+    "word": "publisher",
+    "parts": "n",
+    "frequency": "10282",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3098",
+    "word": "strengthen",
+    "parts": "v",
+    "frequency": "10159",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3099",
+    "word": "French",
+    "parts": "n",
+    "frequency": "9845",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3100",
+    "word": "proposed",
+    "parts": "j",
+    "frequency": "10288",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3101",
+    "word": "myth",
+    "parts": "n",
+    "frequency": "10161",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3102",
+    "word": "sophisticated",
+    "parts": "j",
+    "frequency": "9886",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3103",
+    "word": "cow",
+    "parts": "n",
+    "frequency": "10032",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3104",
+    "word": "etc",
+    "parts": "r",
+    "frequency": "10112",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3105",
+    "word": "standing",
+    "parts": "n",
+    "frequency": "9691",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3106",
+    "word": "asleep",
+    "parts": "j",
+    "frequency": "10684",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3107",
+    "word": "tennis",
+    "parts": "n",
+    "frequency": "9985",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3108",
+    "word": "nerve",
+    "parts": "n",
+    "frequency": "9933",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3109",
+    "word": "barrel",
+    "parts": "n",
+    "frequency": "9951",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3110",
+    "word": "bombing",
+    "parts": "n",
+    "frequency": "10462",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3111",
+    "word": "membership",
+    "parts": "n",
+    "frequency": "10273",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3112",
+    "word": "ratio",
+    "parts": "n",
+    "frequency": "10457",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3113",
+    "word": "menu",
+    "parts": "n",
+    "frequency": "10238",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3114",
+    "word": "purchase",
+    "parts": "n",
+    "frequency": "10001",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3115",
+    "word": "controversial",
+    "parts": "j",
+    "frequency": "9918",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3116",
+    "word": "desperate",
+    "parts": "j",
+    "frequency": "9795",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3117",
+    "word": "rate",
+    "parts": "v",
+    "frequency": "10244",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3118",
+    "word": "lifestyle",
+    "parts": "n",
+    "frequency": "9904",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3119",
+    "word": "humor",
+    "parts": "n",
+    "frequency": "9654",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3120",
+    "word": "loud",
+    "parts": "j",
+    "frequency": "10324",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3121",
+    "word": "glove",
+    "parts": "n",
+    "frequency": "10218",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3122",
+    "word": "suspect",
+    "parts": "n",
+    "frequency": "10204",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3123",
+    "word": "sufficient",
+    "parts": "j",
+    "frequency": "10275",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3124",
+    "word": "narrative",
+    "parts": "n",
+    "frequency": "10954",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3125",
+    "word": "photographer",
+    "parts": "n",
+    "frequency": "9739",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3126",
+    "word": "helicopter",
+    "parts": "n",
+    "frequency": "9986",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3127",
+    "word": "Catholic",
+    "parts": "n",
+    "frequency": "9955",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3128",
+    "word": "modest",
+    "parts": "j",
+    "frequency": "9746",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3129",
+    "word": "provider",
+    "parts": "n",
+    "frequency": "10196",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3130",
+    "word": "delay",
+    "parts": "n",
+    "frequency": "9868",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3131",
+    "word": "agricultural",
+    "parts": "j",
+    "frequency": "10535",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3132",
+    "word": "explode",
+    "parts": "v",
+    "frequency": "9821",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3133",
+    "word": "stroke",
+    "parts": "n",
+    "frequency": "9891",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3134",
+    "word": "scope",
+    "parts": "n",
+    "frequency": "10115",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3135",
+    "word": "punishment",
+    "parts": "n",
+    "frequency": "9986",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3136",
+    "word": "handful",
+    "parts": "n",
+    "frequency": "9735",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3137",
+    "word": "badly",
+    "parts": "r",
+    "frequency": "9652",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3138",
+    "word": "horizon",
+    "parts": "n",
+    "frequency": "9857",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3139",
+    "word": "curious",
+    "parts": "j",
+    "frequency": "9738",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3140",
+    "word": "downtown",
+    "parts": "j",
+    "frequency": "10172",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3141",
+    "word": "girlfriend",
+    "parts": "n",
+    "frequency": "9832",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3142",
+    "word": "prompt",
+    "parts": "v",
+    "frequency": "9741",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3143",
+    "word": "request",
+    "parts": "v",
+    "frequency": "9619",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3144",
+    "word": "cholesterol",
+    "parts": "n",
+    "frequency": "10641",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3145",
+    "word": "absorb",
+    "parts": "v",
+    "frequency": "9762",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3146",
+    "word": "adjustment",
+    "parts": "n",
+    "frequency": "10309",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3147",
+    "word": "taxpayer",
+    "parts": "n",
+    "frequency": "10113",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3148",
+    "word": "eager",
+    "parts": "j",
+    "frequency": "9627",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3149",
+    "word": "principal",
+    "parts": "n",
+    "frequency": "9920",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3150",
+    "word": "detailed",
+    "parts": "j",
+    "frequency": "10006",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3151",
+    "word": "motivation",
+    "parts": "n",
+    "frequency": "10566",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3152",
+    "word": "assignment",
+    "parts": "n",
+    "frequency": "9874",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3153",
+    "word": "restriction",
+    "parts": "n",
+    "frequency": "9928",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3154",
+    "word": "across",
+    "parts": "r",
+    "frequency": "9825",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3155",
+    "word": "Palestinian",
+    "parts": "n",
+    "frequency": "10484",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3156",
+    "word": "laboratory",
+    "parts": "n",
+    "frequency": "9972",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3157",
+    "word": "workshop",
+    "parts": "n",
+    "frequency": "9926",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3158",
+    "word": "differently",
+    "parts": "r",
+    "frequency": "9565",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3159",
+    "word": "auto",
+    "parts": "n",
+    "frequency": "10006",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3160",
+    "word": "romantic",
+    "parts": "j",
+    "frequency": "9561",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3161",
+    "word": "cotton",
+    "parts": "n",
+    "frequency": "9734",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3162",
+    "word": "motor",
+    "parts": "n",
+    "frequency": "9977",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3163",
+    "word": "sue",
+    "parts": "v",
+    "frequency": "9797",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3164",
+    "word": "flavor",
+    "parts": "n",
+    "frequency": "10143",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3165",
+    "word": "overlook",
+    "parts": "v",
+    "frequency": "9553",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3166",
+    "word": "float",
+    "parts": "v",
+    "frequency": "9982",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3167",
+    "word": "undergo",
+    "parts": "v",
+    "frequency": "9826",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3168",
+    "word": "sequence",
+    "parts": "n",
+    "frequency": "10041",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3169",
+    "word": "demonstration",
+    "parts": "n",
+    "frequency": "9729",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3170",
+    "word": "jet",
+    "parts": "n",
+    "frequency": "9690",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3171",
+    "word": "orange",
+    "parts": "j",
+    "frequency": "9755",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3172",
+    "word": "consumption",
+    "parts": "n",
+    "frequency": "10162",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3173",
+    "word": "assert",
+    "parts": "v",
+    "frequency": "10125",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3174",
+    "word": "blade",
+    "parts": "n",
+    "frequency": "10394",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3175",
+    "word": "temporary",
+    "parts": "j",
+    "frequency": "9465",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3176",
+    "word": "medication",
+    "parts": "n",
+    "frequency": "9789",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3177",
+    "word": "print",
+    "parts": "v",
+    "frequency": "9508",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3178",
+    "word": "cabin",
+    "parts": "n",
+    "frequency": "9955",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3179",
+    "word": "bite",
+    "parts": "v",
+    "frequency": "9982",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3180",
+    "word": "relative",
+    "parts": "j",
+    "frequency": "10283",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3181",
+    "word": "edition",
+    "parts": "n",
+    "frequency": "9638",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3182",
+    "word": "valley",
+    "parts": "n",
+    "frequency": "9708",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3183",
+    "word": "yours",
+    "parts": "p",
+    "frequency": "10004",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3184",
+    "word": "pitch",
+    "parts": "n",
+    "frequency": "9586",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3185",
+    "word": "pine",
+    "parts": "n",
+    "frequency": "9824",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3186",
+    "word": "brilliant",
+    "parts": "j",
+    "frequency": "9493",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3187",
+    "word": "versus",
+    "parts": "i",
+    "frequency": "10007",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3188",
+    "word": "manufacturing",
+    "parts": "n",
+    "frequency": "9822",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3189",
+    "word": "risk",
+    "parts": "v",
+    "frequency": "9285",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "3190",
+    "word": "Christian",
+    "parts": "n",
+    "frequency": "9751",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3191",
+    "word": "complex",
+    "parts": "n",
+    "frequency": "9573",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3192",
+    "word": "absolute",
+    "parts": "j",
+    "frequency": "9622",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3193",
+    "word": "chef",
+    "parts": "n",
+    "frequency": "10131",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3194",
+    "word": "discrimination",
+    "parts": "n",
+    "frequency": "9872",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3195",
+    "word": "offensive",
+    "parts": "j",
+    "frequency": "9902",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3196",
+    "word": "German",
+    "parts": "n",
+    "frequency": "9586",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3197",
+    "word": "suit",
+    "parts": "v",
+    "frequency": "9477",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3198",
+    "word": "boom",
+    "parts": "n",
+    "frequency": "9457",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3199",
+    "word": "register",
+    "parts": "v",
+    "frequency": "9389",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3200",
+    "word": "appoint",
+    "parts": "v",
+    "frequency": "9541",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3201",
+    "word": "heritage",
+    "parts": "n",
+    "frequency": "9670",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3202",
+    "word": "God",
+    "parts": "n",
+    "frequency": "9694",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3203",
+    "word": "terrorist",
+    "parts": "j",
+    "frequency": "10390",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3204",
+    "word": "dominant",
+    "parts": "j",
+    "frequency": "10143",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3205",
+    "word": "successfully",
+    "parts": "r",
+    "frequency": "9728",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3206",
+    "word": "shit",
+    "parts": "n",
+    "frequency": "11047",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "3207",
+    "word": "lemon",
+    "parts": "n",
+    "frequency": "10095",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3208",
+    "word": "hungry",
+    "parts": "j",
+    "frequency": "9653",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3209",
+    "word": "sense",
+    "parts": "v",
+    "frequency": "9697",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3210",
+    "word": "dry",
+    "parts": "v",
+    "frequency": "9678",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3211",
+    "word": "wander",
+    "parts": "v",
+    "frequency": "9822",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3212",
+    "word": "submit",
+    "parts": "v",
+    "frequency": "9507",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3213",
+    "word": "economics",
+    "parts": "n",
+    "frequency": "9758",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3214",
+    "word": "naked",
+    "parts": "j",
+    "frequency": "9897",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3215",
+    "word": "anticipate",
+    "parts": "v",
+    "frequency": "9345",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3216",
+    "word": "nut",
+    "parts": "n",
+    "frequency": "9605",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3217",
+    "word": "legacy",
+    "parts": "n",
+    "frequency": "9461",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3218",
+    "word": "extension",
+    "parts": "n",
+    "frequency": "9672",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3219",
+    "word": "shrug",
+    "parts": "v",
+    "frequency": "10689",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "3220",
+    "word": "fly",
+    "parts": "n",
+    "frequency": "9689",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3221",
+    "word": "battery",
+    "parts": "n",
+    "frequency": "9793",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3222",
+    "word": "arrival",
+    "parts": "n",
+    "frequency": "9302",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3223",
+    "word": "legitimate",
+    "parts": "j",
+    "frequency": "9543",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3224",
+    "word": "orientation",
+    "parts": "n",
+    "frequency": "10613",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3225",
+    "word": "inflation",
+    "parts": "n",
+    "frequency": "9758",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3226",
+    "word": "cope",
+    "parts": "v",
+    "frequency": "9952",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3227",
+    "word": "flame",
+    "parts": "n",
+    "frequency": "9716",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3228",
+    "word": "cluster",
+    "parts": "n",
+    "frequency": "9821",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3229",
+    "word": "host",
+    "parts": "v",
+    "frequency": "9750",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3230",
+    "word": "wound",
+    "parts": "n",
+    "frequency": "9404",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3231",
+    "word": "dependent",
+    "parts": "j",
+    "frequency": "10029",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3232",
+    "word": "shower",
+    "parts": "n",
+    "frequency": "9624",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3233",
+    "word": "institutional",
+    "parts": "j",
+    "frequency": "10397",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3234",
+    "word": "depict",
+    "parts": "v",
+    "frequency": "9721",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3235",
+    "word": "operating",
+    "parts": "n",
+    "frequency": "9480",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3236",
+    "word": "flesh",
+    "parts": "n",
+    "frequency": "9867",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3237",
+    "word": "garage",
+    "parts": "n",
+    "frequency": "9573",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3238",
+    "word": "operator",
+    "parts": "n",
+    "frequency": "9351",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3239",
+    "word": "instructor",
+    "parts": "n",
+    "frequency": "9912",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3240",
+    "word": "collapse",
+    "parts": "v",
+    "frequency": "9163",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3241",
+    "word": "borrow",
+    "parts": "v",
+    "frequency": "9150",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3242",
+    "word": "furthermore",
+    "parts": "r",
+    "frequency": "10349",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3243",
+    "word": "comedy",
+    "parts": "n",
+    "frequency": "9596",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3244",
+    "word": "mortgage",
+    "parts": "n",
+    "frequency": "10022",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3245",
+    "word": "sanction",
+    "parts": "n",
+    "frequency": "10163",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3246",
+    "word": "civilian",
+    "parts": "j",
+    "frequency": "9684",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3247",
+    "word": "twelve",
+    "parts": "m",
+    "frequency": "9638",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3248",
+    "word": "weekly",
+    "parts": "j",
+    "frequency": "9297",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3249",
+    "word": "habitat",
+    "parts": "n",
+    "frequency": "9665",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3250",
+    "word": "grain",
+    "parts": "n",
+    "frequency": "9520",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3251",
+    "word": "brush",
+    "parts": "v",
+    "frequency": "9806",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3252",
+    "word": "consciousness",
+    "parts": "n",
+    "frequency": "9758",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3253",
+    "word": "devote",
+    "parts": "v",
+    "frequency": "9326",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3254",
+    "word": "crack",
+    "parts": "v",
+    "frequency": "9334",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3255",
+    "word": "measurement",
+    "parts": "n",
+    "frequency": "10187",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3256",
+    "word": "province",
+    "parts": "n",
+    "frequency": "9491",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3257",
+    "word": "ease",
+    "parts": "v",
+    "frequency": "9247",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3258",
+    "word": "seize",
+    "parts": "v",
+    "frequency": "9106",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3259",
+    "word": "ethics",
+    "parts": "n",
+    "frequency": "9561",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3260",
+    "word": "nomination",
+    "parts": "n",
+    "frequency": "9698",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3261",
+    "word": "permission",
+    "parts": "n",
+    "frequency": "9298",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3262",
+    "word": "wise",
+    "parts": "j",
+    "frequency": "9101",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3263",
+    "word": "actress",
+    "parts": "n",
+    "frequency": "9448",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3264",
+    "word": "summit",
+    "parts": "n",
+    "frequency": "9628",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3265",
+    "word": "acid",
+    "parts": "n",
+    "frequency": "9772",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3266",
+    "word": "odds",
+    "parts": "n",
+    "frequency": "9094",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3267",
+    "word": "gifted",
+    "parts": "j",
+    "frequency": "10941",
+    "dispersion": "0.80"
+  },
+  {
+    "rank": "3268",
+    "word": "frustration",
+    "parts": "n",
+    "frequency": "9005",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3269",
+    "word": "medium",
+    "parts": "n",
+    "frequency": "9523",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3270",
+    "word": "function",
+    "parts": "v",
+    "frequency": "9570",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3271",
+    "word": "physically",
+    "parts": "r",
+    "frequency": "9039",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3272",
+    "word": "grant",
+    "parts": "n",
+    "frequency": "9372",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3273",
+    "word": "distinguish",
+    "parts": "v",
+    "frequency": "9664",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3274",
+    "word": "shore",
+    "parts": "n",
+    "frequency": "9191",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3275",
+    "word": "repeatedly",
+    "parts": "r",
+    "frequency": "9059",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3276",
+    "word": "lung",
+    "parts": "n",
+    "frequency": "9206",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3277",
+    "word": "firm",
+    "parts": "j",
+    "frequency": "9036",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3278",
+    "word": "running",
+    "parts": "j",
+    "frequency": "9271",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3279",
+    "word": "correct",
+    "parts": "v",
+    "frequency": "8988",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3280",
+    "word": "distinct",
+    "parts": "j",
+    "frequency": "9682",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3281",
+    "word": "artistic",
+    "parts": "j",
+    "frequency": "9423",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3282",
+    "word": "discourse",
+    "parts": "n",
+    "frequency": "10560",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "3283",
+    "word": "basket",
+    "parts": "n",
+    "frequency": "9316",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3284",
+    "word": "ah",
+    "parts": "u",
+    "frequency": "9788",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3285",
+    "word": "fighting",
+    "parts": "n",
+    "frequency": "9274",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3286",
+    "word": "impressive",
+    "parts": "j",
+    "frequency": "9100",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3287",
+    "word": "competitor",
+    "parts": "n",
+    "frequency": "9377",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3288",
+    "word": "ugly",
+    "parts": "j",
+    "frequency": "9267",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3289",
+    "word": "worried",
+    "parts": "j",
+    "frequency": "9215",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3290",
+    "word": "portray",
+    "parts": "v",
+    "frequency": "9202",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3291",
+    "word": "powder",
+    "parts": "n",
+    "frequency": "9639",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3292",
+    "word": "ghost",
+    "parts": "n",
+    "frequency": "9564",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3293",
+    "word": "persuade",
+    "parts": "v",
+    "frequency": "8998",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3294",
+    "word": "moderate",
+    "parts": "j",
+    "frequency": "9220",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3295",
+    "word": "subsequent",
+    "parts": "j",
+    "frequency": "9796",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3296",
+    "word": "continued",
+    "parts": "j",
+    "frequency": "9402",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3297",
+    "word": "cookie",
+    "parts": "n",
+    "frequency": "9480",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3298",
+    "word": "carrier",
+    "parts": "n",
+    "frequency": "9251",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3299",
+    "word": "cooking",
+    "parts": "n",
+    "frequency": "9403",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3300",
+    "word": "frequent",
+    "parts": "j",
+    "frequency": "9267",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3301",
+    "word": "ban",
+    "parts": "v",
+    "frequency": "9226",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3302",
+    "word": "swing",
+    "parts": "n",
+    "frequency": "9214",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3303",
+    "word": "orange",
+    "parts": "n",
+    "frequency": "9219",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3304",
+    "word": "awful",
+    "parts": "j",
+    "frequency": "9300",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3305",
+    "word": "admire",
+    "parts": "v",
+    "frequency": "9016",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3306",
+    "word": "pet",
+    "parts": "n",
+    "frequency": "9118",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3307",
+    "word": "miracle",
+    "parts": "n",
+    "frequency": "8981",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3308",
+    "word": "exceed",
+    "parts": "v",
+    "frequency": "9362",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3309",
+    "word": "rhythm",
+    "parts": "n",
+    "frequency": "9010",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3310",
+    "word": "widespread",
+    "parts": "j",
+    "frequency": "9319",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3311",
+    "word": "killing",
+    "parts": "n",
+    "frequency": "9109",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3312",
+    "word": "lovely",
+    "parts": "j",
+    "frequency": "9327",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3313",
+    "word": "sin",
+    "parts": "n",
+    "frequency": "9048",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3314",
+    "word": "charity",
+    "parts": "n",
+    "frequency": "9054",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3315",
+    "word": "script",
+    "parts": "n",
+    "frequency": "8924",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3316",
+    "word": "tactic",
+    "parts": "n",
+    "frequency": "8993",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3317",
+    "word": "identification",
+    "parts": "n",
+    "frequency": "9793",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3318",
+    "word": "transformation",
+    "parts": "n",
+    "frequency": "9561",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3319",
+    "word": "everyday",
+    "parts": "j",
+    "frequency": "9065",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3320",
+    "word": "headline",
+    "parts": "n",
+    "frequency": "9272",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3321",
+    "word": "crash",
+    "parts": "v",
+    "frequency": "9101",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3322",
+    "word": "venture",
+    "parts": "n",
+    "frequency": "9278",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3323",
+    "word": "invasion",
+    "parts": "n",
+    "frequency": "9412",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3324",
+    "word": "military",
+    "parts": "n",
+    "frequency": "9288",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3325",
+    "word": "nonetheless",
+    "parts": "r",
+    "frequency": "9168",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3326",
+    "word": "adequate",
+    "parts": "j",
+    "frequency": "9406",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3327",
+    "word": "piano",
+    "parts": "n",
+    "frequency": "8968",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3328",
+    "word": "grocery",
+    "parts": "n",
+    "frequency": "9017",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3329",
+    "word": "intensity",
+    "parts": "n",
+    "frequency": "9238",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3330",
+    "word": "exhibit",
+    "parts": "v",
+    "frequency": "9459",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3331",
+    "word": "high",
+    "parts": "r",
+    "frequency": "8771",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3332",
+    "word": "blanket",
+    "parts": "n",
+    "frequency": "9385",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3333",
+    "word": "margin",
+    "parts": "n",
+    "frequency": "8994",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3334",
+    "word": "principal",
+    "parts": "j",
+    "frequency": "9218",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3335",
+    "word": "quarterback",
+    "parts": "n",
+    "frequency": "10014",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3336",
+    "word": "mouse",
+    "parts": "n",
+    "frequency": "9449",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3337",
+    "word": "rope",
+    "parts": "n",
+    "frequency": "9300",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3338",
+    "word": "concrete",
+    "parts": "j",
+    "frequency": "8871",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3339",
+    "word": "prescription",
+    "parts": "n",
+    "frequency": "9169",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3340",
+    "word": "African-American",
+    "parts": "j",
+    "frequency": "9121",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3341",
+    "word": "chase",
+    "parts": "v",
+    "frequency": "8980",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3342",
+    "word": "document",
+    "parts": "v",
+    "frequency": "9274",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3343",
+    "word": "brick",
+    "parts": "n",
+    "frequency": "9069",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3344",
+    "word": "recruit",
+    "parts": "v",
+    "frequency": "9028",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3345",
+    "word": "patch",
+    "parts": "n",
+    "frequency": "9155",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3346",
+    "word": "consensus",
+    "parts": "n",
+    "frequency": "9250",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3347",
+    "word": "horror",
+    "parts": "n",
+    "frequency": "8875",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3348",
+    "word": "recording",
+    "parts": "n",
+    "frequency": "8866",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3349",
+    "word": "changing",
+    "parts": "j",
+    "frequency": "9055",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3350",
+    "word": "painter",
+    "parts": "n",
+    "frequency": "9153",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3351",
+    "word": "colonial",
+    "parts": "j",
+    "frequency": "9628",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3352",
+    "word": "pie",
+    "parts": "n",
+    "frequency": "9019",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3353",
+    "word": "sake",
+    "parts": "n",
+    "frequency": "8954",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3354",
+    "word": "gaze",
+    "parts": "n",
+    "frequency": "9852",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3355",
+    "word": "courage",
+    "parts": "n",
+    "frequency": "8720",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3356",
+    "word": "pregnancy",
+    "parts": "n",
+    "frequency": "8944",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3357",
+    "word": "swear",
+    "parts": "v",
+    "frequency": "9181",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3358",
+    "word": "defeat",
+    "parts": "v",
+    "frequency": "8945",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3359",
+    "word": "clue",
+    "parts": "n",
+    "frequency": "8732",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3360",
+    "word": "reinforce",
+    "parts": "v",
+    "frequency": "9345",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3361",
+    "word": "win",
+    "parts": "n",
+    "frequency": "9584",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3362",
+    "word": "confusion",
+    "parts": "n",
+    "frequency": "8751",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3363",
+    "word": "slice",
+    "parts": "n",
+    "frequency": "9337",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3364",
+    "word": "occupation",
+    "parts": "n",
+    "frequency": "9115",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3365",
+    "word": "dear",
+    "parts": "j",
+    "frequency": "9151",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3366",
+    "word": "coal",
+    "parts": "n",
+    "frequency": "8928",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3367",
+    "word": "sacred",
+    "parts": "j",
+    "frequency": "9018",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3368",
+    "word": "criminal",
+    "parts": "n",
+    "frequency": "8854",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3369",
+    "word": "formula",
+    "parts": "n",
+    "frequency": "8965",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3370",
+    "word": "cognitive",
+    "parts": "j",
+    "frequency": "10166",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "3371",
+    "word": "collective",
+    "parts": "j",
+    "frequency": "9384",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3372",
+    "word": "exact",
+    "parts": "j",
+    "frequency": "8643",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3373",
+    "word": "uncle",
+    "parts": "n",
+    "frequency": "9355",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3374",
+    "word": "square",
+    "parts": "n",
+    "frequency": "8906",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3375",
+    "word": "captain",
+    "parts": "n",
+    "frequency": "9087",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3376",
+    "word": "sigh",
+    "parts": "v",
+    "frequency": "10099",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "3377",
+    "word": "attribute",
+    "parts": "v",
+    "frequency": "9228",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3378",
+    "word": "dare",
+    "parts": "v",
+    "frequency": "9033",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3379",
+    "word": "okay",
+    "parts": "j",
+    "frequency": "9499",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3380",
+    "word": "homeless",
+    "parts": "j",
+    "frequency": "9149",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3381",
+    "word": "cool",
+    "parts": "v",
+    "frequency": "8980",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3382",
+    "word": "gallery",
+    "parts": "n",
+    "frequency": "8963",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3383",
+    "word": "soccer",
+    "parts": "n",
+    "frequency": "9212",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3384",
+    "word": "defendant",
+    "parts": "n",
+    "frequency": "9230",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3385",
+    "word": "tunnel",
+    "parts": "n",
+    "frequency": "9024",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3386",
+    "word": "fitness",
+    "parts": "n",
+    "frequency": "9261",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3387",
+    "word": "lap",
+    "parts": "n",
+    "frequency": "9260",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3388",
+    "word": "grave",
+    "parts": "n",
+    "frequency": "8868",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3389",
+    "word": "toe",
+    "parts": "n",
+    "frequency": "9047",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3390",
+    "word": "container",
+    "parts": "n",
+    "frequency": "8956",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3391",
+    "word": "virtue",
+    "parts": "n",
+    "frequency": "9111",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3392",
+    "word": "abroad",
+    "parts": "r",
+    "frequency": "8788",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3393",
+    "word": "architect",
+    "parts": "n",
+    "frequency": "8969",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3394",
+    "word": "dramatically",
+    "parts": "r",
+    "frequency": "8712",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3395",
+    "word": "makeup",
+    "parts": "n",
+    "frequency": "8916",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3396",
+    "word": "inquiry",
+    "parts": "n",
+    "frequency": "9136",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3397",
+    "word": "rose",
+    "parts": "n",
+    "frequency": "8988",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3398",
+    "word": "surprisingly",
+    "parts": "r",
+    "frequency": "8704",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3399",
+    "word": "highlight",
+    "parts": "v",
+    "frequency": "9119",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3400",
+    "word": "decrease",
+    "parts": "v",
+    "frequency": "9291",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3401",
+    "word": "indication",
+    "parts": "n",
+    "frequency": "8715",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3402",
+    "word": "rail",
+    "parts": "n",
+    "frequency": "8826",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3403",
+    "word": "anniversary",
+    "parts": "n",
+    "frequency": "8676",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3404",
+    "word": "couch",
+    "parts": "n",
+    "frequency": "9209",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3405",
+    "word": "alliance",
+    "parts": "n",
+    "frequency": "8948",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3406",
+    "word": "hypothesis",
+    "parts": "n",
+    "frequency": "9890",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "3407",
+    "word": "boyfriend",
+    "parts": "n",
+    "frequency": "8755",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3408",
+    "word": "compose",
+    "parts": "v",
+    "frequency": "8866",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3409",
+    "word": "peer",
+    "parts": "v",
+    "frequency": "9099",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3410",
+    "word": "mess",
+    "parts": "n",
+    "frequency": "8745",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3411",
+    "word": "rank",
+    "parts": "v",
+    "frequency": "8879",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3412",
+    "word": "legend",
+    "parts": "n",
+    "frequency": "8660",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3413",
+    "word": "regulate",
+    "parts": "v",
+    "frequency": "8856",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3414",
+    "word": "adolescent",
+    "parts": "n",
+    "frequency": "10568",
+    "dispersion": "0.78"
+  },
+  {
+    "rank": "3415",
+    "word": "shine",
+    "parts": "v",
+    "frequency": "8984",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3416",
+    "word": "norm",
+    "parts": "n",
+    "frequency": "9360",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3417",
+    "word": "upset",
+    "parts": "v",
+    "frequency": "8570",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3418",
+    "word": "remark",
+    "parts": "n",
+    "frequency": "8453",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3419",
+    "word": "resign",
+    "parts": "v",
+    "frequency": "8867",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3420",
+    "word": "reward",
+    "parts": "n",
+    "frequency": "8662",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3421",
+    "word": "gentle",
+    "parts": "j",
+    "frequency": "8766",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3422",
+    "word": "related",
+    "parts": "j",
+    "frequency": "9227",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3423",
+    "word": "organ",
+    "parts": "n",
+    "frequency": "8596",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3424",
+    "word": "lightly",
+    "parts": "r",
+    "frequency": "8893",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3425",
+    "word": "concerning",
+    "parts": "i",
+    "frequency": "9329",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3426",
+    "word": "invent",
+    "parts": "v",
+    "frequency": "8461",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3427",
+    "word": "laughter",
+    "parts": "n",
+    "frequency": "9019",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3428",
+    "word": "fit",
+    "parts": "j",
+    "frequency": "8550",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3429",
+    "word": "northwest",
+    "parts": "n",
+    "frequency": "8650",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3430",
+    "word": "counseling",
+    "parts": "n",
+    "frequency": "9303",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3431",
+    "word": "tight",
+    "parts": "r",
+    "frequency": "8980",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3432",
+    "word": "receiver",
+    "parts": "n",
+    "frequency": "8882",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3433",
+    "word": "ritual",
+    "parts": "n",
+    "frequency": "8883",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3434",
+    "word": "insect",
+    "parts": "n",
+    "frequency": "8814",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3435",
+    "word": "interrupt",
+    "parts": "v",
+    "frequency": "8757",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3436",
+    "word": "salmon",
+    "parts": "n",
+    "frequency": "8860",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3437",
+    "word": "favor",
+    "parts": "n",
+    "frequency": "8403",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3438",
+    "word": "trading",
+    "parts": "n",
+    "frequency": "8787",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3439",
+    "word": "concern",
+    "parts": "v",
+    "frequency": "8702",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3440",
+    "word": "magic",
+    "parts": "j",
+    "frequency": "8506",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3441",
+    "word": "superior",
+    "parts": "j",
+    "frequency": "8632",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3442",
+    "word": "combat",
+    "parts": "n",
+    "frequency": "8675",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3443",
+    "word": "stem",
+    "parts": "n",
+    "frequency": "8963",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3444",
+    "word": "surgeon",
+    "parts": "n",
+    "frequency": "8519",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3445",
+    "word": "acceptable",
+    "parts": "j",
+    "frequency": "8723",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3446",
+    "word": "physics",
+    "parts": "n",
+    "frequency": "9184",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3447",
+    "word": "rape",
+    "parts": "n",
+    "frequency": "8790",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3448",
+    "word": "counsel",
+    "parts": "n",
+    "frequency": "9387",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3449",
+    "word": "brush",
+    "parts": "n",
+    "frequency": "8821",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3450",
+    "word": "jeans",
+    "parts": "n",
+    "frequency": "8851",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3451",
+    "word": "hunt",
+    "parts": "v",
+    "frequency": "8812",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3452",
+    "word": "continuous",
+    "parts": "j",
+    "frequency": "8996",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3453",
+    "word": "log",
+    "parts": "n",
+    "frequency": "8606",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3454",
+    "word": "echo",
+    "parts": "v",
+    "frequency": "8477",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3455",
+    "word": "pill",
+    "parts": "n",
+    "frequency": "8537",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3456",
+    "word": "excited",
+    "parts": "j",
+    "frequency": "8491",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3457",
+    "word": "sculpture",
+    "parts": "n",
+    "frequency": "8659",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3458",
+    "word": "compound",
+    "parts": "n",
+    "frequency": "8573",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3459",
+    "word": "integrate",
+    "parts": "v",
+    "frequency": "9060",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3460",
+    "word": "flour",
+    "parts": "n",
+    "frequency": "9103",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3461",
+    "word": "bitter",
+    "parts": "j",
+    "frequency": "8353",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3462",
+    "word": "bare",
+    "parts": "j",
+    "frequency": "8943",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3463",
+    "word": "slope",
+    "parts": "n",
+    "frequency": "8573",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3464",
+    "word": "rent",
+    "parts": "v",
+    "frequency": "8446",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3465",
+    "word": "presidency",
+    "parts": "n",
+    "frequency": "8814",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3466",
+    "word": "serving",
+    "parts": "n",
+    "frequency": "9453",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3467",
+    "word": "subtle",
+    "parts": "j",
+    "frequency": "8442",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3468",
+    "word": "greatly",
+    "parts": "r",
+    "frequency": "8648",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3469",
+    "word": "bishop",
+    "parts": "n",
+    "frequency": "8639",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3470",
+    "word": "drinking",
+    "parts": "n",
+    "frequency": "8446",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3471",
+    "word": "delay",
+    "parts": "v",
+    "frequency": "8333",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3472",
+    "word": "cry",
+    "parts": "n",
+    "frequency": "8648",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3473",
+    "word": "acceptance",
+    "parts": "n",
+    "frequency": "8870",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3474",
+    "word": "collapse",
+    "parts": "n",
+    "frequency": "8397",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3475",
+    "word": "shop",
+    "parts": "v",
+    "frequency": "8509",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3476",
+    "word": "pump",
+    "parts": "n",
+    "frequency": "8617",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3477",
+    "word": "candy",
+    "parts": "n",
+    "frequency": "8633",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3478",
+    "word": "evil",
+    "parts": "n",
+    "frequency": "8391",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3479",
+    "word": "final",
+    "parts": "n",
+    "frequency": "8964",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3480",
+    "word": "finance",
+    "parts": "v",
+    "frequency": "8571",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3481",
+    "word": "pleased",
+    "parts": "j",
+    "frequency": "8502",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3482",
+    "word": "medal",
+    "parts": "n",
+    "frequency": "8991",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3483",
+    "word": "beg",
+    "parts": "v",
+    "frequency": "8542",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3484",
+    "word": "sponsor",
+    "parts": "v",
+    "frequency": "8542",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3485",
+    "word": "ethical",
+    "parts": "j",
+    "frequency": "9018",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3486",
+    "word": "secondary",
+    "parts": "j",
+    "frequency": "9121",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3487",
+    "word": "slam",
+    "parts": "v",
+    "frequency": "9076",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3488",
+    "word": "export",
+    "parts": "n",
+    "frequency": "9013",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3489",
+    "word": "experimental",
+    "parts": "j",
+    "frequency": "9019",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3490",
+    "word": "melt",
+    "parts": "v",
+    "frequency": "8533",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3491",
+    "word": "midnight",
+    "parts": "n",
+    "frequency": "8440",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3492",
+    "word": "net",
+    "parts": "j",
+    "frequency": "8563",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3493",
+    "word": "curve",
+    "parts": "n",
+    "frequency": "8397",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3494",
+    "word": "integrity",
+    "parts": "n",
+    "frequency": "8463",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3495",
+    "word": "entitle",
+    "parts": "v",
+    "frequency": "8381",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3496",
+    "word": "evident",
+    "parts": "j",
+    "frequency": "8753",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3497",
+    "word": "logic",
+    "parts": "n",
+    "frequency": "8646",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3498",
+    "word": "essence",
+    "parts": "n",
+    "frequency": "8388",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3499",
+    "word": "park",
+    "parts": "v",
+    "frequency": "8650",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3500",
+    "word": "exclude",
+    "parts": "v",
+    "frequency": "8780",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3501",
+    "word": "harsh",
+    "parts": "j",
+    "frequency": "8092",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "3502",
+    "word": "closet",
+    "parts": "n",
+    "frequency": "8597",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3503",
+    "word": "suburban",
+    "parts": "j",
+    "frequency": "8463",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3504",
+    "word": "greet",
+    "parts": "v",
+    "frequency": "8367",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3505",
+    "word": "favor",
+    "parts": "i",
+    "frequency": "8357",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3506",
+    "word": "interior",
+    "parts": "n",
+    "frequency": "8370",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3507",
+    "word": "corridor",
+    "parts": "n",
+    "frequency": "8842",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3508",
+    "word": "murder",
+    "parts": "v",
+    "frequency": "8462",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3509",
+    "word": "retail",
+    "parts": "j",
+    "frequency": "8600",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3510",
+    "word": "pitcher",
+    "parts": "n",
+    "frequency": "8835",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3511",
+    "word": "march",
+    "parts": "v",
+    "frequency": "8267",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3512",
+    "word": "snake",
+    "parts": "n",
+    "frequency": "8523",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3513",
+    "word": "pitch",
+    "parts": "v",
+    "frequency": "8628",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3514",
+    "word": "excuse",
+    "parts": "v",
+    "frequency": "8722",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3515",
+    "word": "cross",
+    "parts": "n",
+    "frequency": "8207",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3516",
+    "word": "weakness",
+    "parts": "n",
+    "frequency": "8275",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3517",
+    "word": "pig",
+    "parts": "n",
+    "frequency": "8307",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3518",
+    "word": "cold",
+    "parts": "n",
+    "frequency": "8527",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3519",
+    "word": "classical",
+    "parts": "j",
+    "frequency": "8475",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3520",
+    "word": "estimated",
+    "parts": "j",
+    "frequency": "8464",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3521",
+    "word": "T-shirt",
+    "parts": "n",
+    "frequency": "8386",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3522",
+    "word": "online",
+    "parts": "r",
+    "frequency": "8729",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3523",
+    "word": "unemployment",
+    "parts": "n",
+    "frequency": "8471",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3524",
+    "word": "civilization",
+    "parts": "n",
+    "frequency": "8447",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3525",
+    "word": "fold",
+    "parts": "v",
+    "frequency": "8630",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3526",
+    "word": "patient",
+    "parts": "j",
+    "frequency": "8504",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3527",
+    "word": "pop",
+    "parts": "n",
+    "frequency": "8316",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3528",
+    "word": "daily",
+    "parts": "r",
+    "frequency": "8405",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3529",
+    "word": "reverse",
+    "parts": "v",
+    "frequency": "8154",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3530",
+    "word": "missing",
+    "parts": "j",
+    "frequency": "8232",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3531",
+    "word": "correlation",
+    "parts": "n",
+    "frequency": "9584",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "3532",
+    "word": "humanity",
+    "parts": "n",
+    "frequency": "8259",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3533",
+    "word": "flash",
+    "parts": "v",
+    "frequency": "8815",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3534",
+    "word": "developer",
+    "parts": "n",
+    "frequency": "8671",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3535",
+    "word": "reliable",
+    "parts": "j",
+    "frequency": "8302",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3536",
+    "word": "excitement",
+    "parts": "n",
+    "frequency": "8160",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3537",
+    "word": "beef",
+    "parts": "n",
+    "frequency": "8416",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3538",
+    "word": "Islam",
+    "parts": "n",
+    "frequency": "8755",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3539",
+    "word": "Roman",
+    "parts": "j",
+    "frequency": "8299",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3540",
+    "word": "stretch",
+    "parts": "n",
+    "frequency": "8285",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3541",
+    "word": "architecture",
+    "parts": "n",
+    "frequency": "8449",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3542",
+    "word": "occasional",
+    "parts": "j",
+    "frequency": "8162",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3543",
+    "word": "administrative",
+    "parts": "j",
+    "frequency": "8895",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3544",
+    "word": "elbow",
+    "parts": "n",
+    "frequency": "8536",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3545",
+    "word": "deadly",
+    "parts": "j",
+    "frequency": "8196",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3546",
+    "word": "Muslim",
+    "parts": "n",
+    "frequency": "8498",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3547",
+    "word": "Hispanic",
+    "parts": "j",
+    "frequency": "8690",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3548",
+    "word": "allegation",
+    "parts": "n",
+    "frequency": "8675",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3549",
+    "word": "tip",
+    "parts": "v",
+    "frequency": "8300",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3550",
+    "word": "confuse",
+    "parts": "v",
+    "frequency": "8045",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3551",
+    "word": "airplane",
+    "parts": "n",
+    "frequency": "8254",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3552",
+    "word": "monthly",
+    "parts": "j",
+    "frequency": "8335",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3553",
+    "word": "duck",
+    "parts": "n",
+    "frequency": "8335",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3554",
+    "word": "dose",
+    "parts": "n",
+    "frequency": "8291",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3555",
+    "word": "Korean",
+    "parts": "j",
+    "frequency": "8441",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3556",
+    "word": "plead",
+    "parts": "v",
+    "frequency": "8140",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3557",
+    "word": "initiate",
+    "parts": "v",
+    "frequency": "8630",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3558",
+    "word": "lecture",
+    "parts": "n",
+    "frequency": "8278",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3559",
+    "word": "van",
+    "parts": "n",
+    "frequency": "8364",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3560",
+    "word": "sixth",
+    "parts": "m",
+    "frequency": "8170",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3561",
+    "word": "bay",
+    "parts": "n",
+    "frequency": "8209",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3562",
+    "word": "mainstream",
+    "parts": "j",
+    "frequency": "8170",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3563",
+    "word": "suburb",
+    "parts": "n",
+    "frequency": "8249",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3564",
+    "word": "sandwich",
+    "parts": "n",
+    "frequency": "8298",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3565",
+    "word": "unlike",
+    "parts": "j",
+    "frequency": "8103",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3566",
+    "word": "trunk",
+    "parts": "n",
+    "frequency": "8400",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3567",
+    "word": "rumor",
+    "parts": "n",
+    "frequency": "8023",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3568",
+    "word": "implementation",
+    "parts": "n",
+    "frequency": "9293",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "3569",
+    "word": "swallow",
+    "parts": "v",
+    "frequency": "8583",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3570",
+    "word": "motivate",
+    "parts": "v",
+    "frequency": "8324",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3571",
+    "word": "render",
+    "parts": "v",
+    "frequency": "8288",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3572",
+    "word": "longtime",
+    "parts": "j",
+    "frequency": "8439",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3573",
+    "word": "trap",
+    "parts": "v",
+    "frequency": "8030",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3574",
+    "word": "restrict",
+    "parts": "v",
+    "frequency": "8340",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3575",
+    "word": "cloth",
+    "parts": "n",
+    "frequency": "8287",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3576",
+    "word": "seemingly",
+    "parts": "r",
+    "frequency": "8010",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3577",
+    "word": "legislative",
+    "parts": "j",
+    "frequency": "8384",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3578",
+    "word": "effectiveness",
+    "parts": "n",
+    "frequency": "8889",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3579",
+    "word": "enforce",
+    "parts": "v",
+    "frequency": "8162",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3580",
+    "word": "lens",
+    "parts": "n",
+    "frequency": "8313",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3581",
+    "word": "reach",
+    "parts": "n",
+    "frequency": "7982",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3582",
+    "word": "inspector",
+    "parts": "n",
+    "frequency": "8652",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3583",
+    "word": "lend",
+    "parts": "v",
+    "frequency": "7961",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3584",
+    "word": "plain",
+    "parts": "j",
+    "frequency": "8015",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3585",
+    "word": "fraud",
+    "parts": "n",
+    "frequency": "8176",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3586",
+    "word": "companion",
+    "parts": "n",
+    "frequency": "8136",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3587",
+    "word": "contend",
+    "parts": "v",
+    "frequency": "8249",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3588",
+    "word": "nail",
+    "parts": "n",
+    "frequency": "8255",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3589",
+    "word": "array",
+    "parts": "n",
+    "frequency": "8167",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3590",
+    "word": "strict",
+    "parts": "j",
+    "frequency": "8013",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3591",
+    "word": "assemble",
+    "parts": "v",
+    "frequency": "7996",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3592",
+    "word": "frankly",
+    "parts": "r",
+    "frequency": "8620",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3593",
+    "word": "rat",
+    "parts": "n",
+    "frequency": "8177",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3594",
+    "word": "burst",
+    "parts": "v",
+    "frequency": "8393",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3595",
+    "word": "hallway",
+    "parts": "n",
+    "frequency": "8717",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3596",
+    "word": "cave",
+    "parts": "n",
+    "frequency": "8261",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3597",
+    "word": "inevitable",
+    "parts": "j",
+    "frequency": "7889",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3598",
+    "word": "southwest",
+    "parts": "n",
+    "frequency": "8190",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3599",
+    "word": "monster",
+    "parts": "n",
+    "frequency": "8164",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3600",
+    "word": "speed",
+    "parts": "v",
+    "frequency": "7936",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3601",
+    "word": "protest",
+    "parts": "v",
+    "frequency": "7871",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3602",
+    "word": "unexpected",
+    "parts": "j",
+    "frequency": "7829",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3603",
+    "word": "obstacle",
+    "parts": "n",
+    "frequency": "8075",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3604",
+    "word": "facilitate",
+    "parts": "v",
+    "frequency": "8946",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3605",
+    "word": "encounter",
+    "parts": "n",
+    "frequency": "8073",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3606",
+    "word": "rip",
+    "parts": "v",
+    "frequency": "8164",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3607",
+    "word": "herb",
+    "parts": "n",
+    "frequency": "8279",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3608",
+    "word": "overwhelming",
+    "parts": "j",
+    "frequency": "7831",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3609",
+    "word": "integration",
+    "parts": "n",
+    "frequency": "8847",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3610",
+    "word": "crystal",
+    "parts": "n",
+    "frequency": "8035",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3611",
+    "word": "recession",
+    "parts": "n",
+    "frequency": "8809",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3612",
+    "word": "wish",
+    "parts": "n",
+    "frequency": "7789",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3613",
+    "word": "top",
+    "parts": "v",
+    "frequency": "8162",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3614",
+    "word": "written",
+    "parts": "j",
+    "frequency": "8371",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3615",
+    "word": "motive",
+    "parts": "n",
+    "frequency": "8029",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3616",
+    "word": "label",
+    "parts": "v",
+    "frequency": "7969",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3617",
+    "word": "flood",
+    "parts": "n",
+    "frequency": "7986",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3618",
+    "word": "pen",
+    "parts": "n",
+    "frequency": "8117",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3619",
+    "word": "ownership",
+    "parts": "n",
+    "frequency": "8177",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3620",
+    "word": "nightmare",
+    "parts": "n",
+    "frequency": "7895",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3621",
+    "word": "notice",
+    "parts": "n",
+    "frequency": "7762",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3622",
+    "word": "inspection",
+    "parts": "n",
+    "frequency": "8128",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3623",
+    "word": "supervisor",
+    "parts": "n",
+    "frequency": "8049",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3624",
+    "word": "consult",
+    "parts": "v",
+    "frequency": "7778",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3625",
+    "word": "arena",
+    "parts": "n",
+    "frequency": "8008",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3626",
+    "word": "laugh",
+    "parts": "n",
+    "frequency": "8164",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3627",
+    "word": "diagnosis",
+    "parts": "n",
+    "frequency": "8454",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3628",
+    "word": "possession",
+    "parts": "n",
+    "frequency": "7828",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3629",
+    "word": "forgive",
+    "parts": "v",
+    "frequency": "8003",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3630",
+    "word": "warm",
+    "parts": "v",
+    "frequency": "7973",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3631",
+    "word": "consistently",
+    "parts": "r",
+    "frequency": "8104",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3632",
+    "word": "basement",
+    "parts": "n",
+    "frequency": "7988",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3633",
+    "word": "project",
+    "parts": "v",
+    "frequency": "7871",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3634",
+    "word": "drift",
+    "parts": "v",
+    "frequency": "8311",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3635",
+    "word": "drain",
+    "parts": "v",
+    "frequency": "8123",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3636",
+    "word": "last",
+    "parts": "r",
+    "frequency": "8415",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3637",
+    "word": "prosecution",
+    "parts": "n",
+    "frequency": "8941",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "3638",
+    "word": "maximum",
+    "parts": "j",
+    "frequency": "8075",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3639",
+    "word": "announcement",
+    "parts": "n",
+    "frequency": "7863",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3640",
+    "word": "warrior",
+    "parts": "n",
+    "frequency": "7975",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3641",
+    "word": "prediction",
+    "parts": "n",
+    "frequency": "7996",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3642",
+    "word": "bacteria",
+    "parts": "n",
+    "frequency": "8256",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3643",
+    "word": "questionnaire",
+    "parts": "n",
+    "frequency": "9123",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "3644",
+    "word": "mud",
+    "parts": "n",
+    "frequency": "8026",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3645",
+    "word": "infrastructure",
+    "parts": "n",
+    "frequency": "7961",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3646",
+    "word": "hurry",
+    "parts": "v",
+    "frequency": "8723",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3647",
+    "word": "privilege",
+    "parts": "n",
+    "frequency": "7923",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3648",
+    "word": "temple",
+    "parts": "n",
+    "frequency": "7949",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3649",
+    "word": "medium",
+    "parts": "j",
+    "frequency": "8586",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3650",
+    "word": "outdoor",
+    "parts": "j",
+    "frequency": "8101",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3651",
+    "word": "suck",
+    "parts": "v",
+    "frequency": "8204",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3652",
+    "word": "and/or",
+    "parts": "c",
+    "frequency": "8481",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3653",
+    "word": "broadcast",
+    "parts": "n",
+    "frequency": "8130",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3654",
+    "word": "re",
+    "parts": "i",
+    "frequency": "15773",
+    "dispersion": "0.47"
+  },
+  {
+    "rank": "3655",
+    "word": "leap",
+    "parts": "v",
+    "frequency": "8376",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3656",
+    "word": "random",
+    "parts": "j",
+    "frequency": "7818",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3657",
+    "word": "past",
+    "parts": "r",
+    "frequency": "7921",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3658",
+    "word": "wrist",
+    "parts": "n",
+    "frequency": "8250",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3659",
+    "word": "curtain",
+    "parts": "n",
+    "frequency": "8204",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3660",
+    "word": "monitor",
+    "parts": "n",
+    "frequency": "7879",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3661",
+    "word": "pond",
+    "parts": "n",
+    "frequency": "7971",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3662",
+    "word": "domain",
+    "parts": "n",
+    "frequency": "8641",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3663",
+    "word": "guilt",
+    "parts": "n",
+    "frequency": "7746",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3664",
+    "word": "cattle",
+    "parts": "n",
+    "frequency": "7827",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3665",
+    "word": "subject",
+    "parts": "i",
+    "frequency": "8087",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3666",
+    "word": "walking",
+    "parts": "n",
+    "frequency": "7847",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3667",
+    "word": "playoff",
+    "parts": "n",
+    "frequency": "8803",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "3668",
+    "word": "minimum",
+    "parts": "j",
+    "frequency": "8011",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3669",
+    "word": "fiscal",
+    "parts": "j",
+    "frequency": "8005",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3670",
+    "word": "skirt",
+    "parts": "n",
+    "frequency": "8167",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3671",
+    "word": "dump",
+    "parts": "v",
+    "frequency": "7689",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3672",
+    "word": "hence",
+    "parts": "r",
+    "frequency": "8468",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3673",
+    "word": "database",
+    "parts": "n",
+    "frequency": "8094",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3674",
+    "word": "uncomfortable",
+    "parts": "j",
+    "frequency": "7667",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3675",
+    "word": "aim",
+    "parts": "n",
+    "frequency": "7973",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3676",
+    "word": "execute",
+    "parts": "v",
+    "frequency": "7671",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3677",
+    "word": "limb",
+    "parts": "n",
+    "frequency": "8018",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3678",
+    "word": "ideology",
+    "parts": "n",
+    "frequency": "8485",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3679",
+    "word": "average",
+    "parts": "v",
+    "frequency": "8106",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3680",
+    "word": "welcome",
+    "parts": "j",
+    "frequency": "7798",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3681",
+    "word": "tune",
+    "parts": "v",
+    "frequency": "7934",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3682",
+    "word": "continuing",
+    "parts": "j",
+    "frequency": "7845",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3683",
+    "word": "harm",
+    "parts": "n",
+    "frequency": "7619",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3684",
+    "word": "railroad",
+    "parts": "n",
+    "frequency": "7796",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3685",
+    "word": "endure",
+    "parts": "v",
+    "frequency": "7586",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3686",
+    "word": "radiation",
+    "parts": "n",
+    "frequency": "7912",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3687",
+    "word": "horn",
+    "parts": "n",
+    "frequency": "7813",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3688",
+    "word": "chronic",
+    "parts": "j",
+    "frequency": "8036",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3689",
+    "word": "peaceful",
+    "parts": "j",
+    "frequency": "7704",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3690",
+    "word": "innovation",
+    "parts": "n",
+    "frequency": "8099",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3691",
+    "word": "strain",
+    "parts": "n",
+    "frequency": "7713",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3692",
+    "word": "guitar",
+    "parts": "n",
+    "frequency": "7712",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3693",
+    "word": "replacement",
+    "parts": "n",
+    "frequency": "7734",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3694",
+    "word": "behave",
+    "parts": "v",
+    "frequency": "7546",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3695",
+    "word": "administer",
+    "parts": "v",
+    "frequency": "8135",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3696",
+    "word": "simultaneously",
+    "parts": "r",
+    "frequency": "7960",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3697",
+    "word": "dancer",
+    "parts": "n",
+    "frequency": "7664",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3698",
+    "word": "amendment",
+    "parts": "n",
+    "frequency": "8132",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3699",
+    "word": "guard",
+    "parts": "v",
+    "frequency": "7659",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3700",
+    "word": "pad",
+    "parts": "n",
+    "frequency": "7846",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3701",
+    "word": "transmission",
+    "parts": "n",
+    "frequency": "7829",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3702",
+    "word": "await",
+    "parts": "v",
+    "frequency": "7550",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3703",
+    "word": "retired",
+    "parts": "j",
+    "frequency": "7869",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3704",
+    "word": "trigger",
+    "parts": "v",
+    "frequency": "7630",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3705",
+    "word": "spill",
+    "parts": "v",
+    "frequency": "7798",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3706",
+    "word": "grateful",
+    "parts": "j",
+    "frequency": "7597",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3707",
+    "word": "grace",
+    "parts": "n",
+    "frequency": "7634",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3708",
+    "word": "virtual",
+    "parts": "j",
+    "frequency": "7776",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3709",
+    "word": "response",
+    "parts": "i",
+    "frequency": "7868",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3710",
+    "word": "colony",
+    "parts": "n",
+    "frequency": "7822",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3711",
+    "word": "adoption",
+    "parts": "n",
+    "frequency": "7986",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3712",
+    "word": "slide",
+    "parts": "n",
+    "frequency": "7780",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3713",
+    "word": "indigenous",
+    "parts": "j",
+    "frequency": "8785",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "3714",
+    "word": "closed",
+    "parts": "j",
+    "frequency": "7500",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3715",
+    "word": "convict",
+    "parts": "v",
+    "frequency": "7940",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3716",
+    "word": "civilian",
+    "parts": "n",
+    "frequency": "7889",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3717",
+    "word": "towel",
+    "parts": "n",
+    "frequency": "7978",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3718",
+    "word": "modify",
+    "parts": "v",
+    "frequency": "8997",
+    "dispersion": "0.80"
+  },
+  {
+    "rank": "3719",
+    "word": "particle",
+    "parts": "n",
+    "frequency": "7925",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3720",
+    "word": "award",
+    "parts": "v",
+    "frequency": "7666",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3721",
+    "word": "glance",
+    "parts": "n",
+    "frequency": "8122",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3722",
+    "word": "prize",
+    "parts": "n",
+    "frequency": "7519",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3723",
+    "word": "landing",
+    "parts": "n",
+    "frequency": "7646",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3724",
+    "word": "conduct",
+    "parts": "n",
+    "frequency": "7821",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3725",
+    "word": "blue",
+    "parts": "n",
+    "frequency": "7671",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3726",
+    "word": "boost",
+    "parts": "v",
+    "frequency": "7863",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3727",
+    "word": "bat",
+    "parts": "n",
+    "frequency": "7694",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3728",
+    "word": "alarm",
+    "parts": "n",
+    "frequency": "7631",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3729",
+    "word": "festival",
+    "parts": "n",
+    "frequency": "7775",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3730",
+    "word": "grip",
+    "parts": "n",
+    "frequency": "7724",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3731",
+    "word": "weird",
+    "parts": "j",
+    "frequency": "7709",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3732",
+    "word": "undermine",
+    "parts": "v",
+    "frequency": "7762",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3733",
+    "word": "freshman",
+    "parts": "n",
+    "frequency": "7849",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3734",
+    "word": "sweat",
+    "parts": "n",
+    "frequency": "8036",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3735",
+    "word": "outer",
+    "parts": "j",
+    "frequency": "7618",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3736",
+    "word": "European",
+    "parts": "n",
+    "frequency": "7688",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3737",
+    "word": "drunk",
+    "parts": "j",
+    "frequency": "7890",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3738",
+    "word": "survey",
+    "parts": "v",
+    "frequency": "7556",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3739",
+    "word": "research",
+    "parts": "v",
+    "frequency": "7618",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3740",
+    "word": "separation",
+    "parts": "n",
+    "frequency": "7760",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3741",
+    "word": "traditionally",
+    "parts": "r",
+    "frequency": "7717",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3742",
+    "word": "stuff",
+    "parts": "v",
+    "frequency": "7687",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3743",
+    "word": "govern",
+    "parts": "v",
+    "frequency": "7668",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3744",
+    "word": "southeast",
+    "parts": "n",
+    "frequency": "7589",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3745",
+    "word": "intelligent",
+    "parts": "j",
+    "frequency": "7373",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3746",
+    "word": "wherever",
+    "parts": "r",
+    "frequency": "7382",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3747",
+    "word": "ballot",
+    "parts": "n",
+    "frequency": "9217",
+    "dispersion": "0.77"
+  },
+  {
+    "rank": "3748",
+    "word": "rhetoric",
+    "parts": "n",
+    "frequency": "7765",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3749",
+    "word": "convinced",
+    "parts": "j",
+    "frequency": "7389",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3750",
+    "word": "driving",
+    "parts": "j",
+    "frequency": "7438",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3751",
+    "word": "vitamin",
+    "parts": "n",
+    "frequency": "8245",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3752",
+    "word": "enthusiasm",
+    "parts": "n",
+    "frequency": "7368",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3753",
+    "word": "accommodate",
+    "parts": "v",
+    "frequency": "7571",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3754",
+    "word": "praise",
+    "parts": "v",
+    "frequency": "7379",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3755",
+    "word": "injure",
+    "parts": "v",
+    "frequency": "7574",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3756",
+    "word": "wilderness",
+    "parts": "n",
+    "frequency": "7916",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3757",
+    "word": "nearby",
+    "parts": "r",
+    "frequency": "7545",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3758",
+    "word": "endless",
+    "parts": "j",
+    "frequency": "7458",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3759",
+    "word": "mandate",
+    "parts": "n",
+    "frequency": "7704",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3760",
+    "word": "pause",
+    "parts": "n",
+    "frequency": "8140",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3761",
+    "word": "excuse",
+    "parts": "n",
+    "frequency": "7388",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3762",
+    "word": "respectively",
+    "parts": "r",
+    "frequency": "8223",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3763",
+    "word": "uncertainty",
+    "parts": "n",
+    "frequency": "7671",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3764",
+    "word": "chaos",
+    "parts": "n",
+    "frequency": "7304",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3765",
+    "word": "short",
+    "parts": "r",
+    "frequency": "7495",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3766",
+    "word": "mechanical",
+    "parts": "j",
+    "frequency": "7835",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3767",
+    "word": "canvas",
+    "parts": "n",
+    "frequency": "7795",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3768",
+    "word": "forty",
+    "parts": "m",
+    "frequency": "7692",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3769",
+    "word": "matter",
+    "parts": "d",
+    "frequency": "7396",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3770",
+    "word": "lobby",
+    "parts": "n",
+    "frequency": "7556",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3771",
+    "word": "profound",
+    "parts": "j",
+    "frequency": "7477",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3772",
+    "word": "format",
+    "parts": "n",
+    "frequency": "7910",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3773",
+    "word": "trait",
+    "parts": "n",
+    "frequency": "7980",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3774",
+    "word": "currency",
+    "parts": "n",
+    "frequency": "7753",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3775",
+    "word": "turkey",
+    "parts": "n",
+    "frequency": "7757",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3776",
+    "word": "reserve",
+    "parts": "n",
+    "frequency": "7585",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3777",
+    "word": "beam",
+    "parts": "n",
+    "frequency": "7625",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3778",
+    "word": "abuse",
+    "parts": "v",
+    "frequency": "7554",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3779",
+    "word": "astronomer",
+    "parts": "n",
+    "frequency": "8157",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3780",
+    "word": "corruption",
+    "parts": "n",
+    "frequency": "7518",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3781",
+    "word": "contractor",
+    "parts": "n",
+    "frequency": "7634",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3782",
+    "word": "apologize",
+    "parts": "v",
+    "frequency": "7485",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3783",
+    "word": "doctrine",
+    "parts": "n",
+    "frequency": "8081",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3784",
+    "word": "genuine",
+    "parts": "j",
+    "frequency": "7336",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3785",
+    "word": "thumb",
+    "parts": "n",
+    "frequency": "7659",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3786",
+    "word": "unity",
+    "parts": "n",
+    "frequency": "7810",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3787",
+    "word": "compromise",
+    "parts": "n",
+    "frequency": "7469",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3788",
+    "word": "horrible",
+    "parts": "j",
+    "frequency": "7538",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3789",
+    "word": "behavioral",
+    "parts": "j",
+    "frequency": "8320",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3790",
+    "word": "exclusive",
+    "parts": "j",
+    "frequency": "7402",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3791",
+    "word": "scatter",
+    "parts": "v",
+    "frequency": "7461",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3792",
+    "word": "commonly",
+    "parts": "r",
+    "frequency": "7861",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3793",
+    "word": "convey",
+    "parts": "v",
+    "frequency": "7529",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3794",
+    "word": "rush",
+    "parts": "n",
+    "frequency": "7458",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3795",
+    "word": "twist",
+    "parts": "v",
+    "frequency": "7875",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3796",
+    "word": "complexity",
+    "parts": "n",
+    "frequency": "7813",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3797",
+    "word": "fork",
+    "parts": "n",
+    "frequency": "7742",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3798",
+    "word": "disk",
+    "parts": "n",
+    "frequency": "7898",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3799",
+    "word": "relieve",
+    "parts": "v",
+    "frequency": "7352",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3800",
+    "word": "suspicion",
+    "parts": "n",
+    "frequency": "7187",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3801",
+    "word": "lock",
+    "parts": "n",
+    "frequency": "7605",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3802",
+    "word": "finish",
+    "parts": "n",
+    "frequency": "7585",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3803",
+    "word": "residence",
+    "parts": "n",
+    "frequency": "7332",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3804",
+    "word": "shame",
+    "parts": "n",
+    "frequency": "7347",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3805",
+    "word": "meaningful",
+    "parts": "j",
+    "frequency": "7719",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3806",
+    "word": "sidewalk",
+    "parts": "n",
+    "frequency": "7668",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3807",
+    "word": "Olympics",
+    "parts": "n",
+    "frequency": "8039",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3808",
+    "word": "technological",
+    "parts": "j",
+    "frequency": "7780",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3809",
+    "word": "signature",
+    "parts": "n",
+    "frequency": "7349",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3810",
+    "word": "pleasant",
+    "parts": "j",
+    "frequency": "7425",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3811",
+    "word": "wow",
+    "parts": "u",
+    "frequency": "8016",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3812",
+    "word": "suspend",
+    "parts": "v",
+    "frequency": "7228",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3813",
+    "word": "rebel",
+    "parts": "n",
+    "frequency": "7525",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3814",
+    "word": "frozen",
+    "parts": "j",
+    "frequency": "7474",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3815",
+    "word": "desire",
+    "parts": "v",
+    "frequency": "7454",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3816",
+    "word": "spouse",
+    "parts": "n",
+    "frequency": "7510",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3817",
+    "word": "fluid",
+    "parts": "n",
+    "frequency": "7464",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3818",
+    "word": "pension",
+    "parts": "n",
+    "frequency": "7660",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3819",
+    "word": "resume",
+    "parts": "v",
+    "frequency": "7243",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3820",
+    "word": "theoretical",
+    "parts": "j",
+    "frequency": "8320",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "3821",
+    "word": "sodium",
+    "parts": "n",
+    "frequency": "7998",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3822",
+    "word": "blow",
+    "parts": "n",
+    "frequency": "7324",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3823",
+    "word": "promotion",
+    "parts": "n",
+    "frequency": "7416",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3824",
+    "word": "delicate",
+    "parts": "j",
+    "frequency": "7332",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3825",
+    "word": "forehead",
+    "parts": "n",
+    "frequency": "8123",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3826",
+    "word": "rebuild",
+    "parts": "v",
+    "frequency": "7474",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3827",
+    "word": "bounce",
+    "parts": "v",
+    "frequency": "7451",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3828",
+    "word": "electrical",
+    "parts": "j",
+    "frequency": "7347",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3829",
+    "word": "hook",
+    "parts": "n",
+    "frequency": "7382",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3830",
+    "word": "detective",
+    "parts": "n",
+    "frequency": "7441",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3831",
+    "word": "traveler",
+    "parts": "n",
+    "frequency": "7336",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3832",
+    "word": "click",
+    "parts": "v",
+    "frequency": "7549",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3833",
+    "word": "compensation",
+    "parts": "n",
+    "frequency": "7512",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3834",
+    "word": "signal",
+    "parts": "v",
+    "frequency": "7171",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3835",
+    "word": "exit",
+    "parts": "n",
+    "frequency": "7333",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3836",
+    "word": "attraction",
+    "parts": "n",
+    "frequency": "7280",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3837",
+    "word": "dedicate",
+    "parts": "v",
+    "frequency": "7226",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3838",
+    "word": "altogether",
+    "parts": "r",
+    "frequency": "7147",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3839",
+    "word": "pickup",
+    "parts": "n",
+    "frequency": "7415",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3840",
+    "word": "carve",
+    "parts": "v",
+    "frequency": "7294",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3841",
+    "word": "needle",
+    "parts": "n",
+    "frequency": "7378",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3842",
+    "word": "belly",
+    "parts": "n",
+    "frequency": "7784",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3843",
+    "word": "ship",
+    "parts": "v",
+    "frequency": "7264",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3844",
+    "word": "scare",
+    "parts": "v",
+    "frequency": "7367",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3845",
+    "word": "portfolio",
+    "parts": "n",
+    "frequency": "7663",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3846",
+    "word": "shuttle",
+    "parts": "n",
+    "frequency": "7593",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3847",
+    "word": "invisible",
+    "parts": "j",
+    "frequency": "7355",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3848",
+    "word": "timing",
+    "parts": "n",
+    "frequency": "7345",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3849",
+    "word": "engagement",
+    "parts": "n",
+    "frequency": "7675",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3850",
+    "word": "ankle",
+    "parts": "n",
+    "frequency": "7397",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3851",
+    "word": "transaction",
+    "parts": "n",
+    "frequency": "7418",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3852",
+    "word": "rescue",
+    "parts": "v",
+    "frequency": "7187",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3853",
+    "word": "counterpart",
+    "parts": "n",
+    "frequency": "7484",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3854",
+    "word": "historically",
+    "parts": "r",
+    "frequency": "7426",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3855",
+    "word": "firmly",
+    "parts": "r",
+    "frequency": "7189",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3856",
+    "word": "mild",
+    "parts": "j",
+    "frequency": "7211",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3857",
+    "word": "rider",
+    "parts": "n",
+    "frequency": "7450",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3858",
+    "word": "doll",
+    "parts": "n",
+    "frequency": "7351",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3859",
+    "word": "noon",
+    "parts": "n",
+    "frequency": "7425",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3860",
+    "word": "exhibit",
+    "parts": "n",
+    "frequency": "7326",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3861",
+    "word": "amid",
+    "parts": "i",
+    "frequency": "7264",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3862",
+    "word": "identical",
+    "parts": "j",
+    "frequency": "7247",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3863",
+    "word": "precise",
+    "parts": "j",
+    "frequency": "7211",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3864",
+    "word": "anxious",
+    "parts": "j",
+    "frequency": "7096",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3865",
+    "word": "structural",
+    "parts": "j",
+    "frequency": "7870",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3866",
+    "word": "residential",
+    "parts": "j",
+    "frequency": "7415",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3867",
+    "word": "loud",
+    "parts": "r",
+    "frequency": "7541",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3868",
+    "word": "diagnose",
+    "parts": "v",
+    "frequency": "7255",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3869",
+    "word": "carbohydrate",
+    "parts": "n",
+    "frequency": "8057",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3870",
+    "word": "liberty",
+    "parts": "n",
+    "frequency": "7442",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3871",
+    "word": "poster",
+    "parts": "n",
+    "frequency": "7069",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3872",
+    "word": "theology",
+    "parts": "n",
+    "frequency": "7866",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3873",
+    "word": "nonprofit",
+    "parts": "j",
+    "frequency": "7482",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3874",
+    "word": "crawl",
+    "parts": "v",
+    "frequency": "7596",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3875",
+    "word": "oxygen",
+    "parts": "n",
+    "frequency": "7191",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3876",
+    "word": "handsome",
+    "parts": "j",
+    "frequency": "7512",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3877",
+    "word": "magic",
+    "parts": "n",
+    "frequency": "7415",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3878",
+    "word": "sum",
+    "parts": "n",
+    "frequency": "7217",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3879",
+    "word": "provided",
+    "parts": "c",
+    "frequency": "7431",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3880",
+    "word": "businessman",
+    "parts": "n",
+    "frequency": "7190",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3881",
+    "word": "promising",
+    "parts": "j",
+    "frequency": "7075",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3882",
+    "word": "conscious",
+    "parts": "j",
+    "frequency": "7152",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3883",
+    "word": "determination",
+    "parts": "n",
+    "frequency": "7170",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3884",
+    "word": "donor",
+    "parts": "n",
+    "frequency": "7231",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3885",
+    "word": "hers",
+    "parts": "p",
+    "frequency": "7770",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3886",
+    "word": "pastor",
+    "parts": "n",
+    "frequency": "7260",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3887",
+    "word": "jazz",
+    "parts": "n",
+    "frequency": "7220",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3888",
+    "word": "opera",
+    "parts": "n",
+    "frequency": "7332",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3889",
+    "word": "Japanese",
+    "parts": "n",
+    "frequency": "7419",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3890",
+    "word": "bite",
+    "parts": "n",
+    "frequency": "7160",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3891",
+    "word": "frame",
+    "parts": "v",
+    "frequency": "7063",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3892",
+    "word": "evil",
+    "parts": "j",
+    "frequency": "7045",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3893",
+    "word": "acquisition",
+    "parts": "n",
+    "frequency": "7338",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3894",
+    "word": "pit",
+    "parts": "n",
+    "frequency": "7132",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3895",
+    "word": "hug",
+    "parts": "v",
+    "frequency": "7478",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3896",
+    "word": "wildlife",
+    "parts": "n",
+    "frequency": "7361",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3897",
+    "word": "punish",
+    "parts": "v",
+    "frequency": "6955",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3898",
+    "word": "giant",
+    "parts": "n",
+    "frequency": "7102",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3899",
+    "word": "primary",
+    "parts": "n",
+    "frequency": "7823",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3900",
+    "word": "equity",
+    "parts": "n",
+    "frequency": "7277",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3901",
+    "word": "wrong",
+    "parts": "r",
+    "frequency": "7038",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3902",
+    "word": "doorway",
+    "parts": "n",
+    "frequency": "7914",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "3903",
+    "word": "departure",
+    "parts": "n",
+    "frequency": "7008",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3904",
+    "word": "elevator",
+    "parts": "n",
+    "frequency": "7535",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3905",
+    "word": "teenage",
+    "parts": "j",
+    "frequency": "7030",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3906",
+    "word": "guidance",
+    "parts": "n",
+    "frequency": "7399",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3907",
+    "word": "happiness",
+    "parts": "n",
+    "frequency": "7036",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3908",
+    "word": "statue",
+    "parts": "n",
+    "frequency": "7058",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3909",
+    "word": "pursuit",
+    "parts": "n",
+    "frequency": "7070",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3910",
+    "word": "repair",
+    "parts": "n",
+    "frequency": "7088",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3911",
+    "word": "decent",
+    "parts": "j",
+    "frequency": "6954",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3912",
+    "word": "gym",
+    "parts": "n",
+    "frequency": "7229",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3913",
+    "word": "oral",
+    "parts": "j",
+    "frequency": "7448",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3914",
+    "word": "clerk",
+    "parts": "n",
+    "frequency": "7234",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3915",
+    "word": "Israeli",
+    "parts": "n",
+    "frequency": "7673",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3916",
+    "word": "envelope",
+    "parts": "n",
+    "frequency": "7241",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3917",
+    "word": "reporting",
+    "parts": "n",
+    "frequency": "7184",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3918",
+    "word": "destination",
+    "parts": "n",
+    "frequency": "7039",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3919",
+    "word": "fist",
+    "parts": "n",
+    "frequency": "7729",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3920",
+    "word": "endorse",
+    "parts": "v",
+    "frequency": "7167",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3921",
+    "word": "exploration",
+    "parts": "n",
+    "frequency": "7294",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3922",
+    "word": "generous",
+    "parts": "j",
+    "frequency": "6907",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3923",
+    "word": "bath",
+    "parts": "n",
+    "frequency": "7149",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3924",
+    "word": "rescue",
+    "parts": "n",
+    "frequency": "7094",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3925",
+    "word": "thereby",
+    "parts": "r",
+    "frequency": "7588",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3926",
+    "word": "overall",
+    "parts": "r",
+    "frequency": "7225",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3927",
+    "word": "indicator",
+    "parts": "n",
+    "frequency": "7574",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3928",
+    "word": "sunlight",
+    "parts": "n",
+    "frequency": "7349",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3929",
+    "word": "feedback",
+    "parts": "n",
+    "frequency": "7735",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3930",
+    "word": "spectrum",
+    "parts": "n",
+    "frequency": "7216",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3931",
+    "word": "purple",
+    "parts": "j",
+    "frequency": "7216",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3932",
+    "word": "laser",
+    "parts": "n",
+    "frequency": "7197",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3933",
+    "word": "bold",
+    "parts": "j",
+    "frequency": "6936",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3934",
+    "word": "reluctant",
+    "parts": "j",
+    "frequency": "6842",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3935",
+    "word": "starting",
+    "parts": "n",
+    "frequency": "7118",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3936",
+    "word": "expertise",
+    "parts": "n",
+    "frequency": "7219",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3937",
+    "word": "practically",
+    "parts": "r",
+    "frequency": "6914",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3938",
+    "word": "program",
+    "parts": "v",
+    "frequency": "7015",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3939",
+    "word": "picture",
+    "parts": "v",
+    "frequency": "7103",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3940",
+    "word": "tune",
+    "parts": "n",
+    "frequency": "6887",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3941",
+    "word": "eating",
+    "parts": "n",
+    "frequency": "7067",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3942",
+    "word": "age",
+    "parts": "v",
+    "frequency": "7005",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3943",
+    "word": "volunteer",
+    "parts": "v",
+    "frequency": "6864",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "3944",
+    "word": "hint",
+    "parts": "n",
+    "frequency": "6951",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3945",
+    "word": "sharply",
+    "parts": "r",
+    "frequency": "6966",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3946",
+    "word": "parade",
+    "parts": "n",
+    "frequency": "7010",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3947",
+    "word": "advocate",
+    "parts": "v",
+    "frequency": "7198",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3948",
+    "word": "realm",
+    "parts": "n",
+    "frequency": "7261",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3949",
+    "word": "ban",
+    "parts": "n",
+    "frequency": "7070",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3950",
+    "word": "strip",
+    "parts": "v",
+    "frequency": "6894",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3951",
+    "word": "cancel",
+    "parts": "v",
+    "frequency": "6932",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3952",
+    "word": "blend",
+    "parts": "v",
+    "frequency": "7238",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3953",
+    "word": "therapist",
+    "parts": "n",
+    "frequency": "7170",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3954",
+    "word": "slice",
+    "parts": "v",
+    "frequency": "7316",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3955",
+    "word": "peel",
+    "parts": "v",
+    "frequency": "7182",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3956",
+    "word": "pizza",
+    "parts": "n",
+    "frequency": "7130",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3957",
+    "word": "recipient",
+    "parts": "n",
+    "frequency": "7126",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3958",
+    "word": "hesitate",
+    "parts": "v",
+    "frequency": "7462",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3959",
+    "word": "flip",
+    "parts": "v",
+    "frequency": "7274",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3960",
+    "word": "accounting",
+    "parts": "n",
+    "frequency": "7319",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3961",
+    "word": "debate",
+    "parts": "v",
+    "frequency": "6952",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3962",
+    "word": "bias",
+    "parts": "n",
+    "frequency": "7388",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "3963",
+    "word": "huh",
+    "parts": "u",
+    "frequency": "7563",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3964",
+    "word": "metaphor",
+    "parts": "n",
+    "frequency": "7461",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3965",
+    "word": "candle",
+    "parts": "n",
+    "frequency": "7204",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3966",
+    "word": "handle",
+    "parts": "n",
+    "frequency": "7101",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3967",
+    "word": "worry",
+    "parts": "n",
+    "frequency": "6811",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3968",
+    "word": "judicial",
+    "parts": "j",
+    "frequency": "7213",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3969",
+    "word": "entity",
+    "parts": "n",
+    "frequency": "7276",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3970",
+    "word": "suffering",
+    "parts": "n",
+    "frequency": "6955",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3971",
+    "word": "full-time",
+    "parts": "j",
+    "frequency": "6945",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3972",
+    "word": "feel",
+    "parts": "n",
+    "frequency": "6939",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3973",
+    "word": "lamp",
+    "parts": "n",
+    "frequency": "7290",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3974",
+    "word": "garbage",
+    "parts": "n",
+    "frequency": "6933",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3975",
+    "word": "servant",
+    "parts": "n",
+    "frequency": "7064",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3976",
+    "word": "addition",
+    "parts": "n",
+    "frequency": "7027",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3977",
+    "word": "regulatory",
+    "parts": "j",
+    "frequency": "7274",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3978",
+    "word": "diplomatic",
+    "parts": "j",
+    "frequency": "7193",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3979",
+    "word": "elegant",
+    "parts": "j",
+    "frequency": "6974",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3980",
+    "word": "inside",
+    "parts": "n",
+    "frequency": "6955",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3981",
+    "word": "reception",
+    "parts": "n",
+    "frequency": "6896",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3982",
+    "word": "vanish",
+    "parts": "v",
+    "frequency": "7154",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "3983",
+    "word": "automatically",
+    "parts": "r",
+    "frequency": "6823",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3984",
+    "word": "chin",
+    "parts": "n",
+    "frequency": "7585",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "3985",
+    "word": "trail",
+    "parts": "v",
+    "frequency": "7049",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3986",
+    "word": "necessity",
+    "parts": "n",
+    "frequency": "7071",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3987",
+    "word": "confess",
+    "parts": "v",
+    "frequency": "6815",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "3988",
+    "word": "racism",
+    "parts": "n",
+    "frequency": "7026",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3989",
+    "word": "starter",
+    "parts": "n",
+    "frequency": "7487",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "3990",
+    "word": "interior",
+    "parts": "j",
+    "frequency": "6931",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3991",
+    "word": "banking",
+    "parts": "n",
+    "frequency": "7120",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3992",
+    "word": "casual",
+    "parts": "j",
+    "frequency": "6946",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "3993",
+    "word": "gravity",
+    "parts": "n",
+    "frequency": "7000",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3994",
+    "word": "enroll",
+    "parts": "v",
+    "frequency": "7053",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "3995",
+    "word": "diminish",
+    "parts": "v",
+    "frequency": "6875",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "3996",
+    "word": "prevention",
+    "parts": "n",
+    "frequency": "7352",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "3997",
+    "word": "Arab",
+    "parts": "n",
+    "frequency": "7222",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "3998",
+    "word": "value",
+    "parts": "v",
+    "frequency": "7000",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "3999",
+    "word": "minimize",
+    "parts": "v",
+    "frequency": "7139",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4000",
+    "word": "chop",
+    "parts": "v",
+    "frequency": "7452",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4001",
+    "word": "performer",
+    "parts": "n",
+    "frequency": "6896",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4002",
+    "word": "intent",
+    "parts": "n",
+    "frequency": "6879",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4003",
+    "word": "isolate",
+    "parts": "v",
+    "frequency": "6920",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4004",
+    "word": "pump",
+    "parts": "v",
+    "frequency": "6765",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4005",
+    "word": "inventory",
+    "parts": "n",
+    "frequency": "7090",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4006",
+    "word": "productive",
+    "parts": "j",
+    "frequency": "7006",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4007",
+    "word": "assembly",
+    "parts": "n",
+    "frequency": "6914",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4008",
+    "word": "civic",
+    "parts": "j",
+    "frequency": "7088",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4009",
+    "word": "silk",
+    "parts": "n",
+    "frequency": "7128",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4010",
+    "word": "magnitude",
+    "parts": "n",
+    "frequency": "7115",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4011",
+    "word": "steep",
+    "parts": "j",
+    "frequency": "6972",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4012",
+    "word": "hostage",
+    "parts": "n",
+    "frequency": "8605",
+    "dispersion": "0.75"
+  },
+  {
+    "rank": "4013",
+    "word": "collector",
+    "parts": "n",
+    "frequency": "6976",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4014",
+    "word": "popularity",
+    "parts": "n",
+    "frequency": "6836",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4015",
+    "word": "kiss",
+    "parts": "n",
+    "frequency": "7195",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4016",
+    "word": "alien",
+    "parts": "n",
+    "frequency": "7134",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4017",
+    "word": "dynamic",
+    "parts": "j",
+    "frequency": "7175",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4018",
+    "word": "scary",
+    "parts": "j",
+    "frequency": "6865",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4019",
+    "word": "equation",
+    "parts": "n",
+    "frequency": "7372",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4020",
+    "word": "angel",
+    "parts": "n",
+    "frequency": "6978",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4021",
+    "word": "switch",
+    "parts": "n",
+    "frequency": "6781",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4022",
+    "word": "offering",
+    "parts": "n",
+    "frequency": "6856",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4023",
+    "word": "rage",
+    "parts": "n",
+    "frequency": "6877",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4024",
+    "word": "photography",
+    "parts": "n",
+    "frequency": "7087",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4025",
+    "word": "repair",
+    "parts": "v",
+    "frequency": "6730",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4026",
+    "word": "toilet",
+    "parts": "n",
+    "frequency": "6939",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4027",
+    "word": "disappointed",
+    "parts": "j",
+    "frequency": "6724",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4028",
+    "word": "precious",
+    "parts": "j",
+    "frequency": "6716",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4029",
+    "word": "prohibit",
+    "parts": "v",
+    "frequency": "6896",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4030",
+    "word": "representative",
+    "parts": "j",
+    "frequency": "7008",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4031",
+    "word": "content",
+    "parts": "j",
+    "frequency": "7113",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4032",
+    "word": "realistic",
+    "parts": "j",
+    "frequency": "6786",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4033",
+    "word": "Russian",
+    "parts": "n",
+    "frequency": "6891",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4034",
+    "word": "hidden",
+    "parts": "j",
+    "frequency": "6787",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4035",
+    "word": "command",
+    "parts": "v",
+    "frequency": "6688",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4036",
+    "word": "tender",
+    "parts": "j",
+    "frequency": "7013",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4037",
+    "word": "wake",
+    "parts": "n",
+    "frequency": "6630",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4038",
+    "word": "gathering",
+    "parts": "n",
+    "frequency": "6671",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4039",
+    "word": "outstanding",
+    "parts": "j",
+    "frequency": "6803",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4040",
+    "word": "stumble",
+    "parts": "v",
+    "frequency": "7076",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4041",
+    "word": "lonely",
+    "parts": "j",
+    "frequency": "6868",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4042",
+    "word": "automobile",
+    "parts": "n",
+    "frequency": "6829",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4043",
+    "word": "artificial",
+    "parts": "j",
+    "frequency": "6730",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4044",
+    "word": "dawn",
+    "parts": "n",
+    "frequency": "6929",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4045",
+    "word": "abstract",
+    "parts": "j",
+    "frequency": "7165",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4046",
+    "word": "descend",
+    "parts": "v",
+    "frequency": "6896",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4047",
+    "word": "silly",
+    "parts": "j",
+    "frequency": "6857",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4048",
+    "word": "hook",
+    "parts": "v",
+    "frequency": "6800",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4049",
+    "word": "tide",
+    "parts": "n",
+    "frequency": "6698",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4050",
+    "word": "shared",
+    "parts": "j",
+    "frequency": "7069",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4051",
+    "word": "hopefully",
+    "parts": "r",
+    "frequency": "6986",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4052",
+    "word": "readily",
+    "parts": "r",
+    "frequency": "6964",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4053",
+    "word": "cooperate",
+    "parts": "v",
+    "frequency": "6763",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4054",
+    "word": "revolutionary",
+    "parts": "j",
+    "frequency": "6886",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4055",
+    "word": "romance",
+    "parts": "n",
+    "frequency": "6705",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4056",
+    "word": "hardware",
+    "parts": "n",
+    "frequency": "6951",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4057",
+    "word": "pillow",
+    "parts": "n",
+    "frequency": "7122",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4058",
+    "word": "kit",
+    "parts": "n",
+    "frequency": "6912",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4059",
+    "word": "cook",
+    "parts": "n",
+    "frequency": "6866",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4060",
+    "word": "spread",
+    "parts": "n",
+    "frequency": "6686",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4061",
+    "word": "continent",
+    "parts": "n",
+    "frequency": "6730",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4062",
+    "word": "seal",
+    "parts": "v",
+    "frequency": "6660",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4063",
+    "word": "circuit",
+    "parts": "n",
+    "frequency": "6747",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4064",
+    "word": "sink",
+    "parts": "n",
+    "frequency": "7052",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4065",
+    "word": "ruling",
+    "parts": "n",
+    "frequency": "6947",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4066",
+    "word": "shortage",
+    "parts": "n",
+    "frequency": "6776",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4067",
+    "word": "annually",
+    "parts": "r",
+    "frequency": "6928",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4068",
+    "word": "lately",
+    "parts": "r",
+    "frequency": "6696",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4069",
+    "word": "trap",
+    "parts": "n",
+    "frequency": "6694",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4070",
+    "word": "scan",
+    "parts": "v",
+    "frequency": "6879",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4071",
+    "word": "fool",
+    "parts": "n",
+    "frequency": "6990",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4072",
+    "word": "deadline",
+    "parts": "n",
+    "frequency": "6932",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4073",
+    "word": "rear",
+    "parts": "j",
+    "frequency": "6910",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4074",
+    "word": "processing",
+    "parts": "n",
+    "frequency": "7220",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4075",
+    "word": "ranch",
+    "parts": "n",
+    "frequency": "6759",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4076",
+    "word": "coastal",
+    "parts": "j",
+    "frequency": "6880",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4077",
+    "word": "undertake",
+    "parts": "v",
+    "frequency": "7044",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4078",
+    "word": "softly",
+    "parts": "r",
+    "frequency": "7487",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "4079",
+    "word": "reserve",
+    "parts": "v",
+    "frequency": "6636",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4080",
+    "word": "burning",
+    "parts": "j",
+    "frequency": "6665",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4081",
+    "word": "verbal",
+    "parts": "j",
+    "frequency": "7227",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4082",
+    "word": "tribal",
+    "parts": "j",
+    "frequency": "6995",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4083",
+    "word": "ridiculous",
+    "parts": "j",
+    "frequency": "6695",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4084",
+    "word": "automatic",
+    "parts": "j",
+    "frequency": "6580",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4085",
+    "word": "diamond",
+    "parts": "n",
+    "frequency": "6743",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4086",
+    "word": "credibility",
+    "parts": "n",
+    "frequency": "6742",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4087",
+    "word": "import",
+    "parts": "n",
+    "frequency": "6944",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4088",
+    "word": "sexually",
+    "parts": "r",
+    "frequency": "6806",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4089",
+    "word": "spring",
+    "parts": "v",
+    "frequency": "6689",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4090",
+    "word": "way",
+    "parts": "r",
+    "frequency": "6604",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4091",
+    "word": "divine",
+    "parts": "j",
+    "frequency": "7059",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4092",
+    "word": "sentiment",
+    "parts": "n",
+    "frequency": "6658",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4093",
+    "word": "cart",
+    "parts": "n",
+    "frequency": "6822",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4094",
+    "word": "oversee",
+    "parts": "v",
+    "frequency": "6773",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4095",
+    "word": "stem",
+    "parts": "v",
+    "frequency": "6712",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4096",
+    "word": "elder",
+    "parts": "n",
+    "frequency": "6808",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4097",
+    "word": "pro",
+    "parts": "n",
+    "frequency": "6867",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4098",
+    "word": "inspiration",
+    "parts": "n",
+    "frequency": "6584",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4099",
+    "word": "Dutch",
+    "parts": "j",
+    "frequency": "6690",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4100",
+    "word": "quantity",
+    "parts": "n",
+    "frequency": "6833",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4101",
+    "word": "trailer",
+    "parts": "n",
+    "frequency": "6713",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4102",
+    "word": "mate",
+    "parts": "n",
+    "frequency": "6693",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4103",
+    "word": "o'clock",
+    "parts": "r",
+    "frequency": "6972",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4104",
+    "word": "Greek",
+    "parts": "j",
+    "frequency": "6642",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4105",
+    "word": "genius",
+    "parts": "n",
+    "frequency": "6509",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4106",
+    "word": "monument",
+    "parts": "n",
+    "frequency": "6680",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4107",
+    "word": "bid",
+    "parts": "n",
+    "frequency": "6954",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4108",
+    "word": "quest",
+    "parts": "n",
+    "frequency": "6613",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4109",
+    "word": "sacrifice",
+    "parts": "n",
+    "frequency": "6591",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4110",
+    "word": "invitation",
+    "parts": "n",
+    "frequency": "6460",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4111",
+    "word": "accuracy",
+    "parts": "n",
+    "frequency": "6942",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4112",
+    "word": "juror",
+    "parts": "n",
+    "frequency": "7497",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "4113",
+    "word": "officially",
+    "parts": "r",
+    "frequency": "6462",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4114",
+    "word": "broker",
+    "parts": "n",
+    "frequency": "6929",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4115",
+    "word": "treasure",
+    "parts": "n",
+    "frequency": "6648",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4116",
+    "word": "loyalty",
+    "parts": "n",
+    "frequency": "6604",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4117",
+    "word": "credit",
+    "parts": "v",
+    "frequency": "6611",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4118",
+    "word": "shock",
+    "parts": "v",
+    "frequency": "6492",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4119",
+    "word": "talented",
+    "parts": "j",
+    "frequency": "6584",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4120",
+    "word": "gasoline",
+    "parts": "n",
+    "frequency": "6696",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4121",
+    "word": "stiff",
+    "parts": "j",
+    "frequency": "6697",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4122",
+    "word": "output",
+    "parts": "n",
+    "frequency": "7041",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4123",
+    "word": "nominee",
+    "parts": "n",
+    "frequency": "7138",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4124",
+    "word": "extended",
+    "parts": "j",
+    "frequency": "6641",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4125",
+    "word": "please",
+    "parts": "v",
+    "frequency": "6565",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4126",
+    "word": "diabetes",
+    "parts": "n",
+    "frequency": "7073",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4127",
+    "word": "slap",
+    "parts": "v",
+    "frequency": "7015",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4128",
+    "word": "toxic",
+    "parts": "j",
+    "frequency": "6672",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4129",
+    "word": "alleged",
+    "parts": "j",
+    "frequency": "6658",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4130",
+    "word": "jaw",
+    "parts": "n",
+    "frequency": "6922",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4131",
+    "word": "grief",
+    "parts": "n",
+    "frequency": "6591",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4132",
+    "word": "mysterious",
+    "parts": "j",
+    "frequency": "6484",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4133",
+    "word": "rocket",
+    "parts": "n",
+    "frequency": "6722",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4134",
+    "word": "donate",
+    "parts": "v",
+    "frequency": "6606",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4135",
+    "word": "inmate",
+    "parts": "n",
+    "frequency": "6718",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4136",
+    "word": "tackle",
+    "parts": "v",
+    "frequency": "6644",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4137",
+    "word": "dynamics",
+    "parts": "n",
+    "frequency": "7084",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4138",
+    "word": "bow",
+    "parts": "n",
+    "frequency": "6800",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4139",
+    "word": "ours",
+    "parts": "p",
+    "frequency": "6422",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4140",
+    "word": "senior",
+    "parts": "n",
+    "frequency": "6768",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4141",
+    "word": "dignity",
+    "parts": "n",
+    "frequency": "6585",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4142",
+    "word": "carpet",
+    "parts": "n",
+    "frequency": "6658",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4143",
+    "word": "parental",
+    "parts": "j",
+    "frequency": "7251",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "4144",
+    "word": "bubble",
+    "parts": "n",
+    "frequency": "6570",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4145",
+    "word": "heat",
+    "parts": "v",
+    "frequency": "6650",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4146",
+    "word": "buddy",
+    "parts": "n",
+    "frequency": "6554",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4147",
+    "word": "barn",
+    "parts": "n",
+    "frequency": "6785",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4148",
+    "word": "sword",
+    "parts": "n",
+    "frequency": "7029",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4149",
+    "word": "flash",
+    "parts": "n",
+    "frequency": "6741",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4150",
+    "word": "seventh",
+    "parts": "m",
+    "frequency": "6517",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4151",
+    "word": "glory",
+    "parts": "n",
+    "frequency": "6443",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4152",
+    "word": "tightly",
+    "parts": "r",
+    "frequency": "6643",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4153",
+    "word": "protective",
+    "parts": "j",
+    "frequency": "6503",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4154",
+    "word": "tuck",
+    "parts": "v",
+    "frequency": "6847",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4155",
+    "word": "drum",
+    "parts": "n",
+    "frequency": "6423",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4156",
+    "word": "faint",
+    "parts": "j",
+    "frequency": "6886",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4157",
+    "word": "post",
+    "parts": "v",
+    "frequency": "6558",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4158",
+    "word": "queen",
+    "parts": "n",
+    "frequency": "6606",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4159",
+    "word": "dilemma",
+    "parts": "n",
+    "frequency": "6703",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4160",
+    "word": "input",
+    "parts": "n",
+    "frequency": "7004",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4161",
+    "word": "specialize",
+    "parts": "v",
+    "frequency": "6538",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4162",
+    "word": "northeast",
+    "parts": "n",
+    "frequency": "6500",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4163",
+    "word": "shallow",
+    "parts": "j",
+    "frequency": "6512",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4164",
+    "word": "liability",
+    "parts": "n",
+    "frequency": "6775",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4165",
+    "word": "sail",
+    "parts": "v",
+    "frequency": "6525",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4166",
+    "word": "merchant",
+    "parts": "n",
+    "frequency": "6474",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4167",
+    "word": "stadium",
+    "parts": "n",
+    "frequency": "6977",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4168",
+    "word": "improved",
+    "parts": "j",
+    "frequency": "6720",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4169",
+    "word": "bloody",
+    "parts": "j",
+    "frequency": "6513",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4170",
+    "word": "defeat",
+    "parts": "n",
+    "frequency": "6380",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4171",
+    "word": "associated",
+    "parts": "j",
+    "frequency": "6754",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4172",
+    "word": "withdrawal",
+    "parts": "n",
+    "frequency": "6624",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4173",
+    "word": "refrigerator",
+    "parts": "n",
+    "frequency": "6497",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4174",
+    "word": "nest",
+    "parts": "n",
+    "frequency": "6541",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4175",
+    "word": "near",
+    "parts": "j",
+    "frequency": "6296",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4176",
+    "word": "thoroughly",
+    "parts": "r",
+    "frequency": "6384",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4177",
+    "word": "lane",
+    "parts": "n",
+    "frequency": "6540",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4178",
+    "word": "ancestor",
+    "parts": "n",
+    "frequency": "6529",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4179",
+    "word": "condemn",
+    "parts": "v",
+    "frequency": "6418",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4180",
+    "word": "steam",
+    "parts": "n",
+    "frequency": "6426",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4181",
+    "word": "accent",
+    "parts": "n",
+    "frequency": "6486",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4182",
+    "word": "escape",
+    "parts": "n",
+    "frequency": "6358",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4183",
+    "word": "optimistic",
+    "parts": "j",
+    "frequency": "6412",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4184",
+    "word": "unite",
+    "parts": "v",
+    "frequency": "6391",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4185",
+    "word": "cage",
+    "parts": "n",
+    "frequency": "6621",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4186",
+    "word": "equip",
+    "parts": "v",
+    "frequency": "6436",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4187",
+    "word": "shrimp",
+    "parts": "n",
+    "frequency": "6631",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4188",
+    "word": "homeland",
+    "parts": "n",
+    "frequency": "6726",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4189",
+    "word": "exchange",
+    "parts": "v",
+    "frequency": "6394",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4190",
+    "word": "rack",
+    "parts": "n",
+    "frequency": "6677",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4191",
+    "word": "costume",
+    "parts": "n",
+    "frequency": "6349",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4192",
+    "word": "wolf",
+    "parts": "n",
+    "frequency": "6718",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4193",
+    "word": "courtroom",
+    "parts": "n",
+    "frequency": "6772",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4194",
+    "word": "statute",
+    "parts": "n",
+    "frequency": "6838",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4195",
+    "word": "cartoon",
+    "parts": "n",
+    "frequency": "6403",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4196",
+    "word": "besides",
+    "parts": "i",
+    "frequency": "6198",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4197",
+    "word": "productivity",
+    "parts": "n",
+    "frequency": "6651",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4198",
+    "word": "grin",
+    "parts": "v",
+    "frequency": "7242",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "4199",
+    "word": "symbolic",
+    "parts": "j",
+    "frequency": "6755",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4200",
+    "word": "seal",
+    "parts": "n",
+    "frequency": "6543",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4201",
+    "word": "bug",
+    "parts": "n",
+    "frequency": "6541",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4202",
+    "word": "bless",
+    "parts": "v",
+    "frequency": "6293",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4203",
+    "word": "aunt",
+    "parts": "n",
+    "frequency": "6662",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4204",
+    "word": "agriculture",
+    "parts": "n",
+    "frequency": "6621",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4205",
+    "word": "rock",
+    "parts": "v",
+    "frequency": "6473",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4206",
+    "word": "hostile",
+    "parts": "j",
+    "frequency": "6319",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4207",
+    "word": "root",
+    "parts": "v",
+    "frequency": "6276",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4208",
+    "word": "conceive",
+    "parts": "v",
+    "frequency": "6486",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4209",
+    "word": "combined",
+    "parts": "j",
+    "frequency": "6495",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4210",
+    "word": "instantly",
+    "parts": "r",
+    "frequency": "6476",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4211",
+    "word": "bankruptcy",
+    "parts": "n",
+    "frequency": "6690",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4212",
+    "word": "vaccine",
+    "parts": "n",
+    "frequency": "6761",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4213",
+    "word": "bonus",
+    "parts": "n",
+    "frequency": "6531",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4214",
+    "word": "collaboration",
+    "parts": "n",
+    "frequency": "6889",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4215",
+    "word": "mixed",
+    "parts": "j",
+    "frequency": "6327",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4216",
+    "word": "opposed",
+    "parts": "i",
+    "frequency": "6418",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4217",
+    "word": "orbit",
+    "parts": "n",
+    "frequency": "6490",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4218",
+    "word": "grasp",
+    "parts": "v",
+    "frequency": "6357",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4219",
+    "word": "patience",
+    "parts": "n",
+    "frequency": "6532",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4220",
+    "word": "spite",
+    "parts": "i",
+    "frequency": "6339",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4221",
+    "word": "tropical",
+    "parts": "j",
+    "frequency": "6473",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4222",
+    "word": "voting",
+    "parts": "n",
+    "frequency": "6621",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4223",
+    "word": "patrol",
+    "parts": "n",
+    "frequency": "6382",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4224",
+    "word": "willingness",
+    "parts": "n",
+    "frequency": "6461",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4225",
+    "word": "position",
+    "parts": "v",
+    "frequency": "6288",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4226",
+    "word": "revelation",
+    "parts": "n",
+    "frequency": "6297",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4227",
+    "word": "rent",
+    "parts": "n",
+    "frequency": "6360",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4228",
+    "word": "calm",
+    "parts": "v",
+    "frequency": "6484",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4229",
+    "word": "jewelry",
+    "parts": "n",
+    "frequency": "6338",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4230",
+    "word": "hay",
+    "parts": "n",
+    "frequency": "6601",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4231",
+    "word": "haul",
+    "parts": "v",
+    "frequency": "6401",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4232",
+    "word": "concede",
+    "parts": "v",
+    "frequency": "6303",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4233",
+    "word": "trace",
+    "parts": "n",
+    "frequency": "6345",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4234",
+    "word": "wagon",
+    "parts": "n",
+    "frequency": "6577",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4235",
+    "word": "afterward",
+    "parts": "r",
+    "frequency": "6353",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4236",
+    "word": "spectacular",
+    "parts": "j",
+    "frequency": "6276",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4237",
+    "word": "ruin",
+    "parts": "v",
+    "frequency": "6267",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4238",
+    "word": "sheer",
+    "parts": "j",
+    "frequency": "6209",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4239",
+    "word": "prior",
+    "parts": "j",
+    "frequency": "6720",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4240",
+    "word": "immune",
+    "parts": "j",
+    "frequency": "6492",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4241",
+    "word": "reliability",
+    "parts": "n",
+    "frequency": "7053",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "4242",
+    "word": "ass",
+    "parts": "n",
+    "frequency": "6911",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4243",
+    "word": "alongside",
+    "parts": "i",
+    "frequency": "6166",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4244",
+    "word": "bush",
+    "parts": "n",
+    "frequency": "6307",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4245",
+    "word": "exotic",
+    "parts": "j",
+    "frequency": "6185",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4246",
+    "word": "fascinating",
+    "parts": "j",
+    "frequency": "6231",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4247",
+    "word": "secure",
+    "parts": "j",
+    "frequency": "6138",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4248",
+    "word": "clip",
+    "parts": "n",
+    "frequency": "6660",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4249",
+    "word": "thigh",
+    "parts": "n",
+    "frequency": "6576",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4250",
+    "word": "bull",
+    "parts": "n",
+    "frequency": "6346",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4251",
+    "word": "drawer",
+    "parts": "n",
+    "frequency": "6665",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4252",
+    "word": "regard",
+    "parts": "i",
+    "frequency": "6665",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4253",
+    "word": "sheep",
+    "parts": "n",
+    "frequency": "6320",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4254",
+    "word": "discourage",
+    "parts": "v",
+    "frequency": "6177",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4255",
+    "word": "coordinator",
+    "parts": "n",
+    "frequency": "6478",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4256",
+    "word": "ideological",
+    "parts": "j",
+    "frequency": "6793",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4257",
+    "word": "runner",
+    "parts": "n",
+    "frequency": "6333",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4258",
+    "word": "secular",
+    "parts": "j",
+    "frequency": "6560",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4259",
+    "word": "intimate",
+    "parts": "j",
+    "frequency": "6143",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4260",
+    "word": "empire",
+    "parts": "n",
+    "frequency": "6268",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4261",
+    "word": "cab",
+    "parts": "n",
+    "frequency": "6561",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4262",
+    "word": "divorce",
+    "parts": "v",
+    "frequency": "6086",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4263",
+    "word": "exam",
+    "parts": "n",
+    "frequency": "6176",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4264",
+    "word": "documentary",
+    "parts": "n",
+    "frequency": "6321",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4265",
+    "word": "neutral",
+    "parts": "j",
+    "frequency": "6331",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4266",
+    "word": "biology",
+    "parts": "n",
+    "frequency": "6334",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4267",
+    "word": "flexible",
+    "parts": "j",
+    "frequency": "6312",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4268",
+    "word": "progressive",
+    "parts": "j",
+    "frequency": "6387",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4269",
+    "word": "web",
+    "parts": "n",
+    "frequency": "6411",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4270",
+    "word": "conspiracy",
+    "parts": "n",
+    "frequency": "6261",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4271",
+    "word": "catch",
+    "parts": "n",
+    "frequency": "6377",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4272",
+    "word": "casualty",
+    "parts": "n",
+    "frequency": "6439",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4273",
+    "word": "republic",
+    "parts": "n",
+    "frequency": "7519",
+    "dispersion": "0.78"
+  },
+  {
+    "rank": "4274",
+    "word": "execution",
+    "parts": "n",
+    "frequency": "6278",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4275",
+    "word": "terrific",
+    "parts": "j",
+    "frequency": "6356",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4276",
+    "word": "whale",
+    "parts": "n",
+    "frequency": "6928",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "4277",
+    "word": "functional",
+    "parts": "j",
+    "frequency": "6736",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4278",
+    "word": "star",
+    "parts": "v",
+    "frequency": "6328",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4279",
+    "word": "draft",
+    "parts": "v",
+    "frequency": "6234",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4280",
+    "word": "instinct",
+    "parts": "n",
+    "frequency": "6076",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4281",
+    "word": "teammate",
+    "parts": "n",
+    "frequency": "6572",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4282",
+    "word": "aluminum",
+    "parts": "n",
+    "frequency": "6468",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4283",
+    "word": "whoever",
+    "parts": "p",
+    "frequency": "6250",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4284",
+    "word": "ministry",
+    "parts": "n",
+    "frequency": "6250",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4285",
+    "word": "verdict",
+    "parts": "n",
+    "frequency": "6529",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4286",
+    "word": "instruct",
+    "parts": "v",
+    "frequency": "6117",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4287",
+    "word": "skull",
+    "parts": "n",
+    "frequency": "6313",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4288",
+    "word": "self-esteem",
+    "parts": "n",
+    "frequency": "6727",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4289",
+    "word": "ease",
+    "parts": "n",
+    "frequency": "6103",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4290",
+    "word": "cooperative",
+    "parts": "j",
+    "frequency": "6671",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4291",
+    "word": "manipulate",
+    "parts": "v",
+    "frequency": "6159",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4292",
+    "word": "bee",
+    "parts": "n",
+    "frequency": "6342",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4293",
+    "word": "practitioner",
+    "parts": "n",
+    "frequency": "6670",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4294",
+    "word": "loop",
+    "parts": "n",
+    "frequency": "6175",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4295",
+    "word": "edit",
+    "parts": "v",
+    "frequency": "6157",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4296",
+    "word": "whip",
+    "parts": "v",
+    "frequency": "6255",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4297",
+    "word": "puzzle",
+    "parts": "n",
+    "frequency": "6153",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4298",
+    "word": "mushroom",
+    "parts": "n",
+    "frequency": "6454",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4299",
+    "word": "subsidy",
+    "parts": "n",
+    "frequency": "6236",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4300",
+    "word": "boil",
+    "parts": "v",
+    "frequency": "6180",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4301",
+    "word": "tragic",
+    "parts": "j",
+    "frequency": "6038",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4302",
+    "word": "mathematics",
+    "parts": "n",
+    "frequency": "6828",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "4303",
+    "word": "mechanic",
+    "parts": "n",
+    "frequency": "6092",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4304",
+    "word": "jar",
+    "parts": "n",
+    "frequency": "6284",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4305",
+    "word": "respect",
+    "parts": "i",
+    "frequency": "6659",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4306",
+    "word": "earthquake",
+    "parts": "n",
+    "frequency": "6439",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4307",
+    "word": "pork",
+    "parts": "n",
+    "frequency": "6261",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4308",
+    "word": "creativity",
+    "parts": "n",
+    "frequency": "6452",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4309",
+    "word": "safely",
+    "parts": "r",
+    "frequency": "5959",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4310",
+    "word": "underlying",
+    "parts": "j",
+    "frequency": "6340",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4311",
+    "word": "dessert",
+    "parts": "n",
+    "frequency": "6286",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4312",
+    "word": "sympathy",
+    "parts": "n",
+    "frequency": "6044",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4313",
+    "word": "fisherman",
+    "parts": "n",
+    "frequency": "6317",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4314",
+    "word": "incredibly",
+    "parts": "r",
+    "frequency": "6141",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4315",
+    "word": "isolation",
+    "parts": "n",
+    "frequency": "6251",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4316",
+    "word": "sock",
+    "parts": "n",
+    "frequency": "6273",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4317",
+    "word": "near",
+    "parts": "r",
+    "frequency": "6097",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4318",
+    "word": "jump",
+    "parts": "n",
+    "frequency": "6088",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4319",
+    "word": "eleven",
+    "parts": "m",
+    "frequency": "6239",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4320",
+    "word": "sexy",
+    "parts": "j",
+    "frequency": "6300",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4321",
+    "word": "entrepreneur",
+    "parts": "n",
+    "frequency": "6238",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4322",
+    "word": "syndrome",
+    "parts": "n",
+    "frequency": "6157",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4323",
+    "word": "bureau",
+    "parts": "n",
+    "frequency": "6199",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4324",
+    "word": "seat",
+    "parts": "v",
+    "frequency": "6227",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4325",
+    "word": "workplace",
+    "parts": "n",
+    "frequency": "6186",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4326",
+    "word": "ambition",
+    "parts": "n",
+    "frequency": "5962",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4327",
+    "word": "touchdown",
+    "parts": "n",
+    "frequency": "6954",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "4328",
+    "word": "utilize",
+    "parts": "v",
+    "frequency": "6607",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4329",
+    "word": "breeze",
+    "parts": "n",
+    "frequency": "6423",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4330",
+    "word": "costly",
+    "parts": "j",
+    "frequency": "6130",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4331",
+    "word": "ambitious",
+    "parts": "j",
+    "frequency": "6040",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4332",
+    "word": "Christianity",
+    "parts": "n",
+    "frequency": "6312",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4333",
+    "word": "presumably",
+    "parts": "r",
+    "frequency": "6039",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4334",
+    "word": "influential",
+    "parts": "j",
+    "frequency": "6161",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4335",
+    "word": "translation",
+    "parts": "n",
+    "frequency": "6266",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4336",
+    "word": "uncertain",
+    "parts": "j",
+    "frequency": "5951",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4337",
+    "word": "dissolve",
+    "parts": "v",
+    "frequency": "6157",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4338",
+    "word": "object",
+    "parts": "v",
+    "frequency": "5909",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4339",
+    "word": "statistical",
+    "parts": "j",
+    "frequency": "6634",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4340",
+    "word": "gut",
+    "parts": "n",
+    "frequency": "6067",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4341",
+    "word": "metropolitan",
+    "parts": "j",
+    "frequency": "6149",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4342",
+    "word": "rolling",
+    "parts": "j",
+    "frequency": "6066",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4343",
+    "word": "aesthetic",
+    "parts": "j",
+    "frequency": "6647",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4344",
+    "word": "spell",
+    "parts": "v",
+    "frequency": "5887",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4345",
+    "word": "insert",
+    "parts": "v",
+    "frequency": "6067",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4346",
+    "word": "booth",
+    "parts": "n",
+    "frequency": "6191",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4347",
+    "word": "helmet",
+    "parts": "n",
+    "frequency": "6203",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4348",
+    "word": "waist",
+    "parts": "n",
+    "frequency": "6394",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4349",
+    "word": "expected",
+    "parts": "j",
+    "frequency": "6144",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4350",
+    "word": "lion",
+    "parts": "n",
+    "frequency": "6075",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4351",
+    "word": "accomplishment",
+    "parts": "n",
+    "frequency": "5980",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4352",
+    "word": "royal",
+    "parts": "j",
+    "frequency": "6028",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4353",
+    "word": "panic",
+    "parts": "n",
+    "frequency": "6087",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4354",
+    "word": "cast",
+    "parts": "n",
+    "frequency": "6007",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4355",
+    "word": "crush",
+    "parts": "v",
+    "frequency": "5985",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4356",
+    "word": "actively",
+    "parts": "r",
+    "frequency": "6232",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4357",
+    "word": "cliff",
+    "parts": "n",
+    "frequency": "6117",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4358",
+    "word": "minimal",
+    "parts": "j",
+    "frequency": "6176",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4359",
+    "word": "cord",
+    "parts": "n",
+    "frequency": "6071",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4360",
+    "word": "fortunately",
+    "parts": "r",
+    "frequency": "5974",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4361",
+    "word": "cocaine",
+    "parts": "n",
+    "frequency": "6207",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4362",
+    "word": "illusion",
+    "parts": "n",
+    "frequency": "6035",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4363",
+    "word": "anonymous",
+    "parts": "j",
+    "frequency": "5949",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4364",
+    "word": "tolerate",
+    "parts": "v",
+    "frequency": "5871",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4365",
+    "word": "appreciation",
+    "parts": "n",
+    "frequency": "6054",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4366",
+    "word": "commissioner",
+    "parts": "n",
+    "frequency": "6303",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4367",
+    "word": "harm",
+    "parts": "v",
+    "frequency": "5810",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4368",
+    "word": "flexibility",
+    "parts": "n",
+    "frequency": "6149",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4369",
+    "word": "instructional",
+    "parts": "j",
+    "frequency": "7014",
+    "dispersion": "0.81"
+  },
+  {
+    "rank": "4370",
+    "word": "scramble",
+    "parts": "v",
+    "frequency": "6061",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4371",
+    "word": "casino",
+    "parts": "n",
+    "frequency": "6205",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4372",
+    "word": "tumor",
+    "parts": "n",
+    "frequency": "6427",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4373",
+    "word": "decorate",
+    "parts": "v",
+    "frequency": "5997",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4374",
+    "word": "sort",
+    "parts": "v",
+    "frequency": "5809",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4375",
+    "word": "charge",
+    "parts": "i",
+    "frequency": "5893",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4376",
+    "word": "pulse",
+    "parts": "n",
+    "frequency": "5992",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4377",
+    "word": "equivalent",
+    "parts": "n",
+    "frequency": "5935",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4378",
+    "word": "fixed",
+    "parts": "j",
+    "frequency": "6042",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4379",
+    "word": "experienced",
+    "parts": "j",
+    "frequency": "6031",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4380",
+    "word": "donation",
+    "parts": "n",
+    "frequency": "6086",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4381",
+    "word": "diary",
+    "parts": "n",
+    "frequency": "5945",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4382",
+    "word": "sibling",
+    "parts": "n",
+    "frequency": "6102",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4383",
+    "word": "irony",
+    "parts": "n",
+    "frequency": "5818",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4384",
+    "word": "spoon",
+    "parts": "n",
+    "frequency": "6194",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4385",
+    "word": "midst",
+    "parts": "n",
+    "frequency": "5760",
+    "dispersion": "0.98"
+  },
+  {
+    "rank": "4386",
+    "word": "alley",
+    "parts": "n",
+    "frequency": "6236",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4387",
+    "word": "upset",
+    "parts": "j",
+    "frequency": "5954",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4388",
+    "word": "interact",
+    "parts": "v",
+    "frequency": "6247",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4389",
+    "word": "soap",
+    "parts": "n",
+    "frequency": "5952",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4390",
+    "word": "cute",
+    "parts": "j",
+    "frequency": "6089",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4391",
+    "word": "rival",
+    "parts": "n",
+    "frequency": "6005",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4392",
+    "word": "short-term",
+    "parts": "j",
+    "frequency": "5998",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4393",
+    "word": "punch",
+    "parts": "v",
+    "frequency": "6071",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4394",
+    "word": "pin",
+    "parts": "n",
+    "frequency": "6000",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4395",
+    "word": "hockey",
+    "parts": "n",
+    "frequency": "6171",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4396",
+    "word": "passing",
+    "parts": "j",
+    "frequency": "5903",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4397",
+    "word": "persist",
+    "parts": "v",
+    "frequency": "6013",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4398",
+    "word": "supplier",
+    "parts": "n",
+    "frequency": "6038",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4399",
+    "word": "known",
+    "parts": "j",
+    "frequency": "5892",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4400",
+    "word": "momentum",
+    "parts": "n",
+    "frequency": "5911",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4401",
+    "word": "purse",
+    "parts": "n",
+    "frequency": "6161",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4402",
+    "word": "shed",
+    "parts": "v",
+    "frequency": "5769",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4403",
+    "word": "liquid",
+    "parts": "n",
+    "frequency": "5948",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4404",
+    "word": "icon",
+    "parts": "n",
+    "frequency": "6030",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4405",
+    "word": "elephant",
+    "parts": "n",
+    "frequency": "6038",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4406",
+    "word": "consequently",
+    "parts": "r",
+    "frequency": "6463",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4407",
+    "word": "legislature",
+    "parts": "n",
+    "frequency": "6027",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4408",
+    "word": "associate",
+    "parts": "n",
+    "frequency": "5860",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4409",
+    "word": "franchise",
+    "parts": "n",
+    "frequency": "6332",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4410",
+    "word": "correctly",
+    "parts": "r",
+    "frequency": "5884",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4411",
+    "word": "mentally",
+    "parts": "r",
+    "frequency": "5793",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4412",
+    "word": "foster",
+    "parts": "v",
+    "frequency": "6237",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4413",
+    "word": "bicycle",
+    "parts": "n",
+    "frequency": "5960",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4414",
+    "word": "encouraging",
+    "parts": "j",
+    "frequency": "5868",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4415",
+    "word": "cheat",
+    "parts": "v",
+    "frequency": "5819",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4416",
+    "word": "access",
+    "parts": "v",
+    "frequency": "6023",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4417",
+    "word": "heal",
+    "parts": "v",
+    "frequency": "5797",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4418",
+    "word": "fever",
+    "parts": "n",
+    "frequency": "5874",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4419",
+    "word": "filter",
+    "parts": "n",
+    "frequency": "6210",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4420",
+    "word": "rabbit",
+    "parts": "n",
+    "frequency": "6095",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4421",
+    "word": "coin",
+    "parts": "n",
+    "frequency": "5947",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4422",
+    "word": "exploit",
+    "parts": "v",
+    "frequency": "5909",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4423",
+    "word": "accessible",
+    "parts": "j",
+    "frequency": "5965",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4424",
+    "word": "organism",
+    "parts": "n",
+    "frequency": "6210",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4425",
+    "word": "sensation",
+    "parts": "n",
+    "frequency": "5882",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4426",
+    "word": "partially",
+    "parts": "r",
+    "frequency": "5882",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4427",
+    "word": "stay",
+    "parts": "n",
+    "frequency": "5779",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4428",
+    "word": "upstairs",
+    "parts": "r",
+    "frequency": "6271",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4429",
+    "word": "dried",
+    "parts": "j",
+    "frequency": "6109",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4430",
+    "word": "minimum",
+    "parts": "n",
+    "frequency": "5867",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4431",
+    "word": "pro",
+    "parts": "j",
+    "frequency": "6101",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4432",
+    "word": "conservation",
+    "parts": "n",
+    "frequency": "6129",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4433",
+    "word": "shove",
+    "parts": "v",
+    "frequency": "6327",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4434",
+    "word": "backyard",
+    "parts": "n",
+    "frequency": "5890",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4435",
+    "word": "charter",
+    "parts": "n",
+    "frequency": "6011",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4436",
+    "word": "stove",
+    "parts": "n",
+    "frequency": "6082",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4437",
+    "word": "consent",
+    "parts": "n",
+    "frequency": "6239",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4438",
+    "word": "comprise",
+    "parts": "v",
+    "frequency": "6258",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4439",
+    "word": "reminder",
+    "parts": "n",
+    "frequency": "5681",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4440",
+    "word": "alike",
+    "parts": "r",
+    "frequency": "5740",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4441",
+    "word": "placement",
+    "parts": "n",
+    "frequency": "6275",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4442",
+    "word": "dough",
+    "parts": "n",
+    "frequency": "6294",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4443",
+    "word": "grandchild",
+    "parts": "n",
+    "frequency": "5826",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4444",
+    "word": "dam",
+    "parts": "n",
+    "frequency": "5968",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4445",
+    "word": "reportedly",
+    "parts": "r",
+    "frequency": "5911",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4446",
+    "word": "well-known",
+    "parts": "j",
+    "frequency": "5782",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4447",
+    "word": "surrounding",
+    "parts": "j",
+    "frequency": "5826",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4448",
+    "word": "ecological",
+    "parts": "j",
+    "frequency": "6443",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4449",
+    "word": "outfit",
+    "parts": "n",
+    "frequency": "5850",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4450",
+    "word": "unprecedented",
+    "parts": "j",
+    "frequency": "5798",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4451",
+    "word": "columnist",
+    "parts": "n",
+    "frequency": "5997",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4452",
+    "word": "workout",
+    "parts": "n",
+    "frequency": "6414",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4453",
+    "word": "preliminary",
+    "parts": "j",
+    "frequency": "5908",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4454",
+    "word": "patent",
+    "parts": "n",
+    "frequency": "6024",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4455",
+    "word": "shy",
+    "parts": "j",
+    "frequency": "5806",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4456",
+    "word": "quote",
+    "parts": "n",
+    "frequency": "6228",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4457",
+    "word": "trash",
+    "parts": "n",
+    "frequency": "5811",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4458",
+    "word": "disabled",
+    "parts": "j",
+    "frequency": "5952",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4459",
+    "word": "gross",
+    "parts": "j",
+    "frequency": "5802",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4460",
+    "word": "damn",
+    "parts": "j",
+    "frequency": "6269",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4461",
+    "word": "hormone",
+    "parts": "n",
+    "frequency": "6230",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4462",
+    "word": "texture",
+    "parts": "n",
+    "frequency": "5994",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4463",
+    "word": "counter",
+    "parts": "v",
+    "frequency": "5722",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4464",
+    "word": "pencil",
+    "parts": "n",
+    "frequency": "5936",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4465",
+    "word": "associate",
+    "parts": "j",
+    "frequency": "5859",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4466",
+    "word": "frontier",
+    "parts": "n",
+    "frequency": "5897",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4467",
+    "word": "spray",
+    "parts": "n",
+    "frequency": "6005",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4468",
+    "word": "bet",
+    "parts": "n",
+    "frequency": "5801",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4469",
+    "word": "disclose",
+    "parts": "v",
+    "frequency": "5879",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4470",
+    "word": "custody",
+    "parts": "n",
+    "frequency": "5957",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4471",
+    "word": "banker",
+    "parts": "n",
+    "frequency": "5933",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4472",
+    "word": "beast",
+    "parts": "n",
+    "frequency": "6052",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4473",
+    "word": "interfere",
+    "parts": "v",
+    "frequency": "5709",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4474",
+    "word": "oak",
+    "parts": "n",
+    "frequency": "5938",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4475",
+    "word": "case",
+    "parts": "c",
+    "frequency": "5791",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4476",
+    "word": "eighth",
+    "parts": "m",
+    "frequency": "5814",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4477",
+    "word": "notebook",
+    "parts": "n",
+    "frequency": "5884",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4478",
+    "word": "outline",
+    "parts": "v",
+    "frequency": "5859",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4479",
+    "word": "gaze",
+    "parts": "v",
+    "frequency": "6379",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4480",
+    "word": "attendance",
+    "parts": "n",
+    "frequency": "5963",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4481",
+    "word": "speculation",
+    "parts": "n",
+    "frequency": "5698",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4482",
+    "word": "uncover",
+    "parts": "v",
+    "frequency": "5696",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4483",
+    "word": "behalf",
+    "parts": "i",
+    "frequency": "5727",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4484",
+    "word": "innovative",
+    "parts": "j",
+    "frequency": "5921",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4485",
+    "word": "shark",
+    "parts": "n",
+    "frequency": "6164",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4486",
+    "word": "reward",
+    "parts": "v",
+    "frequency": "5676",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4487",
+    "word": "mill",
+    "parts": "n",
+    "frequency": "5761",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4488",
+    "word": "installation",
+    "parts": "n",
+    "frequency": "5938",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4489",
+    "word": "stimulate",
+    "parts": "v",
+    "frequency": "5898",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4490",
+    "word": "tag",
+    "parts": "n",
+    "frequency": "5735",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4491",
+    "word": "vertical",
+    "parts": "j",
+    "frequency": "5950",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4492",
+    "word": "swimming",
+    "parts": "n",
+    "frequency": "5735",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4493",
+    "word": "fleet",
+    "parts": "n",
+    "frequency": "5781",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4494",
+    "word": "catalog",
+    "parts": "n",
+    "frequency": "5925",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4495",
+    "word": "outsider",
+    "parts": "n",
+    "frequency": "5690",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4496",
+    "word": "sacrifice",
+    "parts": "v",
+    "frequency": "5641",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4497",
+    "word": "desperately",
+    "parts": "r",
+    "frequency": "5701",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4498",
+    "word": "stance",
+    "parts": "n",
+    "frequency": "5812",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4499",
+    "word": "compel",
+    "parts": "v",
+    "frequency": "5728",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4500",
+    "word": "sensitivity",
+    "parts": "n",
+    "frequency": "5981",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4501",
+    "word": "someday",
+    "parts": "r",
+    "frequency": "5744",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4502",
+    "word": "instant",
+    "parts": "j",
+    "frequency": "5765",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4503",
+    "word": "debut",
+    "parts": "n",
+    "frequency": "5986",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4504",
+    "word": "proclaim",
+    "parts": "v",
+    "frequency": "5716",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4505",
+    "word": "worldwide",
+    "parts": "r",
+    "frequency": "5781",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4506",
+    "word": "hike",
+    "parts": "v",
+    "frequency": "6111",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4507",
+    "word": "required",
+    "parts": "j",
+    "frequency": "5953",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4508",
+    "word": "confrontation",
+    "parts": "n",
+    "frequency": "5762",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4509",
+    "word": "colorful",
+    "parts": "j",
+    "frequency": "5773",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4510",
+    "word": "ideal",
+    "parts": "n",
+    "frequency": "5978",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4511",
+    "word": "constitution",
+    "parts": "n",
+    "frequency": "6111",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4512",
+    "word": "trainer",
+    "parts": "n",
+    "frequency": "5845",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4513",
+    "word": "Thanksgiving",
+    "parts": "n",
+    "frequency": "5859",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4514",
+    "word": "scent",
+    "parts": "n",
+    "frequency": "6050",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4515",
+    "word": "stack",
+    "parts": "n",
+    "frequency": "5858",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4516",
+    "word": "eyebrow",
+    "parts": "n",
+    "frequency": "6212",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4517",
+    "word": "sack",
+    "parts": "n",
+    "frequency": "5880",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4518",
+    "word": "cease",
+    "parts": "v",
+    "frequency": "5679",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4519",
+    "word": "inherit",
+    "parts": "v",
+    "frequency": "5563",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4520",
+    "word": "tray",
+    "parts": "n",
+    "frequency": "6021",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4521",
+    "word": "pioneer",
+    "parts": "n",
+    "frequency": "5755",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4522",
+    "word": "organizational",
+    "parts": "j",
+    "frequency": "6445",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "4523",
+    "word": "textbook",
+    "parts": "n",
+    "frequency": "5968",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4524",
+    "word": "uh",
+    "parts": "u",
+    "frequency": "6155",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4525",
+    "word": "nasty",
+    "parts": "j",
+    "frequency": "5682",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4526",
+    "word": "shrink",
+    "parts": "v",
+    "frequency": "5617",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4527",
+    "word": "model",
+    "parts": "v",
+    "frequency": "5925",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4528",
+    "word": "emerging",
+    "parts": "j",
+    "frequency": "5942",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4529",
+    "word": "dot",
+    "parts": "n",
+    "frequency": "5795",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4530",
+    "word": "wheat",
+    "parts": "n",
+    "frequency": "5730",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4531",
+    "word": "fierce",
+    "parts": "j",
+    "frequency": "5622",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4532",
+    "word": "envision",
+    "parts": "v",
+    "frequency": "5619",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4533",
+    "word": "rational",
+    "parts": "j",
+    "frequency": "5941",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4534",
+    "word": "kingdom",
+    "parts": "n",
+    "frequency": "5674",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4535",
+    "word": "aisle",
+    "parts": "n",
+    "frequency": "5828",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4536",
+    "word": "weaken",
+    "parts": "v",
+    "frequency": "5640",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4537",
+    "word": "protocol",
+    "parts": "n",
+    "frequency": "6031",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4538",
+    "word": "exclusively",
+    "parts": "r",
+    "frequency": "5852",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4539",
+    "word": "vocal",
+    "parts": "j",
+    "frequency": "5727",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4540",
+    "word": "marketplace",
+    "parts": "n",
+    "frequency": "5650",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4541",
+    "word": "openly",
+    "parts": "r",
+    "frequency": "5558",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4542",
+    "word": "unfair",
+    "parts": "j",
+    "frequency": "5656",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4543",
+    "word": "terrain",
+    "parts": "n",
+    "frequency": "5873",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4544",
+    "word": "deploy",
+    "parts": "v",
+    "frequency": "5674",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4545",
+    "word": "risky",
+    "parts": "j",
+    "frequency": "5632",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4546",
+    "word": "pasta",
+    "parts": "n",
+    "frequency": "6062",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4547",
+    "word": "genre",
+    "parts": "n",
+    "frequency": "5919",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4548",
+    "word": "distract",
+    "parts": "v",
+    "frequency": "5720",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4549",
+    "word": "merit",
+    "parts": "n",
+    "frequency": "5670",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4550",
+    "word": "planner",
+    "parts": "n",
+    "frequency": "5797",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4551",
+    "word": "depressed",
+    "parts": "j",
+    "frequency": "5543",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4552",
+    "word": "chunk",
+    "parts": "n",
+    "frequency": "5682",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4553",
+    "word": "closest",
+    "parts": "j",
+    "frequency": "5506",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4554",
+    "word": "discount",
+    "parts": "n",
+    "frequency": "5809",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4555",
+    "word": "no",
+    "parts": "d",
+    "frequency": "5591",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4556",
+    "word": "ladder",
+    "parts": "n",
+    "frequency": "5720",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4557",
+    "word": "jungle",
+    "parts": "n",
+    "frequency": "5693",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4558",
+    "word": "migration",
+    "parts": "n",
+    "frequency": "6067",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4559",
+    "word": "breathing",
+    "parts": "n",
+    "frequency": "5798",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4560",
+    "word": "invade",
+    "parts": "v",
+    "frequency": "5653",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4561",
+    "word": "hurricane",
+    "parts": "n",
+    "frequency": "6439",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "4562",
+    "word": "retailer",
+    "parts": "n",
+    "frequency": "5915",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4563",
+    "word": "classify",
+    "parts": "v",
+    "frequency": "5964",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4564",
+    "word": "wound",
+    "parts": "v",
+    "frequency": "5660",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4565",
+    "word": "coup",
+    "parts": "n",
+    "frequency": "6179",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4566",
+    "word": "aid",
+    "parts": "v",
+    "frequency": "5676",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4567",
+    "word": "ambassador",
+    "parts": "n",
+    "frequency": "5847",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4568",
+    "word": "density",
+    "parts": "n",
+    "frequency": "6040",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4569",
+    "word": "supportive",
+    "parts": "j",
+    "frequency": "5662",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4570",
+    "word": "curiosity",
+    "parts": "n",
+    "frequency": "5630",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4571",
+    "word": "skip",
+    "parts": "v",
+    "frequency": "5635",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4572",
+    "word": "aggression",
+    "parts": "n",
+    "frequency": "6215",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "4573",
+    "word": "stimulus",
+    "parts": "n",
+    "frequency": "6215",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "4574",
+    "word": "journalism",
+    "parts": "n",
+    "frequency": "5684",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4575",
+    "word": "robot",
+    "parts": "n",
+    "frequency": "6023",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4576",
+    "word": "flood",
+    "parts": "v",
+    "frequency": "5531",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4577",
+    "word": "dip",
+    "parts": "v",
+    "frequency": "5664",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4578",
+    "word": "likewise",
+    "parts": "r",
+    "frequency": "5821",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4579",
+    "word": "informal",
+    "parts": "j",
+    "frequency": "5931",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4580",
+    "word": "Persian",
+    "parts": "j",
+    "frequency": "6340",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "4581",
+    "word": "feather",
+    "parts": "n",
+    "frequency": "5744",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4582",
+    "word": "sphere",
+    "parts": "n",
+    "frequency": "5881",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4583",
+    "word": "tighten",
+    "parts": "v",
+    "frequency": "5665",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4584",
+    "word": "boast",
+    "parts": "v",
+    "frequency": "5731",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4585",
+    "word": "pat",
+    "parts": "v",
+    "frequency": "5968",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4586",
+    "word": "perceived",
+    "parts": "j",
+    "frequency": "6386",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "4587",
+    "word": "sole",
+    "parts": "j",
+    "frequency": "5535",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4588",
+    "word": "publicity",
+    "parts": "n",
+    "frequency": "5557",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4589",
+    "word": "major",
+    "parts": "n",
+    "frequency": "5678",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4590",
+    "word": "unfold",
+    "parts": "v",
+    "frequency": "5420",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4591",
+    "word": "joke",
+    "parts": "v",
+    "frequency": "5576",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4592",
+    "word": "well-being",
+    "parts": "n",
+    "frequency": "6005",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4593",
+    "word": "validity",
+    "parts": "n",
+    "frequency": "6401",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "4594",
+    "word": "ecosystem",
+    "parts": "n",
+    "frequency": "6215",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "4595",
+    "word": "strictly",
+    "parts": "r",
+    "frequency": "5532",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4596",
+    "word": "partial",
+    "parts": "j",
+    "frequency": "5716",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4597",
+    "word": "collar",
+    "parts": "n",
+    "frequency": "5791",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4598",
+    "word": "weed",
+    "parts": "n",
+    "frequency": "5642",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4599",
+    "word": "compliance",
+    "parts": "n",
+    "frequency": "5973",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4600",
+    "word": "streak",
+    "parts": "n",
+    "frequency": "5826",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4601",
+    "word": "supposedly",
+    "parts": "r",
+    "frequency": "5451",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4602",
+    "word": "added",
+    "parts": "j",
+    "frequency": "5616",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4603",
+    "word": "builder",
+    "parts": "n",
+    "frequency": "5720",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4604",
+    "word": "glimpse",
+    "parts": "n",
+    "frequency": "5567",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4605",
+    "word": "premise",
+    "parts": "n",
+    "frequency": "5695",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4606",
+    "word": "specialty",
+    "parts": "n",
+    "frequency": "5622",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4607",
+    "word": "deem",
+    "parts": "v",
+    "frequency": "5639",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4608",
+    "word": "artifact",
+    "parts": "n",
+    "frequency": "5773",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4609",
+    "word": "sneak",
+    "parts": "v",
+    "frequency": "5690",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4610",
+    "word": "monkey",
+    "parts": "n",
+    "frequency": "5698",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4611",
+    "word": "mentor",
+    "parts": "n",
+    "frequency": "5757",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4612",
+    "word": "two-thirds",
+    "parts": "m",
+    "frequency": "5558",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4613",
+    "word": "listener",
+    "parts": "n",
+    "frequency": "5621",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4614",
+    "word": "lightning",
+    "parts": "n",
+    "frequency": "5674",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4615",
+    "word": "legally",
+    "parts": "r",
+    "frequency": "5484",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4616",
+    "word": "sleeve",
+    "parts": "n",
+    "frequency": "5855",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4617",
+    "word": "disappointment",
+    "parts": "n",
+    "frequency": "5464",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4618",
+    "word": "disturb",
+    "parts": "v",
+    "frequency": "5532",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4619",
+    "word": "rib",
+    "parts": "n",
+    "frequency": "5662",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4620",
+    "word": "excessive",
+    "parts": "j",
+    "frequency": "5633",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4621",
+    "word": "high-tech",
+    "parts": "j",
+    "frequency": "5681",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4622",
+    "word": "debris",
+    "parts": "n",
+    "frequency": "5491",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4623",
+    "word": "pile",
+    "parts": "v",
+    "frequency": "5609",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4624",
+    "word": "rod",
+    "parts": "n",
+    "frequency": "5788",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4625",
+    "word": "logical",
+    "parts": "j",
+    "frequency": "5644",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4626",
+    "word": "liberal",
+    "parts": "n",
+    "frequency": "5677",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4627",
+    "word": "ash",
+    "parts": "n",
+    "frequency": "5647",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4628",
+    "word": "socially",
+    "parts": "r",
+    "frequency": "5814",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4629",
+    "word": "parish",
+    "parts": "n",
+    "frequency": "5723",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4630",
+    "word": "slavery",
+    "parts": "n",
+    "frequency": "5712",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4631",
+    "word": "blank",
+    "parts": "j",
+    "frequency": "5585",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4632",
+    "word": "commodity",
+    "parts": "n",
+    "frequency": "5659",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4633",
+    "word": "cure",
+    "parts": "n",
+    "frequency": "5468",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4634",
+    "word": "mineral",
+    "parts": "n",
+    "frequency": "5758",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4635",
+    "word": "hunger",
+    "parts": "n",
+    "frequency": "5460",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4636",
+    "word": "dying",
+    "parts": "j",
+    "frequency": "5504",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4637",
+    "word": "developmental",
+    "parts": "j",
+    "frequency": "6255",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "4638",
+    "word": "faster",
+    "parts": "j",
+    "frequency": "5538",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4639",
+    "word": "spare",
+    "parts": "v",
+    "frequency": "5492",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4640",
+    "word": "halfway",
+    "parts": "r",
+    "frequency": "5695",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4641",
+    "word": "cure",
+    "parts": "v",
+    "frequency": "5444",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4642",
+    "word": "equality",
+    "parts": "n",
+    "frequency": "5841",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4643",
+    "word": "cemetery",
+    "parts": "n",
+    "frequency": "5584",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4644",
+    "word": "harassment",
+    "parts": "n",
+    "frequency": "5882",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4645",
+    "word": "deliberately",
+    "parts": "r",
+    "frequency": "5388",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4646",
+    "word": "fame",
+    "parts": "n",
+    "frequency": "5485",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4647",
+    "word": "regret",
+    "parts": "v",
+    "frequency": "5479",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4648",
+    "word": "striking",
+    "parts": "j",
+    "frequency": "5516",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4649",
+    "word": "likelihood",
+    "parts": "n",
+    "frequency": "5790",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4650",
+    "word": "carrot",
+    "parts": "n",
+    "frequency": "5718",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4651",
+    "word": "atop",
+    "parts": "i",
+    "frequency": "5578",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4652",
+    "word": "toll",
+    "parts": "n",
+    "frequency": "5587",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4653",
+    "word": "rim",
+    "parts": "n",
+    "frequency": "5676",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4654",
+    "word": "embarrassed",
+    "parts": "j",
+    "frequency": "5627",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4655",
+    "word": "fucking",
+    "parts": "j",
+    "frequency": "6472",
+    "dispersion": "0.80"
+  },
+  {
+    "rank": "4656",
+    "word": "cling",
+    "parts": "v",
+    "frequency": "5678",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4657",
+    "word": "isolated",
+    "parts": "j",
+    "frequency": "5482",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4658",
+    "word": "blink",
+    "parts": "v",
+    "frequency": "6160",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "4659",
+    "word": "suspicious",
+    "parts": "j",
+    "frequency": "5412",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4660",
+    "word": "wheelchair",
+    "parts": "n",
+    "frequency": "5670",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4661",
+    "word": "squad",
+    "parts": "n",
+    "frequency": "5520",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4662",
+    "word": "eligible",
+    "parts": "j",
+    "frequency": "5529",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4663",
+    "word": "processor",
+    "parts": "n",
+    "frequency": "5882",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4664",
+    "word": "plunge",
+    "parts": "v",
+    "frequency": "5490",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4665",
+    "word": "this",
+    "parts": "r",
+    "frequency": "5517",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4666",
+    "word": "sponsor",
+    "parts": "n",
+    "frequency": "5622",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4667",
+    "word": "grin",
+    "parts": "n",
+    "frequency": "5944",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4668",
+    "word": "color",
+    "parts": "v",
+    "frequency": "5465",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4669",
+    "word": "demographic",
+    "parts": "j",
+    "frequency": "6103",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "4670",
+    "word": "rain",
+    "parts": "v",
+    "frequency": "5597",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4671",
+    "word": "chill",
+    "parts": "n",
+    "frequency": "5675",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4672",
+    "word": "refuge",
+    "parts": "n",
+    "frequency": "5505",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4673",
+    "word": "steer",
+    "parts": "v",
+    "frequency": "5452",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4674",
+    "word": "legislator",
+    "parts": "n",
+    "frequency": "5593",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4675",
+    "word": "rally",
+    "parts": "n",
+    "frequency": "5619",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4676",
+    "word": "programming",
+    "parts": "n",
+    "frequency": "5507",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4677",
+    "word": "cheer",
+    "parts": "v",
+    "frequency": "5442",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4678",
+    "word": "outlet",
+    "parts": "n",
+    "frequency": "5497",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4679",
+    "word": "intact",
+    "parts": "j",
+    "frequency": "5350",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4680",
+    "word": "vendor",
+    "parts": "n",
+    "frequency": "5543",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4681",
+    "word": "thrive",
+    "parts": "v",
+    "frequency": "5472",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4682",
+    "word": "peanut",
+    "parts": "n",
+    "frequency": "5604",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4683",
+    "word": "chew",
+    "parts": "v",
+    "frequency": "5669",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4684",
+    "word": "elaborate",
+    "parts": "j",
+    "frequency": "5349",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4685",
+    "word": "intellectual",
+    "parts": "n",
+    "frequency": "5773",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4686",
+    "word": "conception",
+    "parts": "n",
+    "frequency": "5953",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4687",
+    "word": "auction",
+    "parts": "n",
+    "frequency": "5621",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4688",
+    "word": "steak",
+    "parts": "n",
+    "frequency": "5596",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4689",
+    "word": "comply",
+    "parts": "v",
+    "frequency": "5452",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4690",
+    "word": "triumph",
+    "parts": "n",
+    "frequency": "5337",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4691",
+    "word": "shareholder",
+    "parts": "n",
+    "frequency": "5742",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4692",
+    "word": "comparable",
+    "parts": "j",
+    "frequency": "5600",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4693",
+    "word": "transport",
+    "parts": "v",
+    "frequency": "5336",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4694",
+    "word": "conscience",
+    "parts": "n",
+    "frequency": "5317",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4695",
+    "word": "calculation",
+    "parts": "n",
+    "frequency": "5577",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4696",
+    "word": "considerably",
+    "parts": "r",
+    "frequency": "5481",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4697",
+    "word": "interval",
+    "parts": "n",
+    "frequency": "5708",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4698",
+    "word": "scratch",
+    "parts": "v",
+    "frequency": "5629",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4699",
+    "word": "awake",
+    "parts": "j",
+    "frequency": "5806",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4700",
+    "word": "jurisdiction",
+    "parts": "n",
+    "frequency": "5691",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4701",
+    "word": "inevitably",
+    "parts": "r",
+    "frequency": "5420",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4702",
+    "word": "feminist",
+    "parts": "j",
+    "frequency": "5719",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4703",
+    "word": "constraint",
+    "parts": "n",
+    "frequency": "5942",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4704",
+    "word": "emotionally",
+    "parts": "r",
+    "frequency": "5321",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4705",
+    "word": "expedition",
+    "parts": "n",
+    "frequency": "5467",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4706",
+    "word": "allegedly",
+    "parts": "r",
+    "frequency": "5451",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4707",
+    "word": "compromise",
+    "parts": "v",
+    "frequency": "5322",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4708",
+    "word": "strain",
+    "parts": "v",
+    "frequency": "5435",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4709",
+    "word": "similarity",
+    "parts": "n",
+    "frequency": "5709",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4710",
+    "word": "butt",
+    "parts": "n",
+    "frequency": "5490",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4711",
+    "word": "lid",
+    "parts": "n",
+    "frequency": "5558",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4712",
+    "word": "dumb",
+    "parts": "j",
+    "frequency": "5486",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4713",
+    "word": "bulk",
+    "parts": "n",
+    "frequency": "5324",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4714",
+    "word": "sprinkle",
+    "parts": "v",
+    "frequency": "5777",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4715",
+    "word": "mortality",
+    "parts": "n",
+    "frequency": "5785",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4716",
+    "word": "philosophical",
+    "parts": "j",
+    "frequency": "5731",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4717",
+    "word": "conversion",
+    "parts": "n",
+    "frequency": "5627",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4718",
+    "word": "patron",
+    "parts": "n",
+    "frequency": "5331",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4719",
+    "word": "municipal",
+    "parts": "j",
+    "frequency": "5536",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4720",
+    "word": "any",
+    "parts": "r",
+    "frequency": "5352",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4721",
+    "word": "liver",
+    "parts": "n",
+    "frequency": "5415",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4722",
+    "word": "harmony",
+    "parts": "n",
+    "frequency": "5410",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4723",
+    "word": "solely",
+    "parts": "r",
+    "frequency": "5456",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4724",
+    "word": "tolerance",
+    "parts": "n",
+    "frequency": "5513",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4725",
+    "word": "instant",
+    "parts": "n",
+    "frequency": "5755",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4726",
+    "word": "goat",
+    "parts": "n",
+    "frequency": "5459",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4727",
+    "word": "arm",
+    "parts": "v",
+    "frequency": "5232",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4728",
+    "word": "blessing",
+    "parts": "n",
+    "frequency": "5222",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4729",
+    "word": "banana",
+    "parts": "n",
+    "frequency": "5458",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4730",
+    "word": "running",
+    "parts": "n",
+    "frequency": "5271",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4731",
+    "word": "palace",
+    "parts": "n",
+    "frequency": "5347",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4732",
+    "word": "formerly",
+    "parts": "r",
+    "frequency": "5350",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4733",
+    "word": "peasant",
+    "parts": "n",
+    "frequency": "5609",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4734",
+    "word": "neat",
+    "parts": "j",
+    "frequency": "5359",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4735",
+    "word": "grandparent",
+    "parts": "n",
+    "frequency": "5334",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4736",
+    "word": "lawmaker",
+    "parts": "n",
+    "frequency": "5755",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4737",
+    "word": "supermarket",
+    "parts": "n",
+    "frequency": "5389",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4738",
+    "word": "cruise",
+    "parts": "n",
+    "frequency": "5434",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4739",
+    "word": "mobile",
+    "parts": "j",
+    "frequency": "5339",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4740",
+    "word": "plain",
+    "parts": "n",
+    "frequency": "5337",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4741",
+    "word": "part",
+    "parts": "i",
+    "frequency": "5503",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4742",
+    "word": "calendar",
+    "parts": "n",
+    "frequency": "5258",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4743",
+    "word": "widow",
+    "parts": "n",
+    "frequency": "5309",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4744",
+    "word": "deposit",
+    "parts": "n",
+    "frequency": "5497",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4745",
+    "word": "beard",
+    "parts": "n",
+    "frequency": "5528",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4746",
+    "word": "brake",
+    "parts": "n",
+    "frequency": "5522",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4747",
+    "word": "downtown",
+    "parts": "r",
+    "frequency": "5483",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4748",
+    "word": "screening",
+    "parts": "n",
+    "frequency": "5407",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4749",
+    "word": "impulse",
+    "parts": "n",
+    "frequency": "5305",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4750",
+    "word": "forbid",
+    "parts": "v",
+    "frequency": "5167",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4751",
+    "word": "fur",
+    "parts": "n",
+    "frequency": "5466",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4752",
+    "word": "brutal",
+    "parts": "j",
+    "frequency": "5193",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4753",
+    "word": "predator",
+    "parts": "n",
+    "frequency": "5400",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4754",
+    "word": "poke",
+    "parts": "v",
+    "frequency": "5575",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4755",
+    "word": "opt",
+    "parts": "v",
+    "frequency": "5371",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4756",
+    "word": "voluntary",
+    "parts": "j",
+    "frequency": "5504",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4757",
+    "word": "trouble",
+    "parts": "v",
+    "frequency": "5177",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4758",
+    "word": "valid",
+    "parts": "j",
+    "frequency": "5509",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4759",
+    "word": "forum",
+    "parts": "n",
+    "frequency": "5419",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4760",
+    "word": "dancing",
+    "parts": "n",
+    "frequency": "5243",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4761",
+    "word": "happily",
+    "parts": "r",
+    "frequency": "5331",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4762",
+    "word": "soar",
+    "parts": "v",
+    "frequency": "5344",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4763",
+    "word": "removal",
+    "parts": "n",
+    "frequency": "5488",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4764",
+    "word": "autonomy",
+    "parts": "n",
+    "frequency": "5849",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "4765",
+    "word": "enact",
+    "parts": "v",
+    "frequency": "5441",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4766",
+    "word": "round",
+    "parts": "v",
+    "frequency": "5247",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4767",
+    "word": "thread",
+    "parts": "n",
+    "frequency": "5340",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4768",
+    "word": "light",
+    "parts": "i",
+    "frequency": "5458",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4769",
+    "word": "landmark",
+    "parts": "n",
+    "frequency": "5332",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4770",
+    "word": "unhappy",
+    "parts": "j",
+    "frequency": "5162",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4771",
+    "word": "offender",
+    "parts": "n",
+    "frequency": "5417",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4772",
+    "word": "coming",
+    "parts": "j",
+    "frequency": "5181",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4773",
+    "word": "privately",
+    "parts": "r",
+    "frequency": "5212",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4774",
+    "word": "fraction",
+    "parts": "n",
+    "frequency": "5313",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4775",
+    "word": "distinctive",
+    "parts": "j",
+    "frequency": "5373",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4776",
+    "word": "tourism",
+    "parts": "n",
+    "frequency": "5429",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4777",
+    "word": "threshold",
+    "parts": "n",
+    "frequency": "5490",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4778",
+    "word": "calm",
+    "parts": "j",
+    "frequency": "5309",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4779",
+    "word": "routinely",
+    "parts": "r",
+    "frequency": "5269",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4780",
+    "word": "suite",
+    "parts": "n",
+    "frequency": "5321",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4781",
+    "word": "remark",
+    "parts": "v",
+    "frequency": "5289",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4782",
+    "word": "regulator",
+    "parts": "n",
+    "frequency": "5462",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4783",
+    "word": "straw",
+    "parts": "n",
+    "frequency": "5297",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4784",
+    "word": "theological",
+    "parts": "j",
+    "frequency": "5684",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4785",
+    "word": "apart",
+    "parts": "i",
+    "frequency": "5216",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4786",
+    "word": "exhaust",
+    "parts": "v",
+    "frequency": "5204",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4787",
+    "word": "globe",
+    "parts": "n",
+    "frequency": "5166",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4788",
+    "word": "fragile",
+    "parts": "j",
+    "frequency": "5125",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4789",
+    "word": "objection",
+    "parts": "n",
+    "frequency": "5276",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4790",
+    "word": "chemistry",
+    "parts": "n",
+    "frequency": "5192",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4791",
+    "word": "old-fashioned",
+    "parts": "j",
+    "frequency": "5200",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4792",
+    "word": "crowded",
+    "parts": "j",
+    "frequency": "5196",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4793",
+    "word": "circle",
+    "parts": "v",
+    "frequency": "5401",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4794",
+    "word": "blast",
+    "parts": "n",
+    "frequency": "5241",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4795",
+    "word": "prevail",
+    "parts": "v",
+    "frequency": "5207",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4796",
+    "word": "overnight",
+    "parts": "r",
+    "frequency": "5170",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4797",
+    "word": "denial",
+    "parts": "n",
+    "frequency": "5207",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4798",
+    "word": "rental",
+    "parts": "n",
+    "frequency": "5357",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4799",
+    "word": "fantastic",
+    "parts": "j",
+    "frequency": "5269",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4800",
+    "word": "fragment",
+    "parts": "n",
+    "frequency": "5308",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4801",
+    "word": "level",
+    "parts": "j",
+    "frequency": "5367",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4802",
+    "word": "screw",
+    "parts": "v",
+    "frequency": "5361",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4803",
+    "word": "warmth",
+    "parts": "n",
+    "frequency": "5383",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4804",
+    "word": "undergraduate",
+    "parts": "n",
+    "frequency": "5683",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4805",
+    "word": "liquid",
+    "parts": "j",
+    "frequency": "5265",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4806",
+    "word": "headache",
+    "parts": "n",
+    "frequency": "5256",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4807",
+    "word": "policeman",
+    "parts": "n",
+    "frequency": "5278",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4808",
+    "word": "yield",
+    "parts": "n",
+    "frequency": "5648",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4809",
+    "word": "projection",
+    "parts": "n",
+    "frequency": "5288",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4810",
+    "word": "battle",
+    "parts": "v",
+    "frequency": "5240",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4811",
+    "word": "suitable",
+    "parts": "j",
+    "frequency": "5291",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4812",
+    "word": "mention",
+    "parts": "n",
+    "frequency": "5137",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4813",
+    "word": "graduation",
+    "parts": "n",
+    "frequency": "5218",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4814",
+    "word": "drill",
+    "parts": "v",
+    "frequency": "5279",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4815",
+    "word": "cruel",
+    "parts": "j",
+    "frequency": "5128",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4816",
+    "word": "mansion",
+    "parts": "n",
+    "frequency": "5233",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4817",
+    "word": "regard",
+    "parts": "n",
+    "frequency": "5263",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4818",
+    "word": "grape",
+    "parts": "n",
+    "frequency": "5318",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4819",
+    "word": "authorize",
+    "parts": "v",
+    "frequency": "5209",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4820",
+    "word": "cottage",
+    "parts": "n",
+    "frequency": "5328",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4821",
+    "word": "driveway",
+    "parts": "n",
+    "frequency": "5459",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4822",
+    "word": "charm",
+    "parts": "n",
+    "frequency": "5157",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4823",
+    "word": "sexuality",
+    "parts": "n",
+    "frequency": "5531",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4824",
+    "word": "loyal",
+    "parts": "j",
+    "frequency": "5066",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4825",
+    "word": "clay",
+    "parts": "n",
+    "frequency": "5287",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4826",
+    "word": "pound",
+    "parts": "v",
+    "frequency": "5327",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4827",
+    "word": "balloon",
+    "parts": "n",
+    "frequency": "5187",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4828",
+    "word": "invention",
+    "parts": "n",
+    "frequency": "5211",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4829",
+    "word": "ego",
+    "parts": "n",
+    "frequency": "5239",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4830",
+    "word": "fare",
+    "parts": "n",
+    "frequency": "5362",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4831",
+    "word": "homework",
+    "parts": "n",
+    "frequency": "5093",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4832",
+    "word": "disc",
+    "parts": "n",
+    "frequency": "5403",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4833",
+    "word": "sofa",
+    "parts": "n",
+    "frequency": "5499",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4834",
+    "word": "guarantee",
+    "parts": "n",
+    "frequency": "5205",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4835",
+    "word": "availability",
+    "parts": "n",
+    "frequency": "5519",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4836",
+    "word": "radar",
+    "parts": "n",
+    "frequency": "5221",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4837",
+    "word": "frown",
+    "parts": "v",
+    "frequency": "5903",
+    "dispersion": "0.83"
+  },
+  {
+    "rank": "4838",
+    "word": "regain",
+    "parts": "v",
+    "frequency": "5041",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4839",
+    "word": "leave",
+    "parts": "n",
+    "frequency": "5087",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4840",
+    "word": "permit",
+    "parts": "n",
+    "frequency": "5305",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4841",
+    "word": "sweater",
+    "parts": "n",
+    "frequency": "5392",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4842",
+    "word": "rehabilitation",
+    "parts": "n",
+    "frequency": "5547",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4843",
+    "word": "rubber",
+    "parts": "j",
+    "frequency": "5190",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4844",
+    "word": "retreat",
+    "parts": "n",
+    "frequency": "5132",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4845",
+    "word": "molecule",
+    "parts": "n",
+    "frequency": "5445",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4846",
+    "word": "freely",
+    "parts": "r",
+    "frequency": "5085",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4847",
+    "word": "favorable",
+    "parts": "j",
+    "frequency": "5324",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4848",
+    "word": "steadily",
+    "parts": "r",
+    "frequency": "5085",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4849",
+    "word": "veteran",
+    "parts": "j",
+    "frequency": "5312",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4850",
+    "word": "integrated",
+    "parts": "j",
+    "frequency": "5455",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4851",
+    "word": "ha",
+    "parts": "u",
+    "frequency": "5372",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4852",
+    "word": "youngster",
+    "parts": "n",
+    "frequency": "5184",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4853",
+    "word": "broadcast",
+    "parts": "v",
+    "frequency": "5138",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4854",
+    "word": "premium",
+    "parts": "n",
+    "frequency": "5279",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4855",
+    "word": "accountability",
+    "parts": "n",
+    "frequency": "5409",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4856",
+    "word": "overwhelm",
+    "parts": "v",
+    "frequency": "4976",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4857",
+    "word": "one-third",
+    "parts": "m",
+    "frequency": "5210",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4858",
+    "word": "contemplate",
+    "parts": "v",
+    "frequency": "5027",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4859",
+    "word": "update",
+    "parts": "v",
+    "frequency": "5227",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4860",
+    "word": "spark",
+    "parts": "v",
+    "frequency": "5071",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4861",
+    "word": "ironically",
+    "parts": "r",
+    "frequency": "5154",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4862",
+    "word": "fatigue",
+    "parts": "n",
+    "frequency": "5214",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4863",
+    "word": "beyond",
+    "parts": "r",
+    "frequency": "5036",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4864",
+    "word": "speculate",
+    "parts": "v",
+    "frequency": "5012",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4865",
+    "word": "marker",
+    "parts": "n",
+    "frequency": "5156",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4866",
+    "word": "low",
+    "parts": "r",
+    "frequency": "5024",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4867",
+    "word": "preach",
+    "parts": "v",
+    "frequency": "5063",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4868",
+    "word": "bucket",
+    "parts": "n",
+    "frequency": "5233",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4869",
+    "word": "bomb",
+    "parts": "v",
+    "frequency": "5275",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4870",
+    "word": "blond",
+    "parts": "j",
+    "frequency": "5479",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4871",
+    "word": "confession",
+    "parts": "n",
+    "frequency": "5074",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4872",
+    "word": "provoke",
+    "parts": "v",
+    "frequency": "5063",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4873",
+    "word": "marble",
+    "parts": "n",
+    "frequency": "5210",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4874",
+    "word": "substantially",
+    "parts": "r",
+    "frequency": "5344",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4875",
+    "word": "twist",
+    "parts": "n",
+    "frequency": "5060",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4876",
+    "word": "defender",
+    "parts": "n",
+    "frequency": "5136",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4877",
+    "word": "fish",
+    "parts": "v",
+    "frequency": "5183",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4878",
+    "word": "explicit",
+    "parts": "j",
+    "frequency": "5461",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4879",
+    "word": "transport",
+    "parts": "n",
+    "frequency": "5313",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4880",
+    "word": "disturbing",
+    "parts": "j",
+    "frequency": "4990",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4881",
+    "word": "surveillance",
+    "parts": "n",
+    "frequency": "5132",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4882",
+    "word": "magnetic",
+    "parts": "j",
+    "frequency": "5377",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4883",
+    "word": "technician",
+    "parts": "n",
+    "frequency": "5048",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4884",
+    "word": "mutter",
+    "parts": "v",
+    "frequency": "5753",
+    "dispersion": "0.84"
+  },
+  {
+    "rank": "4885",
+    "word": "devastating",
+    "parts": "j",
+    "frequency": "5055",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4886",
+    "word": "depart",
+    "parts": "v",
+    "frequency": "5035",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4887",
+    "word": "arrow",
+    "parts": "n",
+    "frequency": "5208",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4888",
+    "word": "trauma",
+    "parts": "n",
+    "frequency": "5880",
+    "dispersion": "0.82"
+  },
+  {
+    "rank": "4889",
+    "word": "neighboring",
+    "parts": "j",
+    "frequency": "5082",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4890",
+    "word": "soak",
+    "parts": "v",
+    "frequency": "5186",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4891",
+    "word": "ribbon",
+    "parts": "n",
+    "frequency": "5159",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4892",
+    "word": "meantime",
+    "parts": "n",
+    "frequency": "5022",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4893",
+    "word": "transmit",
+    "parts": "v",
+    "frequency": "5117",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4894",
+    "word": "screen",
+    "parts": "v",
+    "frequency": "5079",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4895",
+    "word": "harvest",
+    "parts": "n",
+    "frequency": "5125",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4896",
+    "word": "consecutive",
+    "parts": "j",
+    "frequency": "5471",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4897",
+    "word": "republican",
+    "parts": "j",
+    "frequency": "5297",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4898",
+    "word": "coordinate",
+    "parts": "v",
+    "frequency": "5152",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4899",
+    "word": "worldwide",
+    "parts": "j",
+    "frequency": "5089",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4900",
+    "word": "within",
+    "parts": "r",
+    "frequency": "5085",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4901",
+    "word": "spy",
+    "parts": "n",
+    "frequency": "5076",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4902",
+    "word": "slot",
+    "parts": "n",
+    "frequency": "5130",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4903",
+    "word": "riot",
+    "parts": "n",
+    "frequency": "5203",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4904",
+    "word": "nutrient",
+    "parts": "n",
+    "frequency": "5426",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4905",
+    "word": "citizenship",
+    "parts": "n",
+    "frequency": "5602",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4906",
+    "word": "severely",
+    "parts": "r",
+    "frequency": "5035",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4907",
+    "word": "sovereignty",
+    "parts": "n",
+    "frequency": "5541",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4908",
+    "word": "ridge",
+    "parts": "n",
+    "frequency": "5229",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4909",
+    "word": "brave",
+    "parts": "j",
+    "frequency": "5061",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4910",
+    "word": "lighting",
+    "parts": "n",
+    "frequency": "5081",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4911",
+    "word": "specify",
+    "parts": "v",
+    "frequency": "5379",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4912",
+    "word": "contributor",
+    "parts": "n",
+    "frequency": "5084",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4913",
+    "word": "frustrate",
+    "parts": "v",
+    "frequency": "4933",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4914",
+    "word": "crowd",
+    "parts": "v",
+    "frequency": "5083",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4915",
+    "word": "articulate",
+    "parts": "v",
+    "frequency": "5350",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4916",
+    "word": "importantly",
+    "parts": "r",
+    "frequency": "5130",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4917",
+    "word": "transit",
+    "parts": "n",
+    "frequency": "5226",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4918",
+    "word": "dense",
+    "parts": "j",
+    "frequency": "5061",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4919",
+    "word": "seminar",
+    "parts": "n",
+    "frequency": "5106",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4920",
+    "word": "electronics",
+    "parts": "n",
+    "frequency": "5116",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4921",
+    "word": "sunny",
+    "parts": "j",
+    "frequency": "5117",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4922",
+    "word": "shorts",
+    "parts": "n",
+    "frequency": "5148",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4923",
+    "word": "swell",
+    "parts": "v",
+    "frequency": "5125",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4924",
+    "word": "accusation",
+    "parts": "n",
+    "frequency": "4987",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4925",
+    "word": "soften",
+    "parts": "v",
+    "frequency": "5112",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4926",
+    "word": "photograph",
+    "parts": "v",
+    "frequency": "5006",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4927",
+    "word": "straighten",
+    "parts": "v",
+    "frequency": "5352",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4928",
+    "word": "terribly",
+    "parts": "r",
+    "frequency": "5096",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4929",
+    "word": "cue",
+    "parts": "n",
+    "frequency": "5186",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4930",
+    "word": "sudden",
+    "parts": "r",
+    "frequency": "5211",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4931",
+    "word": "bride",
+    "parts": "n",
+    "frequency": "5613",
+    "dispersion": "0.85"
+  },
+  {
+    "rank": "4932",
+    "word": "biography",
+    "parts": "n",
+    "frequency": "5015",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4933",
+    "word": "hazard",
+    "parts": "n",
+    "frequency": "5159",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4934",
+    "word": "compelling",
+    "parts": "j",
+    "frequency": "4995",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4935",
+    "word": "seldom",
+    "parts": "r",
+    "frequency": "5009",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4936",
+    "word": "tile",
+    "parts": "n",
+    "frequency": "5200",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4937",
+    "word": "economically",
+    "parts": "r",
+    "frequency": "5169",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4938",
+    "word": "honestly",
+    "parts": "r",
+    "frequency": "5042",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4939",
+    "word": "troubled",
+    "parts": "j",
+    "frequency": "4991",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4940",
+    "word": "bow",
+    "parts": "v",
+    "frequency": "5293",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4941",
+    "word": "twentieth",
+    "parts": "m",
+    "frequency": "5458",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4942",
+    "word": "balanced",
+    "parts": "j",
+    "frequency": "5486",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4943",
+    "word": "foreigner",
+    "parts": "n",
+    "frequency": "5076",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4944",
+    "word": "launch",
+    "parts": "n",
+    "frequency": "5080",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4945",
+    "word": "convenience",
+    "parts": "n",
+    "frequency": "4972",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4946",
+    "word": "delight",
+    "parts": "n",
+    "frequency": "5038",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4947",
+    "word": "weave",
+    "parts": "v",
+    "frequency": "5015",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4948",
+    "word": "timber",
+    "parts": "n",
+    "frequency": "5150",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4949",
+    "word": "till",
+    "parts": "c",
+    "frequency": "5269",
+    "dispersion": "0.90"
+  },
+  {
+    "rank": "4950",
+    "word": "accurately",
+    "parts": "r",
+    "frequency": "5156",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4951",
+    "word": "plea",
+    "parts": "n",
+    "frequency": "5000",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4952",
+    "word": "bulb",
+    "parts": "n",
+    "frequency": "5157",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4953",
+    "word": "copy",
+    "parts": "v",
+    "frequency": "4970",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4954",
+    "word": "flying",
+    "parts": "j",
+    "frequency": "5056",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4955",
+    "word": "sustainable",
+    "parts": "j",
+    "frequency": "5339",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4956",
+    "word": "devil",
+    "parts": "n",
+    "frequency": "5051",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4957",
+    "word": "bolt",
+    "parts": "n",
+    "frequency": "5148",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4958",
+    "word": "cargo",
+    "parts": "n",
+    "frequency": "4991",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4959",
+    "word": "spine",
+    "parts": "n",
+    "frequency": "5110",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4960",
+    "word": "seller",
+    "parts": "n",
+    "frequency": "5083",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4961",
+    "word": "skilled",
+    "parts": "j",
+    "frequency": "5047",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4962",
+    "word": "managing",
+    "parts": "j",
+    "frequency": "5126",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4963",
+    "word": "public",
+    "parts": "r",
+    "frequency": "4877",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4964",
+    "word": "marine",
+    "parts": "j",
+    "frequency": "5154",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4965",
+    "word": "dock",
+    "parts": "n",
+    "frequency": "5178",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4966",
+    "word": "organized",
+    "parts": "j",
+    "frequency": "5011",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4967",
+    "word": "fog",
+    "parts": "n",
+    "frequency": "5186",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4968",
+    "word": "diplomat",
+    "parts": "n",
+    "frequency": "5185",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4969",
+    "word": "boring",
+    "parts": "j",
+    "frequency": "4922",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4970",
+    "word": "sometime",
+    "parts": "r",
+    "frequency": "4938",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4971",
+    "word": "summary",
+    "parts": "n",
+    "frequency": "5304",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4972",
+    "word": "missionary",
+    "parts": "n",
+    "frequency": "5438",
+    "dispersion": "0.87"
+  },
+  {
+    "rank": "4973",
+    "word": "epidemic",
+    "parts": "n",
+    "frequency": "5010",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4974",
+    "word": "fatal",
+    "parts": "j",
+    "frequency": "4875",
+    "dispersion": "0.97"
+  },
+  {
+    "rank": "4975",
+    "word": "trim",
+    "parts": "v",
+    "frequency": "5113",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4976",
+    "word": "warehouse",
+    "parts": "n",
+    "frequency": "5020",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4977",
+    "word": "accelerate",
+    "parts": "v",
+    "frequency": "4923",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4978",
+    "word": "butterfly",
+    "parts": "n",
+    "frequency": "5031",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4979",
+    "word": "bronze",
+    "parts": "n",
+    "frequency": "5118",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4980",
+    "word": "drown",
+    "parts": "v",
+    "frequency": "5097",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4981",
+    "word": "inherent",
+    "parts": "j",
+    "frequency": "5339",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4982",
+    "word": "praise",
+    "parts": "n",
+    "frequency": "4896",
+    "dispersion": "0.96"
+  },
+  {
+    "rank": "4983",
+    "word": "nationwide",
+    "parts": "r",
+    "frequency": "5104",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4984",
+    "word": "spit",
+    "parts": "v",
+    "frequency": "5286",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4985",
+    "word": "harvest",
+    "parts": "v",
+    "frequency": "5065",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4986",
+    "word": "kneel",
+    "parts": "v",
+    "frequency": "5467",
+    "dispersion": "0.86"
+  },
+  {
+    "rank": "4987",
+    "word": "vacuum",
+    "parts": "n",
+    "frequency": "5028",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4988",
+    "word": "selected",
+    "parts": "j",
+    "frequency": "5315",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4989",
+    "word": "dictate",
+    "parts": "v",
+    "frequency": "4935",
+    "dispersion": "0.95"
+  },
+  {
+    "rank": "4990",
+    "word": "stereotype",
+    "parts": "n",
+    "frequency": "5109",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4991",
+    "word": "sensor",
+    "parts": "n",
+    "frequency": "5154",
+    "dispersion": "0.91"
+  },
+  {
+    "rank": "4992",
+    "word": "laundry",
+    "parts": "n",
+    "frequency": "5063",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4993",
+    "word": "manual",
+    "parts": "n",
+    "frequency": "5040",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4994",
+    "word": "pistol",
+    "parts": "n",
+    "frequency": "5261",
+    "dispersion": "0.89"
+  },
+  {
+    "rank": "4995",
+    "word": "naval",
+    "parts": "j",
+    "frequency": "4990",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "4996",
+    "word": "plaintiff",
+    "parts": "n",
+    "frequency": "5312",
+    "dispersion": "0.88"
+  },
+  {
+    "rank": "4997",
+    "word": "kid",
+    "parts": "v",
+    "frequency": "5094",
+    "dispersion": "0.92"
+  },
+  {
+    "rank": "4998",
+    "word": "middle-class",
+    "parts": "j",
+    "frequency": "5025",
+    "dispersion": "0.93"
+  },
+  {
+    "rank": "4999",
+    "word": "apology",
+    "parts": "n",
+    "frequency": "4972",
+    "dispersion": "0.94"
+  },
+  {
+    "rank": "5000",
+    "word": "till",
+    "parts": "i",
+    "frequency": "5079",
+    "dispersion": "0.92"
+  }
+];
