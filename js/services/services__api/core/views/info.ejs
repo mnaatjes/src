@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Info Page</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h2>Information</h2>
+    </header>
+    <main id="info--root">
+        <table>
+            <thead>
+                <tr>
+                    <th>Surname</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% list.forEach(item => { %>
+                    <tr>
+                        <td><%= item.surname %></td>
+                        <td><%= item.country %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

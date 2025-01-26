@@ -75,13 +75,17 @@ for(let i = 0; i < 12; i++){
     randomArrs.push(sub);
 }
 /**
+ * @constant surnames
+ */
+import { surnames } from '../../../data/js/surnames.js';
+console.log(surnames);
+const lastNames = surnames.filter(obj => obj.country === 'FR').map(obj => obj['surname']);
+console.log(lastNames);
+/**
  * @implements {shuffle, sortAsc, sortDesc }
  */
-console.log(_.distinct(weatherData, 'temp, zip'));
-/*
-console.log(randomNums);
-console.log(_.shuffle(randomNums));
-console.log(_.sortAsc(randomNums));
-console.log(_.sortDesc(randomNums));
-console.log(_.min(randomNums));
-*/
+/**
+ * @constant english
+ */
+import { english } from '../../../data/js/english.js';
+console.log(english);
