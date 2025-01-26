@@ -77,7 +77,7 @@ for(let i = 0; i < 12; i++){
 /**
  * @constant surnames
  */
-import { surnames } from '../../../data/js/surnames.js';
+import { surnames } from '../../../../js/data/js/surnames.js';
 console.log(surnames);
 const lastNames = surnames.filter(obj => obj.country === 'FR').map(obj => obj['surname']);
 console.log(lastNames);
@@ -87,5 +87,5 @@ console.log(lastNames);
 /**
  * @constant english
  */
-import { english } from '../../../data/js/english.js';
+import { english } from '../../../../js/data/js/english.js';
 console.log(english);
