@@ -11,12 +11,11 @@
  * @description express.js constants
  * @constant { app, express, port }
  */
-const e = require('express');
-const express   = require('express');
-const multer    = require('multer');
-const app       = express();
-const path      = require('path');
-const port      = 3000;
+const express           = require('express');
+const uploadMiddleware  = require('./middleware/upload-middleware');
+const app               = express();
+const path              = require('path');
+const port              = 3000;
 /**
  * define public directory
  */
@@ -28,31 +27,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 /**
- * configure multer
- */
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, 'uploads/');
-    },
-    filename: (req, file, cb) => {
-        let unique = Date.now() + Math.round(Math.random() * 1E9);
-        cb(null, file.fieldname + '__' + unique + path.extname(file.originalname));
-    }
-});
-const upload = multer({storage: storage});
-/**
  * main route
  */
 app.get('/', (req, res) => {
     /**
      * serve static file
      */
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-})
+    //res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    /**
+     * serve view index.ejs
+     */
+    res.render('index.ejs');
+});
 /**
  * post to upload
  */
-app.post('/upload', upload.single('file'), (req, res) => {
+app.post('/upload', uploadMiddleware(path), (req, res) => {
     /**
      * attempt to req file and json
      */
@@ -66,12 +56,12 @@ app.post('/upload', upload.single('file'), (req, res) => {
         /**
          * resolve json from file upload
          */
-        res.json({message: 'File Uploaded Successfully', filename: req.file.filename});
+        //res.json();
+        res.render('info.ejs', {message: 'File Uploaded Successfully', filename: req.file.filename, ext: path.extname(req.file.filename)});
     } catch (error){
         console.error(error);
-        res.status(500).json({error: 'Error uploading file'})
+        res.status(500).json({error: 'Error uploading file'});
     }
-
 });
 /**
  * port listener
