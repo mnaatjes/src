@@ -1,0 +1,36 @@
+/**-------------------------------------------------------
+*
+*   SASS VARIABLES
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT all variables in the varaiables directory
+*/
+@use 'sass:map' as map;
+@use './functions' as *;
+@use './variables/colors' as *;
+@use './variables/borders' as *;
+@use './variables/animations' as *;
+/**
+*   Default map
+*/
+$default-props: (
+    'position': (
+        'margin': 0.5rem 1rem,
+        'padding': 0.5rem 1rem,
+    ),
+    'border': map.get($borders, 'default'),
+    'background-color': map.get($bg-colors, 'default'),
+    'transition': map.get($transitions, 'medium'),
+    'text': (
+        'font-size': 1rem,
+        'line-height': 1.5,
+    )
+);
+/**
+*   FORWARD all variables in the varaiables directory
+*/
+@forward './variables/colors';
+@forward './variables/borders';
+@forward './variables/animations';
+@debug $default-props;

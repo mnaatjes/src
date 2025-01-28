@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>App: File Converter</title>
+    <link rel="stylesheet" href="./styles/css/main.css">
   </head>
   <body>
     <header>
@@ -12,8 +13,11 @@
     </header>
     <main id="root">
         <form action="/upload" method="POST" enctype="multipart/form-data">
-            <input type="file" name="file" />
-            <button type="submit">Upload</button>
+          <label for="file" class="file--upload">
+            Here is a label!
+          </label>
+          <input type="file" name="file"/>
+          <button type="submit">Upload</button>
         </form>
     </main>
     <footer>

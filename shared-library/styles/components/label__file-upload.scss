@@ -1,0 +1,29 @@
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: FILE-UPLOAD
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+@use '../variables' as *;
+@use '../utilities' as *;
+@use '../mixins' as *;
+@use 'sass:map' as map;
+/**
+*   LABEL: FILE UPLOAD
+*/
+label.file--upload {
+    /*BEHAVIOR*/
+    cursor: pointer;
+    /*DISPLAY*/
+    display: inline-block;
+    /*POSITION*/
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    /*BORDER*/
+    //@include themeElement('danger');
+    @include setProps();
+    /*TRANSITIONS*/
+    transition: map.get($transitions, 'fast');
+}

@@ -21,6 +21,10 @@ const port              = 3000;
  */
 app.use(express.static(path.join(__dirname, 'public')));
 /**
+ * import stylesheet
+ */
+app.use('/styles/css', express.static('../../shared-library/styles/css'));
+/**
  * set up ejs as view engine
  * establish views directory
  */

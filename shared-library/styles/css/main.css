@@ -1,0 +1,409 @@
+/**-------------------------------------------------------
+*
+*   SASS MAIN
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT MODULES
+*/
+/**
+*   IMPORT PARTIALS
+*/
+/**-------------------------------------------------------
+*
+*   SASS RESETS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+/**-------------------------------------------------------
+*
+*   SASS VARIABLES
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT all variables in the varaiables directory
+*/
+/**-------------------------------------------------------
+*
+*   SASS FUNCTIONS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORTS
+*/
+/**
+* UTILITY FUNCTIONS
+*/
+/**
+*   COLOR: LIGHTEN BACKGROUND
+*/
+/**
+*   COLOR: DARKEN BACKGROUND
+*/
+/**
+*   BACKGROUND COLORS
+*/
+/**
+*   BORDER FUNCTION
+*/
+/**
+*   THEMES
+*/
+/**
+*   generate border
+*/
+/**-------------------------------------------------------
+*
+*   SASS VARIABLES
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT all variables in the varaiables directory
+*/
+/**-------------------------------------------------------
+*
+*   SASS VARIABLES: COLORS
+*
+*--------------------------------------------------------*/
+/**
+*   COLOR MAP
+*/
+/**
+*   BACKGROUND COLORS
+*/
+/**-------------------------------------------------------
+*
+*   SASS VARIABLES
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT all variables in the varaiables directory
+*/
+/**-------------------------------------------------------
+*
+*   SASS VARIABLES
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT all variables in the varaiables directory
+*/
+/**
+*   Border Attributes
+*/
+/**
+*   Borders Map
+*/
+/**-------------------------------------------------------
+*
+*   SASS VARIABLES: ANIMATIONS
+*
+*--------------------------------------------------------*/
+/**
+*   TRANSITIONS
+*/
+/**
+*   Default map
+*/
+/**
+*   FORWARD all variables in the varaiables directory
+*/
+/**
+*   ALL
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**
+*   HEADINGS
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/**
+*   LISTS
+*/
+ul, ol {
+  list-style: none;
+}
+
+/**
+*   ANCHORS
+*/
+a {
+  text-decoration: none;
+}
+
+/**
+*   BUTTONS
+*/
+button {
+  /*BEHAVIOR*/
+  cursor: pointer;
+  /*POSITION*/
+  padding: 0.5rem 1rem;
+  /*DISPLAY*/
+  display: inline-block;
+  /*BORDER*/
+  outline: none;
+  border-style: solid;
+  border-width: 0.12rem;
+  border-radius: 0.25rem;
+  /*TEXT*/
+  line-height: 1.5;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  /*ANIMATION*/
+  transition: 0.5s ease-in-out;
+  /**
+  *   HOVER
+  */
+}
+button:hover {
+  background-color: #212529;
+}
+
+/**
+*   INPUT
+*/
+input[type=file] {
+  /*DISPLAY*/
+  display: none;
+}
+
+/**-------------------------------------------------------
+*
+*   SASS UTILITIES
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORTS
+*/
+/**
+*   COLOR UTILS
+*   @description generates bg- classes
+*/
+/**
+*   .bg-- class
+*/
+.bg--primary {
+  background-color: rgb(63.5819672131, 140.3073770492, 253.4180327869);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(215.75, 98.3606557377%, -27.8431372549%);
+}
+
+/**
+*   .bg-- class
+*/
+.bg--secondary {
+  background-color: rgb(133.7553648069, 142.4849785408, 150.2446351931);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(208.2352941176, 7.2961373391%, -34.3137254902%);
+}
+
+/**
+*   .bg-- class
+*/
+.bg--success {
+  background-color: rgb(32.96875, 178.03125, 110.775);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(152.1818181818, 68.75%, -48.6274509804%);
+}
+
+/**
+*   .bg-- class
+*/
+.bg--danger {
+  background-color: rgb(227.5316455696, 96.4683544304, 109.0253164557);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(354.251497006, 70.4641350211%, -26.4705882353%);
+}
+
+/**
+*   .bg-- class
+*/
+.bg--warning {
+  background-color: rgb(255, 205.75, 58);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(45, 100%, -28.6274509804%);
+}
+
+/**
+*   .bg-- class
+*/
+.bg--info {
+  background-color: rgb(59.5849802372, 213.4743083004, 244.4150197628);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(190.0440528634, 89.7233201581%, -30.3921568627%);
+}
+
+/**
+*   .bg-- class
+*/
+.bg--light {
+  background-color: hsl(0, 0%, 106.0784313725%);
+  /**
+  *   adjust font color to match
+  */
+  color: #292929;
+}
+
+/**
+*   .bg-- class
+*/
+.bg--default {
+  background-color: hsl(0, 0%, 106.0784313725%);
+  /**
+  *   adjust font color to match
+  */
+  color: #292929;
+}
+
+/**
+*   .bg-- class
+*/
+.bg--dark {
+  background-color: rgb(55.7432432432, 62.5, 69.2567567568);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(210, 10.8108108108%, -65.4901960784%);
+}
+
+/**
+*   .bg-- class
+*/
+.bg--black {
+  background-color: rgb(25.5, 25.5, 25.5);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(0, 0%, -80%);
+}
+
+/**
+*   .bg-- class
+*/
+.bg--white {
+  background-color: hsl(0, 0%, 110%);
+  /**
+  *   adjust font color to match
+  */
+  color: #333333;
+}
+
+/**
+*   .bg-- class
+*/
+.bg--gray {
+  background-color: rgb(133.7553648069, 142.4849785408, 150.2446351931);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(208.2352941176, 7.2961373391%, -34.3137254902%);
+}
+
+/**
+*   .bg-- class
+*/
+.bg--gray-dark {
+  background-color: rgb(76.5, 76.5, 76.5);
+  /**
+  *   adjust font color to match
+  */
+  color: hsl(0, 0%, -60%);
+}
+
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT COMPONENTS
+*/
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: FILE-UPLOAD
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+/**-------------------------------------------------------
+*
+*   SASS MIXINS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+/**
+*   themes mixin
+*/
+/**
+*   set props
+*/
+/**
+*   LABEL: FILE UPLOAD
+*/
+label.file--upload {
+  /*BEHAVIOR*/
+  cursor: pointer;
+  /*DISPLAY*/
+  display: inline-block;
+  /*POSITION*/
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  /*BORDER*/
+  /*TRANSITIONS*/
+  transition: 0.2s ease-in-out;
+}
+
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT COMPONENTS
+*/
+/**
+*   FORWARD COMPONENTS
+*/
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: FILE-UPLOAD
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+/**
+*
+*/
+body {
+  background: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

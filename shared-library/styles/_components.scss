@@ -1,0 +1,13 @@
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT COMPONENTS
+*/
+@use 'components/label__file-upload.scss';
+/**
+*   FORWARD COMPONENTS
+*/
+@forward 'components/label__file-upload.scss';

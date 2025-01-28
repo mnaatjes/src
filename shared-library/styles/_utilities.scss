@@ -1,0 +1,28 @@
+/**-------------------------------------------------------
+*
+*   SASS UTILITIES
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORTS
+*/
+@use 'sass:map' as map;
+@use 'sass:color' as color;
+@use 'variables' as *;
+@use './functions' as *;
+/**
+*   COLOR UTILS
+*   @description generates bg- classes
+*/
+@each $name, $value in $colors {
+    /**
+    *   .bg-- class
+    */
+    .bg--#{$name} {
+        background-color: lightenColor($value);
+        /**
+        *   adjust font color to match
+        */
+        color: darkenColor($value);
+    }
+}

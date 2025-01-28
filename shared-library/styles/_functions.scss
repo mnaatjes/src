@@ -1,0 +1,99 @@
+/**-------------------------------------------------------
+*
+*   SASS FUNCTIONS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORTS
+*/
+@use 'sass:map' as map;
+@use 'sass:color' as color;
+/**
+* UTILITY FUNCTIONS
+*/
+@function isNestedMap($value){
+    @return type-of($value) == 'map';
+}
+/**
+*   COLOR: LIGHTEN BACKGROUND
+*/
+@function lightenColor($color){
+    @return color.adjust($color, $lightness: 10%);
+}
+/**
+*   COLOR: DARKEN BACKGROUND
+*/
+@function darkenColor($color){
+    @return color.adjust($color, $lightness: -80%);
+}
+/**
+*   BACKGROUND COLORS
+*/
+@function generateBgColors($color-map){
+    $bg-colors: ();
+    /**
+    *   push bg map
+    */
+    @each $name, $value in $color-map {
+        $bg-colors: map.merge($bg-colors,
+        (
+            $name: lightenColor($value)
+    ))}
+    /**
+    *   return map
+    */
+    @return $bg-colors;
+}
+/**
+*   BORDER FUNCTION
+*/
+@function generateBorderColors($color-map){
+    $border-colors: ();
+    /**
+    *   Loop color map and generate border variables
+    */
+    @each $name, $value in $color-map {
+        $border-colors:map.merge($border-colors, (
+            $name: darkenColor($value)
+    ))}
+    /**
+    *   return map
+    */
+    @return $border-colors;
+}
+/**
+*   THEMES
+*/
+@function generateThemes($color-map, $bg-colors){
+    $themes: ();
+    /**
+    *   Loop color map
+    */
+    @each $theme, $value in $color-map {
+        $themes: map.merge($themes,(
+            $theme: (
+                'background-color': map.get($bg-colors, $theme),
+                'color': map.get($bg-colors, $theme)
+            )
+    ))}
+    /**
+    *   return themes
+    */
+    @return $themes;
+}
+/**
+*   generate border
+*/
+@function generateBorders($color-map, $widths, $radius, $style: solid, $width: 'sm'){
+    $result: ();
+    @each $theme, $color-value in $color-map {
+        $result: map.merge($result, (
+            $theme: (
+                'border-radius': $radius,
+                'border-style': $style,
+                'border-width': map.get($widths, $width),
+                'border-color': $color-value
+            )
+    ))}
+    @return $result;
+}

@@ -13,7 +13,7 @@ This directory contains shared styles, including Sass and CSS, that can be reuse
 ```
 packages/shared-library/styles/
 ├── main.scss
-├── _reset.scss
+├── _resets.scss
 ├── _variables.scss
 ├── _mixins.scss
 ├── components/
@@ -33,7 +33,7 @@ packages/shared-library/styles/
 ```
 
 * **`main.css`:** 
-* **`_reset.css`:** Contains CSS resets to normalize browser defaults.
+* **`_resets.css`:** Contains CSS resets to normalize browser defaults.
 * **`_variables.scss`:** Defines global variables for colors, spacing, font sizes, and other design tokens.
 * **`_mixins.scss`:** Contains Sass mixins for common CSS patterns (e.g., border-radius, box-shadow, transitions, breakpoints).
 * **`layouts/`:** Contains styles for common layouts and grid systems.

@@ -1,0 +1,24 @@
+/**-------------------------------------------------------
+*
+*   SASS MAIN
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT MODULES
+*/
+@use 'sass:map' as map;
+/**
+*   IMPORT PARTIALS
+*/
+@use 'resets' as *;
+@use 'variables' as *;
+@use 'utilities' as *;
+@use 'components' as *;
+@use 'mixins' as *;
+/**
+*
+*/
+body {
+    background: map.get($colors, 'light');
+    font-family: Arial, Helvetica, sans-serif;
+}

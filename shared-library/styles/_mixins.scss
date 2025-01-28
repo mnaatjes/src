@@ -1,0 +1,40 @@
+/**-------------------------------------------------------
+*
+*   SASS MIXINS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+@use './variables' as *;
+@use './utilities' as *;
+@use './functions' as *;
+@use 'sass:map' as map;
+/**
+*   themes mixin
+*/
+@mixin themeElement($theme){
+    /**
+    *   check if theme present in map
+    */
+    @if(map.has-key($themes, $theme)){
+        @each $prop, $value in map.get($themes, $theme){
+            /**
+            *   output property: value
+            */
+            #{$prop}: $value;
+            @debug $prop;
+            @debug $value;
+        }
+    } @else {
+        @warn "Invalid theme!";
+    }
+}
+/**
+*   set props
+*/
+@mixin setProps($theme: 'default'){
+    @if(map.has-key($colors, $theme)){
+        
+    }
+}

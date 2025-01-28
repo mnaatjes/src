@@ -1,0 +1,12 @@
+{
+  "name": "styles",
+  "version": "1.0.0",
+  "description": "This directory contains shared styles, including Sass and CSS, that can be reused across multiple applications within the monorepo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile.scss": "sass ./main.scss ./css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

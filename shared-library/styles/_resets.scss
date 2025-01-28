@@ -1,0 +1,73 @@
+/**-------------------------------------------------------
+*
+*   SASS RESETS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+@use './variables' as *;
+@use 'sass:map' as map;
+/**
+*   ALL
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**
+*   HEADINGS
+*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/**
+*   LISTS
+*/
+ul, ol {
+    list-style: none;
+}
+/**
+*   ANCHORS
+*/
+a {
+    text-decoration: none;
+}
+/**
+*   BUTTONS
+*/
+button {
+    /*BEHAVIOR*/
+    cursor: pointer;
+    /*POSITION*/
+    padding: 0.5rem 1rem;
+    /*DISPLAY*/
+    display: inline-block;
+    /*BORDER*/
+    outline: none;
+    border-style: solid;
+    border-width: 0.12rem;
+    border-radius: $border-radius;
+    /*TEXT*/
+    line-height: 1.5;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    /*ANIMATION*/
+    transition: map.get($transitions, 'slow');
+    /**
+    *   HOVER
+    */
+    &:hover {
+        background-color: map.get($colors, 'dark');
+    }
+}
+/**
+*   INPUT
+*/
+input[type="file"] {
+    /*DISPLAY*/
+    display: none;
+}
