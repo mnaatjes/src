@@ -11,6 +11,7 @@
 @use './variables/colors' as *;
 @use './variables/borders' as *;
 @use './variables/animations' as *;
+@use './variables/config' as *;
 /**
 *   Default map
 */
@@ -33,4 +34,4 @@ $default-props: (
 @forward './variables/colors';
 @forward './variables/borders';
 @forward './variables/animations';
-@debug $default-props;
+@forward './variables/config';

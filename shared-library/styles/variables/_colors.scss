@@ -26,3 +26,11 @@ $colors: (
 *   BACKGROUND COLORS
 */
 $bg-colors: generateBgColors($colors);
+/**
+*   BORDER COLORS
+*/
+$border-colors: generateBorderColors($colors);
+/**
+*   FONT COLORS
+*/
+$font-colors: $border-colors;
