@@ -231,9 +231,3 @@ $events: ('default', 'hover', 'focus', 'active');
 *   DEBUGGING
 *
 *--------------------------------------------------------*/
-@mixin debugger(){
-}
-.test {
-    @include debugger();
-    @include styles($type: 'default');
-}

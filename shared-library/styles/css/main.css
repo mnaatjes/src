@@ -245,42 +245,6 @@
 *   DEBUGGING
 *
 *--------------------------------------------------------*/
-.test {
-  /**
-  *   Styles applied to all types
-  */
-  /*FONT*/
-  font-family: "Arial";
-  color: #8f8f8f;
-  line-height: 1.25;
-  font-size: 1rem;
-  font-weight: 400;
-  /*THEME*/
-  background-color: hsl(0, 0%, 116.0784313725%);
-  /**
-  *   Check border
-  */
-  /**
-  *   assign border props
-  */
-  /**
-  *   parse default values
-  */
-  /**
-  *   assign properties
-  */
-  border: 0.0625rem solid rgb(219.5, 219.5, 219.5);
-  border-radius: 0.25rem;
-  /**
-  *   check type
-  */
-  /**
-  *   type is default
-  */
-  padding: 1rem;
-  margin: 1rem;
-}
-
 /**
 *   FORWARD all variables in the varaiables directory
 */
