@@ -33,26 +33,103 @@
 /**
 *   IMPORTS
 */
+/**-------------------------------------------------------
+*
+*   SASS FUNCTIONS: UTILS
+*
+*--------------------------------------------------------*/
 /**
-* UTILITY FUNCTIONS
+*   IMPORTS
 */
+/**-------------------------------------------------------
+*
+*   isEven
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   isOdd
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   isDefined
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   getType
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   isString
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   SASS FUNCTIONS: LISTS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORTS
+*/
+/**-------------------------------------------------------
+*
+*   list-Includes
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   list-every
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   SASS FUNCTIONS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORTS
+*/
+/**
+*   FORWARD
+*/
+/**-------------------------------------------------------
+*
+* UTILITY FUNCTIONS
+*
+*--------------------------------------------------------*/
+/**
+*   isNestedMap
+*/
+/**
+*   hasKey
+*/
+/**
+*   hasKeys
+*/
+/**-------------------------------------------------------
+*
+*   COLOR FUNCTIONS
+*
+*--------------------------------------------------------*/
 /**
 *   COLOR: LIGHTEN BACKGROUND
 */
 /**
-*   COLOR: DARKEN BACKGROUND
+*   FONT COLORS
 */
 /**
 *   BACKGROUND COLORS
 */
 /**
 *   BORDER FUNCTION
-*/
-/**
-*   THEMES
-*/
-/**
-*   generate border
 */
 /**-------------------------------------------------------
 *
@@ -67,6 +144,9 @@
 *   SASS VARIABLES: COLORS
 *
 *--------------------------------------------------------*/
+/**
+*   COLOR Percentages
+*/
 /**
 *   COLOR MAP
 */
@@ -89,36 +169,6 @@
 */
 /**-------------------------------------------------------
 *
-*   SASS VARIABLES
-*
-*--------------------------------------------------------*/
-/**
-*   IMPORT all variables in the varaiables directory
-*/
-/**
-*   Border Attributes
-*/
-/**
-*   Borders Map
-*/
-/**-------------------------------------------------------
-*
-*   SASS VARIABLES: ANIMATIONS
-*
-*--------------------------------------------------------*/
-/**
-*   TRANSITIONS
-*/
-/**-------------------------------------------------------
-*
-*   SASS VARIABLES
-*
-*--------------------------------------------------------*/
-/**
-*   IMPORT all variables in the varaiables directory
-*/
-/**-------------------------------------------------------
-*
 *   SASS VARIABLES: CONFIG
 *
 *--------------------------------------------------------*/
@@ -126,11 +176,111 @@
 *   IMPORT all variables in the varaiables directory
 */
 /**
+*   IMPORT: FUNCTIONS
+*/
+/**-------------------------------------------------------
 *
-*/
+*   FONT
+*
+*--------------------------------------------------------*/
 /**
-*   Default map
+*   line heights
 */
+/**-------------------------------------------------------
+*
+*   SIZES: SPACING
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   BORDERS
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   Default size
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   BUTTON: SIZES
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   TRANSITIONS
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   CONFIG MAP
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   Generate Border
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   Events
+*   Generate States
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   UTILITY MIXIN
+*   nest
+*   nestBehavior
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   Generate styles
+*   @param {String} type 'default', 'button'
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
+*   DEBUGGING
+*
+*--------------------------------------------------------*/
+.test {
+  /**
+  *   Styles applied to all types
+  */
+  /*FONT*/
+  font-family: "Arial";
+  color: #8f8f8f;
+  line-height: 1.25;
+  font-size: 1rem;
+  font-weight: 400;
+  /*THEME*/
+  background-color: hsl(0, 0%, 116.0784313725%);
+  /**
+  *   Check border
+  */
+  /**
+  *   assign border props
+  */
+  /**
+  *   parse default values
+  */
+  /**
+  *   assign properties
+  */
+  border: 0.0625rem solid rgb(219.5, 219.5, 219.5);
+  border-radius: 0.25rem;
+  /**
+  *   check type
+  */
+  /**
+  *   type is default
+  */
+  padding: 1rem;
+  margin: 1rem;
+}
+
 /**
 *   FORWARD all variables in the varaiables directory
 */
@@ -147,7 +297,28 @@
 *   HEADINGS
 */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  /**
+  *   Styles applied to all types
+  */
+  /*FONT*/
+  font-family: "Arial";
+  color: #8f8f8f;
+  line-height: 1.25;
+  font-size: 1rem;
+  font-weight: 700;
+  /*THEME*/
+  background-color: hsl(0, 0%, 116.0784313725%);
+  /**
+  *   Check border
+  */
+  /**
+  *   check type
+  */
+  /**
+  *   type is default
+  */
+  padding: 1rem;
+  margin: 1rem;
 }
 
 /**
@@ -170,37 +341,212 @@ a {
 button {
   /*BEHAVIOR*/
   cursor: pointer;
-  /*POSITION*/
-  padding: 0.5rem 1rem;
   /*DISPLAY*/
   display: inline-block;
   /*BORDER*/
   outline: none;
-  border-style: solid;
-  border-width: 0.12rem;
-  border-radius: 0.25rem;
   /*TEXT*/
-  line-height: 1.5;
-  font-size: 1rem;
   text-decoration: none;
   text-align: center;
-  font-weight: 400;
-  /*ANIMATION*/
-  transition: 0.5s ease-in-out;
   /**
-  *   HOVER
+  *   add styles
+  */
+  /**
+  *   Styles applied to all types
+  */
+  /*FONT*/
+  font-family: "Arial";
+  color: #8f8f8f;
+  line-height: 1.25;
+  font-size: 1rem;
+  font-weight: 400;
+  /*THEME*/
+  background-color: hsl(0, 0%, 116.0784313725%);
+  /**
+  *   Check border
+  */
+  /**
+  *   assign border props
+  */
+  /**
+  *   parse default values
+  */
+  /**
+  *   assign properties
+  */
+  border: 0.0625rem solid rgb(219.5, 219.5, 219.5);
+  border-radius: 0.25rem;
+  /**
+  *   check type
+  */
+  /**
+  *   type if button
+  */
+  padding: 1rem 2rem;
+  margin: 1rem;
+  /**
+  *   BEHAVIORS
+  */
+  /**
+  *   validate type
+  */
+  /**
+  *   loop arglist
+  */
+  /**
+  *   validate behavior
+  */
+  /**
+  *   validate type
+  */
+  /**
+  *   loop arglist
+  */
+  /**
+  *   validate behavior
   */
 }
 button:hover {
-  background-color: #212529;
+  /**
+  * generate background color
+  */
+  background-color: hsl(0, 0%, 136.0784313725%);
+  /**
+  * generate shadow
+  */
+  box-shadow: 1px 1px 1px 2px rgba(194, 194, 194, 0.3);
+}
+button:active {
+  /**
+  * generate background color
+  */
+  background-color: rgb(219.5, 219.5, 219.5);
+  /**
+  * generate font color
+  */
+  color: hsl(0, 0%, 156.0784313725%);
+  /**
+  * generate shadow
+  */
+  box-shadow: inset 1px 1px 1px 2px rgba(117.5, 117.5, 117.5, 0.3);
 }
 
 /**
 *   INPUT
 */
+input {
+  outline: none;
+  /**
+  *   Styles applied to all types
+  */
+  /*FONT*/
+  font-family: "Arial";
+  color: #8f8f8f;
+  line-height: 1.25;
+  font-size: 1rem;
+  font-weight: 400;
+  /*THEME*/
+  background-color: hsl(0, 0%, 116.0784313725%);
+  /**
+  *   Check border
+  */
+  /**
+  *   assign border props
+  */
+  /**
+  *   parse default values
+  */
+  /**
+  *   assign properties
+  */
+  border: 0.0625rem solid rgb(219.5, 219.5, 219.5);
+  border-radius: 0.25rem;
+  /**
+  *   check type
+  */
+  /**
+  *   type if button
+  */
+  padding: 1rem 2rem;
+  margin: 1rem;
+  /**
+  *   BEHAVIORS
+  */
+  /**
+  *   validate type
+  */
+  /**
+  *   loop arglist
+  */
+  /**
+  *   validate behavior
+  */
+  /**
+  *   validate type
+  */
+  /**
+  *   loop arglist
+  */
+  /**
+  *   validate behavior
+  */
+}
+input:hover {
+  /**
+  * generate background color
+  */
+  background-color: hsl(0, 0%, 136.0784313725%);
+  /**
+  * generate shadow
+  */
+  box-shadow: 1px 1px 1px 2px rgba(194, 194, 194, 0.3);
+}
+input:active {
+  /**
+  * generate background color
+  */
+  background-color: rgb(219.5, 219.5, 219.5);
+  /**
+  * generate font color
+  */
+  color: hsl(0, 0%, 156.0784313725%);
+  /**
+  * generate shadow
+  */
+  box-shadow: inset 1px 1px 1px 2px rgba(117.5, 117.5, 117.5, 0.3);
+}
+
 input[type=file] {
   /*DISPLAY*/
   display: none;
+}
+
+/**
+*   p
+*/
+p {
+  /**
+  *   Styles applied to all types
+  */
+  /*FONT*/
+  font-family: "Arial";
+  color: #8f8f8f;
+  line-height: 1.25;
+  font-size: 1rem;
+  font-weight: 400;
+  /*THEME*/
+  background-color: hsl(0, 0%, 116.0784313725%);
+  /**
+  *   Check border
+  */
+  /**
+  *   check type
+  */
+  /**
+  *   type is default
+  */
+  padding: 1rem;
+  margin: 1rem;
 }
 
 /**-------------------------------------------------------
@@ -215,149 +561,6 @@ input[type=file] {
 *   COLOR UTILS
 *   @description generates bg- classes
 */
-/**
-*   .bg-- class
-*/
-.bg--primary {
-  background-color: rgb(63.5819672131, 140.3073770492, 253.4180327869);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(215.75, 98.3606557377%, -27.8431372549%);
-}
-
-/**
-*   .bg-- class
-*/
-.bg--secondary {
-  background-color: rgb(133.7553648069, 142.4849785408, 150.2446351931);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(208.2352941176, 7.2961373391%, -34.3137254902%);
-}
-
-/**
-*   .bg-- class
-*/
-.bg--success {
-  background-color: rgb(32.96875, 178.03125, 110.775);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(152.1818181818, 68.75%, -48.6274509804%);
-}
-
-/**
-*   .bg-- class
-*/
-.bg--danger {
-  background-color: rgb(227.5316455696, 96.4683544304, 109.0253164557);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(354.251497006, 70.4641350211%, -26.4705882353%);
-}
-
-/**
-*   .bg-- class
-*/
-.bg--warning {
-  background-color: rgb(255, 205.75, 58);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(45, 100%, -28.6274509804%);
-}
-
-/**
-*   .bg-- class
-*/
-.bg--info {
-  background-color: rgb(59.5849802372, 213.4743083004, 244.4150197628);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(190.0440528634, 89.7233201581%, -30.3921568627%);
-}
-
-/**
-*   .bg-- class
-*/
-.bg--light {
-  background-color: hsl(0, 0%, 106.0784313725%);
-  /**
-  *   adjust font color to match
-  */
-  color: #292929;
-}
-
-/**
-*   .bg-- class
-*/
-.bg--default {
-  background-color: hsl(0, 0%, 106.0784313725%);
-  /**
-  *   adjust font color to match
-  */
-  color: #292929;
-}
-
-/**
-*   .bg-- class
-*/
-.bg--dark {
-  background-color: rgb(55.7432432432, 62.5, 69.2567567568);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(210, 10.8108108108%, -65.4901960784%);
-}
-
-/**
-*   .bg-- class
-*/
-.bg--black {
-  background-color: rgb(25.5, 25.5, 25.5);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(0, 0%, -80%);
-}
-
-/**
-*   .bg-- class
-*/
-.bg--white {
-  background-color: hsl(0, 0%, 110%);
-  /**
-  *   adjust font color to match
-  */
-  color: #333333;
-}
-
-/**
-*   .bg-- class
-*/
-.bg--gray {
-  background-color: rgb(133.7553648069, 142.4849785408, 150.2446351931);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(208.2352941176, 7.2961373391%, -34.3137254902%);
-}
-
-/**
-*   .bg-- class
-*/
-.bg--gray-dark {
-  background-color: rgb(76.5, 76.5, 76.5);
-  /**
-  *   adjust font color to match
-  */
-  color: hsl(0, 0%, -60%);
-}
-
 /**-------------------------------------------------------
 *
 *   SASS COMPONENTS
@@ -391,19 +594,6 @@ input[type=file] {
 /**
 *   LABEL: FILE UPLOAD
 */
-label.file--upload {
-  /*BEHAVIOR*/
-  cursor: pointer;
-  /*DISPLAY*/
-  display: inline-block;
-  /*POSITION*/
-  margin: 0.5rem 1rem;
-  padding: 0.5rem 1rem;
-  /*BORDER*/
-  /*TRANSITIONS*/
-  transition: 0.2s ease-in-out;
-}
-
 /**-------------------------------------------------------
 *
 *   SASS COMPONENTS
@@ -423,12 +613,5 @@ label.file--upload {
 /**
 *   IMPORT VARIABLES, MODULES
 */
-/**
-*
-*/
-body {
-  background: #f5f5f5;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 /*# sourceMappingURL=main.css.map */

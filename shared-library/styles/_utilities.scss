@@ -14,15 +14,3 @@
 *   COLOR UTILS
 *   @description generates bg- classes
 */
-@each $name, $value in $colors {
-    /**
-    *   .bg-- class
-    */
-    .bg--#{$name} {
-        background-color: lightenColor($value);
-        /**
-        *   adjust font color to match
-        */
-        color: darkenColor($value);
-    }
-}

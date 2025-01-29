@@ -5,6 +5,13 @@
 *--------------------------------------------------------*/
 @use '../functions' as *;
 /**
+*   COLOR Percentages
+*/
+$adjust-border: -10%;
+$adjust-font: -40%;
+$adjust-bg: 20%;
+
+/**
 *   COLOR MAP
 */
 $colors: (
@@ -25,12 +32,12 @@ $colors: (
 /**
 *   BACKGROUND COLORS
 */
-$bg-colors: generateBgColors($colors);
+$bg-colors: generateBackgroundColors($colors, $adjust-bg);
 /**
 *   BORDER COLORS
 */
-$border-colors: generateBorderColors($colors);
+$border-colors: generateBorderColors($colors, $adjust-border);
 /**
 *   FONT COLORS
 */
-$font-colors: $border-colors;
+$font-colors: generateFontColors($colors, $adjust-font);

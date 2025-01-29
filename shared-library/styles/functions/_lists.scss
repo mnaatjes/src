@@ -1,0 +1,43 @@
+/**-------------------------------------------------------
+*
+*   SASS FUNCTIONS: LISTS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORTS
+*/
+@use 'sass:map' as map;
+@use 'sass:meta' as meta;
+@use 'sass:list' as list;
+@use 'sass:color' as color;
+/**-------------------------------------------------------
+*
+*   list-Includes
+*
+*--------------------------------------------------------*/
+@function list-Includes($list, $ele){
+    @each $item in $list {
+        @if $item == $value {
+            @return true;
+        }
+    }
+    @return false;
+}
+/**-------------------------------------------------------
+*
+*   list-every
+*
+*--------------------------------------------------------*/
+@function list-every($list, $callback){
+    @each $ele in $list {
+        @if not $callback($ele){
+            @return false;
+        }
+    }
+    @return true;
+}
+/**-------------------------------------------------------
+*
+*
+*
+*--------------------------------------------------------*/

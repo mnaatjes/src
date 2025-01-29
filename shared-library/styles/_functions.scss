@@ -7,29 +7,92 @@
 *   IMPORTS
 */
 @use 'sass:map' as map;
+@use 'sass:meta' as meta;
+@use 'sass:list' as list;
 @use 'sass:color' as color;
+@use './functions/utils';
+@use './functions/lists';
 /**
+*   FORWARD
+*/
+@forward './functions/utils';
+@forward './functions/lists';
+/**-------------------------------------------------------
+*
 * UTILITY FUNCTIONS
+*
+*--------------------------------------------------------*/
+/**
+*   isNestedMap
 */
 @function isNestedMap($value){
     @return type-of($value) == 'map';
 }
 /**
-*   COLOR: LIGHTEN BACKGROUND
+*   hasKey
 */
-@function lightenColor($color){
-    @return color.adjust($color, $lightness: 10%);
+@function hasKey($map, $key){
+    @if map.get($map, $key) == null {
+        @return false;
+    } @else {
+        @return true;
+    }
 }
 /**
-*   COLOR: DARKEN BACKGROUND
+*   hasKeys
 */
-@function darkenColor($color){
-    @return color.adjust($color, $lightness: -80%);
+@function map-hasKeys($map, $list){
+    /**
+    *   get keys from map
+    */
+    $keys: map.keys($map);
+    /**
+    *   loop keys and match check for indexes
+    */
+    @each $key in $keys {
+        @if list.index($list, $key) == 0 {
+            /**
+            *   key not found
+            */
+            @return false;
+        } @else {
+            @return true;
+        }
+    }
+}
+/**-------------------------------------------------------
+*
+*   COLOR FUNCTIONS
+*
+*--------------------------------------------------------*/
+/**
+*   COLOR: LIGHTEN BACKGROUND
+*/
+@function adjustColor($color, $percentage){
+    @return color.adjust($color, $lightness: $percentage);
+}
+/**
+*   FONT COLORS
+*/
+@function generateFontColors($color-map, $percentage){
+    $font-colors: ();
+    /**
+    *   push bg map
+    */
+    @each $name, $value in $color-map {
+        $font-colors: map.merge($font-colors,
+        (
+            $name: adjustColor($value, $percentage)
+    ))}
+    /**
+    *   return map
+    */
+    @return $font-colors;
 }
 /**
 *   BACKGROUND COLORS
 */
-@function generateBgColors($color-map){
+@function generateBackgroundColors($color-map, $percentage){
     $bg-colors: ();
     /**
     *   push bg map
@@ -37,7 +100,7 @@
     @each $name, $value in $color-map {
         $bg-colors: map.merge($bg-colors,
         (
-            $name: lightenColor($value)
+            $name: adjustColor($value, $percentage)
     ))}
     /**
     *   return map
@@ -47,53 +110,18 @@
 /**
 *   BORDER FUNCTION
 */
-@function generateBorderColors($color-map){
+@function generateBorderColors($color-map, $percentage){
     $border-colors: ();
     /**
     *   Loop color map and generate border variables
     */
     @each $name, $value in $color-map {
-        $border-colors:map.merge($border-colors, (
-            $name: darkenColor($value)
+        $border-colors: map.merge($border-colors, 
+        (
+            $name: adjustColor($value, $percentage)
     ))}
     /**
     *   return map
     */
     @return $border-colors;
-}
-/**
-*   THEMES
-*/
-@function generateThemes($color-map, $bg-colors){
-    $themes: ();
-    /**
-    *   Loop color map
-    */
-    @each $theme, $value in $color-map {
-        $themes: map.merge($themes,(
-            $theme: (
-                'background-color': map.get($bg-colors, $theme),
-                'color': map.get($bg-colors, $theme)
-            )
-    ))}
-    /**
-    *   return themes
-    */
-    @return $themes;
-}
-/**
-*   generate border
-*/
-@function generateBorders($color-map, $widths, $radius, $style: solid, $width: 'sm'){
-    $result: ();
-    @each $theme, $color-value in $color-map {
-        $result: map.merge($result, (
-            $theme: (
-                'border-radius': $radius,
-                'border-style': $style,
-                'border-width': map.get($widths, $width),
-                'border-color': $color-value
-            )
-    ))}
-    @return $result;
 }
