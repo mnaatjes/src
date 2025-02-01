@@ -1,11 +1,5 @@
 [
   {
-    "country": "Country",
-    "rank": "Rank",
-    "surname": "Romanized Name",
-    "count": "Count"
-  },
-  {
     "country": "AM",
     "rank": 1,
     "surname": "Grigoryan",

@@ -1,0 +1,138 @@
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: LISTS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+@use '../variables' as *;
+@use '../utilities' as *;
+@use '../mixins' as *;
+@use 'sass:map' as map;
+@use "sass:math";
+/**
+*   LIST: VARIABLES
+*/
+$list-padding-left: 1.5rem;
+$list-marker-color: map.get($font-colors, 'default');
+$list-marker-size: 1rem;
+$list-marker-margin-right: 0.5rem;
+$list-item-padding-y: 0.5rem;
+$list-item-font-size: 1rem;
+$list-item-line-height: 1.5;
+
+/**
+*   MIXIN: list-base definitons
+*/
+@mixin list-base {
+    padding-left: $list-padding-left;
+    list-style: none;
+    margin-bottom: 1rem;
+    /**
+    *   LI
+    */
+    li {
+        padding-top: $list-item-padding-y;
+        padding-bottom: $list-item-padding-y;
+        font-size: $list-item-font-size;
+        line-height: $list-item-line-height;
+    }
+}
+/**
+*   list--unstyled
+*/
+.list-unstyled {
+    @include list-base;
+    padding-left: 0;
+    /**
+    *   LI
+    */
+    li {
+        padding-left: 0;
+    }
+}
+
+.list-group {
+    @include list-base;
+    padding-left: 0;
+    /**
+    *   LI
+    */
+    li {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.125);
+        /**
+        *   FIRST CHILD
+        */
+        &:first-child {
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        }
+        /**
+        *   LAST CHILD
+        */
+        &:last-child {
+        border-bottom-right-radius: .25rem;
+        border-bottom-left-radius: .25rem;
+        }
+        /**
+        *   NESTED LI
+        */
+        &+li {
+        border-top: 0;
+        }
+    }
+}
+
+.list-group-flush {
+  border-radius: 0;
+  li {
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    &:first-child {
+      border-top: 1px solid rgba(0,0,0,.125);
+    }
+  }
+}
+
+ol {
+  @include list-base;
+  counter-reset: list-counter; // Initialize counter
+
+  li {
+    position: relative; // For positioning the marker
+
+    &::before {
+      content: counter(list-counter) "."; // Display counter value
+      counter-increment: list-counter; // Increment counter
+      position: absolute;
+      left: -$list-padding-left; // Position marker outside the list item
+      color: $list-marker-color;
+      font-size: $list-marker-size;
+      margin-right: $list-marker-margin-right;
+      font-weight: bold; // Example: make the number bold
+    }
+  }
+}
+
+// Unordered List Styles
+ul {
+  @include list-base;
+
+  li {
+    position: relative;
+
+    &::before {
+      content: "\2022"; // Unicode for a standard bullet
+      position: absolute;
+      left: -$list-padding-left;
+      color: $list-marker-color;
+      font-size: $list-marker-size;
+      margin-right: $list-marker-margin-right;
+    }
+  }
+}

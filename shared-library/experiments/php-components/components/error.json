@@ -1,0 +1,9 @@
+{
+    "tagName": "error",
+    "children": [],
+    "attributes": [
+        {"class": "test"},
+        {"type": "button"}
+    ],
+    "data": "panda"
+}

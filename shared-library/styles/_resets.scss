@@ -15,12 +15,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $font-family;
 }
 /**
 *   HEADINGS
 */
 h1, h2, h3, h4, h5, h6 {
-    @include styles($border: false, $type: 'default', $weight: 'bold');
+    color: map.get($font-colors, 'default');
+    @include sizing($SIZE);
 }
 /**
 *   LISTS
@@ -32,7 +34,23 @@ ul, ol {
 *   ANCHORS
 */
 a {
+    /*POSITION*/
+
+    /*FONT*/
     text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:visited {
+        color: map.get($colors, 'info');
+        text-decoration: underline;
+    }
+}
+/**
+*   SECTION, ARTICLE
+*/
+section, article {
+    @include sizing($SIZE);
 }
 /**
 *   BUTTONS
@@ -40,24 +58,30 @@ a {
 button {
     /*BEHAVIOR*/
     cursor: pointer;
+    /*POSITION*/
+    @include sizing-button($SIZE);
     /*DISPLAY*/
     display: inline-block;
     /*BORDER*/
     outline: none;
+    @include border($THEME);
+    @include background($THEME);
     /*TEXT*/
     text-decoration: none;
     text-align: center;
+    @include sizing-fonts($SIZE);
     /**
-    *   add styles
+    *   HOVER
     */
-    @include styles($type: 'button');
+    &:hover {
+        @include background-hover($THEME);
+    }
 }
 /**
 *   INPUT
 */
 input {
     outline: none;
-    @include styles($theme: 'default', $type: 'button');
 }
 input[type="file"] {
     /*DISPLAY*/
@@ -67,5 +91,5 @@ input[type="file"] {
 *   p
 */
 p {
-    @include styles($border: false, $type: 'default');
+    @include sizing($SIZE);
 }

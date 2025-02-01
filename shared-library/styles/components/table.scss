@@ -1,0 +1,64 @@
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: TABLE
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+@use '../variables' as *;
+@use '../utilities' as *;
+@use '../mixins' as *;
+@use '../variables/config' as *;
+@use 'sass:map' as map;
+@use "sass:math";
+/**
+*   TABLE
+*/
+table {
+    width: 100%;
+    max-width: 100%;
+    @include sizing($SIZE);
+    background-color: transparent;
+    border-collapse: collapse;
+}
+/**
+*   CAPTION
+*/
+caption {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: map.get($colors, 'secondary');
+    text-align: left;
+}
+/**
+*   TH
+*/
+th {
+padding: 0.75rem;
+vertical-align: top;
+border-top: 1px solid #dee2e6; // Light border color (Bootstrap-esque)
+text-align: left; // Usually left-aligned in tables
+font-weight: 500; // Slightly bolder for header cells
+background-color: #f8f9fa; // Very light gray background for headers (optional)
+}
+/**
+*   TD
+*/
+td {
+padding: 0.75rem;
+vertical-align: top;
+border-top: 1px solid #dee2e6;  // Light border color
+}
+/**
+*   TR
+*/
+tr {
+    &:nth-child(even) { // Optional: Add zebra striping
+        background-color: #f2f2f2; // Very light gray for even rows
+    }
+
+    &:hover {
+        background-color: #e9ecef; // Slightly darker on hover (Optional)
+    }
+}

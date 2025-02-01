@@ -1,0 +1,1 @@
+function clickMe(e){console.log(e.target);}

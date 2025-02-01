@@ -1,0 +1,28 @@
+{
+    "tagName": "div",
+    "children": [
+        {
+            "tagName": "p",
+            "attributes": [],
+            "children": [],
+            "data": [
+                {"textContent": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi quasi officia."}
+            ]
+        },
+        {
+            "tagName": "a",
+            "attributes": [
+                {"href": "http://www.google.com"}
+            ],
+            "children": [],
+            "data": [
+                {"textContent": "Google"}
+            ]
+        }
+    ],
+    "attributes": [
+        {"class": "test"},
+        {"style": "border: 1px solid red; display: flex; flex-direction: column; padding: 24px;"}
+    ],
+    "data": []
+}

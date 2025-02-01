@@ -6,8 +6,16 @@
 /**
 *   IMPORT COMPONENTS
 */
+@use './components/nav.scss';
+@use './components/table.scss';
 @use 'components/label__file-upload.scss';
+@use './components/lists.scss';
+//@use './components/lists-modern.scss';
 /**
 *   FORWARD COMPONENTS
 */
+@forward './components/nav.scss';
+@forward './components/table.scss';
 @forward 'components/label__file-upload.scss';
+@forward './components/lists.scss';
+//@forward './components/lists-modern.scss';

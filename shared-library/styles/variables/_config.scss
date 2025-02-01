@@ -15,6 +15,14 @@
 @use './colors' as *;
 /**-------------------------------------------------------
 *
+*   GLOBALS
+*
+*--------------------------------------------------------*/
+$SIZE: 'md';
+$THEME: 'primary';
+$HOVER: 10%;
+/**-------------------------------------------------------
+*
 *   FONT
 *
 *--------------------------------------------------------*/
@@ -45,6 +53,15 @@ $font-line-heights: (
     'lg': 1.5,
     'xl': 1.75,
 );
+@mixin sizing-fonts($size, $weight: 'medium'){
+    line-height: map.get($font-line-heights, $size);
+    /*Check weight*/
+    @if ($weight != 'medium'){
+        $weight: map.get($font-weights, $weight);
+    }
+    font-weight: $weight;
+    font-size: map.get($font-sizes, $size);
+}
 /**-------------------------------------------------------
 *
 *   SIZES: SPACING
@@ -57,6 +74,20 @@ $spacing-sizes: (
     "lg": 1.50rem,
     "xl": 2.00rem
 );
+@mixin sizing ($size){
+    padding: map.get($spacing-sizes, $size);
+    margin: map.get($spacing-sizes, $size);
+}
+@mixin sizing-button($size){
+    padding: map.get($button-padding, $size);
+    margin: map.get($spacing-sizes, $size);
+}
+@mixin background($theme:'default'){
+    background-color: map.get($bg-colors, $theme);
+}
+@mixin background-hover($theme: 'default'){
+    background-color: adjustColor(map.get($bg-colors, $theme), $HOVER);
+}
 /**-------------------------------------------------------
 *
 *   BORDERS
@@ -153,77 +184,6 @@ $events: ('default', 'hover', 'focus', 'active');
                 @content;
             }
         }
-    }
-}
-/**-------------------------------------------------------
-*
-*   Generate styles
-*   @param {String} type 'default', 'button'
-*
-*--------------------------------------------------------*/
-@mixin styles($size: 'md', $theme: 'default', $type: 'button', $weight: 'default', $border: true, $border-width: 'thin'){
-    /**
-    *   Styles applied to all types
-    */
-    /*FONT*/
-    font-family: $font-family;
-    color: map.get($font-colors, $theme);
-    line-height: map.get($font-line-heights, $size);
-    font-size: map.get($font-sizes, $size);
-    font-weight: map.get($font-weights, $weight);
-    /*THEME*/
-    background-color: map.get($bg-colors, $theme);
-    /**
-    *   Check border
-    */
-    @if $border == true {
-        /**
-        *   assign border props
-        */
-        @include border($theme, $border-width);
-    }
-    /**
-    *   check type
-    */
-    @if $type == 'default'{
-        /**
-        *   type is default
-        */
-        padding: map.get($spacing-sizes, $size);
-        margin: map.get($spacing-sizes, $size);
-    } @else if $type == 'button' {
-        /**
-        *   type if button
-        */
-        padding: map.get($button-padding, $size);
-        margin: map.get($spacing-sizes, $size);
-        /**
-        *   BEHAVIORS
-        */
-        @include nestBehavior(hover){
-            /**
-            * generate background color
-            */
-            background-color: adjustColor(map.get($bg-colors, $theme), 20%);
-            /**
-            * generate shadow
-            */
-            box-shadow: 1px 1px 1px 2px rgba($color: adjustColor(map.get($border-colors, $theme), -10%), $alpha: 0.3);
-        };
-        @include nestBehavior(active){
-            /**
-            * generate background color
-            */
-            background-color: adjustColor(map.get($bg-colors, $theme), -30%);
-            /**
-            * generate font color
-            */
-            color: adjustColor(map.get($font-colors, $theme), 100%);
-            /**
-            * generate shadow
-            */
-            box-shadow: inset 1px 1px 1px 2px rgba($color: adjustColor(map.get($border-colors, $theme), -40%), $alpha: 0.3);
-        };
     }
 }
 /**-------------------------------------------------------

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**-------------------------------------------------------
 *
 *   SASS MAIN
@@ -180,6 +181,11 @@
 */
 /**-------------------------------------------------------
 *
+*   GLOBALS
+*
+*--------------------------------------------------------*/
+/**-------------------------------------------------------
+*
 *   FONT
 *
 *--------------------------------------------------------*/
@@ -236,12 +242,6 @@
 *--------------------------------------------------------*/
 /**-------------------------------------------------------
 *
-*   Generate styles
-*   @param {String} type 'default', 'button'
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
 *   DEBUGGING
 *
 *--------------------------------------------------------*/
@@ -255,32 +255,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Arial";
 }
 
 /**
 *   HEADINGS
 */
 h1, h2, h3, h4, h5, h6 {
-  /**
-  *   Styles applied to all types
-  */
-  /*FONT*/
-  font-family: "Arial";
-  color: #8f8f8f;
-  line-height: 1.25;
-  font-size: 1rem;
-  font-weight: 700;
-  /*THEME*/
-  background-color: hsl(0, 0%, 116.0784313725%);
-  /**
-  *   Check border
-  */
-  /**
-  *   check type
-  */
-  /**
-  *   type is default
-  */
+  color: #5c5c5c;
   padding: 1rem;
   margin: 1rem;
 }
@@ -296,7 +278,24 @@ ul, ol {
 *   ANCHORS
 */
 a {
+  /*POSITION*/
+  /*FONT*/
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+
+/**
+*   SECTION, ARTICLE
+*/
+section, article {
+  padding: 1rem;
+  margin: 1rem;
 }
 
 /**
@@ -305,94 +304,35 @@ a {
 button {
   /*BEHAVIOR*/
   cursor: pointer;
+  /*POSITION*/
+  padding: 1rem 2rem;
+  margin: 1rem;
   /*DISPLAY*/
   display: inline-block;
   /*BORDER*/
   outline: none;
-  /*TEXT*/
-  text-decoration: none;
-  text-align: center;
-  /**
-  *   add styles
-  */
-  /**
-  *   Styles applied to all types
-  */
-  /*FONT*/
-  font-family: "Arial";
-  color: #8f8f8f;
-  line-height: 1.25;
-  font-size: 1rem;
-  font-weight: 400;
-  /*THEME*/
-  background-color: hsl(0, 0%, 116.0784313725%);
-  /**
-  *   Check border
-  */
-  /**
-  *   assign border props
-  */
   /**
   *   parse default values
   */
   /**
   *   assign properties
   */
-  border: 0.0625rem solid rgb(219.5, 219.5, 219.5);
+  border: 0.0625rem solid rgb(1.762295082, 87.2336065574, 213.237704918);
   border-radius: 0.25rem;
+  background-color: rgb(114.1639344262, 170.6147540984, 253.8360655738);
+  /*TEXT*/
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.25;
+  /*Check weight*/
+  font-weight: "medium";
+  font-size: 1rem;
   /**
-  *   check type
-  */
-  /**
-  *   type if button
-  */
-  padding: 1rem 2rem;
-  margin: 1rem;
-  /**
-  *   BEHAVIORS
-  */
-  /**
-  *   validate type
-  */
-  /**
-  *   loop arglist
-  */
-  /**
-  *   validate behavior
-  */
-  /**
-  *   validate type
-  */
-  /**
-  *   loop arglist
-  */
-  /**
-  *   validate behavior
+  *   HOVER
   */
 }
 button:hover {
-  /**
-  * generate background color
-  */
-  background-color: hsl(0, 0%, 136.0784313725%);
-  /**
-  * generate shadow
-  */
-  box-shadow: 1px 1px 1px 2px rgba(194, 194, 194, 0.3);
-}
-button:active {
-  /**
-  * generate background color
-  */
-  background-color: rgb(219.5, 219.5, 219.5);
-  /**
-  * generate font color
-  */
-  color: hsl(0, 0%, 156.0784313725%);
-  /**
-  * generate shadow
-  */
-  box-shadow: inset 1px 1px 1px 2px rgba(117.5, 117.5, 117.5, 0.3);
+  background-color: rgb(164.7459016393, 200.9221311475, 254.2540983607);
 }
 
 /**
@@ -400,84 +340,6 @@ button:active {
 */
 input {
   outline: none;
-  /**
-  *   Styles applied to all types
-  */
-  /*FONT*/
-  font-family: "Arial";
-  color: #8f8f8f;
-  line-height: 1.25;
-  font-size: 1rem;
-  font-weight: 400;
-  /*THEME*/
-  background-color: hsl(0, 0%, 116.0784313725%);
-  /**
-  *   Check border
-  */
-  /**
-  *   assign border props
-  */
-  /**
-  *   parse default values
-  */
-  /**
-  *   assign properties
-  */
-  border: 0.0625rem solid rgb(219.5, 219.5, 219.5);
-  border-radius: 0.25rem;
-  /**
-  *   check type
-  */
-  /**
-  *   type if button
-  */
-  padding: 1rem 2rem;
-  margin: 1rem;
-  /**
-  *   BEHAVIORS
-  */
-  /**
-  *   validate type
-  */
-  /**
-  *   loop arglist
-  */
-  /**
-  *   validate behavior
-  */
-  /**
-  *   validate type
-  */
-  /**
-  *   loop arglist
-  */
-  /**
-  *   validate behavior
-  */
-}
-input:hover {
-  /**
-  * generate background color
-  */
-  background-color: hsl(0, 0%, 136.0784313725%);
-  /**
-  * generate shadow
-  */
-  box-shadow: 1px 1px 1px 2px rgba(194, 194, 194, 0.3);
-}
-input:active {
-  /**
-  * generate background color
-  */
-  background-color: rgb(219.5, 219.5, 219.5);
-  /**
-  * generate font color
-  */
-  color: hsl(0, 0%, 156.0784313725%);
-  /**
-  * generate shadow
-  */
-  box-shadow: inset 1px 1px 1px 2px rgba(117.5, 117.5, 117.5, 0.3);
 }
 
 input[type=file] {
@@ -489,26 +351,6 @@ input[type=file] {
 *   p
 */
 p {
-  /**
-  *   Styles applied to all types
-  */
-  /*FONT*/
-  font-family: "Arial";
-  color: #8f8f8f;
-  line-height: 1.25;
-  font-size: 1rem;
-  font-weight: 400;
-  /*THEME*/
-  background-color: hsl(0, 0%, 116.0784313725%);
-  /**
-  *   Check border
-  */
-  /**
-  *   check type
-  */
-  /**
-  *   type is default
-  */
   padding: 1rem;
   margin: 1rem;
 }
@@ -555,9 +397,284 @@ p {
 /**
 *   set props
 */
+nav {
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+  background-color: rgb(107.9644268775, 223.7549407115, 247.0355731225);
+  font-family: "Arial";
+  font-weight: 500;
+  color: hsl(190.0440528634, 89.7233201581%, -10.3921568627%);
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+}
+nav a:hover {
+  background-color: rgb(107.9644268775, 223.7549407115, 247.0355731225);
+  text-decoration: underline;
+}
+nav a.active {
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+}
+
+@media (max-width: 540px) {
+  nav {
+    flex-direction: column;
+  }
+}
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: FILE-UPLOAD
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: TABLE
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+/**
+*   TABLE
+*/
+table {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+/**
+*   CAPTION
+*/
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #6c757d;
+  text-align: left;
+}
+
+/**
+*   TH
+*/
+th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: left;
+  font-weight: 500;
+  background-color: #f8f9fa;
+}
+
+/**
+*   TD
+*/
+td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+/**
+*   TR
+*/
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #e9ecef;
+}
+
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: FILE-UPLOAD
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: FILE-UPLOAD
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
 /**
 *   LABEL: FILE UPLOAD
 */
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: FILE-UPLOAD
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: LISTS
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+/**
+*   LIST: VARIABLES
+*/
+/**
+*   MIXIN: list-base definitons
+*/
+/**
+*   list--unstyled
+*/
+.list-unstyled {
+  padding-left: 1.5rem;
+  list-style: none;
+  margin-bottom: 1rem;
+  /**
+  *   LI
+  */
+  padding-left: 0;
+  /**
+  *   LI
+  */
+}
+.list-unstyled li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.list-unstyled li {
+  padding-left: 0;
+}
+
+.list-group {
+  padding-left: 1.5rem;
+  list-style: none;
+  margin-bottom: 1rem;
+  /**
+  *   LI
+  */
+  padding-left: 0;
+  /**
+  *   LI
+  */
+}
+.list-group li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.list-group li {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  /**
+  *   FIRST CHILD
+  */
+  /**
+  *   LAST CHILD
+  */
+  /**
+  *   NESTED LI
+  */
+}
+.list-group li:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.list-group li:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.list-group li + li {
+  border-top: 0;
+}
+
+.list-group-flush {
+  border-radius: 0;
+}
+.list-group-flush li {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.list-group-flush li:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+ol {
+  padding-left: 1.5rem;
+  list-style: none;
+  margin-bottom: 1rem;
+  /**
+  *   LI
+  */
+  counter-reset: list-counter;
+}
+ol li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+ol li {
+  position: relative;
+}
+ol li::before {
+  content: counter(list-counter) ".";
+  counter-increment: list-counter;
+  position: absolute;
+  left: -1.5rem;
+  color: #5c5c5c;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style: none;
+  margin-bottom: 1rem;
+  /**
+  *   LI
+  */
+}
+ul li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+ul li {
+  position: relative;
+}
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: -1.5rem;
+  color: #5c5c5c;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
 /**-------------------------------------------------------
 *
 *   SASS COMPONENTS
