@@ -6,6 +6,8 @@
      * @package component
      * @author Michael Naatjes <michael.naatjes87@email.com>
      * 
+     * 
+     * @example $tbl = new TableComponent($title, $data=JSON);
      * @method void __construct()
      * @method array setAttributes()
      * 
@@ -13,6 +15,7 @@
     /*----------------------------------------------------------*/
     class TableComponent extends HTMLComponent {
         protected $title;
+        protected $isJSONData;
         /*----------------------------------------------------------*/
         /**
          * Constructor for HTMLComponent Class
@@ -34,7 +37,7 @@
             /**
              * TODO: Parse Data
              */
-            $this->tagName      = 'table';
+            $this->tagName     = 'table';
             $this->title        = $tableTitle;
             $this->attributes   = $attributes;
             $this->children     = [];
@@ -50,12 +53,75 @@
          */
         /*----------------------------------------------------------*/
         protected function validateTableData($tableData){
-            if(is_string($tableData) && isJSON($tableData)){
-                return json_decode($tableData, true);
-            } else if (is_array($tableData) && isAssocArray($tableData)){
-                return $tableData;
+            /**
+             * attempt to parse table data
+             * check if assoc array returned
+             */
+            $json               = isJSONstr($tableData);
+            $this->isJSONData   = is_array($json);
+            /**
+             * validateTabularData
+             * 
+             * validate tabular data:
+             *      check indexed array of arrays
+             *      check that sub-arrays have same keys
+             *      check that sub-arrays have same value types
+             * 
+             * @param array $data
+             * 
+             * @return bool true = match criteria
+             */
+            function validateTabularData(array $data){
+                /**
+                 * validate data is array and is indexed array
+                 */
+                if(is_array($data) && (
+                    array_keys($data) === range(0, count(array_keys($data)) - 1)
+                )){
+                    /**
+                     * check that all keys match in each sub-array
+                     * grab array of keys of sub arr
+                     */
+                    $keys = array_keys($data[0]);
+                    $test = [];
+                    foreach($data as $arr){
+                        /**
+                         * check that every sub-array has keys that match
+                         */
+                        array_push($test, arrayHasKeys($arr, $keys));
+                    }
+                    /**
+                     * check that test resolved and return result
+                     */
+                    return arrayEvery($test, function($val){ return $val === true;});
+                }
+                /**
+                 * first level of array not indexed
+                 */
+                throw new TypeError('Array must be an indexed array!');
+                return false;
+            }
+
+            if($this->isJSONData){
+                if(validateTabularData($json)){
+                    return $json;
+                } else {
+                    /**
+                     * data not formatted propertly
+                     */
+                    return null;
+                }
+            } elseif(!$this->isJSONData){
+                if(validateTabularData($tableData)){
+                    return $tableData;
+                } else {
+                    /**
+                     * data not formatted propertly
+                     */
+                    return null;
+                }
             } else {
-                throw new TypeError('Table Data is not an associative array or json string!');
+                throw new TypeError('Table Data is not an array or json string!');
                 return null;
             }
         }
@@ -141,6 +207,9 @@
              * set width and height
              */
             $width  = arrayWidth($values);
+            /**
+             * determine how to evauluate height of data
+             */
             $height = ($type === 'tbody') ? objectHeight($values) : objectHeight($values[0]);
             /**
              * loop columns by height

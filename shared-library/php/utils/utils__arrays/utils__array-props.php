@@ -77,7 +77,7 @@ function arrayHasKeys(array $arr, array $keys){
     /**
      * validate array & associative array
      */
-    if(is_array($arr) && isAssocArray($arr)){
+    if(is_array($arr)){
         /**
          * clean array and remove duplicates
          */

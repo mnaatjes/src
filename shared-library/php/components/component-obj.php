@@ -54,14 +54,9 @@
             /**
              * check if json or params
              */
-            if(is_string($args[0]) && isJSON($args[0])){
-                /**
-                 * decode json
-                 * destructure
-                 * validate keys
-                 * parse
-                 */
-                $json = json_decode($args[0], true);
+            $json   = isJSONstr($args[0]);
+            $isJSON = is_array($json);
+            if(is_string($args[0]) && $isJSON){
                 /**
                  * validate keys
                  */

@@ -39,15 +39,42 @@
     }
     /*----------------------------------------------------------*/
     /**
-     * isJson
+     * isJsonstr
      * 
-     * @param mixed data
-     * @return boolean true if supplied data is a json string
+     * @param mixed $data
+     * @param bool $assoc
+     * @return array|bool   true if supplied data is a json string
+     *                      json returned is assoc array
+     *                      NOT array of objects
      */
     /*----------------------------------------------------------*/
-    function isJSON($data){
-        json_decode($data);
-        return json_last_error() === JSON_ERROR_NONE;
+    function isJSONstr($data, bool $assoc=true){
+        $res = false;
+        /**
+         * check if string
+         */
+        if(!is_string($data)){
+            return false;
+        }
+        /**
+         * try parsing
+         */
+        try {
+            /**
+             * try decoding
+             */
+            $res = json_decode($data, $assoc);
+        } catch (JsonException $e){
+            /**
+             * could not decode properly
+             */
+            return false;
+        }
+        /**
+         * json decode worked
+         * return true
+         */
+        return $res;
     }
     /*----------------------------------------------------------*/
     /**
