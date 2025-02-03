@@ -88,7 +88,6 @@
         /**
          * catch type string and bold
          */
-
         return sprintf('<pre>%s</pre>', htmlspecialchars($data));
     }
     /*----------------------------------------------------------*/

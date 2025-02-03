@@ -12,9 +12,7 @@
  */
 /*----------------------------------------------------------*/
 class ListComponent extends HTMLComponent {
-    protected $pkey;
-    protected $title;
-    protected $listType;
+    protected $isJSONData = false;
     protected $listData = [];
     /*----------------------------------------------------------*/
     /**
@@ -33,18 +31,24 @@ class ListComponent extends HTMLComponent {
      * @return void
      */
     /*----------------------------------------------------------*/
-    public function __construct(string $listTitle, $listData, string $pkey, bool $ordered=false, array $attributes=[]){
+    public function __construct($listData, bool $ordered=false, array $attributes=[]){
         /**
-         * TODO: Parse Data
+         * TODO: Remove DIV container
+         *          Just do UL or OL
+         * TODO: Remove title
+         * TODO: Remove pkey requirement
+         * TODO: Validate Data and data format
+         *          Determine how to nest data if:
+         *              indexed
+         *              assoc
+         *              nested indexed
+         *              nested assoc
          */
-        $this->tagName      = 'div';
-        $this->listType     = $ordered ? 'ol' : 'ul';
-        $this->title        = $listTitle;
+        $this->tagName      = $ordered == false ? 'ul' : 'ol';
         $this->attributes   = $attributes;
         $this->children     = [];
         $this->data         = [];
         $this->listData     = $this->validateListData($listData);
-        $this->pkey         = $pkey;
     }
     /*----------------------------------------------------------*/
     /**
@@ -55,99 +59,85 @@ class ListComponent extends HTMLComponent {
      */
     /*----------------------------------------------------------*/
     protected function validateListData($listData){
-        if(is_string($listData) && isJSON($listData)){
-            return json_decode($listData, true);
-        } else if (is_array($listData) && isAssocArray($listData)){
-            return $listData;
-        } else {
+        /**
+         *  Data schema:
+         *      Indexed Array
+         *          string | number
+         *          Nested Indexed
+         *          Nested Assoc
+         *          value == array: *recursive
+         *      Assoc Array
+         *          string | number
+         *          Nested Indexed
+         *          Nested Assoc
+         *          value == array: *recursive
+         * 
+         *  *Carry over currDepth to determine recursive
+         */
+        /**
+         * parse data
+         * check if json or array
+         * set json to listData if present
+         */
+        $json               = isJSONstr($listData);
+        $this->isJSONData   = is_array($json);
+        if($this->isJSONData){
+            $listData = $json;
+        }
+        $flag = true;
+        if(!$flag) {
             throw new TypeError('Table Data is not an associative array or json string!');
             return null;
+        } else {
+            return $listData;
         }
     }
     /*----------------------------------------------------------*/
     /**
      * renderList
      * 
-     * @param string $title
-     * @param array $data
+     * sets $this->children property based on $this->listData
      * 
-     * @property string $html
+     * @property array $this->listData
      * @property array $this->children
-     * @return string html string
+     * @return array 
      */
     /*----------------------------------------------------------*/
-    protected function renderList(string $title, array $listData){
+    protected function renderList(array $data){
         /**
-         * generate caption
+         * check data depth
+         * for each layer, check if indexed or assoc
          */
-        array_push($this->children, $this->renderListTitle($title));
-        /**
-         * render ul / ol
-         */
-        $this->children = array_merge($this->children, $this->renderListContainers(array_values($listData), $this->listType));
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * renderListTitle
-     * 
-     * @return object
-     */
-    /*----------------------------------------------------------*/
-    private function renderListTitle(string $title){
-        return new HTMLComponent('h2', [], [], ['textContent'=>$title]);
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * renderListContainer
-     * 
-     * ul / ol
-     * 
-     * @return object
-     */
-    /*----------------------------------------------------------*/
-    private function renderListContainers(array $listData, string $listType='ul'){
-        /**
-         * declare acc array
-         */
-        $containers = [];
-        foreach($listData as $itemData){
+        $depth = arrayDepth($data);
+        if(is_array($data) && $depth === 1){
             /**
-             * check if nested
+             * check array type
              */
-            if(is_array($itemData)){
-                array_push($containers, new HTMLComponent($listType, ['class'=>'list-group'], $this->renderListItems($itemData), []));
+            $indexed = array_every($data, function($k, $v, $i){return $i === $k;});
+            if($indexed === true){
+                foreach($data as $item){
+                    $this->addChild(
+                        new HTMLComponent('li', [], [], ['textContent'=>$item])
+                    );
+                }
             } else {
-                console($itemData);
+                foreach($data as $key=>$value){
+                    /**
+                     * beautify key
+                     */
+                    $key = ucwords(strtolower(str_replace('_', ' ', $key)));
+                    $textContent = sprintf('%s: %s', $key, $value);
+                    $this->addChild(
+                        new HTMLComponent('li', [], [], ['textContent'=>$textContent])
+                    );
+                }
             }
+        } else {
+            /**
+             * error!
+             */
+            throw new Error('Unable to parse list data!');
         }
-        /**
-         * return ul/ol
-         */
-        return $containers;
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * renderListItem
-     * 
-     * @return object
-     */
-    /*----------------------------------------------------------*/
-    private function renderListItems(array $itemData){
-        /**
-         * declare accumulator
-         */
-        $items = [];
-        /**
-         * loop item data
-         */
-        foreach($itemData as $key=>$value){
-            array_push($items, new HTMLComponent('li', [], [], ['textContent'=>htmlspecialchars($value)]));
-        }
-        //console($items);
-        /**
-         * debugging
-         */
-        return $items;
     }
 }
 

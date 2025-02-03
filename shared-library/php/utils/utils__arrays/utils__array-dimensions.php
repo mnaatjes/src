@@ -1,6 +1,29 @@
 <?php
 /*----------------------------------------------------------*/
 /**
+ * arrayType
+ *
+ * @param array $arr
+ * @return bool true = yes, false = no
+ * @return null not an array
+ */
+/*----------------------------------------------------------*/
+function isIndexedArray(array $arr): bool{
+    if(!is_array($arr)){
+        return null;
+    } else {
+        $keys = array_keys($arr);
+        for($i = 0; $i < count($keys); $i++){
+            if($keys[$i] !== $i){
+                return false;
+            }
+        }
+        return true;
+    }
+
+}
+/*----------------------------------------------------------*/
+/**
  * arrayHeight
  * 
  * @param array $arr array

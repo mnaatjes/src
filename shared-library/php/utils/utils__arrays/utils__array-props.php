@@ -100,6 +100,18 @@ function arrayHasKeys(array $arr, array $keys){
 }
 /*----------------------------------------------------------*/
 /**
+ * array_type
+ *
+ * @param array $arr
+ * @return string 'indexed' | 'assoc'
+ */
+/*----------------------------------------------------------*/
+function array_type(array $arr): string{
+    $isIndexed = array_every($arr, function($k, $v, $i){return $i === $k;});
+    return ($isIndexed === true) ? 'indexed' : 'assoc';
+}
+/*----------------------------------------------------------*/
+/**
  * isAssocArray
  *
  * @param array $arr

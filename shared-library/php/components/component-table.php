@@ -60,65 +60,32 @@
             $json               = isJSONstr($tableData);
             $this->isJSONData   = is_array($json);
             /**
-             * validateTabularData
-             * 
-             * validate tabular data:
-             *      check indexed array of arrays
-             *      check that sub-arrays have same keys
-             *      check that sub-arrays have same value types
-             * 
-             * @param array $data
-             * 
-             * @return bool true = match criteria
+             * set data as json array if present
              */
-            function validateTabularData(array $data){
-                /**
-                 * validate data is array and is indexed array
-                 */
-                if(is_array($data) && (
-                    array_keys($data) === range(0, count(array_keys($data)) - 1)
-                )){
-                    /**
-                     * check that all keys match in each sub-array
-                     * grab array of keys of sub arr
-                     */
-                    $keys = array_keys($data[0]);
-                    $test = [];
-                    foreach($data as $arr){
-                        /**
-                         * check that every sub-array has keys that match
-                         */
-                        array_push($test, arrayHasKeys($arr, $keys));
-                    }
-                    /**
-                     * check that test resolved and return result
-                     */
-                    return arrayEvery($test, function($val){ return $val === true;});
-                }
-                /**
-                 * first level of array not indexed
-                 */
-                throw new TypeError('Array must be an indexed array!');
-                return false;
-            }
-
             if($this->isJSONData){
-                if(validateTabularData($json)){
-                    return $json;
-                } else {
+                $tableData = $json;
+            }
+            /**
+             * validate data
+             */
+            if(is_array($tableData) && array_keys($tableData) === range(0, count(array_keys($tableData)) - 1)){
+                /**
+                 * check that all keys match in each sub-array
+                 * grab array of keys of sub arr
+                 */
+                $keys = array_keys($tableData[0]);
+                $test = [];
+                foreach($tableData as $arr){
                     /**
-                     * data not formatted propertly
+                     * check that every sub-array has keys that match
                      */
-                    return null;
+                    array_push($test, arrayHasKeys($arr, $keys));
                 }
-            } elseif(!$this->isJSONData){
-                if(validateTabularData($tableData)){
+                /**
+                 * check that test resolved and return result
+                 */
+                if(arrayEvery($test, function($val){ return $val === true;})){
                     return $tableData;
-                } else {
-                    /**
-                     * data not formatted propertly
-                     */
-                    return null;
                 }
             } else {
                 throw new TypeError('Table Data is not an array or json string!');

@@ -158,4 +158,64 @@ function arrayEvery(array $arr, callable $callback): bool {
         return false;
     }
 }
+/*----------------------------------------------------------*/
+/**
+ * array_every
+ *
+ * @param array $arr
+ * @param callable $callback
+ * @property array $acc accumulator
+ * @return bool
+ */
+/*----------------------------------------------------------*/
+function array_every(array $arr, callable $callback){
+    $index  = 0;
+    foreach($arr as $key=>$val){
+        if(!$callback($key, $val, $index)){
+            return false;
+        }
+        $index++;
+    }
+    return true;
+}
+/*----------------------------------------------------------*/
+/**
+ * arrayTraverse
+ * 
+ * @param array $arr
+ * @param callable $callback
+ * @param int $maxDepth default = null
+ * @param int $currDepth default = 1
+ * 
+ * @property array $acc accumulator array
+ * @return int|array
+ */
+/*----------------------------------------------------------*/
+function arrayTraverse(array $arr, callable $callback,  int $maxDepth=null, int $currDepth=1){
+    /**
+     * TODO: FIX!!!
+     * check for params
+     * check for max-depth
+     * check against current-depth
+     */
+    if(is_null($maxDepth) || $currDepth <= $maxDepth){
+        /**
+         * loop array elements
+         */
+        foreach($arr as $key=>$val){
+            /**
+             * use callback
+             * feed properties into callback
+             */
+            $result = $callback($key, $val);
+            /**
+             * recursive call
+             */
+            if(is_array($val)){
+                arrayTraverse($val, $callback, $maxDepth, $currDepth + 1);
+            }
+        }
+    }
+    return $result;
+}
 ?>

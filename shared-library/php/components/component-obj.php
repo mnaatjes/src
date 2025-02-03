@@ -259,6 +259,17 @@
         }
         /*----------------------------------------------------------*/
         /**
+         * appendSibling
+         *
+         * @param object $component HTMLComponent
+         * @return object
+         */
+        /*----------------------------------------------------------*/
+        public function appendSibling(object $component){
+            console($this->html);
+        }
+        /*----------------------------------------------------------*/
+        /**
          * addChild
          * 
          * @param object $child
@@ -345,6 +356,10 @@
                     }
                 }
                 /**
+                 * close opening tag
+                 */
+                $tag .= ">";
+                /**
                  * check if component is a table
                  */
                 if($this->tagName === 'table' && property_exists($this, 'tableData')){
@@ -353,13 +368,9 @@
                 /**
                  * check if component is a list
                  */
-                if(property_exists($this, 'listData')){
-                    $this->renderList($this->title, $this->listData);
+                if(property_exists($this, 'listData') && ($this->tagName == 'ol' || $this->tagName === 'ul')){
+                    $this->renderList($this->listData);
                 }
-                /**
-                 * close opening tag
-                 */
-                $tag .= ">";
                 /**
                  * destructure data array of arrays
                  * inject text if present in data array
