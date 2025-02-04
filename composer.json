@@ -1,0 +1,12 @@
+{
+    "name": "apollo/src",
+    "description": "All project source code and libraries",
+    "type": "phpdoc",
+    "authors": [
+        {
+            "name": "mnaatjes",
+            "email": "michael.naatjes87@gmail.com"
+        }
+    ],
+    "require": {}
+}
