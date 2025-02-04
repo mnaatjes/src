@@ -1,0 +1,11 @@
+{
+    "source": {
+        "include": [
+            "./shared-library/utils/math/utils__math__circle.js"
+        ],
+        "exclude": ["./shared-library/php"]
+    },
+    "opts": {
+        "destination": "./docs/docs_js"
+    }
+}
