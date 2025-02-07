@@ -41,11 +41,26 @@
             $this->attributes   = arrayFlatten(array_merge([['type'=>$btnType], $attributes]));
             $this->children     = [];
             $this->data         = ['textContent'=>$btnName];
-            $this->behaviors    = [
-                'funcType' => $behaviors['funcType'],
-                'funcName' => $behaviors['funcName'],
-                'funcString' => $behaviors['funcString']
-            ];
+            $this->behaviors    = $this->validateBehaviors($behaviors);
+        }
+        /*----------------------------------------------------------*/
+        /**
+         *  validateBehaviors
+         */
+        /*----------------------------------------------------------*/
+        private function validateBehaviors(array $behaviors=[]){
+            /**
+             * check for javascript behavior functions
+             */
+            if(!empty($behaviors)){
+                return [
+                    'funcType' => $behaviors['funcType'],
+                    'funcName' => $behaviors['funcName'],
+                    'funcString' => $behaviors['funcString']
+                ];
+            } else {
+                return [];
+            }
         }
     }
 ?>

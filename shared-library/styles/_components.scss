@@ -1,23 +1,24 @@
-/**-------------------------------------------------------
-*
-*   SASS COMPONENTS
-*
-*--------------------------------------------------------*/
-/**
-*   IMPORT COMPONENTS
-*/
+//-------------------------------------------------------
+//
+//  SASS: COMPONENTS
+//
+//-------------------------------------------------------
+
+//  IMPORT
+
 @use './components/nav.scss';
 @use './components/table.scss';
 @use 'components/label__file-upload.scss';
 @use './components/lists.scss';
 @use './components/button.scss';
-//@use './components/lists-modern.scss';
-/**
-*   FORWARD COMPONENTS
-*/
+@use './components/body.scss';
+
+//  FORWARD
+
 @forward './components/nav.scss';
 @forward './components/table.scss';
 @forward 'components/label__file-upload.scss';
 @forward './components/lists.scss';
 @forward './components/button.scss';
+@forward './components/body.scss';
 //@forward './components/lists-modern.scss';

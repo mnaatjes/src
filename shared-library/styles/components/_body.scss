@@ -1,0 +1,13 @@
+//-------------------------------------------------------
+//
+//  BODY
+//
+//-------------------------------------------------------
+@use '../variables' as *;
+@use '../utilities' as *;
+@use '../mixins' as *;
+@use 'sass:map' as map;
+@use 'sass:color' as color;
+body {
+    padding: map.get($spacing-sizes, 'md');
+}
