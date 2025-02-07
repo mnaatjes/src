@@ -24,6 +24,10 @@
      * array property methods
      */
     require_once 'utils__arrays/utils__array-props.php';
+    /**
+     * string methods
+     */
+    require_once 'utils__strings/utils__strings.php';
     /*----------------------------------------------------------*/
     /**
      * enableErrors

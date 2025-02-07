@@ -12,6 +12,7 @@
      * @example $form = new FormComponent();
      * 
      */
+    require_once 'element-constants.php';
     /*----------------------------------------------------------*/
     class FormElement extends HTMLComponent {
         protected $isLabel      = false;
@@ -22,10 +23,11 @@
          *  constructor
          */
         /*----------------------------------------------------------*/
-        public function __construct(string $tagName='input', string $type='', array $options=[]){
+        public function __construct(string $tagName='input', array $options=[]){
             $this->tagName  = $this->validateTagName($tagName);
             $this->isLabel  = ($this->tagName === 'label') ? true : false;
-            $this->type     = $this->validateType($type);
+            $this->type     = ($this->tagName === 'input' || array_key_exists('type', $options)) ? $this->validateType($options['type']) : '';
+            $this->options  = $this->validateOptions($options);
         }
         /*----------------------------------------------------------*/
         /**
@@ -147,15 +149,78 @@
         /**
          * validateOptions
          * 
+         * @param array $optionsSchema
          * @return array array of html form element attributes
          */
         /*----------------------------------------------------------*/
         private function validateOptions(array $options=[]){
+            /**
+             * declare schema
+             * build options schema
+             */
             $optionsSchema = [];
-            $attribsSchema = [
-                'style' => false,
-                'class' => false
-            ];
+            if($this->tagName === 'input'){
+                $default_options    = FORM_ELEMENTS[$this->tagName]['attributes'];
+                $type_options       = FORM_ELEMENTS[$this->tagName]['types'][$this->type];
+                $optionsSchema      = array_merge($default_options, $type_options);
+            } else {
+                $optionsSchema = FORM_ELEMENTS[$this->tagName]['attributes'];
+            }
+            /**
+             * declare collector arrays
+             * check against schema
+             */
+            $errors     = [];
+            $attributes = [];
+            foreach($optionsSchema as $key => $validType){
+                /**
+                 * check if key exists in options
+                 */
+                if(array_key_exists($key, $options)){
+                    /**
+                     * check data type of options value
+                     */
+                    if(gettype($options[$key]) !== $validType){
+                        /**
+                         * check string types against valid types
+                         */
+                        if(is_string($options[$key]) && str_type($options[$key]) !== $validType){
+                            /**
+                             * add to errors output
+                             */
+                            array_push($errors, [
+                                'attribute' => $key,
+                                'validType' => $validType,
+                                'value'     => $options[$key]
+                            ]);
+                        } else {
+                            /**
+                             * push to attributes array
+                             */
+                            $attributes[$key] = $options[$key];
+                        }
+                    } else {
+                        /**
+                         * push to attributes array
+                         */
+                        $attributes[$key] = $options[$key];
+                    }
+                }
+            }
+            /**
+             * validate results and check for errors
+             */
+            if(!empty($errors)){
+                console($errors);
+                throw new Error('Invalid Options!');
+            }
+            if(count($attributes) !== count($options)){
+                throw new Error('Invalid Options! User provided attributes which are not valid!');
+            }
+            /**
+             * return attributes if valid
+             */
+            return $attributes;
         }
     }
 ?>

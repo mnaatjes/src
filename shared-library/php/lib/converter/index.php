@@ -33,8 +33,13 @@
                 /**
                  * form element debugging
                  */
-                $ele = new FormElement();
-                console($ele);
+                $ele = new FormElement('input', [
+                  'name'        => 'address',
+                  'type'        => 'text',
+                  'disabled'    => 'false',
+                  'form'        => 'form--main',
+                  'placeholder' => 'Enter Your Address'
+                ]);
             ?>
         </section>
         <section>
