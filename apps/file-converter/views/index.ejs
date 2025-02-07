@@ -14,11 +14,11 @@
     <main id="root">
       <h2>Here is a form</h2>
         <form action="/upload" method="POST" enctype="multipart/form-data">
-          <label for="file" class="file--upload">
-            Here is a label!
+          <label id="choose-file" for="file" class="file--upload">
+            Choose File
           </label>
           <input type="file" name="file"/>
-          <button type="submit">Upload</button>
+          <button id="upload" type="submit">Upload</button>
         </form>
         <div class="test">I am a Test DIV!</div>
         <button>Testing</button>
@@ -29,6 +29,6 @@
     </main>
     <footer>
     </footer>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="/js/file-upload.js"></script>
   </body>
 </html>

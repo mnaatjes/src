@@ -14,36 +14,13 @@
 
 // Base styles
 nav {
-  display: flex;
-  list-style: none;
-  padding: map.get($spacing-sizes, 'md');
-  background-color: map.get($bg-colors, 'info');
-  font-family: $font-family;
-  font-weight: map.get($font-weights, 'medium');
-  color: map.get($font-colors, 'info');
 }
 
-nav a {
-  display: block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: #333; 
+nav a { 
 
   &:hover {
-    background-color: map.get($bg-colors, 'info');
-    text-decoration: underline;
   }
 
   &.active {
-    font-weight: bold;
-    color: #fff;
-    background-color: #007bff; 
-  }
-}
-
-// Responsive styles (optional)
-@media (max-width: 540px) { 
-  nav {
-    flex-direction: column;
   }
 }

@@ -1,20 +1,14 @@
-/**-------------------------------------------------------
-*
-*   SASS COMPONENTS: FILE-UPLOAD
-*
-*--------------------------------------------------------*/
-/**
-*   IMPORT VARIABLES, MODULES
-*/
+//-------------------------------------------------------
+//
+//  BUTTONS
+//
+//-------------------------------------------------------
 @use '../variables' as *;
 @use '../utilities' as *;
 @use '../mixins' as *;
 @use 'sass:map' as map;
 @use 'sass:color' as color;
-/**
-*   LABEL: FILE UPLOAD
-*/
-label.file--upload {
+button {
     /*POSITION*/
     margin: 12px;
     padding: map.get($button-padding, 'md');

@@ -7,7 +7,7 @@
 /**
 *   COLOR Percentages
 */
-$adjust-border: -10%;
+$adjust-border: -50%;
 $adjust-font: -60%;
 $adjust-bg: 20%;
 
@@ -29,15 +29,11 @@ $colors: (
   "gray": #6c757d,
   "gray-dark": #333333
 );
-/**
-*   BACKGROUND COLORS
-*/
+//-------------------------------------------------------
+//
+//  MAIN COLOR MAPS
+//
+//-------------------------------------------------------
 $bg-colors: generateBackgroundColors($colors, $adjust-bg);
-/**
-*   BORDER COLORS
-*/
 $border-colors: generateBorderColors($colors, $adjust-border);
-/**
-*   FONT COLORS
-*/
 $font-colors: generateFontColors($colors, $adjust-font);

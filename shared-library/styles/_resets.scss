@@ -22,7 +22,6 @@
 */
 h1, h2, h3, h4, h5, h6 {
     color: map.get($font-colors, 'default');
-    @include sizing($SIZE);
 }
 /**
 *   LISTS
@@ -49,33 +48,18 @@ a {
 /**
 *   SECTION, ARTICLE
 */
-section, article {
-    @include sizing($SIZE);
-}
+section, article {}
 /**
 *   BUTTONS
 */
 button {
     /*BEHAVIOR*/
     cursor: pointer;
-    /*POSITION*/
-    @include sizing-button($SIZE);
-    /*DISPLAY*/
-    display: inline-block;
     /*BORDER*/
     outline: none;
-    @include border($THEME);
-    @include background($THEME);
     /*TEXT*/
     text-decoration: none;
     text-align: center;
-    @include sizing-fonts($SIZE);
-    /**
-    *   HOVER
-    */
-    &:hover {
-        @include background-hover($THEME);
-    }
 }
 /**
 *   INPUT
@@ -85,11 +69,12 @@ input {
 }
 input[type="file"] {
     /*DISPLAY*/
-    display: none;
+    display: inline-block;
 }
 /**
 *   p
 */
 p {
-    @include sizing($SIZE);
+    /*FONT*/
+    
 }

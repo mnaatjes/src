@@ -151,15 +151,6 @@
 /**
 *   COLOR MAP
 */
-/**
-*   BACKGROUND COLORS
-*/
-/**
-*   BORDER COLORS
-*/
-/**
-*   FONT COLORS
-*/
 /**-------------------------------------------------------
 *
 *   SASS VARIABLES
@@ -168,83 +159,6 @@
 /**
 *   IMPORT all variables in the varaiables directory
 */
-/**-------------------------------------------------------
-*
-*   SASS VARIABLES: CONFIG
-*
-*--------------------------------------------------------*/
-/**
-*   IMPORT all variables in the varaiables directory
-*/
-/**
-*   IMPORT: FUNCTIONS
-*/
-/**-------------------------------------------------------
-*
-*   GLOBALS
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   FONT
-*
-*--------------------------------------------------------*/
-/**
-*   line heights
-*/
-/**-------------------------------------------------------
-*
-*   SIZES: SPACING
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   BORDERS
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   Default size
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   BUTTON: SIZES
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   TRANSITIONS
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   CONFIG MAP
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   Generate Border
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   Events
-*   Generate States
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   UTILITY MIXIN
-*   nest
-*   nestBehavior
-*
-*--------------------------------------------------------*/
-/**-------------------------------------------------------
-*
-*   DEBUGGING
-*
-*--------------------------------------------------------*/
 /**
 *   FORWARD all variables in the varaiables directory
 */
@@ -263,8 +177,6 @@
 */
 h1, h2, h3, h4, h5, h6 {
   color: #5c5c5c;
-  padding: 1rem;
-  margin: 1rem;
 }
 
 /**
@@ -293,46 +205,17 @@ a:visited {
 /**
 *   SECTION, ARTICLE
 */
-section, article {
-  padding: 1rem;
-  margin: 1rem;
-}
-
 /**
 *   BUTTONS
 */
 button {
   /*BEHAVIOR*/
   cursor: pointer;
-  /*POSITION*/
-  padding: 1rem 2rem;
-  margin: 1rem;
-  /*DISPLAY*/
-  display: inline-block;
   /*BORDER*/
   outline: none;
-  /**
-  *   parse default values
-  */
-  /**
-  *   assign properties
-  */
-  border: 0.0625rem solid rgb(1.762295082, 87.2336065574, 213.237704918);
-  border-radius: 0.25rem;
-  background-color: rgb(114.1639344262, 170.6147540984, 253.8360655738);
   /*TEXT*/
   text-decoration: none;
   text-align: center;
-  line-height: 1.25;
-  /*Check weight*/
-  font-weight: "medium";
-  font-size: 1rem;
-  /**
-  *   HOVER
-  */
-}
-button:hover {
-  background-color: rgb(164.7459016393, 200.9221311475, 254.2540983607);
 }
 
 /**
@@ -344,15 +227,14 @@ input {
 
 input[type=file] {
   /*DISPLAY*/
-  display: none;
+  display: inline-block;
 }
 
 /**
 *   p
 */
 p {
-  padding: 1rem;
-  margin: 1rem;
+  /*FONT*/
 }
 
 /**-------------------------------------------------------
@@ -391,43 +273,6 @@ p {
 /**
 *   IMPORT VARIABLES, MODULES
 */
-/**
-*   themes mixin
-*/
-/**
-*   set props
-*/
-nav {
-  display: flex;
-  list-style: none;
-  padding: 1rem;
-  background-color: rgb(107.9644268775, 223.7549407115, 247.0355731225);
-  font-family: "Arial";
-  font-weight: 500;
-  color: hsl(190.0440528634, 89.7233201581%, -10.3921568627%);
-}
-
-nav a {
-  display: block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: #333;
-}
-nav a:hover {
-  background-color: rgb(107.9644268775, 223.7549407115, 247.0355731225);
-  text-decoration: underline;
-}
-nav a.active {
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-}
-
-@media (max-width: 540px) {
-  nav {
-    flex-direction: column;
-  }
-}
 /**-------------------------------------------------------
 *
 *   SASS COMPONENTS: FILE-UPLOAD
@@ -450,8 +295,6 @@ nav a.active {
 table {
   width: 100%;
   max-width: 100%;
-  padding: 1rem;
-  margin: 1rem;
   background-color: transparent;
   border-collapse: collapse;
 }
@@ -516,6 +359,51 @@ tr:hover {
 /**
 *   LABEL: FILE UPLOAD
 */
+label.file--upload {
+  /*POSITION*/
+  margin: 12px;
+  padding: 0.5rem 1rem;
+  /*DISPLAY*/
+  display: inline-block;
+  /*BORDER*/
+  /**
+  *   parse default values
+  */
+  /**
+  *   assign properties
+  */
+  border: 0.0625rem solid rgb(117.5, 117.5, 117.5);
+  border-radius: 0.25rem;
+  /*BKRND*/
+  background-color: rgb(114.1639344262, 170.6147540984, 253.8360655738);
+  /*FONT*/
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(215.75, 98.3606557377%, -7.8431372549%);
+  /*SHADOW*/
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  /*ANIMATIONS*/
+  transition: 0.5s ease-in-out;
+  /**
+  *   file-upload: hover
+  */
+  /**
+  *   file-upload: active
+  */
+}
+label.file--upload:hover {
+  /*BKRND*/
+  background-color: rgb(164.7459016393, 200.9221311475, 254.2540983607);
+  /*SHADOW*/
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+label.file--upload:active {
+  /*BKRND*/
+  background-color: rgb(63.5819672131, 140.3073770492, 253.4180327869);
+  /*SHADOW*/
+  box-shadow: inset 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
 /**-------------------------------------------------------
 *
 *   SASS COMPONENTS: FILE-UPLOAD
@@ -673,6 +561,59 @@ ul li::before {
   color: #5c5c5c;
   font-size: 1rem;
   margin-right: 0.5rem;
+}
+
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: FILE-UPLOAD
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+button {
+  /*POSITION*/
+  margin: 12px;
+  padding: 0.5rem 1rem;
+  /*DISPLAY*/
+  display: inline-block;
+  /*BORDER*/
+  /**
+  *   parse default values
+  */
+  /**
+  *   assign properties
+  */
+  border: 0.0625rem solid rgb(117.5, 117.5, 117.5);
+  border-radius: 0.25rem;
+  /*BKRND*/
+  background-color: rgb(114.1639344262, 170.6147540984, 253.8360655738);
+  /*FONT*/
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(215.75, 98.3606557377%, -7.8431372549%);
+  /*SHADOW*/
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  /*ANIMATIONS*/
+  transition: 0.5s ease-in-out;
+  /**
+  *   file-upload: hover
+  */
+  /**
+  *   file-upload: active
+  */
+}
+button:hover {
+  /*BKRND*/
+  background-color: rgb(164.7459016393, 200.9221311475, 254.2540983607);
+  /*SHADOW*/
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+button:active {
+  /*BKRND*/
+  background-color: rgb(63.5819672131, 140.3073770492, 253.4180327869);
+  /*SHADOW*/
+  box-shadow: inset 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 /**-------------------------------------------------------
