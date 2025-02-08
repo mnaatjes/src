@@ -51,43 +51,45 @@
          */
         /*----------------------------------------------------------*/
         protected function destructureArgs($args){
-            /**
-             * check if json or params
-             */
-            $json   = isJSONstr($args[0]);
-            $isJSON = is_array($json);
-            if(is_string($args[0]) && $isJSON){
+            if(count($args) === 1){
                 /**
-                 * validate keys
+                 * check if json or params
                  */
-                if(arrayHasKeys($json, ['tagName', 'attributes', 'children', 'data'])){
+                $json   = isJSONstr($args[0]);
+                $isJSON = is_array($json);
+                if(is_string($args[0]) && $isJSON){
                     /**
-                     * validata props
-                     * TODO: validate tags
-                     * validate arrays
-                     * check typeof each required element
+                     * validate keys
                      */
-                    if(is_string($json['tagName']) && arrayEvery(
-                        [$json['attributes'], $json['children'], $json['data']], function($ele){
-                            $res = is_array($ele);
-                            if($res != true){
-                                throw new TypeError("Invalid Data Type: '$ele' should be an array! Instead it is type: " . getType($ele));
-                                return false;
-                            } else {
-                                return true;
-                            }
-                        }
-                    )){
+                    if(arrayHasKeys($json, ['tagName', 'attributes', 'children', 'data'])){
                         /**
-                         * assign props
+                         * validata props
+                         * TODO: validate tags
+                         * validate arrays
+                         * check typeof each required element
                          */
-                        $this->tagName    = $json['tagName'];
-                        $this->attributes = arrayFlatten($json['attributes']);
-                        $this->children   = $json['children'];
-                        $this->data       = $json['data'];
+                        if(is_string($json['tagName']) && arrayEvery(
+                            [$json['attributes'], $json['children'], $json['data']], function($ele){
+                                $res = is_array($ele);
+                                if($res != true){
+                                    throw new TypeError("Invalid Data Type: '$ele' should be an array! Instead it is type: " . getType($ele));
+                                    return false;
+                                } else {
+                                    return true;
+                                }
+                            }
+                        )){
+                            /**
+                             * assign props
+                             */
+                            $this->tagName    = $json['tagName'];
+                            $this->attributes = arrayFlatten($json['attributes']);
+                            $this->children   = $json['children'];
+                            $this->data       = $json['data'];
+                        }
                     }
                 }
-            } elseif (is_string($args[0]) && arrayEvery([$args[1], $args[2], $args[3]], function($ele){return is_array($ele);})){
+            } elseif (count($args) >= 3 && is_string($args[0]) && arrayEvery([$args[1], $args[2], $args[3]], function($ele){return is_array($ele);})){
                 /**
                  * assign properties
                  */
@@ -267,6 +269,24 @@
         /*----------------------------------------------------------*/
         public function appendSibling(object $component){
             console($this->html);
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * insertBefore
+         *
+         * @param object $component HTMLComponent
+         * @return object
+         */
+        /*----------------------------------------------------------*/
+        public function insertBefore(object $component){
+            /**
+             * validate component
+             */
+            if(!($component instanceof HTMLComponent)){
+                throw new Error('Component is not an HTML Component!');
+            }
+            
+
         }
         /*----------------------------------------------------------*/
         /**

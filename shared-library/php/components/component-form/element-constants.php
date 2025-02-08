@@ -13,88 +13,90 @@
  */
 /*----------------------------------------------------------*/
 define('FORM_ELEMENTS', [
-    'input' => [
+    /**
+     * html element: input
+     */
+    'input'    => [
         'attributes' => [
-            "name"         => "string", 
+            "name"         => "string",
             "disabled"     => "boolean",
             "form"         => "string", // form element id
-            "autocomplete" => "string", 
+            "autocomplete" => "string",
             "tabindex"     => "integer",
             "title"        => "string", // for tooltip
-            "id"           => "string", 
-            "class"        => "string", 
-            "style"        => "string", 
-            "lang"         => "string", 
+            "id"           => "string",
+            "class"        => "string",
+            "style"        => "string",
             "hidden"       => "boolean",
             "type"         => "string"
         ],
         'types'      => [
             "text"           => [
-                "value"        => "string", 
-                "required"     => "boolean", 
-                "placeholder"  => "string", 
+                "value"        => "string",
+                "required"     => "boolean",
+                "placeholder"  => "string",
                 "maxlength"    => "integer", // Maximum characters
                 "minlength"    => "integer", // Minimum characters
                 "pattern"      => "string", // regex
-                "readonly"     => "boolean", 
-                "autocomplete" => "string", 
+                "readonly"     => "boolean",
+                "autocomplete" => "string",
             ],
             "password"       => [
-                "value"        => "string", 
-                "required"     => "boolean", 
-                "placeholder"  => "string", 
-                "maxlength"    => "integer", 
-                "minlength"    => "integer", 
-                "autocomplete" => "string", 
+                "value"        => "string",
+                "required"     => "boolean",
+                "placeholder"  => "string",
+                "maxlength"    => "integer",
+                "minlength"    => "integer",
+                "autocomplete" => "string",
             ],
             "email"          => [
-                "value"        => "string", 
+                "value"        => "string",
                 "required"     => "boolean",
                 "placeholder"  => "string", // Hint text
                 "maxlength"    => "integer", // Maximum characters
                 "minlength"    => "integer", // Minimum characters
                 "pattern"      => "string", // regex
-                "multiple"     => "boolean", 
-                "autocomplete" => "string", 
+                "multiple"     => "boolean",
+                "autocomplete" => "string",
             ],
             "number"         => [
-                "value"       => "number", 
-                "required"    => "boolean", 
-                "placeholder" => "string", 
-                "min"         => "number", 
-                "max"         => "number", 
-                "step"        => "number", 
+                "value"       => "number",
+                "required"    => "boolean",
+                "placeholder" => "string",
+                "min"         => "number",
+                "max"         => "number",
+                "step"        => "number",
             ],
             "checkbox"       => [
-                "value"    => "string", 
-                "checked"  => "boolean", 
-                "required" => "boolean", 
+                "value"    => "string",
+                "checked"  => "boolean",
+                "required" => "boolean",
             ],
             "radio"          => [
-                "value"    => "string", 
-                "checked"  => "boolean", 
-                "required" => "boolean", 
+                "value"    => "string",
+                "checked"  => "boolean",
+                "required" => "boolean",
             ],
             "file"           => [
                 "accept"   => "string", // file MIME types
-                "multiple" => "boolean", 
-                "required" => "boolean", 
+                "multiple" => "boolean",
+                "required" => "boolean",
             ],
-            "submit"         => [ 
-                "value" => "string", 
+            "submit"         => [
+                "value" => "string",
             ],
             "reset"          => [
-                "value" => "string", 
+                "value" => "string",
             ],
             "button"         => [
-                "value" => "string", 
+                "value" => "string",
             ],
-            "hidden"         => [ 
+            "hidden"         => [
                 "value" => "string",
             ],
             "image"          => [ // Acts like a submit button
                 "src" => "string", // URL of the image
-                "alt" => "string", 
+                "alt" => "string",
             ],
             "range"          => [
                 "min"   => "number",
@@ -130,7 +132,149 @@ define('FORM_ELEMENTS', [
                 "max"   => "string", // Date and time string
                 "value" => "string", // Date and time string
             ],
-        ]
+        ],
+        // element does not allow child elements
+        'children'   => null
+    ],
+    /**
+     * html element: select
+     */
+    'select'   => [
+        'attributes' => [
+            'name'         => 'string',
+            'autocomplete' => 'string',
+            'autofocus'    => 'boolean',
+            'disabled'     => 'boolean',
+            'form'         => 'string',
+            'multiple'     => 'boolean',
+            'required'     => 'boolean',
+            'size'         => 'integer'
+        ],
+        'types'      => null,
+        'children'   => ['option', 'optgroup']
+    ],
+    /**
+     * html element: fieldset
+     */
+    'fieldset' => [
+        'attributes' => [
+            'disabled' => 'boolean',
+            'form'     => 'string',
+            'name'     => 'string'
+        ],
+        'types'      => null,
+        'children'   => ['legend']
+    ],
+    /**
+     * html element: label
+     */
+    'label'    => [
+        'attributes' => [
+            'for'  => 'string',
+            'form' => 'string'
+        ],
+        'types'      => null,
+        'children'   => true
+    ],
+    /**
+     * html element: legend
+     */
+    'legend'   => [
+        'attributes' => [],
+        'types'      => null,
+        'children'   => true
+    ],
+    /**
+     * html element: meter
+     */
+    'meter'    => [
+        'attributes' => [
+            'value' => 'number',
+            'min'   => 'number',
+            'max'   => 'number',
+        ],
+        'types'      => null,
+        'children'   => null
+    ],
+    /**
+     * html element: optgroup
+     */
+    'optgroup' => [
+        'attributes' => [
+            'label' => 'string'
+        ],
+        'types'      => null,
+        'children'   => ['option']
+    ],
+    /**
+     * html element: option
+     */
+    'option'   => [
+        'attributes' => [
+            'label'    => 'string',
+            'selected' => 'boolean',
+            'value'    => 'string'
+        ],
+        'types'      => null,
+        'children'   => null
+    ],
+    /**
+     * html element: output
+     */
+    'output'   => [
+        'attributes' => [
+            'for' => 'string'
+        ],
+        'types'      => null,
+        'children'   => null
+    ],
+    /**
+     * html element: progress
+     */
+    'progress' => [
+        'attributes' => [],
+        'types'      => null,
+        'children'   => null
+    ],
+    /**
+     * html element: textarea
+     */
+    'textarea' => [
+        'attributes' => [
+            'cols'         => 'integer',
+            'rows'         => 'integer',
+            'maxlength'    => 'integer',
+            'placeholder'  => 'string',
+            'required'     => 'boolean',
+            'readonly'     => 'boolean',
+            'autofocus'    => 'boolean',
+            'wrap'         => 'string',
+            'autocomplete' => 'string',
+            'dirname'      => 'string',
+            'spellcheck'   => 'boolean'
+        ],
+        'types'      => null,
+        'children'   => null
+    ],
+    /**
+     * html element: button
+     */
+    'button'   => [
+        'attributes' => [
+            "autofocus" => "boolean",
+            "disabled" => "boolean",
+            "form" => "string",
+            "formaction" => "string",
+            "formenctype" => "string",
+            "formmethod" => "string",
+            "formnovalidate" => "boolean",
+            "formtarget" => "string",
+            "name" => "string",
+            "type" => "string",
+            "value" => "string"  
+        ],
+        'types'      => ['submit', 'reset', 'button'],
+        'children'   => null
     ]
 ]);
 ?>

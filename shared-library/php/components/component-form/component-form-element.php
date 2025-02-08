@@ -23,11 +23,14 @@
          *  constructor
          */
         /*----------------------------------------------------------*/
-        public function __construct(string $tagName='input', array $options=[]){
-            $this->tagName  = $this->validateTagName($tagName);
-            $this->isLabel  = ($this->tagName === 'label') ? true : false;
-            $this->type     = ($this->tagName === 'input' || array_key_exists('type', $options)) ? $this->validateType($options['type']) : '';
-            $this->options  = $this->validateOptions($options);
+        public function __construct(string $tagName='input', array $options=[], array $children=[]){
+            $this->tagName      = $this->validateTagName($tagName);
+            $this->isLabel      = ($this->tagName === 'label') ? true : false;
+            $this->type         = ($this->tagName === 'input' || array_key_exists('type', $options)) ? $this->validateType($options['type']) : '';
+            $this->attributes   = $this->validateOptions($options);
+            $this->name         = (array_key_exists('name', $this->attributes)) ? $this->attributes['name'] : '';
+            $this->children     = (empty($children)) ? [] : $this->validateChildren($children);
+            $this->data         = [];
         }
         /*----------------------------------------------------------*/
         /**
@@ -221,6 +224,16 @@
              * return attributes if valid
              */
             return $attributes;
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * validateChildren
+         * 
+         * @return array array of html form element attributes
+         */
+        /*----------------------------------------------------------*/
+        private function validateChildren(array $children){
+            return [];
         }
     }
 ?>
