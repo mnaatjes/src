@@ -12,6 +12,8 @@
 @use './components/lists.scss';
 @use './components/button.scss';
 @use './components/body.scss';
+@use './components/form';
+@use './components/input';
 
 //  FORWARD
 
@@ -21,4 +23,6 @@
 @forward './components/lists.scss';
 @forward './components/button.scss';
 @forward './components/body.scss';
+@forward './components/form';
+@forward './components/input';
 //@forward './components/lists-modern.scss';

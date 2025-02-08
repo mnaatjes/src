@@ -335,11 +335,6 @@ tr:hover {
 /**
 *   IMPORT VARIABLES, MODULES
 */
-/**-------------------------------------------------------
-*
-*   SASS COMPONENTS: FILE-UPLOAD
-*
-*--------------------------------------------------------*/
 /**
 *   IMPORT VARIABLES, MODULES
 */
@@ -613,6 +608,65 @@ button:active {
 */
 body {
   padding: 1rem;
+}
+
+form {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/**-------------------------------------------------------
+*
+*   SASS COMPONENTS: FILE-UPLOAD
+*
+*--------------------------------------------------------*/
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=tel],
+select,
+textarea {
+  /*POSITION*/
+  padding: 0.5rem 1rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+  /*BORDER*/
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  /*FONT*/
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+select:focus,
+textarea:focus {
+  border-color: #80bdff; /* Light blue border on focus */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle blue shadow on focus */
+}
+
+textarea {
+  height: 120px; /* Adjust as needed */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+input[type=radio] {
+  margin-right: 12px;
 }
 
 /**-------------------------------------------------------

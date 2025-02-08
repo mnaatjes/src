@@ -1,0 +1,51 @@
+//-------------------------------------------------------
+//
+//  COMPONENTS: INPUT, SELECT, TEXTAREA
+//
+//-------------------------------------------------------
+@use '../variables' as *;
+@use '../utilities' as *;
+@use '../mixins' as *;
+@use 'sass:map' as map;
+@use 'sass:color' as color;
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+  /*POSITION*/
+  padding: map.get($button-padding, 'md');
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+  /*BORDER*/
+  border: 1px solid #ced4da;
+  border-radius: $border-radius;
+  /*FONT*/
+  font-size: map.get($font-sizes, 'md');
+  transition: map.get($transitions, 'medium');
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #80bdff; /* Light blue border on focus */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle blue shadow on focus */
+}
+
+textarea {
+  height: 120px; /* Adjust as needed */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+input[type="radio"]{
+  margin-right: 12px;
+}

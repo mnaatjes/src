@@ -8,56 +8,60 @@
   <title>PHP: File Converter Test</title>
   <link rel="stylesheet" href="../../../styles/css/main.css">
 </head>
-<?php
-/**
- *  Require Utils
- *  Enable error reporting
- */
-require_once '../../utils/utils-main.php';
-enableErrors();
-/**
- *  Require Components
- */
-require_once '../../components/components.php';
-?>
-
-<body>
-  <header>
-    <h1>PHP: File Converter Test</h1>
-  </header>
-  <main id="root">
-    <section>
-      <?php
-      /**
-       * form component
-       */
-      $form = new FormComponent('form--test', '/test.php', [
-        new FormElement('input', [
-          'name'        => 'address',
-          'type'        => 'text',
-          'placeholder' => 'Enter your street address'
-        ]),
-        new FormElement('input', [
-          'name'        => 'city',
-          'type'        => 'text',
-          'placeholder' => 'Dallas Tx'
-        ])
-      ], 'GET');
-      $form->render();
-      $form->mount();
-      ?>
-    </section>
-    <section>
-      <form action="./src/upload.php" method="POST" enctype="multipart/form-data">
-        <label id="choose-file" for="file" class="file--upload">
-          Choose File
-        </label>
-        <input type="file" name="file" />
-        <button id="upload" type="submit">Upload</button>
-      </form>
-    </section>
-  </main>
-  <footer></footer>
-</body>
+  <?php
+  /**
+   *  Require Utils
+   *  Enable error reporting
+   */
+  require_once '../../utils/utils-main.php';
+  enableErrors();
+  /**
+   *  Require Components
+   */
+  require_once '../../components/components.php';
+  ?>
+  <body>
+    <header>
+      <h1>PHP: File Converter Test</h1>
+    </header>
+    <main id="root">
+      <section>
+        <?php
+        /**
+         * form component
+         */
+        $form = new FormComponent('form--test', '/test.php', [
+          new FormElement('input', [
+            'name'        => 'address',
+            'type'        => 'text',
+            'placeholder' => 'Enter your street address'
+          ]),
+          new FormElement('input', [
+            'name'        => 'city',
+            'type'        => 'text',
+            'placeholder' => 'Dallas Tx'
+          ]),
+          new FormElement('textarea', [
+            'placeholder'=>'Enter your content here'
+          ]),
+          new FormElement('input', ['type'=>'radio', 'name'=>'radio']),
+          new LabelElement('radio', 'Label for Radio')
+        ], 'GET');
+        $form->render();
+        $form->mount();
+        ?>
+      </section>
+      <section>
+        <form action="./src/upload.php" method="POST" enctype="multipart/form-data">
+          <label id="choose-file" for="file" class="file--upload">
+            Choose File
+          </label>
+          <input type="file" name="file" />
+          <button id="upload" type="submit">Upload</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 
 </html>
