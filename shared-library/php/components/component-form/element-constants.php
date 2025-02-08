@@ -241,6 +241,7 @@ define('FORM_ELEMENTS', [
      */
     'textarea' => [
         'attributes' => [
+            'name'         => 'string',
             'cols'         => 'integer',
             'rows'         => 'integer',
             'maxlength'    => 'integer',

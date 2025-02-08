@@ -16,9 +16,9 @@
     require_once 'component-form/component-form.php';
     require_once 'component-form/component-form-element.php';
     require_once 'component-form/element-label.php';
-    /*
-    require_once 'component-form/element-input.php';
     require_once 'component-form/element-select.php';
+    require_once 'component-form/element-button.php';
+    /*
     require_once 'component-form/element-text.php';
     */
 ?>

@@ -36,9 +36,9 @@ input[type="number"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #80bdff; /* Light blue border on focus */
+  border-color: #80bdff; 
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle blue shadow on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
 }
 
 textarea {
@@ -48,4 +48,46 @@ textarea {
 
 input[type="radio"]{
   margin-right: 12px;
+}
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="file"]::file-selector-button {
+  cursor: pointer;
+  user-select: none;
+  /*POSITION*/
+  padding: 0.6rem 1.2rem;
+  margin-right: 12px;
+  /*DISPLAY*/
+  display: inline-block;
+  /*BKRND*/
+  background-color: map.get($bg-colors, 'light');
+  /*BORDER*/
+  border: 1px solid #ced4da;
+  border-radius:$border-radius;
+  /*FONT*/
+  font-size: map.get($font-sizes, 'md');
+  font-weight: 400; 
+  line-height: 1.5; 
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  /*ANIMATION*/
+  transition: map.get($transitions, 'medium');
+}
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="file"]::file-selector-button:hover {
+  border-color: map.get($border-colors, 'primary'); 
+  outline: 0;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
+}
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+input[type="file"]::file-selector-button:active {
+  border-color: #80bdff; 
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
 }

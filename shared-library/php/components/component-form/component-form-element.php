@@ -18,19 +18,20 @@
         protected $isLabel      = false;
         protected $type         = '';
         protected $options      = [];
+        protected $textContent;
         /*----------------------------------------------------------*/
         /**
          *  constructor
          */
         /*----------------------------------------------------------*/
-        public function __construct(string $tagName='input', array $options=[], array $children=[]){
+        public function __construct(string $tagName='input', array $options=[], string $textContent='', array $children=[]){
             $this->tagName      = $this->validateTagName($tagName);
             $this->isLabel      = ($this->tagName === 'label') ? true : false;
             $this->type         = ($this->tagName === 'input' || array_key_exists('type', $options)) ? $this->validateType($options['type']) : '';
             $this->attributes   = $this->validateOptions($options);
             $this->name         = (array_key_exists('name', $this->attributes)) ? $this->attributes['name'] : '';
             $this->children     = (empty($children)) ? [] : $this->validateChildren($children);
-            $this->data         = [];
+            $this->data         = (empty($textContent)) ? [] : ['textContent'=>$textContent];
         }
         /*----------------------------------------------------------*/
         /**
@@ -156,7 +157,7 @@
          * @return array array of html form element attributes
          */
         /*----------------------------------------------------------*/
-        private function validateOptions(array $options=[]){
+        protected function validateOptions(array $options=[]){
             /**
              * declare schema
              * build options schema

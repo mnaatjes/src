@@ -32,20 +32,23 @@
          */
         $form = new FormComponent('form--test', '/test.php', [
           new FormElement('input', [
-            'name'        => 'address',
+            'name'        => 'fileName',
             'type'        => 'text',
-            'placeholder' => 'Enter your street address'
-          ]),
-          new FormElement('input', [
-            'name'        => 'city',
-            'type'        => 'text',
-            'placeholder' => 'Dallas Tx'
+            'placeholder' => 'Enter a name to identify the file / data'
           ]),
           new FormElement('textarea', [
-            'placeholder'=>'Enter your content here'
+            'name'=>'desc',
+            'placeholder'=>'Enter description of data here'
           ]),
-          new FormElement('input', ['type'=>'radio', 'name'=>'radio']),
-          new LabelElement('radio', 'Label for Radio')
+          new LabelElement('output', 'Select Output Format'),
+          new SelectElement('output', [
+            ['value'=>'csv', 'textContent'=>'Comma Separated Values'],
+            ['value'=>'json', 'textContent'=>'Javascript Object Notation'],
+            ['value'=>'xml', 'textContent'=>'Extensible Markup Language'],
+            ['value'=>'sql', 'textContent'=>'Structured Query Language'],
+          ]),
+          new ButtonElement('submit', 'Submit'),
+          new ButtonElement('reset', 'Reset', 'reset'),
         ], 'GET');
         $form->render();
         $form->mount();
@@ -53,11 +56,10 @@
       </section>
       <section>
         <form action="./src/upload.php" method="POST" enctype="multipart/form-data">
-          <label id="choose-file" for="file" class="file--upload">
-            Choose File
+          <label class="label__file-upload" for="">
+          <i class="fa fa-cloud-upload"></i>
           </label>
           <input type="file" name="file" />
-          <button id="upload" type="submit">Upload</button>
         </form>
       </section>
     </main>
