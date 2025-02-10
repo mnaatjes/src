@@ -18,7 +18,7 @@
             $this->tagName      = 'input';
             $this->isLabel      = false;
             $this->type         = $type;
-            $this->attributes   = $this->validateOptions(array_merge($options, ['type'=>$type, 'value'=>$textContent]));
+            $this->attributes   = $this->validateOptions(array_merge($options, ['type'=>$type, 'value'=>$textContent, 'name'=>$name]));
             $this->name         = $name;
             $this->children     = [];
             $this->data         = [];

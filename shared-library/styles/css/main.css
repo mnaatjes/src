@@ -335,11 +335,110 @@ tr:hover {
 *   IMPORT VARIABLES, MODULES
 */
 /**
-*   LABEL: FILE UPLOAD
+*   RESET: FILE UPLOAD 
 */
-label.file--upload {
+input[type=file] {
+  /*Prevent user interaction*/
+  /*Display none to hide*/
+  /*Size 0 to hide*/
+  /*opacity 0 to hide*/
+}
+
+input[type=file]::file-selector-button {
+  /*Prevent user interaction*/
+  /*Display none to hide*/
+  /*Size 0 to hide*/
+  width: 0px;
+  height: 0px;
+  /*opacity 0 to hide*/
+  opacity: 0;
+}
+
+/**
+*   LABEL: FILE UPLOAD BUTTON
+*/
+label#file--button {
+  /*USER*/
   cursor: pointer;
   user-select: none;
+  /*POSITION*/
+  position: relative;
+  height: 5rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  /*DISPLAY*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*BKRND*/
+  background-color: hsl(0, 0%, 116.0784313725%);
+  /*BORDER*/
+  border: 1px solid rgb(209.5, 209.5, 209.5);
+  border-radius: 0.25rem;
+  /**
+  *   BEFORE
+  */
+  /**
+  *   HOVER
+  */
+  /**
+  *   FOCUS, ACTIVE
+  */
+  /**
+  *   DATA-ERROR
+  */
+}
+label#file--button:before {
+  content: "";
+  /*POSITION*/
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  /*BKRND*/
+  background-image: url("../../../shared-library/php/lib/converter/assets/upload_inactive.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+label#file--button:hover {
+  border-color: rgb(84.3605150215, 91.3905579399, 97.6394849785);
+  outline: 0;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
+}
+label#file--button:hover::before {
+  background-image: url("../../../shared-library/php/lib/converter/assets/upload_default.svg");
+}
+label#file--button:active {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+label#file--button:active::before {
+  background-image: url("../../../shared-library/php/lib/converter/assets/upload_active.svg");
+}
+label#file--button[data-error=true] {
+  border-color: #dc3545;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 44, 44, 0.25);
+}
+label#file--button[data-error=true]::before {
+  background-image: url("../../../shared-library/php/lib/converter/assets/upload_error.svg");
+}
+
+/**
+*   SPAN: FILE NAME
+*/
+div#file--display {
+  /*POSITION*/
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  /*DISPLAY*/
+  display: block;
+  /*FONT*/
+  color: #6c757d;
+  font-size: 0.875rem;
 }
 
 /**-------------------------------------------------------
@@ -512,7 +611,7 @@ ul li::before {
 button {
   /*POSITION*/
   margin: 12px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
   /*DISPLAY*/
   display: inline-block;
   /*BORDER*/
@@ -522,7 +621,7 @@ button {
   /**
   *   assign properties
   */
-  border: 0.0625rem solid rgb(117.5, 117.5, 117.5);
+  border: 0.0625rem solid rgb(219.5, 219.5, 219.5);
   border-radius: 0.25rem;
   /*BKRND*/
   background-color: rgb(114.1639344262, 170.6147540984, 253.8360655738);
@@ -584,6 +683,11 @@ form {
 /**
 *   IMPORT VARIABLES, MODULES
 */
+/**
+*   INPUT: TEXT, EMAIL, PASSWORD, NUMBER, TEL
+*   SELECT
+*   TEXTAREA
+*/
 input[type=text],
 input[type=email],
 input[type=password],
@@ -592,7 +696,7 @@ input[type=tel],
 select,
 textarea {
   /*POSITION*/
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
   margin-top: 12px;
   margin-bottom: 12px;
   width: 100%;
@@ -602,6 +706,48 @@ textarea {
   /*FONT*/
   font-size: 1rem;
   transition: 0.3s ease-in-out;
+  /**
+  *   HOVER
+  */
+  /**
+  *   FOCUS, ACTIVE
+  */
+  /**
+  *   DATA-ERROR
+  */
+}
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover,
+input[type=number]:hover,
+input[type=tel]:hover,
+select:hover,
+textarea:hover {
+  border-color: rgb(1.762295082, 87.2336065574, 213.237704918);
+  outline: 0;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+select:focus,
+textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+input[type=text][data-error=true],
+input[type=email][data-error=true],
+input[type=password][data-error=true],
+input[type=number][data-error=true],
+input[type=tel][data-error=true],
+select[data-error=true],
+textarea[data-error=true] {
+  border-color: #dc3545;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 44, 44, 0.25);
 }
 
 input[type=text]:focus,
@@ -627,19 +773,18 @@ input[type=radio] {
 
 input[type=button],
 input[type=reset],
-input[type=submit],
-input[type=file]::file-selector-button {
+input[type=submit] {
   cursor: pointer;
   user-select: none;
   /*POSITION*/
-  padding: 0.6rem 1.2rem;
+  padding: 0.5rem 1.25rem;
   margin-right: 12px;
   /*DISPLAY*/
   display: inline-block;
   /*BKRND*/
   background-color: hsl(0, 0%, 116.0784313725%);
   /*BORDER*/
-  border: 1px solid #ced4da;
+  border: 1px solid rgb(209.5, 209.5, 209.5);
   border-radius: 0.25rem;
   /*FONT*/
   font-size: 1rem;
@@ -654,20 +799,34 @@ input[type=file]::file-selector-button {
 
 input[type=button]:hover,
 input[type=reset]:hover,
-input[type=submit]:hover,
-input[type=file]::file-selector-button:hover {
-  border-color: rgb(0.0901639344, 4.4631147541, 10.9098360656);
+input[type=submit]:hover {
+  border-color: rgb(84.3605150215, 91.3905579399, 97.6394849785);
   outline: 0;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
 }
 
 input[type=button]:active,
 input[type=reset]:active,
-input[type=submit]:active,
-input[type=file]::file-selector-button:active {
+input[type=submit]:active {
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/**
+* DATA-ENABLED = FALSE
+*/
+input[type=button][data-enabled=false],
+input[type=reset][data-enabled=false],
+input[type=submit][data-enabled=false] {
+  /*USER*/
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+  /*BKRND*/
+  background-color: #ebebeb;
+  /*FONT*/
+  color: #6c757d;
 }
 
 /**-------------------------------------------------------

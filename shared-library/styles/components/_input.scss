@@ -9,6 +9,11 @@
 @use 'sass:map' as map;
 @use 'sass:color' as color;
 
+/**
+*   INPUT: TEXT, EMAIL, PASSWORD, NUMBER, TEL
+*   SELECT
+*   TEXTAREA
+*/
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -27,6 +32,30 @@ textarea {
   /*FONT*/
   font-size: map.get($font-sizes, 'md');
   transition: map.get($transitions, 'medium');
+  /**
+  *   HOVER
+  */
+  &:hover {
+    border-color: map.get($border-colors, 'primary'); 
+    outline: 0;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  }
+  /**
+  *   FOCUS, ACTIVE
+  */
+  &:focus {
+    border-color: #80bdff; 
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+  }
+  /**
+  *   DATA-ERROR
+  */
+  &[data-error="true"] {
+    border-color: map.get($colors, 'danger'); 
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 44, 44, 0.25); 
+  }
 }
 
 input[type="text"]:focus,
@@ -51,19 +80,18 @@ input[type="radio"]{
 }
 input[type="button"],
 input[type="reset"],
-input[type="submit"],
-input[type="file"]::file-selector-button {
+input[type="submit"] {
   cursor: pointer;
   user-select: none;
   /*POSITION*/
-  padding: 0.6rem 1.2rem;
+  padding: map.get($button-padding, 'md');
   margin-right: 12px;
   /*DISPLAY*/
   display: inline-block;
   /*BKRND*/
   background-color: map.get($bg-colors, 'light');
   /*BORDER*/
-  border: 1px solid #ced4da;
+  border: 1px solid map.get($border-colors, 'gray-light');
   border-radius:$border-radius;
   /*FONT*/
   font-size: map.get($font-sizes, 'md');
@@ -77,17 +105,30 @@ input[type="file"]::file-selector-button {
 }
 input[type="button"]:hover,
 input[type="reset"]:hover,
-input[type="submit"]:hover,
-input[type="file"]::file-selector-button:hover {
-  border-color: map.get($border-colors, 'primary'); 
+input[type="submit"]:hover {
+  border-color: map.get($border-colors, 'gray');
   outline: 0;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
 }
 input[type="button"]:active,
 input[type="reset"]:active,
-input[type="submit"]:active,
-input[type="file"]::file-selector-button:active {
+input[type="submit"]:active {
   border-color: #80bdff; 
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+}
+/**
+* DATA-ENABLED = FALSE
+*/
+input[type="button"][data-enabled="false"],
+input[type="reset"][data-enabled="false"],
+input[type="submit"][data-enabled="false"] {
+  /*USER*/
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+  /*BKRND*/
+  background-color: map.get($colors, 'gray-light');
+  /*FONT*/
+  color: map.get($colors, 'gray');
 }

@@ -19,7 +19,7 @@
             $this->tagName      = 'select';
             $this->isLabel      = false;
             $this->type         = '';
-            $this->attributes   = $this->validateOptions($options);
+            $this->attributes   = $this->validateOptions(array_merge($options, ['name'=>$name]));
             $this->name         = $name;
             $this->children     = $this->generateSelectOptions($listItems);
             $this->data         = [];

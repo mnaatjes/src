@@ -81,6 +81,7 @@ define('FORM_ELEMENTS', [
                 "accept"   => "string", // file MIME types
                 "multiple" => "boolean",
                 "required" => "boolean",
+                "enctype"  => "string"
             ],
             "submit"         => [
                 "value" => "string",
@@ -141,6 +142,7 @@ define('FORM_ELEMENTS', [
      */
     'select'   => [
         'attributes' => [
+            'id'           => 'string',
             'name'         => 'string',
             'autocomplete' => 'string',
             'autofocus'    => 'boolean',

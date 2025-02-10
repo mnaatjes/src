@@ -30,7 +30,9 @@
         /**
          * form component
          */
-        $form = new FormComponent('form--test', '/test.php', [
+        $form = new FormComponent('', './src/upload.php', [
+          new LabelElement('output', 'Select Type of Import'),
+          new SelectElement('select--input', []),
           new FormElement('input', [
             'name'        => 'fileName',
             'type'        => 'text',
@@ -41,29 +43,31 @@
             'placeholder'=>'Enter description of data here'
           ]),
           new LabelElement('output', 'Select Output Format'),
-          new SelectElement('output', [
-            ['value'=>'csv', 'textContent'=>'Comma Separated Values'],
-            ['value'=>'json', 'textContent'=>'Javascript Object Notation'],
-            ['value'=>'xml', 'textContent'=>'Extensible Markup Language'],
-            ['value'=>'sql', 'textContent'=>'Structured Query Language'],
+          new SelectElement('select--output', []),
+          new LabelElement('', '', [
+            'id'=>'file--button'
           ]),
-          new ButtonElement('submit', 'Submit'),
-          new ButtonElement('reset', 'Reset', 'reset'),
-        ], 'GET');
+          new FormElement('input', [
+            'type'=>'file',
+            'name'=>'file',
+            'enctype'=>'multipart/form-data'
+          ]),
+          new HTMLComponent('div', ['id'=>'file--display'], [], ['textContent'=>'No File Selected']),
+          new ButtonElement('btn--submit', 'Submit'),
+          new ButtonElement('btn--reset', 'Reset', 'reset'),
+        ], 'POST');
         $form->render();
         $form->mount();
         ?>
       </section>
       <section>
         <form action="./src/upload.php" method="POST" enctype="multipart/form-data">
-          <label class="label__file-upload" for="">
-          <i class="fa fa-cloud-upload"></i>
-          </label>
-          <input type="file" name="file" />
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
         </form>
       </section>
     </main>
     <footer></footer>
+    <script type="module" src="./js/main.js"></script>
   </body>
-
 </html>

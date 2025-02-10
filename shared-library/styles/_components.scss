@@ -8,7 +8,7 @@
 
 @use './components/nav.scss';
 @use './components/table.scss';
-@use 'components/label__file-upload.scss';
+@use './components/file-upload';
 @use './components/lists.scss';
 @use './components/button.scss';
 @use './components/body.scss';
@@ -19,7 +19,7 @@
 
 @forward './components/nav.scss';
 @forward './components/table.scss';
-@forward 'components/label__file-upload.scss';
+@forward './components/file-upload';
 @forward './components/lists.scss';
 @forward './components/button.scss';
 @forward './components/body.scss';

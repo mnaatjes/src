@@ -19,7 +19,8 @@
      * Check server request method
      * Check file is set
      */
-    if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])){
+    console($_FILES);
+    if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['fileUpload'])){
         /**
          * file upload properties
          */

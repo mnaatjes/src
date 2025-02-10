@@ -1,0 +1,126 @@
+//-------------------------------------------------------
+//
+//  COMPONENT: FILE UPLOAD
+//
+//-------------------------------------------------------
+/**
+*   IMPORT VARIABLES, MODULES
+*/
+@use '../variables' as *;
+@use '../utilities' as *;
+@use '../mixins' as *;
+@use 'sass:map' as map;
+@use 'sass:color' as color;
+/**
+*   RESET: FILE UPLOAD 
+*/
+input[type="file"] {
+    /*Prevent user interaction*/
+    //user-select: none;
+    //pointer-events: none;
+    /*Display none to hide*/
+    //display: none;
+    /*Size 0 to hide*/
+    //width: 0px;
+    //height: 0px;
+    /*opacity 0 to hide*/
+    //opacity: 0;
+}
+input[type="file"]::file-selector-button {
+    /*Prevent user interaction*/
+    //user-select: none;
+    //pointer-events: none;
+    /*Display none to hide*/
+    //display: none;
+    /*Size 0 to hide*/
+    width: 0px;
+    height: 0px;
+    /*opacity 0 to hide*/
+    opacity: 0;
+}
+/**
+*   LABEL: FILE UPLOAD BUTTON
+*/
+label#file--button {
+    $icon-size: 4rem;
+    /*USER*/
+    cursor: pointer;
+    user-select: none;
+    /*POSITION*/
+    position: relative;
+    height: $icon-size + 1rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*BKRND*/
+    background-color: map.get($bg-colors, 'light');
+    /*BORDER*/
+    border: 1px solid map.get($border-colors, 'gray-light');
+    border-radius:$border-radius;
+    /**
+    *   BEFORE
+    */
+    &:before {
+        content: '';
+        /*POSITION*/
+        position: absolute;
+        width: $icon-size;
+        height: $icon-size;
+        /*BKRND*/
+        background-image: url('../../../shared-library/php/lib/converter/assets/upload_inactive.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    /**
+    *   HOVER
+    */
+    &:hover {
+        border-color: map.get($border-colors, 'gray');
+        outline: 0;
+        box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
+        &::before {
+            background-image: url('../../../shared-library/php/lib/converter/assets/upload_default.svg');
+        }
+    }
+    /**
+    *   FOCUS, ACTIVE
+    */
+    &:active {
+        border-color: #80bdff; 
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        &::before {
+            background-image: url('../../../shared-library/php/lib/converter/assets/upload_active.svg');
+        }
+    }
+    /**
+    *   DATA-ERROR
+    */
+    &[data-error="true"] {
+        border-color: map.get($colors, 'danger'); 
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(255, 44, 44, 0.25);
+        &::before {
+            background-image: url('../../../shared-library/php/lib/converter/assets/upload_error.svg');
+        }
+    }
+}
+/**
+*   SPAN: FILE NAME
+*/
+div#file--display {
+    /*POSITION*/
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    /*DISPLAY*/
+    display: block;
+    /*FONT*/
+    color: map.get($colors, 'gray');
+    font-size: map.get($font-sizes, 'sm');
+}
