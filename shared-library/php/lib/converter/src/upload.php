@@ -10,6 +10,7 @@
     /**
      * constants
      */
+    $refName        = $_POST['refName'];
     $filePath       = '../uploads/';
     $extensions     = ['json', 'csv'];
     $types          = ['application/json', 'text/csv', 'text/plain'];
@@ -19,8 +20,7 @@
      * Check server request method
      * Check file is set
      */
-    console($_FILES);
-    if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['fileUpload'])){
+    if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])){
         /**
          * file upload properties
          */
@@ -61,7 +61,21 @@
         $unique     = time() . '__' . uniqid();
         $targetPath = $filePath . $unique . '.' . $fileExt;
         if(move_uploaded_file($tempName, $targetPath)){
-            echo 'Sucessful Upload!';
+            /**
+             * dump data into json records file
+             */
+            $records    = 'records.json';
+            $json       = json_decode(file_get_contents($records), true);
+            if($json === null){
+                $json = [];
+            }
+            $json[] = [
+                'refName'   => $refName,
+                'fileName'  => $unique,
+                'fileExt'   => $fileExt,
+                'fileType'  => $fileType
+            ];
+            file_put_contents($records, json_encode($json));
             /**
              * redirect to converter
              */

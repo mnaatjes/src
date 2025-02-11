@@ -339,6 +339,10 @@
         /*----------------------------------------------------------*/
         public function render(){
             /**
+             * declare self-closing tag property
+             */
+            $self_closing = ["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"];
+            /**
              * check if component is mounted
              */
             if($this->mounted === false){
@@ -376,8 +380,12 @@
                     }
                 }
                 /**
+                 * check if self-closing
                  * close opening tag
                  */
+                if(in_array($this->tagName, $self_closing)){
+                    $tag .= "\"";
+                }
                 $tag .= ">";
                 /**
                  * check if component is a table
@@ -400,9 +408,12 @@
                     $tag .= htmlspecialchars($textContent);
                 }
                 /**
+                 * check to see if tag needs ending
                  * complete ending tag
                  */
-                $tag .= "</{$this->tagName}>";
+                if(!(in_array($this->tagName, $self_closing))){
+                    $tag .= "</{$this->tagName}>";
+                }
                 /**
                  * assign to self html property
                  */

@@ -298,7 +298,6 @@ caption {
 th {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #dee2e6;
   text-align: left;
   font-weight: 500;
   background-color: #f8f9fa;
@@ -339,14 +338,23 @@ tr:hover {
 */
 input[type=file] {
   /*Prevent user interaction*/
+  user-select: none;
+  pointer-events: none;
   /*Display none to hide*/
+  display: none;
   /*Size 0 to hide*/
+  width: 0px;
+  height: 0px;
   /*opacity 0 to hide*/
+  opacity: 0;
 }
 
 input[type=file]::file-selector-button {
   /*Prevent user interaction*/
+  user-select: none;
+  pointer-events: none;
   /*Display none to hide*/
+  display: none;
   /*Size 0 to hide*/
   width: 0px;
   height: 0px;
@@ -432,7 +440,6 @@ label#file--button[data-error=true]::before {
 div#file--display {
   /*POSITION*/
   width: 100%;
-  padding: 1rem;
   margin-bottom: 1rem;
   /*DISPLAY*/
   display: block;
@@ -665,16 +672,6 @@ body {
   padding: 1rem;
 }
 
-form {
-  width: 500px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  background-color: #f8f9fa;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
 /**-------------------------------------------------------
 *
 *   SASS COMPONENTS: FILE-UPLOAD
@@ -829,6 +826,16 @@ input[type=submit][data-enabled=false] {
   color: #6c757d;
 }
 
+section {
+  width: 640px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 /**-------------------------------------------------------
 *
 *   SASS COMPONENTS: FILE-UPLOAD
@@ -837,5 +844,28 @@ input[type=submit][data-enabled=false] {
 /**
 *   IMPORT VARIABLES, MODULES
 */
+/**
+*   ARTICLE
+*/
+article.file-upload {
+  /*POSITION*/
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /*DISPLAY*/
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-columns: auto;
+  grid-gap: 1rem;
+}
+
+/**
+*   FLEX ITEMS
+*/
+article.file-upload > img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /*# sourceMappingURL=main.css.map */

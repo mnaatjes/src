@@ -16,22 +16,22 @@
 */
 input[type="file"] {
     /*Prevent user interaction*/
-    //user-select: none;
-    //pointer-events: none;
+    user-select: none;
+    pointer-events: none;
     /*Display none to hide*/
-    //display: none;
+    display: none;
     /*Size 0 to hide*/
-    //width: 0px;
-    //height: 0px;
+    width: 0px;
+    height: 0px;
     /*opacity 0 to hide*/
-    //opacity: 0;
+    opacity: 0;
 }
 input[type="file"]::file-selector-button {
     /*Prevent user interaction*/
-    //user-select: none;
-    //pointer-events: none;
+    user-select: none;
+    pointer-events: none;
     /*Display none to hide*/
-    //display: none;
+    display: none;
     /*Size 0 to hide*/
     width: 0px;
     height: 0px;
@@ -116,7 +116,6 @@ label#file--button {
 div#file--display {
     /*POSITION*/
     width: 100%;
-    padding: 1rem;
     margin-bottom: 1rem;
     /*DISPLAY*/
     display: block;

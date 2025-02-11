@@ -22,52 +22,43 @@
   ?>
   <body>
     <header>
-      <h1>PHP: File Converter Test</h1>
     </header>
     <main id="root">
       <section>
-        <?php
-        /**
-         * form component
-         */
-        $form = new FormComponent('', './src/upload.php', [
-          new LabelElement('output', 'Select Type of Import'),
-          new SelectElement('select--input', []),
-          new FormElement('input', [
-            'name'        => 'fileName',
-            'type'        => 'text',
-            'placeholder' => 'Enter a name to identify the file / data'
-          ]),
-          new FormElement('textarea', [
-            'name'=>'desc',
-            'placeholder'=>'Enter description of data here'
-          ]),
-          new LabelElement('output', 'Select Output Format'),
-          new SelectElement('select--output', []),
-          new LabelElement('', '', [
-            'id'=>'file--button'
-          ]),
-          new FormElement('input', [
-            'type'=>'file',
-            'name'=>'file',
-            'enctype'=>'multipart/form-data'
-          ]),
-          new HTMLComponent('div', ['id'=>'file--display'], [], ['textContent'=>'No File Selected']),
-          new ButtonElement('btn--submit', 'Submit'),
-          new ButtonElement('btn--reset', 'Reset', 'reset'),
-        ], 'POST');
-        $form->render();
-        $form->mount();
-        ?>
+        <h2>Supported Files</h2>
+        <article class="file-upload">
+          <img src="./assets/icon_json.svg" alt="">
+          <img src="./assets/icon_csv.svg" alt="">
+        </article>
       </section>
       <section>
-        <form action="./src/upload.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-        </form>
+        <h2>File Upload</h2>
+        <?php
+          $upload = new FormComponent('testForm', './src/upload.php', [
+            new FormElement('input', [
+              'name'        => 'refName',
+              'type'        => 'text',
+              'placeholder' => 'Enter a name to identify the file / data',
+              'value'       => ''
+            ]),
+            new FormElement('input', [
+              'type'=>'file',
+              'name'=>'file',
+              'enctype'=>'multipart/form-data'
+            ]),
+            new LabelElement('', '', [
+              'id'=>'file--button',
+              'name'=>'fileButton'
+            ]),
+            new HTMLComponent('div', ['id'=>'file--display'], [], ['textContent'=>'No File Selected']),
+            new ButtonElement('btn--submit', 'Convert'),
+          ], 'POST', ['enctype'=>'multipart/form-data']);
+          $upload->render();
+          $upload->mount();
+        ?>
       </section>
     </main>
     <footer></footer>
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/upload.js"></script>
   </body>
 </html>

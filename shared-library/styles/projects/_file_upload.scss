@@ -1,0 +1,22 @@
+/**
+*   ARTICLE
+*/
+article.file-upload {
+    /*POSITION*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-columns: auto;
+    grid-gap: 1rem;
+}
+/**
+*   FLEX ITEMS
+*/
+article.file-upload > img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+}
