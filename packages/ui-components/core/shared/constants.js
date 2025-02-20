@@ -175,6 +175,20 @@ export const htmlAttributes = [
     }
 ];
 /**
+ * HTML Inline Elements
+ * @const inlineElements
+ * @type {Array}
+ */
+const inlineElements = [
+  "a", "abbr", "acronym", "b", "bdi", "bdo", "br", "button", "canvas", "cite",
+  "code", "data", "datalist", "del", "dfn", "em", "embed", "i", "iframe", "img",
+  "input", "ins", "kbd", "label", "map", "mark", "meter", "noscript", "object",
+  "output", "picture", "progress", "q", "ruby", "s", "samp", "script", "select",
+  "small", "span", "strong", "sub", "sup", "svg", "textarea", "time", "u", "var",
+  "wbr",
+];
+/**
+ * Valid File Extensions
  * @const fileExtensions
  * @type {Array}
  */
@@ -191,4 +205,252 @@ export const fileExtensions = [
   ".j", ".java", ".jcb", ".jce", ".jcl", ".jcm", ".jcp", ".jcw", ".jda", ".jdf", ".jdl", ".jdx", ".jff", ".jfi", ".jfif", ".jif", ".jisp", ".jl", ".jls", ".jlt", ".jm", ".jng", ".jnlp", ".jnw", ".job", ".joda", ".joe", ".jpeg", ".jpg", ".jpx", ".js", ".json", ".jsp", ".jsx", ".jsw", ".jtf", ".jtt", ".ju", ".jui", ".jvm", ".jvt", ".jxr",
   ".k", ".k25", ".kar", ".kdc", ".key", ".kf", ".kfx", ".kgb", ".keychain", ".kmz", ".ko", ".kom", ".kpf", ".kth", ".ktx", ".ky",
   ".l", ".la", ".las", ".latex", ".lat", ".lb", ".lba", ".lbi", ".lbm", ".ldif", ".ldml", ".ldp", ".ldw", ".les", ".lex", ".lha", ".lhx", ".lib", ".lif", ".lisp", ".lit", ".ll", ".lng", ".lnx", ".lo", ".log", ".lot", ".lpc", ".lpd", ".lpi", ".lpt", ".lq", ".lrc", ".lrp", ".ls", ".lsm", ".lsp", ".lst", ".lsx", ".lt", ".ltd", ".lua", ".lvp", ".lvs", ".lw"
+];
+/**
+ * Valid Form Tags
+ * @const formTags
+ * @type {Object}
+ */
+export const formTags = {
+  input: {
+    attributes: {
+      accept: "string",
+      autocomplete: "string",
+      autofocus: "boolean",
+      capture: "string",
+      checked: "boolean",
+      dirname: "string",
+      disabled: "boolean",
+      form: "string",
+      formaction: "string",
+      formenctype: "string",
+      formmethod: "string",
+      formnovalidate: "boolean",
+      formtarget: "string",
+      height: "number",
+      id: "string",
+      list: "string",
+      max: ["number", "string"],
+      maxlength: "number",
+      min: ["number", "string"],
+      multiple: "boolean",
+      name: "string",
+      pattern: "string",
+      placeholder: "string",
+      readonly: "boolean",
+      required: "boolean",
+      size: "number",
+      src: "string",
+      step: ["number", "string"],
+      type: [
+        "text",
+        "password",
+        "email",
+        "number",
+        "file",
+        "radio",
+        "checkbox",
+        "submit",
+        "reset",
+        "button",
+        "image",
+        "hidden",
+        "date",
+        "time",
+        "datetime-local",
+        "color",
+        "range",
+        "month",
+        "week",
+        "search",
+        "tel",
+        "url",
+      ],
+      value: ["string", "number", "boolean"],
+      width: "number",
+    },
+    children: [],
+  },
+  select: {
+    attributes: {
+      autocomplete: "string",
+      autofocus: "boolean",
+      disabled: "boolean",
+      form: "string",
+      multiple: "boolean",
+      name: "string",
+      required: "boolean",
+      size: "number",
+    },
+    children: ["option", "optgroup"],
+  },
+  fieldset: {
+    attributes: {
+      disabled: "boolean",
+      form: "string",
+      name: "string",
+    },
+    children: ["legend"],
+  },
+  label: {
+    attributes: {
+      for: "string",
+      form: "string",
+    },
+    children: inlineElements,
+  },
+  legend: {
+    attributes: { align: "string" },
+    children: inlineElements,
+  },
+  meter: {
+    attributes: {
+      value: "number",
+      min: "number",
+      max: "number",
+      low: "number",
+      high: "number",
+      optimum: "number",
+    },
+    children: [],
+  },
+  optgroup: {
+    attributes: {
+      disabled: "boolean",
+      label: "string",
+    },
+    children: ["option"],
+  },
+  option: {
+    attributes: {
+      disabled: "boolean",
+      label: "string",
+      selected: "boolean",
+      value: "string",
+    },
+    children: ["#text"],
+  },
+  output: {
+    attributes: {
+      for: "string",
+      form: "string",
+      name: "string",
+    },
+    children: inlineElements,
+  },
+  progress: {
+    attributes: {
+      max: "number",
+      value: "number",
+    },
+    children: [],
+  },
+  textarea: {
+    attributes: {
+      autocomplete: "string",
+      autofocus: "boolean",
+      cols: "number",
+      disabled: "boolean",
+      form: "string",
+      maxlength: "number",
+      name: "string",
+      placeholder: "string",
+      readonly: "boolean",
+      required: "boolean",
+      rows: "number",
+      wrap: "string",
+    },
+    children: [],
+  },
+  button: {
+    attributes: {
+      autofocus: "boolean",
+      disabled: "boolean",
+      form: "string",
+      formaction: "string",
+      formenctype: "string",
+      formmethod: "string",
+      formnovalidate: "boolean",
+      formtarget: "string",
+      name: "string",
+      type: "string",
+      value: "string",
+    },
+    children: [
+      [
+        "#text",
+        "a",
+        "abbr",
+        "acronym",
+        "b",
+        "bdi",
+        "bdo",
+        "br",
+        "button",
+        "canvas",
+        "cite",
+        "code",
+        "data",
+        "datalist",
+        "del",
+        "dfn",
+        "em",
+        "embed",
+        "i",
+        "iframe",
+        "img",
+        "input",
+        "ins",
+        "kbd",
+        "label",
+        "map",
+        "mark",
+        "meter",
+        "noscript",
+        "object",
+        "output",
+        "picture",
+        "progress",
+        "q",
+        "ruby",
+        "s",
+        "samp",
+        "script",
+        "select",
+        "small",
+        "span",
+        "strong",
+        "sub",
+        "sup",
+        "svg",
+        "textarea",
+        "time",
+        "u",
+        "var",
+        "wbr",
+      ],
+      inlineElements
+    ]
+    .reduce((acc, curr) => acc.concat(curr), [])
+    .filter((val, i, self) => {
+      return self.indexOf(val) === i;
+    })
+  },
+};
+/**
+ * Valid typeof values
+ * @const typeValues
+ */
+export const typeValues = [
+  'string',
+  'number',
+  'boolean',
+  'object',
+  'undefined',
+  'symbol',
+  'object',
+  'object',
+  'function',
+  'object',
+  'bigint'
 ];

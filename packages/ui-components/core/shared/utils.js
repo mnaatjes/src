@@ -1,9 +1,7 @@
 /**
  * @file ui-components/core/shared/utils.js
  */
-
-import { MyTestComponent } from "../../components/my-test";
-import { fileExtensions } from "./constants";
+import { fileExtensions } from "./constants.js";
 
 /**
  * @function applyStyles

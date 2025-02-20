@@ -35,7 +35,7 @@ customElements.define('ele-test', class extends HTMLElement {
          */
         this._template = this.#setTemplate(`
             <link rel="stylesheet" href="../../../shared-library/styles/css/main.css">
-            <div>
+            <div checked="false">
                 <small id="banana">
                     I Am A Banana!
                 </small>
@@ -62,7 +62,7 @@ customElements.define('ele-test', class extends HTMLElement {
      */
     /*----------------------------------------------------------*/
     render(content){
-        console.log(content instanceof DocumentFragment);
+        //console.log(content instanceof DocumentFragment);
         /**
          * initial render condition
          */
@@ -70,23 +70,6 @@ customElements.define('ele-test', class extends HTMLElement {
             this.shadowRoot.appendChild(content);
         } else {
             this.shadowRoot.appendChild(content);
-        }
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * @method attributeChangedCallback
-     */
-    /*----------------------------------------------------------*/
-    attributeChangedCallback(name, oldVal, newVal){
-        /**
-         * debugging
-         */
-        console.log(name, oldVal, newVal);
-        /**
-         * trigger check
-         */
-        if(name === 'checked'){
-            
         }
     }
     /*----------------------------------------------------------*/
@@ -103,13 +86,30 @@ customElements.define('ele-test', class extends HTMLElement {
     }
     /*----------------------------------------------------------*/
     /**
+     * @method attributeChangedCallback
+     */
+    /*----------------------------------------------------------*/
+    attributeChangedCallback(name, oldVal, newVal){
+        /**
+         * debugging
+         */
+        console.log(name, oldVal, newVal);
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * Applies Template source to an HTMLTemplateElement and returns the element
      * @private
      * @param {String | HTMLElement | String} source HTML string, an HTML Element, or a file path 
      * @method setTemplate
-     * @returns {DocumentFragment | Error} _template
+     * @returns {DocumentFragment | Error}
      */
     /*----------------------------------------------------------*/
     #setTemplate(source){
+        /**
+         * Declares the HTML Template Element to contain template source
+         * @type {HTMLTemplateElement} template
+         */
+        const template = document.createElement('template');
         /**
          * check for filepath
          */
@@ -122,21 +122,12 @@ customElements.define('ele-test', class extends HTMLElement {
          * check for html string
          */
         if(strIsHTML(source)){
-            let template = document.createElement('template');
-            return template.innerHTML = source;
+            template.innerHTML = source;
+            return template;
         }
         /**
          * Check if HTML Element
          */
-    }
-    /*----------------------------------------------------------*/
-    /**
-     * @private
-     * @method applyTemplate
-     */
-    /*----------------------------------------------------------*/
-    #applyTemplate(){
-
     }
     /*----------------------------------------------------------*/
     /**
@@ -156,9 +147,18 @@ customElements.define('ele-test', class extends HTMLElement {
         }
         console.log(children);
     }
+    /*----------------------------------------------------------*/
+    /**
+     * @description Every time a new element is added to the DOM this method is called
+     */
+    /*----------------------------------------------------------*/
+    connectedCallback(){
+        console.log('DOM Element Connected!');
+    }
     
 });
 
 root.appendChild(document.createElement('ele-test'));
 const test = document.querySelector('ele-test');
-console.log(test.children);
+test.setAttribute('checked', false);
+//console.log(test.children);
