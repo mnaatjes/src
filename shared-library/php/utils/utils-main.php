@@ -13,6 +13,11 @@
      */
     require_once 'utils__debug/utils__debug-main.php';
     /**
+     * Logging Utilities
+     */
+    require_once 'utils__logging/log_dump.php';
+    require_once 'utils__logging/log_errors.php';
+    /**
      * array methods
      */
     require_once 'utils__arrays/utils__array-methods.php';
