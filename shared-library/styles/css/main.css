@@ -690,6 +690,7 @@ input[type=email],
 input[type=password],
 input[type=number],
 input[type=tel],
+input[type=date],
 select,
 textarea {
   /*POSITION*/
@@ -718,6 +719,7 @@ input[type=email]:hover,
 input[type=password]:hover,
 input[type=number]:hover,
 input[type=tel]:hover,
+input[type=date]:hover,
 select:hover,
 textarea:hover {
   border-color: rgb(1.762295082, 87.2336065574, 213.237704918);
@@ -729,6 +731,7 @@ input[type=email]:focus,
 input[type=password]:focus,
 input[type=number]:focus,
 input[type=tel]:focus,
+input[type=date]:focus,
 select:focus,
 textarea:focus {
   border-color: #80bdff;
@@ -740,6 +743,7 @@ input[type=email][data-error=true],
 input[type=password][data-error=true],
 input[type=number][data-error=true],
 input[type=tel][data-error=true],
+input[type=date][data-error=true],
 select[data-error=true],
 textarea[data-error=true] {
   border-color: #dc3545;
