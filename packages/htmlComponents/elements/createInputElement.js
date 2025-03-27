@@ -37,9 +37,6 @@ export function createInputElement(type='', name='', properties={}){
      */
     // Add name to properties object
     properties.name = name;
-    if(!Object.values(properties).every(val => (typeof val === 'string' && val.length !== 0) || typeof val === 'number' || isFinite(val) || typeof val === 'object')){
-        throw new TypeError('Invalid Value for "Required" property!\nProperties must be entered as strings and CANNOT be empty!');
-    }
     // Check that properties contains required attributes
     /**
      * @const {Array} required - Required attributes for input type

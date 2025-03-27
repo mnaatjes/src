@@ -7,6 +7,7 @@
  */
 
 import { dimensionalStyleProps, unitlessStyleProps, regexPatterns } from "../constants/constants.js";
+import { appendEvents } from "../utils/appendEvents.js";
 
 /*----------------------------------------------------------*/
 export function appendStyles(style, styles){
@@ -102,6 +103,7 @@ export function applyElementProps(element, properties, mode='set'){
         }
         /**
          * Validate and Apply Styles
+         * TODO: this does not deep copy style and styles (nested objects/props not included!)
          */
         const styleProps = {...styles, ...style};
         if(typeof style === 'object' && typeof styles === 'object'){
@@ -143,7 +145,15 @@ export function applyElementProps(element, properties, mode='set'){
                     element.setAttribute(novalidate, '');
                 }
             }
-            for(const prop in rest){
+            /**
+             * Parse Event Properties, Attributes
+             * Set / Append Events, Listeners
+             */
+            const props  = appendEvents(rest, element);
+            /**
+             * Set Remaining Properties
+             */
+            for(const prop in props){
                 element.setAttribute(prop, rest[prop]);
             }
         }
