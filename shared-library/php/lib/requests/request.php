@@ -23,14 +23,14 @@
          * @param string $validMethod - SERVER request method form sender
          */
         /*----------------------------------------------------------*/
-        public function __construct($validMethod='POST'){
+        public function __construct($validMethod='POST', $fileIndex=''){
             $this->method       = $_SERVER['REQUEST_METHOD'];
             $this->contentType  = in_array($this->method, ['POST', 'PUT', 'DELETE']) ? $_SERVER['CONTENT_TYPE'] : null;
             /**
              * Validate Request Method
              * Execute Load Data
              */
-            $this->data = $this->validateMethod($validMethod) ? $this->loadData() : null;
+            $this->data = $this->validateMethod($validMethod) ? $this->loadData($fileIndex) : null;
         }
         /*----------------------------------------------------------*/
         /**
@@ -53,12 +53,12 @@
          * Load Data
          */
         /*----------------------------------------------------------*/
-        public function loadData(){
+        public function loadData($fileIndex){
             switch($this->method){
                 case 'GET':
                     return $this->handleGET();
                 case 'POST':
-                    return $this->handlePOST();
+                    return $this->handlePOST($fileIndex);
                 /*
                 case 'PUT':
                     break;
@@ -99,7 +99,7 @@
          * @return array data
          */
         /*----------------------------------------------------------*/
-        public function handlePOST(){
+        public function handlePOST($fileIndex){
             /**
              * Check content type and determine source of POST data
              */
@@ -117,6 +117,16 @@
                 $data = json_decode($json, JSON_OBJECT_AS_ARRAY);
             } else {
                 $data = $_POST;
+                /**
+                 * Check if file data also sent
+                 */
+                if($_FILES){
+                    // init files array
+                    $data['file'] = [];
+                   foreach($_FILES[$fileIndex] as $key=>$val){
+                        $data['file'][$key] = $val;
+                   }
+                }
             }
             /**
              * Check data is an array

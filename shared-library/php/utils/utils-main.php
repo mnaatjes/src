@@ -33,6 +33,19 @@
      * string methods
      */
     require_once 'utils__strings/utils__strings.php';
+    /**
+     * Encryption Utilities
+     */
+    require_once 'utils__encrypt.php';
+    /*----------------------------------------------------------*/
+    /**
+     * CONSTANTS
+     */
+    /*----------------------------------------------------------*/
+    /**
+     * Constants
+     */
+    require_once 'utils__constants.php';
     /*----------------------------------------------------------*/
     /**
      * enableErrors

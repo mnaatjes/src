@@ -180,7 +180,7 @@ function validateElements(formElements){
  * @param {Boolean} [formConfig.novalidate] - Default === true
  * @param {String | Object} [formConfig.styles] - String filepath to link a Stylesheet or an Object of style properties to append to Form element
  * @param {Array} formElements - Array of HTMLElements for the Form
- * @param {FormCallback} [callback] - Callback function executed on mode == 'fetch'; Default === undefined
+ * @param {FormCallback} [callback] - Callback function executed on mode == 'fetch', 'submit'; Default === undefined
  * @returns {HTMLElement} Custom form element
  * 
  * @version 2.0.0
@@ -334,10 +334,12 @@ export function createCustomForm(formConfig={}, formElements=[], callback=undefi
                  */
                 const missing = Array.from(form.elements).filter(
                     ele => {
+                        /**
+                         * TODO: figure out how to make non-input type elements have a required property
                         if(ele.hasAttribute('required') && ele.tagName == 'DIV'){
                             console.log(ele);
                         }
-                        return;
+                        */
                         /**
                          * Excluded tagNames
                          */
@@ -471,20 +473,25 @@ export function createCustomForm(formConfig={}, formElements=[], callback=undefi
              */
             const formData = new FormData(form);
             const data     = {};
-            if(config.enctype.includes('json')){
-                // format json data
-                formData.forEach((val, key) => {
-                    data[key] = val;
-                });
-            }
+            // format json data
+            formData.forEach((val, key) => {
+                data[key] = val;
+            });
             /**
              * Determine mode of action
              */
             if(config.mode === 'submit'){
                 /**
-                 * Submit Form
+                 * If callback present: 
+                 *  use callback
+                 *  pass form data
+                 * Otherwise submit form
                  */
-                form.submit();
+                if(callback && typeof callback === 'function'){
+                    callback(data, form);
+                } else {
+                    form.submit();
+                }
             } else if (config.mode === 'fetch'){
                 /**
                  * Make AJAX Request for data and perform callback
