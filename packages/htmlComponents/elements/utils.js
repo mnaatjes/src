@@ -8,6 +8,7 @@
 
 import { dimensionalStyleProps, unitlessStyleProps, regexPatterns } from "../constants/constants.js";
 import { appendEvents } from "../utils/appendEvents.js";
+import { setProperties } from "../utils/setProperties.js";
 
 /*----------------------------------------------------------*/
 export function appendStyles(style, styles){
@@ -146,15 +147,19 @@ export function applyElementProps(element, properties, mode='set'){
                 }
             }
             /**
+             * Parse Boolean Properties and Set
+             */
+            const props = setProperties(rest, element);
+            /**
              * Parse Event Properties, Attributes
              * Set / Append Events, Listeners
              */
-            const props  = appendEvents(rest, element);
+            const attribs = appendEvents(props, element);
             /**
-             * Set Remaining Properties
+             * Set Remaining Attributes
              */
-            for(const prop in props){
-                element.setAttribute(prop, rest[prop]);
+            for(const prop in attribs){
+                element.setAttribute(prop, attribs[prop]);
             }
         }
     }

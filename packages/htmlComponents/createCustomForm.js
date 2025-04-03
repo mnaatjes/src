@@ -472,11 +472,6 @@ export function createCustomForm(formConfig={}, formElements=[], callback=undefi
              * 2) Format FormData if necessary
              */
             const formData = new FormData(form);
-            const data     = {};
-            // format json data
-            formData.forEach((val, key) => {
-                data[key] = val;
-            });
             /**
              * Determine mode of action
              */
@@ -488,7 +483,7 @@ export function createCustomForm(formConfig={}, formElements=[], callback=undefi
                  * Otherwise submit form
                  */
                 if(callback && typeof callback === 'function'){
-                    callback(data, form);
+                    callback(formData, form);
                 } else {
                     form.submit();
                 }
@@ -496,7 +491,14 @@ export function createCustomForm(formConfig={}, formElements=[], callback=undefi
                 /**
                  * Make AJAX Request for data and perform callback
                  */
-                //console.info('Client Side Validation Successful!');
+                /*
+                TODO: Check if still necessary?
+                const data = {};
+                // format json data
+                formData.forEach((val, key) => {
+                    data[key] = val;
+                });
+                */
                 /**
                  * Fetch
                  */

@@ -20,17 +20,21 @@
         /**
          * Retrieves data from the Server Request Method
          * 
-         * @param string $validMethod - SERVER request method form sender
+         * @param string $method - SERVER request method form sender
          */
         /*----------------------------------------------------------*/
-        public function __construct($validMethod='POST', $fileIndex=''){
+        public function __construct($method='POST'){
             $this->method       = $_SERVER['REQUEST_METHOD'];
             $this->contentType  = in_array($this->method, ['POST', 'PUT', 'DELETE']) ? $_SERVER['CONTENT_TYPE'] : null;
             /**
              * Validate Request Method
              * Execute Load Data
+             * Validate and Load Files into Data array
              */
-            $this->data = $this->validateMethod($validMethod) ? $this->loadData($fileIndex) : null;
+            $this->data  = $this->validateMethod($method) ? $this->loadData() : null;
+            $this->data['files'] = $this->method === 'POST' && isset($_FILES) ? (
+                $this->validateFiles() ? $this->loadFiles() : []
+            ) : [];
         }
         /*----------------------------------------------------------*/
         /**
@@ -39,8 +43,8 @@
          * @return void
          */
         /*----------------------------------------------------------*/
-        public function validateMethod($validMethod){
-            if($validMethod !== $this->method){
+        public function validateMethod($method){
+            if($method !== $this->method){
                 header('HTTP/1.1 405 Method Not Allowed');
                 echo json_encode(array("error" => "Method '$this->method' not allowed!"));
                 log_dump('Invalid HTTP Method Used!');
@@ -53,12 +57,12 @@
          * Load Data
          */
         /*----------------------------------------------------------*/
-        public function loadData($fileIndex){
+        public function loadData(){
             switch($this->method){
                 case 'GET':
                     return $this->handleGET();
                 case 'POST':
-                    return $this->handlePOST($fileIndex);
+                    return $this->handlePOST();
                 /*
                 case 'PUT':
                     break;
@@ -99,7 +103,7 @@
          * @return array data
          */
         /*----------------------------------------------------------*/
-        public function handlePOST($fileIndex){
+        public function handlePOST(){
             /**
              * Check content type and determine source of POST data
              */
@@ -117,16 +121,6 @@
                 $data = json_decode($json, JSON_OBJECT_AS_ARRAY);
             } else {
                 $data = $_POST;
-                /**
-                 * Check if file data also sent
-                 */
-                if($_FILES){
-                    // init files array
-                    $data['file'] = [];
-                   foreach($_FILES[$fileIndex] as $key=>$val){
-                        $data['file'][$key] = $val;
-                   }
-                }
             }
             /**
              * Check data is an array
@@ -150,65 +144,188 @@
             /**
              * Declare Result
              */
-            $result = [];
-            $errors['unfiltered'] = [];
+            $result = sanitize_data($data);
+            if(empty($result)){
+                $this->errors['filtered'] = 'Data sanitization returned empty array!';
+            }
             /**
-             * Loop through data and sanitize by data type
+             * Return Sanitized Result
              */
-            foreach($data as $key => $value){
+            return $result;
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Validate $_FILES data
+         * 
+         * @property array $_FILES
+         * @return bool - $_FILES data is valid (true) | False
+         */
+        /*----------------------------------------------------------*/
+        public function validateFiles(){
+            /**
+             * Get and sanitize file input keys
+             */
+            $input_keys = array_map(function($key){
+                return preg_replace('/[^a-zA-Z0-9._-]/', '', $key);
+            }, array_keys($_FILES));
+            /**
+             * Validate that input keys still return arrays
+             */
+            if(!array_every($input_keys, function($_, $k){
+                return is_array($_FILES[$k]);
+            })){
+                // TODO: Change to add to 'errors' array
+                trigger_error('WARNING: $_FILES[...] superglobal contains invalid array keys!');
+                return false;
+            };
+            /**
+             * Validate $_FILES input array properties
+             */
+            $valid_props = ['name', 'type', 'tmp_name', 'error', 'size'];
+            $input_props = array_every($_FILES, function($input) use(&$valid_props){
                 /**
-                 * Sanitize by data type
+                 * Declare valid keys and compare
                  */
-                if(is_array($value)){
-                    // recursive
-                    $result[$key] = $this->sanitizeData($value);
-                } else if(is_string($value)){
-                    /**
-                     * Check for email, html, or other string type
-                     */
-                    if(strpos($key, 'email') !== false){
-                        $result[$key] = filter_var($value, FILTER_VALIDATE_EMAIL);
-                    } else {
-                        /**
-                         * Trim
-                         * Remove HTML Special Characters
-                         */
-                        $value = trim($value);
-                        $value = htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
-                        /**
-                         * Check if string value is numeric
-                         */
-                        if(is_numeric($value)){
-                            if(filter_var($value, FILTER_VALIDATE_INT) !== false){
-                                $value = intval($value);
-                            } else if(filter_var($value, FILTER_VALIDATE_FLOAT) !== false){
-                                $value = floatval($value);
-                            }
+                
+                if(array_key_exists('full_path', $_FILES[$input])){
+                    $valid_props[] = 'full_path';
+                }
+                /**
+                 * Check valid keys against $_FILES input props
+                 */
+                $diff = array_diff($valid_props, array_keys($_FILES[$input]));
+                return count($diff) === 0;
+            });
+            if(!$input_props){
+                // TODO: Change to add to 'errors' array
+                trigger_error('$_FILES array contains invalid properties!');
+                return false;
+            }
+            /**
+             * Evaluate $_FILES errors
+             */
+            foreach($_FILES as $input => $array){
+                // Check for tmp file error
+                if(key_exists('error', $array)){
+                    $errors = $array['error'];
+                    if(is_array($errors)){
+                        // Check if errors array has any values other than 0 (OK)
+                        if(!in_array(0, $errors)){
+                            /**
+                             * TODO: Finish
+                             * Process Errors
+                             */
+                            return false;
                         }
-                        $result[$key] = $value;
+                    } else {
+                        // Handle single file error
+                        if($errors != 0){
+                            /**
+                             * TODO: Finish
+                             * Process Error
+                             */
+                            return false;
+                        }
                     }
-                } else if(is_numeric($value)){
-                    /**
-                     * Check if int or float
-                     */
-                    if(is_int($value)){
-                        $result[$key] = filter_var($value, FILTER_SANITIZE_NUMBER_INT);
-                    } else if(is_float($value)){
-                        $result[$key] = filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT);
-                    }
-                } else if(is_bool($value)){
-                    $result[$key] = filter_var($value, FILTER_VALIDATE_BOOLEAN);
-                } else {
-                    /**
-                     * Capture unsanitized data in an error array
-                     */
-                    $errors['unfiltered'][$key] = $value;
                 }
             }
             /**
-             * Return Result
+             * $_FILES passed validation
              */
-            return $result;
+            return true;
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * loadFiles
+         * 
+         * @property array $_FILES - FILES array from file uploads
+         * @return bool - Returns a boolean value for success or failure
+         */
+        /*----------------------------------------------------------*/
+        public function loadFiles(){
+            /**
+             * Loop $_FILES inputs and create File object instances
+             */
+            $results = [];
+            foreach($_FILES as $input => $array){
+                // declare files container
+                //var_dump($array);
+                $props = array_keys($array);
+                $count = is_array($array[$props[0]]) ? count($array[$props[0]]) : null;
+                if(is_null($count)){
+                    $results[] = new File(sanitize_string($array['tmp_name']));
+                } else if(is_int($count)){
+                    for($i = 0; $i < $count; $i++){
+                        $results[] = new File(sanitize_string($array['tmp_name'][$i]));
+                    }
+                } else {
+                    trigger_error('Unable to validate and instantiate new File Object!');
+                }
+            }
+            /**
+             * Return results array
+             */
+            return $results;
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * evalFileError
+         *
+         * @param array $file - File array element from $_FILES
+         * @property int $error
+         * @return void - Sets $this->errors['files'][$i]
+         */
+        /*----------------------------------------------------------*/
+        public function evalFileError(array $file): void{
+            /**
+             * Declare $this->errors['files'] as array
+             * Declare $result error array
+             * Declare File $err prop
+             * Declare $msg prop
+             */
+            $err = is_numeric($file['error']) ? $file['error'] : null;
+            $msg = '';
+            switch(intval($err)){
+                case UPLOAD_ERR_INI_SIZE:
+                    $msg = "The uploaded file exceeds the upload_max_filesize directive in php.ini.";
+                    break;
+                case UPLOAD_ERR_FORM_SIZE:
+                    $msg = "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.";
+                    break;
+                case UPLOAD_ERR_PARTIAL:
+                    $msg = "The uploaded file was only partially uploaded.";
+                    break;
+                case UPLOAD_ERR_NO_FILE:
+                    $msg = "No file was uploaded.";
+                    break;
+                case UPLOAD_ERR_NO_TMP_DIR:
+                    $msg = "Missing a temporary folder.";
+                    break;
+                case UPLOAD_ERR_CANT_WRITE:
+                    $msg = "Failed to write file to disk.";
+                    break;
+                case UPLOAD_ERR_EXTENSION:
+                    $msg = "File upload stopped by extension.";
+                    break;
+                case UPLOAD_ERR_OK:
+                    $msg = 'OK';
+                    break;
+                default:
+                    $msg = "Unknown upload error.";
+                    break;
+            }
+            /**
+             * Build errors and append to $this->errors['files']
+             * Combine $_FILES data with error data
+             * Set $this->errors
+             */
+            if(!is_null($err) || $err == 0){
+                $this->errors['files'][] = [
+                    'code' => $err,
+                    'message' => $msg,
+                    'props' => $file
+                ];
+            }
         }
         /*----------------------------------------------------------*/
         /**

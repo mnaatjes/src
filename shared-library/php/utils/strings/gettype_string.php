@@ -1,23 +1,15 @@
 <?php
     /*----------------------------------------------------------*/
     /**
-     * utils__strings-str_type.php
-     * Contains str_type function
+     * Uses a series of pregmatches to determine what data-type a string value is 
      * 
-     * @author Michael Naatjes <michael.naatjes87@gmail.com>
-     * @version 1.0.0
-     * @since 02-07-2025
+     * @param string $str - String to evaluate
+     * @return string String data-type value
+     * @example $str = '2023.09 resolves to 'float'
+     * @deprecated
      */
     /*----------------------------------------------------------*/
-    /**
-     * str_type
-     * Returns the type of a supplied string
-     * 
-     * @param string $str
-     * 
-     * @return string
-     */
-    function str_type(string $str): string{
+    function gettype_string(string $str): string{
         /**
          * format string before reading
          */

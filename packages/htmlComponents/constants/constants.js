@@ -453,3 +453,31 @@ export const eventNamePairs = [
   { attribute: "onwaiting", listener: "waiting" },
   { attribute: "onwheel", listener: "wheel" },
 ];
+/**
+ * @const {Array} booleanProperties - HTML attribute properties which do not set a value
+ */
+export const booleanProperties = [
+  "checked",
+  "disabled",
+  "readonly",
+  "multiple",
+  "selected",
+  "required",
+  "hidden",
+  "draggable",
+  "contentEditable",
+  "spellcheck",
+  "isMap",
+  "noValidate",
+  "defaultChecked",
+  "defaultSelected",
+  "autoplay", 
+  "controls", 
+  "loop", 
+  "muted",
+  "defaultMuted",
+  "async",
+  "defer",
+  "reversed",
+  "inert",
+];

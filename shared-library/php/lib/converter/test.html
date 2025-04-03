@@ -10,9 +10,10 @@
     <main>
         <h1>Test Upload</h1>
         <section>
-            <form id="form--upload" action="../../lib/converter/convert.php" method="post" enctype="multipart/form-data">
+            <form id="form--upload" action="../../lib/converter/form.php" method="post" enctype="multipart/form-data">
                 <input type="text" placeholder="File name" name="file--name">
-                <input type="file" name="file--data" accept=".xml, .json, .csv">
+                <input type="file" id="fileListA" name="file--dataA[]" accept=".xml, .json, .csv" multiple>
+                <input type="file" id="fileListB" name="file--dataB[]" accept=".xml, .json, .csv" multiple>
                 <input type="submit" value="Submit File">
             </form>
         </section>

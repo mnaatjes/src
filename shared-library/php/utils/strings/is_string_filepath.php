@@ -1,12 +1,11 @@
 <?php
     /*----------------------------------------------------------*/
     /**
-     * utils__strings-str_isFilePath.php
+     * Determines if supplied string is a filepath using a series of pregmatch patterns
      * 
+     * @param string $filepath
      * 
-     * @author Michael Naatjes <michael.naatjes87@gmail.com>
-     * @version 1.0.0
-     * @since 02-07-2025
+     * @return bool - True if valid | False failed tests
      */
     /*----------------------------------------------------------*/
     /**
@@ -15,7 +14,7 @@
      * @param string $path
      * @return boolean
      */
-    function str_isFilePath(string $path): bool{
+    function is_string_filepath(string $path): bool{
         /**
          * disqualifying tests: 
          * check for empty string

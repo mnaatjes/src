@@ -11,12 +11,22 @@
     /**
      * Debugging Utilities
      */
-    require_once 'utils__debug/utils__debug-main.php';
+    //require_once 'debugging/';
+    
+    /*----------------------------------------------------------*/
     /**
      * Logging Utilities
      */
-    require_once 'utils__logging/log_dump.php';
-    require_once 'utils__logging/log_errors.php';
+    /*----------------------------------------------------------*/
+    require_once 'logging/log_dump.php';
+    require_once 'logging/log_errors.php';
+    /*----------------------------------------------------------*/
+    /**
+     * Array Utilities
+     */
+    /*----------------------------------------------------------*/
+    //  Methods
+    //  Properties
     /**
      * array methods
      */
@@ -25,40 +35,57 @@
      * array dimension methods
      */
     require_once 'utils__arrays/utils__array-dimensions.php';
+    require_once 'utils__arrays/utils__in_array_recursive.php';
+    require_once 'utils__arrays/utils__array_search_recursive.php';
     /**
      * array property methods
      */
     require_once 'utils__arrays/utils__array-props.php';
     /**
-     * string methods
+     * Array Compare
      */
-    require_once 'utils__strings/utils__strings.php';
+    require_once 'utils__arrays/utils__array-assoc-compare.php';
+    /*----------------------------------------------------------*/
+    /**
+     * String Methods
+     */
+    /*----------------------------------------------------------*/
+    require_once 'strings/gettype_string.php';
+    require_once 'strings/is_string_filepath.php';
+    require_once 'strings/is_string_url.php';
+    require_once 'strings/strpos_from_array.php';
+    /*----------------------------------------------------------*/
+    /**
+     * PHP.ini utilities
+     */
+    /*----------------------------------------------------------*/
+    require_once 'ini/ini_parse_byte_str.php';
+    require_once 'ini/ini_errors_enable.php';
+    /*----------------------------------------------------------*/
     /**
      * Encryption Utilities
      */
+    /*----------------------------------------------------------*/
     require_once 'utils__encrypt.php';
+    /*----------------------------------------------------------*/
+    /**
+     * Sanitation Utilities
+     */
+    /*----------------------------------------------------------*/
+    require_once 'utils__sanitize.php';
+    /*----------------------------------------------------------*/
+    /**
+     * File Utilities
+     */
+    /*----------------------------------------------------------*/
+    require_once 'files/is_file_csv.php';
     /*----------------------------------------------------------*/
     /**
      * CONSTANTS
      */
     /*----------------------------------------------------------*/
-    /**
-     * Constants
-     */
     require_once 'utils__constants.php';
-    /*----------------------------------------------------------*/
-    /**
-     * enableErrors
-     *
-     * @param void
-     * @return void
-     */
-    /*----------------------------------------------------------*/
-    function enableErrors(){
-        ini_set('display_errors', 1); 
-        ini_set('display_startup_errors', 1);
-        error_reporting(E_ALL); 
-    }
+
     /*----------------------------------------------------------*/
     /**
      * isJsonstr

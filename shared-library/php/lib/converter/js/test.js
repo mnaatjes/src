@@ -1,13 +1,15 @@
 const form = document.getElementById('form--upload');
 
 function formSubmit(e){
+    // stop submit
     e.preventDefault();
-    console.log(this);
-    const formData = new FormData(this);
-    const data = {};
-    formData.forEach((val, key) => {
-        data[key] = val;
-    });
+    // declare form data
+    const formData  = new FormData(this);
+    const inputA    = document.getElementById('fileListA');
+    const inputB    = document.getElementById('fileListB');
+    const fileListA = inputA.files;
+    const fileListB = inputB.files;
+    console.log(formData.get('file--data[]'));
     this.submit();
 }
 form.addEventListener('submit', formSubmit);

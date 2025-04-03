@@ -1,12 +1,79 @@
 <?php
     /*----------------------------------------------------------*/
     /**
+     * Encrypt json string or array as json string
+     *
+     * @param string|array $data - Data (array or json) to be encrypted
+     * @param bool [$assoc] - Default(true) returns assoc array | False returns PHP object
+     * @return string - Encrypted array or json string as json string
+     * 
+     * TODO: Check PHP memory limit for handling large json strings!!!
+     */
+    /*----------------------------------------------------------*/
+    function encrypt_json($data, bool $assoc=true): string{
+        /**
+         * Validate $data is either an array or a json string
+         */
+        if(!is_array($data) && !is_string($data)){
+            throw new TypeError('Argument supplied must be either a STRING or an ARRAY!');
+        }
+        /**
+         * Check if $data is a string:
+         * Test if already json string
+         */
+        if(is_string($data)){
+            // attempt to decode data
+            json_decode($data, $assoc);
+            // perform test
+            $test = json_last_error() == JSON_ERROR_NONE;
+        }
+        /**
+         * Determine if array
+         * Convert to json string
+         */
+        $json = is_array($data) ? json_encode($data, $assoc) : (isset($test) && $test === true ? $data : json_encode($data, $assoc));
+        /**
+         * Send to encrypt_string and return value
+         */
+        return encrypt_string($json);
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * Decrypt a JSON string into an array or a string
+     *
+     * @param $json - json string to decrypt
+     * @param bool [$assoc] - Default(true) returns assoc array | False returns PHP object
+     * @return mixed|false - Decrypted data; likely an array or object | Failed return false
+     */
+    /*----------------------------------------------------------*/
+    function decrypt_json(string $str, bool $assoc=true){
+        /**
+         * Validate is a json string
+         */
+        if(!is_string($str)){
+            throw new TypeError('Argument supplied must be a STRING!');
+        }
+        $json = decrypt_string($str);
+        /**
+         * Validate decoded string is json
+         */
+        $result = json_decode($json, $assoc);
+        if(json_last_error() !== JSON_ERROR_NONE){
+            throw new Exception('JSON decoding error: ' . json_last_error_msg());
+        }
+        /**
+         * Success: Return Mixed
+         */
+        return $result;
+    }
+    /*----------------------------------------------------------*/
+    /**
      * encryptData
      * @param array $arr - array of data to supply
      * @return array - encrypted array of data
      */
     /*----------------------------------------------------------*/
-    function encryptData($arr){
+    function encrypt_data($arr){
         /**
          * Generate an AES 256bit string in Cipher Block Chaining mode (requires Initialization Vector)
          */
@@ -16,8 +83,8 @@
         /**
          * Get key and init vector
          */
-        $key = generateKey();
-        $iv  = generateInitVector();
+        $key = OPEN_SSL_KEY;
+        $iv  = OPEN_SSL_IV;
         /**
          * Loop array and encrypt elements
          */
@@ -25,10 +92,10 @@
         foreach($arr as $k => $val){
             // check if value is an array
             if(is_array($val)){
-                $res[$k] = encryptData($val);
+                $res[$k] = encrypt_data($val);
             } else {
                 // encrypt string values
-                $res[$k] = encryptString($val, $key, $iv);
+                $res[$k] = encrypt_string($val, $key, $iv);
             }
         }
         /**
@@ -38,14 +105,30 @@
     }
     /*----------------------------------------------------------*/
     /**
-     * encryptString
+     * Encrypt data-type of string and return encrypted string
      * @param string $str
      * @param string $key
      * @param string $iv
      * @return string - encrypted string
      */
     /*----------------------------------------------------------*/
-    function encryptString($str, $key, $iv){
+    function encrypt_string($str, $key=null, $iv=null){
+        /**
+         * Check if $key and $iv exist
+         */
+        if(is_null($key) && is_null($iv)){
+            /**
+             * Generate an AES 256bit string in Cipher Block Chaining mode (requires Initialization Vector)
+             */
+            if(is_null(OPEN_SSL_METHOD)){
+                throw new Error('Cannot Encrypt Data!!! Check "utils/utils__constants.php" for valid OpenSSL method!');
+            }
+            /**
+             * Get key and init vector
+             */
+            $key = OPEN_SSL_KEY;
+            $iv  = OPEN_SSL_IV;
+        }
         /**
          * Encrypt and validate string encryption
          */
@@ -65,18 +148,70 @@
      * @return array - decrypted array of data
      */
     /*----------------------------------------------------------*/
-    function decryptData($arr){
+    function decrypt_data($arr){
+        /**
+         * Generate an AES 256bit string in Cipher Block Chaining mode (requires Initialization Vector)
+         */
+        if(is_null(OPEN_SSL_METHOD)){
+            throw new Error('Cannot Encrypt Data!!! Check "utils/utils__constants.php" for valid OpenSSL method!');
+        }
+        /**
+         * Get key and init vector
+         */
+        $key = OPEN_SSL_KEY;
+        $iv  = OPEN_SSL_IV;
         /**
          * Declare $result array
          * Loop through array key, values
          */
+        $res = [];
         foreach($arr as $k => $val){
-
+            // check if value is an array
+            if(is_array($val)){
+                $res[$k] = decrypt_data($val);
+            } else {
+                // encrypt string values
+                $res[$k] = decrypt_string($val, $key, $iv);
+            }
         }
         /**
          * Return Array
          */
-        return $arr;
+        return $res;
+    }
+    /*----------------------------------------------------------*/
+    /**
+     * decryptString
+     *
+     * @param string $str - string to decrypt
+     * @param string $key
+     * @param string $iv
+     * @return string
+     */
+    /*----------------------------------------------------------*/
+    function decrypt_string($str, $key=null, $iv=null){
+        /**
+         * Check if $key and $iv exist
+         */
+        if(is_null($key) && is_null($iv)){
+            /**
+             * Generate an AES 256bit string in Cipher Block Chaining mode (requires Initialization Vector)
+             */
+            if(is_null(OPEN_SSL_METHOD)){
+                throw new Error('Cannot Encrypt Data!!! Check "utils/utils__constants.php" for valid OpenSSL method!');
+            }
+            /**
+             * Get key and init vector
+             */
+            $key = OPEN_SSL_KEY;
+            $iv  = OPEN_SSL_IV;
+        }
+        /**
+         * Base64 decode
+         */
+        $str = base64_decode($str);
+        $decrypt = openssl_decrypt($str, OPEN_SSL_METHOD, $key, OPENSSL_RAW_DATA, $iv);
+        return $decrypt;
     }
     /*----------------------------------------------------------*/
     /**
@@ -183,7 +318,8 @@
         /**
          * Generate random pseudobytes if function exists
          */
-        $key = function_exists('openssl_random_pseudo_bytes') ? openssl_random_pseudo_bytes($len) : null;
+        //$key = function_exists('openssl_random_pseudo_bytes') ? openssl_random_pseudo_bytes($len) : null;
+        $key = 'hereisasandwhich';
         /**
          * Validate key
          * If failed, generate key based on length

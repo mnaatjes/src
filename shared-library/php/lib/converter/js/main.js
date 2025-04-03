@@ -7,6 +7,7 @@ import { createTableElement } from '../../../../../packages/htmlComponents/eleme
  * @file php/lib/converter/js/main.js
  * @description Main js for file converter form
  */
+const fileProps = [];
 const root      = document.getElementById('root');
 const component = createCustomForm(
     {
@@ -23,9 +24,10 @@ const component = createCustomForm(
             id: 'file--button',
             for: 'file--path',
         }),
-        createInputElement('file', 'file--path', {
+        createInputElement('file', 'file--path[]', {
             id: 'file--path',
             accept: '.xml, .json, .csv',
+            multiple: true,
             onchange: function(e){
                 /**
                  * Declare file--display element
@@ -39,14 +41,30 @@ const component = createCustomForm(
                  * Display Details in Table
                  */
                 if(this.files.length > 0){
-                    const file = this.files[0];
-                    const table = createTableElement([{
-                        name: file.name,
-                        size: file.size > (1024 * 1024) ? (file.size / (1024 * 1024)).toFixed(2) + 'MB' :
-                                file.size > 1024 ? (file.size / 1024).toFixed(2) + 'KB' :
-                                file.size + 'B',
-                        type: file.type
-                    }], {}, {id: 'file--table'});
+                    /**
+                     * Loop files object and evaluate:
+                     * 1) Declare each file
+                     * 2) Generate file properties
+                     * 3) Append File props to fileProps
+                     */
+                    for(let i = 0; i < this.files.length; i++){
+                        // declare file object
+                        const file  = this.files[i];
+                        // generate file properties
+                        const props = {
+                            name: file.name,
+                            size: file.size > (1024 * 1024) ? (file.size / (1024 * 1024)).toFixed(2) + 'MB' :
+                                    file.size > 1024 ? (file.size / 1024).toFixed(2) + 'KB' :
+                                    file.size + 'B',
+                            type: file.type
+                        };
+                        // append to fileProps
+                        fileProps.push(props);
+                    }
+                    /**
+                     * Generate Display Table
+                     */
+                    const table = createTableElement(fileProps, {}, {id: 'file--table'});
                     display.appendChild(table);
                 }
             }
@@ -58,12 +76,18 @@ const component = createCustomForm(
             {value: 'xml', text: 'Extensible Markup Language'}
         ])
     ],
-    function(data, form){
+    function(formData, form){
         /**
          * Check if output ext matches incoming extension
          * Reset if true
          */
-        const file  = data['file--path'];
+        const filepath = 'file--path';
+        const fileList = component.shadowRoot.getElementById(filepath).files;
+        // append fileList to form data
+        for(let i = 0; i < fileList.length; i++){
+            formData.append(filepath, fileList[i]);
+        }
+        form.submit();
         /*
         const ext   = file.name.substring(file.name.lastIndexOf('.') + 1);
         if(ext === data['output--ext']){
@@ -86,7 +110,6 @@ const component = createCustomForm(
             form.submit();
         }
         */
-       form.submit();
     }
 );
 /**

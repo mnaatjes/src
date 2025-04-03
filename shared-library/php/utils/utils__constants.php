@@ -11,5 +11,13 @@
      * @property string HASH_ALGO - hash algorithm to be used
      */
     define('HASH_ALGO', 'sha256');
+    /**
+     * @property string OPEN_SSL_KEY
+     */
+    define('OPEN_SSL_KEY', generateKey());
+    /**
+     * @property string OPEN_SSL_IV
+     */
+    define('OPEN_SSL_IV', generateInitVector());
 
 ?>
