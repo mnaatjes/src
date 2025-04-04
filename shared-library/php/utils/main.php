@@ -79,6 +79,7 @@
      */
     /*----------------------------------------------------------*/
     require_once 'files/is_file_csv.php';
+    require_once 'files/file_normalize_path.php';
     /*----------------------------------------------------------*/
     /**
      * CONSTANTS

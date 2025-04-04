@@ -1,6 +1,5 @@
 <?php
     require_once 'constants/mime_types.php';
-    var_dump(MIME_TYPES);
     /*----------------------------------------------------------*/
     /**
      * File Class.
@@ -19,11 +18,6 @@
          * @var string $path - Filepath
          */
         public string $path;
-        /**
-         * TODO: Remove
-         * @var object $file_info - SplFileObject data
-         */
-        //public object $file_info;
         /**
          * @var array $errors - Errors array
          */
@@ -113,6 +107,7 @@
                 $this->ext          = $this->state['is_tmp'] ? pathinfo($this->tmp['name'], PATHINFO_EXTENSION) : pathinfo($this->path, PATHINFO_EXTENSION);
                 $this->file_type    = filetype($filepath);
                 $this->mime_type    = $this->getMimeType($this->path);
+                $this->os           = $system  = strpos(strtoupper(PHP_OS), 'WIN') ? 'WIN' : PHP_OS;
             }
         }
         /*----------------------------------------------------------*/
@@ -123,7 +118,7 @@
          * @return string - MIME-type string
          */
         /*----------------------------------------------------------*/
-        public function getMimeType($filepath){
+        private function getMimeType($filepath){
             /**
              * Declare containers
              * Check if mime_content_type function exists
@@ -179,7 +174,7 @@
          * @return array - Returns array of file state properties
          */
         /*----------------------------------------------------------*/
-        public function getState(string $filepath): array {
+        private function getState(string $filepath): array {
             return [
                 'is_tmp' => is_uploaded_file($filepath),
                 'is_dir' => is_dir($this->dir),
@@ -351,7 +346,7 @@
          * @return array - Returns array of file timestamp properties
          */
         /*----------------------------------------------------------*/
-        public function getTimestamp($filepath){
+        private function getTimestamp($filepath){
             return [
                 'accessed' => date('Y-m-d H:i:s', fileatime($filepath)),
                 'modified' => date('Y-m-d H:i:s', filemtime($filepath)),
@@ -366,7 +361,7 @@
          * @return array - Returns array of file temporary properties
          */
         /*----------------------------------------------------------*/
-        public function getTemporary($filepath){
+        private function getTemporary($filepath){
             /**
              * Validate is tmp file
              * Check for filepath in $_FILES array
@@ -447,13 +442,140 @@
         }
         /*----------------------------------------------------------*/
         /**
-         * Validates file properties
-         * 
-         * @param string $filepath - Filepath of File instance
-         * @return bool - True if successful
+         * Uploads temporary files in $_FILES superglobal to user-supplied destination.
+         *  - Checks operating system before uploading file
+         *  - If the upload directory does not exist, function creates and validates it
+         *  - 
+         * @param string $destination - Destination directory
+         * @param bool|string $filename - User supplied filename(string) | Default(false) generates unique filename
+         * @param array $extensions - Valid extensions allowed for file upload
+         * @return bool - Success(true) or Failure(false) uploading and moving file
          */
         /*----------------------------------------------------------*/
-        public function validate($filepath){
+        public function upload(string $destination, $filename=false, array $extensions=[]){
+            /**
+             * Validate arguments:
+             */
+            if(!is_array($extensions)){
+                // Extensions supplied of incorrect type
+                trigger_error(sprintf('Argument $extensions must be an array! %s provided', gettype($extensions)));
+            }
+            /**
+             * Ensure extension matches:
+             * Empty $extensions array means all allowed
+             * Otherwise validate matching extensions
+             */
+            $ext = count($extensions) !== 0 ? (in_array($this->ext) ? $this->ext : null) : $this->ext; 
+            if($ext === null){
+                trigger_error(sprintf('Failed to upload file! File Extension: %s does not match permitted extensions argument', $this->ext));
+                return false;
+            }
+            /**
+             * Get max size from php.ini in bytes
+             * Determine size threshold
+             * Validate file size and comfirm
+             */
+            $info_max_size  = ini_parse_byte_str(ini_get('upload_max_filesize'));
+            $post_max_size  = ini_parse_byte_str(ini_get('post_max_size'));
+            $threshold      = min($info_max_size, $post_max_size);
+            // Ensure file size does not exceed threshold
+            if($this->size > $threshold){
+                trigger_error(sprintf('Cannot upload file! Filesize: %d bytes exceeds php.ini settings of: %d bytes', $this->size, $threshold));
+                return false;
+            }
+            /**
+             * Normalize destination directory using DIRECTORY_SEPARATOR
+             * Ensure ending of path includes correct separator
+             */
+            $destination = file_normalize_path($destination);
+            $sep = DIRECTORY_SEPARATOR;
+            if(substr($destination, -1) !== $sep){
+                $destination .= $sep;
+            }
+            if(!is_string($destination)){
+                trigger_error('Failed to resolve $destination directory! Could not upload file!');
+                return false;
+            }
+            /**
+             * Check if Directory exists
+             * Create Directory if not
+             * Return bool value if directory created
+             */
+            $dir_exists = !is_dir($destination) ? mkdir($destination, 0775, true): is_dir($destination);
+            /**
+             * Validate $directory exists / was created and now exists
+             */
+            if(!$dir_exists){
+                // Could not create directory and directory does not already exist
+                trigger_error(sprintf('Failed to find or create destination directory: %s', $destination));
+                return false;
+            }
+            /**
+             * Determine Filename:
+             * 1) Get filename depending on tmp or extant file
+             * 2) Remove extension if present and replace
+             * 3) Generate unique name if $filename is false and not a string
+             */
+            if(!is_string($filename) && is_bool($filename)){
+                // select the basename
+                $basename = $this->state['is_tmp'] ? $this->tmp['name'] : $this->name;
+                // Check for extension
+                $pos        = strrpos($basename, '.');
+                $suffix     = substr($basename, $pos);
+                // validate suffix equals file extension
+                if(str_replace('.', '', $suffix) === $this->ext){
+                    // remove extension from basename if present
+                    $basename = str_replace($suffix, '', $basename);
+                }
+                // remove excess whitespace
+                $original = preg_replace('/\s+/', '', $basename);
+                // Generate unique filename
+                $filename = uniqid() . '__' . $original . '__' . date('Y-m-d') . '.' . $this->ext;
+            } else {
+                // Ensure supplied filename includes extension
+                $pos = strpos($filename, '.'.$this->ext);
+                if(is_int($pos)){
+                    $suffix = substr($filename, $pos);
+                    // check if suffix len matches ext
+                    if($this->ext !== $suffix){
+                        // remove suffix and replace with ext
+                        $filename = str_replace($suffix, $this->ext, $filename);
+                    }
+                } else {
+                    $filename = $filename . '.' . $this->ext;
+                }
+            }
+            // Validate $filename with extension
+            if(pathinfo($filename, PATHINFO_EXTENSION) !== $this->ext){
+                trigger_error('Error resolving file extension! Please try again!');
+                return false;
+            }
+            /**
+             * Move file for Upload
+             * Validate file Move
+             * Update file properties
+             */
+            $filepath = $destination . $filename;
+            if(move_uploaded_file($this->path, $filepath)){
+                $this->update($filepath);
+                return true;
+            }
+            /**
+             * Default to false
+             */
+            return false;
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Converts file from one document type to another
+         * 
+         * @param string $output - Output file type
+         * @param callable [$callback] - Optional callback for data manipulation during conversion
+         * @property array $types - Valid file types with conversion schemas
+         */
+        /*----------------------------------------------------------*/
+        public function convert(string $output){
+
         }
     }
 ?>

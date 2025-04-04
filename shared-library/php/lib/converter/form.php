@@ -13,15 +13,11 @@
     /**
      * Perform Request Logic
      */
-    /*
-    if($_SERVER['REQUEST_METHOD'] === "POST"){
-        var_dump($_FILES);
-    }
-    */
     $req = new Request('POST');
     //var_dump($req->data);
     $req->processForm(function($data, $errors){
-        $file_test = $data['files'][0]->tmp['tmp_name'];
-        var_dump($data['files']);
+        foreach($data['files'] as $file){
+            //$file->upload('uploads/test');
+        }
     });
 ?>
