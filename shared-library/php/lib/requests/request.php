@@ -163,6 +163,12 @@
         /*----------------------------------------------------------*/
         public function validateFiles(){
             /**
+             * Check if $_FILES superglobal is empty
+             */
+            if(empty($_FILES)){
+                return false;
+            }
+            /**
              * Get and sanitize file input keys
              */
             $input_keys = array_map(function($key){
