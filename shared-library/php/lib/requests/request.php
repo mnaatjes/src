@@ -16,6 +16,7 @@
         public $data;
         public $errors   = [];
         public $response = [];
+        public $id       = null;
         /*----------------------------------------------------------*/
         /**
          * Retrieves data from the Server Request Method
@@ -95,7 +96,25 @@
          * Handle GET Request
          */
         /*----------------------------------------------------------*/
-        public function handleGET(){}
+        public function handleGET(){
+            /**
+             * Check if GET data is empty
+             */
+            if(empty($_GET)){
+                return [];
+            }
+            /**
+             * Sanitize GET data
+             */
+            $data = sanitize_data($_GET);
+            /**
+             * Check if data is an array
+             */
+            if(!is_array($data)){
+                throw new TypeError('Unable to parse GET Data into an array!');
+            }
+            return $data;
+        }
         /*----------------------------------------------------------*/
         /**
          * Handle POST Request
@@ -128,7 +147,7 @@
              * Return Data
              */
             if(!is_array($data)){
-                throw new TypeError('Unable to parse Form Data into an array!');
+                $this->errors['data'] = 'Unable to parse POST data into an array!';
             }
             return $this->sanitizeData($data);
         }
@@ -335,34 +354,73 @@
         }
         /*----------------------------------------------------------*/
         /**
-         * Form Processing Logic
-         * 
+         * Process Data from Request.
+         * TODO:
+         * @todo - Add validation for callback
+         * @todo - Add validation for data
+         * @todo - Add validation for errors
+         * @todo - Add validation for response
+         * @todo - Check if header is set in document and which header
          * @return array response array
          */
         /*----------------------------------------------------------*/
-        public function processForm(callable $callback){
+        public function processData(callable $callback){
             /**
              * Validate use of method:
              * Method can only be used if data property is populated
              */
             if($this->data === null || !is_array($this->data)){
-                throw new Error('Cannot use this method!');
+                /**
+                 * @deprecated Removed thrown Error; replaced with push to errors array
+                 * @since 2025-04-05
+                 * Add to errors array
+                 */
+                $this->errors['empty_data'] = 'Data array is empty! Nothing to process!';
             }
             /**
-             * Set header
-             */
-            header('Content-Type: application/json');
-            /**
+             * @deprecated - Header was set here! Removed
+             * header('Content-Type: application/json'); must be set at top of document
+             * 
              * Validate callback
+             * Grab returned values as response
              */
             if(is_callable($callback)){
-                $this->response = $callback($this->data, $this->errors);
+                $this->response['data'] = $callback($this->data, $this->errors);
             }
-            /**
-             * Process and submit data
-             */
-            echo json_encode($this->response);
         }
         /*----------------------------------------------------------*/
+        /**
+         * Sends response to the client.
+         */
+        /*----------------------------------------------------------*/
+        public function sendResponse(){
+            /**
+             * Check if response is empty
+             */
+            if(empty($this->response)){
+                $this->response = [
+                    'status' => 500,
+                    'message' => 'Internal Server Error',
+                    'data' => null,
+                    'errors' => $this->errors
+                ];
+            } else {
+                $this->response = array_merge($this->response, [
+                    'status' => 200,
+                    'message' => 'OK',
+                    'errors' => $this->errors,
+                    'meta' => [
+                        'timestamp' => date('Y-m-d H:i:s'),
+                        'method' => $this->method,
+                        'content_type' => $this->contentType,
+                        'request_id' => $this->id
+                    ]
+                ]);
+            }
+            /**
+             * Send response
+             */
+            echo trim(json_encode($this->response));
+        }
     }
 ?>
