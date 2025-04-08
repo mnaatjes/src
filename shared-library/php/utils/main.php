@@ -82,6 +82,11 @@
     /*----------------------------------------------------------*/
     require_once 'files/is_file_csv.php';
     require_once 'files/file_normalize_path.php';
+    require_once 'files/require_once_dir.php';
+    require_once 'files/is_dir_path.php';
+    require_once 'files/get_path_absolute.php';
+    require_once 'files/get_path_document_root.php';
+    require_once 'files/get_document_root.php';
     /*----------------------------------------------------------*/
     /**
      * Misc Utilities

@@ -1,11 +1,10 @@
 <?php
-    require_once 'constants/mime_types.php';
     /*----------------------------------------------------------*/
     /**
      * File Class.
      * 
      * Represents a file on the filesystem.
-     * Extracts relavant file properties using php methods.
+     * Extracts relevant file properties using php methods.
      * Provides methods for validation, file handling, conversion, etc
      */
     /*----------------------------------------------------------*/
@@ -38,6 +37,12 @@
          * @var array $tmp - Temporary file properties
          */
         public array $tmp = [];
+        /**
+         * 
+         */
+        public string $file_type;
+        public string $mime_type;
+        public string $os;
         /*----------------------------------------------------------*/
         /**
          * Constructor.
@@ -195,7 +200,7 @@
         /*----------------------------------------------------------*/
         private function getPermissions(string $filepath){
             /**
-             * Grab relavant properties
+             * Grab relevant properties
              */
             $system  = strpos(strtoupper(PHP_OS), 'WIN') ? 'WIN' : PHP_OS;
             $decimal = fileperms($filepath);
@@ -286,7 +291,7 @@
                  */
                 private function __get($key){
                     // validate key
-                    $key = filter_var($key, FILTER_SANITIZE_STRING);
+                    $key = filter_var($key, FILTER_DEFAULT);
                     // check if key exists
                     if(array_key_exists($key, $this->data)){
                         return $this->data[$key];
@@ -334,7 +339,7 @@
             };
             $callback($obj);
             /**
-             * Update permissions properti
+             * Update permissions properties
              */
             $this->perms = $obj->evaluate();
         }
@@ -465,7 +470,7 @@
              * Empty $extensions array means all allowed
              * Otherwise validate matching extensions
              */
-            $ext = count($extensions) !== 0 ? (in_array($this->ext) ? $this->ext : null) : $this->ext; 
+            $ext = count($extensions) !== 0 ? (in_array($this->ext, $extensions) ? $this->ext : null) : $this->ext; 
             if($ext === null){
                 trigger_error(sprintf('Failed to upload file! File Extension: %s does not match permitted extensions argument', $this->ext));
                 return false;
@@ -473,7 +478,7 @@
             /**
              * Get max size from php.ini in bytes
              * Determine size threshold
-             * Validate file size and comfirm
+             * Validate file size and confirm
              */
             $info_max_size  = ini_parse_byte_str(ini_get('upload_max_filesize'));
             $post_max_size  = ini_parse_byte_str(ini_get('post_max_size'));

@@ -20,31 +20,32 @@
      * - getMethod
      */
     require_once('../../../../utils/main.php');
-    require_once('constants/http_status.php');
-    require_once('constants/valid_http_methods.php');
-    require_once('constants/valid_http_protocols.php');
-    require_once('http_methods/get_method.php');
-    require_once('http_methods/get_content_type.php');
-    require_once('http_methods/get_document_root.php');
-    require_once('utils/build_doc_root_path.php');
-    require_once('utils/sanitize_server_data.php');
+    require_once('../../constants/http_status.php');
+    require_once('../../constants/valid_http_methods.php');
+    require_once('../../constants/valid_http_protocols.php');
+    require_once('../../http_methods/get_method.php');
+    require_once('../../http_methods/get_content_type.php');
+    require_once('../../utils/sanitize_server_data.php');
+    /**
+     * Request Object
+     * File Object
+     */
+    require_once('../../components/Request.php');
+    require_once('../../components/File.php');
+    /**
+     * Debugging
+     */
+    require_once_dir('../../components/');
     /**
      * Send Response
      */
+    $request = new Request();
     echo trim(json_encode([
+        'Request' => $request,
         'props' => [
-            'method' => getMethod(),
-            'content_type' => getContentType(),
-            'getDocumentRoot' => getDocumentRoot(),
-            'http_response_code' => http_response_code()
+            'Content-type' => $request->getHeader('content-type'),
+            'Document_ROOT' => $request->getDocumentRoot(),
+            'Request Method' => $request->getRequestMethod($request->serverParams)
         ],
-        'utils' => [
-            'build_doc-root_path' => build_doc_root_path('../test.json'),
-            'sanitized $_SERVER data' => sanitize_server_data()
-        ],
-        'constants' => [
-            'HTTP_STATUS' => HTTP_STATUS,
-            'response_string' => HTTP_STATUS[http_response_code()]
-        ]
     ]));
 ?>

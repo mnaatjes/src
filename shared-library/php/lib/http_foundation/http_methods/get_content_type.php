@@ -6,7 +6,7 @@
      * @return string|null The content type of the request. | Null is not set.
      */
     function getContentType() {
-        // Check $_SEVRER super global for content type
+        // Check $_SERVER super global for content type
         $result = null;
         if (isset($_SERVER['HTTP_CONTENT_TYPE'])) {
             $result = $_SERVER['HTTP_CONTENT_TYPE'];
