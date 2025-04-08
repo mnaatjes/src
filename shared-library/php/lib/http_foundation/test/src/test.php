@@ -26,16 +26,13 @@
     require_once('../../http_methods/get_method.php');
     require_once('../../http_methods/get_content_type.php');
     require_once('../../utils/sanitize_server_data.php');
+    ini_errors_enable();
     /**
      * Request Object
      * File Object
      */
     require_once('../../components/Request.php');
     require_once('../../components/File.php');
-    /**
-     * Debugging
-     */
-    require_once_dir('../../components/');
     /**
      * Send Response
      */
@@ -44,8 +41,8 @@
         'Request' => $request,
         'props' => [
             'Content-type' => $request->getHeader('content-type'),
-            'Document_ROOT' => $request->getDocumentRoot(),
+            'Document_ROOT' => $request->getDocumentRoot($_SERVER),
             'Request Method' => $request->getRequestMethod($request->serverParams)
         ],
-    ]));
+    ], JSON_PRETTY_PRINT));
 ?>

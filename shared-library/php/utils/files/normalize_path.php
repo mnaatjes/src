@@ -5,7 +5,7 @@
      * @param string $path - Path to evaluate and alter if necessary
      * @return string|null - Altered(if necessary) path to correct separator; i.e. normalized; Null for invalid
      */
-    function file_normalize_path(?string $path): ?string{
+    function normalize_path(?string $path): ?string{
         /**
          * Trim any leaning or trailing whitespaces
          */
@@ -14,23 +14,19 @@
          * Check for empty path
          */
         if(empty($path)){
+            trigger_error('Cannot normalize path! Path: ' . $path . ' is empty!');
             return null;
         }
-        /**
-         * @var bool $is_dir Checks for ending Directory separator
-         * - True if path ends in directory
-         * - False if path ends in file
-         */
-        $is_valid_dir = is_dir_path($path);
         /**
          * Replace both forward and backward slashes with $sep
          */
         $path = str_replace(['/', '\\'], DIRECTORY_SEPARATOR, $path);
         /**
          * Check length of filepath:
-         * - Ensure only contains directory separator
+         * - If the path is only one character long: ensure it is a directory separator
          */
         if(strlen($path) === 1 && $path !== DIRECTORY_SEPARATOR){
+            trigger_error(sprintf('Path parameter: %s too short and missing directory separator!', $path));
             // Invalid filepath
             return null;
         }
@@ -44,23 +40,13 @@
         $path = preg_replace('/' . preg_quote(DIRECTORY_SEPARATOR, '/') . '{2,}/', DIRECTORY_SEPARATOR, $path);
         $path = preg_replace('/\.{3,}/', '..', $path);
         /**
-         * Check for path traversal attack:
-         * - Check for relative path traversal characteristics
-         * - Ensure relative path traversals ('../') do not exceed Document Root
-         */
-        $count = substr_count($path, '../');
-        /**
          * Check if path contains absolute path characteristics
          * Check for relative paths and root directory
          * - Check first character of path
          * - Check last character of path
          */
-        if(strpos($path, DIRECTORY_SEPARATOR) === 0){
-            /**
-             * Path begins with Separator:
-             * - Ensure valid absolute path
-             */
-        }
+        $leading    = str_starts_with($path, DIRECTORY_SEPARATOR);
+        $trailing   = str_ends_with($path, DIRECTORY_SEPARATOR);
         /**
          * Explode segments of filepath:
          * - Remove '.' and empty segments
@@ -94,8 +80,13 @@
             }
         }
         $normal_path = implode(DIRECTORY_SEPARATOR, $results);
-        // Append ending Separator if valid directory
-        if($is_valid_dir){
+        /**
+         * Prepend and/or append Directory Separators if present before loop
+         */
+        if($leading && !str_starts_with($normal_path, DIRECTORY_SEPARATOR)){
+            $normal_path = DIRECTORY_SEPARATOR . $normal_path;
+        }
+        if($trailing && !str_ends_with($normal_path, DIRECTORY_SEPARATOR)){
             $normal_path = $normal_path . DIRECTORY_SEPARATOR;
         }
         /**

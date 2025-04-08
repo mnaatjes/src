@@ -5,6 +5,8 @@
      */
     /*----------------------------------------------------------*/
     //require_once 'debugging/';
+    //require_once 'files/get_path_absolute.php';
+    //require_once 'files/get_path_document_root.php';
     /*----------------------------------------------------------*/
     /**
      * Logging Utilities
@@ -46,6 +48,12 @@
     require_once 'strings/is_string_filepath.php';
     require_once 'strings/is_string_url.php';
     require_once 'strings/strpos_from_array.php';
+    if(!function_exists('str_starts_with')){
+        require_once 'strings/str_starts_with.php';
+    }
+    if(!function_exists('str_ends_with()')){
+        require_once 'strings/str_ends_with.php';
+    }
     /*----------------------------------------------------------*/
     /**
      * PHP.ini utilities
@@ -81,12 +89,11 @@
      */
     /*----------------------------------------------------------*/
     require_once 'files/is_file_csv.php';
-    require_once 'files/file_normalize_path.php';
+    require_once 'files/normalize_path.php';
     require_once 'files/require_once_dir.php';
-    require_once 'files/is_dir_path.php';
-    require_once 'files/get_path_absolute.php';
-    require_once 'files/get_path_document_root.php';
     require_once 'files/get_document_root.php';
+    require_once 'files/scandir_recursive.php';
+    require_once 'files/is_path_absolute.php';
     /*----------------------------------------------------------*/
     /**
      * Misc Utilities
