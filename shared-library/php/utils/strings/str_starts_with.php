@@ -13,6 +13,9 @@
          * Use strcmp() to evaluate:
          * - Binary search of n-characters
          */
-        return strncmp($haystack, $needle, strlen($needle)) === 0;
+        if(strncmp($haystack, $needle, strlen($needle)) === 0){
+            return true;
+        }
+        return false;
     }
 ?>

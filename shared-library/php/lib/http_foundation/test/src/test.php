@@ -15,34 +15,15 @@
      */
     header('Content-Type: application/json');
     /**
-     * Require utils:
-     * Require HTTP Methods:
-     * - getMethod
+     * Require:
+     * - Utils Library
+     * - HTTP Framework
      */
     require_once('../../../../utils/main.php');
-    require_once('../../constants/http_status.php');
-    require_once('../../constants/valid_http_methods.php');
-    require_once('../../constants/valid_http_protocols.php');
-    require_once('../../http_methods/get_method.php');
-    require_once('../../http_methods/get_content_type.php');
-    require_once('../../utils/sanitize_server_data.php');
+    require_once('../../http_foundation.php');
     ini_errors_enable();
-    /**
-     * Request Object
-     * File Object
-     */
-    require_once('../../components/Request.php');
-    require_once('../../components/File.php');
-    /**
-     * Send Response
-     */
-    $request = new Request();
-    echo trim(json_encode([
-        'Request' => $request,
-        'props' => [
-            'Content-type' => $request->getHeader('content-type'),
-            'Document_ROOT' => $request->getDocumentRoot($_SERVER),
-            'Request Method' => $request->getRequestMethod($request->serverParams)
-        ],
-    ], JSON_PRETTY_PRINT));
+    $headers = new Headers(true);
+    $headers->send();
+    //var_dump($headers->getProperties());
+    //echo trim(json_encode(new Request($_SERVER), JSON_PRETTY_PRINT));
 ?>

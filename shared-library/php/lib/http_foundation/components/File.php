@@ -492,11 +492,7 @@
              * Normalize destination directory using DIRECTORY_SEPARATOR
              * Ensure ending of path includes correct separator
              */
-            $destination = file_normalize_path($destination);
-            $sep = DIRECTORY_SEPARATOR;
-            if(substr($destination, -1) !== $sep){
-                $destination .= $sep;
-            }
+            $destination = normalize_path($destination);
             if(!is_string($destination)){
                 trigger_error('Failed to resolve $destination directory! Could not upload file!');
                 return false;

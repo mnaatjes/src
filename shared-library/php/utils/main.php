@@ -54,6 +54,11 @@
     if(!function_exists('str_ends_with()')){
         require_once 'strings/str_ends_with.php';
     }
+    require_once 'strings/str_camel_to_snake.php';
+    require_once 'strings/str_camel_to_kebab.php';
+    require_once 'strings/str_snake_to_kebab.php';
+    require_once 'strings/str_has_delimiter.php';
+    require_once 'strings/str_replace_substr.php';
     /*----------------------------------------------------------*/
     /**
      * PHP.ini utilities
@@ -105,13 +110,16 @@
      * CONSTANTS
      */
     /*----------------------------------------------------------*/
+    // TODO: Separate documents of utils__constants.php and include
     require_once 'utils__constants.php';
+    require_once 'constants/case_caps.php';
     /*----------------------------------------------------------*/
     /**
-     * Classes and Objects
+     * CLASSES AND OBJECTS
      */
     /*----------------------------------------------------------*/
     require_once 'config/config_generator.php';
+    require_once 'errors/Errors.php';
     /*----------------------------------------------------------*/
     /**
      * isJsonstr

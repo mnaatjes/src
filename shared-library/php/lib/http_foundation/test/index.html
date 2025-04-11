@@ -6,6 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PHP Requests Test</title>
     <link rel="stylesheet" href="../../../../styles/css/main.css">
+    <style>
+      .flex-grid {
+        display: flex; 
+        flex-wrap: wrap;
+        /* flex-direction: row; (default) */
+        /* justify-content: flex-start; (default) */
+        /* align-items: stretch; (default) */
+      }
+      .flex-grid-item {
+        flex-grow: 1;
+      }
+      /* Example of using flex-grow for equal width columns */
+      .flex-grid-equal-cols > .flex-grid-item {
+        flex-grow: 1;
+        flex-basis: 0; /* Ensure equal distribution of remaining space */
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -13,8 +30,29 @@
         <h2>HTTP Request and Response Test</h2> 
     </header>
     <main>
-        <section id="root">
-            <input type="text" id="input" name="string" placeholder="Enter a test sting" />
+        <section>
+          <form action="./src/test.php" method="POST" id="form">
+            <input type="text" name="fname" placeholder="Enter Full Name" value="Gemini Naatjes">
+            <input type="text" name="pet" placeholder="What kind of pet" value="Dog">
+            <input type="date" value="2025-04-04">
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+        <section>
+          <div class="flex-grid flex-grid-equal-cols">
+            <div class="flex-item">
+              <button id="btn_html">HTML</button>
+            </div>
+            <div class="flex-item">
+              <button id="btn_xml">XML</button>
+            </div>
+            <div class="flex-item">
+              <button id="btn_csv">CSV</button>
+            </div>
+            <div class="flex-item">
+              <button id="btn_json">JSON</button>
+            </div>
+          </div>
         </section>
         <section id="display">
 
