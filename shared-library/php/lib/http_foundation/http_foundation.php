@@ -22,6 +22,7 @@
      */
     /*----------------------------------------------------------*/
     require_once('utils/sanitize_server_data.php');
+    require_once('utils/parse_global_server.php');
     /*----------------------------------------------------------*/
     /**
      * Classes and Objects

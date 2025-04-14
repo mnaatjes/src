@@ -22,8 +22,9 @@
     require_once('../../../../utils/main.php');
     require_once('../../http_foundation.php');
     ini_errors_enable();
-    $headers = new Headers(true);
-    $headers->send();
-    //var_dump($headers->getProperties());
+    /**
+     * Debugging Server Superglobal Parser
+     */
+    parse_global_server();
     //echo trim(json_encode(new Request($_SERVER), JSON_PRETTY_PRINT));
 ?>

@@ -33,7 +33,7 @@
             switch(gettype($val)){
                 // Array
                 case 'array':
-                    $results[$key] = sanitize_array($val);
+                    $results[$key] = sanitize_data($val);
                     break;
                 // Boolean
                 case 'boolean':

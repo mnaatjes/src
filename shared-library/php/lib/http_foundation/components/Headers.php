@@ -58,7 +58,9 @@
          * Magic Method: Getter
          * - Gets header property from $data
          * @param string $name
-         * @return Value from $properties array
+         * @return string from $properties array
+         * - Implodes array of values with ","
+         * - Returns a string delimited by ","
          */
         /*----------------------------------------------------------*/
         public function __get(string $name){
