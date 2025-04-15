@@ -8,21 +8,34 @@
      * - Countable
      */
     /*----------------------------------------------------------*/
-    class Errors implements Countable, IteratorAggregate  {
+    class Errors  {
         /**
          * Error Properties
          */
-        protected array $container  = [];
+        public ?string $logPath     = null;
+        public array $config        = [];
+        public array $container     = [];
         protected array $codes      = [];
         protected array $categories = [];
+        protected array $last_entry = [];
+        protected ?array $children  = null;
         /*----------------------------------------------------------*/
         /**
          * Constructor.
          * - Declares $container array
          * - Sets initial $data array properties
+         * TODO: Remove __get() and __set() and replace with easier methods get(), set(), etc...
          */
         /*----------------------------------------------------------*/
-        public function __construct(){
+        public function __construct(?array $config=null){
+            /**
+             * Validate config
+             */
+            $this->config = $this->parseConfig($config);
+            /**
+             * Set logging path
+             */
+            $this->logPath = $this->config['log_path'];
             /**
              * Set Default Parameters (gettable and settable)
              */
@@ -42,6 +55,79 @@
              * Codes generated from Category Keys
              */
             $this->codes = array_keys($this->categories);
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Validation Method: Parses $config parameter and returns array
+         * - Sets defaults if not set
+         */
+        /*----------------------------------------------------------*/
+        private function parseConfig(?array $config){
+            /**
+             * Define Default Error Configuration
+             */
+            $default = [
+                'log_path'  => 'ERRORS_LOG.php',
+                'log'       => true,
+                'display'   => true,
+                'send'      => true
+            ];
+            /**
+             * Check if null
+             * - Return all defaults
+             * - Parse values if not null
+             */
+            if(is_null($config)){
+                return $default;
+            } else {
+                return array_merge($default, $config);
+            }
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Settings Method: 
+         * @param string $name
+         * @param string $value
+         * @return void
+         */
+        /*----------------------------------------------------------*/
+        private function logError(string $name, string $value=''){
+            /**
+             * Validate method
+             * - True: log to file
+             * - False: return void
+             */
+            if($this->config['log'] === true){
+                // Log Error
+                // TODO: Recreate logging method
+                log_dump(sprintf('ERROR: %s', ucfirst($name)), $value, $this->logPath);
+                return;
+            }
+            // Leave method
+            return;
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Settings Method: 
+         * @param string $name
+         * @param string $value
+         * @return void
+         */
+        /*----------------------------------------------------------*/
+        private function displayError(string $name, string $value=''){
+            /**
+             * Validate method
+             * - True: display error
+             * - False: return void
+             */
+            if($this->config['display'] === true){
+                // Check error settings from php.ini
+                // Display Error
+                trigger_error(sprintf('%s: %s', ucfirst($name), $value));
+                return;
+            }
+            // Leave method
+            return;
         }
         /*----------------------------------------------------------*/
         /**
@@ -99,6 +185,18 @@
                 $this->container[$name] = [$this->container[$name], ... (array) $value];
             }
             /**
+             * Log Error
+             */
+            $this->logError($name, $value);
+            /**
+             * Display Error
+             */
+            $this->displayError($name, $value);
+            /**
+             * Set Last Entry
+             */
+            $this->last_entry = [$name => $value];
+            /**
              * Return Success
              */
             return true;
@@ -147,7 +245,7 @@
          * @return bool
          */
         /*----------------------------------------------------------*/
-        public function hasError(string $name): bool{
+        public function has(string $name): bool{
             // Normalize
             $name = $this->normalizeProperty($name);
             // Check if exists
@@ -162,7 +260,7 @@
          * @return bool True if successful | False if failure
          */
         /*----------------------------------------------------------*/
-        public function addError(string $name, ?string $value): bool{
+        public function add(string $name, ?string $value): bool{
             /**
              * Validate $name
              */
@@ -173,7 +271,8 @@
             /**
              * Use __set()
              */
-            return $this->__set($name, $value);
+            $this->$name = $value;
+            return true;
         }
         /*----------------------------------------------------------*/
         /**
@@ -204,8 +303,16 @@
          * @return array $container contents
          */
         /*----------------------------------------------------------*/
-        public function getErrors(){
+        public function getAll(){
             return $this->container;
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Utility Method: Returns last (most recent) error
+         */
+        /*----------------------------------------------------------*/
+        public function getLast(){
+            return $this->last_entry;
         }
         /*----------------------------------------------------------*/
         /**
@@ -214,7 +321,13 @@
          */
         /*----------------------------------------------------------*/
         public function count(): int{
-            return count($this->container);    
+            // Set initial count
+            $count = 0;
+            foreach($this->container as $_ => $arr){
+                // Iterative count of category values
+                $count += count($arr);
+            }
+            return $count;
         }
         /*----------------------------------------------------------*/
         /**

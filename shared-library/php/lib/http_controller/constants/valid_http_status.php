@@ -4,7 +4,7 @@
      *
      * @var array<int,string> HTTP_STATUS
      */
-    define('HTTP_STATUS', [
+    define('VALID_HTTP_STATUS', [
         100 => 'Continue',
         101 => 'Switching Protocols',
         102 => 'Processing',

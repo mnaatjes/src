@@ -60,7 +60,7 @@
          * @param string $name
          * @return string from $properties array
          * - Implodes array of values with ","
-         * - Returns a string delimited by ","
+         * - Returns a
          */
         /*----------------------------------------------------------*/
         public function __get(string $name){
