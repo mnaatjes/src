@@ -14,13 +14,14 @@
      * - HTTP Framework
      */
     require_once('../../../utils/main.php');
-    require_once('../http_controller.php');
-    //ini_errors_enable();
+    require_once('../http_manager.php');
+    ini_errors_enable();
     /**
      * Debugging RequestController Object
      */
-    $request    = new HTTPRequest();
-    $response   = new HTTPResponse();
+    $request    = new Request();
+    $response   = new Response();
     $test = $request->uri->getResourcePath();
-    var_dump($test);
+    var_dump($request->uri->getQuery());
+    var_dump($request->uri->getQueryParam('size'));
 ?>

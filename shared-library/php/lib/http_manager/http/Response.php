@@ -4,7 +4,7 @@
      * HTTP Response Object.
      */
     /*----------------------------------------------------------*/
-    class HTTPResponse {
+    class Response {
         /**
          * @var array|null Configuration assoc array for $_SERVER params
          */
@@ -30,7 +30,7 @@
         public function __construct(?array $config=null){
             $this->config       = $this->validateConfig($config);
             $this->serverParams = $this->getServerParams($this->config);
-            $this->headers      = new HTTPHeaders($this->serverParams, true, $this->config);
+            $this->headers      = new Headers($this->serverParams, true, $this->config);
             $this->errors       = new Errors($this->config['errors']);
         }
         /*----------------------------------------------------------*/

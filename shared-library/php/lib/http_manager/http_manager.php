@@ -19,13 +19,14 @@
      */
     require_once('utils/sanitize_server_data.php');
     /**
-     * Components
+     * http objects
      */
-    require_once('components/HTTPHeaders.php');
-    require_once('components/URIInterface.php');
-    require_once('components/HTTPRequest.php');
-    require_once('components/HTTPResponse.php');
+    require_once('http/Headers.php');
+    require_once('http/URIInterface.php');
+    require_once('http/Request.php');
+    require_once('http/Response.php');
     /**
-     * Other
+     * Router object
      */
+    require_once('router/Router.php');
 ?>

@@ -6,7 +6,7 @@
      * - Provides sanitation and validation for incoming data.
      */
     /*----------------------------------------------------------*/
-    class HTTPRequest {
+    class Request {
         /**
          * @var array|null Configuration assoc array for $_SERVER params
          */
@@ -69,7 +69,7 @@
             /**
              * Initialize Request Headers Object
              */
-            $this->headers      = new HTTPHeaders($this->serverParams, false, $this->config);
+            $this->headers      = new Headers($this->serverParams, false, $this->config);
             $this->method       = $this->serverParams['REQUEST_METHOD'];
             $this->isSecure     = $this->checkSecure();
             $this->isAJAX       = $this->checkAJAX();
@@ -78,7 +78,7 @@
             /**
              * Initialize URI object
              */
-            $this->uri          = new URIInterface([
+            $this->uri          = new UriInterface([
                     'host'   => $this->headers->get('host'),
                     'port'   => $this->headers->get('port'),
                     'scheme' => $this->headers->get('scheme')

@@ -11,7 +11,7 @@
      * - QueryParam
      */
     /*----------------------------------------------------------*/
-    class URIInterface {
+    class UriInterface {
         /**
          * @var string|null
          */

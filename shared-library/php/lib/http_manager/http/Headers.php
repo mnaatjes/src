@@ -7,7 +7,7 @@
      * - Checks headers
      */
     /*----------------------------------------------------------*/
-    class HTTPHeaders {
+    class Headers {
         /**
          * @var bool 
          */
