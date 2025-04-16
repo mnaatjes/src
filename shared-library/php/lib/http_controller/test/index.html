@@ -31,7 +31,15 @@
     </header>
     <main>
         <section>
-          <form action="./test.php" method="POST" id="form">
+          <form action="./test.php/products" method="GET" id="form_api">
+            <input type="text" name="size" value="large">
+            <input type="text" name="weight" value="12kg">
+            <input type="text" name="color" value="red">
+            <input type="submit" value="Send">
+          </form>
+        </section>
+        <section>
+          <form action="./test.php/users/items" method="POST" id="form">
             <input type="text" name="fname" placeholder="Enter Full Name" value="Gemini Naatjes">
             <input type="text" name="pet" placeholder="What kind of pet" value="Dog">
             <input type="date" value="2025-04-04">

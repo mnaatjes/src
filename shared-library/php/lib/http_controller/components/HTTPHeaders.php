@@ -84,11 +84,37 @@
         /*----------------------------------------------------------*/
         private function parseHeaders(?array $server_params, bool $is_response){
             /**
+             * Validate request
+             */
+            if($is_response === true){
+                return [];
+            }
+            /**
              * Declare results container
              * Loop server params
              */
             $results = [];
             foreach($server_params as $key => $value){
+                /**
+                 * Check for Scheme
+                 */
+                if($key === 'HTTPS' && ($value === 'on' || $value === 1)){
+                    $results['scheme'] = 'https';
+                } else if($key === 'HTTP_X_FORWARDED_PROTO' && strtolower($value) === 'https'){
+                    $results['scheme'] = 'https';
+                }
+                /**
+                 * Check for Port
+                 */
+                if($key === 'SERVER_PORT'){
+                    if(is_numeric($value) && intval($value) > 1 && intval($value) < 65535){
+                        $results['port'] = intval($value);
+                    } else {
+                        // Log invalid port number
+                        $this->errors->add('exception', 'Invalid port number from Request!');
+                        continue;
+                    }
+                }
                 /**
                  * Format Header Keys
                  * - Strip HTTP from properties
@@ -126,6 +152,13 @@
                 return null;
             }
             /**
+             * Check for absent values
+             */
+            if(!array_key_exists('scheme', $results)){
+                // Set Scheme
+                $results['scheme'] = 'http';
+            }
+            /**
              * Normalize keys
              * Return normalized array
              */
@@ -133,6 +166,9 @@
             foreach($results as $key => $value){
                 $normalized[$this->normalizeHeader($key)] = $value;
             }
+            /**
+             * Return normalized array
+             */
             return $normalized;
         }
         /*----------------------------------------------------------*/
@@ -152,6 +188,13 @@
              */
             if(str_has_delimiter($name, '_')){
                 $name = str_snake_to_kebab($name, CASE_CAPS);
+            } else if(str_has_delimiter($name, '-')){
+                // explode and capitalize
+                $result = [];
+                foreach(explode('-', $name) as $part){
+                    $result[] = ucfirst($part);
+                }
+                $name = implode('-', $result);
             } else {
                 $name = str_camel_to_kebab($name, CASE_CAPS);
             }
@@ -195,7 +238,8 @@
          * Add header to headers array
          */
         /*----------------------------------------------------------*/
-        public function add(string $name, $value=null){
+        public function set(string $name, $value=null): self{return $this->add($name, $value);}
+        public function add(string $name, $value=null): self{
             /**
              * Validate method
              */
@@ -207,6 +251,8 @@
                  */
                 $name = $this->normalizeHeader($name);
                 $this->headers[$name] = $value;
+                // Return self
+                return $this;
             }
         }
         /*----------------------------------------------------------*/

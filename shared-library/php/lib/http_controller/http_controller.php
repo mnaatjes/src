@@ -22,7 +22,9 @@
      * Components
      */
     require_once('components/HTTPHeaders.php');
+    require_once('components/URIInterface.php');
     require_once('components/HTTPRequest.php');
+    require_once('components/HTTPResponse.php');
     /**
      * Other
      */

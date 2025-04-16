@@ -12,7 +12,7 @@ export function onFetchForm(e){
     const formData  = new FormData(this);
     const dataObj   = Object.fromEntries(formData.entries());
     // perform fetch
-    fetch('./test.php', {
+    fetch(this.getAttribute('action'), {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

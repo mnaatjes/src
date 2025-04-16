@@ -329,15 +329,5 @@
             }
             return $count;
         }
-        /*----------------------------------------------------------*/
-        /**
-         * Iterator Method: Makes object iterable
-         * - Automatically Called by php when foreach() used on Object
-         * @return ArrayIterator Returns $this->properties
-         */
-        /*----------------------------------------------------------*/
-        public function getIterator(): Traversable {
-            return new ArrayIterator($this->container);
-        }
     }
 ?>

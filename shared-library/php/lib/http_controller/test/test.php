@@ -19,6 +19,8 @@
     /**
      * Debugging RequestController Object
      */
-    $request = new HTTPRequest();
-    var_dump($request->post);
+    $request    = new HTTPRequest();
+    $response   = new HTTPResponse();
+    $test = $request->uri->getResourcePath();
+    var_dump($test);
 ?>
