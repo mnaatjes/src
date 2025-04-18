@@ -190,42 +190,23 @@
              * - check for control characters
              * 
              */
-            if(!str_starts_with($difference, '/')){
-                // Failed check
+            if(!validate_resource_path($difference)){
                 return null;
             }
-            $difference = str_replace(' ', '', trim($difference));
-            $pattern    = '/^\/[a-zA-Z0-9_-]+$/';
-            $match      = preg_match($pattern, $difference) === 1;
-            $count      = substr_count($difference, '/');
-            if($count > 1 && $match === false){
-                // Check parts for validity
-                foreach(explode('/', $difference) as $id){
-                    // skip empty
-                    $id = trim($id);
-                    if(empty($id)){
-                        continue;
-                    }
-                    $id = '/' . $id;
-                    $id_match = preg_match($pattern, $id) === 1;
-                    // On failure, return
-                    if($id_match === false){
-                        return null;
-                    }
-                }
-                /**
-                 * Loop resolved to true
-                 * Return resource identifier path
-                 */
-                return $difference;
-            } else if($match === false){
+            /**
+             * Normalize path and return
+             * - Validate not null
+             */
+            $normal = normalize_resource_path($difference);
+            /**
+             * Validate and return
+             */
+            if(!is_string($normal)){
+                // invalid
                 return null;
             } else {
-                /**
-                 * Resolved to true
-                 * Return resource identifier path
-                 */
-                return $difference;
+                // valid
+                return $normal;
             }
         }
         /*----------------------------------------------------------*/

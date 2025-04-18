@@ -180,6 +180,12 @@
         }
         /*----------------------------------------------------------*/
         /**
+         * @return string REQUEST_METHOD
+         */
+        /*----------------------------------------------------------*/
+        public function getMethod(){return $this->getServerParam('request_method');}
+        /*----------------------------------------------------------*/
+        /**
          * Utility Method: 
          * @param void
          * @return string Client IP

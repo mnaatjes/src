@@ -18,6 +18,8 @@
      * Utils
      */
     require_once('utils/sanitize_server_data.php');
+    require_once('utils/validate_resource_path.php');
+    require_once('utils/normalize_resource_path.php');
     /**
      * http objects
      */

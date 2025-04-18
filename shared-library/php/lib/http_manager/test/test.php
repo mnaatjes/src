@@ -21,7 +21,11 @@
      */
     $request    = new Request();
     $response   = new Response();
-    $test = $request->uri->getResourcePath();
-    var_dump($request->uri->getQuery());
-    var_dump($request->uri->getQueryParam('size'));
+    $router     = new Router($request, $response, []);
+    $router->addRoute('GET', '/products/{id}/colors/{color}', function($req, $res){
+        var_dump($req->getMethod());
+        var_dump('Products callback!');
+    });
+    var_dump($router->getRoutes());
+    $router->dispatch();
 ?>
