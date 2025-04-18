@@ -105,6 +105,11 @@
         }
         /*----------------------------------------------------------*/
         /**
+         * 
+         */
+        /*----------------------------------------------------------*/
+        /*----------------------------------------------------------*/
+        /**
          * Debugging: Returns routes array
          */
         /*----------------------------------------------------------*/
@@ -185,18 +190,36 @@
                      * Check for parameters to parse
                      */
                     if(preg_match($pattern, $path, $match)){
-                        var_dump($match);
                         /**
-                         * Return array of parameters and handler
+                         * Collect parameter name, value pairs and return as array
                          */
-                        return [
-                            'handler' => $handler
-                        ];
+                        preg_match_all('/\{(\w+)\}/', $subject, $keys);
+                        $keys = array_slice($keys, 1)[0];
+                        $values = [];
+                        foreach($match as $prop){
+                            if($prop === $path){
+                                continue;
+                            }
+                            $values[] = $prop;
+                        }
+                        /**
+                         * Validate number of properties
+                         * - TODO: Sanitize and validate
+                         */
+                        if(count($keys) === count($values)){
+                            /**
+                             * Return array of parameters and handler
+                             */
+                            return [
+                                'handler'   => $handler,
+                                'params'    => array_combine($keys, $values)
+                            ];
+                        }
                     } else {
                         /**
                          * No parameters set in addRoute to parse
                          */
-                        var_dump('NO PARAMETERS DEFINED!');
+                        return null;
                     }
                 }
             }
@@ -204,14 +227,6 @@
              * Return Default
              */
             return false;
-        }
-        /*----------------------------------------------------------*/
-        /**
-         * Utility Method: format route resource for regex
-         */
-        /*----------------------------------------------------------*/
-        private function formatResourcePath($path){
-            return str_replace(["\\{", "\\}"], ["{", "}"], preg_quote($path, "/"));
         }
         /*----------------------------------------------------------*/
         /**
@@ -234,19 +249,28 @@
             /**
              * Validate match
              */
-            if(is_bool($match) && $match === false){
-                /**
-                 * TODO: Redirect
-                 */
-            } else if(!is_null($match)){
+            if(!is_null($match) && is_array($match)){
                 /**
                  * Success:
-                 * Execute handler methods
+                 * - Evaluate method string (if present)
+                 * - Execute handler method
                  */
-                var_dump("SUCCESS");
                 var_dump($path);
                 var_dump($match);
                 //call_user_func($match['handler'], $this->req, $this->res);
+            } else {
+                /**
+                 * Failure to dispatch solution:
+                 * - Set HTTP response headers
+                 * - Set HTTP response body
+                 * - Return HTTP status
+                 */
+                $this->res->setStatus(500);
+                //$this->res->setContentType('application/json');
+                $this->res->setContentType('text/csv');
+                //$this->res->setBodyFromFile('../test/data/planets.json');
+                $this->res->setBodyFromFile('../test/data/rockets.csv');
+                //var_dump($this->res->getBody());
             }
         }
     }

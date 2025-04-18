@@ -26,6 +26,5 @@
         var_dump($req->getMethod());
         var_dump('Products callback!');
     });
-    var_dump($router->getRoutes());
     $router->dispatch();
 ?>

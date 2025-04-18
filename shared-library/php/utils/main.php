@@ -93,6 +93,9 @@
      * File Utilities
      */
     /*----------------------------------------------------------*/
+    require_once 'files/is_valid_file.php';
+    require_once 'files/get_file_mimetype.php';
+    require_once 'files/get_file_extension.php';
     require_once 'files/is_file_csv.php';
     require_once 'files/normalize_path.php';
     require_once 'files/require_once_dir.php';
