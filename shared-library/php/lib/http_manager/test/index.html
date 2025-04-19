@@ -5,66 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PHP Requests Test</title>
-    <link rel="stylesheet" href="../../../../styles/css/main.css">
-    <style>
-      .flex-grid {
-        display: flex; 
-        flex-wrap: wrap;
-        /* flex-direction: row; (default) */
-        /* justify-content: flex-start; (default) */
-        /* align-items: stretch; (default) */
-      }
-      .flex-grid-item {
-        flex-grow: 1;
-      }
-      /* Example of using flex-grow for equal width columns */
-      .flex-grid-equal-cols > .flex-grid-item {
-        flex-grow: 1;
-        flex-basis: 0; /* Ensure equal distribution of remaining space */
-      }
-    </style>
+    <!--<link rel="stylesheet" href="../../../../styles/css/main.css">-->
+    <link rel="stylesheet" href="./simple.css">
   </head>
   <body>
     <header>
-        <h1>PHP Request</h1>
         <h2>HTTP Request and Response Test</h2> 
     </header>
     <main>
         <section>
+          <article>
           <form action="./test.php/products/{123}/colors/{red}" method="GET" id="form_api">
+            <h6>/products/{123}/colors/{red}</h6>
             <input type="text" name="size" value="large">
             <input type="text" name="weight" value="12kg">
             <input type="text" name="color" value="red">
             <input type="submit" value="Send">
           </form>
+        </article>
         </section>
         <section>
-          <form action="./test.php/users/items" method="POST" id="form">
-            <input type="text" name="fname" placeholder="Enter Full Name" value="Gemini Naatjes">
-            <input type="text" name="pet" placeholder="What kind of pet" value="Dog">
-            <input type="date" value="2025-04-04">
-            <input type="hidden" name="product_id" value="908sdfs80834sds">
-            <input type="hidden" name="product_name" value="Kong">
-            <input type="hidden" name="product_size" value="Large">
-            <input type="hidden" name="product_type" value="Ball">
-            <input type="submit" value="Submit">
+          <article>
+          <form action="./test.php/users/{all}/items/{balls}" method="GET" id="form">
+            <h6>/users/{123}/items/{ball}</h6>
+                <input type="text" name="fname" placeholder="Enter Full Name" value="Gemini Naatjes">
+                <input type="text" name="pet" placeholder="What kind of pet" value="Dog">
+                <input type="date" value="2025-04-04">
+                <input type="hidden" name="product_id" value="908sdfs80834sds">
+                <input type="hidden" name="product_name" value="Kong">
+                <input type="hidden" name="product_size" value="Large">
+                <input type="hidden" name="product_type" value="Ball">
+                <input type="submit" value="Submit">
           </form>
+        </article>
         </section>
         <section>
-          <div class="flex-grid flex-grid-equal-cols">
-            <div class="flex-item">
+          <article>            
               <button id="btn_html">HTML</button>
-            </div>
-            <div class="flex-item">
               <button id="btn_xml">XML</button>
-            </div>
-            <div class="flex-item">
               <button id="btn_csv">CSV</button>
-            </div>
-            <div class="flex-item">
-              <button id="btn_json">JSON</button>
-            </div>
-          </div>
+              <button id="btn_index">Index</button>
+              <button id="btn_planets">Planets</button>
+              <button id="btn_users">Index</button>
+          </article>
         </section>
         <section id="display"></section>
     </main>

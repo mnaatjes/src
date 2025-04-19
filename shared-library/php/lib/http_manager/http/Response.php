@@ -18,9 +18,11 @@
          */
         public ?object $errors;
         /**
-         * @var object Headers
+         * @var object Headers Object
+         * - Protected: Only able to be accessed within Request Class
+         * 
          */
-        public $headers = null;
+        protected $headers = null;
         /**
          * @var string|null HTTP response body
          */
@@ -47,7 +49,10 @@
         /*----------------------------------------------------------*/
         private function validateConfig(?array $config=null): array{
             return [
-                'errors' => [
+                'headers'   => [
+
+                ],
+                'errors'    => [
                     'log'       => true,
                     'display'   => true,
                     'send'      => true
@@ -63,6 +68,50 @@
         /*----------------------------------------------------------*/
         private function getServerParams(?array $config=null){
             return sanitize_server_data($config);
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Utility Method to check if a header exists
+         * @param string $name Header Name
+         * @return bool
+         */
+        /*----------------------------------------------------------*/
+        public function hasHeader(string $name){
+            /**
+             * Return from headers->has();
+             */
+            return $this->headers->has($name);
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Utility Method to retrieve header value
+         * @param string $name Header Name
+         * @return string Header value
+         */
+        /*----------------------------------------------------------*/
+        public function getHeader(string $name){
+            /**
+             * Utilize header->get
+             */
+            return $this->headers->get($name);
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Utility Method to set header value
+         * @param string $name Header Name
+         * @param string $value Header value
+         * @return self
+         */
+        /*----------------------------------------------------------*/
+        public function setHeader(string $name, string $value=''): self{
+            /**
+             * Utilize header->set
+             */
+            $this->headers->set($name, $value);
+            /**
+             * Return default
+             */
+            return $this;
         }
         /*----------------------------------------------------------*/
         /**
@@ -87,6 +136,14 @@
              * Return self
              */
             return $this;
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Returns status from header
+         */
+        /*----------------------------------------------------------*/
+        public function getStatus(){
+            return $this->headers->get('status');
         }
         /*----------------------------------------------------------*/
         /**
@@ -142,14 +199,6 @@
                 return $this;
             }
             /**
-             * Validate body string
-             */
-            if(!$this->validateBodyFormat($content_string)){
-                // Invalid format for content type
-                $this->errors->add('argument', 'Content string of http response body is of invalid format in ' . __FUNCTION__);
-                return $this;
-            }
-            /**
              * Success!
              * - Set body property
              * - Return self
@@ -181,8 +230,47 @@
                 /**
                  * Validate Content-Type
                  */
-                var_dump($this->headers->get('content_type'));
-                get_file_mimetype($filepath);
+                if(!$this->headers->has('content-type')){
+                    // Content-type not set!
+                    $this->errors->add('Argument', sprintf('Content-type not set in: %s', __FUNCTION__));
+                    return $this;
+                }
+                $content_type   = $this->headers->get('content_type');
+                $mime_type      = get_file_mimetype($filepath);
+                if($mime_type == $content_type){
+                    /**
+                     * Get file contents and set http response body
+                     * - Grab file contents
+                     * - Evaluate
+                     * - Set
+                     */
+                    $contents = file_get_contents($filepath);
+                    // Evaluate
+                    if(is_string($contents)){
+                        /**
+                         * Set http body and return self
+                         */
+                        $this->body = $contents;
+                        return $this;
+                    } else {
+                        /**
+                         * Report failure and return self
+                         */
+                        $this->errors->add('exception', sprintf('Failed to obtain file contents from: %s in %s', $filepath, __FUNCTION__));
+                        return $this;
+                    }
+                } else {
+                    /**
+                     * Could not validate mime / content types
+                     * Return self
+                     */
+                    $this->errors->add('argument', 
+                        sprintf(
+                            'Could not pair mime-type and content-type in %s! Check filetype of filepath: %s.',
+                            __FUNCTION__, $filepath
+                    ));
+                    return $this;
+                }
                 /**
                  * Return default
                  */
@@ -200,6 +288,8 @@
         /*----------------------------------------------------------*/
         /**
          * Validates the format of the http response body based on the content-type
+         * TODO: Determine if necessary
+         * TODO: Figure out how to implement
          * @param string
          * @return string formatted http body
          */
@@ -302,25 +392,38 @@
         /*----------------------------------------------------------*/
         /**
          * Redirects after response sent
+         * - TODO: Finish
          */
         /*----------------------------------------------------------*/
         public function redirect(?string $url=null){}
         /*----------------------------------------------------------*/
         /**
-         * 
-         */
-        /*----------------------------------------------------------*/
-        /*----------------------------------------------------------*/
-        /**
-         * 
-         */
-        /*----------------------------------------------------------*/
-        /*----------------------------------------------------------*/
-        /**
          * Send HTTP Response
+         * - Employs response->headers->send() to send headers
+         * - Sends headers and response body
          */
         /*----------------------------------------------------------*/
-        public function send(){}
+        public function send(){
+            /**
+             * Validate Response headers
+             * - Check for status and content type
+             * - Send Headers
+             * - Send Body
+             */
+            if($this->headers->has('status') && $this->headers->has('content-type')){
+                /**
+                 * Send Headers
+                 */
+                $this->headers->send();
+                /**
+                 * Send Body
+                 */
+                echo $this->body;
+            } else {
+                $this->errors->add('exception', sprintf('Cannot send http response! Missing headers: Status or Content-Type in %s', __FUNCTION__));
+                return $this;
+            }
+        }
     }
 
 ?>

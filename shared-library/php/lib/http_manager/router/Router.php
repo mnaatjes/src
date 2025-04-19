@@ -2,6 +2,9 @@
     /*----------------------------------------------------------*/
     /**
      * HTTP Router Object
+     * - TODO: Add default response header option / method / config array / etc
+     * - TODO: Add rules validation
+     * - TODO: Add config assoc array integration
      */
     /*----------------------------------------------------------*/
     class Router {
@@ -105,11 +108,6 @@
         }
         /*----------------------------------------------------------*/
         /**
-         * 
-         */
-        /*----------------------------------------------------------*/
-        /*----------------------------------------------------------*/
-        /**
          * Debugging: Returns routes array
          */
         /*----------------------------------------------------------*/
@@ -175,17 +173,21 @@
              * - Attempt to match regex pattern
              */
             if(isset($this->routes[$method])){
-                // Loop
+                /**
+                 * Loop routes and evaluate for matches
+                 */
+                $results = [];
                 foreach($this->routes[$method] as $subject => $handler){
                     /**
                      * Create regex pattern from definition in routes
                      * - Escape directory separators
                      * - Replace parameter name with regex expression
                      * - Evaluate path
+                     * - TODO: FIX!!!!!
                      */
-                    $subject = str_replace('/', '\/', $subject);
+                    $subject = preg_quote($subject, "/");
                     $replace = '\{(\w+)\}';
-                    $pattern = '/' . preg_replace('/\{(\w+)\}/', $replace, $subject) . '/';
+                    $pattern = '/' . preg_replace('/\\\{(\w+)\\\}/', $replace, $subject) . '/';
                     /**
                      * Check for parameters to parse
                      */
@@ -193,8 +195,8 @@
                         /**
                          * Collect parameter name, value pairs and return as array
                          */
-                        preg_match_all('/\{(\w+)\}/', $subject, $keys);
-                        $keys = array_slice($keys, 1)[0];
+                        preg_match_all('/\\\{(\w+)\\\}/', $subject, $keys);
+                        $keys   = array_slice($keys, 1)[0];
                         $values = [];
                         foreach($match as $prop){
                             if($prop === $path){
@@ -210,18 +212,26 @@
                             /**
                              * Return array of parameters and handler
                              */
-                            return [
+                            $results = [
                                 'handler'   => $handler,
                                 'params'    => array_combine($keys, $values)
                             ];
                         }
-                    } else {
-                        /**
-                         * No parameters set in addRoute to parse
-                         */
-                        return null;
                     }
                 }
+                /**
+                 * Evaluate Results and return
+                 */
+                if(empty($results)){
+                    return null;
+                }
+                if(!isset($results['handler'])){
+                    return null;
+                }
+                /**
+                 * Passed Checks, return results array
+                 */
+                return $results;
             }
             /**
              * Return Default
@@ -254,10 +264,14 @@
                  * Success:
                  * - Evaluate method string (if present)
                  * - Execute handler method
+                 * - Check for params
                  */
-                var_dump($path);
-                var_dump($match);
-                //call_user_func($match['handler'], $this->req, $this->res);
+                call_user_func(
+                    $match['handler'], 
+                    $this->req, 
+                    $this->res, 
+                    isset($match['params']) ? $match['params']: []
+                );
             } else {
                 /**
                  * Failure to dispatch solution:
@@ -265,12 +279,12 @@
                  * - Set HTTP response body
                  * - Return HTTP status
                  */
-                $this->res->setStatus(500);
-                //$this->res->setContentType('application/json');
-                $this->res->setContentType('text/csv');
-                //$this->res->setBodyFromFile('../test/data/planets.json');
-                $this->res->setBodyFromFile('../test/data/rockets.csv');
-                //var_dump($this->res->getBody());
+                $this->res->setStatus(404);
+                $this->res->setContentType('application/json');
+                $this->res->setBody(json_encode([
+                    'error' => 'Unable to find Resource! Please try again.'
+                ]));
+                $this->res->send();
             }
         }
     }

@@ -130,9 +130,26 @@
                     /**
                      * Check CONTENT_TYPE for boundary
                      */
-                    if($key === 'CONTENT_TYPE' && preg_match('/^([^;]+)(?:;\s*boundary=(.+))?$/', $value, $matches)){
-                        $results[strtolower($key)]   = $matches[1];
-                        $results['content_boundary'] = $matches[2];
+                    if($key === 'CONTENT_TYPE'){
+                        /**
+                         * Evaluate for boundary property:
+                         * - Multipart form data/mixed
+                         * - Perform preg_match for boundary
+                         */
+                        if(strpos($value, 'multipart') > 0){
+                            preg_match('/^([^;]+)(?:;\s*boundary=(.+))?$/', $value, $matches);
+                            if(count($matches) > 1){
+                                // Assign content-boundary
+                                $results['content_boundary'] = $matches[2];
+                            }
+                            // Assign content-type
+                            $results[strtolower($key)] = $matches[1];
+                        } else {
+                            /**
+                             * Normal Content-Type
+                             */
+                            $results[strtolower($key)] = $value;
+                        }
                     } else {
                         /**
                          * Grab CONTENT properties

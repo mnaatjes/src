@@ -28,6 +28,10 @@
     require_once('http/Request.php');
     require_once('http/Response.php');
     /**
+     * Controllers
+     */
+    require_once('controllers/InvokeController.php');
+    /**
      * Router object
      */
     require_once('router/Router.php');

@@ -61,6 +61,12 @@
     require_once 'strings/str_replace_substr.php';
     /*----------------------------------------------------------*/
     /**
+     * Regex Utilities
+     */
+    /*----------------------------------------------------------*/
+    require_once 'regex/preg_replace_pattern.php';
+    /*----------------------------------------------------------*/
+    /**
      * PHP.ini utilities
      */
     /*----------------------------------------------------------*/
@@ -116,6 +122,8 @@
     // TODO: Separate documents of utils__constants.php and include
     require_once 'utils__constants.php';
     require_once 'constants/case_caps.php';
+    require_once 'constants/ext_mime_types.php';
+    require_once 'constants/mime_types_depreciated.php';
     /*----------------------------------------------------------*/
     /**
      * CLASSES AND OBJECTS

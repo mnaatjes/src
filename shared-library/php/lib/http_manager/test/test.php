@@ -7,7 +7,7 @@
      * @brief Test script for the HTTP Controller package.
      * - $_SERVER parameters validation
      */
-    header('Content-Type: application/json');
+    //header('Content-Type: application/json');
     /**
      * Require:
      * - Utils Library
@@ -22,9 +22,25 @@
     $request    = new Request();
     $response   = new Response();
     $router     = new Router($request, $response, []);
-    $router->addRoute('GET', '/products/{id}/colors/{color}', function($req, $res){
-        var_dump($req->getMethod());
-        var_dump('Products callback!');
+    $router->addRoute('GET', '/products/{id}/colors/{color}', new InvokeController());
+    /**
+     * /users/items 
+     */
+    $router->addRoute('GET', '/users/items', new InvokeController());
+    /**
+     * /users/items 
+     */
+    $router->addRoute('GET', '/users/{id}/items/{balls}', function($req, $res, $args){
+        var_dump($args);
+    });
+    /**
+     * Planets JSON GET
+     */
+    $router->addRoute('GET', '/planets', function($req, $res){
+        $res->setHeader('status', 200);
+        $res->setContentType('application/json');
+        $res->setBodyFromFile('../test/data/planets.json');
+        $res->send();
     });
     $router->dispatch();
 ?>
