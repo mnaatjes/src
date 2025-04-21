@@ -24,21 +24,57 @@
              * Require DB Manager
              */
             require_once('../db_manager.php');
-            $conn = new DBConnection([
+            /**
+             * Declare connection object
+             */
+            $config = ([
                 'host'      => 'localhost',
                 'username'  => 'gemini',
                 'password'  => 'web234egs',
                 'database'  => 'test',
                 'driver'    => 'mysql',
-                ]);
-                $conn->connect();
-                $conn->disconnect();
-                /*
-                $conn->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt   = $conn->pdo->query("SHOW TABLES");
-                $tables = $stmt->fetchAll(PDO::FETCH_COLUMN);
-                var_dump($tables);
-                */
+            ]);
+            /**
+             * Class Testing
+             */
+            class Speech{
+                public $username;
+                public $password;
+                public function __construct(){
+                    $this->username = 'Gemnini';
+                    $this->password = 'Gemini1200123';
+                }
+                public function __invoke(){$this->speak();}
+                public function speak(){echo 'INVOKE<br>';}
+            }
+            class Controller{
+                public function __construct(){}
+                public function con(){
+                    return new Speech();
+                }
+                public function inv(){
+                    $obj = new Speech();
+                    return $obj();
+                }
+            }
+            $test = new Controller();
+            var_dump($test->con());
+            var_dump($test->inv());
+            /**
+             * Declare DB object
+             */
+            /*
+            $db = new Database($config);
+            $db->connect();
+            /**
+             * Test Query
+             */
+            /*
+            $records = $db->query("SELECT * FROM speech")->fetchAll();
+            //var_dump($db->lastInsertID());
+            //var_dump($records);
+            $db->disconnect();
+            */
         ?>
         </section>
         <section id="display"></section>

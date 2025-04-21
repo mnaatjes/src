@@ -56,7 +56,7 @@
          *
          * @var array|null|
          */
-        private $options = [];
+        protected $options = [];
         /**
          * @var string $DSN Data Source Name used for database connection. Includes:
          * - type, 
@@ -69,7 +69,7 @@
         /**
          * @var object|null $pdo
          */
-        private ?PDO $pdo = null;
+        public ?PDO $pdo = null;
         /**
          * @var object Errors object
          */
@@ -79,7 +79,7 @@
          *
          * @var bool
          */
-        private $isConnected = false;
+        protected $isConnected = false;
         /*----------------------------------------------------------*/
         /**
          * Constructor.
@@ -211,6 +211,8 @@
                      * Assign PDO
                      */
                     $this->pdo = new PDO($this->dsn, $this->username, $this->password, $this->options);
+                    // Debugging: Connected
+                    var_dump('Debugging: Connected');
                 } catch (PDOException $error){
                     $this->errors->add('exception', $error);
                 }
@@ -243,6 +245,8 @@
              * Set isConnected
              */
             $this->isConnected = false;
+            // Debugging
+            var_dump('Debugging: Disconnected');
         }
         /*----------------------------------------------------------*/
         /**
@@ -251,7 +255,7 @@
          * @return object|null
          */
         /*----------------------------------------------------------*/
-        protected function getPDO(){ return $this->pdo;}
+        public function getPDO(){ return $this->pdo;}
         /*----------------------------------------------------------*/
         /**
          * Get status of isConnected

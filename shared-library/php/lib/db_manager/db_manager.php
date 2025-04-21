@@ -10,5 +10,6 @@
      */
     /*----------------------------------------------------------*/
     require_once('DBConnection.php');
+    require_once('DBQuery.php');
     require_once('Database.php');
 ?> 
