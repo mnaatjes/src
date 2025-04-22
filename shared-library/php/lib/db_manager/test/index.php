@@ -30,7 +30,7 @@
     $sql = "SELECT * FROM speech WHERE part = 'v'";
     $result = $db->query($sql);
     var_dump($result->rowCount());
-    var_dump($result->fetchAll());
+
 
 
 ?>

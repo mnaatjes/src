@@ -6,6 +6,10 @@
     /*----------------------------------------------------------*/
     class InvokeController {
         /**
+         * @var object model
+         */
+        protected object $model;
+        /**
          * @var object $errors
          */
         protected object $errors;
@@ -15,6 +19,12 @@
          */
         /*----------------------------------------------------------*/
         public function __construct(){
+            /**
+             * Invoke Model
+             */
+            /**
+             * Set errors
+             */
             $this->errors = new Errors();
         }
         /*----------------------------------------------------------*/

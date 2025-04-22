@@ -32,6 +32,11 @@
      */
     require_once('controllers/InvokeController.php');
     /**
+     * Models
+     */
+    require_once('models/Model.php');
+    require_once('models/TestModel.php');
+    /**
      * Router object
      */
     require_once('router/Router.php');

@@ -9,13 +9,22 @@
      */
     //header('Content-Type: application/json');
     /**
-     * Require:
-     * - Utils Library
-     * - HTTP Framework
+     * Utils Framework
      */
     require_once('../../../utils/main.php');
+    /**
+     * HTTP Manager
+     */
     require_once('../http_manager.php');
+    /**
+     * Database Manager
+     */
+    require_once('../../db_manager/db_manager.php');
     ini_errors_enable();
+    /**
+     * Debugging
+     */
+    //header('Content-Type: application/json');
     /**
      * Debugging RequestController Object
      */
@@ -30,8 +39,19 @@
     /**
      * /users/items 
      */
-    $router->addRoute('GET', '/users/{id}/items/{balls}', function($req, $res, $args){
-        var_dump($args);
+    $router->addRoute('GET', '/speech', function($req, $res, $args){
+        /*
+        Model::setConfig([
+            'host'      => 'localhost',
+            'username'  => 'gemini',
+            'password'  => 'web234egs',
+            'database'  => 'test',
+            'driver'    => 'mysql',
+        ]);
+        */
+        $model = new TestModel();
+        //$model->test();
+
     });
     /**
      * Planets JSON GET

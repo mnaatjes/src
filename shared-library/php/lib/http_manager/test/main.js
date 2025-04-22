@@ -61,3 +61,12 @@ document.getElementById('btn_users').addEventListener('click', function(e){
         }
     )
 });
+/**
+ * Speech Get All
+ */
+/*
+document.getElementById('form_speech').addEventListener('submit', function(e){
+    e.preventDefault();
+    console.log(e);
+});
+*/
