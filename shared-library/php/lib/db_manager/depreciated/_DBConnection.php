@@ -69,7 +69,7 @@
         /**
          * @var object|null $pdo
          */
-        public ?PDO $pdo = null;
+        protected ?PDO $pdo = null;
         /**
          * @var object Errors object
          */

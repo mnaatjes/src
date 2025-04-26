@@ -221,7 +221,7 @@
         }
         /*----------------------------------------------------------*/
         /**
-         * Utility Method: Returns $_GET superglobal parsed
+         * Utility Method: Returns $_GET superglobal
          * TODO: Validate
          * TODO: Implement Ruleset validation
          * @param 
@@ -234,6 +234,24 @@
             } else {
                 return null;
             }
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Parse Query Parameters for RESTful API parameters
+         * @param void $_GET
+         * @return array{
+         *      clauses: array,
+         *      filters: array,
+         *      query: array
+         * } parsed clauses and conditions(filters) and remaining query array
+         */
+        /*----------------------------------------------------------*/
+        public function parseQueryRESTful(){
+            /**
+             * @uses parse_query_parameters()
+             * @file utils/parse_query_parameters.php
+             */
+            return parse_query_parameters($this->getQuery());
         }
         /*----------------------------------------------------------*/
         /**

@@ -12,7 +12,7 @@
     /**
      * print_var
      */
-    function print_v($var){
+    function print_v($desc, $var){
         /*
         // backtrace
         $trace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 2);
@@ -41,74 +41,44 @@
         // variable data
         $variable = sprintf('<pre>%s</pre>', $dump);
         // display info
-        printf('<div style="%s">%s</div>', $style, $variable);
+        printf('<div style="%s"><b>%s</b><br>%s</div>', $style, $desc, $variable);
+    }
+    /**
+     * TestObj
+     */
+    class TestObj {
+        public array $data;
+            public function __construct($config){
+                $this->data = $config;
+            }
+            public function printHost(){print_v('Host:', $this->data['host']);}
     }
     /**
      * Parent Abstract Class
      */
-    abstract class ParentClass {
+    abstract class Model {
         // Static
-        public static int $x;
-        public static int $y;
-        public static string $default = 'Initial Value';
-        // Concrete
-        public array $coords;
-        // Construct
-        public function __construct($x, $y){
-            $this->coords = [$x, $y];
-            self::$x = $x;
-            self::$y = $y;
-        }
+        public static ?object $db;
+        public static function setDB($config){self::$db = new TestObj($config);}
+        public static function getDB(){return self::$db;}
     }
     /**
      * Child Class A
      */
-    class ChildClassA extends ParentClass {
-        // Properties
-
-        // Construct
-        public function __construct($x, $y){
-            parent::__construct($x, $y);
-            
+    class SpeechModel extends Model {
+        public static function showDB(){
+            print_v('$db', parent::$db);
         }
-        public function childTest(){var_dump('This is a child test');}
-    }
-    /**
-     * Child Class B
-     */
-    class ChildClassB extends ParentClass {
-        // Properties
-
-        // Construct
-        public function __construct($x, $y){
-            parent::__construct($x, $y);
-            
-        }
-        public function childTest(){var_dump('This is a child test');}
     }
     /**
      * Debugging
      */
     header('Content-Type: text/html');
-    
-    $childA = new ChildClassA(2, 12);
-    $childB = new ChildClassB(5, 87);
-    /**
-     * Static A
-     */
-    print_v([ChildClassA::$x, ChildClassA::$y]);
-    print_v(ChildClassA::$default);
-    /**
-     * Static B
-     */
-    /**
-     * Instance A
-     */
-    print_v($childA);
-    /**
-     * Instance B
-     */
-    print_v([ChildClassB::$x, ChildClassB::$y]);
-    print_v($childB);
-
+    SpeechModel::setDB([
+        'host' => 'localhost',
+        'username' => 'phpmyadmin'
+    ]);
+    SpeechModel::showDB();
+    $test = SpeechModel::getDB();
+    var_dump($test);
 ?>

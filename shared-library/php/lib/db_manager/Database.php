@@ -8,23 +8,21 @@
     /*----------------------------------------------------------*/
     class Database {
         /**
-         * @var object DB Connection object
+         * @var ?PDO Instance
          */
-        protected ?DBConnection $conn;
+        protected ?PDO $pdo;
         /*----------------------------------------------------------*/
         /**
          * Constructor
          * 
-         * @param array $config Assoc array of configuration properties for DB Connection
+         * @param object Database Connection Object
          */
         /*----------------------------------------------------------*/
-        public function __construct(?array $config=[]){
+        public function __construct(DatabaseConnection $connection){
             /**
-             * Assign connection:
-             * - Connection object
-             * - Might not be connected
+             * Establish Connection:
              */
-            $this->conn = new DBConnection($config);
+            $this->pdo = $connection->connect();
         }
         /*----------------------------------------------------------*/
         /**
@@ -38,60 +36,111 @@
             /**
              * Validate DB Connected
              */
-            if(!$this->conn->isConnected()){
+            if(is_null($this->pdo)){
                 throw new Error('DB Not Connected!');
+            }
+            /**
+             * Validate and set attributes
+             */
+            if(is_int($mode)){
+                $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, $mode);
             }
             // Check for params
             if(empty($params)){
                 /**
                  * Simple pdo query
                  */
-                return $this->conn->pdo->query($sql);
+                return $this->pdo->query($sql);
             } else {
                 /**
                  * Prepare pdo statement and parse parameters
                  */
-                $stmt = $this->conn->pdo->prepare($sql);
+                $stmt = $this->pdo->prepare($sql);
                 /**
-                 * Parse parameters:
-                 * - Determine if assoc array
-                 * - Parse parameters accordingly
-                 * - Bind Parameters
+                 * Parse Parameters
+                 * - Grab columns, placeholders from SQL
+                 * - Evaluate param array type
                  */
-                if(is_array_assoc($params)){
+                preg_match_all('/:([a-zA-Z0-9_]+)/', $sql, $matches);
+                $columns = array_slice($matches, 1)[0];
+                /**
+                 * Evaluate Params array type
+                 * - Indexed Array
+                 * - Multi-dimensional Indexed array
+                 * - Assoc Array
+                 */
+                if(!is_array_assoc($params)){
                     /**
-                     * Bind Params
+                     * Indexed Array of Params
+                     * - Validate number of elements 
+                     * - Evaluate typeof elements: string|int or array
+                     * - If multi-dimensional, evaluate
                      */
-                    throw new Error('Unable to accept assoc arrays! Coming soon');
+                    // Validate count
+                    if(count($columns) !== count($params)){
+                        throw new Error('Mismatched placeholder to value in SQL string! Cannot bind params!');
+                    }
+                    // Loop params
+                    $i = 0;
+                    foreach($params as $item){
+                        // Check typeof element
+                        if(is_array($item)){
+                            /**
+                             * Sub-array of column => value pair
+                             * - Validate column name
+                             * - Build 
+                             * - bindValue()
+                             */
+                            foreach($item as $param => $value){
+                                // Validate against columns
+                                if(in_array($param, $columns)){
+                                    // Bind Values
+                                    $stmt->bindValue(":{$param}", $value, $this->getParamType($value));
+                                }
+                            }
+                        } else {
+                            /**
+                             * Regular value
+                             * - Grab increment value from $columns
+                             * - Build
+                             * - bindValue()
+                             */
+                            $param = $columns[$i];
+                            $stmt->bindValue(":{$param}", $item, $this->getParamType($item));
+                        }
+                        // Increment
+                        $i++;
+                    }
                 } else {
                     /**
-                     * Capture parameter keys:
-                     * - Find all occurrences of :<prop-name>
-                     * - Validate with count()
+                     * Assoc Array of column => value pairs
+                     * - Validate $params count === $columns count
+                     * - Grab Columns from Keys
+                     * - Build placeholders from Columns
+                     * - Parse param from value
+                     * - Bind Values
                      */
-                    preg_match_all('/:([a-zA-Z0-9_]+)/', $sql, $matches);
-                    $keys = array_slice($matches, 1)[0];
-                    if(count($keys) !== count($params)){
-                        throw new Error('Keys and params unmatched in: ' . __FUNCTION__);
-                    }
-                    /**
-                     * Bind Params:
-                     * Order first in first out
-                     */
-                    for($i = 0; $i < count($keys); $i++){
+                    if(count($columns) !== count($params)){
+                        // Invalid
+                        throw new Error('Cannot execute bindValues()! Mismatched placeholders and values!');
+                    } else {
                         /**
-                         * Switch based on data-type of parameter
+                         * Loop and bind values
+                         * - TODO: Test
                          */
-                        $key    = ':' . $keys[$i];
-                        $param  = $params[$i];
-                        $stmt->bindParam($key, $param, $this->getParamType($param));
+                        foreach($params as $column => $value){
+                            $stmt->bindValue(":{$column}", $value, $this->getParamType($value));
+                        }
                     }
                 }
-                /**
-                 * Execute pdo statement and return stmt object
-                 */
-                $stmt->execute();
+            }
+            /**
+             * Execute pdo statement and return stmt object
+             */
+            if($stmt->execute()){
                 return $stmt;
+            } else {
+                return false;
             }
         }
         /*----------------------------------------------------------*/
@@ -110,12 +159,19 @@
          * @return PDO::PARAM
          */
         /*----------------------------------------------------------*/
-        private function getParamType($param){
-            switch(gettype($param)){
+        private function getParamType($value){
+            switch(gettype($value)){
                 case 'boolean':
                     return PDO::PARAM_BOOL;
                 case 'string':
                 case 'double':
+                    if(is_numeric($value)){
+                        if(!is_double($value)){
+                            return PDO::PARAM_INT;
+                        } else {
+                            return PDO::PARAM_STR;
+                        }
+                    }
                     return PDO::PARAM_STR;
                 case 'NULL':
                     return PDO::PARAM_NULL;
@@ -127,30 +183,11 @@
         }
         /*----------------------------------------------------------*/
         /**
-         * Establish Connection
-         */
-        /*----------------------------------------------------------*/
-        public function connect(){$this->conn->connect();}
-        /*----------------------------------------------------------*/
-        /**
          * Last row that was inserted into the database connection associated with the PDO object
          */
         /*----------------------------------------------------------*/
         public function lastInsertID(){
-            /**
-             * Validate isConnected
-             */
-            if($this->conn->isConnected()){
-                return $this->conn->pdo->lastInsertID();
-            } else {
-                return null;
-            }
+            return $this->pdo->lastInsertID();
         }
-        /*----------------------------------------------------------*/
-        /**
-         * Break connection
-         */
-        /*----------------------------------------------------------*/
-        public function disconnect(){$this->conn->disconnect();}
     }
 ?>

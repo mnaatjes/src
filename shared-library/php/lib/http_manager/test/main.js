@@ -15,7 +15,7 @@ import { createTableElement } from '../../../../../packages/htmlComponents/eleme
  * Constants HTML Elements
  */
 const display   = document.getElementById('display');
-const form      = document.getElementById('form');
+//const form      = document.getElementById('form');
 /**
  * @listen form#submit 
  */
@@ -57,6 +57,19 @@ document.getElementById('btn_users').addEventListener('click', function(e){
                         }
                     }
                 )
+            );
+        }
+    )
+});
+document.getElementById('btn_speech').addEventListener('click', function(e){
+    fetch_simple(
+        uri + '/speech',
+        {},
+        function(data){
+            console.log(data);
+            display.innerHTML = '';
+            display.appendChild(
+                createTableElement(data)
             );
         }
     )

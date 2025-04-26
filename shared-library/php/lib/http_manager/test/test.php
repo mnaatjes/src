@@ -20,39 +20,28 @@
      * Database Manager
      */
     require_once('../../db_manager/db_manager.php');
+    header('Content-Type: application/json');
     ini_errors_enable();
     /**
      * Debugging
      */
-    //header('Content-Type: application/json');
     /**
-     * Debugging RequestController Object
+     * Declare Router with Request and Response Objects
      */
-    $request    = new Request();
-    $response   = new Response();
-    $router     = new Router($request, $response, []);
-    $router->addRoute('GET', '/products/{id}/colors/{color}', new InvokeController());
+    $router = new Router(new Request(), new Response(), []);
     /**
-     * /users/items 
+     * Add routes
      */
-    $router->addRoute('GET', '/users/items', new InvokeController());
+    $router->addRoute('GET', '/products/{id}/colors/{color}', function($req, $res, $args){});
     /**
-     * /users/items 
+     * Test Route: Show
      */
-    $router->addRoute('GET', '/speech', function($req, $res, $args){
-        /*
-        Model::setConfig([
-            'host'      => 'localhost',
-            'username'  => 'gemini',
-            'password'  => 'web234egs',
-            'database'  => 'test',
-            'driver'    => 'mysql',
-        ]);
-        */
-        $model = new TestModel();
-        //$model->test();
-
-    });
+    $router->addRoute('GET', '/speech/{pkey}', new SpeechController(new SpeechModel()));
+    /**
+     * Testing Route: Index
+     * /speech 
+     */
+    $router->addRoute('GET', '/speech', new SpeechController(new SpeechModel()));
     /**
      * Planets JSON GET
      */
