@@ -183,6 +183,20 @@
             $path           = $this->getPath();
             $difference     = substr($path, strlen($script_name));
             /**
+             * Check if $difference returns false:
+             * - Validate root directory
+             * - Reassign $difference
+             */
+            if($difference === false){
+                // Remove script name and match with path
+                $pos = strrpos($script_name, DIRECTORY_SEPARATOR);
+                $dir = substr($script_name, 0, $pos + 1);
+                if($path === $dir){
+                    // Path is root directory
+                    $difference = '/';
+                }
+            }
+            /**
              * Validate and sanitize
              * - check for leading "/"
              * - trim and remove whitespace

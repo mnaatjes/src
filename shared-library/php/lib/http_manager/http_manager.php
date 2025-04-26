@@ -32,12 +32,12 @@
      * Models
      */
     require_once('models/Model.php');
-    require_once('models/SpeechModel.php');
+    //require_once('models/SpeechModel.php');
     /**
      * Controllers
      */
     require_once('controllers/InvokeController.php');
-    require_once('controllers/SpeechController.php');
+    //require_once('controllers/SpeechController.php');
     /**
      * Router object
      */

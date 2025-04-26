@@ -73,8 +73,8 @@
             $this->method       = $this->serverParams['REQUEST_METHOD'];
             $this->isSecure     = $this->checkSecure();
             $this->isAJAX       = $this->checkAJAX();
-            $this->pathInfo     = $this->serverParams['PATH_INFO'];
-            $this->query_str    = $this->serverParams['QUERY_STRING'];
+            $this->pathInfo     = array_key_exists('PATH_INFO', $this->serverParams) ? $this->serverParams['PATH_INFO'] : null;
+            $this->query_str    = array_key_exists('QUERY_STRING', $this->serverParams) ? $this->serverParams['QUERY_STRING'] : null;
             /**
              * Initialize URI object
              */
