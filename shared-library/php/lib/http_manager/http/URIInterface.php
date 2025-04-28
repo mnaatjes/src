@@ -87,7 +87,7 @@
             /**
              * Loop and check for properties
              */
-            foreach(['request_uri', 'script_name', 'document_root'] as $required){
+            foreach(['request_uri', 'script_name', 'document_root', 'server_name'] as $required){
                 if(!in_array($required, array_keys($server_params))){
                     return null;
                 } else if(!isset($server_params[$required])){
@@ -146,6 +146,23 @@
         }
         /*----------------------------------------------------------*/
         /**
+         * Utility Method: Get Parent url
+         */
+        /*----------------------------------------------------------*/
+        public function getParentUrl(){
+            /**
+             * Define properties
+             */
+            $scheme = $this->headerParams['scheme'];
+            $server = $this->serverParams['server_name'];
+            $uri    = $this->serverParams['request_uri'];
+            /**
+             * Return URI
+             */
+            return $scheme . '://' . $server . $uri . '';
+        }
+        /*----------------------------------------------------------*/
+        /**
          * Utility Method: 
          */
         /*----------------------------------------------------------*/
@@ -180,6 +197,7 @@
              * Parse resource identifier segment (difference)
              */
             $script_name    = $this->serverParams['script_name'];
+            $parent_dir     = dirname($script_name);
             $path           = $this->getPath();
             $difference     = substr($path, strlen($script_name));
             /**
@@ -222,6 +240,28 @@
                 // valid
                 return $normal;
             }
+        }
+        /*----------------------------------------------------------*/
+        /**
+         * Debugging Method
+         */
+        /*----------------------------------------------------------*/
+        public function displayResourcePath(){
+            /**
+             * Parse resource identifier segment (difference)
+             */
+            $script_name    = $this->serverParams['script_name'];
+            $path           = $this->getPath();
+            $parent_dir     = dirname($script_name);
+            $difference     = substr($path, strlen($script_name));
+            printf('
+                <ul>
+                    <li><b>PDir</b> %s</li>
+                    <li><b>Name</b> %s</li>
+                    <li><b>Path</b> %s</li>
+                    <li><b>Diff</b> %s</li>
+                </ul>
+            ', $parent_dir, $script_name, $path, $difference);
         }
         /*----------------------------------------------------------*/
         /**

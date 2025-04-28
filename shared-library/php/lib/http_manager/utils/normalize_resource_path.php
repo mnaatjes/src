@@ -33,6 +33,10 @@
             $path = '/' . $path;
         }
         /**
+         * Remove double slashes
+         */
+        $path = str_replace('//', '/', $path);
+        /**
          * TODO: Avoid trailing "/"
          * TODO: What about when a query is involved?
          */

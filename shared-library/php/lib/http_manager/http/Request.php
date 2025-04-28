@@ -86,7 +86,8 @@
                 [
                     'request_uri'   => $this->getServerParam('request_uri'),
                     'script_name'   => $this->getServerParam('script_name'),
-                    'document_root' => $this->getServerParam('document_root')
+                    'document_root' => $this->getServerParam('document_root'),
+                    'server_name' => $this->getServerParam('server_name'),
             ]);
             /**
              * Initialize Errors object for Request
