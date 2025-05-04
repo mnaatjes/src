@@ -1,5 +1,0 @@
-Rocket,Program,Height (m),Diameter (m),Mass at Launch (kg),Thrust at Launch (kN),Stages,Payload to LEO (kg),Notable Missions
-Atlas,Mercury,28.7,3.0,120000,1517.4,1.5,1360,"First American in orbit (John Glenn)"
-Titan II GLV,Gemini,33,3.0,150000,1900,2,3600,"First rendezvous and docking in space"
-Saturn I,Apollo,55,6.6,510000,6700,2,9100,"Uncrewed Apollo program tests, Pegasus satellites"
-Saturn V,Apollo,111,10.0,2822000-2965000,34500,3,141000,"Crewed lunar landing missions, Skylab launch"
